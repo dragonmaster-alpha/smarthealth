@@ -1,0 +1,60 @@
+{
+  "data": {
+    "ID": "997e9051-5a87-4db5-a625-e14eec7f5414",
+    "Patient": 42,
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "Referral": {
+      "ClinicType": "Renal failure",
+      "EducationReferrals": [
+        {
+          "PlannedDate": {
+            "iso": "2018-01-03"
+          },
+          "ReferralReason": "Dialysis education",
+          "ReferredProvider": {
+            "groupID": 1,
+            "userID": 44
+          }
+        }
+      ],
+      "PublicPrivate": "Public",
+      "ReferralDate": {
+        "iso": "2018-12-20"
+      },
+      "ReferringNephrologist": {
+        "groupID": 1,
+        "userID": 43
+      },
+      "RenalClinic": {
+        "id": 63,
+        "name": "SVH Public"
+      }
+    },
+    "ServiceDate": {
+      "iso": "2018-12-20"
+    },
+    "SetID": "d7c80374-f73d-4152-80fc-d47387d8a5c2",
+    "Summary": "Introduced at renal clinic -eGFR 9 plan for education/pathology/serology 3/01/19",
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "program": "RENAL_DISEASE",
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2018-12-20"
+    },
+    "serviceID": 8263,
+    "serviceType": 202,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 3
+}

@@ -1,0 +1,2587 @@
+[
+    {
+        "measure": "Height",
+        "2007-10-24": {
+            "id": 491,
+            "observationDate": {
+                "iso": "2007-10-24T10:30+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2007-10-24T10:30+10"
+                },
+                "serviceID": 11696,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 145
+        },
+        "2008-04-24": {
+            "id": 503,
+            "observationDate": {
+                "iso": "2008-04-24T10:30+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2008-04-24T10:30+10"
+                },
+                "serviceID": 11697,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 145
+        },
+        "2008-10-24": {
+            "id": 515,
+            "observationDate": {
+                "iso": "2008-10-24T10:30+11"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2008-10-24T10:30+11"
+                },
+                "serviceID": 11698,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 145
+        },
+        "2009-04-24": {
+            "id": 527,
+            "observationDate": {
+                "iso": "2009-04-24T10:30+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2009-04-24T10:30+10"
+                },
+                "serviceID": 11699,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 145
+        },
+        "2018-06-02": {
+            "id": 456,
+            "observationDate": {
+                "iso": "2018-06-02T10:02+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2018-06-02T10:02+10"
+                },
+                "serviceID": 11694,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 0.92, FVC: 1.62"
+            },
+            "valueNumber": 161
+        },
+        "2019-07-01": {
+            "id": 28,
+            "observationDate": {
+                "iso": "2019-07-01T20:50+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-07-01T20:50+10"
+                },
+                "serviceID": 2,
+                "serviceType": 1,
+                "summary": "This is number 33 test"
+            },
+            "valueNumber": 1
+        },
+        "2019-08-02": {
+            "id": 10,
+            "observationDate": {
+                "iso": "2019-08-02"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "RENAL_DISEASE",
+                "serviceDate": {
+                    "iso": "2019-08-02"
+                },
+                "serviceID": 21,
+                "serviceType": 33,
+                "summary": "s"
+            },
+            "valueNumber": 12.3
+        },
+        "2019-09-01": {
+            "id": 154,
+            "observationDate": {
+                "iso": "2019-09-01T10:34+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-01T10:34+10"
+                },
+                "serviceID": 65,
+                "serviceType": 1,
+                "summary": "Test propagation"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-09": {
+            "id": 137,
+            "observationDate": {
+                "iso": "2019-09-09T12:04+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-09T12:04+10"
+                },
+                "serviceID": 41,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-10": {
+            "id": 162,
+            "observationDate": {
+                "iso": "2019-09-10T16:09+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-10T16:09+10"
+                },
+                "serviceID": 69,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-11": {
+            "id": 178,
+            "observationDate": {
+                "iso": "2019-09-11T13:30+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-11T13:30+10"
+                },
+                "serviceID": 71,
+                "serviceType": 1,
+                "summary": "back to normal"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-12": {
+            "id": 186,
+            "observationDate": {
+                "iso": "2019-09-12T15:50+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-12T15:50+10"
+                },
+                "serviceID": 90,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-13": {
+            "id": 211,
+            "observationDate": {
+                "iso": "2019-09-13T16:22+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "RENAL_DISEASE",
+                "serviceDate": {
+                    "iso": "2019-09-13T16:22+10"
+                },
+                "serviceID": 137,
+                "serviceType": 57,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-16": {
+            "id": 274,
+            "observationDate": {
+                "iso": "2019-09-16T16:21+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "CYSTIC_FIBROSIS",
+                "serviceDate": {
+                    "iso": "2019-09-16T16:21+10"
+                },
+                "serviceID": 212,
+                "serviceType": 183,
+                "summary": "WEBUI - CF Examination"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-17": {
+            "id": 289,
+            "observationDate": {
+                "iso": "2019-09-17T11:31+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-17T11:31+10"
+                },
+                "serviceID": 243,
+                "serviceType": 1,
+                "summary": "WebUI Consultation Notes"
+            },
+            "valueNumber": 1
+        },
+        "2019-11-13": {
+            "id": 301,
+            "observationDate": {
+                "iso": "2019-11-13T15:52+11"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-11-13T15:52+11"
+                },
+                "serviceID": 2516,
+                "serviceType": 1,
+                "summary": "test"
+            },
+            "valueNumber": 180
+        },
+        "2019-12-10": {
+            "id": 468,
+            "observationDate": {
+                "iso": "2019-12-10T10:02+11"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2019-12-10T10:02+11"
+                },
+                "serviceID": 11695,
+                "serviceType": 72,
+                "summary": "Pre BD FEV1: 0.95, FVC: 1.55"
+            },
+            "valueNumber": 160
+        },
+        "2020-01-08": {
+            "id": 313,
+            "observationDate": {
+                "iso": "2020-01-08T13:52+11"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-08T13:52+11"
+                },
+                "serviceID": 11486,
+                "serviceType": 1,
+                "summary": "bmi"
+            },
+            "valueNumber": 180
+        },
+        "2020-01-09": {
+            "id": 322,
+            "observationDate": {
+                "iso": "2020-01-09T16:04+11"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-09T16:04+11"
+                },
+                "serviceID": 11510,
+                "serviceType": 1,
+                "summary": "01234567890123456789012345678901234567890123456..."
+            },
+            "valueNumber": 180
+        },
+        "2020-01-10": {
+            "id": 334,
+            "observationDate": {
+                "iso": "2020-01-10T10:30+11"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2020-01-10T10:30+11"
+                },
+                "serviceID": 11525,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 145
+        },
+        "2020-01-20": {
+            "id": 348,
+            "observationDate": {
+                "iso": "2020-01-20"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-01-20"
+                },
+                "serviceID": 11529,
+                "serviceType": 142,
+                "summary": "Hep assessment"
+            },
+            "valueNumber": 160
+        },
+        "2020-01-23": {
+            "id": 351,
+            "observationDate": {
+                "iso": "2020-01-23"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "RENAL_DISEASE",
+                "serviceDate": {
+                    "iso": "2020-01-23"
+                },
+                "serviceID": 11560,
+                "serviceType": 33,
+                "summary": "ds"
+            },
+            "valueNumber": 12.3
+        },
+        "2020-02-25": {
+            "id": 361,
+            "observationDate": {
+                "iso": "2020-02-25T16:43+11"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "VASCULAR",
+                "serviceDate": {
+                    "iso": "2020-02-25T16:43+11"
+                },
+                "serviceID": 11594,
+                "serviceType": 1,
+                "summary": "Testing if can save"
+            },
+            "valueNumber": 181
+        },
+        "2020-03-10": {
+            "id": 371,
+            "observationDate": {
+                "iso": "2020-03-10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-03-10"
+                },
+                "serviceID": 11604,
+                "serviceType": 121,
+                "summary": "Consultation."
+            },
+            "valueNumber": 181
+        },
+        "2020-03-22": {
+            "id": 444,
+            "observationDate": {
+                "iso": "2020-03-22T10:30+11"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2020-03-22T10:30+11"
+                },
+                "serviceID": 11693,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 145
+        },
+        "2020-04-07": {
+            "id": 386,
+            "observationDate": {
+                "iso": "2020-04-07T17:15+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-07T17:15+10"
+                },
+                "serviceID": 11668,
+                "serviceType": 121,
+                "summary": "Consultation. Assessment"
+            },
+            "valueNumber": 180
+        },
+        "2020-04-08": {
+            "id": 404,
+            "observationDate": {
+                "iso": "2020-04-08T17:44+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-08T17:44+10"
+                },
+                "serviceID": 11677,
+                "serviceType": 142,
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisc..."
+            },
+            "valueNumber": 180
+        },
+        "2020-06-11": {
+            "id": 530,
+            "observationDate": {
+                "iso": "2020-06-11T10:02+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2020-06-11T10:02+10"
+                },
+                "serviceID": 11707,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 0.96, FVC: 1.62"
+            },
+            "valueNumber": 160
+        },
+        "2020-08-16": {
+            "id": 1574,
+            "observationDate": {
+                "iso": "2020-08-16T12:34+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-08-16T12:34+10"
+                },
+                "serviceID": 11814,
+                "serviceType": 1,
+                "summary": "ss"
+            },
+            "valueNumber": 161
+        },
+        "2020-08-18": {
+            "id": 1572,
+            "observationDate": {
+                "iso": "2020-08-18T15:01+10"
+            },
+            "observationType": "Height",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-08-18T15:01+10"
+                },
+                "serviceID": 11813,
+                "serviceType": 1,
+                "summary": "dsf"
+            },
+            "valueNumber": 160
+        }
+    },
+    {
+        "measure": "Weight",
+        "2007-10-24": {
+            "id": 492,
+            "observationDate": {
+                "iso": "2007-10-24T10:30+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2007-10-24T10:30+10"
+                },
+                "serviceID": 11696,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 35.3
+        },
+        "2008-04-24": {
+            "id": 504,
+            "observationDate": {
+                "iso": "2008-04-24T10:30+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2008-04-24T10:30+10"
+                },
+                "serviceID": 11697,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 37.8
+        },
+        "2008-10-24": {
+            "id": 516,
+            "observationDate": {
+                "iso": "2008-10-24T10:30+11"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2008-10-24T10:30+11"
+                },
+                "serviceID": 11698,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 37.8
+        },
+        "2009-04-24": {
+            "id": 528,
+            "observationDate": {
+                "iso": "2009-04-24T10:30+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2009-04-24T10:30+10"
+                },
+                "serviceID": 11699,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 37.8
+        },
+        "2018-06-02": {
+            "id": 457,
+            "observationDate": {
+                "iso": "2018-06-02T10:02+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2018-06-02T10:02+10"
+                },
+                "serviceID": 11694,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 0.92, FVC: 1.62"
+            },
+            "valueNumber": 37.9
+        },
+        "2019-07-01": {
+            "id": 106,
+            "observationDate": {
+                "iso": "2019-07-01T20:50+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-07-01T20:50+10"
+                },
+                "serviceID": 2,
+                "serviceType": 1,
+                "summary": "This is number 33 test"
+            },
+            "valueNumber": 1
+        },
+        "2019-07-26": {
+            "id": 1,
+            "observationDate": {
+                "iso": "2019-07-26T16:50+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "CANCER",
+                "serviceDate": {
+                    "iso": "2019-07-26T16:50+10"
+                },
+                "serviceID": 18,
+                "serviceType": 190,
+                "summary": "Reason: Benign tumour, Approach: Laparoscopic direct"
+            },
+            "valueNumber": 58
+        },
+        "2019-09-01": {
+            "id": 155,
+            "observationDate": {
+                "iso": "2019-09-01T10:34+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-01T10:34+10"
+                },
+                "serviceID": 65,
+                "serviceType": 1,
+                "summary": "Test propagation"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-09": {
+            "id": 138,
+            "observationDate": {
+                "iso": "2019-09-09T12:04+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-09T12:04+10"
+                },
+                "serviceID": 41,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-10": {
+            "id": 163,
+            "observationDate": {
+                "iso": "2019-09-10T16:09+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-10T16:09+10"
+                },
+                "serviceID": 69,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-11": {
+            "id": 179,
+            "observationDate": {
+                "iso": "2019-09-11T13:30+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-11T13:30+10"
+                },
+                "serviceID": 71,
+                "serviceType": 1,
+                "summary": "back to normal"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-12": {
+            "id": 187,
+            "observationDate": {
+                "iso": "2019-09-12T15:50+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-12T15:50+10"
+                },
+                "serviceID": 90,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-13": {
+            "id": 210,
+            "observationDate": {
+                "iso": "2019-09-13T16:22+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "RENAL_DISEASE",
+                "serviceDate": {
+                    "iso": "2019-09-13T16:22+10"
+                },
+                "serviceID": 137,
+                "serviceType": 57,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-16": {
+            "id": 276,
+            "observationDate": {
+                "iso": "2019-09-16T16:21+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "CYSTIC_FIBROSIS",
+                "serviceDate": {
+                    "iso": "2019-09-16T16:21+10"
+                },
+                "serviceID": 212,
+                "serviceType": 183,
+                "summary": "WEBUI - CF Examination"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-17": {
+            "id": 290,
+            "observationDate": {
+                "iso": "2019-09-17T11:31+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-17T11:31+10"
+                },
+                "serviceID": 243,
+                "serviceType": 1,
+                "summary": "WebUI Consultation Notes"
+            },
+            "valueNumber": 1
+        },
+        "2019-11-13": {
+            "id": 302,
+            "observationDate": {
+                "iso": "2019-11-13T15:52+11"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-11-13T15:52+11"
+                },
+                "serviceID": 2516,
+                "serviceType": 1,
+                "summary": "test"
+            },
+            "valueNumber": 80
+        },
+        "2019-12-10": {
+            "id": 469,
+            "observationDate": {
+                "iso": "2019-12-10T10:02+11"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2019-12-10T10:02+11"
+                },
+                "serviceID": 11695,
+                "serviceType": 72,
+                "summary": "Pre BD FEV1: 0.95, FVC: 1.55"
+            },
+            "valueNumber": 40
+        },
+        "2020-01-08": {
+            "id": 314,
+            "observationDate": {
+                "iso": "2020-01-08T13:52+11"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-08T13:52+11"
+                },
+                "serviceID": 11486,
+                "serviceType": 1,
+                "summary": "bmi"
+            },
+            "valueNumber": 85
+        },
+        "2020-01-09": {
+            "id": 323,
+            "observationDate": {
+                "iso": "2020-01-09T16:04+11"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-09T16:04+11"
+                },
+                "serviceID": 11510,
+                "serviceType": 1,
+                "summary": "01234567890123456789012345678901234567890123456..."
+            },
+            "valueNumber": 80
+        },
+        "2020-01-10": {
+            "id": 335,
+            "observationDate": {
+                "iso": "2020-01-10T10:30+11"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2020-01-10T10:30+11"
+                },
+                "serviceID": 11525,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 35.3
+        },
+        "2020-01-20": {
+            "id": 349,
+            "observationDate": {
+                "iso": "2020-01-20"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-01-20"
+                },
+                "serviceID": 11529,
+                "serviceType": 142,
+                "summary": "Hep assessment"
+            },
+            "valueNumber": 37.7
+        },
+        "2020-02-25": {
+            "id": 362,
+            "observationDate": {
+                "iso": "2020-02-25T16:43+11"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "VASCULAR",
+                "serviceDate": {
+                    "iso": "2020-02-25T16:43+11"
+                },
+                "serviceID": 11594,
+                "serviceType": 1,
+                "summary": "Testing if can save"
+            },
+            "valueNumber": 81
+        },
+        "2020-03-10": {
+            "id": 369,
+            "observationDate": {
+                "iso": "2020-03-10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-03-10"
+                },
+                "serviceID": 11602,
+                "serviceType": 142,
+                "summary": "a"
+            },
+            "valueNumber": 81
+        },
+        "2020-03-22": {
+            "id": 445,
+            "observationDate": {
+                "iso": "2020-03-22T10:30+11"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2020-03-22T10:30+11"
+                },
+                "serviceID": 11693,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 1.52, FVC: 5.67"
+            },
+            "valueNumber": 35.3
+        },
+        "2020-04-07": {
+            "id": 387,
+            "observationDate": {
+                "iso": "2020-04-07T17:15+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-07T17:15+10"
+                },
+                "serviceID": 11668,
+                "serviceType": 121,
+                "summary": "Consultation. Assessment"
+            },
+            "valueNumber": 80
+        },
+        "2020-04-08": {
+            "id": 405,
+            "observationDate": {
+                "iso": "2020-04-08T17:44+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-08T17:44+10"
+                },
+                "serviceID": 11677,
+                "serviceType": 142,
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisc..."
+            },
+            "valueNumber": 80
+        },
+        "2020-06-11": {
+            "id": 531,
+            "observationDate": {
+                "iso": "2020-06-11T10:02+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 22,
+                "serviceDate": {
+                    "iso": "2020-06-11T10:02+10"
+                },
+                "serviceID": 11707,
+                "serviceType": 72,
+                "summary": "Post BD FEV1: 0.96, FVC: 1.62"
+            },
+            "valueNumber": 37.7
+        },
+        "2020-08-16": {
+            "id": 1575,
+            "observationDate": {
+                "iso": "2020-08-16T12:34+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-08-16T12:34+10"
+                },
+                "serviceID": 11814,
+                "serviceType": 1,
+                "summary": "ss"
+            },
+            "valueNumber": 64
+        },
+        "2020-08-18": {
+            "id": 1573,
+            "observationDate": {
+                "iso": "2020-08-18T15:01+10"
+            },
+            "observationType": "Weight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-08-18T15:01+10"
+                },
+                "serviceID": 11813,
+                "serviceType": 1,
+                "summary": "dsf"
+            },
+            "valueNumber": 65
+        }
+    },
+    {
+        "measure": "BMI",
+        "2007-10-24": 16.8,
+        "2008-04-24": 18,
+        "2008-10-24": 18,
+        "2009-04-24": 18,
+        "2018-06-02": 14.6,
+        "2019-07-01": 10000,
+        "2019-07-26": 580000,
+        "2019-09-01": 10000,
+        "2019-09-09": 10000,
+        "2019-09-10": 10000,
+        "2019-09-11": 10000,
+        "2019-09-12": 10000,
+        "2019-09-13": 10000,
+        "2019-09-16": 10000,
+        "2019-09-17": 10000,
+        "2019-11-13": 24.7,
+        "2019-12-10": 15.6,
+        "2020-01-08": 26.2,
+        "2020-01-09": 24.7,
+        "2020-01-10": 16.8,
+        "2020-01-20": 14.7,
+        "2020-02-25": 24.7,
+        "2020-03-10": 24.7,
+        "2020-03-22": 16.8,
+        "2020-04-07": 24.7,
+        "2020-04-08": 24.7,
+        "2020-06-11": 14.7,
+        "2020-08-16": 24.7,
+        "2020-08-18": 25.4
+    },
+    {
+        "measure": "MinGoalWeight",
+        "2019-09-13": {
+            "id": 196,
+            "observationDate": {
+                "iso": "2019-09-13"
+            },
+            "observationType": "MinGoalWeight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "RENAL_DISEASE",
+                "serviceDate": {
+                    "iso": "2019-09-13"
+                },
+                "serviceID": 104,
+                "serviceType": 23,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-17": {
+            "id": 300,
+            "observationDate": {
+                "iso": "2019-09-17"
+            },
+            "observationType": "MinGoalWeight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2019-09-17"
+                },
+                "serviceID": 251,
+                "serviceType": 132,
+                "summary": "Service.DietitianNotes"
+            },
+            "valueNumber": 1
+        },
+        "2020-08-18": {
+            "id": 1571,
+            "observationDate": {
+                "iso": "2020-08-18"
+            },
+            "observationType": "MinGoalWeight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-08-18"
+                },
+                "serviceID": 11812,
+                "serviceType": 132,
+                "summary": "Dietary"
+            },
+            "valueNumber": 60
+        }
+    },
+    {
+        "measure": "MaxGoalWeight",
+        "2019-09-13": {
+            "id": 195,
+            "observationDate": {
+                "iso": "2019-09-13"
+            },
+            "observationType": "MaxGoalWeight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "RENAL_DISEASE",
+                "serviceDate": {
+                    "iso": "2019-09-13"
+                },
+                "serviceID": 104,
+                "serviceType": 23,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-17": {
+            "id": 299,
+            "observationDate": {
+                "iso": "2019-09-17"
+            },
+            "observationType": "MaxGoalWeight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2019-09-17"
+                },
+                "serviceID": 251,
+                "serviceType": 132,
+                "summary": "Service.DietitianNotes"
+            },
+            "valueNumber": 1
+        },
+        "2020-08-18": {
+            "id": 1570,
+            "observationDate": {
+                "iso": "2020-08-18"
+            },
+            "observationType": "MaxGoalWeight",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-08-18"
+                },
+                "serviceID": 11812,
+                "serviceType": 132,
+                "summary": "Dietary"
+            },
+            "valueNumber": 85
+        }
+    },
+    {
+        "measure": "BloodPressureSitting",
+        "2019-07-01": {
+            "id": 108,
+            "observationDate": {
+                "iso": "2019-07-01T20:50+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-07-01T20:50+10"
+                },
+                "serviceID": 2,
+                "serviceType": 1,
+                "summary": "This is number 33 test"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-01": {
+            "id": 157,
+            "observationDate": {
+                "iso": "2019-09-01T10:34+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-01T10:34+10"
+                },
+                "serviceID": 65,
+                "serviceType": 1,
+                "summary": "Test propagation"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-09": {
+            "id": 140,
+            "observationDate": {
+                "iso": "2019-09-09T12:04+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-09T12:04+10"
+                },
+                "serviceID": 41,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-10": {
+            "id": 165,
+            "observationDate": {
+                "iso": "2019-09-10T16:09+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-10T16:09+10"
+                },
+                "serviceID": 69,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-11": {
+            "id": 181,
+            "observationDate": {
+                "iso": "2019-09-11T13:30+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-11T13:30+10"
+                },
+                "serviceID": 71,
+                "serviceType": 1,
+                "summary": "back to normal"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-12": {
+            "id": 189,
+            "observationDate": {
+                "iso": "2019-09-12T15:50+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-12T15:50+10"
+                },
+                "serviceID": 90,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-13": {
+            "id": 202,
+            "observationDate": {
+                "iso": "2019-09-13T13:50+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "RENAL_DISEASE",
+                "serviceDate": {
+                    "iso": "2019-09-13T13:50+10"
+                },
+                "serviceID": 112,
+                "serviceType": 29,
+                "summary": "WEBUI Haemodialysis Review"
+            },
+            "valueString": "1/01"
+        },
+        "2019-09-16": {
+            "id": 278,
+            "observationDate": {
+                "iso": "2019-09-16T16:21+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "CYSTIC_FIBROSIS",
+                "serviceDate": {
+                    "iso": "2019-09-16T16:21+10"
+                },
+                "serviceID": 212,
+                "serviceType": 183,
+                "summary": "WEBUI - CF Examination"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-17": {
+            "id": 296,
+            "observationDate": {
+                "iso": "2019-09-17T11:39+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-17T11:39+10"
+                },
+                "serviceID": 245,
+                "serviceType": 7,
+                "summary": "Discharged, 1"
+            },
+            "valueString": "1/0"
+        },
+        "2020-01-09": {
+            "id": 325,
+            "observationDate": {
+                "iso": "2020-01-09T16:04+11"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-09T16:04+11"
+                },
+                "serviceID": 11510,
+                "serviceType": 1,
+                "summary": "01234567890123456789012345678901234567890123456..."
+            },
+            "valueString": "112/0"
+        },
+        "2020-01-20": {
+            "id": 350,
+            "observationDate": {
+                "iso": "2020-01-20"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-01-20"
+                },
+                "serviceID": 11529,
+                "serviceType": 142,
+                "summary": "Hep assessment"
+            },
+            "valueString": "112/0"
+        },
+        "2020-02-25": {
+            "id": 364,
+            "observationDate": {
+                "iso": "2020-02-25T16:43+11"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "VASCULAR",
+                "serviceDate": {
+                    "iso": "2020-02-25T16:43+11"
+                },
+                "serviceID": 11594,
+                "serviceType": 1,
+                "summary": "Testing if can save"
+            },
+            "valueString": "110/0"
+        },
+        "2020-03-10": {
+            "id": 370,
+            "observationDate": {
+                "iso": "2020-03-10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-03-10"
+                },
+                "serviceID": 11602,
+                "serviceType": 142,
+                "summary": "a"
+            },
+            "valueString": "110/0"
+        },
+        "2020-04-08": {
+            "id": 406,
+            "observationDate": {
+                "iso": "2020-04-08T17:44+10"
+            },
+            "observationType": "BloodPressureSitting",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-08T17:44+10"
+                },
+                "serviceID": 11677,
+                "serviceType": 142,
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisc..."
+            },
+            "valueString": "110/0"
+        }
+    },
+    {
+        "measure": "BloodPressureStanding",
+        "2019-07-01": {
+            "id": 110,
+            "observationDate": {
+                "iso": "2019-07-01T20:50+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-07-01T20:50+10"
+                },
+                "serviceID": 2,
+                "serviceType": 1,
+                "summary": "This is number 33 test"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-01": {
+            "id": 159,
+            "observationDate": {
+                "iso": "2019-09-01T10:34+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-01T10:34+10"
+                },
+                "serviceID": 65,
+                "serviceType": 1,
+                "summary": "Test propagation"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-09": {
+            "id": 142,
+            "observationDate": {
+                "iso": "2019-09-09T12:04+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-09T12:04+10"
+                },
+                "serviceID": 41,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-10": {
+            "id": 167,
+            "observationDate": {
+                "iso": "2019-09-10T16:09+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-10T16:09+10"
+                },
+                "serviceID": 69,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-11": {
+            "id": 183,
+            "observationDate": {
+                "iso": "2019-09-11T13:30+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-11T13:30+10"
+                },
+                "serviceID": 71,
+                "serviceType": 1,
+                "summary": "back to normal"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-12": {
+            "id": 191,
+            "observationDate": {
+                "iso": "2019-09-12T15:50+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-12T15:50+10"
+                },
+                "serviceID": 90,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-13": {
+            "id": 203,
+            "observationDate": {
+                "iso": "2019-09-13T13:50+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "RENAL_DISEASE",
+                "serviceDate": {
+                    "iso": "2019-09-13T13:50+10"
+                },
+                "serviceID": 112,
+                "serviceType": 29,
+                "summary": "WEBUI Haemodialysis Review"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-16": {
+            "id": 306,
+            "observationDate": {
+                "iso": "2019-09-16T16:21+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "CYSTIC_FIBROSIS",
+                "serviceDate": {
+                    "iso": "2019-09-16T16:21+10"
+                },
+                "serviceID": 212,
+                "serviceType": 183,
+                "summary": "WEBUI - CF Examination"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-17": {
+            "id": 294,
+            "observationDate": {
+                "iso": "2019-09-17T11:31+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-17T11:31+10"
+                },
+                "serviceID": 243,
+                "serviceType": 1,
+                "summary": "WebUI Consultation Notes"
+            },
+            "valueString": "1/0"
+        },
+        "2020-01-09": {
+            "id": 327,
+            "observationDate": {
+                "iso": "2020-01-09T16:04+11"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-09T16:04+11"
+                },
+                "serviceID": 11510,
+                "serviceType": 1,
+                "summary": "01234567890123456789012345678901234567890123456..."
+            },
+            "valueString": "132/0"
+        },
+        "2020-02-25": {
+            "id": 366,
+            "observationDate": {
+                "iso": "2020-02-25T16:43+11"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "VASCULAR",
+                "serviceDate": {
+                    "iso": "2020-02-25T16:43+11"
+                },
+                "serviceID": 11594,
+                "serviceType": 1,
+                "summary": "Testing if can save"
+            },
+            "valueString": "111/0"
+        },
+        "2020-04-07": {
+            "id": 388,
+            "observationDate": {
+                "iso": "2020-04-07T17:15+10"
+            },
+            "observationType": "BloodPressureStanding",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-07T17:15+10"
+                },
+                "serviceID": 11668,
+                "serviceType": 121,
+                "summary": "Consultation. Assessment"
+            },
+            "valueString": "100/5"
+        }
+    },
+    {
+        "measure": "BloodPressureLying",
+        "2019-07-01": {
+            "id": 105,
+            "observationDate": {
+                "iso": "2019-07-01T20:50+10"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-07-01T20:50+10"
+                },
+                "serviceID": 2,
+                "serviceType": 1,
+                "summary": "This is number 33 test"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-01": {
+            "id": 153,
+            "observationDate": {
+                "iso": "2019-09-01T10:34+10"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-01T10:34+10"
+                },
+                "serviceID": 65,
+                "serviceType": 1,
+                "summary": "Test propagation"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-09": {
+            "id": 136,
+            "observationDate": {
+                "iso": "2019-09-09T12:04+10"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-09T12:04+10"
+                },
+                "serviceID": 41,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-10": {
+            "id": 161,
+            "observationDate": {
+                "iso": "2019-09-10T16:09+10"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-10T16:09+10"
+                },
+                "serviceID": 69,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-11": {
+            "id": 177,
+            "observationDate": {
+                "iso": "2019-09-11T13:30+10"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-11T13:30+10"
+                },
+                "serviceID": 71,
+                "serviceType": 1,
+                "summary": "back to normal"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-12": {
+            "id": 185,
+            "observationDate": {
+                "iso": "2019-09-12T15:50+10"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-12T15:50+10"
+                },
+                "serviceID": 90,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-16": {
+            "id": 236,
+            "observationDate": {
+                "iso": "2019-09-16T13:03+10"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2019-09-16T13:03+10"
+                },
+                "serviceID": 176,
+                "serviceType": 135,
+                "summary": "WebUI Immunology Neuropsychology"
+            },
+            "valueString": "1/0"
+        },
+        "2019-09-17": {
+            "id": 288,
+            "observationDate": {
+                "iso": "2019-09-17T11:31+10"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-17T11:31+10"
+                },
+                "serviceID": 243,
+                "serviceType": 1,
+                "summary": "WebUI Consultation Notes"
+            },
+            "valueString": "1/0"
+        },
+        "2020-01-09": {
+            "id": 321,
+            "observationDate": {
+                "iso": "2020-01-09T16:04+11"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-09T16:04+11"
+                },
+                "serviceID": 11510,
+                "serviceType": 1,
+                "summary": "01234567890123456789012345678901234567890123456..."
+            },
+            "valueString": "122/0"
+        },
+        "2020-02-25": {
+            "id": 360,
+            "observationDate": {
+                "iso": "2020-02-25T16:43+11"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "VASCULAR",
+                "serviceDate": {
+                    "iso": "2020-02-25T16:43+11"
+                },
+                "serviceID": 11594,
+                "serviceType": 1,
+                "summary": "Testing if can save"
+            },
+            "valueString": "112/0"
+        },
+        "2020-04-07": {
+            "id": 391,
+            "observationDate": {
+                "iso": "2020-04-07"
+            },
+            "observationType": "BloodPressureLying",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-07"
+                },
+                "serviceID": 11667,
+                "serviceType": 121,
+                "summary": "Consultation. Lorem ipsum dolor sit amet, consectetur adipisc..."
+            },
+            "valueString": "100/1"
+        }
+    },
+    {
+        "measure": "Pulse",
+        "2019-07-01": {
+            "id": 107,
+            "observationDate": {
+                "iso": "2019-07-01T20:50+10"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-07-01T20:50+10"
+                },
+                "serviceID": 2,
+                "serviceType": 1,
+                "summary": "This is number 33 test"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-01": {
+            "id": 156,
+            "observationDate": {
+                "iso": "2019-09-01T10:34+10"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-01T10:34+10"
+                },
+                "serviceID": 65,
+                "serviceType": 1,
+                "summary": "Test propagation"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-09": {
+            "id": 139,
+            "observationDate": {
+                "iso": "2019-09-09T12:04+10"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-09T12:04+10"
+                },
+                "serviceID": 41,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-10": {
+            "id": 164,
+            "observationDate": {
+                "iso": "2019-09-10T16:09+10"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-10T16:09+10"
+                },
+                "serviceID": 69,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-11": {
+            "id": 180,
+            "observationDate": {
+                "iso": "2019-09-11T13:30+10"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-11T13:30+10"
+                },
+                "serviceID": 71,
+                "serviceType": 1,
+                "summary": "back to normal"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-12": {
+            "id": 188,
+            "observationDate": {
+                "iso": "2019-09-12T15:50+10"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-12T15:50+10"
+                },
+                "serviceID": 90,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-16": {
+            "id": 275,
+            "observationDate": {
+                "iso": "2019-09-16T16:21+10"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "CYSTIC_FIBROSIS",
+                "serviceDate": {
+                    "iso": "2019-09-16T16:21+10"
+                },
+                "serviceID": 212,
+                "serviceType": 183,
+                "summary": "WEBUI - CF Examination"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-17": {
+            "id": 291,
+            "observationDate": {
+                "iso": "2019-09-17T11:31+10"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-17T11:31+10"
+                },
+                "serviceID": 243,
+                "serviceType": 1,
+                "summary": "WebUI Consultation Notes"
+            },
+            "valueNumber": 1
+        },
+        "2020-01-09": {
+            "id": 324,
+            "observationDate": {
+                "iso": "2020-01-09T16:04+11"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-09T16:04+11"
+                },
+                "serviceID": 11510,
+                "serviceType": 1,
+                "summary": "01234567890123456789012345678901234567890123456..."
+            },
+            "valueNumber": 60
+        },
+        "2020-02-25": {
+            "id": 363,
+            "observationDate": {
+                "iso": "2020-02-25T16:43+11"
+            },
+            "observationType": "Pulse",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "VASCULAR",
+                "serviceDate": {
+                    "iso": "2020-02-25T16:43+11"
+                },
+                "serviceID": 11594,
+                "serviceType": 1,
+                "summary": "Testing if can save"
+            },
+            "valueNumber": 61
+        }
+    },
+    {
+        "measure": "Temperature",
+        "2019-07-01": {
+            "id": 111,
+            "observationDate": {
+                "iso": "2019-07-01T20:50+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-07-01T20:50+10"
+                },
+                "serviceID": 2,
+                "serviceType": 1,
+                "summary": "This is number 33 test"
+            },
+            "valueNumber": 31
+        },
+        "2019-09-01": {
+            "id": 160,
+            "observationDate": {
+                "iso": "2019-09-01T10:34+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-01T10:34+10"
+                },
+                "serviceID": 65,
+                "serviceType": 1,
+                "summary": "Test propagation"
+            },
+            "valueNumber": 30
+        },
+        "2019-09-09": {
+            "id": 143,
+            "observationDate": {
+                "iso": "2019-09-09T12:04+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-09T12:04+10"
+                },
+                "serviceID": 41,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 40
+        },
+        "2019-09-10": {
+            "id": 168,
+            "observationDate": {
+                "iso": "2019-09-10T16:09+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-10T16:09+10"
+                },
+                "serviceID": 69,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 30
+        },
+        "2019-09-11": {
+            "id": 184,
+            "observationDate": {
+                "iso": "2019-09-11T13:30+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-11T13:30+10"
+                },
+                "serviceID": 71,
+                "serviceType": 1,
+                "summary": "back to normal"
+            },
+            "valueNumber": 33
+        },
+        "2019-09-12": {
+            "id": 192,
+            "observationDate": {
+                "iso": "2019-09-12T15:50+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-12T15:50+10"
+                },
+                "serviceID": 90,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 33
+        },
+        "2019-09-16": {
+            "id": 279,
+            "observationDate": {
+                "iso": "2019-09-16T16:21+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "CYSTIC_FIBROSIS",
+                "serviceDate": {
+                    "iso": "2019-09-16T16:21+10"
+                },
+                "serviceID": 212,
+                "serviceType": 183,
+                "summary": "WEBUI - CF Examination"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-17": {
+            "id": 295,
+            "observationDate": {
+                "iso": "2019-09-17T11:31+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-17T11:31+10"
+                },
+                "serviceID": 243,
+                "serviceType": 1,
+                "summary": "WebUI Consultation Notes"
+            },
+            "valueNumber": 33
+        },
+        "2020-01-09": {
+            "id": 328,
+            "observationDate": {
+                "iso": "2020-01-09T16:04+11"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-09T16:04+11"
+                },
+                "serviceID": 11510,
+                "serviceType": 1,
+                "summary": "01234567890123456789012345678901234567890123456..."
+            },
+            "valueNumber": 37
+        },
+        "2020-02-25": {
+            "id": 367,
+            "observationDate": {
+                "iso": "2020-02-25T16:43+11"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "VASCULAR",
+                "serviceDate": {
+                    "iso": "2020-02-25T16:43+11"
+                },
+                "serviceID": 11594,
+                "serviceType": 1,
+                "summary": "Testing if can save"
+            },
+            "valueNumber": 39
+        },
+        "2020-04-07": {
+            "id": 389,
+            "observationDate": {
+                "iso": "2020-04-07T17:15+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-07T17:15+10"
+                },
+                "serviceID": 11668,
+                "serviceType": 121,
+                "summary": "Consultation. Assessment"
+            },
+            "valueNumber": 37
+        },
+        "2020-04-08": {
+            "id": 407,
+            "observationDate": {
+                "iso": "2020-04-08T17:44+10"
+            },
+            "observationType": "Temperature",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "IMMUNOLOGY",
+                "serviceDate": {
+                    "iso": "2020-04-08T17:44+10"
+                },
+                "serviceID": 11677,
+                "serviceType": 142,
+                "summary": "Lorem ipsum dolor sit amet, consectetur adipisc..."
+            },
+            "valueNumber": 37
+        }
+    },
+    {
+        "measure": "SPO2",
+        "2019-07-01": {
+            "id": 109,
+            "observationDate": {
+                "iso": "2019-07-01T20:50+10"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-07-01T20:50+10"
+                },
+                "serviceID": 2,
+                "serviceType": 1,
+                "summary": "This is number 33 test"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-01": {
+            "id": 158,
+            "observationDate": {
+                "iso": "2019-09-01T10:34+10"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-01T10:34+10"
+                },
+                "serviceID": 65,
+                "serviceType": 1,
+                "summary": "Test propagation"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-09": {
+            "id": 141,
+            "observationDate": {
+                "iso": "2019-09-09T12:04+10"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-09T12:04+10"
+                },
+                "serviceID": 41,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-10": {
+            "id": 166,
+            "observationDate": {
+                "iso": "2019-09-10T16:09+10"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-10T16:09+10"
+                },
+                "serviceID": 69,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-11": {
+            "id": 182,
+            "observationDate": {
+                "iso": "2019-09-11T13:30+10"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-11T13:30+10"
+                },
+                "serviceID": 71,
+                "serviceType": 1,
+                "summary": "back to normal"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-12": {
+            "id": 190,
+            "observationDate": {
+                "iso": "2019-09-12T15:50+10"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-12T15:50+10"
+                },
+                "serviceID": 90,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-16": {
+            "id": 277,
+            "observationDate": {
+                "iso": "2019-09-16T16:21+10"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "program": "CYSTIC_FIBROSIS",
+                "serviceDate": {
+                    "iso": "2019-09-16T16:21+10"
+                },
+                "serviceID": 212,
+                "serviceType": 183,
+                "summary": "WEBUI - CF Examination"
+            },
+            "valueNumber": 1
+        },
+        "2019-09-17": {
+            "id": 293,
+            "observationDate": {
+                "iso": "2019-09-17T11:31+10"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2019-09-17T11:31+10"
+                },
+                "serviceID": 243,
+                "serviceType": 1,
+                "summary": "WebUI Consultation Notes"
+            },
+            "valueNumber": 1
+        },
+        "2020-01-09": {
+            "id": 326,
+            "observationDate": {
+                "iso": "2020-01-09T16:04+11"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-01-09T16:04+11"
+                },
+                "serviceID": 11510,
+                "serviceType": 1,
+                "summary": "01234567890123456789012345678901234567890123456..."
+            },
+            "valueNumber": 5
+        },
+        "2020-02-25": {
+            "id": 365,
+            "observationDate": {
+                "iso": "2020-02-25T16:43+11"
+            },
+            "observationType": "SPO2",
+            "patientID": 2,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "program": "VASCULAR",
+                "serviceDate": {
+                    "iso": "2020-02-25T16:43+11"
+                },
+                "serviceID": 11594,
+                "serviceType": 1,
+                "summary": "Testing if can save"
+            },
+            "valueNumber": 11
+        }
+    }
+]

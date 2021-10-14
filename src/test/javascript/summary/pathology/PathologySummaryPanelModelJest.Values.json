@@ -1,0 +1,1265 @@
+[
+    [
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "code": "2954-6",
+                "codeSystem": "LOINC",
+                "name": "Sodium result",
+                "units": "mmol/L",
+                "value": "140.0",
+                "service": {
+                    "owningGroupID": 26,
+                    "serviceDate": {
+                        "iso": "2020-01-08"
+                    },
+                    "serviceID": 11478,
+                    "serviceType": 3,
+                    "summary": "Sweat Test"
+                },
+                "testDate": {
+                    "iso": "2020-01-08"
+                }
+            },
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            {
+                "code": "2077-6",
+                "codeSystem": "LOINC",
+                "name": "Chloride result",
+                "units": "mmol/L",
+                "value": "100.0",
+                "service": {
+                    "owningGroupID": 26,
+                    "serviceDate": {
+                        "iso": "2020-01-08"
+                    },
+                    "serviceID": 11478,
+                    "serviceType": 3,
+                    "summary": "Sweat Test"
+                },
+                "testDate": {
+                    "iso": "2020-01-08"
+                }
+            },
+            null
+        ]
+    ],
+    [
+        [
+            null,
+            null,
+            {
+                "abnormalFlags": "L",
+                "code": "8127-3",
+                "codeSystem": "LOINC",
+                "name": "CD4 Count",
+                "range": "32",
+                "units": "mg",
+                "value": "123",
+                "service": {
+                    "confidentiality": "Restricted",
+                    "owningGroupID": 26,
+                    "serviceDate": {
+                        "iso": "2020-01-21T10:06+11"
+                    },
+                    "serviceID": 11541,
+                    "serviceType": 3,
+                    "summary": "12345678901234567890123456789012345678901234567..."
+                },
+                "testDate": {
+                    "iso": "2020-01-21"
+                }
+            },
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            {
+                "code": "20447-9",
+                "codeSystem": "LOINC",
+                "name": "Viral Load",
+                "value": "456",
+                "service": {
+                    "confidentiality": "Restricted",
+                    "owningGroupID": 26,
+                    "serviceDate": {
+                        "iso": "2020-01-21T10:06+11"
+                    },
+                    "serviceID": 11541,
+                    "serviceType": 3,
+                    "summary": "12345678901234567890123456789012345678901234567..."
+                },
+                "testDate": {
+                    "iso": "2020-01-21"
+                }
+            },
+            null,
+            null,
+            null
+        ]
+    ],
+    [
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "3016-3",
+                "codeSystem": "LOINC",
+                "name": "TSH",
+                "range": "0.40-4.80",
+                "units": "mIU/L",
+                "value": "2.99",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:15+11"
+                    },
+                    "serviceID": 11621,
+                    "serviceType": 3,
+                    "summary": "TFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "14920-3",
+                "codeSystem": "LOINC",
+                "name": "Free T4",
+                "range": "8.0-16.0",
+                "units": "pmol/L",
+                "value": "13.8",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:15+11"
+                    },
+                    "serviceID": 11621,
+                    "serviceType": 3,
+                    "summary": "TFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "MoreInformation",
+                "name": "More Information",
+                "value": "see report",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:15+11"
+                    },
+                    "serviceID": 11621,
+                    "serviceType": 3,
+                    "summary": "TFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ]
+    ],
+    [
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "2951-2",
+                "codeSystem": "LOINC",
+                "name": "Sodium",
+                "range": "135-145",
+                "units": "mmol/L",
+                "value": "143",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11623,
+                    "serviceType": 3,
+                    "summary": "UEC"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "2823-3",
+                "codeSystem": "LOINC",
+                "name": "Potassium",
+                "range": "3.5-5.2",
+                "units": "mmol/L",
+                "value": "3.9",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11623,
+                    "serviceType": 3,
+                    "summary": "UEC"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "2075-0",
+                "codeSystem": "LOINC",
+                "name": "Chloride",
+                "range": "95-110",
+                "units": "mmol/L",
+                "value": "109",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11623,
+                    "serviceType": 3,
+                    "summary": "UEC"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "1963-8",
+                "codeSystem": "LOINC",
+                "name": "Bicarbonate",
+                "range": "22-32",
+                "units": "mmol/L",
+                "value": "26",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11623,
+                    "serviceType": 3,
+                    "summary": "UEC"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "22664-7",
+                "codeSystem": "LOINC",
+                "name": "Urea",
+                "range": "3.5-8.0",
+                "units": "mmol/L",
+                "value": "24.6",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11623,
+                    "serviceType": 3,
+                    "summary": "UEC"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "14682-9",
+                "codeSystem": "LOINC",
+                "name": "Creatinine",
+                "range": "60-110",
+                "units": "umol/L",
+                "value": "170",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11623,
+                    "serviceType": 3,
+                    "summary": "UEC"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "abnormalFlags": "L",
+                "code": "62238-1",
+                "codeSystem": "LOINC",
+                "name": "eGFR",
+                "range": ">60",
+                "units": "mL/mn/1.73m2",
+                "value": "43",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11623,
+                    "serviceType": 3,
+                    "summary": "UEC"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "MoreInformation",
+                "name": "More Information",
+                "value": "see report",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11623,
+                    "serviceType": 3,
+                    "summary": "UEC"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ]
+    ],
+    [
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "5902-2",
+                "codeSystem": "LOINC",
+                "name": "Prothrombin Time",
+                "range": "11-15",
+                "units": "s",
+                "value": "12",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T12:05+11"
+                    },
+                    "serviceID": 11624,
+                    "serviceType": 3,
+                    "summary": "Coag Screen"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "6301-6",
+                "codeSystem": "LOINC",
+                "name": "INR",
+                "value": "0.9",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T12:05+11"
+                    },
+                    "serviceID": 11624,
+                    "serviceType": 3,
+                    "summary": "Coag Screen"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "14979-9",
+                "codeSystem": "LOINC",
+                "name": "APTT",
+                "range": "25-35",
+                "units": "s",
+                "value": "33",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T12:05+11"
+                    },
+                    "serviceID": 11624,
+                    "serviceType": 3,
+                    "summary": "Coag Screen"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ]
+    ],
+    [
+        [
+            null,
+            null,
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "14913-8",
+                "codeSystem": "LOINC",
+                "name": "Testosterone",
+                "range": "6.0-22.0",
+                "units": "nmol/L",
+                "value": "23.0",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T12:05+11"
+                    },
+                    "serviceID": 11636,
+                    "serviceType": 3,
+                    "summary": "Testosterone total"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "MoreInformation",
+                "name": "More Information",
+                "value": "see report",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T12:05+11"
+                    },
+                    "serviceID": 11636,
+                    "serviceType": 3,
+                    "summary": "Testosterone total"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ]
+    ],
+    [
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "C1194",
+                "name": "AFP (Beckman)",
+                "range": "0.0-9.0",
+                "units": "ug/L",
+                "value": "2.1",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T09:20+11"
+                    },
+                    "serviceID": 11637,
+                    "serviceType": 3,
+                    "summary": "AFP"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "MoreInformation",
+                "name": "More Information",
+                "value": "see report",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T09:20+11"
+                    },
+                    "serviceID": 11637,
+                    "serviceType": 3,
+                    "summary": "AFP"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ]
+    ],
+    [
+        [
+            {
+                "abnormalFlags": "L",
+                "code": "2885-2",
+                "codeSystem": "LOINC",
+                "name": "Total protein",
+                "range": "60-80",
+                "units": "g/L",
+                "value": "36",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-05-02T08:26+10"
+                    },
+                    "serviceID": 11701,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-05-02"
+                }
+            },
+            {
+                "abnormalFlags": "L",
+                "code": "2885-2",
+                "codeSystem": "LOINC",
+                "name": "Total protein",
+                "range": "60-80",
+                "units": "g/L",
+                "value": "36",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-02-13T08:26+11"
+                    },
+                    "serviceID": 11700,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-02-13"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "L",
+                "code": "2885-2",
+                "codeSystem": "LOINC",
+                "name": "Total protein",
+                "range": "60-80",
+                "units": "g/L",
+                "value": "36",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11622,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "L",
+                "code": "2885-2",
+                "codeSystem": "LOINC",
+                "name": "Total protein",
+                "range": "60-80",
+                "units": "g/L",
+                "value": "36",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2008-02-25T08:26+11"
+                    },
+                    "serviceID": 11702,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2008-02-25"
+                }
+            }
+        ],
+        [
+            {
+                "abnormalFlags": "L",
+                "code": "61152-5",
+                "codeSystem": "LOINC",
+                "name": "Albumin",
+                "range": "33-48",
+                "units": "g/L",
+                "value": "33",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-05-02T08:26+10"
+                    },
+                    "serviceID": 11701,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-05-02"
+                }
+            },
+            {
+                "abnormalFlags": "L",
+                "code": "61152-5",
+                "codeSystem": "LOINC",
+                "name": "Albumin",
+                "range": "33-48",
+                "units": "g/L",
+                "value": "19",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-02-13T08:26+11"
+                    },
+                    "serviceID": 11700,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-02-13"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "L",
+                "code": "61152-5",
+                "codeSystem": "LOINC",
+                "name": "Albumin",
+                "range": "33-48",
+                "units": "g/L",
+                "value": "30",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11622,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "L",
+                "code": "61152-5",
+                "codeSystem": "LOINC",
+                "name": "Albumin",
+                "range": "33-48",
+                "units": "g/L",
+                "value": "35",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2008-02-25T08:26+11"
+                    },
+                    "serviceID": 11702,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2008-02-25"
+                }
+            }
+        ],
+        [
+            {
+                "code": "14631-6",
+                "codeSystem": "LOINC",
+                "name": "Bilirubin total",
+                "range": "0-20",
+                "units": "umol/L",
+                "value": "6",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-05-02T08:26+10"
+                    },
+                    "serviceID": 11701,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-05-02"
+                }
+            },
+            {
+                "code": "14631-6",
+                "codeSystem": "LOINC",
+                "name": "Bilirubin total",
+                "range": "0-20",
+                "units": "umol/L",
+                "value": "6",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-02-13T08:26+11"
+                    },
+                    "serviceID": 11700,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-02-13"
+                }
+            },
+            null,
+            {
+                "code": "14631-6",
+                "codeSystem": "LOINC",
+                "name": "Bilirubin total",
+                "range": "0-20",
+                "units": "umol/L",
+                "value": "6",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11622,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            {
+                "code": "14631-6",
+                "codeSystem": "LOINC",
+                "name": "Bilirubin total",
+                "range": "0-20",
+                "units": "umol/L",
+                "value": "6",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2008-02-25T08:26+11"
+                    },
+                    "serviceID": 11702,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2008-02-25"
+                }
+            }
+        ],
+        [
+            {
+                "code": "6768-6",
+                "codeSystem": "LOINC",
+                "name": "Alkaline phosphat.",
+                "range": "30-110",
+                "units": "U/L",
+                "value": "76",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-05-02T08:26+10"
+                    },
+                    "serviceID": 11701,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-05-02"
+                }
+            },
+            {
+                "code": "6768-6",
+                "codeSystem": "LOINC",
+                "name": "Alkaline phosphat.",
+                "range": "30-110",
+                "units": "U/L",
+                "value": "88",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-02-13T08:26+11"
+                    },
+                    "serviceID": 11700,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-02-13"
+                }
+            },
+            null,
+            {
+                "code": "6768-6",
+                "codeSystem": "LOINC",
+                "name": "Alkaline phosphat.",
+                "range": "30-110",
+                "units": "U/L",
+                "value": "88",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11622,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            {
+                "code": "6768-6",
+                "codeSystem": "LOINC",
+                "name": "Alkaline phosphat.",
+                "range": "30-110",
+                "units": "U/L",
+                "value": "29",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2008-02-25T08:26+11"
+                    },
+                    "serviceID": 11702,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2008-02-25"
+                }
+            }
+        ],
+        [
+            {
+                "abnormalFlags": "H",
+                "code": "1744-2",
+                "codeSystem": "LOINC",
+                "name": "ALT",
+                "range": "0-40",
+                "units": "U/L",
+                "value": "105",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-05-02T08:26+10"
+                    },
+                    "serviceID": 11701,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-05-02"
+                }
+            },
+            {
+                "abnormalFlags": "H",
+                "code": "1744-2",
+                "codeSystem": "LOINC",
+                "name": "ALT",
+                "range": "0-40",
+                "units": "U/L",
+                "value": "105",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-02-13T08:26+11"
+                    },
+                    "serviceID": 11700,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-02-13"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "1744-2",
+                "codeSystem": "LOINC",
+                "name": "ALT",
+                "range": "0-40",
+                "units": "U/L",
+                "value": "105",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11622,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "1744-2",
+                "codeSystem": "LOINC",
+                "name": "ALT",
+                "range": "0-40",
+                "units": "U/L",
+                "value": "105",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2008-02-25T08:26+11"
+                    },
+                    "serviceID": 11702,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2008-02-25"
+                }
+            }
+        ],
+        [
+            {
+                "abnormalFlags": "H",
+                "code": "1920-8",
+                "codeSystem": "LOINC",
+                "name": "AST",
+                "range": "0-35",
+                "units": "U/L",
+                "value": "148",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-05-02T08:26+10"
+                    },
+                    "serviceID": 11701,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-05-02"
+                }
+            },
+            {
+                "abnormalFlags": "H",
+                "code": "1920-8",
+                "codeSystem": "LOINC",
+                "name": "AST",
+                "range": "0-35",
+                "units": "U/L",
+                "value": "148",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-02-13T08:26+11"
+                    },
+                    "serviceID": 11700,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-02-13"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "1920-8",
+                "codeSystem": "LOINC",
+                "name": "AST",
+                "range": "0-35",
+                "units": "U/L",
+                "value": "148",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11622,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "1920-8",
+                "codeSystem": "LOINC",
+                "name": "AST",
+                "range": "0-35",
+                "units": "U/L",
+                "value": "148",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2008-02-25T08:26+11"
+                    },
+                    "serviceID": 11702,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2008-02-25"
+                }
+            }
+        ],
+        [
+            {
+                "abnormalFlags": "H",
+                "code": "2324-2",
+                "codeSystem": "LOINC",
+                "name": "GGT",
+                "range": "0-50",
+                "units": "U/L",
+                "value": "53",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-05-02T08:26+10"
+                    },
+                    "serviceID": 11701,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-05-02"
+                }
+            },
+            {
+                "abnormalFlags": "H",
+                "code": "2324-2",
+                "codeSystem": "LOINC",
+                "name": "GGT",
+                "range": "0-50",
+                "units": "U/L",
+                "value": "53",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-02-13T08:26+11"
+                    },
+                    "serviceID": 11700,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-02-13"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "2324-2",
+                "codeSystem": "LOINC",
+                "name": "GGT",
+                "range": "0-50",
+                "units": "U/L",
+                "value": "53",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11622,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            {
+                "abnormalFlags": "H",
+                "code": "2324-2",
+                "codeSystem": "LOINC",
+                "name": "GGT",
+                "range": "0-50",
+                "units": "U/L",
+                "value": "53",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2008-02-25T08:26+11"
+                    },
+                    "serviceID": 11702,
+                    "serviceType": 3,
+                    "summary": "LFT"
+                },
+                "testDate": {
+                    "iso": "2008-02-25"
+                }
+            }
+        ]
+    ],
+    [
+        [
+            null,
+            null,
+            null,
+            {
+                "abnormalFlags": "L",
+                "code": "2000-8",
+                "codeSystem": "LOINC",
+                "name": "Calcium",
+                "range": "2.10-2.60",
+                "units": "mmol/L",
+                "value": "1.91",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11620,
+                    "serviceType": 3,
+                    "summary": "Ca corr for Alb"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            {
+                "code": "29265-6",
+                "codeSystem": "LOINC",
+                "name": "Calcium (corr. Alb)",
+                "range": "2.10-2.60",
+                "units": "mmol/L",
+                "value": "2.16",
+                "service": {
+                    "owningGroupID": 29,
+                    "serviceDate": {
+                        "iso": "2020-01-20T08:26+11"
+                    },
+                    "serviceID": 11620,
+                    "serviceType": 3,
+                    "summary": "Ca corr for Alb"
+                },
+                "testDate": {
+                    "iso": "2020-01-20"
+                }
+            },
+            null,
+            null
+        ]
+    ]
+]

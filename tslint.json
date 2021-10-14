@@ -1,0 +1,61 @@
+{
+    "extends": "tslint-config-airbnb",
+    "rules": {
+        "align": [false],
+        "brace-style": [
+            "error",
+            "allman"
+        ],
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "import-name": [
+            false
+        ],
+        "max-line-length": [
+            true,
+            120
+        ],
+        "member-access": {
+            "options": [true],
+            "severity": "error"
+        },
+        "no-console": {
+            "options": [true, "log", "error"],
+            "severity": "warning"
+        },
+        "no-else-after-return": [
+            false
+        ],
+        "object-curly-spacing": [
+            false
+        ],
+        "ter-arrow-parens": [
+            false
+        ],
+        "ter-indent": [
+            true,
+            4
+        ],
+        "trailing-comma": [
+            true,
+            {
+                "singleline": "never",
+                "multiline": {
+                    "objects": "never",
+                    "arrays": "never",
+                    "functions": "never",
+                    "typeLiterals": "ignore"
+                }
+            }
+        ]
+    },
+    "linterOptions": {
+        "exclude": [
+            "*.json",
+            "**/*.json"
+        ]
+    }
+}

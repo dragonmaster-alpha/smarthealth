@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="assets/logo_reverse_16x16.png" rel="icon" type="image/png">
+    <meta charset="UTF-8">
+    <title>Smart Health</title>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    function isUserBrowserIE()
+    {
+        var userAgent = window.navigator.userAgent;
+        // IE 10 or older is distinguish with "MSIE" in userAgent
+        // IE 11 is distinguish with "Trident" in userAgent
+        // https://stackoverflow.com/questions/19999388/check-if-user-is-using-ie
+        var browserTypeIE10OrUnder = userAgent.indexOf('MSIE') > -1;
+        var browserTypeIE11 = userAgent.indexOf('Trident') > -1;
+        return browserTypeIE10OrUnder || browserTypeIE11;
+    }
+
+    if (isUserBrowserIE())
+    {
+        // redirect to unsupported message page for Internet Explorer
+        window.location.href = 'assets/InternetExplorerUnsupportedMessage.html';
+    }
+</script>
+</body>
+</html>

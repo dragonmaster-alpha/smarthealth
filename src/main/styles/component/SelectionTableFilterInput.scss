@@ -1,0 +1,21 @@
+/**
+ * Styles for SelectionTableFilterInput.tsx
+ *
+ * @author Thompson 17/12/2019
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2019
+ */
+
+.cp-selectionTableFilterInput {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1ex;
+  justify-content: space-between;
+}
+
+.cp-selectionTableFilterInput-label {
+  margin-right: 1em;
+}
+
+.cp-selectionTableFilterInput-input {
+  flex-grow: 1;
+}

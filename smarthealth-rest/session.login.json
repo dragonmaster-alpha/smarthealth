@@ -1,0 +1,27 @@
+{
+  "groupsAndLocations": [
+    {
+      "locations": [],
+      "medicalGroup": {
+        "city": "Fiberville",
+        "groupID": 34,
+        "name": "Digestable Dietitians",
+        "participating": false,
+        "phone": "(07) 7777 6666",
+        "practiceSettingCode": "8539-6",
+        "state": "Tas"
+      }
+    }
+  ],
+  "sessionID": "ABCDEF123456",
+  "user": {
+    "name": {
+      "familyName": "Test",
+      "givenName": "Unit",
+      "otherGivenNames": "the 1th",
+      "title": "Dr"
+    },
+    "participating": false,
+    "userID": 765
+  }
+}

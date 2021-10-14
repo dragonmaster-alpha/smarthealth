@@ -1,0 +1,116 @@
+[
+    {
+        "id": 1690,
+        "observationDate": {
+            "iso": "2020-08-22T10:00+10"
+        },
+        "observationType": "Height",
+        "patientID": 46,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-22T10:00+10"
+            },
+            "serviceID": 11864,
+            "serviceType": 1,
+            "summary": "s"
+        },
+        "valueNumber": 171
+    },
+    {
+        "id": 1691,
+        "observationDate": {
+            "iso": "2020-08-22T10:00+10"
+        },
+        "observationType": "Weight",
+        "patientID": 46,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-22T10:00+10"
+            },
+            "serviceID": 11864,
+            "serviceType": 1,
+            "summary": "s"
+        },
+        "valueNumber": 71
+    },
+    {
+        "id": 1688,
+        "observationDate": {
+            "iso": "2020-08-23T10:00+10"
+        },
+        "observationType": "Height",
+        "patientID": 46,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-23T10:00+10"
+            },
+            "serviceID": 11863,
+            "serviceType": 1,
+            "summary": "x"
+        },
+        "valueNumber": 171
+    },
+    {
+        "id": 1689,
+        "observationDate": {
+            "iso": "2020-08-23T10:00+10"
+        },
+        "observationType": "Weight",
+        "patientID": 46,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-23T10:00+10"
+            },
+            "serviceID": 11863,
+            "serviceType": 1,
+            "summary": "x"
+        },
+        "valueNumber": 69
+    },
+    {
+        "id": 1686,
+        "observationDate": {
+            "iso": "2020-08-24T16:13+10"
+        },
+        "observationType": "Height",
+        "patientID": 46,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-24T16:13+10"
+            },
+            "serviceID": 11862,
+            "serviceType": 1,
+            "summary": "as"
+        },
+        "valueNumber": 170
+    },
+    {
+        "id": 1687,
+        "observationDate": {
+            "iso": "2020-08-24T16:13+10"
+        },
+        "observationType": "Weight",
+        "patientID": 46,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-24T16:13+10"
+            },
+            "serviceID": 11862,
+            "serviceType": 1,
+            "summary": "as"
+        },
+        "valueNumber": 70
+    }
+]

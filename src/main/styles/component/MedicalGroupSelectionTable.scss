@@ -1,0 +1,26 @@
+// @import 'variable';
+
+/**
+ * Styles for MedicalGroupSelectionTable.tsx
+ *
+ * @author Thompson 13/02/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+
+.cp-MedicalGroupSelectionTable {
+  // default background color is transparent. Therefore, when there is no rows in the table for example. User can see
+  // what's behind this selection table component.
+  background-color: white;
+  border: 1px solid $p-table-field-border-color;
+
+  width: 60rem;
+
+  &-footer {
+    background-color: $p-table-field-footer-background-color;
+    font-weight: bold;
+
+    padding: $table-field-vertical-footer-padding $table-field-horizontal-footer-padding;
+
+    text-align: center;
+  }
+}

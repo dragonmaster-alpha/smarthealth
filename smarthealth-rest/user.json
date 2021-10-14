@@ -1,0 +1,15 @@
+{
+  "active": true,
+  "homeMedicalGroupID": 1,
+  "jobTitle": "Oncologist",
+  "name": {
+    "familyName": "Test",
+    "givenName": "Una",
+    "otherGivenNames": "",
+    "title": "Ms"
+  },
+  "participating": true,
+  "qualifications": "PhD",
+  "userID": 42,
+  "version": 0
+}

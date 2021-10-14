@@ -1,0 +1,672 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "Height",
+        "label": "Height",
+        "type": "Number",
+        "units": "cm"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "Weight",
+        "label": "Weight",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "calculation": {
+          "paramFieldIDs": [
+            "Height",
+            "Weight"
+          ],
+          "type": "BMI"
+        },
+        "id": "BMI",
+        "label": "BMI",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "LowerHealthyWeight",
+        "label": "Healthy weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "UpperHealthyWeight",
+        "label": "",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "tabs": {
+        "tabs": [
+          {
+            "sections": [
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "options": [
+                          "EER \u003d BMR * SF * AF",
+                          "EER for CF \u003d BEE * SF * AF"
+                        ],
+                        "size": 80,
+                        "id": "EnergyRequirements.EER",
+                        "label": "Estimated energy requirements",
+                        "layout": {
+                          "span": 2
+                        },
+                        "toolTip": "\u003chtml\u003e \u003cul\u003e \u003cli\u003eEER - Estimated energy requirement \u003c/li\u003e \u003cli\u003eBMR - Basal metabolic rate \u003c/li\u003e \u003cli\u003eSF - Stress factor \u003c/li\u003e \u003cli\u003eAF - Activity factor \u003c/li\u003e \u003cli\u003eBEE - Basal energy expenditure) \u003c/li\u003e \u003cul\u003e \u003c/html\u003e",
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 5,
+                        "scale": 0,
+                        "id": "EnergyRequirements.BMR",
+                        "label": "BMR",
+                        "toolTip": "Basal Metabolic Rate",
+                        "type": "Number",
+                        "units": "kJ/day"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 4,
+                        "scale": 2,
+                        "id": "EnergyRequirements.SF",
+                        "label": "* SF",
+                        "toolTip": "Stress factor",
+                        "type": "Number"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 4,
+                        "scale": 2,
+                        "id": "EnergyRequirements.AF",
+                        "label": "* AF",
+                        "toolTip": "Activity factor",
+                        "type": "Number"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 5,
+                        "scale": 0,
+                        "id": "EnergyRequirements.BEE",
+                        "label": "BEE",
+                        "toolTip": "Basal energy expenditure",
+                        "type": "Number",
+                        "units": "kJ/day"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 5,
+                        "scale": 0,
+                        "id": "EnergyRequirements.EERValue",
+                        "label": "\u003d EER",
+                        "toolTip": "Estimated energy requirement",
+                        "type": "Number",
+                        "units": "kJ/day"
+                      }
+                    },
+                    {
+                      "field": {
+                        "id": "EnergyRequirements.Pregnant",
+                        "label": "Pregnant",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "id": "EnergyRequirements.Lactating",
+                        "label": "Lactating",
+                        "type": "Boolean"
+                      }
+                    }
+                  ],
+                  "id": "EnergyRequirements",
+                  "layoutShow": true,
+                  "title": "Energy Requirements"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "columns": [
+                          {
+                            "size": 15,
+                            "id": "DetailsOfMeal",
+                            "label": "Details of meal",
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "size": 40,
+                            "id": "Description",
+                            "label": "Description",
+                            "type": "Text"
+                          },
+                          {
+                            "precision": 5,
+                            "scale": 2,
+                            "id": "FatMin",
+                            "label": "Fat-min (g)",
+                            "type": "Number"
+                          },
+                          {
+                            "precision": 5,
+                            "scale": 2,
+                            "id": "FatMax",
+                            "label": "Fat-max (g)",
+                            "type": "Number"
+                          },
+                          {
+                            "precision": 5,
+                            "scale": 2,
+                            "id": "Protein",
+                            "label": "Protein (g)",
+                            "type": "Number"
+                          },
+                          {
+                            "precision": 6,
+                            "scale": 0,
+                            "id": "Lipase",
+                            "label": "Lipase (IU)",
+                            "type": "Number"
+                          }
+                        ],
+                        "fixedRows": true,
+                        "id": "NutritionalIntakeAndPERT.DietAndNutritionalIntake",
+                        "label": "Diet and nutritional intake",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "span": 2
+                        },
+                        "type": "Table"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 5,
+                        "scale": 0,
+                        "id": "NutritionalIntakeAndPERT.EstCaloricIntake",
+                        "label": "Estimated caloric intake",
+                        "type": "Number"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Cal/Kg/day",
+                          "Cal/day",
+                          "kJ/day"
+                        ],
+                        "size": 20,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "ReadOnly"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "not": {
+                                  "fieldID": "NutritionalIntakeAndPERT.EstCaloricIntake",
+                                  "testEmpty": true
+                                }
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "NutritionalIntakeAndPERT.EstCaloricIntakeUnits",
+                        "label": "",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 5,
+                        "scale": 2,
+                        "id": "NutritionalIntakeAndPERT.EstFatIntake",
+                        "label": "Estimated average fat intake",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Number",
+                        "units": "g/day"
+                      }
+                    },
+                    {
+                      "field": {
+                        "columns": [
+                          {
+                            "options": [
+                              "Cotozyme 8000",
+                              "Creon 10000",
+                              "Creon 25000",
+                              "Creon 40000",
+                              "Creon Micro",
+                              "Panzytrat"
+                            ],
+                            "size": 20,
+                            "id": "Enzyme",
+                            "label": "Enzyme",
+                            "state": {
+                              "editState": "Mandatory"
+                            },
+                            "type": "Selection"
+                          },
+                          {
+                            "size": 100,
+                            "id": "Dose",
+                            "label": "Dose",
+                            "layout": {
+                              "span": 2
+                            },
+                            "type": "Text"
+                          }
+                        ],
+                        "id": "NutritionalIntakeAndPERT.Enzyme",
+                        "label": "Enzyme",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Table"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 6,
+                        "scale": 0,
+                        "id": "NutritionalIntakeAndPERT.IULipase",
+                        "label": "Lipase",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Number",
+                        "units": "IU/kg/day"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 6,
+                        "scale": 0,
+                        "id": "NutritionalIntakeAndPERT.IULipaseGmFat",
+                        "label": "Lipase",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Number",
+                        "units": "IU/gm fat/day"
+                      }
+                    }
+                  ],
+                  "id": "NutritionalIntakeAndPERT",
+                  "layoutShow": true,
+                  "title": "Nutritional Intake and PERT"
+                }
+              }
+            ],
+            "title": "Nutrition"
+          },
+          {
+            "sections": [
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "size": 500,
+                        "id": "Supplements.VitaminSupplement",
+                        "label": "Vitamin supplement",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 100,
+                        "id": "Supplements.SupplementsUsed",
+                        "label": "Supplements used",
+                        "layout": {
+                          "span": 2
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "editable": true,
+                        "multiple": true,
+                        "options": [
+                          "Nasogastric",
+                          "TPN",
+                          "Gastrostomy",
+                          "Tube/Button",
+                          "Oral (prescribed)"
+                        ],
+                        "size": 30,
+                        "id": "Supplements.FeedingRoute",
+                        "label": "Feeding route",
+                        "layout": {
+                          "labelPosition": "BeforeTop"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 200,
+                        "id": "Supplements.Gastrostomy",
+                        "label": "Gastrostomy",
+                        "layout": {
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 200,
+                        "id": "Supplements.SaltSupplementation",
+                        "label": "Salt supplementation",
+                        "layout": {
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    }
+                  ],
+                  "id": "Supplements",
+                  "title": "Supplements"
+                }
+              }
+            ],
+            "title": "Supplements"
+          },
+          {
+            "sections": [
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "size": 1000,
+                        "id": "NutritionReview.DietaryAssessment",
+                        "label": "Dietary assessment",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 1000,
+                        "id": "NutritionReview.Progress",
+                        "label": "Progress",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 1000,
+                        "id": "NutritionReview.ChangesToPlan",
+                        "label": "Changes to plan",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 1000,
+                        "id": "NutritionReview.OtherMedicalAndSocialIssues",
+                        "label": "Other medical and social issues",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    }
+                  ],
+                  "id": "NutritionReview",
+                  "title": "Nutrition Review"
+                }
+              }
+            ],
+            "title": "Nutrition Review"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "CysticFibrosis.DietitianNotes.WebUI",
+  "layoutColumns": 3
+}

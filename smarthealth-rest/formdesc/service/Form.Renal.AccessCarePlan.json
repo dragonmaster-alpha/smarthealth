@@ -1,0 +1,493 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Prepared by",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ServiceDate",
+        "label": "Updated",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Ceased",
+          "Current",
+          "New",
+          "Removed"
+        ],
+        "size": 10,
+        "id": "Status",
+        "label": "Access status",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "precisionMonth": true,
+        "precisionYear": true,
+        "id": "InsertedCreated",
+        "label": "Inserted/Created",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "precisionMonth": true,
+        "precisionYear": true,
+        "id": "Functional",
+        "label": "Functional",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "FirstUsed",
+        "label": "First used",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Ceased",
+        "label": "Ceased",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Removed",
+        "label": "Removed",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "Surgeon",
+        "label": "Surgeon",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Haemodialysis",
+          "Peritoneal Dialysis"
+        ],
+        "size": 30,
+        "id": "Dialysis",
+        "label": "Dialysis",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "AV fistula",
+          "Cuffed vascular catheter",
+          "Goretex graft",
+          "PTFE graft",
+          "Saphenous vein graft",
+          "Synthetic graft",
+          "Thoratec graft",
+          "Uncuffed vascular catheter"
+        ],
+        "size": 50,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Haemodialysis"
+                ],
+                "fieldID": "Dialysis"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "HaemodialysisAccessType",
+        "label": "Access type",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Straight-double cuffed-curl peritoneal catheter",
+          "Straight-double cuffed-straight peritoneal catheter",
+          "Swan neck PD catheter left double cuffed 43 cm",
+          "Swan neck PD catheter left double cuffed 48 cm",
+          "Swan neck PD catheter left double cuffed 53 cm",
+          "Swan neck double cuffed curl catheter 62.2 cm",
+          "Universal PD tenckoff catheter 47 cm"
+        ],
+        "size": 55,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Peritoneal Dialysis"
+                ],
+                "fieldID": "Dialysis"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "PeritonealDialysisAccessType",
+        "label": "Access type",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "AV Fistula",
+          "Cuffed Vascular Catheter",
+          "Goretex Graft",
+          "PTFE Graft",
+          "Saphenous Vein Graft",
+          "Swan Neck Double Cuffed Curl Catheter 62.2 cm",
+          "Swan Neck PD Catheter Left Double Cuffed 43 cm",
+          "Swan Neck PD Catheter Left Double cuffed 48 cm",
+          "Swan Neck PD Catheter Left Double cuffed 53 cm",
+          "Synthetic Graft (AVG)",
+          "Thoratec Graft",
+          "Uncuffed Vascular Catheter",
+          "Universal Tenckoff PD Catheter 47 cm"
+        ],
+        "size": 50,
+        "id": "DetailsType",
+        "label": "Access type",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Left Forearm",
+          "Left Upper Arm",
+          "Left Internal Jugular",
+          "Left Subclavian",
+          "Left Side Abdomen",
+          "Left Femoral",
+          "Left Thigh",
+          "Left Leg Femoral",
+          "Chest",
+          "Right Forearm",
+          "Right Upper Arm",
+          "Right Internal Jugular",
+          "Right Subclavian",
+          "Right Side Abdomen",
+          "Right Femoral",
+          "Right Thigh",
+          "Right Leg Femoral",
+          "Brachio-cephalic",
+          "Transposed Brachio-bascilic",
+          "Radio-cephalic"
+        ],
+        "size": 40,
+        "id": "AccessLocation",
+        "label": "Access location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "id": "AccessProblemService",
+                  "label": "AccessProblemService",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "id": "Location",
+                  "label": "Location",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "MedicalGroupLocation"
+                },
+                {
+                  "id": "Provider",
+                  "label": "Provider",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 30,
+                  "id": "Complication",
+                  "label": "Complication",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "Treatment",
+                  "label": "Treatment",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 45,
+                  "id": "Outcome",
+                  "label": "Outcome",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "AccessHistory.AccessHistory",
+              "label": "Access Complications",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "AccessHistory",
+        "layoutShow": true,
+        "title": "Access Complications"
+      }
+    }
+  ],
+  "id": "Renal.AccessCarePlan",
+  "layoutColumns": 3
+}

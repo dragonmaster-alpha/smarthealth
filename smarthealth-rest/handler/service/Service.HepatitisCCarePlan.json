@@ -1,0 +1,87 @@
+{
+  "data": {
+    "CarePlanDetails": {
+      "Commenced": {
+        "iso": "2019-01-27"
+      },
+      "Description": "Description of the care plan",
+      "TreatmentPeriod": 12
+    },
+    "Confidentiality": "Normal",
+    "ID": "7b937138-7ba3-4d7e-9ff0-4f4f1adc96fc",
+    "Location": {
+      "id": -2,
+      "name": "Pyrmont"
+    },
+    "Patient": 42,
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "Purpose": "Consultation",
+    "ReferralsSection": {
+      "OngoingCare": "GP",
+      "Referrals": [
+        {
+          "Notes": "Discuss diet",
+          "ReferralDate": {
+            "iso": "2018-01-07"
+          },
+          "ReferredTo": "Dietitian"
+        },
+        {
+          "Notes": "Discuss alcohol use",
+          "ReferralDate": {
+            "iso": "2019-01-27"
+          },
+          "ReferredTo": "Drug and alcohol counselling"
+        }
+      ]
+    },
+    "ServiceDate": {
+      "iso": "2019-01-27"
+    },
+    "SetID": "e57f5743-9de9-4985-ba56-b88cdc4c57a4",
+    "Setting": "Face to Face",
+    "Summary": "Care plan for testing",
+    "Treatment": {
+      "Treatment": [
+        {
+          "Date": {
+            "iso": "2015-12-09"
+          },
+          "Medication": "Abbvie M14-868 Study"
+        },
+        {
+          "ChangeReason": "Adverse reaction",
+          "ChangeType": "Changed",
+          "Date": {
+            "iso": "2019-01-27"
+          },
+          "Dose": "1",
+          "Frequency": "Daily",
+          "Medication": "Consensus interferon",
+          "Notes": "Notes"
+        }
+      ]
+    },
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "program": "IMMUNOLOGY",
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2019-01-27"
+    },
+    "serviceID": 8263,
+    "serviceType": 143,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

@@ -1,0 +1,169 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>smarthealth</artifactId>
+        <groupId>au.com.smarthealth</groupId>
+        <version>8.18-SNAPSHOT</version>
+    </parent>
+    <artifactId>smarthealth-webui-war</artifactId>
+    <name>smarthealth-webui-war</name>
+    <packaging>war</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>au.com.smarthealth</groupId>
+            <artifactId>smarthealth-javascript</artifactId>
+            <version>8.18-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>au.com.smarthealth</groupId>
+            <artifactId>smarthealth-rest</artifactId>
+            <version>8.18-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <!-- frontend-maven-plugin download the node & npm from their official repositories
+        via the https, which does not support the TLSV1, Therefore if the build is
+        running on the Java7 we need to include the following VM arguments to the
+        Build step instruct the JVM to use the new TLS versions -Dhttps.protocols=TLSv1.1,TLSv1.2 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>install node and npm</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                        <configuration>
+                            <nodeVersion>v8.9.4</nodeVersion>
+                            <npmVersion>5.7.1</npmVersion>
+                            <nodeDownloadRoot>https://maven.smarthealth.com.au/repository/NodeJs/</nodeDownloadRoot>
+                            <npmDownloadRoot>https://maven.smarthealth.com.au/repository/Npm/</npmDownloadRoot>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm check registry</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>config get registry</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm install</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install
+                                --registry=https://maven.smarthealth.com.au/repository/npm-private/
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm clean Jest cache</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run clean-jest</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm compile-locale</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run compile-locale</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm lint</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run lint</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>test</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm build</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run build</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webResources>
+                        <resource>
+                            <directory>target/webapp</directory>
+                            <targetPath>.</targetPath>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>BuildWARs</id>
+            <activation>
+                <property>
+                    <name>BUILD_WARS</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+		            <plugin>
+		                <groupId>com.github.eirslett</groupId>
+		                <artifactId>frontend-maven-plugin</artifactId>
+		                <executions>
+		                    <execution>
+		                        <id>npm build storybook</id>
+		                        <phase>prepare-package</phase>
+		                        <goals>
+		                            <goal>npm</goal>
+		                        </goals>
+		                        <configuration>
+		                            <arguments>run build-storybook</arguments>
+		                        </configuration>
+		                    </execution>
+		                </executions>
+		            </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

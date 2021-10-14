@@ -1,0 +1,18 @@
+{
+  "groupID": 1,
+  "permissions": {
+    "admin": [
+      34,
+      14
+    ],
+    "clinical": [
+      1,
+      98,
+      4,
+      7
+    ]
+  },
+  "termsOfUseAgreed": false,
+  "usePAS": false,
+  "userID": 42
+}

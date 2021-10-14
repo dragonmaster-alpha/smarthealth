@@ -1,0 +1,244 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Social.transgender",
+              "label": "Transgender",
+              "type": "Boolean",
+              "valuePath": "transgender"
+            }
+          }
+        ],
+        "id": "Social",
+        "layoutShow": true,
+        "title": "Identity"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 20,
+              "precision": 2,
+              "scale": 0,
+              "id": "Family.noOfChildren",
+              "label": "Children / dependents",
+              "type": "Number",
+              "valuePath": "noOfChildren"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Family.childrenDetails",
+              "label": "Children details",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Text",
+              "valuePath": "childrenDetails"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Family.partner",
+              "label": "Partner",
+              "type": "Text",
+              "valuePath": "partner"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Family.livingArrangements",
+              "label": "Living arrangements",
+              "type": "Text",
+              "valuePath": "livingArrangements"
+            }
+          }
+        ],
+        "id": "Family",
+        "layoutShow": true,
+        "title": "Family"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 20,
+              "precision": 2,
+              "scale": 0,
+              "id": "Siblings.orderOfBirth",
+              "label": "Order of birth",
+              "type": "Number",
+              "valuePath": "orderOfBirth"
+            }
+          },
+          {
+            "field": {
+              "id": "Siblings.fromMultipleBirth",
+              "label": "From multiple birth",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean",
+              "valuePath": "fromMultipleBirth"
+            }
+          },
+          {
+            "field": {
+              "maximum": 5,
+              "minimum": 2,
+              "precision": 1,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Siblings.fromMultipleBirth",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Siblings.noOfChildrenInMultiBirth",
+              "label": "Number in multiple birth",
+              "type": "Number",
+              "valuePath": "noOfChildrenInMultiBirth"
+            }
+          },
+          {
+            "field": {
+              "maximum": 9,
+              "minimum": 1,
+              "precision": 1,
+              "scale": 0,
+              "id": "Siblings.noOfSiblings",
+              "label": "Siblings",
+              "type": "Number",
+              "valuePath": "noOfSiblings"
+            }
+          },
+          {
+            "field": {
+              "maximum": 20,
+              "precision": 2,
+              "scale": 0,
+              "id": "Siblings.noOfSiblingsDeceased",
+              "label": "Deceased siblings",
+              "type": "Number",
+              "valuePath": "noOfSiblingsDeceased"
+            }
+          }
+        ],
+        "id": "Siblings",
+        "layoutShow": true,
+        "title": "Siblings"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Junior Secondary (year 10)",
+                "Left School prior to year 10",
+                "Literacy",
+                "Primary",
+                "Senior Secondary (year 12)",
+                "Tertiary Certificate or Diploma (TAFE)",
+                "University Degree"
+              ],
+              "size": 40,
+              "id": "EducationEmployment.educationAttended",
+              "label": "Education attending",
+              "type": "Selection",
+              "valuePath": "educationAttended"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Junior Secondary (year 10)",
+                "Left School prior to year 10",
+                "Literacy",
+                "Primary",
+                "Senior Secondary (year 12)",
+                "Tertiary Certificate or Diploma (TAFE)",
+                "University Degree"
+              ],
+              "size": 40,
+              "id": "EducationEmployment.educationCompleted",
+              "label": "Education completed",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection",
+              "valuePath": "educationCompleted"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "EducationEmployment.educationCompletedDate",
+              "label": "Date",
+              "type": "DateTime",
+              "valuePath": "educationCompletedDate"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Casual",
+                "Not in Labour force (homemaker, etc)",
+                "Retired",
+                "Studying",
+                "Unemployed",
+                "Voluntary Work",
+                "Working Full Time",
+                "Working Part Time"
+              ],
+              "size": 50,
+              "id": "EducationEmployment.employmentStatus",
+              "label": "Employment status",
+              "type": "Selection",
+              "valuePath": "employmentStatus"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "EducationEmployment.occupation",
+              "label": "Occupation",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text",
+              "valuePath": "occupation"
+            }
+          }
+        ],
+        "id": "EducationEmployment",
+        "layoutShow": true,
+        "title": "Education/Employment"
+      }
+    }
+  ],
+  "id": "Patient.FamilySocial.WebUI",
+  "layoutColumns": 2
+}

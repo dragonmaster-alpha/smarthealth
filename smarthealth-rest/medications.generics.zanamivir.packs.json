@@ -1,0 +1,80 @@
+[
+  {
+    "details": "10 mg [20]",
+    "formulation": {
+      "cmiHTML": false,
+      "drowsy": false,
+      "formulationCode": 1,
+      "formulationType": "Tablet",
+      "generics": {
+        "gencode": 2377,
+        "generics": "Zanamivir"
+      },
+      "glutenFree": false,
+      "id": 461601,
+      "prescriptionOnly": false,
+      "product": {
+        "consumerMedicineInformation": false,
+        "pregnancyTextExists": false,
+        "product": "Relenza",
+        "productCode": 4616,
+        "productSort": "RELENZA",
+        "s11": false
+      },
+      "sortOrder": 0
+    },
+    "pbs": "Non-PBS"
+  },
+  {
+    "details": "20 mg [20]",
+    "formulation": {
+      "cmiHTML": false,
+      "drowsy": false,
+      "formulationCode": 1,
+      "formulationType": "Tablet",
+      "generics": {
+        "gencode": 2377,
+        "generics": "Zanamivir"
+      },
+      "glutenFree": false,
+      "id": 461601,
+      "prescriptionOnly": false,
+      "product": {
+        "consumerMedicineInformation": false,
+        "pregnancyTextExists": false,
+        "product": "Relenza",
+        "productCode": 4616,
+        "productSort": "RELENZA",
+        "s11": false
+      },
+      "sortOrder": 0
+    },
+    "pbs": "Non-PBS"
+  },
+  {
+    "details": "50 mg [12]",
+    "formulation": {
+      "cmiHTML": false,
+      "drowsy": false,
+      "formulationCode": 1,
+      "formulationType": "Tablet",
+      "generics": {
+        "gencode": 2377,
+        "generics": "Zanamivir"
+      },
+      "glutenFree": false,
+      "id": 461601,
+      "prescriptionOnly": false,
+      "product": {
+        "consumerMedicineInformation": false,
+        "pregnancyTextExists": false,
+        "product": "Relenza",
+        "productCode": 4616,
+        "productSort": "RELENZA",
+        "s11": false
+      },
+      "sortOrder": 0
+    },
+    "pbs": "Non-PBS"
+  }
+]

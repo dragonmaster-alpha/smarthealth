@@ -1,0 +1,22 @@
+{
+    "_comments": {
+        "1": "Browser names and OSs are based on the https://github.com/lancedikson/bowser library",
+        "2": "Bowser library does not have a '>=' operator on version checking, so to indicate 'ie 11' or greater, specify >10.99",
+        "3": "Version numbers must be begin with '>'",
+        "4": "This > and version-0.01 conversion should be done in BrowserCheck.tsx to keep this file reusable to test .babelrc",
+        "5": "The browser versions in validBrowsers MUST match browser targets in .babelrc file in the root directory"
+    },
+    "validBrowsers": {
+        "Chrome": 63,
+        "Microsoft Edge": 79,
+        "Firefox": 67,
+        "Opera": 50,
+        "Safari": 11.1
+    },
+    "validOperatingSystems": {
+        "Windows": 10,
+        "macOS": 10,
+        "iOS": 10,
+        "Android": 5
+    }
+}

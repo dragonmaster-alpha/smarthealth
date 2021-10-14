@@ -1,0 +1,38 @@
+{
+  "count": 2,
+  "items": [
+    {
+      "owningGroupID": 1,
+      "patientID": 42,
+      "providerID": {
+        "groupID": 1,
+        "userID": 42
+      },
+      "serviceDate": {
+        "iso": "2019-01-01"
+      },
+      "serviceID": 28,
+      "serviceType": 1,
+      "status": "FINAL",
+      "summaryLine": "Mother summary line"
+    },
+    {
+      "owningGroupID": 1,
+      "patientID": 42,
+      "providerID": {
+        "groupID": 1,
+        "userID": 42
+      },
+      "serviceDate": {
+        "iso": "2019-01-02"
+      },
+      "serviceID": 28,
+      "serviceType": 101,
+      "status": "FINAL",
+      "summaryLine": "Mother summary line"
+    }
+  ],
+  "more": false,
+  "offset": 0,
+  "total": 2
+}

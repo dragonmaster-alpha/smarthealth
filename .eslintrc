@@ -1,0 +1,134 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "max-len": [
+      2,
+      {
+        "code": 120
+      }
+    ],
+    "indent": [
+      "warn",
+      4
+    ],
+    "brace-style": [
+      "error",
+      "allman"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": [
+      0
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/src/test/javascript/**"
+        ],
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": [
+          "Label"
+        ],
+        "required": {
+          "every": [
+            "id"
+          ]
+        },
+        "allowChildren": false
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "labelComponents": [
+          "CustomInputLabel"
+        ],
+        "labelAttributes": [
+          "label"
+        ],
+        "controlComponents": [
+          "CustomInput"
+        ],
+        "depth": 3
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to"
+        ]
+      }
+    ],
+    "linebreak-style": "off",
+    "no-else-return": "off",
+    "object-curly-spacing": "off",
+    "object-curly-newline": "off",
+    "react/jsx-boolean-value": "off",
+    "react/jsx-closing-bracket-location": [
+      "off",
+      "after-props"
+    ],
+    "react/destructuring-assignment": [
+      "error"
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "react/jsx-first-prop-new-line": "off",
+    "react/jsx-indent": [
+      "error"
+    ],
+    "react/jsx-indent-props": [
+      "error"
+    ],
+    "react/jsx-max-props-per-line": "off",
+    "react/jsx-one-expression-per-line": [
+      0,
+      {
+        "allow": "none"
+      }
+    ],
+    "react/sort-comp": [
+      0
+    ]
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "parser": "typescript-eslint-parser",
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "import/no-unresolved": "error"
+    },
+    "import/resolver": {
+      "typescript": {},
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    }
+  }
+}

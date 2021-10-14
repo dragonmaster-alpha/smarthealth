@@ -1,0 +1,67 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 35,
+                  "id": "Measure",
+                  "label": "Measure",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "Observations.ObservationsTable",
+              "label": "Observations",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Observations",
+        "layoutShow": true,
+        "title": "Observations"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Last 10 years",
+                "Last 12 months",
+                "Last 2 years",
+                "Last 5 years",
+                "Patient\u0027s lifetime"
+              ],
+              "size": 20,
+              "id": "Graph.GraphPeriod",
+              "label": "Period",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Graph",
+        "layoutShow": true,
+        "title": "Graph"
+      }
+    }
+  ],
+  "id": "Summary.LungFunctionSummary",
+  "layoutColumns": 0
+}

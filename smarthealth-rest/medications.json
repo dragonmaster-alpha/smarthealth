@@ -1,0 +1,30 @@
+{
+  "id": "/medications/latest",
+  "referencedType": "MedicationSummary",
+  "references": [
+    {
+      "id": 92,
+      "type": "MedicationSummary"
+    },
+    {
+      "id": 654,
+      "type": "MedicationSummary"
+    },
+    {
+      "id": 63,
+      "type": "MedicationSummary"
+    },
+    {
+      "id": 724,
+      "type": "MedicationSummary"
+    },
+    {
+      "id": 725,
+      "type": "MedicationSummary"
+    },
+    {
+      "id": 34,
+      "type": "MedicationSummary"
+    }
+  ]
+}

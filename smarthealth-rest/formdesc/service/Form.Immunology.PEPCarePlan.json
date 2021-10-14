@@ -1,0 +1,586 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Updated date",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "Commenced",
+        "label": "Commenced",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Abacavir",
+                "Atazanavir",
+                "Atripla",
+                "Combivir",
+                "Darunavir",
+                "Didanosine",
+                "Efavirenz",
+                "Emtricitabine",
+                "Etravirine ",
+                "Fosamprenavir",
+                "Indinavir",
+                "Kaletra",
+                "Kivexa",
+                "Lamivudine",
+                "Maraviroc",
+                "Nevirapine",
+                "Raltegravir",
+                "Ritonavir",
+                "Saquinavir",
+                "Stavudine",
+                "T-20",
+                "Tenofovir",
+                "Tipranavir",
+                "Trizavir",
+                "Truvada",
+                "Zidovudine"
+              ],
+              "size": 15,
+              "id": "Medication.Medication",
+              "label": "Medication",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 20,
+              "id": "Medication.Dose",
+              "label": "Dose",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "12 hourly",
+                "2 hourly",
+                "3 times a day",
+                "3 times a week",
+                "4 hourly",
+                "4 times a day",
+                "6 hourly",
+                "8 hourly",
+                "Alternate days",
+                "As needed",
+                "Before bed",
+                "Daily",
+                "Every 3 weeks",
+                "Fortnightly",
+                "In the evening",
+                "In the morning",
+                "Midday",
+                "Monthly",
+                "Twice a day",
+                "Twice weekly",
+                "Weekly"
+              ],
+              "size": 25,
+              "id": "Medication.Frequency",
+              "label": "Frequency",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionMinute": true,
+              "id": "Medication.DateTimeFirstDose",
+              "label": "First dose",
+              "type": "DateTime"
+            }
+          },
+          {
+            "subheading": "Elapsed times to first dose PEP"
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "Medication.ExposureToFirstDose",
+              "label": "From exposure",
+              "type": "Number",
+              "units": "hours"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "Medication.AssessmentToFirstDose",
+              "label": "From assessment",
+              "type": "Number",
+              "units": "hours"
+            }
+          }
+        ],
+        "id": "Medication",
+        "layoutShow": true,
+        "title": "Medication"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Modified",
+                "No",
+                "Yes"
+              ],
+              "size": 10,
+              "id": "FollowUp.CompletedAsPrescribed",
+              "label": "Completed as prescribed",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes"
+                      ],
+                      "fieldID": "FollowUp.CompletedAsPrescribed"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "FollowUp.FinishDate",
+              "label": "Finish date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Lost to follow up",
+                "Patient decision",
+                "Side effects",
+                "Source was HIV negative"
+              ],
+              "size": 25,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "No"
+                      ],
+                      "fieldID": "FollowUp.CompletedAsPrescribed"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "FollowUp.ReasonNotCompleted",
+              "label": "Reason not completed",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Drugs not appropriate for use in NPEP",
+                "Not a locally approved/used regimen",
+                "Patient decision",
+                "Possible resistant HIV",
+                "Side-effects"
+              ],
+              "size": 40,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Modified"
+                      ],
+                      "fieldID": "FollowUp.CompletedAsPrescribed"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "FollowUp.Modified",
+              "label": "Modified",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "FollowUp.ReferredForCounselling",
+              "label": "Referred for counselling",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "FollowUp.AttendedCounselling",
+              "label": "Attended counselling",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Lost to follow up"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "FollowUp.AttendedCounselling",
+                      "testFalse": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "FollowUp.ReasonNotAttendedCounselling",
+              "label": "Reason not attended",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "GP",
+                "IBAC",
+                "Sexual health clinic",
+                "Inter-state",
+                "Overseas"
+              ],
+              "size": 20,
+              "id": "FollowUp.FollowUp",
+              "label": "Follow up",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "FollowUp",
+        "layoutShow": true,
+        "title": "Follow up"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "ReviewDate",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "id": "Attended",
+                  "label": "Attended",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Boolean"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "12 weeks",
+                    "24 weeks",
+                    "4-6 weeks"
+                  ],
+                  "size": 15,
+                  "id": "WeeksPostExposure",
+                  "label": "Weeks post exposure",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "0-25%",
+                    "100%",
+                    "25-50%",
+                    "50-75%",
+                    "75-100%",
+                    "Nil"
+                  ],
+                  "size": 10,
+                  "id": "Adherence",
+                  "label": "Adherence",
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Negative",
+                    "Positive"
+                  ],
+                  "size": 16,
+                  "id": "HIVStatus",
+                  "label": "HIV Status",
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Negative",
+                    "Positive"
+                  ],
+                  "size": 8,
+                  "id": "HepatitisCPCR",
+                  "label": "Hep C PCR",
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Negative",
+                    "Positive"
+                  ],
+                  "size": 8,
+                  "id": "Syphilis",
+                  "label": "Syphilis",
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Negative",
+                    "Positive"
+                  ],
+                  "size": 10,
+                  "id": "HepCAntibody",
+                  "label": "Hep C Antibody",
+                  "type": "Selection"
+                }
+              ],
+              "layoutRows": 3,
+              "rowSelectionInViewMode": true,
+              "id": "Reviews.Reviews",
+              "label": "Reviews",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Reviews",
+        "layoutShow": true,
+        "title": "Reviews"
+      }
+    }
+  ],
+  "id": "Immunology.PEPCarePlan.WebUI",
+  "layoutColumns": 3
+}

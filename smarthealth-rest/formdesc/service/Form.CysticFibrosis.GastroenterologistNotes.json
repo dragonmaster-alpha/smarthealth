@@ -1,0 +1,486 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Anorexia",
+                "Nausea",
+                "Weight Loss"
+              ],
+              "size": 40,
+              "id": "Symptoms.General",
+              "label": "General",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Heartburn",
+                "Regurgitation",
+                "Vomiting"
+              ],
+              "size": 40,
+              "id": "Symptoms.Reflux",
+              "label": "Reflux",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Symptoms",
+        "layoutShow": true,
+        "title": "Symptoms"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "BowelHabit.Frequency",
+              "label": "Frequency",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Daily",
+                "Weekly"
+              ],
+              "size": 10,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "BowelHabit.Frequency",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "BowelHabit.FrequencyDescriptor",
+              "label": "",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Hard",
+                "Formed",
+                "Loose",
+                "Watery"
+              ],
+              "size": 20,
+              "id": "BowelHabit.Consistency",
+              "label": "Consistency",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "BowelHabit.Vomiting",
+              "label": "Vomiting",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "BowelHabit.Nausea",
+              "label": "Nausea",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "BowelHabit.AbdominalPain",
+              "label": "Abdominal pain",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Central",
+                "LIF",
+                "LUQ",
+                "RIF",
+                "RUQ"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "BowelHabit.AbdominalPain",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "BowelHabit.AbdominalPainSite",
+              "label": "Site",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Aching",
+                "Bloating",
+                "Cramping",
+                "Stabbing"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "BowelHabit.AbdominalPain",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "BowelHabit.AbdominalPainCharacter",
+              "label": "Character",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Mild",
+                "Moderate",
+                "Severe"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "BowelHabit.AbdominalPain",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "BowelHabit.AbdominalPainSeverity",
+              "label": "Severity",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Daily",
+                "Weekly",
+                "Occasional"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "BowelHabit.AbdominalPain",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "BowelHabit.AbdominalPainFrequency",
+              "label": "Frequency",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Minutes",
+                "Hours",
+                "Days"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "BowelHabit.AbdominalPain",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "BowelHabit.AbdominalPainDuration",
+              "label": "Duration",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "BowelHabit",
+        "layoutShow": true,
+        "title": "Bowel Habit"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Assessment",
+        "label": "Assessment",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Plan",
+        "label": "Plan",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.GastroenterologistNotes",
+  "layoutColumns": 3
+}

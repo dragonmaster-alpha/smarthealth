@@ -1,0 +1,114 @@
+{
+  "coded": true,
+  "codeLength": 5,
+  "extensible": false,
+  "length": 42,
+  "uri": "http://nema.org/dicom/dcid",
+  "values": [
+    {
+      "code": "BMD",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Bone Mineral Densitometry"
+    },
+    {
+      "code": "EPS",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Cardiac Electrophysiology"
+    },
+    {
+      "code": "CR",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Computed Radiography"
+    },
+    {
+      "code": "CT",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Computed Tomography"
+    },
+    {
+      "code": "DX",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Digital Radiography"
+    },
+    {
+      "code": "ECG",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Electrocardiography"
+    },
+    {
+      "code": "ES",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Endoscopy"
+    },
+    {
+      "code": "HD",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Hemodynamic Waveform"
+    },
+    {
+      "code": "IVOCT",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Intravascular Optical Coherence Tomography"
+    },
+    {
+      "code": "IVUS",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Intravascular Ultrasound"
+    },
+    {
+      "code": "MR",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Magnetic Resonance"
+    },
+    {
+      "code": "MG",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Mammography"
+    },
+    {
+      "code": "NM",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Nuclear Medicine"
+    },
+    {
+      "code": "OCT",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Optical Coherence Tomography"
+    },
+    {
+      "code": "PT",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Positron emission tomography"
+    },
+    {
+      "code": "RF",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Radiofluoroscopy"
+    },
+    {
+      "code": "RG",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Radiographic imaging"
+    },
+    {
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Tomosynthesis"
+    },
+    {
+      "code": "US",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Ultrasound"
+    },
+    {
+      "code": "BDUS",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "Ultrasound Bone Densitometry"
+    },
+    {
+      "code": "XA",
+      "codeSet": "http://nema.org/dicom/dcid",
+      "value": "X-Ray Angiography"
+    }
+  ],
+  "valueSetID": "Imaging.Modality"
+}

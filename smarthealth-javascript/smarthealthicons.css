@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "smarthealthicons";
+    src: url("./smarthealthicons.eot?552c376bcb668ed077e7227e8d21b3ae?#iefix") format("embedded-opentype"),
+url("./smarthealthicons.woff2?552c376bcb668ed077e7227e8d21b3ae") format("woff2"),
+url("./smarthealthicons.woff?552c376bcb668ed077e7227e8d21b3ae") format("woff"),
+url("./smarthealthicons.ttf?552c376bcb668ed077e7227e8d21b3ae") format("truetype"),
+url("./smarthealthicons.svg?552c376bcb668ed077e7227e8d21b3ae#smarthealthicons") format("svg");
+}
+
+.shicon:before {
+    font-family: smarthealthicons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.shicon.sh-add:before {
+    content: "\f101";
+}
+.shicon.sh-advisories:before {
+    content: "\f102";
+}
+.shicon.sh-alert-unread:before {
+    content: "\f103";
+}
+.shicon.sh-alert:before {
+    content: "\f104";
+}
+.shicon.sh-calendar:before {
+    content: "\f105";
+}
+.shicon.sh-chevron-down:before {
+    content: "\f106";
+}
+.shicon.sh-chevron-left:before {
+    content: "\f107";
+}
+.shicon.sh-chevron-right:before {
+    content: "\f108";
+}
+.shicon.sh-chevron-up-down:before {
+    content: "\f109";
+}
+.shicon.sh-chevron-up:before {
+    content: "\f10a";
+}
+.shicon.sh-clinicalmeasures:before {
+    content: "\f10b";
+}
+.shicon.sh-close:before {
+    content: "\f10c";
+}
+.shicon.sh-conditions:before {
+    content: "\f10d";
+}
+.shicon.sh-cross:before {
+    content: "\f10e";
+}
+.shicon.sh-double-chevron-down:before {
+    content: "\f10f";
+}
+.shicon.sh-double-chevron-left:before {
+    content: "\f110";
+}
+.shicon.sh-double-chevron-right:before {
+    content: "\f111";
+}
+.shicon.sh-double-chevron-up:before {
+    content: "\f112";
+}
+.shicon.sh-draft-page:before {
+    content: "\f113";
+}
+.shicon.sh-draft:before {
+    content: "\f114";
+}
+.shicon.sh-ellipsis:before {
+    content: "\f115";
+}
+.shicon.sh-email:before {
+    content: "\f116";
+}
+.shicon.sh-error:before {
+    content: "\f117";
+}
+.shicon.sh-history:before {
+    content: "\f118";
+}
+.shicon.sh-logo:before {
+    content: "\f119";
+}
+.shicon.sh-lungfunction:before {
+    content: "\f11a";
+}
+.shicon.sh-medicalgroup-nonparticipating:before {
+    content: "\f11b";
+}
+.shicon.sh-medicalgroup:before {
+    content: "\f11c";
+}
+.shicon.sh-medications:before {
+    content: "\f11d";
+}
+.shicon.sh-meetings:before {
+    content: "\f11e";
+}
+.shicon.sh-menu:before {
+    content: "\f11f";
+}
+.shicon.sh-pathology:before {
+    content: "\f120";
+}
+.shicon.sh-patient-new:before {
+    content: "\f121";
+}
+.shicon.sh-patient:before {
+    content: "\f122";
+}
+.shicon.sh-patientlist:before {
+    content: "\f123";
+}
+.shicon.sh-plus-box:before {
+    content: "\f124";
+}
+.shicon.sh-plus:before {
+    content: "\f125";
+}
+.shicon.sh-program-cancer:before {
+    content: "\f126";
+}
+.shicon.sh-program-cf-thin:before {
+    content: "\f127";
+}
+.shicon.sh-program-cf:before {
+    content: "\f128";
+}
+.shicon.sh-program-cf2:before {
+    content: "\f129";
+}
+.shicon.sh-program-hom:before {
+    content: "\f12a";
+}
+.shicon.sh-program-imm:before {
+    content: "\f12b";
+}
+.shicon.sh-program-renal:before {
+    content: "\f12c";
+}
+.shicon.sh-program-watch:before {
+    content: "\f12d";
+}
+.shicon.sh-program-watch2:before {
+    content: "\f12e";
+}
+.shicon.sh-search:before {
+    content: "\f12f";
+}
+.shicon.sh-servicerecord-small:before {
+    content: "\f130";
+}
+.shicon.sh-servicerecord:before {
+    content: "\f131";
+}
+.shicon.sh-success:before {
+    content: "\f132";
+}
+.shicon.sh-tick:before {
+    content: "\f133";
+}
+.shicon.sh-user-nonparticipating-small:before {
+    content: "\f134";
+}
+.shicon.sh-user-nonparticipating:before {
+    content: "\f135";
+}
+.shicon.sh-user-small:before {
+    content: "\f136";
+}
+.shicon.sh-user:before {
+    content: "\f137";
+}
+.shicon.sh-vertical-ellipsis:before {
+    content: "\f138";
+}
+.shicon.sh-warning:before {
+    content: "\f139";
+}

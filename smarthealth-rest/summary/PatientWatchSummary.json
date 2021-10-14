@@ -1,0 +1,97 @@
+{
+  "CallWindow": "1200-1400",
+  "CallsAllowed": true,
+  "Coach": {
+    "groupID": 26,
+    "userID": 16
+  },
+  "MostRecentTreatmentStatus": {
+    "owningGroupID": 26,
+    "program": "PATIENT_WATCH",
+    "serviceDate": {
+      "iso": "2019-10-17T14:28+11"
+    },
+    "serviceID": 4,
+    "serviceType": 191,
+    "summary": "VIP"
+  },
+  "NextCall": {
+    "iso": "2019-10-23"
+  },
+  "ParticipationStatus": "VIP",
+  "ParticipationStatusService": {
+    "owningGroupID": 26,
+    "program": "PATIENT_WATCH",
+    "serviceDate": {
+      "iso": "2019-10-17T14:28+11"
+    },
+    "serviceID": 4,
+    "serviceType": 191,
+    "summary": "VIP"
+  },
+  "Questionnaires": [
+    {
+      "DateTime": {
+        "iso": "2019-10-17T14:30+11"
+      },
+      "OpenIssues": 0,
+      "Outcome": "Answered by respondent",
+      "Respondent": "Caregiver",
+      "Service": {
+        "owningGroupID": 26,
+        "program": "PATIENT_WATCH",
+        "serviceDate": {
+          "iso": "2019-10-17T14:30+11"
+        },
+        "serviceID": 5,
+        "serviceType": 204,
+        "summary": "Answered by respondent"
+      },
+      "Status": "Draft",
+      "TelecareGuide": {
+        "groupID": 26,
+        "userID": 17
+      },
+      "TotalIssues": 0
+    },
+    {
+      "DateTime": {
+        "iso": "2019-10-22T11:38+11"
+      },
+      "OpenIssues": 0,
+      "Outcome": "Answered by respondent",
+      "Respondent": "Patient",
+      "Service": {
+        "owningGroupID": 26,
+        "program": "PATIENT_WATCH",
+        "serviceDate": {
+          "iso": "2019-10-22T11:38+11"
+        },
+        "serviceID": 6,
+        "serviceType": 204,
+        "summary": "Answered by respondent; Next call: 23/10/2019"
+      },
+      "Status": "Draft",
+      "TelecareGuide": {
+        "groupID": 26,
+        "userID": 17
+      },
+      "TotalIssues": 0
+    }
+  ],
+  "ResearchConsent": "Considering",
+  "ResearchConsentService": {
+    "owningGroupID": 26,
+    "program": "PATIENT_WATCH",
+    "serviceDate": {
+      "iso": "2019-10-17T14:28+11"
+    },
+    "serviceID": 4,
+    "serviceType": 191,
+    "summary": "VIP"
+  },
+  "TelecareGuide": {
+    "groupID": 26,
+    "userID": 17
+  }
+}

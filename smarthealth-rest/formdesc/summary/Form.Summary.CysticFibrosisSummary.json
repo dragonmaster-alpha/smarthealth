@@ -1,0 +1,747 @@
+{
+  "fieldsAndSections": [
+    {
+      "tabs": {
+        "tabs": [
+          {
+            "sections": [
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "id": "DiagnosisAndTreatment.MO",
+                        "label": "MO",
+                        "type": "Member",
+                        "valuePath": "MO"
+                      }
+                    },
+                    {
+                      "field": {
+                        "id": "DiagnosisAndTreatment.CO",
+                        "label": "CO",
+                        "type": "Member",
+                        "valuePath": "CO"
+                      }
+                    },
+                    {
+                      "field": {
+                        "displayType": "ServiceDate",
+                        "id": "DiagnosisAndTreatment.CFTreatmentStatusService",
+                        "label": "Date",
+                        "type": "ServiceRecordReference",
+                        "valuePath": "CFTreatmentStatusService"
+                      }
+                    }
+                  ],
+                  "id": "DiagnosisAndTreatment",
+                  "title": "Diagnosis and Treatment"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "size": 5,
+                        "id": "TreatmentHistory.AdmittedDays",
+                        "label": "Admitted days",
+                        "type": "Text",
+                        "units": "in last year"
+                      }
+                    },
+                    {
+                      "field": {
+                        "id": "TreatmentHistory.Admitted",
+                        "label": "Currently admitted",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 5,
+                        "id": "TreatmentHistory.OutpatientDays",
+                        "label": "Outpatient days",
+                        "layout": {
+                          "newLine": true
+                        },
+                        "type": "Text",
+                        "units": "in last year"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precisionDay": true,
+                        "id": "TreatmentHistory.LastOutpatientDate",
+                        "label": "Last clinic visit",
+                        "type": "DateTime"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 5,
+                        "id": "TreatmentHistory.HomeIVTherapyDays",
+                        "label": "Home IV therapy days",
+                        "layout": {
+                          "newLine": true
+                        },
+                        "type": "Text",
+                        "units": "in last year"
+                      }
+                    },
+                    {
+                      "field": {
+                        "id": "TreatmentHistory.OnHomeIVTherapy",
+                        "label": "On home IV therapy",
+                        "type": "Boolean"
+                      }
+                    }
+                  ],
+                  "id": "TreatmentHistory",
+                  "layoutShow": true,
+                  "title": "Treatment History"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "columns": [
+                          {
+                            "size": 100,
+                            "id": "Condition",
+                            "label": "Condition",
+                            "layout": {
+                              "span": 2
+                            },
+                            "sortable": true,
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "size": 20,
+                            "id": "Status",
+                            "label": "Status",
+                            "sortable": true,
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "precisionDay": true,
+                            "precisionMonth": true,
+                            "precisionYear": true,
+                            "id": "FirstOccurrence",
+                            "label": "First occurrence",
+                            "sortable": true,
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "DateTime"
+                          },
+                          {
+                            "precisionDay": true,
+                            "precisionMonth": true,
+                            "precisionYear": true,
+                            "id": "MostRecent",
+                            "label": "Most recent",
+                            "sortable": true,
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "DateTime"
+                          },
+                          {
+                            "size": 250,
+                            "id": "Notes",
+                            "label": "Notes",
+                            "layout": {
+                              "labelPosition": "BeforeTop",
+                              "newLine": true,
+                              "spanLine": true
+                            },
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "precision": 20,
+                            "scale": 0,
+                            "id": "ConceptID",
+                            "label": "Concept ID",
+                            "state": {
+                              "editState": "Hidden",
+                              "viewStateHidden": true
+                            },
+                            "type": "Number"
+                          }
+                        ],
+                        "layoutRows": 10,
+                        "id": "Conditions.CurrentConditions",
+                        "label": "Current conditions",
+                        "layout": {
+                          "fillWidth": true,
+                          "labelPosition": "Omit",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Table"
+                      }
+                    }
+                  ],
+                  "id": "Conditions",
+                  "layoutShow": true,
+                  "title": "Current Conditions"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "size": 100,
+                        "id": "Alerts.Sputum",
+                        "label": "Sputum",
+                        "layout": {
+                          "span": 2
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "displayType": "ServiceDate",
+                        "id": "Alerts.PhysiotherapistNotesService",
+                        "label": "Date",
+                        "type": "ServiceRecordReference"
+                      }
+                    },
+                    {
+                      "field": {
+                        "editable": true,
+                        "multiple": true,
+                        "options": [],
+                        "size": 50,
+                        "id": "Alerts.DrugAlerts",
+                        "label": "Drug alerts",
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "multiple": true,
+                        "valueSetID": "Cysticfibrosis.Organism",
+                        "id": "Alerts.OrganismAlerts",
+                        "label": "Organism alerts",
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "displayType": "ServiceDate",
+                        "id": "Alerts.RespiratoryPhysicianNotesService",
+                        "label": "Date",
+                        "type": "ServiceRecordReference"
+                      }
+                    }
+                  ],
+                  "id": "Alerts",
+                  "layoutShow": true,
+                  "title": "Alerts"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "fields": [
+                          {
+                            "precision": 5,
+                            "scale": 0,
+                            "id": "LungFunction.LatestFEV1",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "Number",
+                            "units": "%"
+                          },
+                          {
+                            "displayType": "ButtonOnly",
+                            "id": "LungFunction.LatestFEV1Service",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "ServiceRecordReference"
+                          }
+                        ],
+                        "id": "LungFunction.LatestFEV1Group",
+                        "label": "Most recent FEV1",
+                        "type": "Group"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fields": [
+                          {
+                            "precision": 5,
+                            "scale": 0,
+                            "id": "LungFunction.BestFEV1",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "Number",
+                            "units": "%"
+                          },
+                          {
+                            "displayType": "ButtonOnly",
+                            "id": "LungFunction.BestFEV1Service",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "ServiceRecordReference"
+                          }
+                        ],
+                        "id": "LungFunction.BestFEV1Group",
+                        "label": "Best FEV1 in 12 months",
+                        "type": "Group"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fields": [
+                          {
+                            "precision": 5,
+                            "scale": 0,
+                            "id": "LungFunction.LatestFVC",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "Number",
+                            "units": "%"
+                          },
+                          {
+                            "displayType": "ButtonOnly",
+                            "id": "LungFunction.LatestFVCService",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "ServiceRecordReference"
+                          }
+                        ],
+                        "id": "LungFunction.LatestFVCGroup",
+                        "label": "Most recent FVC",
+                        "layout": {
+                          "newLine": true
+                        },
+                        "type": "Group"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fields": [
+                          {
+                            "precision": 5,
+                            "scale": 0,
+                            "id": "LungFunction.BestFVC",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "Number",
+                            "units": "%"
+                          },
+                          {
+                            "displayType": "ButtonOnly",
+                            "id": "LungFunction.BestFVCService",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "ServiceRecordReference"
+                          }
+                        ],
+                        "id": "LungFunction.BestFVCGroup",
+                        "label": "Best FVC in 12 months",
+                        "type": "Group"
+                      }
+                    }
+                  ],
+                  "id": "LungFunction",
+                  "layoutShow": true,
+                  "title": "Lung Function (Pre BD)"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "size": 100,
+                        "id": "CFDiagnosis.ModeOfPresentation",
+                        "label": "Mode of presentation",
+                        "layout": {
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fields": [
+                          {
+                            "valueSetID": "Cysticfibrosis.Genotype",
+                            "id": "CFDiagnosis.Genotype1",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "ValueSet"
+                          },
+                          {
+                            "valueSetID": "Cysticfibrosis.Genotype",
+                            "id": "CFDiagnosis.Genotype2",
+                            "label": ", ",
+                            "type": "ValueSet"
+                          }
+                        ],
+                        "id": "CFDiagnosis.Genotype",
+                        "label": "Genotype",
+                        "type": "Group"
+                      }
+                    },
+                    {
+                      "field": {
+                        "id": "CFDiagnosis.PancreaticInsufficiency",
+                        "label": "Pancreatic insufficiency",
+                        "layout": {
+                          "newLine": true
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "maximum": 140,
+                        "minimum": 20,
+                        "precision": 4,
+                        "scale": 1,
+                        "id": "CFDiagnosis.SodiumLevel",
+                        "label": "Sodium level",
+                        "layout": {
+                          "newLine": true
+                        },
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Number",
+                        "units": "mmol/L"
+                      }
+                    },
+                    {
+                      "field": {
+                        "maximum": 140,
+                        "minimum": 20,
+                        "precision": 4,
+                        "scale": 1,
+                        "id": "CFDiagnosis.ChlorideLevel",
+                        "label": "Chloride level",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Number",
+                        "units": "mmol/L"
+                      }
+                    }
+                  ],
+                  "id": "CFDiagnosis",
+                  "layoutShow": true,
+                  "title": "CF Diagnosis"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "id": "Infections.PseudomonasEradication",
+                        "label": "Pseudomonas eradication",
+                        "type": "Boolean"
+                      }
+                    }
+                  ],
+                  "id": "Infections",
+                  "layoutShow": true,
+                  "title": "Infections"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "precision": 5,
+                        "scale": 2,
+                        "id": "Anthropometry.Weight",
+                        "label": "Weight",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Number",
+                        "units": "kg",
+                        "valuePath": "Weight"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 4,
+                        "scale": 1,
+                        "id": "Anthropometry.Height",
+                        "label": "Height",
+                        "type": "Number",
+                        "units": "cm",
+                        "valuePath": "Height"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 4,
+                        "scale": 1,
+                        "calculation": {
+                          "paramFieldIDs": [
+                            "Height",
+                            "Weight"
+                          ],
+                          "type": "BMI"
+                        },
+                        "id": "Anthropometry.BMI",
+                        "label": "BMI",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Number",
+                        "valuePath": "BMI"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fields": [
+                          {
+                            "precision": 5,
+                            "scale": 2,
+                            "id": "Anthropometry.LowerHealthyWeight",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "Number",
+                            "units": "kg"
+                          },
+                          {
+                            "precision": 5,
+                            "scale": 2,
+                            "id": "Anthropometry.UpperHealthyWeight",
+                            "label": "to",
+                            "type": "Number",
+                            "units": "kg"
+                          },
+                          {
+                            "displayType": "ButtonOnly",
+                            "id": "Anthropometry.HealthyWeightService",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "ServiceRecordReference"
+                          }
+                        ],
+                        "id": "Anthropometry.HealthyWeight",
+                        "label": "Healthy weight",
+                        "type": "Group"
+                      }
+                    }
+                  ],
+                  "id": "Anthropometry",
+                  "layoutShow": true,
+                  "title": "Anthropometry"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "fields": [
+                          {
+                            "options": [
+                              "Assessed",
+                              "Transplant not indicated",
+                              "On active waiting list",
+                              "On deferred waiting list",
+                              "Withdrawn from waiting list",
+                              "Patient withdrew",
+                              "Patient deceased before transplant",
+                              "Patient transplanted"
+                            ],
+                            "size": 35,
+                            "id": "Transplant.TransplantStatus",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "Selection"
+                          },
+                          {
+                            "displayType": "ButtonOnly",
+                            "id": "Transplant.TransplantAssessmentService",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Omit"
+                            },
+                            "type": "ServiceRecordReference"
+                          }
+                        ],
+                        "id": "Transplant.TransplantStatusGroup",
+                        "label": "Transplant status",
+                        "type": "Group"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Bilateral lung",
+                          "Heart/lung",
+                          "Kidney",
+                          "Liver",
+                          "Lung and kidney",
+                          "Lung and liver",
+                          "Lung, Liver and Kidney"
+                        ],
+                        "size": 25,
+                        "id": "Transplant.TransplantType",
+                        "label": "Transplant type",
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Greenlane Auckland",
+                          "Prince Charles",
+                          "Royal Children’s Melbourne",
+                          "St Vincent’s Sydney",
+                          "The Alfred"
+                        ],
+                        "size": 30,
+                        "id": "Transplant.TransplantCentre",
+                        "label": "Transplant centre",
+                        "layout": {
+                          "newLine": true
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precisionDay": true,
+                        "id": "Transplant.DateTransplanted",
+                        "label": "Date transplanted",
+                        "type": "DateTime"
+                      }
+                    }
+                  ],
+                  "id": "Transplant",
+                  "layoutShow": true,
+                  "title": "Transplant"
+                }
+              }
+            ],
+            "title": "Diagnosis and Treatment"
+          },
+          {
+            "sections": [
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "columns": [
+                          {
+                            "size": 30,
+                            "id": "TreatmentOrTest",
+                            "label": "Treatment/Test",
+                            "sortable": true,
+                            "type": "Text"
+                          },
+                          {
+                            "precisionMinute": true,
+                            "id": "Date",
+                            "label": "Date",
+                            "sortable": true,
+                            "type": "DateTime"
+                          },
+                          {
+                            "size": 125,
+                            "id": "Details",
+                            "label": "Details",
+                            "layout": {
+                              "newLine": true,
+                              "spanLine": true
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "displayType": "ServiceDate",
+                            "id": "Service",
+                            "label": "Service",
+                            "state": {
+                              "editState": "Hidden",
+                              "viewStateHidden": true
+                            },
+                            "type": "ServiceRecordReference"
+                          }
+                        ],
+                        "fixedRows": true,
+                        "id": "TreatmentStatus.TreatmentStatus",
+                        "label": "Treatment status",
+                        "layout": {
+                          "fillWidth": true,
+                          "labelPosition": "Omit",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Table"
+                      }
+                    }
+                  ],
+                  "id": "TreatmentStatus",
+                  "title": "Treatment Status"
+                }
+              }
+            ],
+            "title": "Treatment Status"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "Summary.CysticFibrosisSummary.WebUI",
+  "layoutColumns": 3
+}

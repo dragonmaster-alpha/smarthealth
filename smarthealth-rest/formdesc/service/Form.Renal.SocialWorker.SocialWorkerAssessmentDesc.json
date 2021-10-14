@@ -1,0 +1,582 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "Transgender",
+        "label": "Transgender",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "De facto",
+          "Divorced",
+          "Married",
+          "Separated",
+          "Single",
+          "Widowed"
+        ],
+        "size": 20,
+        "id": "MaritalStatus",
+        "label": "Marital Status",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Partner",
+        "label": "Partner",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "ChildrenDetails",
+        "label": "Children Details",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "maximum": 20,
+        "precision": 2,
+        "scale": 0,
+        "id": "NumberOfChildren",
+        "label": "Number of Children/Dependents",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "LivingArrangements",
+        "label": "Living Arrangements",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "maximum": 20,
+        "precision": 2,
+        "scale": 0,
+        "id": "OrderOfBirth",
+        "label": "Order of Birth",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "FromMultipleBirth",
+        "label": "Patient From Multiple Birth",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "maximum": 5,
+        "minimum": 2,
+        "precision": 1,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "FromMultipleBirth",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "NoOfChildrenInMultiBirth",
+        "label": "Number of Children in Multiple Birth",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "maximum": 9,
+        "minimum": 1,
+        "precision": 1,
+        "scale": 0,
+        "id": "NoOfsiblingsAlive",
+        "label": "Number of Siblings",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "maximum": 20,
+        "precision": 2,
+        "scale": 0,
+        "id": "NoOfsiblingsDeceased",
+        "label": "Number of Deceased Siblings",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Junior Secondary (year 10)",
+          "Left School prior to year 10",
+          "Literacy",
+          "Primary",
+          "Senior Secondary (year 12)",
+          "Tertiary Certificate or Diploma (TAFE)",
+          "University Degree"
+        ],
+        "size": 40,
+        "id": "EducationAttended",
+        "label": "Education Attending",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Junior Secondary (year 10)",
+          "Left School prior to year 10",
+          "Literacy",
+          "Primary",
+          "Senior Secondary (year 12)",
+          "Tertiary Certificate or Diploma (TAFE)",
+          "University Degree"
+        ],
+        "size": 40,
+        "id": "EducationCompleted",
+        "label": "Education Completed",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "CompletedDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Address",
+        "label": "Address",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "AssessmentAndImpression",
+        "label": "Assessment and Impression",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "Employer",
+        "label": "Employer",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "FormalCareContact",
+        "label": "Carer Contact Details",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "FormalCareHealth",
+        "label": "Carer Health",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "FormalCareName",
+        "label": "Carer Name",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Flat",
+          "House",
+          "Unit"
+        ],
+        "size": 10,
+        "id": "HomeAccommodation",
+        "label": "Accommodation",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "size": 1,
+        "id": "HomeBedrooms",
+        "label": "Bedrooms",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "HomeOtherOccupants",
+        "label": "Other Occupants",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Department of Housing",
+          "Owned",
+          "Rented"
+        ],
+        "size": 25,
+        "id": "HomeOwnedRented",
+        "label": "Owned/Rented",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "ImmediatePlans",
+        "label": "Immediate Plans",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Less than $70,000",
+          "More than $70,000"
+        ],
+        "size": 20,
+        "id": "Income",
+        "label": "Income",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "JobDescription",
+        "label": "Job Description",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "LongTermPlans",
+        "label": "Long Term Plans",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Age",
+          "Disability"
+        ],
+        "size": 15,
+        "id": "Pension",
+        "label": "Pension",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Alone",
+          "With"
+        ],
+        "size": 10,
+        "id": "SocialLives",
+        "label": "Lives",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "SocialLivesName",
+        "label": "Lives",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "SocialPsycholStatus",
+        "label": "Psychological Status",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "SocialSituation",
+        "label": "Social Situation",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "SocialSocialSupport",
+        "label": "Social Support",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Adequate",
+          "Limited",
+          "Nil",
+          "Other"
+        ],
+        "size": 10,
+        "id": "SocialSuppot",
+        "label": "Social Support",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 12,
+        "id": "Telephone",
+        "label": "Telephone",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Casual",
+          "Not in Labour force (homemaker, etc)",
+          "Studying",
+          "Unemployed",
+          "Voluntary Work",
+          "Working Full Time",
+          "Working Part Time"
+        ],
+        "size": 50,
+        "id": "TypeOfEmployment",
+        "label": "Employment Status",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "IntendingToMove",
+        "label": "Intending To Move",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "FomalCarer",
+        "label": "Formal Carer",
+        "type": "Boolean"
+      }
+    }
+  ],
+  "id": "Renal.SocialWorker.SocialWorkerAssessmentDesc",
+  "layoutColumns": 3
+}

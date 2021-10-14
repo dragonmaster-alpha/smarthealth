@@ -1,0 +1,30 @@
+{
+  "contacts": [
+    {
+      "address": {
+        "address1": "13/20 Warwick Ave",
+        "address2": "",
+        "city": "Cammeray",
+        "country": "Australia",
+        "postcode": "2062",
+        "state": "NSW"
+      },
+      "contactDetails": {
+        "email": "wee@hotmail.com",
+        "phoneHome": "99040656",
+        "phoneMobile": "",
+        "phoneWork": "105"
+      },
+      "name": {
+        "familyName": "Davies",
+        "givenName": "Guillaume",
+        "otherGivenNames": "",
+        "title": "Mr"
+      },
+      "patientID": 42,
+      "relationship": "Neighbour",
+      "version": 0
+    }
+  ],
+  "patientID": 42
+}

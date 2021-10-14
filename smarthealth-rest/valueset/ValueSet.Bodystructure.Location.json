@@ -1,0 +1,26 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 9,
+  "uri": "http://ns.smarthealth.com.au/valueset/Bodystructure.Location",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Bodystructure.Location",
+      "value": "Anterior"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Bodystructure.Location",
+      "value": "Posterior"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Bodystructure.Location",
+      "value": "Left"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Bodystructure.Location",
+      "value": "Right"
+    }
+  ],
+  "valueSetID": "Bodystructure.Location"
+}

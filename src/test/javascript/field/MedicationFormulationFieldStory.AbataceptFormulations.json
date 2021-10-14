@@ -1,0 +1,153 @@
+[
+    {
+        "brand": "Orencia Powder for infusion",
+        "cmiHTML": false,
+        "composition": "Abatacept (rch); Na equiv. 0.375 mmol or 8.625 mg/vial; white",
+        "dosage": "Reconstitute each vial with 10 mL sterile water for inj then dilute to 100 mL with NaCl 0.9% inj using silicone free disposable syringe provided; do not shake. Admin as 30 min IV infusion. Readmin 2 and 4 wks after 1st infusion, then every 4 wks thereafter; see full PI. Adults (RA, PsA). Bodyweight < 60 kg: 500 mg; 60-100 kg: 750 mg; > 100 kg: 1 g. Children 6-17 yrs (JIA). Bodyweight < 75 kg: 10 mg/kg; greater than or equal to 75 kg: admin adult dose, max 1 g",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "Z",
+            "text": "No PPPA Defined"
+        },
+        "formulationCode": 1,
+        "formulationType": "Powder for infusion",
+        "generics": {
+            "gencode": 2542,
+            "generics": "Abatacept"
+        },
+        "glutenFree": true,
+        "id": 792301,
+        "prescriptionOnly": true,
+        "prescrtiptionText": "S4",
+        "product": {
+            "adverseReactions": "GI upset; headache; dizziness; infection incl serious (eg sepsis, pneumonia) (disc), respiratory tract, UTI, herpes, HBV reactivation; infusion, inj site reaction; hypertension; malignancy incl basal cell carcinoma; cough; rash; fatigue; incr BP; abnormal LFTs; anaphylaxis, SCC (rare); others, see full PI",
+            "consumerMedicineInformation": true,
+            "contraindications": "Severe (eg sepsis, abscess, TB), opportunistic infection",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "DMARDs (limited experience with azathioprine, Au; should not coadmin with biological DMARDs eg TNF inhibitors, rituximab, anakinra); live vaccines (concomitant, within 3 mths post-treatment), lymphocyte depleting agents (not studied); do not coinfuse with other agents (not studied); lab tests: glucose dehydrogenase pyrroloquinolinequinone based glucose tests (maltose content in IV powder)",
+            "fullPI": {
+                "fullPICode": 7600,
+                "productCode": 7923
+            },
+            "precautions": "Screen for TB, viral hepatitis pretreatment; monitor for new/ active infection (esp switch from TNF inhibitors, concomitant immunosuppressants), serious allergic reaction (esp after 1st dose; disc), for worsening respiratory status (COPD); periodic skin exam (esp with skin cancer risk factors); infection incl recurrent, history, predisposition, chronic, latent, localised; Na restricted diet; psoriatic skin lesions; update immunisation guideline vaccinations pretreatment (JIA); autoimmune disease eg MS (theoretical); renal, hepatic impairment or known malignancy (not studied); elderly > 65 yrs; pregnancy (incr infection risk in newborn, admin of live vaccine less than or equal to 5 mths of last in utero dose exposure) (not recommended); lactation (should not use); children (non-JIA conditions, not recommended < 6 yrs (JIA), SCI)",
+            "pregnancyCode": "C",
+            "pregnancyTextExists": false,
+            "product": "Orencia",
+            "productCode": 7923,
+            "productSort": "Orencia",
+            "productTagFree": "Orencia",
+            "s11": false,
+            "section": 10,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "C",
+            "uses": "CD80+CD86 and CD28 interaction costimulation modulator. Adults (+/- nonbiological DMARD, corticosteroid, salicylate, NSAID, analgesic): treatment of mod-severe active RA (+ methotrexate) with poor response, intolerance to other DMARDs; methotrexate naive with severe, active, progressive RA (+ methotrexate); active psoriatic arthritis (PsA) with inadequate response to previous DMARDs. Children greater than or equal to 6 yrs: symptom reduction in mod-severe active polyarticular JIA (+/- methotrexate) with inadequate response to greater than or equal to 1 DMARD (IV only)",
+            "warnings": ""
+        },
+        "sortOrder": 1,
+        "cmicode": 8093
+    }, {
+    "brand": "Orencia Solution for injection",
+    "cmiHTML": false,
+    "composition": "Abatacept (rch); Na equiv. 0.322 mg; sterile, preservative free, clear colourless-pale yellow soln in disposable prefilled single dose glass syringe with flange extender",
+    "dosage": "Admin by SCI; not for IV infusion. Inj full amount in syringe (1 mL). Rotate inj site; do not admin into tender, bruised, red, hard skin. RA: 125 mg once wkly; may initiate +/- single IV (powder for infusion) loading dose. If initiated with IV loading dose (bodyweight < 60 kg: 500 mg; 60-100 kg: 750 mg; > 100 kg: 1 g): admin 125 mg SCI within 1 day of IV infusion. PsA: 125 mg once wkly. Switch from IV to SC therapy: admin 1st SC dose instead of the next scheduled mthly IV dose",
+    "drowsy": false,
+    "foodData": {
+        "foodCode": "Z",
+        "text": "No PPPA Defined"
+    },
+    "formulationCode": 2,
+    "formulationType": "Solution for injection",
+    "generics": {
+        "gencode": 2542,
+        "generics": "Abatacept"
+    },
+    "glutenFree": false,
+    "id": 792302,
+    "prescriptionOnly": true,
+    "prescrtiptionText": "S4",
+    "product": {
+        "adverseReactions": "GI upset; headache; dizziness; infection incl serious (eg sepsis, pneumonia) (disc), respiratory tract, UTI, herpes, HBV reactivation; infusion, inj site reaction; hypertension; malignancy incl basal cell carcinoma; cough; rash; fatigue; incr BP; abnormal LFTs; anaphylaxis, SCC (rare); others, see full PI",
+        "consumerMedicineInformation": true,
+        "contraindications": "Severe (eg sepsis, abscess, TB), opportunistic infection",
+        "deletedDetails": "",
+        "distrubutionNote": "",
+        "drugInteractions": "DMARDs (limited experience with azathioprine, Au; should not coadmin with biological DMARDs eg TNF inhibitors, rituximab, anakinra); live vaccines (concomitant, within 3 mths post-treatment), lymphocyte depleting agents (not studied); do not coinfuse with other agents (not studied); lab tests: glucose dehydrogenase pyrroloquinolinequinone based glucose tests (maltose content in IV powder)",
+        "fullPI": {
+            "fullPICode": 7600,
+            "productCode": 7923
+        },
+        "precautions": "Screen for TB, viral hepatitis pretreatment; monitor for new/ active infection (esp switch from TNF inhibitors, concomitant immunosuppressants), serious allergic reaction (esp after 1st dose; disc), for worsening respiratory status (COPD); periodic skin exam (esp with skin cancer risk factors); infection incl recurrent, history, predisposition, chronic, latent, localised; Na restricted diet; psoriatic skin lesions; update immunisation guideline vaccinations pretreatment (JIA); autoimmune disease eg MS (theoretical); renal, hepatic impairment or known malignancy (not studied); elderly > 65 yrs; pregnancy (incr infection risk in newborn, admin of live vaccine less than or equal to 5 mths of last in utero dose exposure) (not recommended); lactation (should not use); children (non-JIA conditions, not recommended < 6 yrs (JIA), SCI)",
+        "pregnancyCode": "C",
+        "pregnancyTextExists": false,
+        "product": "Orencia",
+        "productCode": 7923,
+        "productSort": "Orencia",
+        "productTagFree": "Orencia",
+        "s11": false,
+        "section": 10,
+        "sportData": {
+            "sportCode": "P",
+            "text": "Permitted in sport"
+        },
+        "subsection": "C",
+        "uses": "CD80+CD86 and CD28 interaction costimulation modulator. Adults (+/- nonbiological DMARD, corticosteroid, salicylate, NSAID, analgesic): treatment of mod-severe active RA (+ methotrexate) with poor response, intolerance to other DMARDs; methotrexate naive with severe, active, progressive RA (+ methotrexate); active psoriatic arthritis (PsA) with inadequate response to previous DMARDs. Children greater than or equal to 6 yrs: symptom reduction in mod-severe active polyarticular JIA (+/- methotrexate) with inadequate response to greater than or equal to 1 DMARD (IV only)",
+        "warnings": ""
+    },
+    "sortOrder": 2,
+    "cmicode": 8093
+}, {
+    "brand": "Orencia ClickJect Solution for injection",
+    "cmiHTML": false,
+    "composition": "Abatacept (rch); Na equiv. 0.322 mg; sterile, preservative free, clear colourless-pale yellow soln in disposable prefilled ClickJect autoinjector",
+    "dosage": "Admin by SCI; not for IV infusion. Inj full amount in autoinjector (1 mL). Rotate inj site; do not admin into tender, bruised, red, hard skin. RA: 125 mg once wkly; may initiate +/- single IV (powder for infusion) loading dose. If initiated with IV loading dose (bodyweight < 60 kg: 500 mg; 60-100 kg: 750 mg; > 100 kg: 1 g): admin 125 mg SCI within 1 day of IV infusion. PsA: 125 mg once wkly. Switch from IV to SC therapy: admin 1st SC dose instead of the next scheduled mthly IV dose",
+    "drowsy": false,
+    "foodData": {
+        "foodCode": "Z",
+        "text": "No PPPA Defined"
+    },
+    "formulationCode": 3,
+    "formulationType": "Solution for injection",
+    "generics": {
+        "gencode": 2542,
+        "generics": "Abatacept"
+    },
+    "glutenFree": false,
+    "id": 792303,
+    "prescriptionOnly": true,
+    "prescrtiptionText": "S4",
+    "product": {
+        "adverseReactions": "GI upset; headache; dizziness; infection incl serious (eg sepsis, pneumonia) (disc), respiratory tract, UTI, herpes, HBV reactivation; infusion, inj site reaction; hypertension; malignancy incl basal cell carcinoma; cough; rash; fatigue; incr BP; abnormal LFTs; anaphylaxis, SCC (rare); others, see full PI",
+        "consumerMedicineInformation": true,
+        "contraindications": "Severe (eg sepsis, abscess, TB), opportunistic infection",
+        "deletedDetails": "",
+        "distrubutionNote": "",
+        "drugInteractions": "DMARDs (limited experience with azathioprine, Au; should not coadmin with biological DMARDs eg TNF inhibitors, rituximab, anakinra); live vaccines (concomitant, within 3 mths post-treatment), lymphocyte depleting agents (not studied); do not coinfuse with other agents (not studied); lab tests: glucose dehydrogenase pyrroloquinolinequinone based glucose tests (maltose content in IV powder)",
+        "fullPI": {
+            "fullPICode": 7600,
+            "productCode": 7923
+        },
+        "precautions": "Screen for TB, viral hepatitis pretreatment; monitor for new/ active infection (esp switch from TNF inhibitors, concomitant immunosuppressants), serious allergic reaction (esp after 1st dose; disc), for worsening respiratory status (COPD); periodic skin exam (esp with skin cancer risk factors); infection incl recurrent, history, predisposition, chronic, latent, localised; Na restricted diet; psoriatic skin lesions; update immunisation guideline vaccinations pretreatment (JIA); autoimmune disease eg MS (theoretical); renal, hepatic impairment or known malignancy (not studied); elderly > 65 yrs; pregnancy (incr infection risk in newborn, admin of live vaccine less than or equal to 5 mths of last in utero dose exposure) (not recommended); lactation (should not use); children (non-JIA conditions, not recommended < 6 yrs (JIA), SCI)",
+        "pregnancyCode": "C",
+        "pregnancyTextExists": false,
+        "product": "Orencia",
+        "productCode": 7923,
+        "productSort": "Orencia",
+        "productTagFree": "Orencia",
+        "s11": false,
+        "section": 10,
+        "sportData": {
+            "sportCode": "P",
+            "text": "Permitted in sport"
+        },
+        "subsection": "C",
+        "uses": "CD80+CD86 and CD28 interaction costimulation modulator. Adults (+/- nonbiological DMARD, corticosteroid, salicylate, NSAID, analgesic): treatment of mod-severe active RA (+ methotrexate) with poor response, intolerance to other DMARDs; methotrexate naive with severe, active, progressive RA (+ methotrexate); active psoriatic arthritis (PsA) with inadequate response to previous DMARDs. Children greater than or equal to 6 yrs: symptom reduction in mod-severe active polyarticular JIA (+/- methotrexate) with inadequate response to greater than or equal to 1 DMARD (IV only)",
+        "warnings": ""
+    },
+    "sortOrder": 3,
+    "cmicode": 8093
+}
+]

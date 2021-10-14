@@ -1,0 +1,77 @@
+{
+  "data": {
+    "ID": "9719b074-1f53-4db2-a5a8-731cd76eebee",
+    "Patient": 42,
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "ServiceDate": {
+      "iso": "2020-04-30"
+    },
+    "SetID": "168609f9-5338-4efe-891f-6c1665452cc5",
+    "Version": 18,
+    "diagnosis": {
+      "date": {
+        "iso": "2020-04-30"
+      },
+      "diagnosis": "Squamous epdidymitis of rectum",
+      "historyPresentIllness": "Historically hysterically funny",
+      "kras": true,
+      "krasDetails": "KRAS not crass",
+      "tumourStream": "Colorectal Cancer"
+    },
+    "investigations": {
+      "investigations": [
+        {
+          "dateOrdered": {
+            "iso": "2020-06-01"
+          },
+          "investigationCompleted": "Biopsy"
+        }
+      ]
+    },
+    "nutrition": {
+      "eatingPoorly": false
+    },
+    "oncologicalHistory": {
+      "cancers": [
+        {
+          "ConceptID": 93870000,
+          "Condition": "Malignant neoplasm of liver"
+        }
+      ],
+      "familyHistory": "History of fart jokes",
+      "priorRadiotherapy": false
+    },
+    "physicalExamination": {
+      "abdomen": "Sitting",
+      "bloodPressure": "120/55",
+      "bmi": 24.7,
+      "bpPosture": "Standing",
+      "fiO2": 22,
+      "fiO2Method": "Room air",
+      "heartRate": 88,
+      "height": 180.0,
+      "palpablePeripheralNodes": false,
+      "weight": 80.00
+    }
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "program": "CANCER",
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2020-04-30"
+    },
+    "serviceID": 8263,
+    "serviceType": 207,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

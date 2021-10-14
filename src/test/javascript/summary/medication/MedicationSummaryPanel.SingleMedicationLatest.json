@@ -1,0 +1,10 @@
+{
+    "id": "/medications/latest",
+    "referencedType": "MedicationSummary",
+    "references": [
+        {
+            "id": 4,
+            "type": "MedicationSummary"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+	"data": {
+		"DialyserType": "Fresenius FX8",
+		"DialyserUreaClearance": 123,
+		"DialysateMg": 0.4,
+		"Anticoagulation": {
+			"Anticoagulant": "Heparin"
+		},
+		"Date": {
+			"iso": "2019-09-11"
+		},
+		"DialysateCA": 1,
+		"Provider": {
+			"groupID": 1,
+			"userID": 42
+		},
+		"DialysateGlucose_gL": 1.62,
+		"ProfilingNaPlus": "2",
+		"Qd": 300,
+		"DialyserMembrane": "Polysulphone-Helixone",
+		"DialysateGlucose": 9,
+		"DialysateKPlus": 1,
+		"TransplantList": true,
+		"Previous": 33,
+		"Height": 12.3,
+		"DialyserKUF": 123,
+		"ProfilingHCO3": "2",
+		"IBW": 50,
+		"Location": {
+			"id": -2,
+			"name": "Darlinghurst"
+		},
+		"Summary": "s",
+		"Qb": 1
+	},
+	"metadata": {
+		"owningGroupID": 1,
+		"patientID": 42,
+		"program": "RENAL_DISEASE",
+		"providerID": {
+			"groupID": 1,
+			"userID": 42
+		},
+		"serviceDate": {
+			"iso": "2019-09-11T13:37+10"
+		},
+		"serviceType": 33,
+		"status": "FINAL",
+		"summaryLine": ""
+	},
+	"version": 0
+}

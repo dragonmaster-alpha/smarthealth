@@ -1,0 +1,35 @@
+{
+  "data": {
+    "ID": "8a208cd9-f7c4-40e0-9eb0-c21dafb9e21e",
+    "Patient": 42,
+    "ProcedureType": {
+      "conceptID": 57103007,
+      "text": "Reattachment of retina by diathermy"
+    },
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "ServiceDate": {
+      "iso": "2020-08-26T15:04+10"
+    },
+    "SetID": "9d0d4ca2-cdc3-4303-8cde-a4f26f28a049",
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2020-08-26T15:04+10"
+    },
+    "serviceID": 8263,
+    "serviceType": 101,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

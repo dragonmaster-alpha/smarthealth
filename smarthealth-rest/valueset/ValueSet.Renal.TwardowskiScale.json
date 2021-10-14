@@ -1,0 +1,30 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 20,
+  "uri": "http://ns.smarthealth.com.au/valueset/Renal.TwardowskiScale",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.TwardowskiScale",
+      "value": "Excellent"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.TwardowskiScale",
+      "value": "Good"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.TwardowskiScale",
+      "value": "Equivocal"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.TwardowskiScale",
+      "value": "Acute infection"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.TwardowskiScale",
+      "value": "Chronic infection"
+    }
+  ],
+  "valueSetID": "Renal.TwardowskiScale"
+}

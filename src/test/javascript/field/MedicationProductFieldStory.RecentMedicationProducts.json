@@ -1,0 +1,22 @@
+[
+    {
+        "code": "7179",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Amino acids - Calcium - Carbohydrate - Casein - Chloride - Fat - Potassium - Lactose monohydrate ..."
+    },
+    {
+        "code": "9844",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Panadol Rapid"
+    },
+    {
+        "code": "1965",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Patent blue V"
+    },
+    {
+        "code": "6090",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zabep 20"
+    }
+]

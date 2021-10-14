@@ -1,0 +1,406 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "PrescriptionUpdate",
+        "label": "Prescription Update",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 10,
+        "id": "MachineSerialNumber",
+        "label": "Machine S/N",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ServiceDue",
+        "label": "Service Due",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 35,
+        "id": "StockInHand",
+        "label": "Stock in Hand",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "BloodTests",
+        "label": "Blood Tests",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "TissueTyping",
+        "label": "Tissue Typing",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Nutrition",
+        "label": "Nutrition",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Sleep",
+        "label": "Sleep",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Coping",
+        "label": "Coping",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "FluidIntake",
+        "label": "Intake",
+        "type": "Number",
+        "units": "mls/day"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "OedemaPresent",
+        "label": "Oedema Present",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 45,
+        "id": "UrineOutput",
+        "label": "Urine Output",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "TodaysWeight",
+        "label": "Today\u0027s Weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "IBW",
+        "label": "IBW",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "MinWeight",
+        "label": "Min Weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "MaxWeight",
+        "label": "Max Weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "minimumLength": 3,
+        "size": 7,
+        "id": "SittingBP",
+        "label": "Sitting",
+        "type": "Text",
+        "units": "mmHg"
+      }
+    },
+    {
+      "field": {
+        "minimumLength": 3,
+        "size": 7,
+        "id": "StandingBP",
+        "label": "Standing",
+        "type": "Text",
+        "units": "mmHg"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "BPRange",
+        "label": "BP Range",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Fresenius",
+          "Gambro"
+        ],
+        "size": 25,
+        "id": "DialysateProvider",
+        "label": "Dialysate Provider",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "Dialysate",
+        "label": "Dialysate",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "APRange",
+        "label": "AP Range",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "BFR",
+        "label": "BFR",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "BFRange",
+        "label": "BF Range",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "CannulationSites",
+        "label": "Cannulation Sites",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "CannulationTechnique",
+        "label": "Cannulation Technique",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "DialysisTechnique",
+        "label": "Dialysis Technique",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "Documentation",
+        "label": "Documentation",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "FistulaGraftFunction",
+        "label": "Fistula/Graft Function",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "VPRange",
+        "label": "VP Range",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "CheckCurrentMedicationsWithCard",
+        "label": "Check Current Medication with Medication Card",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "CheckMedicationSupply",
+        "label": "Check Medication Supply",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.HomeHDNotes",
+  "layoutColumns": 3
+}

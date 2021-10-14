@@ -1,0 +1,336 @@
+{
+  "behaviour": {
+    "mostRecentOnlyEditable": true,
+    "newServiceButton": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Active",
+                "Inactive",
+                "Off list",
+                "Ready",
+                "Transplanted",
+                "Unclassified"
+              ],
+              "size": 20,
+              "id": "Status.TransplantStatus",
+              "label": "Transplant status",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "toolTip": "\u003chtml\u003e \u003cul\u003e \u003cli\u003eUnclassified - Patients that have not been seen or who have been seen but their classification \u003cbr/\u003e has not yet been determined (for example, they are in work up) \u003c/li\u003e \u003cli\u003eActive - Patients on the national waiting list, with or without a live donor (some donors may be \u003cbr/\u003e incompatible and the recipient is awaiting success in the paired exchange program or a deceased donor) \u003c/li\u003e \u003cli\u003eReady - Patients that will never be made active (they have a live donor). Patients that have \u003cbr/\u003e completed and passed the assessment but cannot be active for some reason and patients that are \u003cbr/\u003e pre-dialysis but are not able to be made active yet (for example, they have not yet commenced dialysis)\u003c/li\u003e \u003cli\u003eInactive - Patients that are ill or hospitalised, including cardiac procedure, chest pain needing \u003cbr/\u003e investigation, collapse, commencement of clopidogrel, depression, infection (pneumonia, \u003cbr/\u003e urinary tract infection, permcath sepsis, peritonitis, etc.), obesity, psychiatric problems, poor \u003cbr/\u003e adherence to treatment, stroke, surgery, vascular disease needing review. \u003c/li\u003e \u003cli\u003eOff list - Patient is not suitable for transplant. \u003c/li\u003e \u003cli\u003eTransplanted - Patient has been transplanted. \u003c/li\u003e \u003cul\u003e \u003c/html\u003e",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Live donor",
+                "Pre-dialysis"
+              ],
+              "size": 15,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Ready"
+                      ],
+                      "fieldID": "Status.TransplantStatus"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Status.ReadyReason",
+              "label": "Reason",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Ready"
+                      ],
+                      "fieldID": "Status.TransplantStatus"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Status.TransplantDate",
+              "label": "Transplant Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "multiple": true,
+              "options": [
+                "Cardiac",
+                "Compliance",
+                "Drugs/alcohol",
+                "Hepatitis",
+                "Infection",
+                "Malignancy",
+                "Obesity",
+                "Psychological",
+                "Smoking",
+                "Surgical",
+                "Temporary"
+              ],
+              "size": 15,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Inactive"
+                      ],
+                      "fieldID": "Status.TransplantStatus"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Status.InactiveReasons",
+              "label": "Reasons",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Deceased",
+                "Not suitable",
+                "Transferred"
+              ],
+              "size": 15,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Off list"
+                      ],
+                      "fieldID": "Status.TransplantStatus"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Status.OffListReason",
+              "label": "Reason",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "Status.Details",
+              "label": "Details",
+              "layout": {
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Status.NextReviewDate",
+              "label": "Next review",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Status.TransplantHospital",
+              "label": "Transplant hospital",
+              "layout": {
+                "newLine": true
+              },
+              "type": "MedicalGroup"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Cadaveric kidney",
+                "Live kidney",
+                "Pancreas"
+              ],
+              "size": 40,
+              "id": "Status.PossibleTransplants",
+              "label": "Possible transplants",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Status.PotentialLiveDonors",
+              "label": "Potential live donors",
+              "layout": {
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Status",
+        "layoutShow": true,
+        "title": ""
+      }
+    }
+  ],
+  "id": "Renal.TransplantWaitingList",
+  "layoutColumns": 2
+}

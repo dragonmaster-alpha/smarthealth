@@ -1,0 +1,134 @@
+{
+  "data": {
+    "AllTestsComplete": true,
+    "HL7": "MSH|^~\\\u0026|TrakCare Lab|SYDPATH|SMARTHEALTH|SHS|20200120110633||ORU^R01|fd200120000633213658|P|2.3|||AL|NE|AU||EN^english^ISO639\rPID|||70000^^^SVH||POTTER^HARRY||19800731|M|||S405/233 HOGWARTS ST^^DOBIE^NSW^2000||0412 034 000|||||||||||||||||N\rPV1|1|O|OPD|||||||||||||||||\rORC|XO|41293289^L|41293289^Sydpath||CM||||20200120110633|||^SEVASTOS^JACOB^^^PROF^^AUSHICPR|||20200120110633\rOBR|1|41293289^L|41293289^Sydpath|C280^UEC^L^C280^Urea Electrolytes and Creatinine measurement^LN|R|20191113000000|20200120082600|||||||20200120082800||^SEVASTOS^JACOB^^^PROF^^AUSHICPR||||||||LAB|F|||||||kdeguzman\rOBX|1|NM|C1504^Sodium^SydPath^2951-2^Sodium^LN||143|mmol/L|135-145||||F|||20200120110527||\rOBX|2|NM|C1505^Potassium^SydPath^2823-3^Potassium^LN||3.9|mmol/L|3.5-5.2||||F|||20200120110527||\rOBX|3|NM|C0187^Chloride^SydPath^2075-0^Chloride^LN||109|mmol/L|95-110||||F|||20200120110527||\rOBX|4|NM|C1276^Bicarbonate^SydPath^1963-8^Bicarbonate^LN||26|mmol/L|22-32||||F|||20200120110527||\rOBX|5|NM|C0333^Urea^SydPath^22664-7^Urea^LN||24.6|mmol/L|3.5-8.0|H|||F|||20200120110527||\rOBX|6|NM|C1224^Creatinine^SydPath^14682-9^Creatinine^LN||170|umol/L|60-110|H|||F|||20200120110527||\rOBX|7|NM|C0246^eGFR^SydPath^62238-1^eGFR^LN||43|mL/mn/1.73m2|\u003e60|L|||F|||20200120110527||\rOBX|8|FT|C3028^eGFR comment^SydPath^^eGFR comment||eGFR 31 - 59 mL/min/1.73m2 indicates moderate decrease in GFR. Note change to||||||F|||20200120110527||\rOBX|9|FT|C3028^eGFR comment^SydPath^^eGFR comment||CKD-EPI formula. See www.sydpath.stvincents.com.au/eGFR.htm||||||F|||20200120110527||",
+    "ID": "7b42f258-2551-4860-8c01-a65c4b980d75",
+    "LabReference": "41293289",
+    "ObservationDate": {
+      "iso": "2020-01-20T08:26+11"
+    },
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "ReferringProvider": {
+      "groupID": 257,
+      "userID": 44
+    },
+    "Results": [
+      {
+        "Code": "C280",
+        "Date": {
+          "iso": "2020-01-20"
+        },
+        "Name": "UEC",
+        "OriginalCode": "C280",
+        "depth": 1
+      },
+      {
+        "Code": "2951-2",
+        "Name": "Sodium",
+        "OriginalCode": "2951-2",
+        "Range": "135-145",
+        "Units": "mmol/L",
+        "Value": "143",
+        "ValueType": "NM",
+        "depth": 2
+      },
+      {
+        "Code": "2823-3",
+        "Name": "Potassium",
+        "OriginalCode": "2823-3",
+        "Range": "3.5-5.2",
+        "Units": "mmol/L",
+        "Value": "3.9",
+        "ValueType": "NM",
+        "depth": 2
+      },
+      {
+        "Code": "2075-0",
+        "Name": "Chloride",
+        "OriginalCode": "2075-0",
+        "Range": "95-110",
+        "Units": "mmol/L",
+        "Value": "109",
+        "ValueType": "NM",
+        "depth": 2
+      },
+      {
+        "Code": "1963-8",
+        "Name": "Bicarbonate",
+        "OriginalCode": "1963-8",
+        "Range": "22-32",
+        "Units": "mmol/L",
+        "Value": "26",
+        "ValueType": "NM",
+        "depth": 2
+      },
+      {
+        "Abnormal": "H",
+        "Code": "22664-7",
+        "Name": "Urea",
+        "OriginalCode": "22664-7",
+        "Range": "3.5-8.0",
+        "Units": "mmol/L",
+        "Value": "24.6",
+        "ValueType": "NM",
+        "depth": 2
+      },
+      {
+        "Abnormal": "H",
+        "Code": "14682-9",
+        "Name": "Creatinine",
+        "OriginalCode": "14682-9",
+        "Range": "60-110",
+        "Units": "umol/L",
+        "Value": "170",
+        "ValueType": "NM",
+        "depth": 2
+      },
+      {
+        "Abnormal": "L",
+        "Code": "62238-1",
+        "Name": "eGFR",
+        "OriginalCode": "62238-1",
+        "Range": "\u003e60",
+        "Units": "mL/mn/1.73m2",
+        "Value": "43",
+        "ValueType": "NM",
+        "depth": 2
+      },
+      {
+        "Code": "MoreInformation",
+        "Name": "More Information",
+        "OriginalCode": "MoreInformation",
+        "Value": "see report",
+        "depth": 2
+      }
+    ],
+    "ServiceDate": {
+      "iso": "2020-01-20T08:26+11"
+    },
+    "SetID": "e5323172-336b-44f5-a150-56cc4078729c",
+    "SurgeryReference": "41293289",
+    "TestRequest": "UEC",
+    "TestResult": "eGFR comment: eGFR 31 - 59 mL/min/1.73m2 indicates moderate decrease in GFR. Note change to\n CKD-EPI formula. See www.sydpath.stvincents.com.au/eGFR.htm",
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2020-01-20T08:26+11"
+    },
+    "serviceID": 8263,
+    "serviceType": 3,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

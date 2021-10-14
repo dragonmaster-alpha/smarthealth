@@ -1,0 +1,38 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 15,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.TPrimaryTumour",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.TPrimaryTumour",
+      "value": "TX"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.TPrimaryTumour",
+      "value": "Tis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.TPrimaryTumour",
+      "value": "T0"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.TPrimaryTumour",
+      "value": "T1"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.TPrimaryTumour",
+      "value": "T2"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.TPrimaryTumour",
+      "value": "T3"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.TPrimaryTumour",
+      "value": "T4"
+    }
+  ],
+  "valueSetID": "Cancer.TNM.TPrimaryTumour"
+}

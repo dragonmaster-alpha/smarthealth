@@ -1,0 +1,170 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 80,
+  "uri": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Aspergillosis, invasive"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Bartonellosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Candidiasis of lungs"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Candidiasis of oesophagus"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Candidiasis of trachea"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Cervical cancer, invasive"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Chagas disease (American trypanosomiasis) of the CNS"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "CMV disease (other than liver, spleen, or nodes)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "CMV retinitis (with loss of vision)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Coccidioidomycosis, disseminated or extrapulmonary"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Cryptococcosis, extrapulmonary"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Cryptosporidiosis, chronic intestinal (\u003e1 month\u0027s duration)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Encephalopathy, HIV-related (including AIDS Dementia Complex)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Herpes zoster, multi-dermatomal (\u003e\u003d10 lesions in a non-contiguous site)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Histoplasmosis, disseminated or extrapulmonary"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "HSV: bronchitis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "HSV: chronic ulcers (\u003e1 month)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "HSV: oesophagitis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "HSV: pneumonitis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Isosporiasis, chronic intestinal (\u003e1 month\u0027s duration)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Kaposi\u0027s sarcoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Leishmaniasis, visceral (kala-azar)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Lymphoma, Burkitt (or equivalent term)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Lymphoma, Hodgkin\u0027s"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Lymphoma, non-Hodgkin\u0027s, all cell types"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Lymphoma, primary, of brain"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "MAC or Mycobacterium kansasii (disseminated or extrapulmonary)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Microsporidiosis (\u003e 1 month\u0027s duration)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Mycobacterium - other than MAC, M. kansasii or M.TB"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Mycobacterium tuberculosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Nocardiosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Penicillium marneffii, disseminated"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Pneumocystis carinii (jiroveci), extrapulmonary"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Pneumocystis jirovecii pneumonia"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Pneumonia, recurrent bacterial"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Progressive multifocal leukoencephalopathy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Rhodococcus equi disease"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Salmonella septicaemia, recurrent"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Toxoplasmosis of brain, onset at age \u003e1 month"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.AIDSDefiningIllnesses",
+      "value": "Wasting syndrome attributed to HIV"
+    }
+  ],
+  "valueSetID": "Immunology.AIDSDefiningIllnesses"
+}

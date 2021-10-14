@@ -1,0 +1,42 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 40,
+  "uri": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+      "value": "Clerical or Administrative Worker"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+      "value": "Community or Personal Service Worker"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+      "value": "Labourer"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+      "value": "Machinery Operator or Driver"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+      "value": "Manager"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+      "value": "Professional"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+      "value": "Sales Worker"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Occupation",
+      "value": "Technician or Trades Worker"
+    }
+  ],
+  "valueSetID": "Patient.Occupation"
+}

@@ -1,0 +1,40 @@
+{
+  "coded": true,
+  "codeLength": 2,
+  "extensible": true,
+  "length": 25,
+  "uri": "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+  "values": [
+    {
+      "code": "03",
+      "codeSet": "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+      "value": "Cancelled"
+    },
+    {
+      "code": "05",
+      "codeSet": "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+      "value": "Ceased"
+    },
+    {
+      "code": "02",
+      "codeSet": "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+      "value": "Changed"
+    },
+    {
+      "code": "04",
+      "codeSet": "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+      "value": "Prescribed"
+    },
+    {
+      "code": "06",
+      "codeSet": "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+      "value": "Suspended"
+    },
+    {
+      "code": "01",
+      "codeSet": "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+      "value": "Unchanged"
+    }
+  ],
+  "valueSetID": "Medication.NCTISChangeType"
+}

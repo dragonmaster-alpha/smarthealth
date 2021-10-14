@@ -1,0 +1,185 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "HaemodialysisPrescription.BloodFlowRate",
+              "label": "Latest blood flow rate",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL/min"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 1,
+              "id": "HaemodialysisPrescription.SessionsPerWeek",
+              "label": "Sessions",
+              "type": "Number",
+              "units": "per week"
+            }
+          },
+          {
+            "field": {
+              "fields": [
+                {
+                  "size": 20,
+                  "id": "HaemodialysisPrescription.HoursPerSession",
+                  "label": "Hours/session",
+                  "layout": {
+                    "labelPosition": "Omit"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "displayType": "ButtonOnly",
+                  "id": "HaemodialysisPrescription.HDPrescriptionService",
+                  "label": "",
+                  "layout": {
+                    "labelPosition": "Omit"
+                  },
+                  "type": "ServiceRecordReference"
+                }
+              ],
+              "id": "HaemodialysisPrescription.HoursPerSessionGroup",
+              "label": "Hours/session",
+              "type": "Group"
+            }
+          }
+        ],
+        "id": "HaemodialysisPrescription",
+        "layoutShow": true,
+        "title": "Haemodialysis Prescription"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "displayType": "ServiceDate",
+                  "id": "Service",
+                  "label": "Date",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "WeightPre",
+                  "label": "Weight pre (kg)",
+                  "type": "Number",
+                  "units": "kg"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "WeightPost",
+                  "label": "Weight post (kg)",
+                  "type": "Number",
+                  "units": "kg"
+                },
+                {
+                  "format": "BloodPressure",
+                  "size": 7,
+                  "id": "BPPre",
+                  "label": "BP pre (mmHg)",
+                  "type": "Formatted"
+                },
+                {
+                  "format": "BloodPressure",
+                  "size": 7,
+                  "id": "BPPost",
+                  "label": "BP post (mmHg)",
+                  "type": "Formatted"
+                },
+                {
+                  "maximum": 400,
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "Qb",
+                  "label": "Qb (mL/min)",
+                  "type": "Number",
+                  "units": "mL/min"
+                },
+                {
+                  "acceptNegative": true,
+                  "maximum": 100,
+                  "minimum": -300,
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "ArtPress",
+                  "label": "Arterial pressure (mmHg)",
+                  "type": "Number",
+                  "units": "mm Hg"
+                },
+                {
+                  "maximum": 500,
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "VenPress",
+                  "label": "Venous pressure (mmHg)",
+                  "type": "Number",
+                  "units": "mm Hg"
+                },
+                {
+                  "precision": 3,
+                  "scale": 2,
+                  "id": "OCMKTV",
+                  "label": "OCM Kt/V",
+                  "type": "Number"
+                },
+                {
+                  "precision": 3,
+                  "scale": 1,
+                  "id": "TargetUF",
+                  "label": "Required UF (L)",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Number",
+                  "units": "L"
+                },
+                {
+                  "size": 500,
+                  "id": "Comment",
+                  "label": "Comment",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "rowSelectionInViewMode": true,
+              "id": "HaemodialysisSummary.Haemodialysis",
+              "label": "Haemodialysis",
+              "layout": {
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table",
+              "valuePath": "Haemodialysis"
+            }
+          }
+        ],
+        "id": "HaemodialysisSummary",
+        "layoutShow": true,
+        "title": "Haemodialysis"
+      }
+    }
+  ],
+  "id": "Summary.HaemodialysisSummary.WebUI",
+  "layoutColumns": 3
+}

@@ -1,0 +1,294 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 87,
+  "uri": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Advanced GN (unclassified \u003d end stage)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Amyloid disease"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Analgesic nephropathy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Atheroembolic disease (cholesterol emboli)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Balkan nephropathy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Bilateral renal artery stenosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Bladder neck obstruction (incl. prostatomegaly)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Cadmium toxicity"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Calcineurin Inhibitor Toxicity"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Calculi"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Congenital renal hypoplasia and dysplasia"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Cortical necrosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Cystinosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Diabetes - Type 1 (insulin dependent)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Diabetes - Type 2 (insulin requiring)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Diabetes - Type 2 (non-insulin requiring)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Extra and intra capillary GN (extensive crescents - clinically rapidly progressive)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Familial GN"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Focal and segmental proliferative GN (including focal necrotising)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Focal sclerosing GN (including hyalinosis)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "GN other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "GN with systemic disease"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Goodpasture\u0027s syndrome with linear IgG and lung haemorrhage"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Gout"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Haemolytic uraemic syndrome"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Henoch-Schonlein purpura"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Infantile/juvenile polycystic kidney disease"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Interstitial nephritis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Lead nephropathy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Light chain nephropathy (benign)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Lithium toxicity"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Loss of single kidney"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Medullary cystic disease"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Megaureter"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Membranous GN"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Mesangial proliferative (IgA+ positive)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Mesangial proliferative (IgA- negative)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Mesangial proliferative (no I.F. studies)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Mesangiocapillary GN with intramembranous deposits (dense deposit disease)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Mesangiocapillary GN with subendothelial deposits (double contour)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Microscopic Polyarteritis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Neuropathic bladder"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Non-obstructed dilated bladder and ureters (megacystitis - megaureter)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Obstructed megaureter"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Obstructive nephropathy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Other lower urinary tract abnormalities (with secondary reflux)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Oxalosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Paraproteinaemia (including multiple myeloma)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Pelvi-ureteric junction obstruction"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Polycystic kidney disease"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Post partum nephropathy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Posterior urethral valves"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Presumed GN, type undefined histologically (no biopsy)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Primary focal sclerosing GN or focal glomerular sclerosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Proliferative GN with linear IgG - no lung haemorrhage"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Pyelonephritis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Reflux nephropathy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Renal cell carcinoma (GRAWITZ)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Renal tuberculosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Renal vascular disease - type unspecified"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Renal vascular disease due to hypertension (nephrosclerosis) (NO primary renal disease)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Renal vascular disease due to malignant hypertension (NO primary renal disease)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Sarcoidosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Scleroderma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Secondary focal sclerosing GN"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "SLE"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Spina bifida or myelomeningocoele"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Transitional cell carcinoma of urinary tract"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Uncertain diagnosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Ureteric obstructive nephropathy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.PrimaryRenalDisease",
+      "value": "Wegener\u0027s Granulomatosis"
+    }
+  ],
+  "valueSetID": "Renal.PrimaryRenalDisease"
+}

@@ -1,0 +1,58 @@
+{
+  "coded": true,
+  "codeLength": 9,
+  "extensible": false,
+  "length": 25,
+  "uri": "http://snomed.info/sct",
+  "values": [
+    {
+      "code": "38412008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Axillary tail"
+    },
+    {
+      "code": "110503000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Central portion of breast"
+    },
+    {
+      "code": "29745008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Nipple and areola"
+    },
+    {
+      "code": "110504006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Upper inner quadrant"
+    },
+    {
+      "code": "110505007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Lower inner quadrant"
+    },
+    {
+      "code": "110506008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Upper outer quadrant"
+    },
+    {
+      "code": "110507004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Lower outer quadrant"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Breast, overlapping"
+    },
+    {
+      "code": "76752008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Breast, unspecified"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Not known"
+    }
+  ],
+  "valueSetID": "Cancer.BreastCancer.Site"
+}

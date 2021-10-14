@@ -1,0 +1,879 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 50,
+                  "id": "Name",
+                  "label": "Name",
+                  "type": "Text"
+                },
+                {
+                  "displayType": "ServiceDate",
+                  "id": "PathologyServiceRecord",
+                  "label": "Date",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 50,
+                  "id": "Value",
+                  "label": "Value",
+                  "type": "Text"
+                },
+                {
+                  "size": 50,
+                  "id": "Units",
+                  "label": "Units",
+                  "type": "Text"
+                },
+                {
+                  "size": 50,
+                  "id": "Range",
+                  "label": "Range",
+                  "type": "Text"
+                },
+                {
+                  "size": 5,
+                  "id": "Abnormal",
+                  "label": "Abnormal",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Code",
+                  "label": "Code",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 50,
+                  "id": "mappingID",
+                  "label": "mappingID",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "rowSelectionInViewMode": true,
+              "id": "Diagnostics.PathologyResults",
+              "label": "Pathology Results",
+              "layout": {
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Diagnostics",
+        "layoutShow": true,
+        "title": "Diagnostics"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 3,
+              "id": "Prognostic.ChildPughClass",
+              "label": "Child Pugh Class",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "Prognostic.MeldScore",
+              "label": "MELD Score",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 1,
+              "id": "Prognostic.Fibroscan",
+              "label": "Fibroscan",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "kPa"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Prognostic.FibroscanDate",
+              "label": "Fibroscan date",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "Prognostic",
+        "layoutShow": true,
+        "title": "Prognostic"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Absent",
+                "Moderate",
+                "Severe",
+                "Slight"
+              ],
+              "size": 10,
+              "id": "SyntheticFunction.Oedema",
+              "label": "Oedema",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "SyntheticFunction.Dialysis",
+              "label": "Dialysis more than twice in the last week",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Absent",
+                "Moderate",
+                "Slight"
+              ],
+              "size": 20,
+              "id": "SyntheticFunction.Ascites",
+              "label": "Ascites",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Amiloride",
+                "Furosemide",
+                "Spironolactone"
+              ],
+              "size": 20,
+              "id": "SyntheticFunction.AscitesTreatment",
+              "label": "Ascites treatment",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Mild (I-II)",
+                "None",
+                "Severe (III-IV)"
+              ],
+              "size": 20,
+              "id": "SyntheticFunction.Encephalopathy",
+              "label": "Encephalopathy",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Lactulose",
+                "Low protein diet",
+                "Neomycin",
+                "Rifaximin"
+              ],
+              "size": 20,
+              "id": "SyntheticFunction.EncephalopathyTreatment",
+              "label": "Encephalopathy treatment",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "SyntheticFunction",
+        "layoutShow": true,
+        "title": "Synthetic Function"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "PortalHypertension.Endoscopy",
+              "label": "Endoscopy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "PortalHypertension.Endoscopy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PortalHypertension.EndoscopyDate",
+              "label": "Endoscopy date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Gastric",
+                "Gastric and portal hypertensive gastropathy",
+                "No portal hypertension",
+                "Oesophageal",
+                "Oesophageal and gastric",
+                "Oesophageal and portal hypertensive gastropthy",
+                "Oesophageal, gastric and portal hypertensive gastropathy",
+                "Portal hypertensive gastropathy"
+              ],
+              "size": 60,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "PortalHypertension.Endoscopy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PortalHypertension.Varices",
+              "label": "Varices",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Endoscopy - banding",
+                "Medication - nitrates",
+                "Medication - propranolol",
+                "Transjugular intrahepatic portosystemic shunt"
+              ],
+              "size": 45,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "PortalHypertension.Endoscopy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PortalHypertension.PortalHypertensionTreatment",
+              "label": "Treatment",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "PortalHypertension",
+        "layoutShow": true,
+        "title": "Portal Hypertension"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Abdominal ultrasound",
+                    "CT",
+                    "MRI"
+                  ],
+                  "size": 25,
+                  "id": "ImagingScreening",
+                  "label": "Imaging screening",
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "ImagingDate",
+                  "label": "Date",
+                  "type": "DateTime"
+                }
+              ],
+              "layoutRows": 3,
+              "rowSelectionInViewMode": true,
+              "id": "HCCScreening.Imaging",
+              "label": "Imaging",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 1,
+              "id": "HCCScreening.AFP",
+              "label": "AFP",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "HCCScreening.AFP",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "HCCScreening.AFPDate",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "HCCScreening.DiagnosedHCC",
+              "label": "Diagnosed HCC",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Chemo-Sorafenib",
+                "Liver transplant",
+                "Perc-radiofrequency-ETOH",
+                "SIRT",
+                "Surgery-resection",
+                "TACE"
+              ],
+              "size": 25,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "HCCScreening.DiagnosedHCC",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "HCCScreening.HCCTreatment",
+              "label": "HCC Treatment",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "HCCScreening",
+        "layoutShow": true,
+        "title": "HCC Screening"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 100,
+              "id": "Metabolic.DexaScan",
+              "label": "Dexa Scan",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Metabolic.DexaScan",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Metabolic.DexaScanDate",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "Metabolic",
+        "layoutShow": true,
+        "title": "Metabolic"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 20,
+                  "id": "Diagnosis",
+                  "label": "Diagnosis",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "id": "Immune",
+                  "label": "Immune",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Immunised",
+                  "label": "Immunised",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Boolean"
+                },
+                {
+                  "displayType": "ServiceDate",
+                  "id": "ImmunisationServiceRecord",
+                  "label": "Date",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "ServiceRecordReference"
+                }
+              ],
+              "fixedRows": true,
+              "rowSelectionInViewMode": true,
+              "id": "Immunisations.Immunisations",
+              "label": "Immunisations",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Immunisations",
+        "layoutShow": true,
+        "title": "Immunisations"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "medicalGroupListType": "ADVANCED_LIVER_DISEASE_ASSESSMENT_CLINIC_TRIAL",
+                  "size": 100,
+                  "id": "TrialName",
+                  "label": "Trial name",
+                  "type": "MedicalGroupList"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateCommenced",
+                  "label": "Date commenced",
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateCeased",
+                  "label": "Date ceased/withdrawn",
+                  "type": "DateTime"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "ClinicalTrials.Reviews",
+              "label": "Reviews",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ClinicalTrials",
+        "layoutShow": true,
+        "title": "Clinical Trials"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Notes.QOL",
+              "label": "Quality of Life Questionnaire",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Notes.QOL",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Notes.QOLScore",
+              "label": "QOL Score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Notes.QOL",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Notes.QOLDate",
+              "label": "Date",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Notes.Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Notes",
+        "layoutShow": true,
+        "title": "Notes"
+      }
+    }
+  ],
+  "id": "Immunology.AdvancedLiverDiseaseAssessment.WebUI",
+  "layoutColumns": 3
+}

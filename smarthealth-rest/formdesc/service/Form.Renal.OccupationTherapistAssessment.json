@@ -1,0 +1,590 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "CognitiveConcMemShortTerm",
+        "label": "Concentration/Memory Short Term",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "CognitiveConcMemLongTerm",
+        "label": "Concentration/Memory Long Term",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "CognitiveOrganisation",
+        "label": "Organisation/Sequencing",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "CognitiveProbSolv",
+        "label": "Problem Solving",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "CognitiveConcept",
+        "label": "Conceptualisation (Abstract/Concrete)",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 200,
+        "id": "CognitiveNumeracy",
+        "label": "Numeracy",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "CognitiveWrittenInst",
+        "label": "Ability to Follow Written Instructions",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 200,
+        "id": "CognitiveReadingAble",
+        "label": "Reading Ability",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 200,
+        "id": "CognitiveComprehension",
+        "label": "Comprehension",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "CognitiveClockTest",
+        "label": "Clock Test",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "CognitiveTrailMakingTest",
+        "label": "Trail Making Test",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 400,
+        "id": "CognitiveOtherComments",
+        "label": "Other Comments",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "DailyLivingName",
+            "label": "Name",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "DailyLivingKey",
+            "label": "Key",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "size": 100,
+            "id": "DailyLivingComments",
+            "label": "Comment",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "DailyLiving",
+        "label": "Daily Living",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "DailyLivingCommunityServices",
+        "label": "Current Community Services",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 400,
+        "id": "DailyLivingOtherComments",
+        "label": "Other Comments",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalMotionShoulder",
+        "label": "Shoulder",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalMotionElbow",
+        "label": "Elbow",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalMotionWrist",
+        "label": "Wrist",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalMotionFinger",
+        "label": "Finger",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalMotionThumb",
+        "label": "Thumb",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalStrengthShoulder",
+        "label": "Shoulder",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalStrengthWrist",
+        "label": "Wrist",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalStrengthThumb",
+        "label": "Thumb",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalStrengthElbow",
+        "label": "Elbow",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalStrengthFinger",
+        "label": "Finger",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalStrengthGrip",
+        "label": "Grip (Fist, Pinch, Lateral, Tripod, Bracket)",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalFineMotor",
+        "label": "Fine Motor",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalEyesight",
+        "label": "Eyesight",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalDexterity",
+        "label": "Dexterity",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalHearing",
+        "label": "Hearing",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PhysicalCoordination",
+        "label": "Coordination (Diodokokinesia, Hand-Eye)",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "CarpelTunnelSyndrome",
+        "label": "Carpel Tunnel Syndrome",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "PeripheralNeuropathy",
+        "label": "Peripheral Neuropathy (Diabetic or Other)",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 200,
+        "id": "PhysicalComments",
+        "label": "Comments",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "SummaryActionList",
+        "label": "Action List",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "SummaryDate",
+        "label": "Referral Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "SummaryDialysisRec",
+        "label": "Recommendations",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "SummaryOverallImp",
+        "label": "Overall Impression",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "SummaryProblemList",
+        "label": "Problem List",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "SummaryProvider",
+        "label": "Referred By",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "SummaryReferredBy",
+        "label": "",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.OccupationTherapistAssessment",
+  "layoutColumns": 3
+}

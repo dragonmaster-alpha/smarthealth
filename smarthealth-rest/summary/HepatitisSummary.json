@@ -1,0 +1,67 @@
+{
+  "DiagnosticResults": {
+    "Results": [
+      {
+        "Code": "HBsAg",
+        "Name": "HBsAg",
+        "PathologyServiceRecord": {
+          "confidentiality": "Normal",
+          "serviceDate": {
+            "iso": "2012-08-13T17:50+10"
+          },
+          "serviceID": 29,
+          "serviceType": 3,
+          "summary": ""
+        },
+        "Range": "200-300",
+        "Units": "mm",
+        "Value": "321"
+      },
+      {
+        "Abnormal": "1",
+        "Code": "HBcAb",
+        "Name": "HBcAb",
+        "PathologyServiceRecord": {
+          "confidentiality": "Normal",
+          "serviceDate": {
+            "iso": "2012-08-13T17:50+10"
+          },
+          "serviceID": 29,
+          "serviceType": 3,
+          "summary": ""
+        },
+        "Range": "200-300",
+        "Units": "ml",
+        "Value": "123"
+      }
+    ]
+  },
+  "HepatitisAssessment": {
+    "DateLastAssessment": {
+      "iso": "2012-08-08"
+    },
+    "Genotype": [
+      "1a",
+      "2a"
+    ],
+    "HepatitisAssessmentService": {
+      "confidentiality": "Normal",
+      "program": "IMMUNOLOGY",
+      "serviceDate": {
+        "iso": "2012-08-08"
+      },
+      "serviceID": 8,
+      "serviceType": 142,
+      "summary": "zvzx"
+    },
+    "InterquartileRange": 12.00,
+    "LiverBiopsyDate": {
+      "iso": "2012-08-03"
+    },
+    "LiverBiopsyResult": "F0",
+    "MedianStiffness": 11.00,
+    "SNP12979860CCResult": true,
+    "SNP80999TTResult": true,
+    "SuccessRate": 13
+  }
+}

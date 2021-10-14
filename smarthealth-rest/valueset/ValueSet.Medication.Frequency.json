@@ -1,0 +1,94 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 25,
+  "uri": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "As needed"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Daily"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "In the morning"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Midday"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "In the evening"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Before bed"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Twice a day"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "3 times a day"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "4 times a day"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "2 hourly"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "4 hourly"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "6 hourly"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "8 hourly"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "12 hourly"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Alternate days"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "3 times a week"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Twice weekly"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Weekly"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Fortnightly"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Every 3 weeks"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.Frequency",
+      "value": "Monthly"
+    }
+  ],
+  "valueSetID": "Medication.Frequency"
+}

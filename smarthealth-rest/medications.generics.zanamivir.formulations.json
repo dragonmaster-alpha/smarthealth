@@ -1,0 +1,24 @@
+[
+  {
+    "cmiHTML": false,
+    "drowsy": false,
+    "formulationCode": 1,
+    "formulationType": "Powder for inhalation",
+    "generics": {
+      "gencode": 2377,
+      "generics": "Zanamivir"
+    },
+    "glutenFree": false,
+    "id": 461601,
+    "prescriptionOnly": false,
+    "product": {
+      "consumerMedicineInformation": false,
+      "pregnancyTextExists": false,
+      "product": "Relenza",
+      "productCode": 4616,
+      "productSort": "RELENZA",
+      "s11": false
+    },
+    "sortOrder": 0
+  }
+]

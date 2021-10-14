@@ -1,0 +1,111 @@
+[
+    {
+        "measure": "Height",
+        "2017-08-10": {
+            "id": 1604,
+            "observationDate": {
+                "iso": "2017-08-10T12:34+10"
+            },
+            "observationType": "Height",
+            "patientID": 39,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2017-08-10T12:34+10"
+                },
+                "serviceID": 11830,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 170
+        },
+        "2020-08-19": {
+            "id": 1606,
+            "observationDate": {
+                "iso": "2020-08-19T12:23+10"
+            },
+            "observationType": "Height",
+            "patientID": 39,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-08-19T12:23+10"
+                },
+                "serviceID": 11831,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 169
+        }
+    },
+    {
+        "measure": "Weight",
+        "2017-08-10": {
+            "id": 1605,
+            "observationDate": {
+                "iso": "2017-08-10T12:34+10"
+            },
+            "observationType": "Weight",
+            "patientID": 39,
+            "serviceRecordReference": {
+                "confidentiality": "Normal",
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2017-08-10T12:34+10"
+                },
+                "serviceID": 11830,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 65
+        },
+        "2020-08-19": {
+            "id": 1607,
+            "observationDate": {
+                "iso": "2020-08-19T12:23+10"
+            },
+            "observationType": "Weight",
+            "patientID": 39,
+            "serviceRecordReference": {
+                "owningGroupID": 26,
+                "serviceDate": {
+                    "iso": "2020-08-19T12:23+10"
+                },
+                "serviceID": 11831,
+                "serviceType": 1,
+                "summary": "s"
+            },
+            "valueNumber": 68.5
+        }
+    },
+    {
+        "measure": "BMI",
+        "2017-08-10": 22.5,
+        "2020-08-19": 24
+    },
+    {
+        "measure": "MinGoalWeight"
+    },
+    {
+        "measure": "MaxGoalWeight"
+    },
+    {
+        "measure": "BloodPressureSitting"
+    },
+    {
+        "measure": "BloodPressureStanding"
+    },
+    {
+        "measure": "BloodPressureLying"
+    },
+    {
+        "measure": "Pulse"
+    },
+    {
+        "measure": "Temperature"
+    },
+    {
+        "measure": "SPO2"
+    }
+]

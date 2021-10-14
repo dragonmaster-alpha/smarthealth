@@ -1,0 +1,546 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "PreparedBy",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Adequacy",
+          "Line change",
+          "Post peritonitis",
+          "Routine",
+          "Training"
+        ],
+        "size": 16,
+        "id": "Reason",
+        "label": "Reason",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Environment",
+        "label": "Environment",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "toolTip": "Lighting, cleanliness, etc.",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "StockManagement",
+        "label": "Stock management",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "toolTip": "Storage, stock, expiry, etc.",
+        "type": "Text"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "DialysisSection",
+        "layoutShow": true,
+        "title": "Dialysis"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Cycler setup",
+          "Manual exchange"
+        ],
+        "size": 16,
+        "id": "DialysisProcedure",
+        "label": "Dialysis procedure",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "APD",
+          "CAPD"
+        ],
+        "size": 4,
+        "id": "PDRegimen",
+        "label": "PD regimen",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Baxter Freeline Solo",
+          "Fresenius Stay*Safe"
+        ],
+        "size": 20,
+        "id": "System",
+        "label": "System",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Baxter Homechoice Pro",
+          "Fresenius Sleep*Safe"
+        ],
+        "size": 30,
+        "id": "Machine",
+        "label": "Machine",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "PDPrescriptionService",
+        "label": "PD prescription",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "FluidsAndMedications.CheckingEffluentClarity",
+              "label": "Checking effluent clarity",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "FluidsAndMedications.TroubleshootingAbility",
+              "label": "Troubleshooting ability",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "toolTip": "Peritonitis, contamination procedures, bag strength selection",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "FluidsAndMedications.MedicationsChecked",
+              "label": "Medications checked",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "toolTip": "Compatibility and expiry",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "FluidsAndMedications.IdealBodyWeight",
+              "label": "Ideal body weight",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "FluidsAndMedications.Weight",
+              "label": "Weight",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "format": "BloodPressure",
+              "size": 7,
+              "id": "FluidsAndMedications.BloodPressure",
+              "label": "Blood pressure",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Formatted"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Lying",
+                "Sitting",
+                "Standing"
+              ],
+              "size": 20,
+              "id": "FluidsAndMedications.BPPosture",
+              "label": "Posture",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "FluidsAndMedications.Oedema",
+              "label": "Oedema",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "FluidsAndMedications.LineChanged",
+              "label": "Line changed",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "FluidsAndMedications.FunctioningAVF",
+              "label": "Functioning AVF",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "FluidsAndMedications",
+        "layoutShow": true,
+        "title": "Fluids and Medications"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Acute infection",
+                "Chronic infection",
+                "Equivocal",
+                "Excellent",
+                "Good"
+              ],
+              "size": 20,
+              "id": "ExitSite.TwardowskiScale",
+              "label": "Twardowski scale",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Betadine swabs",
+                "Coloplast thin",
+                "Flexitrack",
+                "Gauze",
+                "MediHoney",
+                "Mefix",
+                "Mupiracin",
+                "Opsite",
+                "Paper tape",
+                "Primapore",
+                "Saline",
+                "Tubigrip"
+              ],
+              "size": 20,
+              "id": "ExitSite.DressingProcedure",
+              "label": "Dressing procedure",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "ExitSite.Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "ExitSite",
+        "layoutShow": true,
+        "title": "Exit Site"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "Notes",
+        "layoutShow": true,
+        "title": "Notes"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.PDReview",
+  "layoutColumns": 3
+}

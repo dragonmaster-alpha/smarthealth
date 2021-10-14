@@ -1,0 +1,546 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "AnnualReview",
+        "label": "Annual Review in the last two years",
+        "type": "Boolean"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 42,
+              "precision": 2,
+              "scale": 0,
+              "id": "DASS21.DepressionScore",
+              "label": "Depression score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Extremely Severe",
+                "Mild",
+                "Moderate",
+                "Normal",
+                "Severe"
+              ],
+              "size": 25,
+              "id": "DASS21.DepressionSeverity",
+              "label": "Severity",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 42,
+              "precision": 2,
+              "scale": 0,
+              "id": "DASS21.AnxietyScore",
+              "label": "Anxiety score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Extremely Severe",
+                "Mild",
+                "Moderate",
+                "Normal",
+                "Severe"
+              ],
+              "size": 25,
+              "id": "DASS21.AnxietySeverity",
+              "label": "Severity",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 42,
+              "precision": 2,
+              "scale": 0,
+              "id": "DASS21.StressScore",
+              "label": "Stress score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Extremely Severe",
+                "Mild",
+                "Moderate",
+                "Normal",
+                "Severe"
+              ],
+              "size": 25,
+              "id": "DASS21.StressSeverity",
+              "label": "Severity",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "DASS21",
+        "layoutShow": true,
+        "title": "DASS21 (Depression, Anxiety and Stress Scale)"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 21,
+              "precision": 2,
+              "scale": 0,
+              "id": "HADS.HospitalDepressionScore",
+              "label": "Depression score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Asymptomatic",
+                "Definite",
+                "Doubtful"
+              ],
+              "size": 25,
+              "id": "HADS.HospitalDepressionSeverity",
+              "label": "Severity",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 21,
+              "precision": 2,
+              "scale": 0,
+              "id": "HADS.HospitalAnxietyScore",
+              "label": "Anxiety score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Asymptomatic",
+                "Definite",
+                "Doubtful"
+              ],
+              "size": 25,
+              "id": "HADS.HospitalAnxietySeverity",
+              "label": "Severity",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "HADS",
+        "layoutShow": true,
+        "title": "HADS (Hospital Anxiety and Depression Scale)"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.PhysicalFunctioning",
+              "label": "Physical functioning",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.SocialFunctioning",
+              "label": "Social functioning",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.TreatmentIssues",
+              "label": "Treatment issues",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.ChestSymptoms",
+              "label": "Chest symptoms",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.EmotionalFunctioning",
+              "label": "Emotional functioning",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.ConcernsForTheFuture",
+              "label": "Concerns for the future",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.InterpersonalRelationships",
+              "label": "Interpersonal relationships",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.BodyImage",
+              "label": "Body image",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "CFQOL.CareerConcerns",
+              "label": "Career concerns",
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "CFQOL",
+        "layoutShow": true,
+        "title": "CFQOL (Cystic Fibrosis Quality of Life Questionnaire)"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 10,
+              "precision": 5,
+              "scale": 0,
+              "id": "SelfAssessment.MoodSelfRating",
+              "label": "Mood self-rating",
+              "toolTip": "0 is extremely depressed and 10 is extremely happy",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 10,
+              "precision": 5,
+              "scale": 0,
+              "id": "SelfAssessment.SatisfactionWithCFTreatment",
+              "label": "Satisfaction with CF treatment",
+              "toolTip": "0 is extremely dissatisfied and 10 is extremely satisfied",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 10,
+              "precision": 5,
+              "scale": 0,
+              "id": "SelfAssessment.SatisfactionWithCFSelfManagement",
+              "label": "Satisfaction with CF self-management",
+              "toolTip": "0 is extremely dissatisfied and 10 is extremely satisfied",
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "SelfAssessment",
+        "layoutShow": true,
+        "title": "Self-Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 5000,
+              "id": "ClinicianAssessment.Assessment",
+              "label": "Assessment",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "ClinicianAssessment.PsychiatricDiagnosis",
+              "label": "Psychiatric diagnosis",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "ClinicianAssessment.Intervention",
+              "label": "Intervention",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "ClinicianAssessment",
+        "layoutShow": true,
+        "title": "Clinician Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Plan.PsychologicalTreatmentRequired",
+              "label": "Psychological treatment required",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "Plan.Details",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Plan",
+        "layoutShow": true,
+        "title": "Plan"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.PsychologistAssessment",
+  "layoutColumns": 3
+}

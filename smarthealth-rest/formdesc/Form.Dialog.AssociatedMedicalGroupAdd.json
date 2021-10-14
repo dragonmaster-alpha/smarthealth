@@ -1,0 +1,33 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "groupID",
+        "label": "Medical Group",
+        "layout": {
+          "fillWidth": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroup"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "consentDate",
+        "label": "Consent Date",
+        "layout": {
+          "fillWidth": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    }
+  ],
+  "id": "Dialog.AssociatedMedicalGroupAdd.WebUI",
+  "layoutColumns": 2
+}

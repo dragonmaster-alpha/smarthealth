@@ -1,0 +1,14 @@
+{
+  "id": "/medicalgroups/recents",
+  "referencedType": "MedicalGroup",
+  "references": [
+    {
+      "id": 123,
+      "type": "MedicalGroup"
+    },
+    {
+      "id": 456,
+      "type": "MedicalGroup"
+    }
+  ]
+}

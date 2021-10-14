@@ -1,0 +1,929 @@
+{
+  "behaviour": {
+    "serviceDateIsUpdateDate": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Updated date",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Referral.ReferralDate",
+              "label": "Referral date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Referral.ReferringNephrologist",
+              "label": "Referring nephrologist",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Private",
+                "Public"
+              ],
+              "size": 10,
+              "id": "Referral.PublicPrivate",
+              "label": "Public/private",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Referral.RenalClinic",
+              "label": "Renal clinic",
+              "layout": {
+                "newLine": true
+              },
+              "type": "MedicalGroupLocation"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Diabetes/Kidney",
+                "Glomerulonephritis",
+                "Lupus",
+                "Renal failure",
+                "Transplant"
+              ],
+              "size": 20,
+              "id": "Referral.ClinicType",
+              "label": "Clinic type",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "PlannedDate",
+                  "label": "Planned date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Dialysis education",
+                    "Dialysis education days",
+                    "External organisation education",
+                    "Home HD assessment",
+                    "Inpatient education",
+                    "Nurse practitioner clinic",
+                    "PD assessment"
+                  ],
+                  "size": 40,
+                  "id": "ReferralReason",
+                  "label": "Referral reason",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "id": "ReferredProvider",
+                  "label": "Provider",
+                  "type": "Member"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateAttended",
+                  "label": "Attended date",
+                  "type": "DateTime"
+                },
+                {
+                  "maximum": 120,
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "eGFR",
+                  "label": "eGFR",
+                  "type": "Number",
+                  "units": "mL/min"
+                }
+              ],
+              "id": "Referral.EducationReferrals",
+              "label": "Education referrals",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Referral",
+        "layoutShow": true,
+        "title": "Referral"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Home haemodialysis",
+                "Peritoneal dialysis",
+                "Renal supportive care",
+                "Satellite haemodialysis",
+                "Transplant"
+              ],
+              "size": 40,
+              "id": "Assessment.PatientFirstPreference",
+              "label": "Patient first preference",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Home haemodialysis",
+                "Peritoneal dialysis",
+                "Renal supportive care",
+                "Satellite haemodialysis",
+                "Transplant"
+              ],
+              "size": 40,
+              "id": "Assessment.PatientSecondPreference",
+              "label": "Patient second preference",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Assessment.PDAssessmentDate",
+              "label": "PD Assessment",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Assessment.PDAssessmentDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.PDAssessedBy",
+              "label": "Assessed by",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Assessment.PDAssessmentDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.SuitableForPD",
+              "label": "Suitable for PD",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Assessment.PDAssessmentDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.PDComments",
+              "label": "Comments",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Assessment.HHDAssessmentDate",
+              "label": "Home HD Assessment date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Assessment.HHDAssessmentDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.HHDAssessedBy",
+              "label": "Assessed by",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Assessment.HHDAssessmentDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.SuitableForHHD",
+              "label": "Suitable for Home HD",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Assessment.HHDAssessmentDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.HHDComments",
+              "label": "Comments",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "SureTestDate",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "maximum": 4,
+                  "precision": 1,
+                  "scale": 0,
+                  "id": "SureTestScore",
+                  "label": "Score",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "toolTip": "SURE Test: O\u0027Connor and Legare 2008",
+                  "type": "Number"
+                }
+              ],
+              "id": "Assessment.SureTests",
+              "label": "SURE tests",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "CognitiveAssessmentDate",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "options": [
+                    "MMSE",
+                    "MOCA"
+                  ],
+                  "size": 10,
+                  "id": "AssessmentTest",
+                  "label": "Assessment test",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "maximum": 30,
+                  "precision": 2,
+                  "scale": 0,
+                  "id": "CognitiveAssessmentScore",
+                  "label": "Score",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "Assessment.CognitiveAssessment",
+              "label": "Cognitive assessment",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Home haemodialysis",
+                "Peritoneal dialysis",
+                "Renal supportive care",
+                "Satellite haemodialysis"
+              ],
+              "size": 40,
+              "id": "Assessment.PlannedTherapy",
+              "label": "Planned therapy",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Assessment.PlannedTherapyCommencementDate",
+              "label": "Planned commencement",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Assessment.PlannedTherapyComments",
+              "label": "Comments",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Assessment",
+        "layoutShow": true,
+        "title": "Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Dietitian",
+                    "Occupational therapist",
+                    "Physiotherapist",
+                    "Psychologist/Psychiatrist",
+                    "Social worker"
+                  ],
+                  "size": 40,
+                  "id": "ReviewType",
+                  "label": "Type of review",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "ReviewReason",
+                  "label": "Reason",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "id": "FollowUpProvider",
+                  "label": "Provider",
+                  "type": "Member"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "FollowupReferralDate",
+                  "label": "Referral date",
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "FollowupDateAttended",
+                  "label": "Attended date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 40,
+                  "id": "ReviewOutcome",
+                  "label": "Outcome",
+                  "type": "Text"
+                }
+              ],
+              "id": "FollowUp.FollowUpReviews",
+              "label": "Reviews",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "FollowUp",
+        "layoutShow": true,
+        "title": "Follow-up"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.SerologyDate",
+              "label": "Serology",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Immune",
+                "Not immune"
+              ],
+              "size": 10,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "DialysisPlanning.SerologyDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "DialysisPlanning.HepBStatus",
+              "label": "Hepatitis B",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Not immune"
+                      ],
+                      "fieldID": "DialysisPlanning.HepBStatus"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "DialysisPlanning.GPLetterHepB",
+              "label": "GP letter sent",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.VeinMappingDate",
+              "label": "Vein mapping",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.DialysisAccessNurseDate",
+              "label": "Dialysis access nurse",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.SurgeonReferralDate",
+              "label": "Referral to surgeon",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.SurgeonAppointmentDate",
+              "label": "Appointment with surgeon",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.AccessCreated",
+              "label": "Access created",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.PreAdmissionClinicDate",
+              "label": "Pre-admission clinic",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.PDSiteMarkingDate",
+              "label": "PD abdominal site marking",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 40,
+              "id": "DialysisPlanning.TransportToDialysis",
+              "label": "Transport to dialysis",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.MPTCAdvisedDate",
+              "label": "Multi-purpose taxi card application advised",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "DialysisPlanning.MPTCardAdvisedBy",
+              "label": "Advised by",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.PreHDFollowup",
+              "label": "Pre-HD follow-up",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "DialysisPlanning.PreHDFollowupDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.DialysisConsentDate",
+              "label": "Consent to start dialysis",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DialysisPlanning.CommencedDialysisDate",
+              "label": "Commenced dialysis",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "DialysisPlanning",
+        "layoutShow": true,
+        "title": "Dialysis planning"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "TransplantPlanning.TransplantReferralDate",
+              "label": "Referred to transplant",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "TransplantPlanning.PlannedTxEd",
+              "label": "Planned transplant education day",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "TransplantPlanning.AttendedTxEd",
+              "label": "Attended transplant education day",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "TransplantPlanning",
+        "layoutShow": true,
+        "title": "Transplant planning"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "RenalSupportiveCarePlanning.RSCReferralDate",
+              "label": "Referred to renal supportive care",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "RenalSupportiveCarePlanning",
+        "layoutShow": true,
+        "title": "Renal supportive care planning"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.CKDCarePlan",
+  "layoutColumns": 2
+}

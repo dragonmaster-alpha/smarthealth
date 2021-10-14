@@ -1,0 +1,94 @@
+{
+  "coded": true,
+  "codeLength": 9,
+  "extensible": false,
+  "length": 21,
+  "uri": "http://snomed.info/sct",
+  "values": [
+    {
+      "code": "34381000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Anal canal"
+    },
+    {
+      "code": "53505006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Anus, unspecified"
+    },
+    {
+      "code": "66754008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Appendix"
+    },
+    {
+      "code": "9040008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Ascending colon"
+    },
+    {
+      "code": "32713005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Caecum"
+    },
+    {
+      "code": "263711007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Cloacogenic zone"
+    },
+    {
+      "code": "71854001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Colon, overlapping"
+    },
+    {
+      "code": "71854001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Colon, unspecified"
+    },
+    {
+      "code": "32622004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Descending colon"
+    },
+    {
+      "code": "48338005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Hepatic flexure"
+    },
+    {
+      "code": "49832006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Rectosigmoid junction"
+    },
+    {
+      "code": "34402009",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Rectum"
+    },
+    {
+      "code": "281088000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Rectum and anal canal"
+    },
+    {
+      "code": "60184004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Sigmoid colon"
+    },
+    {
+      "code": "72592005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Splenic flexure"
+    },
+    {
+      "code": "485005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Transverse colon"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Not known"
+    }
+  ],
+  "valueSetID": "Cancer.ColorectalCancer.Site"
+}

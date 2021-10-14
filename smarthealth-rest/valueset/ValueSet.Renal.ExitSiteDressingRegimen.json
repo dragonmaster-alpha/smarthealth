@@ -1,0 +1,42 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 30,
+  "uri": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+      "value": "Bactroban"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+      "value": "Betadine swabs"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+      "value": "Gauze"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+      "value": "Mefix"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+      "value": "Opsite"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+      "value": "Primapore"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+      "value": "Saline"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.ExitSiteDressingRegimen",
+      "value": "Yukiban"
+    }
+  ],
+  "valueSetID": "Renal.ExitSiteDressingRegimen"
+}

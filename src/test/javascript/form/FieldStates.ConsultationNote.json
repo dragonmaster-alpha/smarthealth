@@ -1,0 +1,75 @@
+{
+    "Provider": {
+        "editState": "Mandatory"
+    },
+    "ServiceDate": {
+        "editState": "Mandatory"
+    },
+    "Confidentiality": {
+        "editState": "Mandatory"
+    },
+    "Setting": {
+        "editState": "Mandatory"
+    },
+    "Purpose": {
+        "editState": "Mandatory"
+    },
+    "Location": {
+        "editState": "Mandatory"
+    },
+    "Patient": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "ID": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "SetID": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "Version": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "duration": {
+        "editState": "Mandatory"
+    },
+    "summary": {
+        "editState": "Mandatory"
+    },
+    "ClinicalMeasures.Height": {
+        "editState": "Enabled"
+    },
+    "ClinicalMeasures.Weight": {
+        "editState": "Enabled"
+    },
+    "ClinicalMeasures.BMI": {
+        "editState": "ReadOnly"
+    },
+    "ClinicalMeasures.BPSitting": {
+        "editState": "Enabled"
+    },
+    "ClinicalMeasures.BPStanding": {
+        "editState": "Enabled"
+    },
+    "ClinicalMeasures.BPLying": {
+        "editState": "Enabled"
+    },
+    "ClinicalMeasures.Pulse": {
+        "editState": "Enabled"
+    },
+    "ClinicalMeasures.Temperature": {
+        "editState": "Enabled"
+    },
+    "ClinicalMeasures.SPO2": {
+        "editState": "Enabled"
+    },
+    "assessment": {
+        "editState": "Enabled"
+    },
+    "plan": {
+        "editState": "Enabled"
+    }
+}

@@ -1,0 +1,542 @@
+{
+  "description": "Details of medications prescribed for or taken by the patient.",
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Discharge Summary",
+          "Dispense",
+          "Letter/Referral",
+          "Patient",
+          "Provider"
+        ],
+        "size": 25,
+        "id": "Source",
+        "label": "Source",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "name": "ObjectSelection - Condition",
+        "id": "Indication",
+        "label": "Indication",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Generic",
+        "label": "",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "Product",
+        "label": "Product",
+        "layout": {
+          "fillWidth": true,
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "FormSpecific"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "AbbrevPICode",
+        "label": "Abbrev PI Code",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "FullPICode",
+        "label": "Full PI Code",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Product",
+                  "testEmpty": true
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Formulation",
+        "label": "Formulation",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "FormSpecific"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "CMICode",
+        "label": "CMI Code",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "CMIHTML",
+        "label": "CMI is HTML",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "ProductAndFormulation",
+        "label": "",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Formulation",
+                  "testEmpty": true
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Pack",
+        "label": "Pack",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "FormSpecific"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Strength",
+        "label": "Strength",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Quantity",
+        "label": "Quantity",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Formulation",
+                  "testEmpty": true
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "PBS",
+        "label": "PBS",
+        "layout": {
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "FormSpecific"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "DoseGuide",
+        "label": "Dose guide",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 25,
+        "id": "Dose",
+        "label": "Dose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "12 hourly",
+          "2 hourly",
+          "3 times a day",
+          "3 times a week",
+          "4 hourly",
+          "4 times a day",
+          "6 hourly",
+          "8 hourly",
+          "Alternate days",
+          "As needed",
+          "Before bed",
+          "Daily",
+          "Every 3 weeks",
+          "Fortnightly",
+          "In the evening",
+          "In the morning",
+          "Midday",
+          "Monthly",
+          "Twice a day",
+          "Twice weekly",
+          "Weekly"
+        ],
+        "size": 25,
+        "id": "Frequency",
+        "label": "Frequency",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "valueSetID": "Medication.RouteOfAdministration",
+        "id": "Route",
+        "label": "Route",
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Instructions",
+        "label": "Instructions",
+        "layout": {
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "precisionMonth": true,
+        "precisionYear": true,
+        "id": "StartDate",
+        "label": "Start date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "FinishDate",
+        "label": "Finish date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Auto finished",
+          "Calculated",
+          "Entered",
+          "Finished by user"
+        ],
+        "size": 25,
+        "id": "FinishDateSource",
+        "label": "Finish date source",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "valueSetID": "Medication.ChangeType",
+        "id": "ChangeType",
+        "label": "Change type",
+        "layout": {
+          "newLine": true
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "valueSetID": "Medication.ChangeReason",
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "equals": [
+                    "New",
+                    "Unchanged"
+                  ],
+                  "fieldID": "ChangeType"
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "ChangeReason",
+        "label": "Change reason",
+        "type": "ValueSet"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 500,
+              "id": "Notes.Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Notes",
+        "layoutShow": true,
+        "title": "Notes"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Cease.Ceased",
+              "label": "Ceased",
+              "state": {
+                "editState": "Hidden",
+                "viewStateHidden": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Cease.CeaseReason",
+              "label": "Cease Reason",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Cease",
+        "layoutShow": true,
+        "title": "Ceased"
+      }
+    }
+  ],
+  "id": "Service.Medication.WebUI",
+  "layoutColumns": 3
+}

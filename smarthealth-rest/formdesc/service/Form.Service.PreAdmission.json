@@ -1,0 +1,504 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "size": 200,
+        "id": "CancellationReason",
+        "label": "Cancellation reason",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Emergency",
+          "Other",
+          "Planned/Elective",
+          "Unknown"
+        ],
+        "size": 30,
+        "id": "admissionClass",
+        "label": "Admission class",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "admissionDate",
+        "label": "Admission date/time",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "id": "admissionNumber",
+        "label": "Admission number",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Accident \u0026 Emergency",
+          "Born in Hospital",
+          "Community Health",
+          "Crisis Team",
+          "Law Enforcement Agency",
+          "Medical Practitioner",
+          "Nursing Home",
+          "Other Agency",
+          "Other Hospital",
+          "Out-Patient",
+          "Private - Same Area Health",
+          "Private Psychiatric Practice",
+          "Public - Area Health",
+          "Public Contract Medic",
+          "Public Contract Surgical",
+          "Relative",
+          "Self",
+          "Statistical Separation"
+        ],
+        "size": 30,
+        "id": "admissionSource",
+        "label": "Admission source",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Chemotherapy",
+          "Day Only",
+          "Medical",
+          "Medical Other",
+          "Surgical"
+        ],
+        "size": 30,
+        "id": "admissionSubType",
+        "label": "Admission sub-type",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Not Applicable",
+          "Transfer Equivalent Accommodation",
+          "Transfer NH/Rehab",
+          "Transfer UP/Special",
+          "Unknown Transfer"
+        ],
+        "size": 35,
+        "id": "admissionTransfer",
+        "label": "Admission transfer",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Day Only",
+          "Overnight"
+        ],
+        "size": 30,
+        "id": "admissionType",
+        "label": "Admission type",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "admittingDoctor",
+        "label": "Admitting doctor",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "attendingDoctor1",
+        "label": "Attending doctor 1",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "attendingDoctor2",
+        "label": "Attending doctor 2",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Angiography Admission",
+          "Chemotherapy",
+          "Coronary Care",
+          "Day Only Admission",
+          "ECG Booking",
+          "Medical Admission",
+          "Surgical Admission"
+        ],
+        "size": 30,
+        "id": "careClass",
+        "label": "Care class",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "chemotherapy",
+        "label": "Chemotherapy",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Contract Cardiac",
+          "Contract Medical",
+          "Contract Surgical",
+          "Day Patient",
+          "Defence Force",
+          "Ineligible",
+          "Motor Accident",
+          "Nil Fund",
+          "Nursing Home Type",
+          "Other",
+          "Private",
+          "Veterans\u0027 Affairs",
+          "Worker\u0027s Compensation"
+        ],
+        "size": 30,
+        "id": "claimType",
+        "label": "Claim type",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "diabetesCondition",
+        "label": "Diabetes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "patientAnyHospitalLast7Days",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "hospitalInLast7days",
+        "label": "Hospital in last 7 days",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroup"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "patientAnyHospitalLast7Days",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "hospitalInLast7daysFrom",
+        "label": "From",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "patientAnyHospitalLast7Days",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "hospitalInLast7daysTo",
+        "label": "To",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "ministerofReligion",
+        "label": "Minister of religion",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "chemotherapy",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "oncologist",
+        "label": "Oncologist",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "palliativeCare",
+        "label": "Palliative care",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "patientAnyHospitalLast7Days",
+        "label": "Patient any hospital last 7 days",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "previousAdmissiontoThisHospital",
+        "label": "Previous admission to this hospital",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "previousAdmissiontoThisHospital",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "previousAdmissiontoThisHospitalDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "previousName",
+        "label": "Previous name",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "proposedOperation",
+        "label": "Proposed operation",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "provisionalDiagnosis",
+        "label": "Provisional diagnosis",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "specialInstructions",
+        "label": "Special instructions",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "rSLRepresentative",
+        "label": "RSL representative",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Other Hospital"
+                ],
+                "fieldID": "reAdmitWithin28Days"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "reAdmissionHospital",
+        "label": "Readmission hospital",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroup"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Not Applicable",
+          "Other Hospital",
+          "This Hospital"
+        ],
+        "size": 20,
+        "id": "reAdmitWithin28Days",
+        "label": "Readmit within 28 days",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "scheduledDischargeDate",
+        "label": "Scheduled discharge date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "scheduledOperationDate",
+        "label": "Scheduled operation date",
+        "type": "DateTime"
+      }
+    }
+  ],
+  "id": "Service.PreAdmission",
+  "layoutColumns": 3
+}

@@ -1,0 +1,110 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "size": 50,
+        "id": "mrn",
+        "label": "UR/MRN",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "minimumLength": 2,
+        "size": 50,
+        "id": "familyName",
+        "label": "Family Name",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "givenName",
+        "label": "Given Name",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "Patients",
+        "layoutShow": true,
+        "title": "Patients found"
+      }
+    },
+    {
+      "field": {
+        "id": "includeDeceased",
+        "label": "Include deceased patients",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    }
+  ],
+  "id": "Patient.Search",
+  "layoutColumns": 0
+}

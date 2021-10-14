@@ -1,0 +1,472 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Advocacy",
+          "Cognitive",
+          "Education/Counselling",
+          "Environmental",
+          "Physical/Functional",
+          "Pressure area care/Skin integrity",
+          "Splinting"
+        ],
+        "size": 33,
+        "id": "InterventionType",
+        "label": "Intervention Type",
+        "type": "Selection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Outcomes.ReferralProvider",
+              "label": "Referred by",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Outcomes.ReferralDate",
+              "label": "Referral date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Outcomes.IssuesIdentified",
+              "label": "Issues identified",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Outcomes.OverallImpression",
+              "label": "Overall impression",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Outcomes.Intervention",
+              "label": "Intervention/Recommendations",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Outcomes",
+        "layoutShow": true,
+        "title": "Outcomes"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 1000,
+              "id": "SocialOrHomeEnvironment.Social",
+              "label": "Social",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "SocialOrHomeEnvironment.HomeEnvironment",
+              "label": "Home environment",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "SocialOrHomeEnvironment.Intervention",
+              "label": "Intervention/Recommendations",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "falseDisplayText": "Not required",
+              "trueDisplayText": "Required",
+              "id": "SocialOrHomeEnvironment.HomeVisit",
+              "label": "Home visit",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "SocialOrHomeEnvironment.HomeVisit",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "SocialOrHomeEnvironment.HomeVisitCompleted",
+              "label": "Completed",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "SocialOrHomeEnvironment.HomeVisitCompleted",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "SocialOrHomeEnvironment.HomeVisitCompletedDate",
+              "label": "Completed date",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "SocialOrHomeEnvironment",
+        "layoutShow": true,
+        "title": "Social/Home Environment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 1000,
+              "id": "Cognitive.Assessment",
+              "label": "Assessment",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Cognitive.Result",
+              "label": "Result",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Cognitive.Intervention",
+              "label": "Intervention",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Cognitive",
+        "layoutShow": true,
+        "title": "Cognitive"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 1000,
+              "id": "PhysicalOrFunctional.UpperLimbs",
+              "label": "Upper Limbs",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "PhysicalOrFunctional.SensoryMotor",
+              "label": "Sensory motor",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "PhysicalOrFunctional.FunctionalPerformance",
+              "label": "Functional performance",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "PhysicalOrFunctional.Intervention",
+              "label": "Intervention",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "PhysicalOrFunctional",
+        "layoutShow": true,
+        "title": "Physical/Functional"
+      }
+    }
+  ],
+  "id": "Service.OccupationalTherapyAssessment",
+  "layoutColumns": 3
+}

@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1670,
+        "observationDate": {
+            "iso": "2020-08-20T18:20+10"
+        },
+        "observationType": "Height",
+        "patientID": 42,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T18:20+10"
+            },
+            "serviceID": 11848,
+            "serviceType": 1,
+            "summary": "20/08/2020"
+        },
+        "valueNumber": 170
+    }
+]

@@ -1,0 +1,26 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 22,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.ReceptorStatus",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.ReceptorStatus",
+      "value": "0 Negative"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.ReceptorStatus",
+      "value": "1+ Weakly positive"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.ReceptorStatus",
+      "value": "2+ Moderately positive"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.ReceptorStatus",
+      "value": "3+ Strongly positive"
+    }
+  ],
+  "valueSetID": "Cancer.ReceptorStatus"
+}

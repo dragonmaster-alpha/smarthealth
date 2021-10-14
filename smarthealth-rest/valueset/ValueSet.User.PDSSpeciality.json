@@ -1,0 +1,90 @@
+{
+  "coded": true,
+  "codeLength": 19,
+  "extensible": false,
+  "length": 25,
+  "uri": "http://snomed.info/sct",
+  "values": [
+    {
+      "code": "394579002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Cardiology"
+    },
+    {
+      "code": "394601005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Clinical physiology"
+    },
+    {
+      "code": "394581000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Community medicine"
+    },
+    {
+      "code": "722163006,408444009",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Dentistry"
+    },
+    {
+      "code": "722164000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Dietetics and nutrition"
+    },
+    {
+      "code": "394814009,394802001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "General practice"
+    },
+    {
+      "code": "394807007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Infectious diseases"
+    },
+    {
+      "code": "722165004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Nursing"
+    },
+    {
+      "code": "408446006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Obstetrics and gynecology"
+    },
+    {
+      "code": "394592004,394593009",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Oncology"
+    },
+    {
+      "code": "394595002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Pathology"
+    },
+    {
+      "code": "722166003",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Podiatry"
+    },
+    {
+      "code": "394587001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Psychiatry"
+    },
+    {
+      "code": "722162001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Psychology"
+    },
+    {
+      "code": "394734003",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Radiological specialties"
+    },
+    {
+      "code": "394732004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Surgical specialty"
+    }
+  ],
+  "valueSetID": "User.PDSSpeciality"
+}

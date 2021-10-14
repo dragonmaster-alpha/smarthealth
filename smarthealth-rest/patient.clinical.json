@@ -1,0 +1,55 @@
+{
+  "allergies": [
+    {
+      "details": "For better or worse",
+      "name": {
+        "code": "BETADINE",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+        "value": "Betadine"
+      }
+    },
+    {
+      "details": "Indigestion",
+      "name": {
+        "code": "DIGESIC",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+        "value": "Digesic"
+      }
+    },
+    {
+      "additional": true,
+      "date": {
+        "iso": "2019-10-01"
+      },
+      "name": {
+        "code": "HONEY",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+        "value": "Honey"
+      }
+    }
+  ],
+  "ambulanceFund": false,
+  "medicalAlerts": [
+    {
+      "date": {
+        "iso": "2019-10-06"
+      },
+      "details": "Breathing difficulties",
+      "name": {
+        "code": "CONDITION_ASTHMA",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+        "value": "Asthma"
+      }
+    },
+    {
+      "additional": true,
+      "name": {
+        "code": "MONDAYS",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+        "value": "Mondays"
+      }
+    }
+  ],
+  "patientID": 42,
+  "version": 0
+}

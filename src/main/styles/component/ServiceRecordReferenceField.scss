@@ -1,0 +1,35 @@
+/**
+ * Styles for ServiceRecordReferenceFieldOld.tsx
+ *
+ * WARNING!!!
+ * For Future PrimeReact Updates.
+ * If PrimeReact update/remove css class that we use to select the html element.
+ * CSS class selection can potentially not apply the override styles.
+ *
+ * @author Thompson 15/01/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2019
+ */
+
+.cp-ServiceRecordReferenceField {
+  margin-left: 0.4em;
+
+  &-button {
+    // TODO determine a better height that works well in Table Row. Email has been sent about this issue.
+    //  Currently button height is too high which causes Table Row height to increase higher than expected.
+    //  Messes up the expected DataTable scroll height due to field causing Table Row to be greater than expected.
+    height: 19px;
+    //height: 3.3ex;
+    width: 1.8em;
+    float: right;
+  }
+}
+
+// Since ServiceRecordReferenceFieldOld doesn't have text inside button.
+// Override PrimeReact padding and line-height which is causing unnecessary button dimension issues.
+// Particularly inside a TableField Row.
+body .cp-ServiceRecordReferenceField .cp-ServiceRecordReferenceField-button {
+  .p-button-text {
+    padding: 0;
+    line-height: 0;
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "coded": true,
+  "codeLength": 1,
+  "extensible": false,
+  "length": 80,
+  "uri": "http://www.anzjsurg.com/view/0/ASAscore.html",
+  "values": [
+    {
+      "code": "1",
+      "codeSet": "http://www.anzjsurg.com/view/0/ASAscore.html",
+      "value": "1 - Healthy person"
+    },
+    {
+      "code": "2",
+      "codeSet": "http://www.anzjsurg.com/view/0/ASAscore.html",
+      "value": "2 - Mild systemic disease"
+    },
+    {
+      "code": "3",
+      "codeSet": "http://www.anzjsurg.com/view/0/ASAscore.html",
+      "value": "3 - Severe systemic disease"
+    },
+    {
+      "code": "4",
+      "codeSet": "http://www.anzjsurg.com/view/0/ASAscore.html",
+      "value": "4 - Severe systemic disease that is a constant threat to life"
+    },
+    {
+      "code": "5",
+      "codeSet": "http://www.anzjsurg.com/view/0/ASAscore.html",
+      "value": "5 - Moribund person who is not expected to survive without the operation"
+    },
+    {
+      "code": "6",
+      "codeSet": "http://www.anzjsurg.com/view/0/ASAscore.html",
+      "value": "6 - Declared brain-dead person whose organs are being removed for donor purposes"
+    },
+    {
+      "code": "E",
+      "codeSet": "http://www.anzjsurg.com/view/0/ASAscore.html",
+      "value": "E - Emergency"
+    },
+    {
+      "code": "P",
+      "codeSet": "http://www.anzjsurg.com/view/0/ASAscore.html",
+      "value": "P - Pregnancy"
+    }
+  ],
+  "valueSetID": "Patient.ASAScore"
+}

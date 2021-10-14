@@ -1,0 +1,51 @@
+{
+  "data": {
+    "ClinicalMeasures": {
+      "BMI": 24.7,
+      "BPSitting": "120/80",
+      "Height": 180.0,
+      "Pulse": 66,
+      "SPO2": 99,
+      "Temperature": 38.0,
+      "Weight": 80.00
+    },
+    "Confidentiality": "Normal",
+    "ID": "0b19ff02-a7d0-4618-a015-ec4615ead7c8",
+    "Location": {
+      "id": -2,
+      "name": "Darlinghurst"
+    },
+    "Patient": 42,
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "Purpose": "Consultation",
+    "ServiceDate": {
+      "iso": "2008-05-02T16:17+10"
+    },
+    "SetID": "d5a167a4-e2b4-4f63-8a6c-4708e6533cbf",
+    "Setting": "Face to Face",
+    "Version": 1,
+    "assessment": "Central Tablelands for Friday: Partly cloudy. Areas of morning frost and patchy fog. Light winds becoming NW 15 to 20 km/h in the morning then tending W 15 to 25 km/h in the middle of the day. Daytime maximum temperatures between 11 and 18.",
+    "duration": 15,
+    "plan": "Plan International Australia recognises the power and potential of every single child. As one of the most experienced organisations in our field we know that there is nowhere in the world where girls are treated as equals.\n \n We work alongside children, young people, supporters and partners to tackle root causes of the injustices facing girls and the most marginalised children.",
+    "summary": "I am the only one to make you feel this way"
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2008-05-02T16:17+10"
+    },
+    "serviceID": 8263,
+    "serviceType": 1,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

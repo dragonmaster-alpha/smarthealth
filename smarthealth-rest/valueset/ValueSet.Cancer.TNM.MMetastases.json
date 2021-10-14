@@ -1,0 +1,18 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 15,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.MMetastases",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.MMetastases",
+      "value": "M0"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.MMetastases",
+      "value": "M1"
+    }
+  ],
+  "valueSetID": "Cancer.TNM.MMetastases"
+}

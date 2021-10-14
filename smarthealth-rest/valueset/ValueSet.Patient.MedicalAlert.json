@@ -1,0 +1,120 @@
+{
+  "coded": true,
+  "codeLength": 100,
+  "extensible": true,
+  "length": 100,
+  "uri": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+  "values": [
+    {
+      "code": "INSULIN_DEPENDENT",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Insulin Dependent"
+    },
+    {
+      "code": "ALLERGIC_PENICILLIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Allergic to Penicillin"
+    },
+    {
+      "code": "NO_CRANIAL_MRI",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "No Cranial MRI"
+    },
+    {
+      "code": "ALLERGY_NUTS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Allergic to Nuts"
+    },
+    {
+      "code": "ALLERGY_FOODS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Allergic to Foods"
+    },
+    {
+      "code": "ALLERGY_LATEX",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Allergic to Latex"
+    },
+    {
+      "code": "ALLERGY_INSECTS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Allergic to Insects"
+    },
+    {
+      "code": "CONDITION_ALZHEIMERS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Alzheimer\u0027s Disease"
+    },
+    {
+      "code": "CONDITION_ASTHMA",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Asthma"
+    },
+    {
+      "code": "CONDITION_AUTISM",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Autism"
+    },
+    {
+      "code": "CONDITION_DIABETES",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Diabetes"
+    },
+    {
+      "code": "CONDITION_EPILEPSY",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Epilepsy"
+    },
+    {
+      "code": "CONDITION_HEART_DISEASE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Heart Disease"
+    },
+    {
+      "code": "CONDITION_HAEMOPHILIA",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Haemophilia"
+    },
+    {
+      "code": "CONDITION_HYPERTENSION",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Hypertension"
+    },
+    {
+      "code": "MEDICATIONS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Medications"
+    },
+    {
+      "code": "CONDITION_PARKINSONS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Parkinson\u0027s Disease"
+    },
+    {
+      "code": "DEVICES",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Devices/Implants"
+    },
+    {
+      "code": "IVDRUG",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Intravenous drug user"
+    },
+    {
+      "code": "VRE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "VanB vancomycin-resistant enterococci (VRE) positive"
+    },
+    {
+      "code": "CONDITION_HIV",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "HIV positive"
+    },
+    {
+      "code": "CONDITION_HEPC",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.MedicalAlert",
+      "value": "Hepatitis C positive"
+    }
+  ],
+  "valueSetID": "Patient.MedicalAlert"
+}

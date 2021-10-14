@@ -1,0 +1,30 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 15,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.NLymphNodes",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.NLymphNodes",
+      "value": "NX"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.NLymphNodes",
+      "value": "N0"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.NLymphNodes",
+      "value": "N1"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.NLymphNodes",
+      "value": "N2"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.TNM.NLymphNodes",
+      "value": "N3"
+    }
+  ],
+  "valueSetID": "Cancer.TNM.NLymphNodes"
+}

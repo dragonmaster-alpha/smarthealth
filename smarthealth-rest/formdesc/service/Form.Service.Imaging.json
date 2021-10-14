@@ -1,0 +1,157 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date/Time",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "ReferringProvider",
+        "label": "Referring Doctor",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyTo",
+        "label": "Copy To",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "SurgeryReference",
+        "label": "Surgery Reference",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "LabReference",
+        "label": "Laboratory Reference",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "CAT scan",
+          "Cardiac ultrasound",
+          "Nuclear magnetic resonance",
+          "Nuclear medicine scan",
+          "Obstetric ultrasound",
+          "Radiograph",
+          "Radiology",
+          "Radiology ultrasound",
+          "Vascular ultrasound"
+        ],
+        "size": 50,
+        "id": "Modality",
+        "label": "Modality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "TestRequest",
+        "label": "Request",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "TestResult",
+        "label": "Report",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "fields": [
+          {
+            "layoutMultiline": false,
+            "size": 200,
+            "id": "ImageURL",
+            "label": "Image URL",
+            "layout": {
+              "labelPosition": "Omit",
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          },
+          {
+            "id": "imageURLOpenButton",
+            "label": "Open URL",
+            "layout": {
+              "labelPosition": "Omit"
+            },
+            "type": "Button"
+          }
+        ],
+        "id": "ImageURLGroup",
+        "label": "Image URL",
+        "type": "Group"
+      }
+    },
+    {
+      "field": {
+        "id": "AllTestsComplete",
+        "label": "Final Report",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    }
+  ],
+  "id": "Service.Imaging.WebUI",
+  "layoutColumns": 2
+}

@@ -1,0 +1,675 @@
+{
+  "behaviour": {
+    "mostRecentOnlyEditable": true,
+    "newServiceButton": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "New patient at this centre",
+                "Transferred to another centre",
+                "Transferred to private care",
+                "Lost to follow up",
+                "Patient transplanted - no follow up",
+                "Patient consent withdrawn",
+                "Deceased",
+                "No longer considered to have CF"
+              ],
+              "size": 40,
+              "id": "CFCentre.PatientDisposition",
+              "label": "Patient disposition",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Deceased"
+                      ],
+                      "fieldID": "CFCentre.PatientDisposition"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "CFCentre.DeceasedDate",
+              "label": "Date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "CF-Pulmonary",
+                "CF-Gastrointestinal",
+                "CF-Hepatic",
+                "CF-Post-transplant"
+              ],
+              "size": 25,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Deceased"
+                      ],
+                      "fieldID": "CFCentre.PatientDisposition"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "CFCentre.CauseOfDeath",
+              "label": "Cause of death",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Bundaberg Hospital",
+                "Burnie Hospital",
+                "Cairns Base Hospital",
+                "Children\u0027s Hospital Westmead",
+                "Gold Coast Hospital",
+                "John Hunter Hospital adults",
+                "John Hunter Hospital children",
+                "Lady Cilento Children\u0027s Hospital",
+                "Launceston Hospital",
+                "Mackay Base Hospital",
+                "Monash Medical Centre",
+                "Prince of Wales",
+                "Princess Margaret Hospital",
+                "Rockhampton Hospital",
+                "Royal Adelaide Hospital",
+                "Royal Brisbane Hospital",
+                "Royal Children\u0027s Hospital Vic",
+                "Royal Hobart Hospital",
+                "Royal Prince Alfred Hospital",
+                "Sir Charles Gairdner Hospital",
+                "Sydney Children\u0027s Hospital",
+                "The Alfred Hospital",
+                "The Canberra Hospital",
+                "The Mater Hospital",
+                "The Prince Charles Hospital",
+                "Townsville Base Hospital",
+                "Westmead Hospital",
+                "Women\u0027s and Children\u0027s Hospital"
+              ],
+              "size": 35,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Transferred to another centre"
+                      ],
+                      "fieldID": "CFCentre.PatientDisposition"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "CFCentre.NewCentre",
+              "label": "New centre",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Transferred to another centre"
+                      ],
+                      "fieldID": "CFCentre.PatientDisposition"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "CFCentre.DateOfTransferOut",
+              "label": "Date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "New patient at this centre"
+                      ],
+                      "fieldID": "CFCentre.PatientDisposition"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "CFCentre.DateOfTransferIn",
+              "label": "Date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "New patient at this centre"
+                      ],
+                      "fieldID": "CFCentre.PatientDisposition"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "CFCentre.NewCFAustraliaID",
+              "label": "New CF Australia ID",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "Transferred to another centre",
+                          "Transferred to private care",
+                          "Lost to follow up",
+                          "Patient transplanted - no follow up",
+                          "Patient consent withdrawn",
+                          "Deceased",
+                          "No longer considered to have CF"
+                        ],
+                        "fieldID": "CFCentre.PatientDisposition"
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "CFCentre.MO",
+              "label": "MO",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "Transferred to another centre",
+                          "Transferred to private care",
+                          "Lost to follow up",
+                          "Patient transplanted - no follow up",
+                          "Patient consent withdrawn",
+                          "Deceased",
+                          "No longer considered to have CF"
+                        ],
+                        "fieldID": "CFCentre.PatientDisposition"
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "CFCentre.CO",
+              "label": "CO",
+              "type": "Member"
+            }
+          }
+        ],
+        "id": "CFCentre",
+        "layoutShow": true,
+        "title": "CF Centre"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Treatment.longTermOxygenTherapy",
+              "label": "Long-term oxygen therapy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Treatment.longTermOxygenTherapy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.OxygenTherapyStartDate",
+              "label": "Start date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Continuous",
+                "Nocturnal",
+                "PRN"
+              ],
+              "size": 10,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Treatment.longTermOxygenTherapy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.OxygenTherapyType",
+              "label": "Type",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Treatment.NonInvasiveVentilation",
+              "label": "Non-invasive ventilation",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Treatment.NonInvasiveVentilation",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.NonInvasiveVentilationStartDate",
+              "label": "Start date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Treatment.IVTherapy",
+              "label": "IV Therapy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Treatment.IVTherapy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.IVTherapyStartDate",
+              "label": "Start date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Home",
+                "Hospital"
+              ],
+              "size": 10,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Treatment.IVTherapy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.IVTherapySituation",
+              "label": "Situation",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Treatment.ParticipantInRecognisedClinicalTrial",
+              "label": "Participant in recognised clinical trial",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Treatment",
+        "layoutShow": true,
+        "title": "Treatment"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.TreatmentStatus",
+  "layoutColumns": 3
+}

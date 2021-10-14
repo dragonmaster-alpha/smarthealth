@@ -1,0 +1,20 @@
+{
+  "coded": true,
+  "codeLength": 4,
+  "extensible": false,
+  "length": 25,
+  "uri": "http://ns.smarthealth.com.au/valueset/User.SecondFactorMethod",
+  "values": [
+    {
+      "code": "SMS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/User.SecondFactorMethod",
+      "value": "SMS"
+    },
+    {
+      "code": "TOTP",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/User.SecondFactorMethod",
+      "value": "TOTP/Google Authenticator"
+    }
+  ],
+  "valueSetID": "User.SecondFactorMethod"
+}

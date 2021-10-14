@@ -1,0 +1,26 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 33,
+  "uri": "http://ns.smarthealth.com.au/valueset/Patientwatch.ServiceNeeds",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.ServiceNeeds",
+      "value": "Needed and available"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.ServiceNeeds",
+      "value": "Needed but availability not known"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.ServiceNeeds",
+      "value": "Needed but not available"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.ServiceNeeds",
+      "value": "Not needed"
+    }
+  ],
+  "valueSetID": "Patientwatch.ServiceNeeds"
+}

@@ -1,0 +1,326 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 0,
+        "id": "duration",
+        "label": "Duration",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "min"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "ClinicalMeasures.Height",
+              "label": "Height",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "ClinicalMeasures.Weight",
+              "label": "Weight",
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "calculation": {
+                "paramFieldIDs": [
+                  "ClinicalMeasures.Height",
+                  "ClinicalMeasures.Weight"
+                ],
+                "type": "BMI"
+              },
+              "id": "ClinicalMeasures.BMI",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "format": "BloodPressure",
+              "size": 7,
+              "id": "ClinicalMeasures.BPSitting",
+              "label": "BP sitting",
+              "type": "Formatted",
+              "units": "mmHg"
+            }
+          },
+          {
+            "field": {
+              "format": "BloodPressure",
+              "size": 7,
+              "id": "ClinicalMeasures.BPStanding",
+              "label": "BP standing",
+              "type": "Formatted",
+              "units": "mmHg"
+            }
+          },
+          {
+            "field": {
+              "format": "BloodPressure",
+              "size": 7,
+              "id": "ClinicalMeasures.BPLying",
+              "label": "BP lying",
+              "type": "Formatted",
+              "units": "mmHg"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "ClinicalMeasures.Pulse",
+              "label": "Pulse",
+              "type": "Number",
+              "units": "bpm"
+            }
+          },
+          {
+            "field": {
+              "maximum": 45,
+              "minimum": 30,
+              "precision": 3,
+              "scale": 1,
+              "id": "ClinicalMeasures.Temperature",
+              "label": "Temperature",
+              "type": "Number",
+              "units": "°C"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "ClinicalMeasures.SPO2",
+              "label": "SpO2",
+              "type": "Number",
+              "units": "%"
+            }
+          }
+        ],
+        "id": "ClinicalMeasures",
+        "layoutShow": true,
+        "title": "Clinical Measures"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "assessment",
+        "label": "Assessment",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "plan",
+        "label": "Plan",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Service.ConsultationNote.WebUI",
+  "layoutColumns": 3
+}

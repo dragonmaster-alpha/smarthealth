@@ -1,0 +1,59 @@
+{
+  "coded": true,
+  "codeLength": 9,
+  "extensible": false,
+  "length": 35,
+  "uri": "http://snomed.info/sct",
+  "values": [
+    {
+      "code": "71252005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Cervix"
+    },
+    {
+      "code": "2739003",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Endometrium"
+    },
+    {
+      "code": "31435000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Fallopian tube"
+    },
+    {
+      "code": "416441004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Gestational trophoblastic neoplasia"
+    },
+    {
+      "code": "15497006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Ovary"
+    },
+    {
+      "code": "72372004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Peritoneum (Pelvic)"
+    },
+    {
+      "code": "35039007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Uterus"
+    },
+    {
+      "code": "76784001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Vagina"
+    },
+    {
+      "code": "45292006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Vulva"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Not known"
+    }
+  ],
+  "valueSetID": "Cancer.GynaecologicalCancer.Site"
+}

@@ -1,0 +1,336 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "TransportArrangementsContactPerson",
+        "label": "Contact Person",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 12,
+        "id": "TransportArrangementsPhoneNumber",
+        "label": "Phone Number",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "TransportArrangementsNotes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "PharmaceuticalArrangementsContactPerson",
+        "label": "Contact Person",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 12,
+        "id": "PharmaceuticalArrangementsPhoneNumber",
+        "label": "Phone Number",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "PharmaceuticalArrangementsNotes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Christmas",
+          "Other (Enter Details)",
+          "Surgery"
+        ],
+        "size": 25,
+        "id": "OtherArrangementsDetails",
+        "label": "Details",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "OtherArrangementsContactPerson",
+        "label": "Contact Person",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 12,
+        "id": "OtherArrangementsPhoneNumber",
+        "label": "Phone Number",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "OtherArrangementsNotes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "DepartmentOfHousingContactPerson",
+        "label": "Contact Person",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 12,
+        "id": "DepartmentOfHousingPhoneNumber",
+        "label": "Phone Number",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "DepartmentOfHousingNotes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "AgedCarePackage",
+        "label": "Aged Care Package",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "AgedCareContactPerson",
+        "label": "Contact Person",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 12,
+        "id": "AgedCarePhoneNumber",
+        "label": "Phone Number",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "AgedCareNotes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "DeathContactPerson1",
+        "label": "Contact Person",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 12,
+        "id": "DeathContactPhoneNumber1",
+        "label": "Phone Number",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "DeathContactPerson2",
+        "label": "Contact Person",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 12,
+        "id": "DeathContactPhoneNumber2",
+        "label": "Phone Number",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "DeathContactNotes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.SocialWorkerCarePlan",
+  "layoutColumns": 3
+}

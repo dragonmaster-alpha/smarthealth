@@ -1,0 +1,553 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionMinute": true,
+              "id": "Assessment.DateAndTimeOfExposure",
+              "label": "Date and time of exposure",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 0,
+              "calculation": {
+                "paramFieldIDs": [
+                  "Assessment.DateAndTimeOfExposure",
+                  "ServiceDate"
+                ],
+                "type": "DIFFERENCE_IN_HOURS"
+              },
+              "id": "Assessment.TimeFromExposureToAssessment",
+              "label": "Time from exposure to assessment",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "hours"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Cunnilingus",
+                "IAS",
+                "IOS",
+                "IVS",
+                "Insertive fisting",
+                "Nonoccupational NSI – assault",
+                "Nonoccupational NSI – discarded fit",
+                "Nonoccupational body fluids exposure",
+                "Occupational NSI",
+                "Occupational NSI - assault",
+                "Occupational body fluids exposure",
+                "RAS no ejaculate",
+                "RAS with ejaculate",
+                "ROS no ejaculate",
+                "ROS with ejaculate",
+                "RVS no ejaculate",
+                "RVS with ejaculate",
+                "Re-use of injecting equipment",
+                "Receptive fisting",
+                "Shared sex toy(s)"
+              ],
+              "size": 40,
+              "id": "Assessment.TypeOfExposure",
+              "label": "Type of exposure",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Eye",
+                "Intact skin",
+                "Mouth",
+                "Non-intact skin"
+              ],
+              "size": 15,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Nonoccupational body fluids exposure",
+                        "Occupational body fluids exposure"
+                      ],
+                      "fieldID": "Assessment.TypeOfExposure"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.Site",
+              "label": "Site",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Assessment.GenitalTrauma",
+              "label": "Genital trauma",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Assessment.SexualAssault",
+              "label": "Sexual assault",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Bacterial vaginosis",
+                "Candidiasis",
+                "Chancroid",
+                "Chlamydia",
+                "Donovanosis",
+                "Gonorrhoea",
+                "HPV",
+                "HSV",
+                "LGV",
+                "Molluscum contagiosum",
+                "NSU",
+                "Syphilis - early latent",
+                "Syphilis - late latent",
+                "Syphilis - primary",
+                "Syphilis - secondary",
+                "Syphilis - tertiary",
+                "Trichomoniasis"
+              ],
+              "size": 25,
+              "id": "Assessment.ActiveSTI",
+              "label": "Active STIs",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "No",
+                "Unsure",
+                "Yes"
+              ],
+              "size": 10,
+              "id": "Assessment.Condom",
+              "label": "Condom",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Broke",
+                "Removed by source",
+                "Slipped - full",
+                "Slipped - partial"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes"
+                      ],
+                      "fieldID": "Assessment.Condom"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.CondomUse",
+              "label": "Condom use",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Assessment",
+        "layoutShow": true,
+        "title": "Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "PEP.CalledPEPHotline",
+              "label": "Called PEP hotline",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "PEP.PreviousPEP",
+              "label": "Previous PEP",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "maximum": 99,
+              "precision": 2,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "PEP.PreviousPEP",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PEP.PreviousPEPNumber",
+              "label": "Number",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Not appropriate",
+                "Not offered",
+                "Offered and accepted",
+                "Offered but declined"
+              ],
+              "size": 20,
+              "id": "PEP.PEPOffered",
+              "label": "PEP offered",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "PEP",
+        "layoutShow": true,
+        "title": "PEP"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Female",
+                "Intersex",
+                "Male"
+              ],
+              "size": 12,
+              "id": "Source.Sex",
+              "label": "Sex",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Negative",
+                "Positive"
+              ],
+              "size": 10,
+              "id": "Source.HIVStatus",
+              "label": "HIV status",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Detectable",
+                "Undetectable"
+              ],
+              "size": 15,
+              "id": "Source.HIVVL",
+              "label": "HIV Viral load",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Detectable"
+                      ],
+                      "fieldID": "Source.HIVVL"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Source.ViralLoad",
+              "label": "Viral load",
+              "type": "Number",
+              "units": "copies/mL"
+            }
+          },
+          {
+            "field": {
+              "id": "Source.HIVTreatment",
+              "label": "Currently On HIV Treatment",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Source",
+        "layoutShow": true,
+        "title": "Source of Exposure"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Immunology.PEPAssessment.WebUI",
+  "layoutColumns": 3
+}

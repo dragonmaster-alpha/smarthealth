@@ -1,0 +1,25 @@
+{
+  "coded": true,
+  "codeLength": 1,
+  "extensible": false,
+  "length": 9,
+  "uri": "http://meteor.aihw.gov.au/content/index.phtml/itemId/422769",
+  "values": [
+    {
+      "code": "L",
+      "codeSet": "http://meteor.aihw.gov.au/content/index.phtml/itemId/422769",
+      "value": "Left"
+    },
+    {
+      "code": "R",
+      "codeSet": "http://meteor.aihw.gov.au/content/index.phtml/itemId/422769",
+      "value": "Right"
+    },
+    {
+      "code": "B",
+      "codeSet": "http://meteor.aihw.gov.au/content/index.phtml/itemId/422769",
+      "value": "Bilateral"
+    }
+  ],
+  "valueSetID": "Bodystructure.LateralityKnown"
+}

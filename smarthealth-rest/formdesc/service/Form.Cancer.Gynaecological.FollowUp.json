@@ -1,0 +1,720 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Deceased",
+          "Routine or scheduled",
+          "Symptomatic",
+          "Abnormal finding-bloods, imaging, examination",
+          "Patient anxiety"
+        ],
+        "size": 50,
+        "id": "ReasonForFollowUp",
+        "label": "Reason for follow-up",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "equals": [
+                    "Deceased"
+                  ],
+                  "fieldID": "ReasonForFollowUp"
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "DiagnosisDate",
+        "label": "Diagnosis date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precision": 2,
+        "scale": 0,
+        "calculation": {
+          "paramFieldIDs": [
+            "DiagnosisDate",
+            "ServiceDate"
+          ],
+          "type": "DIFFERENCE_IN_MONTHS"
+        },
+        "id": "TimeSinceDiagnosis",
+        "label": "Time since diagnosis",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number",
+        "units": "months"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Face-to-face",
+          "Phone call",
+          "Letter (doctor/practice/relative/patient)",
+          "Cancer registry"
+        ],
+        "size": 50,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "equals": [
+                    "Deceased"
+                  ],
+                  "fieldID": "ReasonForFollowUp"
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "MethodOfContact",
+        "label": "Method of contact",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "equals": [
+                    "Deceased"
+                  ],
+                  "fieldID": "ReasonForFollowUp"
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Attended",
+        "label": "Attended",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "No evidence of this cancer",
+          "Evidence of this cancer",
+          "Disease status uncertain",
+          "Disease status unknown"
+        ],
+        "size": 30,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "equals": [
+                    "Deceased"
+                  ],
+                  "fieldID": "ReasonForFollowUp"
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "PatientStatus",
+        "label": "Patient status",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Patient has never had a recurrence",
+          "1st recurrence of this cancer",
+          "2nd recurrence of this cancer",
+          "3rd recurrence of this cancer",
+          "4th or greater recurrence of this cancer",
+          "Uncertain",
+          "Not known"
+        ],
+        "size": 50,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "equals": [
+                    "Deceased"
+                  ],
+                  "fieldID": "ReasonForFollowUp"
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "RecurrenceStatus",
+        "label": "Recurrence status",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "AlertCreated",
+        "label": "Alert Created",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "multiple": true,
+        "options": [
+          "Gastrointestinal",
+          "Urinary tract",
+          "Genital tract",
+          "Lymphatic",
+          "Wound"
+        ],
+        "size": 20,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "equals": [
+                    "Deceased"
+                  ],
+                  "fieldID": "ReasonForFollowUp"
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "NonFatalComplications",
+        "label": "Non-fatal complications",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "valueSetID": "Cancer.Surgery.ComplicationSeverity",
+        "id": "Severity",
+        "label": "Severity",
+        "layout": {
+          "alignTop": true,
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "options": [
+          "Antiemetics",
+          "Antipyretics",
+          "Analgesics",
+          "Diuretics",
+          "Electrolytes",
+          "Physiotherapy",
+          "Wound infections opened at bedside"
+        ],
+        "size": 35,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 1"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Grade1Treatment",
+        "label": "Treatment",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "multiple": true,
+        "options": [
+          "Antibiotics – oral",
+          "Antibiotics – intravenous",
+          "Blood transfusion",
+          "Total parenteral nutrition"
+        ],
+        "size": 30,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 2"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Grade2Treatment",
+        "label": "Treatment",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "options": [
+          "Surgical",
+          "Endoscopic",
+          "Laparoscopic",
+          "Radiological"
+        ],
+        "size": 30,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 3a",
+                  "Grade 3b"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Intervention",
+        "label": "Intervention",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 3a",
+                  "Grade 3b"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "GradeDetails",
+        "label": "Details",
+        "layout": {
+          "newLine": true,
+          "span": 3
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "options": [
+          "Acute care ward",
+          "High dependency unit",
+          "Intensive care unit"
+        ],
+        "size": 30,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 4a",
+                  "Grade 4b"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "GradeCareRequired",
+        "label": "Care required",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "This cancer",
+          "Other causes and this cancer present",
+          "Other causes and no evidence of this cancer",
+          "Other causes and disease status not known or uncertain"
+        ],
+        "size": 60,
+        "id": "CauseOfDeath",
+        "label": "Cause of death",
+        "layout": {
+          "newLine": true,
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "DateOfDeath",
+        "label": "Date of death",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "AlreadyDeceased",
+        "label": "Already Deceased",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Cancer",
+          "Not cancer"
+        ],
+        "size": 60,
+        "id": "Constants",
+        "label": "Constants",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Assessment",
+        "label": "Assessment",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Plan",
+        "label": "Plan",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Cancer.Gynaecological.FollowUp",
+  "layoutColumns": 2
+}

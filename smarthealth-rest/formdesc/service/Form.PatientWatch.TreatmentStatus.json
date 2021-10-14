@@ -1,0 +1,621 @@
+{
+  "behaviour": {
+    "mostRecentOnlyEditable": true,
+    "newServiceButton": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Induction.ProgramStartDate",
+              "label": "Program start date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Induction.ScreeningStartDate",
+              "label": "Screening start date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Induction.ProgramEndDate",
+              "label": "Program end date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Induction.HLCCStartDate",
+              "label": "HLCC start date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Induction.HLCCExtractDate",
+              "label": "HLCC extract date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Induction.HLCCEndDate",
+              "label": "HLCC end date",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "Induction",
+        "layoutShow": true,
+        "title": "Induction"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Funded",
+                "Unfunded"
+              ],
+              "size": 10,
+              "id": "PatientStatus.FundingStatus",
+              "label": "Funding status",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Candidate",
+                "Control",
+                "Declined",
+                "Graduated",
+                "Induction booked",
+                "Introduction letter sent",
+                "Lost to follow-up",
+                "Not offered",
+                "Offered",
+                "Parked NESB",
+                "Review",
+                "Stop letter sent",
+                "Stopped by patient",
+                "Stopped by watch team",
+                "VIP"
+              ],
+              "size": 30,
+              "id": "PatientStatus.ParticipationStatus",
+              "label": "Participation status",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "PatientStatus.PermanentResidentialCare",
+              "label": "Permanent residential care",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "PatientStatus",
+        "layoutShow": true,
+        "title": "Patient status"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Consented",
+                "Considering",
+                "Refused"
+              ],
+              "size": 40,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "VIP"
+                      ],
+                      "fieldID": "PatientStatus.ParticipationStatus"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Consent.ResearchConsent",
+              "label": "Research consent",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Consent",
+        "layoutShow": true,
+        "title": "Consent"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "medicalGroupListType": "PATIENT_WATCH_CARE_MODEL",
+              "size": 100,
+              "id": "CareTeam.CareModel",
+              "label": "Care model",
+              "type": "MedicalGroupList"
+            }
+          },
+          {
+            "field": {
+              "medicalGroupListType": "PATIENT_WATCH_CARE_TEAM",
+              "size": 20,
+              "id": "CareTeam.CareTeam",
+              "label": "Care team",
+              "type": "MedicalGroupList"
+            }
+          },
+          {
+            "field": {
+              "id": "CareTeam.TelecareGuide",
+              "label": "Tele-Care Guide",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "CareTeam.Coach",
+              "label": "Health Coach",
+              "type": "Member"
+            }
+          }
+        ],
+        "id": "CareTeam",
+        "layoutShow": true,
+        "title": "Care Team"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "CareTeam.TelecareGuide",
+                      "testNotEmpty": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "TelecareCalls.SuspendCalls",
+              "label": "Suspend calls",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Daily",
+                "Twice a week",
+                "Weekly",
+                "Fortnightly",
+                "Monthly",
+                "On request"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "CareTeam.TelecareGuide",
+                      "testNotEmpty": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "TelecareCalls.Frequency",
+              "label": "Call frequency",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "editState": "Mandatory"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "TelecareCalls.SuspendCalls",
+                      "testDisabled": true,
+                      "testTrue": true
+                    },
+                    "then": {
+                      "clearValue": true,
+                      "editState": "ReadOnly"
+                    }
+                  }
+                ]
+              },
+              "id": "TelecareCalls.From",
+              "label": "Next",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "CareTeam.TelecareGuide",
+                      "testNotEmpty": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "TelecareCalls.Phone",
+              "label": "Phone",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "medicalGroupListType": "PATIENT_WATCH_CALL_WINDOW",
+              "size": 12,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "CareTeam.TelecareGuide",
+                      "testNotEmpty": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "TelecareCalls.CallWindow",
+              "label": "Call window",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "MedicalGroupList"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Patient",
+                "Caregiver",
+                "Patient or Caregiver"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "CareTeam.TelecareGuide",
+                      "testNotEmpty": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "TelecareCalls.Respondent",
+              "label": "Respondent",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "TelecareCalls.CoachNotes",
+              "label": "Health Coach notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "TelecareCalls",
+        "layoutShow": true,
+        "title": "Calls"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 100,
+                  "id": "Reason",
+                  "label": "Reason",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateProviderAdded",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                }
+              ],
+              "id": "HealthcareAndSupport.Clinicians",
+              "label": "Clinicians",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "SupportService",
+                  "label": "Service",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 100,
+                  "id": "Reason",
+                  "label": "Reason",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateServiceAdded",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                }
+              ],
+              "id": "HealthcareAndSupport.SupportServices",
+              "label": "Support Services",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "HealthcareAndSupport",
+        "layoutShow": true,
+        "title": "Healthcare Providers and Support Services"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "TreatmentStatusNotes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "PatientWatch.TreatmentStatus",
+  "layoutColumns": 3
+}

@@ -1,0 +1,5 @@
+{
+  "authorizationEndpointUri": "https://tomcat-local.smarthealth.com.au/smartauth/authorize",
+  "clientID": "abcDEFghiJKLmnoPQRst",
+  "redirectUri": "https://tomcat-local.smarthealth.com.au/smarthealth/login"
+}

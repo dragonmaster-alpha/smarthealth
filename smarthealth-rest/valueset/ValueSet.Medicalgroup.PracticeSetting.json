@@ -1,0 +1,125 @@
+{
+  "coded": true,
+  "codeLength": 7,
+  "extensible": false,
+  "length": 22,
+  "uri": "http://www.abs.gov.au/ANZSCO",
+  "values": [
+    {
+      "code": "8601-3",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Aged Care, charitable"
+    },
+    {
+      "code": "8601-2",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Aged Care, government"
+    },
+    {
+      "code": "8601-1",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Aged Care, private"
+    },
+    {
+      "code": "8401-1",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Children\u0027s Hospital"
+    },
+    {
+      "code": "8511-5",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Community Health"
+    },
+    {
+      "code": "8520-1",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Diagnostic Imaging"
+    },
+    {
+      "code": "8539-6",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Dietitians"
+    },
+    {
+      "code": "8401-5",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "General Hospital"
+    },
+    {
+      "code": "8511-2",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "General Practice"
+    },
+    {
+      "code": "8512-5",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Gynaecology"
+    },
+    {
+      "code": "7561-1",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Health Administration"
+    },
+    {
+      "code": "8511-3",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Medical Centre"
+    },
+    {
+      "code": "8520-2",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Medical Laboratory"
+    },
+    {
+      "code": "8539-13",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Nursing Service"
+    },
+    {
+      "code": "8539-14",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Occupational Therapy"
+    },
+    {
+      "code": "8520-3",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Pathology"
+    },
+    {
+      "code": "4271-1",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Pharmacy"
+    },
+    {
+      "code": "8533-1",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Physiotherapy"
+    },
+    {
+      "code": "8401-13",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Private Hospital"
+    },
+    {
+      "code": "8539-4",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Psychology"
+    },
+    {
+      "code": "8511-4",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Rural General Practice"
+    },
+    {
+      "code": "8512-16",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Specialist Surgeon"
+    },
+    {
+      "code": "8401-10",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Women\u0027s Hospital"
+    }
+  ],
+  "valueSetID": "Medicalgroup.PracticeSetting"
+}

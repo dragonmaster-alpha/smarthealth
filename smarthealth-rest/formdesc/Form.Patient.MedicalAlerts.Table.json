@@ -1,0 +1,44 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "columns": [
+          {
+            "valueSetID": "Patient.MedicalAlert",
+            "id": "name",
+            "label": "Medical Alert",
+            "type": "ValueSet"
+          },
+          {
+            "size": 250,
+            "id": "details",
+            "label": "Details",
+            "layout": {
+              "labelPosition": "BeforeTop",
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          },
+          {
+            "precisionDay": true,
+            "id": "date",
+            "label": "Date",
+            "type": "DateTime"
+          }
+        ],
+        "id": "medicalAlerts",
+        "label": "Medical Alerts",
+        "layout": {
+          "labelPosition": "Omit"
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Patient.MedicalAlerts.Table.WebUI",
+  "layoutColumns": 1
+}

@@ -1,0 +1,16 @@
+{
+  "id": "/medicalgroups/1/members",
+  "referencedType": "MedicalGroupMember",
+  "references": [
+    {
+      "associatedID": 123,
+      "id": 1,
+      "type": "MedicalGroupMember"
+    },
+    {
+      "associatedID": 678,
+      "id": 1,
+      "type": "MedicalGroupMember"
+    }
+  ]
+}

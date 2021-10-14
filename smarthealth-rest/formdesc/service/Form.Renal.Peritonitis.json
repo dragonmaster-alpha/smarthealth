@@ -1,0 +1,561 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 2,
+        "scale": 0,
+        "id": "Episode",
+        "label": "Episode",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "MostRecentTraining",
+        "label": "Most recent training",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "CultureTaken",
+        "label": "Culture taken",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "valueSetID": "Renal.Organisms",
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "CultureTaken",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Organism",
+        "label": "Organisms",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Recurrence - new organism \u003c 4wks post completion of antibiotic therapy",
+          "Refractory - Failure of PD effluent to clear after 5 days of antibiotics",
+          "Relapse - same organism \u003c 4wks post completion of antibiotic therapy",
+          "Repeat - Same organism grown \u003e 4wks post completion of antibiotic therapy"
+        ],
+        "size": 100,
+        "id": "Details",
+        "label": "Details",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "DialysisSection",
+        "layoutShow": true,
+        "title": "Dialysis"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "APD",
+          "CAPD"
+        ],
+        "size": 4,
+        "id": "PDRegimen",
+        "label": "PD regimen",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "PDPrescriptionService",
+        "label": "PD prescription",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "id": "PDPrescriptionServiceDate",
+        "label": "PD prescription",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Baxter Freeline Solo",
+                "Fresenius Stay*Safe"
+              ],
+              "size": 20,
+              "id": "CAPD.System",
+              "label": "System",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "CAPD",
+        "layoutShow": true,
+        "title": "CAPD"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Baxter Homechoice Pro",
+                "Fresenius Sleep*Safe"
+              ],
+              "size": 30,
+              "id": "APD.Machine",
+              "label": "Machine",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "APD",
+        "layoutShow": true,
+        "title": "APD"
+      }
+    },
+    {
+      "field": {
+        "id": "Balance",
+        "label": "Balance",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "Icodextrin",
+        "label": "Icodextrin",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "AntibioticsPreviousMonth",
+        "label": "Antibiotics in previous month",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Observations.CloudyPDEffluent",
+              "label": "Cloudy PD effluent",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Observations.AbdominalPain",
+              "label": "Abdominal pain",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Observations.Fever",
+              "label": "Fever",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Observations.Diarrhoea",
+              "label": "Diarrhoea",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Observations.Vomiting",
+              "label": "Vomiting",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Observations.Peritonism",
+              "label": "Peritonism",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Observations.PDEffluentTested",
+              "label": "PD effluent tested",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Observations",
+        "layoutShow": true,
+        "title": "Observations"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 40,
+                  "id": "Medication",
+                  "label": "Medication",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Ceased",
+                    "Changed",
+                    "Prescribed",
+                    "Unchanged"
+                  ],
+                  "size": 20,
+                  "id": "ChangeType",
+                  "label": "Change Type",
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Adverse reaction",
+                    "Ineffective",
+                    "No longer required",
+                    "Non-compliance",
+                    "Side effects"
+                  ],
+                  "size": 20,
+                  "id": "ChangeReason",
+                  "label": "Change Reason",
+                  "type": "Selection"
+                },
+                {
+                  "size": 20,
+                  "id": "Dose",
+                  "label": "Dose",
+                  "type": "Text"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "12 hourly",
+                    "2 hourly",
+                    "3 times a day",
+                    "3 times a week",
+                    "4 hourly",
+                    "4 times a day",
+                    "6 hourly",
+                    "8 hourly",
+                    "Alternate days",
+                    "As needed",
+                    "Before bed",
+                    "Daily",
+                    "Every 3 weeks",
+                    "Fortnighly",
+                    "In the evening",
+                    "In the morning",
+                    "Midday",
+                    "Monthly",
+                    "Twice a day",
+                    "Twice weekly"
+                  ],
+                  "size": 20,
+                  "id": "Frequency",
+                  "label": "Frequency",
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Catheter removed",
+                    "Death",
+                    "Effluent cleared",
+                    "Hospitalisation",
+                    "Interim haemodialysis",
+                    "Permanent haemodialysis",
+                    "Resolved"
+                  ],
+                  "size": 50,
+                  "id": "Outcome",
+                  "label": "Outcome",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "id": "Treatment.TreatmentTable",
+              "label": "Treatment",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Treatment.Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Treatment",
+        "layoutShow": true,
+        "title": "Treatment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "Notes",
+        "layoutShow": true,
+        "title": "Notes"
+      }
+    }
+  ],
+  "id": "Renal.Peritonitis",
+  "layoutColumns": 3
+}

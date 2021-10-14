@@ -1,0 +1,437 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Advanced GN (unclassified \u003d end stage)",
+                "Amyloid disease",
+                "Analgesic nephropathy",
+                "Atheroembolic disease (cholesterol emboli)",
+                "Balkan nephropathy",
+                "Bilateral renal artery stenosis",
+                "Bladder neck obstruction (incl. prostatomegaly)",
+                "Cadmium toxicity",
+                "Calcineurin Inhibitor Toxicity",
+                "Calculi",
+                "Congenital renal hypoplasia and dysplasia",
+                "Cortical necrosis",
+                "Cystinosis",
+                "Diabetes - Type 1 (insulin dependent)",
+                "Diabetes - Type 2 (insulin requiring)",
+                "Diabetes - Type 2 (non-insulin requiring)",
+                "Extra and intra capillary GN (extensive crescents - clinically rapidly progressive)",
+                "Familial GN",
+                "Focal and segmental proliferative GN (including focal necrotising)",
+                "Focal sclerosing GN (including hyalinosis)",
+                "GN other",
+                "GN with systemic disease",
+                "Goodpasture\u0027s syndrome with linear IgG and lung haemorrhage",
+                "Gout",
+                "Haemolytic uraemic syndrome",
+                "Henoch-Schonlein purpura",
+                "Infantile/juvenile polycystic kidney disease",
+                "Interstitial nephritis",
+                "Lead nephropathy",
+                "Light chain nephropathy (benign)",
+                "Lithium toxicity",
+                "Loss of single kidney",
+                "Medullary cystic disease",
+                "Megaureter",
+                "Membranous GN",
+                "Mesangial proliferative (IgA+ positive)",
+                "Mesangial proliferative (IgA- negative)",
+                "Mesangial proliferative (no I.F. studies)",
+                "Mesangiocapillary GN with intramembranous deposits (dense deposit disease)",
+                "Mesangiocapillary GN with subendothelial deposits (double contour)",
+                "Microscopic Polyarteritis",
+                "Neuropathic bladder",
+                "Non-obstructed dilated bladder and ureters (megacystitis - megaureter)",
+                "Obstructed megaureter",
+                "Obstructive nephropathy",
+                "Other lower urinary tract abnormalities (with secondary reflux)",
+                "Oxalosis",
+                "Paraproteinaemia (including multiple myeloma)",
+                "Pelvi-ureteric junction obstruction",
+                "Polycystic kidney disease",
+                "Post partum nephropathy",
+                "Posterior urethral valves",
+                "Presumed GN, type undefined histologically (no biopsy)",
+                "Primary focal sclerosing GN or focal glomerular sclerosis",
+                "Proliferative GN with linear IgG - no lung haemorrhage",
+                "Pyelonephritis",
+                "Reflux nephropathy",
+                "Renal cell carcinoma (GRAWITZ)",
+                "Renal tuberculosis",
+                "Renal vascular disease - type unspecified",
+                "Renal vascular disease due to hypertension (nephrosclerosis) (NO primary renal disease)",
+                "Renal vascular disease due to malignant hypertension (NO primary renal disease)",
+                "SLE",
+                "Sarcoidosis",
+                "Scleroderma",
+                "Secondary focal sclerosing GN",
+                "Spina bifida or myelomeningocoele",
+                "Transitional cell carcinoma of urinary tract",
+                "Uncertain diagnosis",
+                "Ureteric obstructive nephropathy",
+                "Wegener\u0027s Granulomatosis"
+              ],
+              "size": 90,
+              "id": "TransplantDetails.PrimaryRenalDisease",
+              "label": "Primary renal disease",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "TransplantDetails.TransplantDate",
+              "label": "Transplant date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "TransplantDetails.TransplantChartTransplantDetailsService",
+              "label": "",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Deceased",
+                "Live"
+              ],
+              "size": 10,
+              "id": "TransplantDetails.Donor",
+              "label": "Donor",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "compatible",
+                "incompatible"
+              ],
+              "size": 20,
+              "id": "TransplantDetails.ABO",
+              "label": "ABO",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 9,
+              "precision": 1,
+              "scale": 0,
+              "id": "TransplantDetails.PreviousTransplants",
+              "label": "Previous transplants",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Negative",
+                "Positive"
+              ],
+              "size": 8,
+              "id": "TransplantDetails.CMVRecipient",
+              "label": "CMV recipient",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Negative",
+                "Positive"
+              ],
+              "size": 8,
+              "id": "TransplantDetails.CMVDonor",
+              "label": "CMV donor",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Negative",
+                "Positive"
+              ],
+              "size": 8,
+              "id": "TransplantDetails.EBVRecipient",
+              "label": "EBV recipient",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Negative",
+                "Positive"
+              ],
+              "size": 8,
+              "id": "TransplantDetails.EBVDonor",
+              "label": "EBV donor",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "TransplantDetails.LastReviewDate",
+              "label": "Last review date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "TransplantDetails.TransplantChartReviewService",
+              "label": "",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "precision": 9,
+              "scale": 0,
+              "id": "TransplantDetails.SerumBKPCR",
+              "label": "Serum BKPCR",
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "TransplantDetails",
+        "layoutShow": true,
+        "title": "Transplant Details"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 30,
+                  "id": "MedicationDose",
+                  "label": "Medication dose",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "displayType": "ServiceDate",
+                  "id": "ReviewService",
+                  "label": "Review Service",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 20,
+                  "id": "Dose",
+                  "label": "Dose",
+                  "type": "Text"
+                }
+              ],
+              "id": "Medications.Medications",
+              "label": "Medications",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Medications",
+        "layoutShow": true,
+        "title": "Medications"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "EventOrBiopsyService",
+                  "label": "Service",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 20,
+                  "id": "Event",
+                  "label": "Event",
+                  "type": "Text"
+                },
+                {
+                  "size": 500,
+                  "id": "Summary",
+                  "label": "Summary",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "EventsAndBiopsies.EventsAndBiopsies",
+              "label": "Events and Biopsies",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "EventsAndBiopsies",
+        "layoutShow": true,
+        "title": "Events and Biopsies"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "displayType": "ServiceDate",
+                  "id": "ReviewService",
+                  "label": "Review Service",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 20,
+                  "id": "Test",
+                  "label": "Test",
+                  "type": "Text"
+                },
+                {
+                  "precision": 5,
+                  "scale": 0,
+                  "id": "TestValue",
+                  "label": "Test Value",
+                  "type": "Number"
+                }
+              ],
+              "id": "Antibodies.Antibodies",
+              "label": "Antibodies",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Antibodies",
+        "layoutShow": true,
+        "title": "Antibodies"
+      }
+    }
+  ],
+  "id": "Renal.TransplantChart",
+  "layoutColumns": 3
+}

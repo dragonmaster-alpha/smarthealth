@@ -1,0 +1,46 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 31,
+  "uri": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Another\u0027s blood in eye or mouth"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Blood transfusion"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Injecting drug use"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Needle stick at work"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Needle stick not at work"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Residence in prison"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Sex worker"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Tattooing"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.PrincipalRiskFactor",
+      "value": "Transfusion"
+    }
+  ],
+  "valueSetID": "Immunology.Hepatitis.PrincipalRiskFactor"
+}

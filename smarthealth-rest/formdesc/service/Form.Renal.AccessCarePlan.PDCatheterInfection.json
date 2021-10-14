@@ -1,0 +1,249 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Exit site infection",
+          "Tunnel infection"
+        ],
+        "size": 20,
+        "id": "Complication",
+        "label": "Complication",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "valueSetID": "Renal.InfectionSymptoms",
+        "id": "Symptoms",
+        "label": "Symptoms",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "valueSetID": "Renal.TwardowskiScale",
+        "id": "TwardowskiScale",
+        "label": "Twardowski scale",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Found",
+          "Not found",
+          "Not swabbed"
+        ],
+        "size": 30,
+        "id": "InfectionOrganisms",
+        "label": "Infection organisms",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "valueSetID": "Renal.Organisms",
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Found"
+                ],
+                "fieldID": "InfectionOrganisms"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Organism",
+        "label": "Organisms",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "valueSetID": "Renal.ExitSiteDressingRegimen",
+        "id": "ExitSiteDressingRegimen",
+        "label": "Exit site dressing regimen",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 40,
+                  "id": "Medication",
+                  "label": "Medication",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "valueSetID": "Medication.ChangeType",
+                  "id": "ChangeType",
+                  "label": "Change type",
+                  "type": "ValueSet"
+                },
+                {
+                  "valueSetID": "Medication.ChangeReason",
+                  "id": "ChangeReason",
+                  "label": "Change reason",
+                  "type": "ValueSet"
+                },
+                {
+                  "size": 25,
+                  "id": "Dose",
+                  "label": "Dose",
+                  "type": "Text"
+                },
+                {
+                  "valueSetID": "Medication.Frequency",
+                  "id": "Frequency",
+                  "label": "Frequency",
+                  "type": "ValueSet"
+                },
+                {
+                  "options": [
+                    "Haemodialysis – Permanent",
+                    "Haemodialysis – Temporary Problem resolved",
+                    "Removal of catheter"
+                  ],
+                  "size": 45,
+                  "id": "Outcome",
+                  "label": "Outcome",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "id": "Treatment.Treatment",
+              "label": "Treatment",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Treatment",
+        "layoutShow": true,
+        "title": "Treatment"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.AccessCarePlan.PDCatheterInfection",
+  "layoutColumns": 3
+}

@@ -1,0 +1,31 @@
+{
+	"data": {
+		"ServiceDate": {
+			"iso": "2019-09-10"
+		},
+		"Patient": 42,
+		"Provider": {
+			"groupID": 1,
+			"userID": 42
+		},
+		"Summary": "summary",
+		"Goals": null,
+		"Notes": null
+	},
+	"metadata": {
+		"owningGroupID": 1,
+		"patientID": 42,
+		"program": "PATIENT_WATCH",
+		"providerID": {
+			"groupID": 1,
+			"userID": 42
+		},
+		"serviceDate": {
+			"iso": "2019-09-10T11:00+10"
+		},
+		"serviceType": 200,
+		"status": "FINAL",
+		"summaryLine": ""
+	},
+	"version": 0
+}

@@ -1,0 +1,56 @@
+{
+  "ImmunologyAAssessment": {
+    "DateLastAssessment": {
+      "iso": "2012-12-12"
+    },
+    "ImmunologyAAssessmentService": {
+      "confidentiality": "Normal",
+      "program": "IMMUNOLOGY",
+      "serviceDate": {
+        "iso": "2012-12-12"
+      },
+      "serviceID": 58,
+      "serviceType": 147,
+      "summary": "asdfasdfasdfasdf."
+    },
+    "PrimaryDiagnoses": [
+      {
+        "Code": "HEPATITIS",
+        "Date": "2012-11-06",
+        "Diagnosis": "Hepatitis"
+      },
+      {
+        "Code": "IMMUNOGLOBULINSUBCLASSDEFICIENCY",
+        "Diagnosis": "Immunoglobulin subclass deficiency"
+      },
+      {
+        "Code": "INFERTILITY",
+        "Diagnosis": "Infertility"
+      },
+      {
+        "Code": "PROGRESSIVEMULTIFOCALLEUKOENCEPHALOPATHY",
+        "Diagnosis": "Progressive multifocal leukoencephalopathy"
+      }
+    ]
+  },
+  "ImmunologyACarePlan": {
+    "ImmunologyACarePlanService": {
+      "confidentiality": "Normal",
+      "program": "IMMUNOLOGY",
+      "serviceDate": {
+        "iso": "2012-12-12"
+      },
+      "serviceID": 59,
+      "serviceType": 150,
+      "summary": "asdfasdfasdfasdf"
+    },
+    "Treatment": [
+      {
+        "Date": {
+          "iso": "2012-12-12"
+        },
+        "Medication": "Peginterferon"
+      }
+    ]
+  }
+}

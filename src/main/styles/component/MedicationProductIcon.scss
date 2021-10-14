@@ -1,0 +1,14 @@
+/**
+ * Styles for MedicationProductIcon.tsx
+ *
+ * @author Thompson 15/09/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+.cp-MedicationProductIcon {
+  font: bold 90% Arial Black Gadget, sans-serif;
+  color: #0d0ad2;
+
+  &-hide {
+    visibility: hidden;
+  }
+}

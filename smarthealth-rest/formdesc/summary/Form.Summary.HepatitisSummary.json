@@ -1,0 +1,373 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "HepatitisAssessment.HepatitisAssessmentService",
+              "label": "Date of last assessment",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "description": "When the service was created",
+              "id": "HepatitisAssessment.DateLastAssessment",
+              "label": "Date of last assessment",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Condition",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "HepatitisAssessment.PrincipalDiagnoses",
+              "label": "Principal diagnoses",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "1a",
+                "1b",
+                "2a",
+                "2b",
+                "3a",
+                "4"
+              ],
+              "size": 20,
+              "id": "HepatitisAssessment.Genotype",
+              "label": "Genotype",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "F0",
+                "F1",
+                "F2",
+                "F3",
+                "F4"
+              ],
+              "size": 20,
+              "id": "HepatitisAssessment.LiverBiopsyResult",
+              "label": "Liver biopsy result",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "precisionMonth": true,
+              "precisionYear": true,
+              "id": "HepatitisAssessment.LiverBiopsyDate",
+              "label": "Liver biopsy date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "HepatitisAssessment.Fibrosis",
+              "label": "Fibrosis",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "maximum": 75,
+              "minimum": 0.0,
+              "precision": 4,
+              "scale": 2,
+              "id": "HepatitisAssessment.MedianStiffness",
+              "label": "Median stiffness",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "kPa"
+            }
+          },
+          {
+            "field": {
+              "maximum": 75,
+              "minimum": 0.0,
+              "precision": 4,
+              "scale": 2,
+              "id": "HepatitisAssessment.InterquartileRange",
+              "label": "Interquartile range",
+              "toolTip": "should be \u003c30% of median stiffness",
+              "type": "Number",
+              "units": "kPa"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "HepatitisAssessment.SuccessRate",
+              "label": "Success rate",
+              "toolTip": "should be \u003e60%",
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "HepatitisAssessment.FibroscanDate",
+              "label": "Fibroscan date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "HepatitisAssessment.SNP12979860CCResult",
+              "label": "SNP12979860CC",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "HepatitisAssessment.SNP80999TTResult",
+              "label": "SNP80999TT",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "HepatitisAssessment",
+        "layoutShow": true,
+        "title": "Hepatitis Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 20,
+                  "id": "Medication",
+                  "label": "Medication",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateOfFirstDose",
+                  "label": "Date of first dose",
+                  "type": "DateTime"
+                },
+                {
+                  "id": "Service",
+                  "label": "Service",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ServiceRecordReference"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "HepatitisCCarePlans.HepatitisCCarePlans",
+              "label": "HepatitisCCarePlans",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "HepatitisCCarePlans",
+        "layoutShow": true,
+        "title": "Hepatitis C Care Plans "
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 3,
+              "id": "AdvancedLiverDiseaseAssessment.ChildPughClass",
+              "label": "Child Pugh Class",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "AdvancedLiverDiseaseAssessment.MeldScore",
+              "label": "MELD Score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "id": "AdvancedLiverDiseaseAssessment.Endoscopy",
+              "label": "Endoscopy",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "AdvancedLiverDiseaseAssessment.EndoscopyDate",
+              "label": "Endoscopy date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Absent",
+                "Moderate",
+                "Slight"
+              ],
+              "size": 20,
+              "id": "AdvancedLiverDiseaseAssessment.Ascites",
+              "label": "Ascites",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Mild (I-II)",
+                "None",
+                "Severe (III-IV)"
+              ],
+              "size": 20,
+              "id": "AdvancedLiverDiseaseAssessment.Encephalopathy",
+              "label": "Encephalopathy",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "AdvancedLiverDiseaseAssessment.DiagnosedHCC",
+              "label": "Diagnosed HCC",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "AdvancedLiverDiseaseAssessment",
+        "layoutShow": true,
+        "title": "Advanced Liver Disease Assessment"
+      }
+    }
+  ],
+  "id": "Summary.HepatitisSummary.WebUI",
+  "layoutColumns": 3
+}

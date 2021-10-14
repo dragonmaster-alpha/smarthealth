@@ -1,0 +1,53 @@
+{
+  "data": {
+    "AlertCreated": true,
+    "AlreadyDeceased": false,
+    "Attended": true,
+    "Grade1Treatment": [
+      "Antipyretics",
+      "Diuretics"
+    ],
+    "ID": "6abdc7e0-61ca-4d41-8e29-8cbee4193551",
+    "Location": {
+      "id": -2,
+      "name": "Darlinghurst"
+    },
+    "MethodOfContact": "Phone call",
+    "Patient": 42,
+    "PatientStatus": "No evidence of this cancer",
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "ReasonForFollowUp": "Symptomatic",
+    "RecurrenceStatus": "2nd recurrence of this cancer",
+    "ServiceDate": {
+      "iso": "2019-07-26"
+    },
+    "SetID": "d0093357-9174-4669-9948-13bfc9aac23f",
+    "Setting": "Face to Face",
+    "Severity": {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Surgery.ComplicationSeverity",
+      "value": "Grade 1"
+    },
+    "Summary": "as",
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "program": "CANCER",
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2019-07-26"
+    },
+    "serviceID": 8263,
+    "serviceType": 194,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

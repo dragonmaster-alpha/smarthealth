@@ -1,0 +1,1128 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "Attended",
+        "label": "Attended",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "ChairID",
+        "label": "Chair ID",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "MachineID",
+        "label": "Machine ID",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "format": "Time",
+        "size": 5,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "StartTime",
+        "label": "Start time",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Formatted"
+      }
+    },
+    {
+      "field": {
+        "format": "Time",
+        "size": 5,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "FinishTime",
+        "label": "Finish time",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Formatted"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Duration",
+        "label": "Duration",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number",
+        "units": "mins"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "WeightPre",
+        "label": "Weight pre",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 2,
+        "scale": 1,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "InterdialyticWeightGain",
+        "label": "Interdialytic weight gain",
+        "type": "Number",
+        "units": "Kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "WeightPost",
+        "label": "Weight post",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "maximum": 30.0,
+        "minimum": 0.0,
+        "precision": 3,
+        "scale": 1,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "VitalSignBSL",
+        "label": "Vital sign BSL",
+        "type": "Number",
+        "units": "mmol/L"
+      }
+    },
+    {
+      "field": {
+        "maximum": 400,
+        "precision": 3,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Qb",
+        "label": "Qb",
+        "type": "Number",
+        "units": "mL/min"
+      }
+    },
+    {
+      "field": {
+        "acceptNegative": true,
+        "maximum": 100,
+        "minimum": -300,
+        "precision": 3,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "ArtPress",
+        "label": "Arterial pressure",
+        "type": "Number",
+        "units": "mm Hg"
+      }
+    },
+    {
+      "field": {
+        "maximum": 1000,
+        "minimum": 300,
+        "precision": 4,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "HDFQd",
+        "label": "Qd",
+        "type": "Number",
+        "units": "mL/min"
+      }
+    },
+    {
+      "field": {
+        "maximum": 500,
+        "precision": 3,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "VenPress",
+        "label": "Venous pressure",
+        "type": "Number",
+        "units": "mm Hg"
+      }
+    },
+    {
+      "field": {
+        "maximum": 1000,
+        "precision": 4,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Drinks",
+        "label": "Drinks",
+        "type": "Number",
+        "units": "mL"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 1,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "TargetUF",
+        "label": "Required UF",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number",
+        "units": "L"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 1,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "ActualUF",
+        "label": "Actual UF",
+        "type": "Number",
+        "units": "L"
+      }
+    },
+    {
+      "field": {
+        "maximum": 999,
+        "precision": 3,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Washback",
+        "label": "Washback",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number",
+        "units": "ml"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "IBW",
+        "label": "IBW",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "maximum": 200,
+        "precision": 3,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "CreatinineClearance",
+        "label": "Creatinine clearance",
+        "type": "Number",
+        "units": "ml/min/m2"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 2,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "OCMKTV",
+        "label": "OCM Kt/V",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "maximum": 200,
+        "precision": 5,
+        "scale": 2,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "ResidualRenalFunction",
+        "label": "Residual renal function",
+        "type": "Number",
+        "units": "ml/min"
+      }
+    },
+    {
+      "field": {
+        "maximum": 10,
+        "precision": 4,
+        "scale": 2,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "NPCR",
+        "label": "nPCR",
+        "type": "Number",
+        "units": "ml/min"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Fresenius FX100",
+          "Fresenius FX60",
+          "Fresenius FX8",
+          "Fresenius FX80",
+          "Gambro 14H",
+          "Gambro 14L",
+          "Gambro 17H",
+          "Gambro 17L"
+        ],
+        "size": 20,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "DialyserType",
+        "label": "Dialyser type",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "AccessCarePlanService",
+        "label": "Access",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "id": "SecondAccessCarePlanService",
+        "label": "Second access",
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Enoxaparin/Clexane",
+          "Heparin",
+          "No anticoagulation"
+        ],
+        "size": 21,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Anticoagulant",
+        "label": "Anticoagulant",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "Attended",
+                  "testFalse": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Comment",
+        "label": "Comment",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "format": "Time",
+                  "size": 5,
+                  "id": "BPTime",
+                  "label": "Time",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Formatted"
+                },
+                {
+                  "options": [
+                    "During-Dialysis",
+                    "Post-Dialysis",
+                    "Pre-Dialysis"
+                  ],
+                  "size": 15,
+                  "id": "Phase",
+                  "label": "Phase",
+                  "type": "Selection"
+                },
+                {
+                  "format": "BloodPressure",
+                  "size": 7,
+                  "id": "BPSitting",
+                  "label": "BP sitting",
+                  "type": "Formatted",
+                  "units": "mmHg"
+                },
+                {
+                  "format": "BloodPressure",
+                  "size": 7,
+                  "id": "BPStanding",
+                  "label": "BP standing",
+                  "type": "Formatted",
+                  "units": "mmHg"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "Pulse",
+                  "label": "Pulse (per min)",
+                  "type": "Number"
+                },
+                {
+                  "maximum": 45.0,
+                  "minimum": 30.0,
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "Temperature",
+                  "label": "Temp (°C)",
+                  "type": "Number"
+                },
+                {
+                  "maximum": 200,
+                  "minimum": 50,
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "MAP",
+                  "label": "MAP",
+                  "type": "Number",
+                  "units": "mmHg"
+                },
+                {
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "RBV",
+                  "label": "RBV",
+                  "type": "Number",
+                  "units": "%"
+                },
+                {
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "mRBV",
+                  "label": "mRBV",
+                  "type": "Number",
+                  "units": "%"
+                },
+                {
+                  "maximum": 20,
+                  "precision": 2,
+                  "scale": 0,
+                  "id": "Recirculation",
+                  "label": "Recirculation",
+                  "type": "Number",
+                  "units": "%"
+                },
+                {
+                  "precision": 3,
+                  "scale": 1,
+                  "id": "HDFSubVolume",
+                  "label": "HDF sub-volume",
+                  "type": "Number",
+                  "units": "L"
+                }
+              ],
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Attended",
+                        "testFalse": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Observations.Observations",
+              "label": "Observations",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Observations",
+        "layoutShow": true,
+        "title": "Observations"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "HL7",
+        "label": "HL7",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.Haemodialysis",
+  "layoutColumns": 3
+}

@@ -1,0 +1,67 @@
+{
+  "identifiers": {
+    "ANZData": {
+      "id": 0,
+      "identifier": "anz data number",
+      "identifierType": "ANZData",
+      "patientID": 42,
+      "version": 0
+    },
+    "CFAustralia": {
+      "id": 0,
+      "identifier": "LCFBD",
+      "identifierType": "CFAustralia",
+      "patientID": 42,
+      "version": 0
+    },
+    "DVA": {
+      "id": 0,
+      "identifier": "2",
+      "identifierType": "DVA",
+      "patientID": 42,
+      "qualifier": "Gold",
+      "version": 0
+    },
+    "HealthCareCard": {
+      "id": 0,
+      "identifier": "health card number",
+      "identifierType": "HealthCareCard",
+      "patientID": 42,
+      "version": 0
+    },
+    "HealthFund": {
+      "id": 0,
+      "identifier": "4477882",
+      "identifierType": "HealthFund",
+      "patientID": 42,
+      "qualifier": "BANDAID FUND",
+      "version": 0
+    },
+    "Medicare": {
+      "expiryDate": {
+        "iso": "2007-09"
+      },
+      "id": 0,
+      "identifier": "12345678",
+      "identifierType": "Medicare",
+      "patientID": 42,
+      "qualifier": "1",
+      "version": 0
+    },
+    "Pension": {
+      "id": 0,
+      "identifier": "555777222",
+      "identifierType": "Pension",
+      "patientID": 42,
+      "version": 0
+    },
+    "SafetyNet": {
+      "id": 0,
+      "identifier": "safetynet",
+      "identifierType": "SafetyNet",
+      "patientID": 42,
+      "version": 0
+    }
+  },
+  "patientID": 42
+}

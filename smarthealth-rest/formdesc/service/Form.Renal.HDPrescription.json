@@ -1,0 +1,729 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "TreatingNephrologist",
+        "label": "Treating Nephrologist",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "id": "Hours",
+        "label": "Hours per session",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 1,
+        "id": "Sessions",
+        "label": "Sessions",
+        "type": "Number",
+        "units": "per week"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "IBW",
+        "label": "IBW",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "Height",
+        "label": "Height",
+        "type": "Number",
+        "units": "cm"
+      }
+    },
+    {
+      "field": {
+        "maximum": 999,
+        "precision": 3,
+        "scale": 0,
+        "id": "Washback",
+        "label": "Washback",
+        "type": "Number",
+        "units": "ml"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Enoxaparin/Clexane",
+                "Heparin",
+                "No anticoagulation"
+              ],
+              "size": 21,
+              "id": "Anticoagulation.Anticoagulant",
+              "label": "Anticoagulant",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 20000,
+              "minimum": 50,
+              "precision": 5,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Heparin"
+                      ],
+                      "fieldID": "Anticoagulation.Anticoagulant"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Anticoagulation.CircuitPrime",
+              "label": "Circuit Prime",
+              "type": "Number",
+              "units": "units"
+            }
+          },
+          {
+            "field": {
+              "maximum": 5000,
+              "minimum": 50,
+              "precision": 4,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Heparin"
+                      ],
+                      "fieldID": "Anticoagulation.Anticoagulant"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Anticoagulation.LoadingDose",
+              "label": "Loading Dose",
+              "type": "Number",
+              "units": "units"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3000,
+              "precision": 4,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Heparin"
+                      ],
+                      "fieldID": "Anticoagulation.Anticoagulant"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Anticoagulation.RateHour",
+              "label": "Rate",
+              "layout": {
+                "newLine": true,
+                "skip": 1
+              },
+              "type": "Number",
+              "units": "units/hour"
+            }
+          },
+          {
+            "field": {
+              "maximum": 240,
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Heparin"
+                      ],
+                      "fieldID": "Anticoagulation.Anticoagulant"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Anticoagulation.CeaseTime",
+              "label": "Cease Time",
+              "type": "Number",
+              "units": "min"
+            }
+          },
+          {
+            "field": {
+              "maximum": 150,
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Enoxaparin/Clexane"
+                      ],
+                      "fieldID": "Anticoagulation.Anticoagulant"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Anticoagulation.EnoxaparinDose",
+              "label": "Dose",
+              "type": "Number",
+              "units": "mg"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "Heparin",
+                          "Enoxaparin/Clexane",
+                          "No anticoagulation"
+                        ],
+                        "fieldID": "Anticoagulation.Anticoagulant"
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Anticoagulation.Details",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Anticoagulation",
+        "layoutShow": true,
+        "title": "Anticoagulation"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "Dialyser",
+        "layoutShow": true,
+        "title": "Dialyser"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Fresenius FX100",
+          "Fresenius FX60",
+          "Fresenius FX8",
+          "Fresenius FX80",
+          "Gambro 14H",
+          "Gambro 14L",
+          "Gambro 17H",
+          "Gambro 17L"
+        ],
+        "size": 20,
+        "id": "DialyserType",
+        "label": "Type",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 30,
+        "id": "DialyserMembrane",
+        "label": "Membrane",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "DialyserKUF",
+        "label": "KUF",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "mL/hr per mmHg"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 0,
+        "id": "DialyserUreaClearance",
+        "label": "Urea Clearance",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "mL/Qb300ml"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "HDF",
+        "layoutShow": true,
+        "title": "HDF"
+      }
+    },
+    {
+      "field": {
+        "maximum": 60,
+        "precision": 2,
+        "scale": 0,
+        "id": "ExchangeVolume",
+        "label": "Exchange Volume",
+        "type": "Number",
+        "units": "L"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "Dialysate",
+        "layoutShow": true,
+        "title": "Dialysate"
+      }
+    },
+    {
+      "field": {
+        "maximum": 4.0,
+        "minimum": 1.0,
+        "precision": 2,
+        "scale": 1,
+        "id": "DialysateKPlus",
+        "label": "K+",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "mmol/L"
+      }
+    },
+    {
+      "field": {
+        "maximum": 1.8,
+        "minimum": 1.0,
+        "precision": 3,
+        "scale": 2,
+        "id": "DialysateCA",
+        "label": "Ca",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "mmol/L"
+      }
+    },
+    {
+      "field": {
+        "maximum": 0.6,
+        "minimum": 0.2,
+        "precision": 2,
+        "scale": 1,
+        "id": "DialysateMg",
+        "label": "Mg",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "mmol/L"
+      }
+    },
+    {
+      "field": {
+        "maximum": 10,
+        "precision": 3,
+        "scale": 1,
+        "id": "DialysateGlucose",
+        "label": "Glucose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "mmol/L"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 2,
+        "id": "DialysateGlucose_gL",
+        "label": "Glucose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "g/L"
+      }
+    },
+    {
+      "field": {
+        "maximum": 800,
+        "minimum": 300,
+        "precision": 3,
+        "scale": 0,
+        "id": "Qd",
+        "label": "Qd",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "mL/min"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "Profiling",
+        "layoutShow": true,
+        "title": "Profiling"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Fresenius 4008S UF Profile 1",
+          "Fresenius 4008S UF Profile 2",
+          "Fresenius 4008S UF Profile 3",
+          "Fresenius 4008S UF Profile 4",
+          "Fresenius 4008S UF Profile 5",
+          "Fresenius 4008S UF Profile 6",
+          "Fresenius 5008S UF Profile 1",
+          "Fresenius 5008S UF Profile 2",
+          "Fresenius 5008S UF Profile 3"
+        ],
+        "size": 30,
+        "id": "Profile",
+        "label": "Profile",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 10,
+        "id": "ProfilingNaPlus",
+        "label": "Na+",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text",
+        "units": "mmol/L"
+      }
+    },
+    {
+      "field": {
+        "size": 10,
+        "id": "ProfilingHCO3",
+        "label": "HCO3",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text",
+        "units": "mmol/L"
+      }
+    },
+    {
+      "field": {
+        "size": 10,
+        "id": "QbText",
+        "label": "Qb",
+        "type": "Text",
+        "units": "mL/min"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 0,
+        "id": "Qb",
+        "label": "Qb",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "mL/min"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "14g",
+          "14g SN",
+          "15g",
+          "15g SN",
+          "16g"
+        ],
+        "size": 8,
+        "id": "CannulaeA",
+        "label": "Cannulae Arterial",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "maximum": 3.0,
+        "minimum": 1.0,
+        "precision": 2,
+        "scale": 1,
+        "id": "HepLockA",
+        "label": "Hep Lock Arterial",
+        "type": "Number",
+        "units": "mL"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "14g",
+          "15g",
+          "16g"
+        ],
+        "size": 8,
+        "id": "CannulaeV",
+        "label": "Cannulae Venous",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "maximum": 3.0,
+        "minimum": 1.0,
+        "precision": 2,
+        "scale": 1,
+        "id": "HepLockV",
+        "label": "Hep Lock Venous",
+        "type": "Number",
+        "units": "mL"
+      }
+    },
+    {
+      "field": {
+        "id": "TransplantList",
+        "label": "Transplant List",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 1500,
+        "id": "InstructionsOther",
+        "label": "Instructions/Other",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "Previous",
+        "label": "Previous Prescription",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "ServiceRecordReference"
+      }
+    }
+  ],
+  "id": "Renal.HDPrescription",
+  "layoutColumns": 3
+}

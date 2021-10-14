@@ -1,0 +1,23 @@
+/**
+ * Styles for DateTimeField.tsx
+ *
+ * WARNING!!!
+ * For Future PrimeReact Updates.
+ * If PrimeReact update/remove css class that we use to select the html element.
+ * CSS class selection can potentially not apply the override styles.
+ *
+ * @author Thompson 12/08/2019
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2019
+ */
+
+/**
+  * Override existing PrimeReact Calendar datepicker because we've set our own input width which is smaller than the
+  * originally set input width for PrimeReact Calendar.
+  *
+  * Calendar in month mode, datepicker min-width: 100% means everything inside looks too cramped.
+  */
+.p-calendar {
+  .p-datepicker {
+    min-width: 150px;
+  }
+}

@@ -1,0 +1,2468 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Coordinator",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Draft",
+          "Final"
+        ],
+        "size": 10,
+        "id": "ServiceRecordStatus",
+        "label": "Status",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 10,
+        "id": "MDTMeetingID",
+        "label": "MDT Meeting ID",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "MDTMeetingDate",
+        "label": "MDT meeting",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "New",
+          "Review"
+        ],
+        "size": 10,
+        "id": "DiscussionStatus",
+        "label": "Discussion status",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Reason",
+        "label": "Reason",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 9,
+        "scale": 0,
+        "id": "MeetingNumber",
+        "label": "Meeting number",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "Discussed",
+        "label": "Discussed",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Synopsis.PresentingClinician",
+              "label": "Presenting clinician",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "Synopsis.MDTLead",
+              "label": "MDT lead",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "description": "Doctor who referred the patient to the health service.",
+              "id": "Synopsis.ReferringClinician",
+              "label": "Initial referring doctor",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Synopsis.ReferredToMDTDate",
+              "label": "Referral date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 0,
+              "id": "Synopsis.DaysSinceReferral",
+              "label": "Days since referral",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "id": "Synopsis.PrimaryTreatingClinician",
+              "label": "Primary treating clinician",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Not claimed",
+                "Claimed",
+                "Ineligible"
+              ],
+              "size": 11,
+              "id": "Synopsis.MBSRebates",
+              "label": "MBS rebates",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Synopsis",
+        "layoutShow": true,
+        "title": "Synopsis"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Providers who participated in this review",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 20,
+                  "id": "Role",
+                  "label": "Role",
+                  "type": "Text"
+                }
+              ],
+              "description": "ProvidersWhoParticipated table replaces the Providers table. \n\t\t        This includes only providers recorded as having attended the meeting.",
+              "id": "HealthcareProviders.ProvidersWhoParticipated",
+              "label": "Providers who participated in this review",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 20,
+                  "id": "Role",
+                  "label": "Role",
+                  "type": "Text"
+                }
+              ],
+              "description": "Legacy table that records all providers included in the meeting.\n                This table is not used in service records since 2017.",
+              "id": "HealthcareProviders.Providers",
+              "label": "Healthcare providers attending the meeting",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "HealthcareProviders",
+        "layoutShow": true,
+        "title": "Healthcare providers attending the meeting"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Confirmed",
+                "Pre-diagnosis",
+                "Provisional"
+              ],
+              "size": 20,
+              "id": "Assessment.DiagnosisStatus",
+              "label": "Diagnosis status",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Assessment.NotThisTumourStream",
+              "label": "Not this tumour stream",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "Assessment.TumourSite",
+              "label": "Tumour site",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.Laterality",
+              "id": "Assessment.Laterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.Behaviour",
+              "id": "Assessment.TumourBehaviour",
+              "label": "Tumour behaviour",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Distant",
+                "Local",
+                "Local contralateral",
+                "Local ipsilateral",
+                "Not recurrent",
+                "Regional"
+              ],
+              "size": 50,
+              "id": "Assessment.Recurrent",
+              "label": "Recurrent",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Adrenal gland",
+                    "Bone",
+                    "Brain",
+                    "Distant lymph node/s",
+                    "Liver",
+                    "Localised lymph node/s",
+                    "Lung",
+                    "Ovary",
+                    "Pericardium",
+                    "Peritoneum",
+                    "Pleura",
+                    "Spinal cord",
+                    "Subarachnoid",
+                    "Vagina"
+                  ],
+                  "size": 50,
+                  "id": "Site",
+                  "label": "Site",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Synchronous",
+                    "Metachronous",
+                    "Metastatic"
+                  ],
+                  "size": 12,
+                  "id": "Relationship",
+                  "label": "Relationship",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "Comment",
+                  "label": "Comment",
+                  "type": "Text"
+                }
+              ],
+              "id": "Assessment.OtherTumoursTable",
+              "label": "Other tumours",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "0 - Asymptomatic",
+                "1 - Symptomatic but completely ambulatory",
+                "2 - Symptomatic, \u003c50% in bed during the day",
+                "3 - Symptomatic, \u003e50% in bed, but not bedbound",
+                "4 - Bedbound",
+                "5 - Deceased"
+              ],
+              "size": 50,
+              "id": "Assessment.ECOGScore",
+              "label": "ECOG Score",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "toolTip": "\u003chtml\u003e\n                \u003cul\u003e\n                \u003cli\u003e0 - Asymptomatic - Fully active, able to carry on all pre-disease performance without restriction\u003c/li\u003e\n                \u003cli\u003e1 - Symptomatic but completely ambulatory - Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature\u003c/li\u003e\n                \u003cli\u003e2 - Symptomatic, \u0026lt;50% in bed during the day- Ambulatory and capable of all selfcare but unable to carry out any work activities. Up and about more than 50% of waking hours\u003c/li\u003e\n                \u003cli\u003e3 - Symptomatic, \u0026gt;50% in bed, but not bedbound- Capable of only limited selfcare, confined to bed or chair more than 50% of waking hours\u003c/li\u003e\n                \u003cli\u003e4 - Bedbound - Completely disabled. Cannot carry on any selfcare. Totally confined to bed or chair\u003c/li\u003e\n                \u003cli\u003e5 - Deceased\u003c/li\u003e\n                \u003c/ul\u003e\n            \u003c/html\u003e",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Assessment.AssessmentNotes",
+              "label": "Assessment notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Assessment",
+        "layoutShow": true,
+        "title": "Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 10000,
+              "description": "Temporary field to allow SESLHD to transition from Word documents that contain the complete patient history.",
+              "id": "History.LegacyPatientHistory",
+              "label": "Legacy patient history",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "History.PresentingHistory",
+              "label": "Presenting history",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "History.PastHistory",
+              "label": "Past medical history",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "History.SocialHistory",
+              "label": "Social history",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "History.FamilyHistory",
+              "label": "Family history",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "SNOMEDConceptId",
+                  "label": "SNOMED Concept Id",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                },
+                {
+                  "size": 100,
+                  "id": "PrimaryCancer",
+                  "label": "Primary cancer",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "type": "DateTime"
+                },
+                {
+                  "valueSetID": "Cancer.TNM.TPrimaryTumour",
+                  "id": "TPrimaryTumour",
+                  "label": "T-Primary tumour",
+                  "type": "ValueSet"
+                },
+                {
+                  "valueSetID": "Cancer.TNM.NLymphNodes",
+                  "id": "NLymphNodes",
+                  "label": "N-Lymph nodes",
+                  "type": "ValueSet"
+                },
+                {
+                  "valueSetID": "Cancer.TNM.MMetastases",
+                  "id": "MMetastases",
+                  "label": "M-Metastases",
+                  "type": "ValueSet"
+                },
+                {
+                  "size": 50,
+                  "id": "Treatment",
+                  "label": "Treatment",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "History.PriorCancers",
+              "label": "Prior cancers",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "History.SurgicalProcedure",
+              "label": "Surgical procedure",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "History.Findings",
+              "label": "Findings",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "History.ResidualDisease",
+              "label": "Residual disease",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "History",
+        "layoutShow": true,
+        "title": "History"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "id": "Pathologist",
+                  "label": "Pathologist",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 500,
+                  "id": "Report",
+                  "label": "Report",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "options": [
+                    "871",
+                    "872",
+                    "None"
+                  ],
+                  "size": 4,
+                  "id": "MBS",
+                  "label": "MBS",
+                  "type": "Selection"
+                },
+                {
+                  "id": "MBSProvider",
+                  "label": "MBS provider",
+                  "type": "Member"
+                }
+              ],
+              "id": "Pathology.PathologistReports",
+              "label": "Pathologist Report",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Biochemistry",
+                    "Cytology",
+                    "Haematology (including tumour markers)",
+                    "Histology"
+                  ],
+                  "size": 50,
+                  "id": "PathologyType",
+                  "label": "Pathology type",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "id": "DiagnosticService",
+                  "label": "Diagnostic service",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "MedicalGroup"
+                },
+                {
+                  "size": 20,
+                  "id": "AccessionNumber",
+                  "label": "Accession number",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Adenocarcinoma",
+                    "Adenoid cystic carcinoma",
+                    "Adenosarcoma",
+                    "Adenosquamous carcinoma",
+                    "Basal cell carcinoma",
+                    "Carcinoid tumour",
+                    "Carcinoma NOS",
+                    "Clear cell carcinoma",
+                    "Ductal carcinoma",
+                    "Endometrial stromal sarcoma",
+                    "Endometrioid adenocarcinoma",
+                    "Epithelioid tumour",
+                    "Gastrointestinal stromal tumour (GIST)",
+                    "Germ cell tumour",
+                    "Glioma",
+                    "Hepatoma",
+                    "Hodgkin lymphoma",
+                    "Invasive ductal carcinoma NOS",
+                    "Invasive lobular carcinoma",
+                    "Large cell carcinoma",
+                    "Leukaemia",
+                    "Lymphoma",
+                    "Medullary carcinoma",
+                    "Melanoma",
+                    "Meningioma",
+                    "Mixed cell carcinoma",
+                    "Mixed cell tumour",
+                    "Mucinous tumour",
+                    "Mucoepidermoid carcinoma",
+                    "Myeloma",
+                    "Neuroendocrine carcinoma",
+                    "Non-Hodgkin lymphoma",
+                    "Non-small cell carcinoma",
+                    "Paget\u0027s disease",
+                    "Papillary tumour",
+                    "Phyllodes tumour",
+                    "Renal cell carcinoma",
+                    "Sarcoma",
+                    "Seminoma",
+                    "Serous cystadenocarcinoma",
+                    "Signet ring cell carcinoma",
+                    "Small cell carcinoma",
+                    "Squamous cell carcinoma",
+                    "Teratoma",
+                    "Tubular cell carcinoma",
+                    "Undifferentiated carcinoma",
+                    "Undifferentiated sarcoma",
+                    "Unknown",
+                    "Urothelial carcinoma",
+                    "Verrucous carcinoma",
+                    "Villoglandular carcinoma"
+                  ],
+                  "size": 50,
+                  "id": "Morphology",
+                  "label": "Morphology",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "valueSetID": "Cancer.Pathology.TumourGrade",
+                  "id": "TumourHistopathologicalGrade",
+                  "label": "Tumour grade",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "id": "ReviewThisMeeting",
+                  "label": "Review this meeting",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Boolean"
+                },
+                {
+                  "size": 5000,
+                  "description": "Pathology Report. Previously labelled Comment.",
+                  "id": "Comment",
+                  "label": "Report",
+                  "layout": {
+                    "labelPosition": "Above",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 200,
+                  "id": "Image",
+                  "label": "Image URL",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "valueSetID": "Cancer.Pathology.Procedure",
+                  "id": "Procedure",
+                  "label": "Procedure",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "valueSetID": "Cancer.Pathology.Sample",
+                  "id": "SampleDetails",
+                  "label": "Sample",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "TumourSize",
+                  "label": "Tumour size (solid tumours)",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "mm"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "TumourThickness",
+                  "label": "Tumour thickness",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "mm"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "NumberLymphNodesExamined",
+                  "label": "Number of lymph nodes examined",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "NumberPositiveLymphNodes",
+                  "label": "Number of positive lymph nodes",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                },
+                {
+                  "precision": 6,
+                  "scale": 0,
+                  "id": "BetahCG",
+                  "label": "Beta hCG",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "IU/L"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "AlphaFetoprotein",
+                  "label": "Alpha fetoprotein",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "ng/mL"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "LactateDehydrogenase",
+                  "label": "Lactate dehydrogenase",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "IU/L"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "CancerAntigen125",
+                  "label": "Cancer antigen 125",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "U/mL"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "CancerAntigen15_3",
+                  "label": "Cancer antigen 15.3",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "U/mL"
+                },
+                {
+                  "options": [
+                    "Benign polymorphism",
+                    "Deleterious mutation",
+                    "Suspected deleterious",
+                    "Variant of unknown significance",
+                    "Variant, favour polymorphism"
+                  ],
+                  "size": 35,
+                  "id": "BRCA1",
+                  "label": "BRCA1",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Benign polymorphism",
+                    "Deleterious mutation",
+                    "Suspected deleterious",
+                    "Variant of unknown significance",
+                    "Variant, favour polymorphism"
+                  ],
+                  "size": 35,
+                  "id": "BRCA2",
+                  "label": "BRCA2",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "valueSetID": "Cancer.ReceptorStatus",
+                  "id": "OestrogenReceptorStatus",
+                  "label": "Oestrogen receptor status",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "OestrogenReceptorStatusPercent",
+                  "label": "",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "%"
+                },
+                {
+                  "valueSetID": "Cancer.ReceptorStatus",
+                  "id": "ProgesteroneReceptorStatus",
+                  "label": "Progesterone receptor status",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "ProgesteroneReceptorStatusPercent",
+                  "label": "",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "%"
+                },
+                {
+                  "options": [
+                    "0 Negative",
+                    "1+ Negative",
+                    "2+ Equivocal",
+                    "3+ Positive"
+                  ],
+                  "size": 15,
+                  "id": "HER2",
+                  "label": "HER2",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Amp",
+                    "NonAmp"
+                  ],
+                  "size": 10,
+                  "id": "SISH",
+                  "label": "SISH",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "Ki67",
+                  "label": "Ki67",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "%"
+                },
+                {
+                  "valueSetID": "Cancer.TNM.TPrimaryTumour",
+                  "id": "T_PrimaryTumour",
+                  "label": "T-Primary tumour",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "valueSetID": "Cancer.TNM.NLymphNodes",
+                  "id": "N_LymphNodes",
+                  "label": "N-Lymph nodes",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "valueSetID": "Cancer.TNM.MMetastases",
+                  "id": "M_Metastases",
+                  "label": "M-Metastases",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "options": [
+                    "Clear",
+                    "Involved"
+                  ],
+                  "size": 10,
+                  "id": "Margins",
+                  "label": "Margins",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precision": 4,
+                  "scale": 2,
+                  "id": "DistanceClosestSurgicalMarginProximal",
+                  "label": "Proximal",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "mm"
+                },
+                {
+                  "precision": 4,
+                  "scale": 2,
+                  "id": "DistanceClosestSurgicalMarginDistal",
+                  "label": "Distal",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "mm"
+                },
+                {
+                  "precision": 4,
+                  "scale": 2,
+                  "id": "DistanceClosestSurgicalMarginLateral",
+                  "label": "Lateral",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number",
+                  "units": "mm"
+                },
+                {
+                  "options": [
+                    "Absent",
+                    "Present",
+                    "Unknown"
+                  ],
+                  "size": 10,
+                  "id": "LymphovascularInvasion",
+                  "label": "Lymphovascular invasion",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Selection"
+                }
+              ],
+              "id": "Pathology.PathologyTable",
+              "label": "Pathology",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "description": "Temporary field to allow SESLHD to transition from current business processes.",
+              "id": "Pathology.AggregatePathologyReport",
+              "label": "Aggregate pathology report",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Pathology",
+        "layoutShow": true,
+        "title": "Pathology"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "id": "Radiologist",
+                  "label": "Radiologist",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 500,
+                  "id": "Report",
+                  "label": "Report",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "options": [
+                    "871",
+                    "872",
+                    "None"
+                  ],
+                  "size": 4,
+                  "id": "MBS",
+                  "label": "MBS",
+                  "type": "Selection"
+                },
+                {
+                  "id": "MBSProvider",
+                  "label": "MBS provider",
+                  "type": "Member"
+                }
+              ],
+              "id": "Imaging.RadiologistReports",
+              "label": "Radiologist Report",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "valueSetID": "Imaging.Modality",
+                  "id": "ImagingType",
+                  "label": "Modality",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "id": "DiagnosticService",
+                  "label": "Diagnostic service",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "MedicalGroup"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Abdo-pelvis",
+                    "Abdomen",
+                    "Abdominal aorta",
+                    "Adrenals",
+                    "Angiography",
+                    "Ankle",
+                    "Anus",
+                    "Bile ducts",
+                    "Bladder",
+                    "Blood vessels",
+                    "Brain",
+                    "Breast",
+                    "Bronchus",
+                    "Cardiac",
+                    "Chest-abdo",
+                    "Chest-abdo-pelvis",
+                    "Chest-thorax",
+                    "Colon",
+                    "Conduit",
+                    "Coronary blood vessels",
+                    "Elbow",
+                    "Facial bones",
+                    "Foot",
+                    "Gall bladder",
+                    "Groin",
+                    "Hand",
+                    "Head",
+                    "Heart",
+                    "Hip",
+                    "Jaw",
+                    "Kidney",
+                    "Knee",
+                    "Liver",
+                    "Lower arm",
+                    "Lower leg",
+                    "Lung",
+                    "Neck",
+                    "Oesophagus",
+                    "Ovary",
+                    "Pancreas",
+                    "Paranasal sinuses",
+                    "Pelvis",
+                    "Penis",
+                    "Perineum",
+                    "Peritoneum",
+                    "Prostate",
+                    "Rectum",
+                    "Ribs",
+                    "Scrotum",
+                    "Shoulder",
+                    "Small intestine",
+                    "Spine",
+                    "Teeth",
+                    "Temporal bones",
+                    "Testi",
+                    "Thymus",
+                    "Thyroid",
+                    "Upper arm",
+                    "Upper leg",
+                    "Ureters",
+                    "Urethra",
+                    "Whole body",
+                    "Wrist"
+                  ],
+                  "size": 30,
+                  "id": "Site",
+                  "label": "Site",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "valueSetID": "Bodystructure.Laterality",
+                  "id": "Laterality",
+                  "label": "Laterality",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "id": "Contrast",
+                  "label": "Contrast",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Boolean"
+                },
+                {
+                  "id": "ReviewThisMeeting",
+                  "label": "Review this meeting",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Boolean"
+                },
+                {
+                  "size": 5000,
+                  "description": "Imaging Report. Previously labelled Comment.",
+                  "id": "Comment",
+                  "label": "Report",
+                  "layout": {
+                    "labelPosition": "Above",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 200,
+                  "id": "URL",
+                  "label": "Image URL",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "Imaging.ImagingTable",
+              "label": "Imaging",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "description": "Temporary field to allow SESLHD to transition from current business processes.",
+              "id": "Imaging.AggregateImagingReport",
+              "label": "Aggregate imaging report",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Imaging",
+        "layoutShow": true,
+        "title": "Imaging"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Bronchoscopy",
+                    "Colonoscopy",
+                    "Colposcopy",
+                    "Cystoscopy",
+                    "Endobronchial ultrasound",
+                    "Endoscopic retrograde cholangio-pancreatogram",
+                    "Gastroscopy",
+                    "Hysteroscopy",
+                    "Laparoscopy",
+                    "Mediastinoscopy",
+                    "Nasendoscopy",
+                    "Panendoscopy",
+                    "Sigmoidoscopy"
+                  ],
+                  "size": 50,
+                  "id": "EndoscopyType",
+                  "label": "Endoscopy type",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "id": "DiagnosticService",
+                  "label": "Diagnostic service",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "MedicalGroup"
+                },
+                {
+                  "size": 5000,
+                  "description": "Endoscopy Report. Previously labelled Comment.",
+                  "id": "Comment",
+                  "label": "Report",
+                  "layout": {
+                    "labelPosition": "Above",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 200,
+                  "id": "URL",
+                  "label": "Image URL",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "Endoscopy.EndoscopyTable",
+              "label": "Endoscopy",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Endoscopy",
+        "layoutShow": true,
+        "title": "Endoscopy"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 100,
+              "id": "SupportiveCare.SocialSituation",
+              "label": "Social situation",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SupportiveCare.SupportiveCareScreenConducted",
+              "label": "Supportive care screen conducted",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "options": [
+                    "Informational",
+                    "Physical",
+                    "Psychological",
+                    "Social",
+                    "Spiritual"
+                  ],
+                  "size": 30,
+                  "id": "Issue",
+                  "label": "Issue",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "maximum": 10,
+                  "precision": 2,
+                  "scale": 0,
+                  "id": "DistressScore",
+                  "label": "Distress score",
+                  "type": "Number"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Breast care nursing",
+                    "Continence services",
+                    "Counselling",
+                    "Dental oncology",
+                    "Dietetics",
+                    "Familial cancer service",
+                    "Fertility services",
+                    "Genetic counselling",
+                    "Imaging",
+                    "Lymphoedema therapy",
+                    "Medical oncology",
+                    "Occupational therapy",
+                    "Oncology nursing",
+                    "Palliative care - community",
+                    "Palliative care - hospice",
+                    "Palliative care - hospital",
+                    "Palliative care - physician",
+                    "Pastoral care",
+                    "Pathology",
+                    "Physiotherapy",
+                    "Plastic surgery",
+                    "Psychiatry",
+                    "Psychology",
+                    "Radiation oncology",
+                    "Rehabilitation",
+                    "Respiratory medicine",
+                    "Social work",
+                    "Speech pathology",
+                    "Stomal therapy",
+                    "Surgery"
+                  ],
+                  "size": 30,
+                  "id": "Treatment",
+                  "label": "Treatment",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 50,
+                  "id": "Comments",
+                  "label": "Comments",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "id": "ReferredTo",
+                  "label": "Referred to",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "MedicalGroup"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Appointment",
+                  "label": "Appointment",
+                  "type": "DateTime"
+                }
+              ],
+              "id": "SupportiveCare.Issues",
+              "label": "Issues",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "SupportiveCare",
+        "layoutShow": true,
+        "title": "Supportive Care"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Treatment and care planning: initial diagnosis",
+                "Treatment and care planning: poor treatment response",
+                "Treatment and care planning: recurrent disease",
+                "Treatment and care planning: progressive disease",
+                "Treatment and care planning: metastatic disease",
+                "Treatment and care planning: second or subsequent primary",
+                "Treatment and care planning: palliative care"
+              ],
+              "size": 60,
+              "id": "Discussion.DiscussionIssue",
+              "label": "Discussion issue",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Discussion.PatientTreatment",
+              "label": "Patient treatment and care preferences",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Discussion.RadiologyNotes",
+              "label": "Imaging notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Discussion.PathologyNotes",
+              "label": "Pathology notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Discussion.SurgicalNotes",
+              "label": "Surgical notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Discussion.SummaryOfDiscussion",
+              "label": "Summary of discussion",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Discussion",
+        "layoutShow": true,
+        "title": "Discussion"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [],
+        "id": "DiagnosisAssessment",
+        "layoutShow": true,
+        "title": "Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 50,
+              "id": "Diagnosis.TumourSite",
+              "label": "Tumour site",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.Laterality",
+              "id": "Diagnosis.Laterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.Behaviour",
+              "id": "Diagnosis.TumourBehaviour",
+              "label": "Tumour behaviour",
+              "layout": {
+                "newLine": true,
+                "span": 3
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Clinical diagnosis",
+                "Clinical investigation",
+                "Cytology",
+                "Death certificate",
+                "Histology",
+                "Histology of a primary tumour",
+                "Histology of metastasis",
+                "Specific tumour markers"
+              ],
+              "size": 40,
+              "id": "Diagnosis.MostValidBasisDiagnosis",
+              "label": "Most valid basis of diagnosis",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "toolTip": "\u003chtml\u003e\u003cul\u003e\n                    \u003cli\u003eHistology of a primary tumour - Histological examination of tissue from primary tumour, however obtained, \u003cbr/\u003e\n                        including all cutting techniques and bone marrow biopsies; also includes autopsy specimens of primary tumour\u003c/li\u003e\n                    \u003cli\u003eCytology -  Examination of cells from a primary or secondary site, including fluids aspirated by endoscopy or needle; \u003cbr/\u003e\n                        also includes the microscopic examination of peripheral blood and bone marrow aspirates\u003c/li\u003e\n                    \u003cli\u003eClinical investigation - All diagnostic techniques, including x-ray, endoscopy, imaging, ultrasound, \u003cbr/\u003e\n                        exploratory surgery (e.g. laparotomy), and autopsy, without a tissue diagnosis\u003c/li\u003e\n                    \u003cli\u003eClinical diagnosis - Diagnosis made before death, but without diagnostic techniques - imaging, exploratory surgery,\u003cbr/\u003e\n                        cytology, histology, tumour markers, autopsy\u003c/li\u003e\n                    \u003cli\u003eHistology of metastasis - Histological examination of tissue from a metastasis, including autopsy specimens\u003c/li\u003e\n                    \u003cli\u003eHistology - Either unknown whether of primary or metastatic site, or not otherwise specified\u003c/li\u003e\n                    \u003cli\u003eSpecific tumour markers - Including biochemical and/or immunological markers that are specific for a tumour site\u003c/li\u003e\n                    \u003cli\u003eDeath certificate - Information provided is from a death certificate\u003c/li\u003e \n                \u003c/ul\u003e\u003c/html\u003e",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "precisionMonth": true,
+              "precisionYear": true,
+              "id": "Diagnosis.DiagnosisDate",
+              "label": "Diagnosis date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.TNM.TPrimaryTumour",
+              "id": "Diagnosis.T_PrimaryTumour",
+              "label": "T-Primary tumour",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.TNM.NLymphNodes",
+              "id": "Diagnosis.N_LymphNodes",
+              "label": "N-Lymph nodes",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.TNM.MMetastases",
+              "id": "Diagnosis.M_Metastases",
+              "label": "M-Metastases",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.TNMSource",
+              "id": "Diagnosis.TNMSource",
+              "label": "TNM source",
+              "layout": {
+                "newLine": true
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "I",
+                "II",
+                "III",
+                "IV"
+              ],
+              "size": 40,
+              "id": "Diagnosis.Stage",
+              "label": "Stage",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Diagnosis.DiagnosisDetails",
+              "label": "Diagnosis details",
+              "layout": {
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Diagnosis",
+        "layoutShow": true,
+        "title": "Diagnosis"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 100,
+              "id": "OtherDiagnosis.OtherDiagnosis",
+              "label": "Other diagnosis",
+              "layout": {
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "New diagnosis",
+                "Clinical diagnosis",
+                "Clinical investigation",
+                "Cytology",
+                "Death certificate",
+                "Histology",
+                "Histology metastases",
+                "Histology of a primary tumour",
+                "Specific tumour markers"
+              ],
+              "size": 40,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "OtherDiagnosis.OtherDiagnosis",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "OtherDiagnosis.Reason",
+              "label": "Reason for diagnosis",
+              "layout": {
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "OtherDiagnosis",
+        "layoutShow": true,
+        "title": "Other Diagnosis"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Adjuvant chemoRT",
+                    "Adjuvant chemotherapy",
+                    "Adjuvant radiotherapy",
+                    "Brachytherapy",
+                    "Clinical trial",
+                    "Endocrine/hormonal therapy",
+                    "Further investigations/staging",
+                    "Genetics",
+                    "Immunotherapy",
+                    "Neoadjuvant chemotherapy",
+                    "Neoadjuvant radiotherapy",
+                    "Not for radiotherapy",
+                    "Not for surgery",
+                    "Observation/surveillance",
+                    "Palliative care",
+                    "Palliative chemotherapy",
+                    "Palliative radiotherapy",
+                    "Radioactive iodine",
+                    "Supportive care",
+                    "Surgery",
+                    "Targeted therapy"
+                  ],
+                  "size": 60,
+                  "id": "Treatment",
+                  "label": "Treatment",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 100,
+                  "id": "Comments",
+                  "label": "Comments",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "id": "ReferredToProvider",
+                  "label": "Referred to",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "MemberOrMedicalGroup"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Appointment",
+                  "label": "Appointment",
+                  "type": "DateTime"
+                }
+              ],
+              "id": "Recommendations.Treatments",
+              "label": "Treatments",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Recommendations.SummaryOfRecommendations",
+              "label": "Summary of recommendations",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Curative",
+                "Non-curative to slow disease progression",
+                "Palliative",
+                "Pending further investigation",
+                "Prophylactic"
+              ],
+              "size": 40,
+              "id": "Recommendations.IntentOfTreatmentRecommendations",
+              "label": "Intent of treatment recommendations",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 250,
+              "id": "Recommendations.MDTDissentingViews",
+              "label": "MDT dissenting views",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Recommendations.NextOutpatientClinicAppointment",
+              "label": "Next outpatient clinic appointment",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Recommendations.ClinicianToDiscuss",
+              "label": "Clinician to discuss treatment with patient",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "Recommendations.ClinicianToAction",
+              "label": "Clinicians to action treatment plan",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "Recommendations.OtherClinicianToAction",
+              "label": "Other clinician to action treatment plan",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Recommendations.NextMDTDiscussion",
+              "label": "Next MDT Discussion",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "Recommendations.NextMDTDiscussionText",
+              "label": "Next MDT discussion",
+              "layout": {
+                "span": 2
+              },
+              "toolTip": "Trigger for reviewing this patient at a future MDT meeting. e.g. number of radiotherapy or chemotherapy treatments",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "multiple": true,
+              "options": [
+                "Diagnostic imaging",
+                "Pathology review",
+                "Review treatment response"
+              ],
+              "size": 30,
+              "id": "Recommendations.FocusNextDiscussion",
+              "label": "Focus of next discussion",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Recommendations",
+        "layoutShow": true,
+        "title": "Recommendations and Treatment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "For further consideration",
+                "No",
+                "Yes"
+              ],
+              "size": 30,
+              "id": "ClinicalTrial.ClinicalTrialCandidate",
+              "label": "Clinical trial candidate",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "medicalGroupListType": "CANCER_CLINICAL_TRIAL",
+                  "size": 100,
+                  "id": "TrialName",
+                  "label": "Trial name",
+                  "type": "MedicalGroupList"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateCommenced",
+                  "label": "Date commenced",
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateCeased",
+                  "label": "Date ceased/withdrawn",
+                  "type": "DateTime"
+                }
+              ],
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes"
+                      ],
+                      "fieldID": "ClinicalTrial.ClinicalTrialCandidate"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ClinicalTrial.ClinicalTrials",
+              "label": "Clinical trials",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ClinicalTrial",
+        "layoutShow": true,
+        "title": "Clinical Trial"
+      }
+    }
+  ],
+  "id": "Cancer.Skin.MDTReview",
+  "layoutColumns": 3
+}

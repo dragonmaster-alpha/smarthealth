@@ -1,0 +1,14 @@
+/**
+ * Styles for PatientSearchDialog.tsx
+ *
+ * @author Uditha 18/09/2018
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2018
+ */
+.ct-patient-search-dialog {
+  width: 40em;
+
+  &-list {
+    height: 5em;
+    max-height: 5em;
+  }
+}

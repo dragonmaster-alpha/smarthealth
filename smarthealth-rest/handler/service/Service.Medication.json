@@ -1,0 +1,55 @@
+{
+  "data": {
+    "CMIHTML": false,
+    "Dose": "1",
+    "DoseGuide": "Adults: 2 caps daily or as directed by healthcare professional. Children, infants: 1 cap daily. If unable to swallow, dissolve cap contents in water or milk",
+    "FinishDate": {
+      "iso": "2020-10-10"
+    },
+    "FinishDateSource": "Calculated",
+    "Formulation": {
+      "value": "Capsules"
+    },
+    "Frequency": "Twice a day",
+    "ID": "ece76669-3b89-49f4-b4b4-ec62bc6c00f5",
+    "PBS": "Non-PBS",
+    "Pack": "[60]",
+    "Patient": 42,
+    "Product": {
+      "code": "5109",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+      "value": "Lactobacillus rhamnosus"
+    },
+    "ProductAndFormulation": "Lactobacillus rhamnosus Capsules",
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "Quantity": 60,
+    "ServiceDate": {
+      "iso": "2020-09-10"
+    },
+    "SetID": "daa8ba3c-b54d-4c0f-bbd9-34ac3ca0ca5e",
+    "Source": "Dispense",
+    "StartDate": {
+      "iso": "2020-09-10"
+    },
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2020-09-10"
+    },
+    "serviceID": 8263,
+    "serviceType": 15,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

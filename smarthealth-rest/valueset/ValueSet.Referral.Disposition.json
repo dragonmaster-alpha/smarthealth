@@ -1,0 +1,55 @@
+{
+  "coded": true,
+  "codeLength": 3,
+  "extensible": false,
+  "length": 32,
+  "uri": "HL70282",
+  "values": [
+    {
+      "code": "WR",
+      "codeSet": "HL70282",
+      "value": "Send Written Report"
+    },
+    {
+      "code": "RP",
+      "codeSet": "HL70282",
+      "value": "Return Patient After Evaluation"
+    },
+    {
+      "code": "AM",
+      "codeSet": "HL70282",
+      "value": "Assume Management"
+    },
+    {
+      "code": "SO",
+      "codeSet": "HL70282",
+      "value": "Second Opinion"
+    },
+    {
+      "code": "UCP",
+      "codeSet": "HL70282",
+      "value": "Update Care Plan"
+    },
+    {
+      "code": "UHR",
+      "codeSet": "HL70282",
+      "value": "Update Health Record"
+    },
+    {
+      "code": "CC",
+      "codeSet": "HL70282",
+      "value": "Case Conference"
+    },
+    {
+      "code": "FI",
+      "codeSet": "HL70282",
+      "value": "Notification - No further action"
+    },
+    {
+      "code": "UDS",
+      "codeSet": "HL70282",
+      "value": "Update Decision support system"
+    }
+  ],
+  "valueSetID": "Referral.Disposition"
+}

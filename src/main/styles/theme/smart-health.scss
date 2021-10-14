@@ -1,0 +1,188 @@
+/**
+ * Default Theme for the SmartHealth Web Client
+ *
+ * @author Uditha 18/09/2018
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2018
+ */
+@import "smart-health-icons";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+@font-face {
+  font-family: "ryoGothic";
+  font-weight: normal;
+  src: url('../fonts/RyoGothicPlusN-Regular.woff2') format("woff2"),
+  url('../fonts/RyoGothicPlusN-Regular.woff') format("woff"),
+  url('../fonts/RyoGothicPlusN-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "ryoGothic";
+  font-weight: 500;
+  src: url('../fonts/RyoGothicPlusN-Medium.woff2') format("woff2"),
+  url('../fonts/RyoGothicPlusN-Medium.woff') format("woff"),
+  url('../fonts/RyoGothicPlusN-Medium.otf') format("opentype");
+}
+
+$primary-font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+$primary-font-size: 12pt;
+$primary-line-height: 1rem;
+
+$primary-bg-color: white;
+$secondary-bg-color: #12198E;
+$tertiary-bg-color: #CAEAFF;
+$content-bg-color: #f9f9f9;
+$header-bg-color: linear-gradient(to bottom, #f6f7f9 0%, #ebedf0 100%);
+$overlay-bg-color: #666;
+$sidepanel-bg-color: #f6f7f9;
+
+$info-bg-color: green;
+$warning-bg-color: red;
+
+$primary-font-color: black;
+$secondary-font-color: #808080;
+$header-font-color: white;
+
+.color-primary-blue {
+  color: $colour-primary-blue;
+}
+
+.color-logo {
+  color: $colour-klein-blue;
+}
+
+.content-h1 {
+  background-color: $secondary-bg-color;
+  color: $header-font-color;
+  font-size: $primary-font-size * 1.5;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.content-h2 {
+  background-color: $tertiary-bg-color;
+  color: black;
+  font-size: $primary-font-size * 1.2;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.content-h3 {
+  background-color: $secondary-bg-color;
+  color: $header-font-color;
+  font-size: $primary-font-size * 1.1;
+}
+
+// Wrap the styles with the body is required to override prime react themes styles
+body {
+  background: $primary-bg-color;
+  font-family: $primary-font-family;
+  font-size: $primary-font-size;
+  color: $primary-font-color;
+
+  #l-sidebar {
+    background-color: $primary-bg-color;
+
+    h2 {
+      background-color: $secondary-bg-color;
+      color: $header-font-color;
+      font-size: $primary-font-size * 1.2;
+      margin: 0;
+      padding: 0.5em;
+    }
+  }
+
+  #l-content {
+    background-color: $content-bg-color;
+
+    h1 {
+      @extend .content-h1;
+    }
+
+    h2 {
+      @extend .content-h2;
+    }
+
+    h3 {
+      @extend .content-h3;
+    }
+  }
+
+  #l-overlay {
+    background-color: $overlay-bg-color;
+  }
+
+  .ct-menubar {
+    background-image: $header-bg-color;
+
+    .p-menubar {
+      background-image: $header-bg-color;
+      border: 0;
+    }
+  }
+
+  .ct-navtree {
+    border: 0;
+  }
+
+  .ct-sidebar-panel {
+    .ui-state-active {
+      background: $sidepanel-bg-color;
+    }
+
+    .p-accordion-header {
+      margin-top: 0px
+    }
+  }
+
+  .p-button {
+    background-color: $tertiary-bg-color;
+    border: none;
+    color: black;
+  }
+
+  .p-dialog-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .p-dialog .p-dialog-footer {
+    text-align: center;
+  }
+
+  .ct-about-dialog-logo {
+    height: 11em;
+    background: $primary-bg-color;
+    background-image: url('/src/main/assets/SmartHealthLogo.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .p-tabview .p-tabview-panels {
+    padding: 0;
+  }
+
+  .p-dropdown-item {
+    white-space: nowrap;
+  }
+}
+
+
+.is-error {
+  color: $colour-error-red;
+}
+
+.is-success {
+  color: $colour-success-green;
+}
+
+.is-unread {
+  color: $colour-error-red;
+}
+
+.is-warning {
+  color: $colour-warning-orange;
+}

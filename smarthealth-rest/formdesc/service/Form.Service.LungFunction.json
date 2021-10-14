@@ -1,0 +1,154 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date/Time",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "id": "ReferringProvider",
+        "label": "Referring Doctor",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyTo",
+        "label": "Copy To",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "LabReference",
+        "label": "Laboratory Reference",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "SurgeryReference",
+        "label": "Surgery Reference",
+        "layout": {
+          "fillWidth": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "TestRequest",
+        "label": "Request",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "columns": [],
+        "id": "Results",
+        "label": "Results",
+        "layout": {
+          "labelPosition": "Above",
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "TestResult",
+        "label": "Report",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "AllTestsComplete",
+        "label": "All tests completed",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "summaryLine",
+        "label": "Summary Line",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "HTML"
+        ],
+        "size": 4,
+        "id": "ReportInHL7",
+        "label": "Report In HL7",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Selection"
+      }
+    }
+  ],
+  "id": "Service.LungFunction.WebUI",
+  "layoutColumns": 3
+}

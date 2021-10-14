@@ -1,0 +1,88 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "Name",
+            "label": "Test/Result",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "Value",
+            "label": "Value",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "Units",
+            "label": "Units",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "Range",
+            "label": "Range",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "size": 20,
+            "id": "Code",
+            "label": "Code",
+            "type": "Text"
+          },
+          {
+            "precisionDay": true,
+            "id": "Date",
+            "label": "Date",
+            "type": "DateTime"
+          },
+          {
+            "id": "Service",
+            "label": "Service",
+            "state": {
+              "editState": "Hidden",
+              "viewStateHidden": true
+            },
+            "type": "ServiceRecordReference"
+          },
+          {
+            "size": 20,
+            "id": "CodeSystem",
+            "label": "Code System",
+            "state": {
+              "editState": "Hidden",
+              "viewStateHidden": true
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "Table",
+        "label": "Results",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Summary.Pathology.WebUI",
+  "layoutColumns": 1
+}

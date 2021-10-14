@@ -1,0 +1,1244 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "name": "PatientDesc",
+              "id": "TransplantPatient.TransplantPatient",
+              "label": "Patient",
+              "type": "Unsupported"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Daughter",
+                "Father",
+                "Husband",
+                "Mother",
+                "Son",
+                "Wife"
+              ],
+              "size": 20,
+              "id": "TransplantPatient.Relationship",
+              "label": "Relationship",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "TransplantPatient",
+        "layoutShow": true,
+        "title": "Transplant Patient"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "A negative",
+                "A positive",
+                "AB negative",
+                "AB positive",
+                "B negative",
+                "B positive",
+                "O negative",
+                "O positive"
+              ],
+              "size": 15,
+              "id": "History.BloodGroup",
+              "label": "Blood Group",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "History.HLAAbs",
+              "label": "Known HLA Abs",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "History.HLAAbs",
+                      "testFalse": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.HLAAbsDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Condition",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "History.Conditions",
+              "label": "Conditions",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "ServiceRecord",
+                  "label": "Service Record",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "id": "ProcedureType",
+                  "label": "Procedure",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "SnomedTerm"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "ProcedureDate",
+                  "label": "Date/Time",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 1000,
+                  "id": "Notes",
+                  "label": "Details",
+                  "layout": {
+                    "labelPosition": "Above",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "History.Procedures",
+              "label": "Procedures",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Calculi",
+                "Family history",
+                "Gout",
+                "Nonsteroidal anti-inflammatory drugs",
+                "Urinary tract infections"
+              ],
+              "size": 50,
+              "id": "History.RenalRisks",
+              "label": "Renal risks",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Yes",
+                "No",
+                "Family history"
+              ],
+              "size": 20,
+              "id": "History.Malignancy",
+              "label": "Malignancy",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes",
+                        "Family history"
+                      ],
+                      "fieldID": "History.Malignancy"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.MalignancyDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Yes",
+                "No",
+                "Family history"
+              ],
+              "size": 20,
+              "id": "History.PigmentedSkinLesions",
+              "label": "Pigmented skin lesions",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes",
+                        "Family history"
+                      ],
+                      "fieldID": "History.PigmentedSkinLesions"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.PigmentedSkinLesionsDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Infection",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "History.Infections",
+              "label": "Infections",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "History.Infections",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.InfectionDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "History",
+        "layoutShow": true,
+        "title": "History"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 30,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 30,
+                  "id": "Result1",
+                  "label": "Result 1",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date1",
+                  "label": "Date 1",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 30,
+                  "id": "Result2",
+                  "label": "Result 2",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date2",
+                  "label": "Date 2",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 30,
+                  "id": "Result3",
+                  "label": "Result 3",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date3",
+                  "label": "Date 3",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 50,
+                  "id": "mappingID",
+                  "label": "mappingID",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "Biochemistry.PathologyResults",
+              "label": "Pathology Results",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Biochemistry",
+        "layoutShow": true,
+        "title": "Biochemistry"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 20,
+                  "id": "Test",
+                  "label": "Test",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 50,
+                  "id": "Details",
+                  "label": "Details",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "Imaging.Imaging",
+              "label": "Imaging",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Imaging",
+        "layoutShow": true,
+        "title": "Imaging"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "Weight",
+                  "label": "Weight",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Number",
+                  "units": "kg"
+                },
+                {
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "Height",
+                  "label": "Height",
+                  "type": "Number",
+                  "units": "cm"
+                },
+                {
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "Waist",
+                  "label": "Waist",
+                  "type": "Number",
+                  "units": "cm"
+                },
+                {
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "BMI",
+                  "label": "BMI",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "WorkupChecklist.WeightHeight",
+              "label": "Anthropometry",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "Results",
+                  "label": "Result",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "WorkupChecklist.TissueTyping",
+              "label": "Tissue typing",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "CMV",
+                    "EBV",
+                    "HIV",
+                    "Hep B",
+                    "Hep C",
+                    "Herpes",
+                    "MRSA",
+                    "Mantoux",
+                    "Strongyloides",
+                    "Syphilis",
+                    "Toxoplasmosis",
+                    "Urine M/C/S",
+                    "Vancomycin-resistant enterococci",
+                    "Varicella-zoster virus"
+                  ],
+                  "size": 35,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "toolTip": "\u003chtml\u003e\n\t\t\t\t\t\u003cul\u003e\n\t\t\t\t\t\t\u003cli\u003eVaricella-zoster virus - Review 6 monthly, not required if IgG +\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eMRSA - Review initially and then at time of transplant\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eVancomycin-resistant enterococci  - Review initially and then at time of transplant\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eUrine M/C/S - Review annually\u003c/li\u003e\n\t\t\t\t\t\u003c/ul\u003e\n\t\t\t\t\u003c/html\u003e",
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "options": [
+                    "Negative",
+                    "Positive"
+                  ],
+                  "size": 10,
+                  "id": "Result",
+                  "label": "Result",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                }
+              ],
+              "id": "WorkupChecklist.MicrobiologicalStudies",
+              "label": "Microbiological studies",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "AT3",
+                    "Anti-cardiolipin antibodies",
+                    "Factor V Hyperhomocysteinemia",
+                    "Leiden",
+                    "Lupus anticoagulant",
+                    "Protein C",
+                    "Protein S",
+                    "Prothrombin gene"
+                  ],
+                  "size": 30,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "options": [
+                    "Negative",
+                    "Positive"
+                  ],
+                  "size": 10,
+                  "id": "Result",
+                  "label": "Result",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                }
+              ],
+              "id": "WorkupChecklist.ThrombophillsScreen",
+              "label": "Thrombophills screen",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "WorkupChecklist.AbdominalExamination",
+              "label": "Abdominal examination",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "WorkupChecklist.SocialWorker",
+              "label": "Social Worker consult",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "WorkupChecklist.SocialWorker",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "WorkupChecklist.SocialWorkerDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "WorkupChecklist.PsychologicalConsult",
+              "label": "Psychological consult",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "WorkupChecklist.PsychologicalConsult",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "WorkupChecklist.PsychologicalConsultDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "WorkupChecklist.SurgeonConsult",
+              "label": "Surgeon consult",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "WorkupChecklist.SurgeonConsult",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "WorkupChecklist.SurgeonConsultDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "WorkupChecklist.TransplantEducation",
+              "label": "Transplant education",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "WorkupChecklist.TransplantEducation",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "WorkupChecklist.TransplantEducationDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "WorkupChecklist",
+        "layoutShow": true,
+        "title": "Workup Checklist"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 500,
+              "id": "Notes.AbnormalResults",
+              "label": "Abnormal results and further tests",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Notes",
+        "layoutShow": true,
+        "title": "Notes"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "FinalRecommendations.LAPDonationPossible",
+              "label": "LAP donation possible",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Left",
+                "Right"
+              ],
+              "size": 5,
+              "id": "FinalRecommendations.Kidney",
+              "label": "Kidney to donate",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "FinalRecommendations.PossibleDate",
+              "label": "Possible date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "FinalRecommendations.Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "FinalRecommendations",
+        "layoutShow": true,
+        "title": "Final Recommendations"
+      }
+    }
+  ],
+  "id": "Renal.TransplantDonorAssessment",
+  "layoutColumns": 3
+}

@@ -1,0 +1,41 @@
+{
+  "PEPAssessment": {
+    "CurrentConsultant": {
+      "groupID": 3,
+      "userID": 6
+    },
+    "DateLastAssessment": {
+      "iso": "2012-08-10T20:45+10"
+    },
+    "PEPAssessmentService": {
+      "confidentiality": "Normal",
+      "program": "IMMUNOLOGY",
+      "serviceDate": {
+        "iso": "2012-08-10T20:45+10"
+      },
+      "serviceID": 27,
+      "serviceType": 122,
+      "summary": "asdfasdfasd."
+    }
+  },
+  "PEPCarePlans": {
+    "PEPCarePlans": [
+      {
+        "DateOfFirstDose": {
+          "iso": "2012-08-01"
+        },
+        "Medication": "Abacavir",
+        "Service": {
+          "confidentiality": "Normal",
+          "program": "IMMUNOLOGY",
+          "serviceDate": {
+            "iso": "2012-08-10"
+          },
+          "serviceID": 28,
+          "serviceType": 123,
+          "summary": "dfadasdfasdfasd."
+        }
+      }
+    ]
+  }
+}

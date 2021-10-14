@@ -1,0 +1,34 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 42,
+  "uri": "http://ns.smarthealth.com.au/valueset/Patientwatch.Classification",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Classification",
+      "value": "Environment"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Classification",
+      "value": "Illness"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Classification",
+      "value": "Medical/Health services"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Classification",
+      "value": "Medication"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Classification",
+      "value": "Self-care"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Classification",
+      "value": "Social support, including caregiver issues"
+    }
+  ],
+  "valueSetID": "Patientwatch.Classification"
+}

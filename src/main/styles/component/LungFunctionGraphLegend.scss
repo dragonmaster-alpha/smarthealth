@@ -1,0 +1,16 @@
+/**
+ * Styles for LungFunctionGraphLegend.tsx
+ *
+ * @author Thompson 05/06/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2019
+ */
+
+.LungFunctionGraphLegend {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    margin: 0 0.5em 0 1.5em;
+  }
+}

@@ -1,0 +1,23 @@
+/**
+ * Styles for MenuBarComponent.tsx
+ *
+ * @author Uditha 18/09/2018
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2018
+ */
+.ct-menubar {
+  .p-menubar {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    border: 0;
+  }
+
+  &-logo {
+    color: $colour-primary-blue;
+    margin: 0.1em 0 0.1em 0.1em;
+    font-size: 200%;
+  }
+}

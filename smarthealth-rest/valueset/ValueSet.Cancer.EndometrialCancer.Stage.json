@@ -1,0 +1,46 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 5,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "IA"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "IB"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "II"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "IIIA"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "IIIB"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "IIIC1"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "IIIC2"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "IVA"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.EndometrialCancer.Stage",
+      "value": "IVB"
+    }
+  ],
+  "valueSetID": "Cancer.EndometrialCancer.Stage"
+}

@@ -1,0 +1,85 @@
+[
+	{
+		"entityReference": {
+			"type": "PatientClinical",
+			"id": 42
+		},
+		"entity": {
+			"allergies": [
+				{
+					"details": "For better or worse",
+					"name": {
+						"code": "BETADINE",
+						"value": "Betadine"
+					}
+				},
+				{
+					"details": "Indigestion",
+					"name": {
+						"code": "DIGESIC",
+						"value": "Digesic"
+					}
+				},
+				{
+					"additional": true,
+					"date": {
+						"iso": "2019-10-01"
+					},
+					"name": {
+						"code": "HONEY",
+						"value": "Honey"
+					}
+				}
+			],
+			"ambulanceFund": false,
+			"medicalAlerts": [
+				{
+					"date": {
+						"iso": "2019-10-06"
+					},
+					"details": "Breathing difficulties",
+					"name": {
+						"code": "CONDITION_ASTHMA",
+						"value": "Asthma"
+					}
+				},
+				{
+					"additional": true,
+					"name": {
+						"code": "MONDAYS",
+						"value": "Mondays"
+					}
+				}
+			],
+			"patientID": 42,
+			"version": 0
+		}
+	},
+	{
+		"entityReference": {
+			"type": "EntityUpdateList",
+			"id": 42
+		},
+		"entity": {
+			"type": "PatientMedicalGroupAssociation",
+			"entities": [
+				{
+					"active": true,
+					"groupID": 1,
+					"id": 0,
+					"patientID": 42,
+					"urmrn": "MR71538",
+					"version": 0
+				},
+				{
+					"active": true,
+					"groupID": 2,
+					"id": 0,
+					"patientID": 42,
+					"urmrn": "MR71538",
+					"version": 0
+				}
+			]
+		}
+	}
+]

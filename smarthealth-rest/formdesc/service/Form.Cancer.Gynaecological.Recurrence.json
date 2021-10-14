@@ -1,0 +1,635 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "DateOfSurgery",
+        "label": "Date of surgery",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "Recurrence.RecurrenceNumber",
+              "label": "Recurrence number",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Recurred",
+                "Never disease free",
+                "Recurred but site not known",
+                "Not known if recurred"
+              ],
+              "size": 30,
+              "id": "Recurrence.Type",
+              "label": "Type",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Recurrence.DiagnosisDate",
+              "label": "Diagnosis date",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "calculation": {
+                "paramFieldIDs": [
+                  "DateOfSurgery",
+                  "Recurrence.DiagnosisDate"
+                ],
+                "type": "DIFFERENCE_IN_MONTHS"
+              },
+              "id": "Recurrence.TimeSinceSurgery",
+              "label": "Time since surgery",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "months"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "RECIST 1.1",
+                "GCIG",
+                "Clinical",
+                "Imaging",
+                "Marker"
+              ],
+              "size": 20,
+              "id": "Recurrence.BasisOfRecurrenceDate",
+              "label": "Basis of recurrence date",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Vulva",
+                "Low vagina",
+                "Upper vagina/vault",
+                "Groin lymph node",
+                "Groin cutaneous",
+                "Cervix",
+                "Uterus",
+                "Tube",
+                "Ovary",
+                "Pelvic peritoneum",
+                "Pelvic sidewall/lymph node",
+                "Pelvis NOS",
+                "Abdominal retroperitoneum/paraaortic lymph node",
+                "Omentum",
+                "Abdominal peritoneum",
+                "Liver",
+                "Spleen",
+                "Mediastinum",
+                "Lung",
+                "Pleura",
+                "Cervical lymph node",
+                "Axillary lymph node",
+                "Brain"
+              ],
+              "size": 50,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Recurred",
+                        "Never disease free"
+                      ],
+                      "fieldID": "Recurrence.Type"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Recurrence.Sites",
+              "label": "Sites",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Recurrence.Details",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Histology of a primary tumour",
+                "Cytology",
+                "Clinical investigation",
+                "Clinical diagnosis",
+                "Histology of metastasis",
+                "Histology",
+                "Specific tumour markers",
+                "Death certificate"
+              ],
+              "size": 30,
+              "id": "Recurrence.MostValidBasisForDiagnosis",
+              "label": "Most valid basis for diagnosis",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Recurrence",
+        "layoutShow": true,
+        "title": "Recurrence"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Treatment.TreatmentPlanned",
+              "label": "Treatment planned",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Not applicable",
+                "Asymptomatic",
+                "Poor performance status",
+                "Co-morbidities",
+                "Age",
+                "Treatment declined"
+              ],
+              "size": 30,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Treatment.TreatmentPlanned",
+                      "testFalse": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.Reason",
+              "label": "Reason",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Surgery",
+                "Radiotherapy",
+                "Chemotherapy",
+                "Hormone Rx"
+              ],
+              "size": 30,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Treatment.TreatmentPlanned",
+                        "testFalse": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.Treatment",
+              "label": "Treatment",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Treatment.TreatmentPlanned",
+                        "testFalse": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.TreatmentDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Curative",
+                "Palliative"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Treatment.TreatmentPlanned",
+                        "testFalse": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.Intent",
+              "label": "Intent",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Treatment.TreatmentPlanned",
+                        "testFalse": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.Completed",
+              "label": "Completed",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Toxicity",
+                "Progression"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Treatment.Completed",
+                      "testFalse": true
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.Reasons",
+              "label": "Reasons",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Complete response",
+                "Partial response",
+                "Minor response",
+                "Stable disease",
+                "Progressive disease",
+                "No evidence of disease/adjuvant"
+              ],
+              "size": 40,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Treatment.TreatmentPlanned",
+                        "testFalse": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.Outcome",
+              "label": "Outcome",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Complete response",
+                        "Partial response",
+                        "Minor response",
+                        "Stable disease"
+                      ],
+                      "fieldID": "Treatment.Outcome"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Treatment.Date",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "Treatment",
+        "layoutShow": true,
+        "title": "Treatment"
+      }
+    }
+  ],
+  "id": "Cancer.Gynaecological.Recurrence",
+  "layoutColumns": 3
+}

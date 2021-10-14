@@ -1,0 +1,86 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 23,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Left adnexae"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Right adnexa"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Uterus"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Pelvic peritoneum"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Pelvis side wall"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Rectum"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Colon wall"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Colon mesentery"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Appendix"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Small bowel"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Small bowel mesentery"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Abdominal peritoneum"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Omentum"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Diaphragm"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Liver"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Spleen"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Stomach"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Pelvic lymph nodes"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.GynaecologicalSurgery.Site",
+      "value": "Para-aortic lymph nodes"
+    }
+  ],
+  "valueSetID": "Cancer.GynaecologicalSurgery.Site"
+}

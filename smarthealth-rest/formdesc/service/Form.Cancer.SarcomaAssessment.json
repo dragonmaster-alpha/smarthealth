@@ -1,0 +1,381 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "FirstConsultationAtThisPractice",
+        "label": "First Consultation at this practice",
+        "type": "Boolean"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Established diagnosis",
+                "Follow-up for outside treatment",
+                "Second opinion",
+                "Suspected primary sarcoma for investigation"
+              ],
+              "size": 50,
+              "id": "ReasonForPresentation.Reason",
+              "label": "Reason for presentation",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Benign tumour",
+                "No diagnosis",
+                "Primary sarcoma: metastatic",
+                "Primary sarcoma: non-metastatic",
+                "Primary sarcoma: not yet staged"
+              ],
+              "size": 35,
+              "id": "ReasonForPresentation.DiagnosisEstablished",
+              "label": "Diagnosis established",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "No diagnosis"
+                        ],
+                        "fieldID": "ReasonForPresentation.DiagnosisEstablished"
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReasonForPresentation.DateOfDiagnosis",
+              "label": "Date of diagnosis",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "First recurrence",
+                "No recurrence",
+                "Second or subsequent recurrence"
+              ],
+              "size": 35,
+              "id": "ReasonForPresentation.SarcomaRecurrence",
+              "label": "Sarcoma recurrence",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "First recurrence"
+                      ],
+                      "fieldID": "ReasonForPresentation.SarcomaRecurrence"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReasonForPresentation.DateOfFirstRecurrence",
+              "label": "Date of first recurrence",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "ReasonForPresentation",
+        "layoutShow": true,
+        "title": "Reason for presentation"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "options": [
+                    "Mass",
+                    "None",
+                    "Pain",
+                    "Pathological fracture",
+                    "Systemic symptoms"
+                  ],
+                  "size": 21,
+                  "id": "Symptoms",
+                  "label": "Symptoms",
+                  "type": "Selection"
+                },
+                {
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "Duration",
+                  "label": "Duration",
+                  "type": "Number",
+                  "units": "months"
+                }
+              ],
+              "id": "Symptoms.Symptoms",
+              "label": "Symptoms",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "options": [
+                    "Bone Scan",
+                    "CT chest",
+                    "CT local",
+                    "MRI",
+                    "PET Scan",
+                    "Thallium scan",
+                    "X-ray"
+                  ],
+                  "size": 15,
+                  "id": "ImagingType",
+                  "label": "Imaging Type",
+                  "type": "Selection"
+                },
+                {
+                  "id": "ImagingAbnormalResult",
+                  "label": "Abnormal",
+                  "type": "Boolean"
+                }
+              ],
+              "id": "Symptoms.ImagingPostReferral",
+              "label": "Imaging post referral and prior to this consultation",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Symptoms",
+        "layoutShow": true,
+        "title": "Symptoms"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Cancer.SarcomaAssessment",
+  "layoutColumns": 3
+}

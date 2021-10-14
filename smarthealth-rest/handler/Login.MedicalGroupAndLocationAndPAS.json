@@ -1,0 +1,1053 @@
+{
+  "groupID": 1,
+  "permissions": {
+    "admin": [
+      1,
+      2,
+      4,
+      6,
+      9,
+      10,
+      13,
+      14,
+      16,
+      20,
+      22,
+      23,
+      25,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "clinical": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      98,
+      293,
+      294,
+      295,
+      316,
+      335,
+      348,
+      356,
+      448,
+      462,
+      463,
+      537,
+      538,
+      594,
+      595,
+      630,
+      635,
+      645,
+      664,
+      665,
+      678,
+      679,
+      689,
+      693,
+      700
+    ],
+    "serviceTypes": [
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 0,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "DIABETES",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "HOMELESS_HEALTH",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "OBSTETRICS",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PODIATRY",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "VASCULAR",
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 1,
+        "view": true
+      },
+      {
+        "serviceTypeID": 2,
+        "view": true
+      },
+      {
+        "serviceTypeID": 3,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 5,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 6,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 7,
+        "view": true
+      },
+      {
+        "serviceTypeID": 8,
+        "view": true
+      },
+      {
+        "serviceTypeID": 9,
+        "view": true
+      },
+      {
+        "serviceTypeID": 12,
+        "view": true
+      },
+      {
+        "serviceTypeID": 13,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 15,
+        "view": true
+      },
+      {
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 16,
+        "view": true
+      },
+      {
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 17,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 19,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 20,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 21,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 23,
+        "view": true
+      },
+      {
+        "create": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 24,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 25,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 26,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 27,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 29,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 30,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 31,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 32,
+        "view": true
+      },
+      {
+        "create": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 33,
+        "view": true
+      },
+      {
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 36,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 37,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 38,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 41,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 42,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 43,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 44,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 45,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 46,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 48,
+        "view": true
+      },
+      {
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 56,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 57,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 58,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 66,
+        "view": true
+      },
+      {
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 68,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 69,
+        "view": true
+      },
+      {
+        "serviceTypeID": 72,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 75,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 76,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 78,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 79,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "DIABETES",
+        "serviceTypeID": 81,
+        "view": true
+      },
+      {
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 90,
+        "view": true
+      },
+      {
+        "program": "DIABETES",
+        "serviceTypeID": 93,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 94,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 100,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 101,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 103,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "VASCULAR",
+        "serviceTypeID": 104,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "VASCULAR",
+        "serviceTypeID": 105,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "VASCULAR",
+        "serviceTypeID": 114,
+        "view": true
+      },
+      {
+        "serviceTypeID": 115,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 116,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 117,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 118,
+        "view": true
+      },
+      {
+        "serviceTypeID": 119,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PODIATRY",
+        "serviceTypeID": 120,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 121,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 122,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 123,
+        "view": true
+      },
+      {
+        "serviceTypeID": 124,
+        "view": true
+      },
+      {
+        "serviceTypeID": 125,
+        "view": true
+      },
+      {
+        "serviceTypeID": 126,
+        "view": true
+      },
+      {
+        "serviceTypeID": 127,
+        "view": true
+      },
+      {
+        "serviceTypeID": 128,
+        "view": true
+      },
+      {
+        "serviceTypeID": 129,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 130,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 131,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 132,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 133,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 134,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 135,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 136,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 142,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 143,
+        "view": true
+      },
+      {
+        "serviceTypeID": 144,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 145,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 146,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 147,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 148,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 149,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 150,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 151,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 153,
+        "view": true
+      },
+      {
+        "serviceTypeID": 154,
+        "view": true
+      },
+      {
+        "serviceTypeID": 155,
+        "view": true
+      },
+      {
+        "serviceTypeID": 156,
+        "view": true
+      },
+      {
+        "serviceTypeID": 157,
+        "view": true
+      },
+      {
+        "serviceTypeID": 158,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 159,
+        "view": true
+      },
+      {
+        "serviceTypeID": 160,
+        "view": true
+      },
+      {
+        "serviceTypeID": 161,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "IMMUNOLOGY",
+        "serviceTypeID": 162,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 163,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 164,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 165,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 166,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 167,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 168,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 169,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 170,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 171,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 172,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 173,
+        "view": true
+      },
+      {
+        "create": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 175,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 176,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 177,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 178,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 179,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 180,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 181,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 182,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 183,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 184,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 185,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 186,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 187,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CYSTIC_FIBROSIS",
+        "serviceTypeID": 188,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 189,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 190,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 191,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 192,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 193,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 194,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 195,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 196,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 198,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 199,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 200,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 201,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 202,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "RENAL_DISEASE",
+        "serviceTypeID": 203,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 204,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 205,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "serviceTypeID": 206,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "CANCER",
+        "serviceTypeID": 207,
+        "view": true
+      },
+      {
+        "create": true,
+        "modify": true,
+        "program": "PATIENT_WATCH",
+        "serviceTypeID": 208,
+        "view": true
+      }
+    ]
+  },
+  "termsOfUseAgreed": false,
+  "timeZone": "Australia/Sydney",
+  "usePAS": true,
+  "userID": 42
+}

@@ -1,0 +1,61 @@
+{
+  "coded": true,
+  "codeLength": 9,
+  "extensible": false,
+  "length": 18,
+  "toolTip": "\u003chtml\u003e\n        \u003cul\u003e\n            \u003cli\u003eGrade B - Borderline cancerous\u003c/li\u003e\n            \u003cli\u003eGrade X - Grade cannot be assessed\u003c/li\u003e\n            \u003cli\u003eGrade 0 - Atypical cells have not spread into surrounding tissue\u003c/li\u003e\n            \u003cli\u003eGrade 1 - Well differentiated, differentiated, NOS\u003c/li\u003e\n            \u003cli\u003eGrade 2 - Moderately differentiated, moderately well differentiated, intermediate differentiation\u003c/li\u003e\n            \u003cli\u003eGrade 3 - Poorly differentiated\u003c/li\u003e\n            \u003cli\u003eLow Grade - Well to moderately differentiated\u003c/li\u003e\n            \u003cli\u003eIntermediate grade - Histologic differentiation\u003c/li\u003e\n            \u003cli\u003eHigh grade - Poorly differentiated to undifferentiated\u003c/li\u003e\n        \u003c/ul\u003e\n    \u003c/html\u003e",
+  "uri": "http://snomed.info/sct",
+  "values": [
+    {
+      "code": "313117002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Grade B"
+    },
+    {
+      "code": "12619005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Grade X"
+    },
+    {
+      "code": "313147000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Grade 0"
+    },
+    {
+      "code": "54102005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Grade 1"
+    },
+    {
+      "code": "1663004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Grade 2"
+    },
+    {
+      "code": "61026006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Grade 3"
+    },
+    {
+      "code": "258245003",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Grade 4"
+    },
+    {
+      "code": "395529007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Low grade"
+    },
+    {
+      "code": "405986005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Intermediate grade"
+    },
+    {
+      "code": "395530002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "High grade"
+    }
+  ],
+  "valueSetID": "Cancer.Pathology.TumourGrade"
+}

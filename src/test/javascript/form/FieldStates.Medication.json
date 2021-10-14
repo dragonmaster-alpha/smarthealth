@@ -1,0 +1,115 @@
+{
+    "Provider": {
+        "editState": "Mandatory"
+    },
+    "ServiceDate": {
+        "editState": "Mandatory"
+    },
+    "Patient": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "ID": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "SetID": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "Version": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "Source": {
+        "editState": "Mandatory"
+    },
+    "Indication": {
+        "editState": "Enabled"
+    },
+    "Generic": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "Product": {
+        "editState": "Mandatory"
+    },
+    "AbbrevPICode": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "FullPICode": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "Formulation": {
+        "editState": "Mandatory"
+    },
+    "CMICode": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "CMIHTML": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "ProductAndFormulation": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "Pack": {
+        "editState": "Mandatory"
+    },
+    "Strength": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "Quantity": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "PBS": {
+        "editState": "Mandatory"
+    },
+    "DoseGuide": {
+        "editState": "ReadOnly"
+    },
+    "Dose": {
+        "editState": "Mandatory"
+    },
+    "Frequency": {
+        "editState": "Mandatory"
+    },
+    "Route": {
+        "editState": "Enabled"
+    },
+    "Instructions": {
+        "editState": "Enabled"
+    },
+    "StartDate": {
+        "editState": "Enabled"
+    },
+    "FinishDate": {
+        "editState": "Enabled"
+    },
+    "FinishDateSource": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "ChangeType": {
+        "editState": "Enabled"
+    },
+    "ChangeReason": {
+        "editState": "Enabled"
+    },
+    "Notes.Notes": {
+        "editState": "Enabled"
+    },
+    "Cease.Ceased": {
+        "editState": "Hidden",
+        "viewStateHidden": true
+    },
+    "Cease.CeaseReason": {
+        "editState": "ReadOnly"
+    }
+}

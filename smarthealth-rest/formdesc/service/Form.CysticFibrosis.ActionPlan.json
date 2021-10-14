@@ -1,0 +1,744 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "CareTeam.MO",
+              "label": "Doctor (MO)",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "CareTeam.CO",
+              "label": "Nurse (CO)",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "CareTeam.TreatmentStatusService",
+              "label": "Treatment Status service",
+              "type": "ServiceRecordReference"
+            }
+          }
+        ],
+        "id": "CareTeam",
+        "layoutShow": true,
+        "title": "Care Team"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "Symptoms.Height",
+              "label": "Height",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "Symptoms.Weight",
+              "label": "Weight",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "calculation": {
+                "paramFieldIDs": [
+                  "Symptoms.Height",
+                  "Symptoms.Weight"
+                ],
+                "type": "BMI"
+              },
+              "id": "Symptoms.BMI",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 150,
+              "precision": 4,
+              "scale": 1,
+              "id": "Symptoms.BestFEV1",
+              "label": "Best FEV1 last 12 months",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Symptoms.BestFEV1Date",
+              "label": "Date",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Symptoms.BestFEV1Service",
+              "label": "Best FEV1 service",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "size": 20,
+              "id": "Symptoms.CoughWhenWell",
+              "label": "When well, I have",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Symptoms.PhysiotherapistAssessmentsService",
+              "label": "Physiotherapist Assessment service",
+              "type": "ServiceRecordReference"
+            }
+          }
+        ],
+        "id": "Symptoms",
+        "layoutShow": true,
+        "title": "Symptoms"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "options": [
+                    "Bronchodilator",
+                    "Pulmozyme",
+                    "Hypertonic saline",
+                    "Tobramycin",
+                    "Colistin"
+                  ],
+                  "size": 20,
+                  "id": "Drug",
+                  "label": "Drug",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "pari-nebuliser with filter",
+                    "pari-nebuliser without filter",
+                    "sidestream"
+                  ],
+                  "size": 30,
+                  "id": "Type",
+                  "label": "Type",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 100,
+                  "id": "FrequencyOfChanging",
+                  "label": "Frequency of changing",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 100,
+                  "id": "FrequencyOfCleaning",
+                  "label": "Frequency and method of cleaning",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "Medications.NebulisedMedications",
+              "label": "Nebulised medications",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "ServiceRecord",
+                  "label": "Service Record",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 200,
+                  "id": "MedicationName",
+                  "label": "Medication",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 200,
+                  "id": "Directions",
+                  "label": "Directions",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 25,
+                  "id": "Indication",
+                  "label": "Indication",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "Medications.CurrentMedications",
+              "label": "Current medications",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Medications",
+        "layoutShow": true,
+        "title": "Medications"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Physiotherapy.Physiotherapist",
+              "label": "Physiotherapist",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 20,
+                  "id": "WellUnwell",
+                  "label": "Well/Unwell",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "Type",
+                  "label": "Type",
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "Frequency",
+                  "label": "Frequency",
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "SessionDuration",
+                  "label": "Session duration",
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "Physiotherapy.AirwayClearanceRegimen",
+              "label": "Airway clearance regimen",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 20,
+                  "id": "WellUnwell",
+                  "label": "Well/Unwell",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "Type",
+                  "label": "Type",
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "Frequency",
+                  "label": "Frequency",
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "SessionDuration",
+                  "label": "Session duration",
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "Physiotherapy.ExerciseRegimen",
+              "label": "Exercise regimen",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "Physiotherapy.Plan",
+              "label": "Plan",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Physiotherapy.PhysiotherapistNotesService",
+              "label": "Physiotherapist Notes service",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "id": "Physiotherapy.PhysiotherapistAssessmentsService",
+              "label": "Physiotherapist Assessment service",
+              "type": "ServiceRecordReference"
+            }
+          }
+        ],
+        "id": "Physiotherapy",
+        "layoutShow": true,
+        "title": "Physiotherapy"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Nutrition.Dietitian",
+              "label": "Dietitian",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Nutrition.Enzymes",
+              "label": "Enzymes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Nutrition.Vitamins",
+              "label": "Vitamins",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Nutrition.Supplements",
+              "label": "Supplements",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Nutrition.FeedingRoutes",
+              "label": "Feeding routes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Nutrition.ChangesToPlan",
+              "label": "Changes to plan",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Nutrition.DietitianNotesService",
+              "label": "Dietitian Notes service",
+              "type": "ServiceRecordReference"
+            }
+          }
+        ],
+        "id": "Nutrition",
+        "layoutShow": true,
+        "title": "Nutrition"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "id": "MedicalGroup",
+                  "label": "Medical Group",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "MedicalGroup"
+                },
+                {
+                  "size": 20,
+                  "id": "Telephone",
+                  "label": "Telephone",
+                  "type": "Text"
+                },
+                {
+                  "precisionMinute": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                }
+              ],
+              "id": "Appointments.Appointments",
+              "label": "Appointments",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Appointments",
+        "layoutShow": true,
+        "title": "Appointments"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.ActionPlan",
+  "layoutColumns": 3
+}

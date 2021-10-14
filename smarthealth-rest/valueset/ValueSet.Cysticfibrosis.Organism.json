@@ -1,0 +1,102 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 50,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Achromobacter (alcaligenes) xylosoxidans"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Aspergillus (any species)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Burkholderia"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Burkholderia cepacia complex"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Candida"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Escherichia coli"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Haemophilus influenzae"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Inquilinus limosus"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Klebsiella (any species)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Mycobacterium abscessus"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Mycobacterium avium complex"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Non-tuberculous mycobacterium"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Pseudomonas aeruginosa – non differentiated"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Pseudomonas aeruginosa – mucoid"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Pseudomonas aeruginosa – rough/non mucoid"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Pseudomonas, other species"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Scediosporium (any species)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Serratia marcescens"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Staphylococcus aureus"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Staphylococcus aureus methicillin sensitive"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Staphylococcus aureus methicillin resistant"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Stenotrophomonas"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+      "value": "Stenotrophomonas maltophilia"
+    }
+  ],
+  "valueSetID": "Cysticfibrosis.Organism"
+}

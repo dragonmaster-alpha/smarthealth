@@ -1,0 +1,123 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "size": 1000,
+        "id": "AdditionalInfo",
+        "label": "Additional information",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "AdmissionDateTime",
+        "label": "Admission Date/Time",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "AdmissionNumber",
+        "label": "Admission number",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "AdmittingNurse",
+        "label": "Admitting nurse",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "OtherDiagnosis",
+        "label": "Other diagnosis",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "OtherProcedure",
+        "label": "Other procedure",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "PrincipalDiagnosis",
+        "label": "Principal diagnosis",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "PrincipalProcedure",
+        "label": "Principal procedure",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "CF - Gastrointestional",
+          "CF - Other",
+          "CF - Respiratory"
+        ],
+        "size": 50,
+        "id": "ReasonForAdmission",
+        "label": "Reason for Admission",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    }
+  ],
+  "id": "Service.Admission",
+  "layoutColumns": 3
+}

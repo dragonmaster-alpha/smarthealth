@@ -1,0 +1,16 @@
+/**
+ * Styles for LungFunctionGraphSummaryPanel.tsx
+ *
+ * @author Thompson 02/06/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+
+.cp-LungFunctionGraphSummaryPanel {
+  height: 100vh;
+
+  &-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2ex;
+  }
+}

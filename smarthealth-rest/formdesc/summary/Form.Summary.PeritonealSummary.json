@@ -1,0 +1,243 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "displayType": "Summary",
+              "id": "PeritonealDialysis.PDPrescriptionService",
+              "label": "Peritoneal dialysis prescription",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "id": "PeritonealDialysis.LastExtensionLineChangeProvider",
+              "label": "Extension line change by",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "PeritonealDialysis.LastExtensionLineChangeDate",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "PeritonealDialysis",
+        "layoutShow": true,
+        "title": "Peritoneal Dialysis"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "displayType": "ServiceDate",
+                  "id": "PETAndAdequestService",
+                  "label": "Date",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "options": [
+                    "High",
+                    "High Average",
+                    "Low",
+                    "Low Average"
+                  ],
+                  "size": 12,
+                  "id": "MembraneType",
+                  "label": "Membrane Type",
+                  "type": "Selection"
+                },
+                {
+                  "maximum": 5,
+                  "precision": 3,
+                  "scale": 2,
+                  "id": "RRFKtV",
+                  "label": "RRF Kt/V",
+                  "type": "Number"
+                },
+                {
+                  "maximum": 5,
+                  "precision": 3,
+                  "scale": 2,
+                  "id": "TotalKtV",
+                  "label": "Total Kt/V",
+                  "type": "Number"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "RRFCrCl",
+                  "label": "RRF CrCl",
+                  "type": "Number",
+                  "units": "L/week/1.73m2"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "TotalCrCl",
+                  "label": "Total CrCl",
+                  "type": "Number",
+                  "units": "L/week/1.73m2"
+                },
+                {
+                  "maximum": 3000,
+                  "precision": 4,
+                  "scale": 0,
+                  "id": "RRFUrineVolume",
+                  "label": "RRF urine volume",
+                  "type": "Number",
+                  "units": "mL"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "PETAndAdequacySection.PETAndAdequestSummary",
+              "label": "PET \u0026 Adequacy Summary",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "span": 2
+              },
+              "type": "Table",
+              "valuePath": "PeritonealDialysis.PETAndAdequestSummary"
+            }
+          }
+        ],
+        "id": "PETAndAdequacySection",
+        "layoutShow": true,
+        "title": "PET \u0026 Adequacy"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "displayType": "ServiceDate",
+                  "id": "ComplicationSource",
+                  "label": "Service",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 50,
+                  "id": "Problem",
+                  "label": "Problem",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 50,
+                  "id": "Treatment",
+                  "label": "Treatment",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 50,
+                  "id": "Outcome",
+                  "label": "Outcome",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "Complications.Complications",
+              "label": "Complications Table",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Complications",
+        "layoutShow": true,
+        "title": "Complications"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "displayType": "ServiceDate",
+                  "id": "PDTrainingService",
+                  "label": "Date",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "description": "Clinician responsible for the service record",
+                  "id": "Provider",
+                  "label": "Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "options": [
+                    "Carer",
+                    "Patient"
+                  ],
+                  "size": 7,
+                  "id": "Trainee",
+                  "label": "Trainee",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precision": 2,
+                  "scale": 0,
+                  "id": "NumberOfSessions",
+                  "label": "Sessions",
+                  "type": "Number"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "PDTraingSummarySection.PDTrainingSummary",
+              "label": "PD Training Summary",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "span": 2
+              },
+              "type": "Table",
+              "valuePath": "PeritonealDialysis.PDTrainingSummary"
+            }
+          }
+        ],
+        "id": "PDTraingSummarySection",
+        "layoutShow": true,
+        "title": "PD Training"
+      }
+    }
+  ],
+  "id": "Summary.PeritonealSummary.WebUI",
+  "layoutColumns": 2
+}

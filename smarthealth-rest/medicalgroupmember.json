@@ -1,0 +1,10 @@
+{
+  "active": true,
+  "memberID": {
+    "groupID": 1,
+    "userID": 42
+  },
+  "providerNum": "01234567K",
+  "role": "General Practitioner",
+  "version": 0
+}

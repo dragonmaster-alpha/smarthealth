@@ -1,0 +1,98 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 15,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "1717-1g\u003eG"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "1G\u003eA"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "3849+10kbC-\u003eT"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "621+1"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "621+1G\u003eT"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "A455E"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "BC\u003eT"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "G542X"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "G551D"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "N1303K"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "R1162X"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "R117H"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "R334W"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "R347H"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "R347P"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "R553X"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "R560T"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "S549N"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "V520F"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "W1282X"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "Δ1507"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Genotype",
+      "value": "ΔF508"
+    }
+  ],
+  "valueSetID": "Cysticfibrosis.Genotype"
+}

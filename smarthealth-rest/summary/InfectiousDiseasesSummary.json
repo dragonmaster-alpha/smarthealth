@@ -1,0 +1,29 @@
+{
+  "InfectiousDiseasesAssessment": {
+    "DateLastAssessment": {
+      "iso": "2012-12-12"
+    },
+    "InfectiousDiseasesAssessmentService": {
+      "confidentiality": "Normal",
+      "program": "IMMUNOLOGY",
+      "serviceDate": {
+        "iso": "2012-12-12"
+      },
+      "serviceID": 55,
+      "serviceType": 146,
+      "summary": "asdfasdfasdfasdftytyytrty."
+    },
+    "PrimaryDiagnoses": [
+      {
+        "Code": "AllergicBronchopulmonaryAspergillosis",
+        "Diagnosis": "Allergic bronchopulmonary aspergillosis"
+      },
+      {
+        "Code": "CANCERHEPATIC",
+        "Date": "2012-11-14",
+        "Details": "Hepatocellular Carcinoma",
+        "Diagnosis": "Cancer - Hepatic"
+      }
+    ]
+  }
+}

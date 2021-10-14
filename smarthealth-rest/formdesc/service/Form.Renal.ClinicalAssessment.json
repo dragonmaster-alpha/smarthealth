@@ -1,0 +1,561 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "dateOfService",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "servicingProvider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "Height",
+        "label": "Height",
+        "type": "Number",
+        "units": "cm"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "Weight",
+        "label": "Weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "maximum": 2500,
+        "minimum": 40,
+        "precision": 4,
+        "scale": 0,
+        "id": "creatinineCurrent",
+        "label": "Creatinine Current",
+        "type": "Number",
+        "units": "umol/L"
+      }
+    },
+    {
+      "field": {
+        "maximum": 2500,
+        "minimum": 40,
+        "precision": 4,
+        "scale": 0,
+        "id": "creatinineLast",
+        "label": "Creatinine Last",
+        "type": "Number",
+        "units": "umol/L"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 0,
+        "id": "gfr",
+        "label": "GFR",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number",
+        "units": "ml/min/1.73m²"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Advanced GN (unclassified \u003d end stage)",
+          "Amyloid disease",
+          "Analgesic nephropathy",
+          "Atheroembolic disease (cholesterol emboli)",
+          "Balkan nephropathy",
+          "Bilateral renal artery stenosis",
+          "Bladder neck obstruction (incl. prostatomegaly)",
+          "Cadmium toxicity",
+          "Calcineurin Inhibitor Toxicity",
+          "Calculi",
+          "Congenital renal hypoplasia and dysplasia",
+          "Cortical necrosis",
+          "Cystinosis",
+          "Diabetes - Type 1 (insulin dependent)",
+          "Diabetes - Type 2 (insulin requiring)",
+          "Diabetes - Type 2 (non-insulin requiring)",
+          "Extra and intra capillary GN (extensive crescents - clinically rapidly progressive)",
+          "Familial GN",
+          "Focal and segmental proliferative GN (including focal necrotising)",
+          "Focal sclerosing GN (including hyalinosis)",
+          "GN other",
+          "GN with systemic disease",
+          "Goodpasture\u0027s syndrome with linear IgG and lung haemorrhage",
+          "Gout",
+          "Haemolytic uraemic syndrome",
+          "Henoch-Schonlein purpura",
+          "Infantile/juvenile polycystic kidney disease",
+          "Interstitial nephritis",
+          "Lead nephropathy",
+          "Light chain nephropathy (benign)",
+          "Lithium toxicity",
+          "Loss of single kidney",
+          "Medullary cystic disease",
+          "Megaureter",
+          "Membranous GN",
+          "Mesangial proliferative (IgA+ positive)",
+          "Mesangial proliferative (IgA- negative)",
+          "Mesangial proliferative (no I.F. studies)",
+          "Mesangiocapillary GN with intramembranous deposits (dense deposit disease)",
+          "Mesangiocapillary GN with subendothelial deposits (double contour)",
+          "Microscopic Polyarteritis",
+          "Neuropathic bladder",
+          "Non-obstructed dilated bladder and ureters (megacystitis - megaureter)",
+          "Obstructed megaureter",
+          "Obstructive nephropathy",
+          "Other lower urinary tract abnormalities (with secondary reflux)",
+          "Oxalosis",
+          "Paraproteinaemia (including multiple myeloma)",
+          "Pelvi-ureteric junction obstruction",
+          "Polycystic kidney disease",
+          "Post partum nephropathy",
+          "Posterior urethral valves",
+          "Presumed GN, type undefined histologically (no biopsy)",
+          "Primary focal sclerosing GN or focal glomerular sclerosis",
+          "Proliferative GN with linear IgG - no lung haemorrhage",
+          "Pyelonephritis",
+          "Reflux nephropathy",
+          "Renal cell carcinoma (GRAWITZ)",
+          "Renal tuberculosis",
+          "Renal vascular disease - type unspecified",
+          "Renal vascular disease due to hypertension (nephrosclerosis) (NO primary renal disease)",
+          "Renal vascular disease due to malignant hypertension (NO primary renal disease)",
+          "SLE",
+          "Sarcoidosis",
+          "Scleroderma",
+          "Secondary focal sclerosing GN",
+          "Spina bifida or myelomeningocoele",
+          "Transitional cell carcinoma of urinary tract",
+          "Uncertain diagnosis",
+          "Ureteric obstructive nephropathy",
+          "Wegener\u0027s Granulomatosis"
+        ],
+        "size": 90,
+        "id": "crfAetiology",
+        "label": "Primary renal disease",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Cease dialysis",
+          "Conservative care",
+          "Haemodialysis",
+          "Home haemodialysis",
+          "Palliative care",
+          "Peritoneal dialysis",
+          "Transplant",
+          "Transplant donor"
+        ],
+        "size": 20,
+        "id": "rrtPlan",
+        "label": "RRT Plan",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "coordinator",
+        "label": "Coordinator",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "fistula",
+        "label": "Fistula",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "SurgicalReferral",
+        "label": "Surgical Referral",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "surgicalReferralDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "surgicalReferralComment",
+        "label": "Comment",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Needs Referral",
+          "Referral not Indicated",
+          "Seen"
+        ],
+        "size": 30,
+        "id": "transplantAssessment",
+        "label": "Transplant Assessment",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Seen"
+                ],
+                "fieldID": "transplantAssessment"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "transplantAssessmentDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Needs Referral",
+          "Referral not Indicated",
+          "Seen"
+        ],
+        "size": 30,
+        "id": "dietitianReferral",
+        "label": "Dietitian Referral",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Seen"
+                ],
+                "fieldID": "dietitianReferral"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "dietitianReferralDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Needs Referral",
+          "Referral not Indicated",
+          "Seen"
+        ],
+        "size": 30,
+        "id": "socWorkerReferral",
+        "label": "Social Worker Referral",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Seen"
+                ],
+                "fieldID": "socWorkerReferral"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "socWorkerReferralDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Needs Referral",
+          "Referral not Indicated",
+          "Seen"
+        ],
+        "size": 30,
+        "id": "occuTherReferral",
+        "label": "Occupational Therapist Referral",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Seen"
+                ],
+                "fieldID": "occuTherReferral"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "occuTherReferralDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Needs Referral",
+          "Referral not Indicated",
+          "Seen"
+        ],
+        "size": 30,
+        "id": "preDialysisReferral",
+        "label": "Pre-Dialysis Referral",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Seen"
+                ],
+                "fieldID": "preDialysisReferral"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "preDialysisReferralDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Needs Referral",
+          "Referral not Indicated",
+          "Seen"
+        ],
+        "size": 30,
+        "id": "technicianReferral",
+        "label": "Technician Referral",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Seen"
+                ],
+                "fieldID": "technicianReferral"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "technicianReferralDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Stage 1 (Kidney damage with normal kidney function, eGFR\u003e\u003d60)",
+          "Stage 2 (Kidney damage with mildly decreased kidney function, eGFR\u003e\u003d60)",
+          "Stage 3 (Kidney damage with moderately decreased kidney function, eGFR\u003d30-59)",
+          "Stage 4 (Kidney damage with severly decreased kidney function, eGFR\u003d15-29)",
+          "Stage 5 (End stage kidney failure, eGFR\u003c15)"
+        ],
+        "size": 77,
+        "id": "chronicKidneyDisease",
+        "label": "Chronic Kidney Disease",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "options": [
+          "Dietitian",
+          "Home Training",
+          "Pre-dialysis",
+          "Social Worker",
+          "Transplant"
+        ],
+        "size": 20,
+        "id": "EducationRequired",
+        "label": "Education Required",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "type": "Selection"
+      }
+    }
+  ],
+  "id": "Renal.ClinicalAssessment",
+  "layoutColumns": 3
+}

@@ -1,0 +1,76 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Catheter blockage",
+          "Catheter migration",
+          "PD access complications"
+        ],
+        "size": 30,
+        "id": "Complication",
+        "label": "Complication",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "Treatment",
+        "label": "Treatment",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "Outcome",
+        "label": "Outcome",
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.AccessCarePlan.OtherAccessProblem",
+  "layoutColumns": 3
+}

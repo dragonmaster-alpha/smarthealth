@@ -1,0 +1,692 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 0,
+        "id": "Duration",
+        "label": "Duration",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "min"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 5000,
+              "id": "Notes.Assessment",
+              "label": "Assessment",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "Notes.Plan",
+              "label": "Plan",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Notes",
+        "layoutShow": true,
+        "title": "Notes"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "precisionMonth": true,
+              "precisionYear": true,
+              "id": "History.DiagnosedDate",
+              "label": "Date of infection",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Immunology.HIV.SourceOfInfection",
+              "id": "History.SourceOfInfection",
+              "label": "Source of infection",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Aspergillosis, invasive",
+                    "Bartonellosis",
+                    "CMV disease (other than liver, spleen, or nodes)",
+                    "CMV retinitis (with loss of vision)",
+                    "Candidiasis of lungs",
+                    "Candidiasis of oesophagus",
+                    "Candidiasis of trachea",
+                    "Cervical cancer, invasive",
+                    "Chagas disease (American trypanosomiasis) of the CNS",
+                    "Coccidioidomycosis, disseminated or extrapulmonary",
+                    "Cryptococcosis, extrapulmonary",
+                    "Cryptosporidiosis, chronic intestinal (\u003e1 month\u0027s duration)",
+                    "Encephalopathy, HIV-related (including AIDS Dementia Complex)",
+                    "HSV: bronchitis",
+                    "HSV: chronic ulcers (\u003e1 month)",
+                    "HSV: oesophagitis",
+                    "HSV: pneumonitis",
+                    "Herpes zoster, multi-dermatomal (\u003e\u003d10 lesions in a non-contiguous site)",
+                    "Histoplasmosis, disseminated or extrapulmonary",
+                    "Isosporiasis, chronic intestinal (\u003e1 month\u0027s duration)",
+                    "Kaposi\u0027s sarcoma",
+                    "Leishmaniasis, visceral (kala-azar)",
+                    "Lymphoma, Burkitt (or equivalent term)",
+                    "Lymphoma, Hodgkin\u0027s",
+                    "Lymphoma, non-Hodgkin\u0027s, all cell types",
+                    "Lymphoma, primary, of brain",
+                    "MAC or Mycobacterium kansasii (disseminated or extrapulmonary)",
+                    "Microsporidiosis (\u003e 1 month\u0027s duration)",
+                    "Mycobacterium - other than MAC, M. kansasii or M.TB",
+                    "Mycobacterium tuberculosis",
+                    "Nocardiosis",
+                    "Penicillium marneffii, disseminated",
+                    "Pneumocystis carinii (jiroveci), extrapulmonary",
+                    "Pneumocystis jirovecii pneumonia",
+                    "Pneumonia, recurrent bacterial",
+                    "Progressive multifocal leukoencephalopathy",
+                    "Rhodococcus equi disease",
+                    "Salmonella septicaemia, recurrent",
+                    "Toxoplasmosis of brain, onset at age \u003e1 month",
+                    "Wasting syndrome attributed to HIV"
+                  ],
+                  "size": 73,
+                  "id": "IllnessName",
+                  "label": "Illness name",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "DateOfDiagnosis",
+                  "label": "Date of diagnosis",
+                  "type": "DateTime"
+                }
+              ],
+              "layoutRows": 3,
+              "rowSelectionInViewMode": true,
+              "id": "History.AidsDefiningIllnesses",
+              "label": "AIDS defining illnesses",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Acute myocardial infarction",
+                    "Congestive heart failure",
+                    "Coronary artery disease requiring drug treatment",
+                    "Coronary revascularisation",
+                    "Decompensated liver disease",
+                    "Deep vein thrombosis",
+                    "Diabetes mellitus",
+                    "End stage renal disease",
+                    "Non-AIDS defining malignancy (except non-invasive BCC or SCC)",
+                    "Peripheral arterial disease",
+                    "Pulmonary embolism",
+                    "Stroke"
+                  ],
+                  "size": 73,
+                  "id": "EventName",
+                  "label": "Event name",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "DateOfDiagnosis",
+                  "label": "Date of diagnosis",
+                  "type": "DateTime"
+                }
+              ],
+              "layoutRows": 3,
+              "rowSelectionInViewMode": true,
+              "id": "History.SNAE",
+              "label": "Serious Non-AIDS Events (SNAE)",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "BeforeTop",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "minimum": 1,
+              "precision": 3,
+              "scale": 0,
+              "id": "History.Framingham",
+              "label": "Framingham score",
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "History.Framingham",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.DateOfFramingham",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "minimum": 1,
+              "precision": 3,
+              "scale": 0,
+              "id": "History.DadScore",
+              "label": "DAD score",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "History.DadScore",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.DateOfDadScore",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "History.FraxMajor",
+              "label": "FRAX (Major fracture risk)",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "History.FraxMajor",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.DateOfFraxMajor",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "History.FraxHip",
+              "label": "FRAX (Hip fracture risk)",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "History.FraxHip",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.DateOfFraxHip",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "History",
+        "layoutShow": true,
+        "title": "History"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "Examination.Weight",
+              "label": "Weight",
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "Examination.Height",
+              "label": "Height",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "calculation": {
+                "paramFieldIDs": [
+                  "Examination.Height",
+                  "Examination.Weight"
+                ],
+                "type": "BMI"
+              },
+              "id": "Examination.BMI",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 200,
+              "precision": 3,
+              "scale": 0,
+              "id": "Examination.Waist",
+              "label": "Waist",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "minimumLength": 3,
+              "size": 7,
+              "id": "Examination.BloodPressure",
+              "label": "Blood pressure",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text",
+              "units": ""
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Lying",
+                "Sitting",
+                "Standing"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Examination.BloodPressure",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Examination.BPPosture",
+              "label": "BP posture",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "Examination.Temperature",
+              "label": "Temperature",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "degrees"
+            }
+          }
+        ],
+        "id": "Examination",
+        "layoutShow": true,
+        "title": "Examination"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "medicalGroupListType": "HIV_ASSESSMENT_CLINIC_TRIAL",
+                  "size": 100,
+                  "id": "TrialName",
+                  "label": "Trial name",
+                  "type": "MedicalGroupList"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateCommenced",
+                  "label": "Date commenced",
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateCeased",
+                  "label": "Date ceased/withdrawn",
+                  "type": "DateTime"
+                }
+              ],
+              "layoutRows": 3,
+              "rowSelectionInViewMode": true,
+              "id": "ClinicalTrials.ClinicalTrials",
+              "label": "Clinical trials",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ClinicalTrials",
+        "layoutShow": true,
+        "title": "Clinical Trials"
+      }
+    }
+  ],
+  "id": "Immunology.HIVAssessment.WebUI",
+  "layoutColumns": 3
+}

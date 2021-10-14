@@ -1,0 +1,70 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 40,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Squamous cell carcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Adenocarcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Adenoid basal carcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Adenosquamous carcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Cervical intraepithelial neoplasia"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Clear cell adenocarcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Glassy cell carcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Large cell carcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Lymphoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Melanoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Neuroendocrine tumour"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Papillary serous carcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Sarcoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Small cell carcinoma"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.CervicalCancer.Morphology",
+      "value": "Villoglandular adenocarcinoma"
+    }
+  ],
+  "valueSetID": "Cancer.CervicalCancer.Morphology"
+}

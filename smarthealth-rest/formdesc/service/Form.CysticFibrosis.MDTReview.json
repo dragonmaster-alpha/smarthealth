@@ -1,0 +1,663 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Coordinator",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Draft",
+          "Final"
+        ],
+        "size": 10,
+        "id": "ServiceRecordStatus",
+        "label": "Status",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 10,
+        "id": "MDTMeetingID",
+        "label": "MDT Meeting ID",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "MDTMeetingDate",
+        "label": "MDT meeting",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "New",
+          "Review"
+        ],
+        "size": 10,
+        "id": "DiscussionStatus",
+        "label": "Discussion status",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Reason",
+        "label": "Reason",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 9,
+        "scale": 0,
+        "id": "MeetingNumber",
+        "label": "Meeting number",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "Discussed",
+        "label": "Discussed",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Synopsis.PresentingClinician",
+              "label": "Presenting clinician",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "Synopsis.MDTLead",
+              "label": "MDT lead",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Member"
+            }
+          }
+        ],
+        "id": "Synopsis",
+        "layoutShow": true,
+        "title": "Synopsis"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Providers who participated in this review",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 20,
+                  "id": "Role",
+                  "label": "Role",
+                  "type": "Text"
+                }
+              ],
+              "description": "ProvidersWhoParticipated table replaces the Providers table. \n\t\t        This includes only providers recorded as having attended the meeting.",
+              "id": "HealthcareProviders.ProvidersWhoParticipated",
+              "label": "Providers who participated in this review",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 20,
+                  "id": "Role",
+                  "label": "Role",
+                  "type": "Text"
+                }
+              ],
+              "description": "Legacy table that records all providers included in the meeting.\n                This table is not used in service records since 2017.",
+              "id": "HealthcareProviders.Providers",
+              "label": "Healthcare providers attending the meeting",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "HealthcareProviders",
+        "layoutShow": true,
+        "title": "Healthcare providers attending the meeting"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "MDTMeeting.ClinicianToFollowUp",
+              "label": "Clinician to follow up with patient",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "MDTMeeting.Discussion",
+              "label": "Discussion",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 5000,
+              "id": "MDTMeeting.Plan",
+              "label": "Plan",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "MDTMeeting",
+        "layoutShow": true,
+        "title": "MDT Meeting"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Condition",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "ClinicalIndicators.PastConditions",
+              "label": "Past conditions",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Condition",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "ClinicalIndicators.CurrentConditions",
+              "label": "Current conditions",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "ClinicalIndicators.ExaminationFindings",
+              "label": "Examination findings",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "ClinicalIndicators.InvestigationsResults",
+              "label": "Investigations/results",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "ServiceRecord",
+                  "label": "Service Record",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 200,
+                  "id": "MedicationName",
+                  "label": "Medication",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 200,
+                  "id": "Directions",
+                  "label": "Directions",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 25,
+                  "id": "Indication",
+                  "label": "Indication",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "ClinicalIndicators.CurrentMedications",
+              "label": "Current medications",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ClinicalIndicators",
+        "layoutShow": true,
+        "title": "Clinical Indicators"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.MDTReview",
+  "layoutColumns": 3
+}

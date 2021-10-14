@@ -1,0 +1,55 @@
+{
+  "coded": true,
+  "codeLength": 9,
+  "extensible": true,
+  "length": 60,
+  "uri": "http://snomed.info/sct",
+  "values": [
+    {
+      "code": "119297000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Blood"
+    },
+    {
+      "code": "258450006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Cerebrospinal fluid"
+    },
+    {
+      "code": "119339001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Faeces"
+    },
+    {
+      "code": "418564007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Pleural fluid"
+    },
+    {
+      "code": "127460002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Pleural tissue"
+    },
+    {
+      "code": "11933400",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Sputum"
+    },
+    {
+      "code": "445405002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Surgical"
+    },
+    {
+      "code": "119376003",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Tissue"
+    },
+    {
+      "code": "122575003",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Urine"
+    }
+  ],
+  "valueSetID": "Cancer.Pathology.Sample"
+}

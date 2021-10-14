@@ -1,0 +1,3546 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "tabs": {
+        "tabs": [
+          {
+            "sections": [
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "precisionDay": true,
+                        "id": "Call.Scheduled",
+                        "label": "Scheduled",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "DateTime"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 12,
+                        "id": "Call.CallWindow",
+                        "label": "Call window",
+                        "layout": {
+                          "labelPosition": "Omit"
+                        },
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 20,
+                        "id": "Call.Phone",
+                        "label": "Phone",
+                        "layout": {
+                          "newLine": true
+                        },
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Patient",
+                          "Caregiver",
+                          "Patient or Caregiver"
+                        ],
+                        "size": 20,
+                        "id": "Call.IntendedRespondent",
+                        "label": "Intended respondent",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Answered by respondent",
+                          "Call received",
+                          "No answer",
+                          "Respondent not available",
+                          "Message left",
+                          "Call deferred",
+                          "Failed identity check"
+                        ],
+                        "size": 25,
+                        "id": "Call.Outcome",
+                        "label": "Outcome",
+                        "layout": {
+                          "newLine": true
+                        },
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Patient",
+                          "Caregiver"
+                        ],
+                        "size": 10,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Answered by respondent",
+                                  "Call received"
+                                ],
+                                "fieldID": "Call.Outcome"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "Call.Respondent",
+                        "label": "Respondent",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 40,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Caregiver"
+                                ],
+                                "fieldID": "Call.Respondent"
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "Call.caregiver",
+                        "label": "Caregiver",
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "editable": true,
+                        "options": [
+                          "Home",
+                          "Hospital",
+                          "Staying with family"
+                        ],
+                        "size": 25,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Answered by respondent",
+                                  "Call received"
+                                ],
+                                "fieldID": "Call.Outcome"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "Call.Location",
+                        "label": "Location",
+                        "layout": {
+                          "newLine": true,
+                          "skip": 1
+                        },
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Respondent to call back",
+                          "Call again"
+                        ],
+                        "size": 25,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Respondent not available",
+                                  "Message left"
+                                ],
+                                "fieldID": "Call.Outcome"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "Call.Action",
+                        "label": "Action",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "id": "Call.CurrentCallReminders",
+                        "label": "Current call reminders",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 100,
+                        "id": "Call.RecordingURL",
+                        "label": "Recording URL",
+                        "layout": {
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    }
+                  ],
+                  "id": "Call",
+                  "title": "Call"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "size": 500,
+                        "id": "NextCall.PatientActions",
+                        "label": "Patient intended actions",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precisionDay": true,
+                        "id": "NextCall.NextCall",
+                        "label": "Next call",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "DateTime"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Daily",
+                          "Twice a week",
+                          "Weekly",
+                          "Fortnightly",
+                          "Monthly",
+                          "On request"
+                        ],
+                        "size": 20,
+                        "id": "NextCall.Frequency",
+                        "label": "Frequency",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Selection"
+                      }
+                    }
+                  ],
+                  "id": "NextCall",
+                  "layoutShow": true,
+                  "title": "Next Call"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "description": "Tele-Care Guide from most recent treatment status",
+                        "id": "CareTeam.TelecareGuide",
+                        "label": "Tele-Care Guide",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Member"
+                      }
+                    },
+                    {
+                      "field": {
+                        "description": "Health Coach from most recent treatment status",
+                        "id": "CareTeam.Coach",
+                        "label": "Health Coach",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Member"
+                      }
+                    }
+                  ],
+                  "id": "CareTeam",
+                  "layoutShow": true,
+                  "title": "Care Team"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "id": "PaJR.PaJROffline",
+                        "label": "PaJR Offline",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precisionMinute": true,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "ReadOnly"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PaJR.PaJROffline",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PaJR.Submitted",
+                        "label": "Questionnaire submitted",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "DateTime"
+                      }
+                    },
+                    {
+                      "field": {
+                        "precision": 5,
+                        "scale": 0,
+                        "calculation": {
+                          "paramFieldIDs": [
+                            "ServiceDate",
+                            "PaJR.Submitted"
+                          ],
+                          "type": "DIFFERENCE_IN_MINUTES"
+                        },
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "ReadOnly"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PaJR.PaJROffline",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PaJR.duration",
+                        "label": "Call duration",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Number",
+                        "units": "minutes"
+                      }
+                    },
+                    {
+                      "field": {
+                        "description": "Flag to indicate that the questionnaire has changed since it was last submitted. The value is controlled by the UI.",
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "ReadOnly"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PaJR.PaJROffline",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PaJR.QuestionnaireChanged",
+                        "label": "Changed since last submit",
+                        "state": {
+                          "editState": "ReadOnly"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 40,
+                        "id": "PaJR.PaJRID",
+                        "label": "PaJR id",
+                        "state": {
+                          "editState": "Hidden",
+                          "viewStateHidden": true
+                        },
+                        "type": "Text"
+                      }
+                    }
+                  ],
+                  "id": "PaJR",
+                  "layoutShow": true,
+                  "title": "PaJR"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "size": 500,
+                        "id": "PostCall.TelecareGuideActions",
+                        "label": "Tele-care guide actions",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "id": "PostCall.NextCallReminders",
+                        "label": "Next call reminders",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    }
+                  ],
+                  "id": "PostCall",
+                  "layoutShow": true,
+                  "title": "Post Call"
+                }
+              }
+            ],
+            "title": "Call"
+          },
+          {
+            "sections": [
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "and": [
+                                  {
+                                    "fieldID": "Call.Respondent",
+                                    "testNotEmpty": true
+                                  },
+                                  {
+                                    "not": {
+                                      "fieldID": "PaJR.PaJROffline",
+                                      "testTrue": true
+                                    }
+                                  }
+                                ]
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q1a",
+                        "label": "1. {Do you/Does the patient} have any concerns today?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q1a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q1a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q1b",
+                        "label": "Details",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "layoutCheckBoxes": true,
+                        "multiple": true,
+                        "valueSetID": "Patientwatch.Classification",
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q1a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q1a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q1c",
+                        "label": "Classifications",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q1a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q2a",
+                        "label": "2. {Do you/Does the patient} have any concerns about any symptoms?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q2a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q2b",
+                        "label": "Please tell us how concerned you are about these symptoms",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "toolTip": "For example: How is this different or worse than usual?",
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "layoutCheckBoxes": true,
+                        "multiple": true,
+                        "options": [
+                          "Swelling of ankles or feet or weight gain of 1-2kg in 1-2 days",
+                          "Breathlessness",
+                          "Chest pain or tightness (more than five minutes of heart-type pain)",
+                          "Any significant pain",
+                          "Significant coughing, wheezing or coloured phlegm",
+                          "Unusual or heaving bleeding",
+                          "Feelings of weakness or unsteadiness, or any falls or collapses",
+                          "Fever, shivering, infection, diarrhoea or urinary problems",
+                          "Depression, mental health or behavioural issues",
+                          "Other very concerning symptoms"
+                        ],
+                        "size": 70,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q2a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q2c",
+                        "label": "Symptoms",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Breathlessness",
+                                  "Chest pain or tightness (more than five minutes of heart-type pain)",
+                                  "Unusual or heaving bleeding",
+                                  "Other very concerning symptoms"
+                                ],
+                                "fieldID": "PatientQuestionnaire.Q2c"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q2d",
+                        "label": "You have selected a potentially urgent medical issue. Do you wish to end the current call?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Excellent",
+                          "Very good",
+                          "Good",
+                          "Fair",
+                          "Poor",
+                          "Very poor"
+                        ],
+                        "size": 10,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "and": [
+                                  {
+                                    "fieldID": "PatientQuestionnaire.Q1a",
+                                    "testEnabled": true
+                                  },
+                                  {
+                                    "not": {
+                                      "fieldID": "PatientQuestionnaire.Q2d",
+                                      "testTrue": true
+                                    }
+                                  }
+                                ]
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q3a",
+                        "label": "3. Today, how would you say that {your/the patient\u0027s} overall health is?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q3a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q3b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Poor",
+                                  "Very poor"
+                                ],
+                                "fieldID": "PatientQuestionnaire.Q3a"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q3c",
+                        "label": "You have indicated that {you are/the patient is} in poor or very poor health. Do you wish to end the current call?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "and": [
+                                  {
+                                    "fieldID": "PatientQuestionnaire.Q3a",
+                                    "testEnabled": true
+                                  },
+                                  {
+                                    "not": {
+                                      "fieldID": "PatientQuestionnaire.Q3c",
+                                      "testTrue": true
+                                    }
+                                  }
+                                ]
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q4a",
+                        "label": "4. Since {you have/the patient has} come out of hospital, or our last call, have there been any changes in {your/their} health or healthcare?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q4a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q4b",
+                        "label": "Please tell us about these changes, including any services you needed",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q4a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q5a",
+                        "label": "5. Since leaving hospital, or our last call, {have you/has the patient} had any changes in prescriptions, over the counter medications, alcohol or other drug use, including smoking?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q5a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q5b",
+                        "label": "Please tell us about these changes",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "No new medications",
+                          "Understood",
+                          "Not understood"
+                        ],
+                        "size": 20,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q5a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q6a",
+                        "label": "6. If {you have/the patient has} been put on new medications, {do you/does the patient} understand what it is for and when to take it?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q6a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Not understood"
+                                ],
+                                "fieldID": "PatientQuestionnaire.Q6a"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q6b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q4a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q7a",
+                        "label": "7. {Do you/Does the patient} have any concerns about {your/their} medications?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q7a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q7b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "toolTip": "For example: ran out of a medication, have not filled a prescription, cannot afford to pay, have side effects",
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q4a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q8a",
+                        "label": "8. {Have you/Has the patient} any concerns or worries about the people who provide care for {you/them}, those closest to {you/them}, or worries about housing, finances or support?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q8a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q8b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Mild pain or discomfort",
+                          "Moderate pain or discomfort",
+                          "No pain or discomfort",
+                          "Severe pain or discomfort",
+                          "Very severe pain or discomfort",
+                          "Worst possible pain or discomfort"
+                        ],
+                        "size": 35,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q4a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Fair",
+                                  "Poor",
+                                  "Very poor"
+                                ],
+                                "fieldID": "PatientQuestionnaire.Q3a"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q9a",
+                        "label": "9. {Are you/Is the patient} experiencing any bodily pain or discomfort today?",
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q9a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q9a",
+                                "testMandatory": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q9b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "toolTip": "For example: When did it start? Where is it? Is it unusual for you to have pain?",
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Very severe pain or discomfort",
+                                  "Worst possible pain or discomfort"
+                                ],
+                                "fieldID": "PatientQuestionnaire.Q9a"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q9c",
+                        "label": "You have selected a potentially urgent medical issue. Do you wish to end the current call?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "and": [
+                                  {
+                                    "fieldID": "PatientQuestionnaire.Q4a",
+                                    "testEnabled": true
+                                  },
+                                  {
+                                    "not": {
+                                      "fieldID": "PatientQuestionnaire.Q9c",
+                                      "testTrue": true
+                                    }
+                                  },
+                                  {
+                                    "or": [
+                                      {
+                                        "equals": [
+                                          "Illness"
+                                        ],
+                                        "fieldID": "PatientQuestionnaire.Q1c"
+                                      },
+                                      {
+                                        "equals": [
+                                          "Depression, mental health or behavioural issues"
+                                        ],
+                                        "fieldID": "PatientQuestionnaire.Q2c"
+                                      },
+                                      {
+                                        "equals": [
+                                          "Fair",
+                                          "Poor",
+                                          "Very poor"
+                                        ],
+                                        "fieldID": "PatientQuestionnaire.Q3a"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q10a",
+                        "label": "10. Today, does {your/the patient\u0027s} health limit social activities?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "toolTip": "For example: going out, doing activities of enjoyment, visiting friends or close relatives",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q10a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q10b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q10a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q11a",
+                        "label": "11. Are {you/the patient}, {your/their} family and {your/their} caregivers coping with what has been happening in {your/their} life?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q11a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q11b",
+                        "label": "Please tell us as much as you wish, and if {you need/the patient needs} any help",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Most of the time",
+                          "None of the time",
+                          "Some of the time"
+                        ],
+                        "size": 20,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q10a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q12a",
+                        "label": "12. {Do you/Does the patient} feel so down in the dumps nothing can cheer {you/them} up, or do {you/they} feel very nervous or worried?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q12a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Most of the time",
+                                  "Some of the time"
+                                ],
+                                "fieldID": "PatientQuestionnaire.Q12a"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q12b",
+                        "label": "Please tell us as much information as you wish",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "equals": [
+                                  "Most of the time",
+                                  "Some of the time"
+                                ],
+                                "fieldID": "PatientQuestionnaire.Q12a"
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q13a",
+                        "label": "13. During the past month {have you/has the patient} often been bothered by feeling down, depressed or hopeless?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q13a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q13a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q13b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q13a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q14a",
+                        "label": "14. During the past month, {have you/has the patient} often been bothered by little interest or pleasure in doing things?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q14a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q14a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q14b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q13a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q15a",
+                        "label": "15. Is this something with which {you/they} would like help?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Mandatory"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q15a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q15b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "and": [
+                                  {
+                                    "fieldID": "PatientQuestionnaire.Q4a",
+                                    "testEnabled": true
+                                  },
+                                  {
+                                    "not": {
+                                      "fieldID": "PatientQuestionnaire.Q9c",
+                                      "testTrue": true
+                                    }
+                                  }
+                                ]
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q16a",
+                        "label": "16. Since our last call {have you/has the patient} accessed or needed any services?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "layoutCheckBoxes": true,
+                        "multiple": true,
+                        "valueSetID": "Patientwatch.Services",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q16b",
+                        "label": "Accessed, planned",
+                        "layout": {
+                          "labelPosition": "BeforeTop"
+                        },
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "layoutCheckBoxes": true,
+                        "multiple": true,
+                        "valueSetID": "Patientwatch.Services",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q16c",
+                        "label": "Accessed, unplanned",
+                        "layout": {
+                          "labelPosition": "BeforeTop"
+                        },
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "layoutCheckBoxes": true,
+                        "multiple": true,
+                        "valueSetID": "Patientwatch.Services",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q16d",
+                        "label": "Needed but not accessed",
+                        "layout": {
+                          "labelPosition": "BeforeTop"
+                        },
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "subheading": "Note: Community services includes physiotherapist, speech therapist, dietitian, pharmacist, community welfare, dentist, podiatrist"
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q16e",
+                        "label": "Details",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "subheading": "17. {Do you/Does the patient} feel {you/they} need any of the following services within the next few days? If so, is it available to {you/them}?"
+                    },
+                    {
+                      "field": {
+                        "valueSetID": "Patientwatch.ServiceNeeds",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q17a",
+                        "label": "Doctor or nurse",
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "valueSetID": "Patientwatch.ServiceNeeds",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q17a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q17b",
+                        "label": "Someone to take {you/them} out",
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "valueSetID": "Patientwatch.ServiceNeeds",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q17a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q17c",
+                        "label": "Help with cooking or cleaning",
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "valueSetID": "Patientwatch.ServiceNeeds",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q17a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q17d",
+                        "label": "Help with washing or dressing",
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "valueSetID": "Patientwatch.ServiceNeeds",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q17a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q17e",
+                        "label": "Someone to talk to",
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q17a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q17f",
+                        "label": "Tell us more about what you need that is not available",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "and": [
+                                  {
+                                    "fieldID": "PatientQuestionnaire.Q16a",
+                                    "testEnabled": true
+                                  },
+                                  {
+                                    "fieldID": "PatientQuestionnaire.Q8a",
+                                    "testTrue": true
+                                  }
+                                ]
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q18a",
+                        "label": "18. Since our last call, {have you/has the patient} had significant changes to people in {your/their} life?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q18a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q18b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q18a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q19a",
+                        "label": "19. {Do you/Does the patient} have any concerns regarding {your/their} home environment?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q19a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q19b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "layoutCheckBoxes": true,
+                        "multiple": true,
+                        "valueSetID": "Patientwatch.Classification",
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q19a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q19c",
+                        "label": "Classifications",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "ValueSet"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q8a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q20a",
+                        "label": "20. Are any of the following affecting {your/the patient\u0027s} day to day life?",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q20a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q20a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q20b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "layoutCheckBoxes": true,
+                        "multiple": true,
+                        "options": [
+                          "Utilities (electricity, water, gas)",
+                          "Housing",
+                          "Weather",
+                          "Safety",
+                          "Finances",
+                          "Food",
+                          "Transport or accessibility",
+                          "Other (please specify)"
+                        ],
+                        "size": 40,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "ReadOnly"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q20a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q20a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q20c",
+                        "label": "Areas",
+                        "layout": {
+                          "labelPosition": "BeforeTop"
+                        },
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Improve",
+                          "Stay more or less the same",
+                          "Get worse",
+                          "Get much worse",
+                          "Don\u0027t know"
+                        ],
+                        "size": 30,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q21a",
+                        "label": "21. Do you think {your/the patient\u0027s} overall health over the next few days will",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q21a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q21b",
+                        "label": "Please tell us why",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q22a",
+                        "label": "22. Since our last call {have you/has the patient} taken all {your/their} medication?",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q22a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q22a",
+                                "testFalse": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q22b",
+                        "label": "Please tell us why",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q23a",
+                        "label": "23. {Are you/Is the patient} eating, drinking and going to the toilet as normal today?",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q23a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q23a",
+                                "testFalse": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q23b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q24a",
+                        "label": "24. In the past 24 hours {have you/has the patient} been outdoors?",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q24a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q24b",
+                        "label": "Details",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q25a",
+                        "label": "25. In the past 24 hours {have you/has the patient} been physically active around the house for 30 minutes or more?",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q25a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q25b",
+                        "label": "Details",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q26a",
+                        "label": "26. {Have you/Has the patient} been sleeping well?",
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q26a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q26a",
+                                "testFalse": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q26b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "1 (worst)",
+                          "2",
+                          "3",
+                          "4",
+                          "5",
+                          "6",
+                          "7",
+                          "8",
+                          "9",
+                          "10 (best)"
+                        ],
+                        "size": 10,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q27a",
+                        "label": "27. Can you give a number between 1 and 10 to describe {your/the patient\u0027s} health today (1 being worst and 10 being the best)?",
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q27a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q27a",
+                                "testMandatory": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q27b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 5000,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q16a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "PatientQuestionnaire.Q28a",
+                        "label": "28. Is there anything else {you/the patient} would like to tell us? Please give as much information as you wish, including any positive things in {your/their} life since last call",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    }
+                  ],
+                  "id": "PatientQuestionnaire",
+                  "title": "Patient Questionnaire"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "options": [
+                          "Improve",
+                          "Stay more or less the same",
+                          "Get worse",
+                          "Get much worse",
+                          "Don\u0027t know"
+                        ],
+                        "size": 30,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "and": [
+                                  {
+                                    "fieldID": "PatientQuestionnaire.Q16a",
+                                    "testEnabled": true
+                                  },
+                                  {
+                                    "equals": [
+                                      "Caregiver"
+                                    ],
+                                    "fieldID": "Call.Respondent"
+                                  }
+                                ]
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "CaregiverQuestionnaire.Q29a",
+                        "label": "29. As the caregiver, do you think your overall health over the next few days will",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "CaregiverQuestionnaire.Q29a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "CaregiverQuestionnaire.Q29b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "CaregiverQuestionnaire.Q29a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "CaregiverQuestionnaire.Q30a",
+                        "label": "30. As the caregiver, do you have any concerns about yourself (personal, medical, social or other)?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "CaregiverQuestionnaire.Q30a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "CaregiverQuestionnaire.Q30b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "options": [
+                          "Excellent",
+                          "Very good",
+                          "Good",
+                          "Fair",
+                          "Poor",
+                          "Very poor"
+                        ],
+                        "size": 10,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "CaregiverQuestionnaire.Q29a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "CaregiverQuestionnaire.Q31a",
+                        "label": "31. As the caregiver, how would you rate your health today?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Selection"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "CaregiverQuestionnaire.Q31a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "CaregiverQuestionnaire.Q31b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "CaregiverQuestionnaire.Q29a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "CaregiverQuestionnaire.Q32a",
+                        "label": "32. As the caregiver, do you need more help than currently have?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 500,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "Hidden",
+                            "viewStateHidden": true
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "CaregiverQuestionnaire.Q32a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "CaregiverQuestionnaire.Q32b",
+                        "label": "Please tell us about this",
+                        "layout": {
+                          "labelPosition": "BeforeTop",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "Text"
+                      }
+                    }
+                  ],
+                  "id": "CaregiverQuestionnaire",
+                  "layoutShow": true,
+                  "title": "Caregiver"
+                }
+              },
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "ReadOnly"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PatientQuestionnaire.Q1a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "Evaluation.Q33a",
+                        "label": "33. As the operator, do you have any concerns about the patient or the caregiver today?",
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Boolean"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 5000,
+                        "fieldIf": {
+                          "elseState": {
+                            "clearValue": true,
+                            "editState": "ReadOnly"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "Evaluation.Q33a",
+                                "testEnabled": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "Evaluation.Q33b",
+                        "label": "Please write 1-2 sentences about today\u0027s call, regardless of the patient\u0027s responses. Include your impression of the patient\u0027s health today, be it negative or positive",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "state": {
+                          "editState": "Mandatory"
+                        },
+                        "type": "Text"
+                      }
+                    },
+                    {
+                      "field": {
+                        "layoutCheckBoxes": true,
+                        "multiple": true,
+                        "valueSetID": "Patientwatch.Classification",
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "Enabled"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "Evaluation.Q33a",
+                                "testDisabled": true
+                              },
+                              "then": {
+                                "clearValue": true,
+                                "editState": "Hidden",
+                                "viewStateHidden": true
+                              }
+                            },
+                            {
+                              "condition": {
+                                "fieldID": "Evaluation.Q33a",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Mandatory"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "Evaluation.Q33c",
+                        "label": "Classifications",
+                        "layout": {
+                          "labelPosition": "Above",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "type": "ValueSet"
+                      }
+                    }
+                  ],
+                  "id": "Evaluation",
+                  "layoutShow": true,
+                  "title": "Tele-care Guide Evaluation"
+                }
+              }
+            ],
+            "title": "Questionnaire"
+          },
+          {
+            "sections": [
+              {
+                "section": {
+                  "fieldsAndSections": [
+                    {
+                      "field": {
+                        "columns": [
+                          {
+                            "size": 40,
+                            "id": "ID",
+                            "label": "Issue ID",
+                            "state": {
+                              "editState": "Hidden",
+                              "viewStateHidden": true
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "options": [
+                              "STAT",
+                              "ASAP",
+                              "Urgent",
+                              "Routine"
+                            ],
+                            "size": 8,
+                            "id": "Priority",
+                            "label": "Priority",
+                            "state": {
+                              "editState": "Mandatory"
+                            },
+                            "type": "Selection"
+                          },
+                          {
+                            "size": 100,
+                            "id": "Classifications",
+                            "label": "Classifications",
+                            "layout": {
+                              "span": 2
+                            },
+                            "state": {
+                              "editState": "Mandatory"
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "size": 10,
+                            "description": "Question in the Questionnaire to which this issue relates. Should be a single number. (Previously could be multiple numbers.)",
+                            "id": "Questions",
+                            "label": "Question",
+                            "state": {
+                              "editState": "Mandatory"
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "size": 1000,
+                            "description": "Extract of the questions and answers to be displayed as a tool tip. Generated on the server.",
+                            "id": "QuestionToolTip",
+                            "label": "",
+                            "layout": {
+                              "labelPosition": "Above",
+                              "newLine": true,
+                              "spanLine": true
+                            },
+                            "state": {
+                              "editState": "Hidden",
+                              "viewStateHidden": true
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "options": [
+                              "Open",
+                              "Linked",
+                              "No further action"
+                            ],
+                            "size": 20,
+                            "id": "Status",
+                            "label": "Status",
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "Selection"
+                          },
+                          {
+                            "id": "ProblemAndAction",
+                            "label": "Problem and Action",
+                            "state": {
+                              "editState": "Hidden",
+                              "viewStateHidden": true
+                            },
+                            "type": "ServiceRecordReference"
+                          },
+                          {
+                            "precisionDay": true,
+                            "id": "ProblemDate",
+                            "label": "Problem date",
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "DateTime"
+                          },
+                          {
+                            "size": 100,
+                            "id": "Problem",
+                            "label": "Problem",
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "Text"
+                          },
+                          {
+                            "options": [
+                              "Open",
+                              "Closed"
+                            ],
+                            "size": 6,
+                            "id": "ProblemStatus",
+                            "label": "Problem status",
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "Selection"
+                          },
+                          {
+                            "options": [
+                              "High",
+                              "Medium",
+                              "Low"
+                            ],
+                            "size": 20,
+                            "id": "ProblemPriority",
+                            "label": "Problem priority",
+                            "state": {
+                              "editState": "ReadOnly"
+                            },
+                            "type": "Selection"
+                          }
+                        ],
+                        "fieldIf": {
+                          "elseState": {
+                            "editState": "ReadOnly"
+                          },
+                          "ifs": [
+                            {
+                              "condition": {
+                                "fieldID": "PaJR.PaJROffline",
+                                "testTrue": true
+                              },
+                              "then": {
+                                "editState": "Enabled"
+                              }
+                            }
+                          ]
+                        },
+                        "id": "Issues.Issues",
+                        "label": "Issues",
+                        "layout": {
+                          "fillHeight": true,
+                          "labelPosition": "Omit",
+                          "newLine": true,
+                          "spanLine": true
+                        },
+                        "sortable": true,
+                        "type": "Table"
+                      }
+                    },
+                    {
+                      "field": {
+                        "size": 40,
+                        "description": "Identifies the selected issue when creating a new problem and action",
+                        "id": "Issues.SelectedIssueID",
+                        "label": "Selected issue ID",
+                        "state": {
+                          "editState": "Hidden",
+                          "viewStateHidden": true
+                        },
+                        "type": "Text"
+                      }
+                    }
+                  ],
+                  "id": "Issues",
+                  "title": "Issues"
+                }
+              }
+            ],
+            "title": "Issues"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "PatientWatch.Questionnaire",
+  "layoutColumns": 3
+}

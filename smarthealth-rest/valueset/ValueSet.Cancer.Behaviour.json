@@ -1,0 +1,40 @@
+{
+  "coded": true,
+  "codeLength": 1,
+  "extensible": false,
+  "length": 26,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.Behaviour",
+  "values": [
+    {
+      "code": "0",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Behaviour",
+      "value": "Benign"
+    },
+    {
+      "code": "1",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Behaviour",
+      "value": "Uncertain"
+    },
+    {
+      "code": "2",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Behaviour",
+      "value": "In situ"
+    },
+    {
+      "code": "3",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Behaviour",
+      "value": "Malignant"
+    },
+    {
+      "code": "6",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Behaviour",
+      "value": "Malignant, metastatic site"
+    },
+    {
+      "code": "9",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Behaviour",
+      "value": "Malignant, uncertain site"
+    }
+  ],
+  "valueSetID": "Cancer.Behaviour"
+}

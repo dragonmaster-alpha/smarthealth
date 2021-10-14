@@ -1,0 +1,1081 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "displayType": "ServiceDate",
+        "id": "Operation",
+        "label": "Operation",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "precision": 2,
+        "scale": 0,
+        "calculation": {
+          "paramFieldIDs": [
+            "Operation",
+            "ServiceDate"
+          ],
+          "type": "DIFFERENCE_IN_DAYS"
+        },
+        "id": "DaysPostOperation",
+        "label": "Days post-operation",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Intraoperative (i.e. recognised intra-operatively)",
+          "Prior to discharge – early (\u003c\u003d7 days)",
+          "Prior to discharge - late (\u003e7 days)",
+          "Post-discharge - \u003c\u003d30 days post-op",
+          "Post-discharge - \u003e30 days post-op"
+        ],
+        "size": 50,
+        "id": "TimingOfComplication",
+        "label": "Timing of complication",
+        "layout": {
+          "newLine": true,
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Deceased",
+        "label": "Deceased",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "valueSetID": "Cancer.Surgery.ComplicationSeverity",
+        "id": "Severity",
+        "label": "Severity",
+        "layout": {
+          "alignTop": true,
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "options": [
+          "Antiemetics",
+          "Antipyretics",
+          "Analgesics",
+          "Diuretics",
+          "Electrolytes",
+          "Physiotherapy",
+          "Wound infections opened at bedside"
+        ],
+        "size": 35,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 1"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Grade1Treatment",
+        "label": "Treatment",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "multiple": true,
+        "options": [
+          "Antibiotics – oral",
+          "Antibiotics – intravenous",
+          "Blood transfusion",
+          "Total parenteral nutrition"
+        ],
+        "size": 30,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 2"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Grade2Treatment",
+        "label": "Treatment",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "options": [
+          "Surgical",
+          "Endoscopic",
+          "Laparoscopic",
+          "Radiological"
+        ],
+        "size": 30,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 3a",
+                  "Grade 3b"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "Intervention",
+        "label": "Intervention",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 3a",
+                  "Grade 3b"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "GradeDetails",
+        "label": "Details",
+        "layout": {
+          "newLine": true,
+          "span": 3
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "options": [
+          "Acute care ward",
+          "High dependency unit",
+          "Intensive care unit"
+        ],
+        "size": 30,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Grade 4a",
+                  "Grade 4b"
+                ],
+                "fieldID": "Severity"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "GradeCareRequired",
+        "label": "Care required",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "PresentAtDischarge",
+        "label": "Present at discharge",
+        "layout": {
+          "newLine": true,
+          "skip": 1
+        },
+        "toolTip": "complication is present at the time of discharge. This indicates the need for a follow-up visit to fully evaluate the complication",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "This cancer",
+          "Other causes and this cancer present",
+          "Other causes and no evidence of this cancer",
+          "Other causes and disease status not known or uncertain"
+        ],
+        "size": 60,
+        "id": "CauseOfDeath",
+        "label": "Cause of death",
+        "layout": {
+          "newLine": true,
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "DateOfDeath",
+        "label": "Date of death",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "AlreadyDeceased",
+        "label": "Already Deceased",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Cancer",
+          "Not cancer"
+        ],
+        "size": 60,
+        "id": "Constants",
+        "label": "Constants",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Complications.AbdominalPelvicCollection",
+              "label": "Abdominal/pelvic collection (\u003e3cm)",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.BloodTransfusion",
+              "label": "Blood transfusion",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "Complications.BloodTransfusionUnits",
+              "label": "Units",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.IntraoperativeBloodloss",
+              "label": "Intraoperative blood loss",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 0,
+              "id": "Complications.IntraoperativeBloodlossVolume",
+              "label": "Volume",
+              "type": "Number",
+              "units": "mL"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.LaparoscopicRoboticProcedureConvertedTolaparotomy",
+              "label": "Laparoscopic/robotic procedure converted to laparotomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.LaparoscopicRoboticProcedureWithOperatingTime",
+              "label": "Laparoscopic/robotic procedure with operating time \u003e300min",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.UnplannedProcedure",
+              "label": "Unplanned procedure",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Complications.UnplannedProcedureDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.PlannedProcedureNotCompleted",
+              "label": "Planned procedure not completed",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Complications.PlannedProcedureNotCompletedDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.UnplannedAdmissionToIcu",
+              "label": "Unplanned admission to ICU",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Complications.UnplannedAdmissionToIcuDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.UnplannedReturnToTheatre",
+              "label": "Unplanned return to theatre",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Complications.UnplannedReturnToTheatreDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.UnplannedReadmissionToHospital",
+              "label": "Unplanned readmission to hospital",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.LengthOfStay7Days",
+              "label": "Length of stay \u003e7 days",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.Lymphocyst",
+              "label": "Lymphocyst",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.Lymphoedema",
+              "label": "Lymphoedema",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.DeathWithin30DaysOfSurgery",
+              "label": "Death within 30 days of surgery",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.AnastomoticLeak",
+              "label": "Anastomotic leak",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.DelayedReturnOfNormalBowelFunction",
+              "label": "Delayed return of normal bowel function (\u003e7 days)",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Ileus",
+                "Small bowel obstruction",
+                "Large bowel obstruction"
+              ],
+              "size": 30,
+              "id": "Complications.DelayedReturnOfNormalBowelFunctionCause",
+              "label": "Cause",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.UrinaryRetention",
+              "label": "Urinary retention",
+              "layout": {
+                "alignTop": true,
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "multiple": true,
+              "options": [
+                "Lasting \u003d 7 days",
+                "Lasting \u003e7 days",
+                "Needing re-catheterisation with IDC",
+                "Needing intermittent self-catheterisation",
+                "Needing insertion of suprapubic catheter"
+              ],
+              "size": 50,
+              "id": "Complications.UrinaryRetentionCause",
+              "label": "Cause",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.OrganViscusVascularDamage",
+              "label": "Organ/viscus/vascular damage",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Large bowel",
+                "Small bowel",
+                "Ureter",
+                "Bladder",
+                "Spleen",
+                "Uterine perforation",
+                "Nerve",
+                "Vascular (arterial)",
+                "Vascular, (venous)"
+              ],
+              "size": 30,
+              "id": "Complications.OrganViscusVascularDamageComplications",
+              "label": "Complications",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Complications.OrganViscusVascularDamageDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.PostOperativeFistula",
+              "label": "Post-operative fistula",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Rectovaginal",
+                "Vesicovaginal",
+                "Ureterovaginal",
+                "Enterocutaneous"
+              ],
+              "size": 30,
+              "id": "Complications.PostOperativeFistulaComplication",
+              "label": "Complication",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.InfectionSepsis",
+              "label": "InfectionSepsis",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Complications.InfectionSepsisSite",
+              "label": "Site",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.WoundBreakdownDehiscence",
+              "label": "Wound breakdown/dehiscence",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Superficial abdominal wound - above rectus sheath",
+                "Deep abdominal wound",
+                "Vulval",
+                "Groin",
+                "Vaginal vault"
+              ],
+              "size": 60,
+              "id": "Complications.WoundBreakdownDehiscenceComplication",
+              "label": "Complication",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.Thromboembolism",
+              "label": "Thromboembolism",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Deep vein thrombosis below knee",
+                "deep vein thrombosis above knee",
+                "pulmonary embolus",
+                "superficial vein thrombosis"
+              ],
+              "size": 40,
+              "id": "Complications.ThromboembolismComplication",
+              "label": "Complication",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.OtherSurgicalComplications",
+              "label": "Other surgical complications",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Complications.OtherSurgicalComplicationsDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.AnaestheticComplications",
+              "label": "Anaesthetic complications",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Complications.AnaestheticComplicationsDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Complications.MedicalComplication",
+              "label": "Medical complication",
+              "layout": {
+                "alignTop": true,
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Cardiovascular",
+                "Respiratory",
+                "Neurological",
+                "Gastrointestinal",
+                "Renal"
+              ],
+              "size": 20,
+              "id": "Complications.MedicalComplicationComplications",
+              "label": "Complications",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Complications.MedicalComplicationeDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Complications",
+        "layoutShow": true,
+        "title": "Complications"
+      }
+    }
+  ],
+  "id": "Cancer.Gynaecological.Complication",
+  "layoutColumns": 3
+}

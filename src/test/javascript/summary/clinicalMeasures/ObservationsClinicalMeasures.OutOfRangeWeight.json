@@ -1,0 +1,554 @@
+[
+    {
+        "id": 1665,
+        "observationDate": {
+            "iso": "2019-04-20"
+        },
+        "observationType": "MinGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2019-04-20"
+            },
+            "serviceID": 11846,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 70
+    },
+    {
+        "id": 1664,
+        "observationDate": {
+            "iso": "2019-04-20"
+        },
+        "observationType": "MaxGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2019-04-20"
+            },
+            "serviceID": 11846,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 80
+    },
+    {
+        "id": 1662,
+        "observationDate": {
+            "iso": "2019-04-20"
+        },
+        "observationType": "Weight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2019-04-20"
+            },
+            "serviceID": 11846,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 81
+    },
+    {
+        "id": 1663,
+        "observationDate": {
+            "iso": "2019-04-20"
+        },
+        "observationType": "Height",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2019-04-20"
+            },
+            "serviceID": 11846,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 170
+    },
+    {
+        "id": 1661,
+        "observationDate": {
+            "iso": "2019-08-20"
+        },
+        "observationType": "MinGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2019-08-20"
+            },
+            "serviceID": 11845,
+            "serviceType": 132,
+            "summary": "d"
+        },
+        "valueNumber": 70
+    },
+    {
+        "id": 1660,
+        "observationDate": {
+            "iso": "2019-08-20"
+        },
+        "observationType": "MaxGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2019-08-20"
+            },
+            "serviceID": 11845,
+            "serviceType": 132,
+            "summary": "d"
+        },
+        "valueNumber": 80
+    },
+    {
+        "id": 1658,
+        "observationDate": {
+            "iso": "2019-08-20"
+        },
+        "observationType": "Weight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2019-08-20"
+            },
+            "serviceID": 11845,
+            "serviceType": 132,
+            "summary": "d"
+        },
+        "valueNumber": 80
+    },
+    {
+        "id": 1659,
+        "observationDate": {
+            "iso": "2019-08-20"
+        },
+        "observationType": "Height",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2019-08-20"
+            },
+            "serviceID": 11845,
+            "serviceType": 132,
+            "summary": "d"
+        },
+        "valueNumber": 170
+    },
+    {
+        "id": 1654,
+        "observationDate": {
+            "iso": "2020-02-20"
+        },
+        "observationType": "Weight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-02-20"
+            },
+            "serviceID": 11844,
+            "serviceType": 132,
+            "summary": "r"
+        },
+        "valueNumber": 75
+    },
+    {
+        "id": 1656,
+        "observationDate": {
+            "iso": "2020-02-20"
+        },
+        "observationType": "MaxGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-02-20"
+            },
+            "serviceID": 11844,
+            "serviceType": 132,
+            "summary": "r"
+        },
+        "valueNumber": 80
+    },
+    {
+        "id": 1655,
+        "observationDate": {
+            "iso": "2020-02-20"
+        },
+        "observationType": "Height",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-02-20"
+            },
+            "serviceID": 11844,
+            "serviceType": 132,
+            "summary": "r"
+        },
+        "valueNumber": 170
+    },
+    {
+        "id": 1657,
+        "observationDate": {
+            "iso": "2020-02-20"
+        },
+        "observationType": "MinGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-02-20"
+            },
+            "serviceID": 11844,
+            "serviceType": 132,
+            "summary": "r"
+        },
+        "valueNumber": 70
+    },
+    {
+        "id": 1653,
+        "observationDate": {
+            "iso": "2020-08-20"
+        },
+        "observationType": "MinGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-08-20"
+            },
+            "serviceID": 11843,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 70
+    },
+    {
+        "id": 1652,
+        "observationDate": {
+            "iso": "2020-08-20"
+        },
+        "observationType": "MaxGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-08-20"
+            },
+            "serviceID": 11843,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 80
+    },
+    {
+        "id": 1650,
+        "observationDate": {
+            "iso": "2020-08-20"
+        },
+        "observationType": "Weight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-08-20"
+            },
+            "serviceID": 11843,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 70
+    },
+    {
+        "id": 1651,
+        "observationDate": {
+            "iso": "2020-08-20"
+        },
+        "observationType": "Height",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-08-20"
+            },
+            "serviceID": 11843,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 170
+    },
+    {
+        "id": 1643,
+        "observationDate": {
+            "iso": "2020-08-20T17:01+10"
+        },
+        "observationType": "Height",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T17:01+10"
+            },
+            "serviceID": 11842,
+            "serviceType": 1,
+            "summary": "a"
+        },
+        "valueNumber": 170
+    },
+    {
+        "id": 1644,
+        "observationDate": {
+            "iso": "2020-08-20T17:01+10"
+        },
+        "observationType": "Weight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T17:01+10"
+            },
+            "serviceID": 11842,
+            "serviceType": 1,
+            "summary": "a"
+        },
+        "valueNumber": 70
+    },
+    {
+        "id": 1642,
+        "observationDate": {
+            "iso": "2020-08-20T17:01+10"
+        },
+        "observationType": "BloodPressureLying",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T17:01+10"
+            },
+            "serviceID": 11842,
+            "serviceType": 1,
+            "summary": "a"
+        },
+        "valueString": "100/2"
+    },
+    {
+        "id": 1646,
+        "observationDate": {
+            "iso": "2020-08-20T17:01+10"
+        },
+        "observationType": "BloodPressureSitting",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T17:01+10"
+            },
+            "serviceID": 11842,
+            "serviceType": 1,
+            "summary": "a"
+        },
+        "valueString": "100/0"
+    },
+    {
+        "id": 1648,
+        "observationDate": {
+            "iso": "2020-08-20T17:01+10"
+        },
+        "observationType": "BloodPressureStanding",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T17:01+10"
+            },
+            "serviceID": 11842,
+            "serviceType": 1,
+            "summary": "a"
+        },
+        "valueString": "100/1"
+    },
+    {
+        "id": 1645,
+        "observationDate": {
+            "iso": "2020-08-20T17:01+10"
+        },
+        "observationType": "Pulse",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T17:01+10"
+            },
+            "serviceID": 11842,
+            "serviceType": 1,
+            "summary": "a"
+        },
+        "valueNumber": 60
+    },
+    {
+        "id": 1649,
+        "observationDate": {
+            "iso": "2020-08-20T17:01+10"
+        },
+        "observationType": "Temperature",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T17:01+10"
+            },
+            "serviceID": 11842,
+            "serviceType": 1,
+            "summary": "a"
+        },
+        "valueNumber": 37
+    },
+    {
+        "id": 1647,
+        "observationDate": {
+            "iso": "2020-08-20T17:01+10"
+        },
+        "observationType": "SPO2",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-20T17:01+10"
+            },
+            "serviceID": 11842,
+            "serviceType": 1,
+            "summary": "a"
+        },
+        "valueNumber": 10
+    },
+    {
+        "id": 1667,
+        "observationDate": {
+            "iso": "2020-08-30"
+        },
+        "observationType": "Height",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-08-30"
+            },
+            "serviceID": 11847,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 170
+    },
+    {
+        "id": 1666,
+        "observationDate": {
+            "iso": "2020-08-30"
+        },
+        "observationType": "Weight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-08-30"
+            },
+            "serviceID": 11847,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 69
+    },
+    {
+        "id": 1668,
+        "observationDate": {
+            "iso": "2020-08-30"
+        },
+        "observationType": "MaxGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-08-30"
+            },
+            "serviceID": 11847,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 80
+    },
+    {
+        "id": 1669,
+        "observationDate": {
+            "iso": "2020-08-30"
+        },
+        "observationType": "MinGoalWeight",
+        "patientID": 41,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "program": "IMMUNOLOGY",
+            "serviceDate": {
+                "iso": "2020-08-30"
+            },
+            "serviceID": 11847,
+            "serviceType": 132,
+            "summary": "a"
+        },
+        "valueNumber": 70
+    }
+]

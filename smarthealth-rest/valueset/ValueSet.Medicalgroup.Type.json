@@ -1,0 +1,65 @@
+{
+  "coded": true,
+  "codeLength": 4,
+  "extensible": false,
+  "length": 32,
+  "uri": "http://www.abs.gov.au/ANZSCO",
+  "values": [
+    {
+      "code": "8601",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Aged Care Residential"
+    },
+    {
+      "code": "853",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Allied Health"
+    },
+    {
+      "code": "8531",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Dental"
+    },
+    {
+      "code": "8511",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "General Practice"
+    },
+    {
+      "code": "8401",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Hospital"
+    },
+    {
+      "code": "8402",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Mental Health Hospital"
+    },
+    {
+      "code": "8520",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Pathology and Diagnostic Imaging"
+    },
+    {
+      "code": "4271",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Pharmacy"
+    },
+    {
+      "code": "8533",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Physiotherapy"
+    },
+    {
+      "code": "860",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Residential Care"
+    },
+    {
+      "code": "8512",
+      "codeSet": "http://www.abs.gov.au/ANZSCO",
+      "value": "Specialist"
+    }
+  ],
+  "valueSetID": "Medicalgroup.Type"
+}

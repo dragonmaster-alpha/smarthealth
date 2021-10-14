@@ -1,0 +1,276 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "InfectiousDiseasesAssessment.InfectiousDiseasesAssessmentService",
+              "label": "Date of last assessment",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Condition",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "InfectiousDiseasesAssessment.PrimaryDiagnoses",
+              "label": "Primary diagnoses",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "InfectiousDiseasesAssessment",
+        "layoutShow": true,
+        "title": "Infectious Diseases Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Amoxicillin",
+                    "Amoxycillin - Clavulanic acid",
+                    "Ampicillin sodium",
+                    "Azithromycin",
+                    "Benzylpenicillin sodium",
+                    "Caspofungin acetate",
+                    "Cefepime hydrochloride",
+                    "Cefotaxime sodium",
+                    "Ceftazidime",
+                    "Ceftriaxone sodium",
+                    "Cephalexin",
+                    "Cephazolin sodium",
+                    "Ciprofloxacin",
+                    "Clarithromycin",
+                    "Clindamycin",
+                    "Daptomycin",
+                    "Doxycycline",
+                    "Ertapenem sodium",
+                    "Ethambutol hydrochloride",
+                    "Flucloxacillin",
+                    "Fluconazole",
+                    "Foscarnet",
+                    "Fucidin",
+                    "Ganciclovir",
+                    "Gentamicin",
+                    "Isoniazid",
+                    "Lincomycin hydrochloride",
+                    "Linezolid",
+                    "Meropenem",
+                    "Moxifloxacin hydrochlorid",
+                    "Piperacillin - Tazobactam",
+                    "Posaconazole",
+                    "Procaine penicillin",
+                    "Pyrazinamide (not in MIMS)",
+                    "Rifabutin",
+                    "Rifampicin",
+                    "Teicoplanin",
+                    "Ticarcillin - Clavulanic acid",
+                    "Valaciclovir",
+                    "Vancomycin hydrochloride",
+                    "Voriconazole"
+                  ],
+                  "size": 30,
+                  "id": "Medication",
+                  "label": "Medication",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Ceased",
+                    "Changed",
+                    "Prescribed",
+                    "Unchanged"
+                  ],
+                  "size": 10,
+                  "id": "ChangeType",
+                  "label": "Change type",
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Adverse reaction",
+                    "Ineffective",
+                    "No longer required",
+                    "Non-compliance",
+                    "Side effects"
+                  ],
+                  "size": 25,
+                  "id": "ChangeReason",
+                  "label": "Change reason",
+                  "type": "Selection"
+                },
+                {
+                  "size": 100,
+                  "id": "Strength",
+                  "label": "Strength",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 25,
+                  "id": "Dose",
+                  "label": "Dose",
+                  "type": "Text"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "12 hourly",
+                    "2 hourly",
+                    "3 times a day",
+                    "3 times a week",
+                    "4 hourly",
+                    "4 times a day",
+                    "6 hourly",
+                    "8 hourly",
+                    "Alternate days",
+                    "As needed",
+                    "Before bed",
+                    "Daily",
+                    "Every 3 weeks",
+                    "Fortnightly",
+                    "In the evening",
+                    "In the morning",
+                    "Midday",
+                    "Monthly",
+                    "Twice a day",
+                    "Twice weekly",
+                    "Weekly"
+                  ],
+                  "size": 25,
+                  "id": "Frequency",
+                  "label": "Frequency",
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "InfectiousDiseasesCarePlan.Treatment",
+              "label": "Treatment",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "InfectiousDiseasesCarePlan",
+        "layoutShow": true,
+        "title": "Infectious Diseases Care Plan"
+      }
+    }
+  ],
+  "id": "Summary.InfectiousDiseasesSummary.WebUI",
+  "layoutColumns": 2
+}

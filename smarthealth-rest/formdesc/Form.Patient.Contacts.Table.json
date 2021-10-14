@@ -1,0 +1,57 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 100,
+            "id": "givenName",
+            "label": "Given Name",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text",
+            "valuePath": "name.givenName"
+          },
+          {
+            "size": 100,
+            "id": "familyName",
+            "label": "Family Name",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text",
+            "valuePath": "name.familyName"
+          },
+          {
+            "size": 100,
+            "id": "relationship",
+            "label": "Relationship",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "id": "headOfFamily",
+            "label": "Head of Family",
+            "type": "Boolean"
+          }
+        ],
+        "id": "contacts",
+        "label": "Contacts",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Patient.Contacts.Table.WebUI",
+  "layoutColumns": 1
+}

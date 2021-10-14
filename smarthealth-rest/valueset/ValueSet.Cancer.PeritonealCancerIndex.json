@@ -1,0 +1,30 @@
+{
+  "coded": true,
+  "codeLength": 1,
+  "extensible": false,
+  "length": 29,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.PeritonealCancerIndex",
+  "values": [
+    {
+      "code": "0",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.PeritonealCancerIndex",
+      "value": "0 - no tumour"
+    },
+    {
+      "code": "1",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.PeritonealCancerIndex",
+      "value": "1 - \u003c0.5cm"
+    },
+    {
+      "code": "2",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.PeritonealCancerIndex",
+      "value": "2 - 0.5 to 5cm"
+    },
+    {
+      "code": "3",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.PeritonealCancerIndex",
+      "value": "3 - \u003e5cm or confluent nodules"
+    }
+  ],
+  "valueSetID": "Cancer.PeritonealCancerIndex"
+}

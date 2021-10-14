@@ -1,0 +1,914 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "TransplantReferral.DialysisStartDate",
+              "label": "Commenced dialysis",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "TransplantReferral.InitialAppointmentDate",
+              "label": "Initial appointment date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "TransplantReferral.ReferralDate",
+              "label": "Referral date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "TransplantReferral.ReferringHospital",
+              "label": "Referring hospital",
+              "type": "MedicalGroup"
+            }
+          }
+        ],
+        "id": "TransplantReferral",
+        "layoutShow": true,
+        "title": "Transplant Referral"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Advanced GN (unclassified \u003d end stage)",
+                "Amyloid disease",
+                "Analgesic nephropathy",
+                "Atheroembolic disease (cholesterol emboli)",
+                "Balkan nephropathy",
+                "Bilateral renal artery stenosis",
+                "Bladder neck obstruction (incl. prostatomegaly)",
+                "Cadmium toxicity",
+                "Calcineurin Inhibitor Toxicity",
+                "Calculi",
+                "Congenital renal hypoplasia and dysplasia",
+                "Cortical necrosis",
+                "Cystinosis",
+                "Diabetes - Type 1 (insulin dependent)",
+                "Diabetes - Type 2 (insulin requiring)",
+                "Diabetes - Type 2 (non-insulin requiring)",
+                "Extra and intra capillary GN (extensive crescents - clinically rapidly progressive)",
+                "Familial GN",
+                "Focal and segmental proliferative GN (including focal necrotising)",
+                "Focal sclerosing GN (including hyalinosis)",
+                "GN other",
+                "GN with systemic disease",
+                "Goodpasture\u0027s syndrome with linear IgG and lung haemorrhage",
+                "Gout",
+                "Haemolytic uraemic syndrome",
+                "Henoch-Schonlein purpura",
+                "Infantile/juvenile polycystic kidney disease",
+                "Interstitial nephritis",
+                "Lead nephropathy",
+                "Light chain nephropathy (benign)",
+                "Lithium toxicity",
+                "Loss of single kidney",
+                "Medullary cystic disease",
+                "Megaureter",
+                "Membranous GN",
+                "Mesangial proliferative (IgA+ positive)",
+                "Mesangial proliferative (IgA- negative)",
+                "Mesangial proliferative (no I.F. studies)",
+                "Mesangiocapillary GN with intramembranous deposits (dense deposit disease)",
+                "Mesangiocapillary GN with subendothelial deposits (double contour)",
+                "Microscopic Polyarteritis",
+                "Neuropathic bladder",
+                "Non-obstructed dilated bladder and ureters (megacystitis - megaureter)",
+                "Obstructed megaureter",
+                "Obstructive nephropathy",
+                "Other lower urinary tract abnormalities (with secondary reflux)",
+                "Oxalosis",
+                "Paraproteinaemia (including multiple myeloma)",
+                "Pelvi-ureteric junction obstruction",
+                "Polycystic kidney disease",
+                "Post partum nephropathy",
+                "Posterior urethral valves",
+                "Presumed GN, type undefined histologically (no biopsy)",
+                "Primary focal sclerosing GN or focal glomerular sclerosis",
+                "Proliferative GN with linear IgG - no lung haemorrhage",
+                "Pyelonephritis",
+                "Reflux nephropathy",
+                "Renal cell carcinoma (GRAWITZ)",
+                "Renal tuberculosis",
+                "Renal vascular disease - type unspecified",
+                "Renal vascular disease due to hypertension (nephrosclerosis) (NO primary renal disease)",
+                "Renal vascular disease due to malignant hypertension (NO primary renal disease)",
+                "SLE",
+                "Sarcoidosis",
+                "Scleroderma",
+                "Secondary focal sclerosing GN",
+                "Spina bifida or myelomeningocoele",
+                "Transitional cell carcinoma of urinary tract",
+                "Uncertain diagnosis",
+                "Ureteric obstructive nephropathy",
+                "Wegener\u0027s Granulomatosis"
+              ],
+              "size": 90,
+              "id": "History.PrimaryRenalDisease",
+              "label": "Primary renal disease",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "A negative",
+                "A positive",
+                "AB negative",
+                "AB positive",
+                "B negative",
+                "B positive",
+                "O negative",
+                "O positive"
+              ],
+              "size": 15,
+              "id": "History.BloodGroup",
+              "label": "Blood Group",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "History.HLAA",
+              "label": "HLA-A",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "History.HLAB",
+              "label": "HLA-B",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "History.HLADR",
+              "label": "HLA-DR",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "History.DSA",
+              "label": "DSA",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precision": 1,
+              "scale": 0,
+              "id": "History.PreviousGrafts",
+              "label": "Previous grafts",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "id": "History.PreviousTransfusions",
+              "label": "Previous transfusions",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "History.UrologicalIssues",
+              "label": "Urological issues",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "History.UrologicalIssues",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "History.UrologicalIssuesDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Condition",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "History.HistoryRelevantToTransplantation",
+              "label": "History relevant to transplantation",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "History",
+        "layoutShow": true,
+        "title": "History"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 20,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "toolTip": "\u003chtml\u003e\n\t\t\t\t\t\u003cul\u003e\n\t\t\t\t\t\t\u003cli\u003eCardiac echo - Review annually\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eCoronary angiogram - Review if indicated\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eDuplex carotids - Review biennially\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eECG - Review annually\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eStress test - Review biennially\u003c/li\u003e\n\t\t\t\t\t\u003c/ul\u003e\n\t\t\t\t\u003c/html\u003e",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "Details",
+                  "label": "Details",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "AssessmentSection.Cardiac",
+              "label": "Cardiac",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 35,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "toolTip": "\u003chtml\u003e\n\t\t\t\t\u003cul\u003e\n\t\t\t\t\u003cli\u003eChest X-ray - Review annually\u003c/li\u003e\n\t\t\t\t\u003cli\u003eCystoscopy and retrograde pyelogram - Review 5 yearly if anuric\u003c/li\u003e\t\t\t\t\n\t\t\t\t\u003cli\u003eDental review  - Review annually\u003c/li\u003e\n\t\t\t\t\u003cli\u003eDEXA scan - Review biennally\u003c/li\u003e\t\t\t\t\n\t\t\t\t\u003cli\u003eMammogram - Review biennially if \u003e40 years old\u003c/li\u003e\n\t\t\t\t\u003cli\u003ePap Smear - Review biennially\u003c/li\u003e\t\t\t\t\n\t\t\t\t\u003cli\u003ePSA - Review annually if \u003e50 years old\u003c/li\u003e\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\u003cli\u003eRenal CT - Review 3 to 5 yearly\u003c/li\u003e\t\t\t\t\n\t\t\t\t\u003cli\u003eSurgical review - Review biennially unless clinically indicated\u003c/li\u003e\n\t\t\t\t\u003c/ul\u003e\n\t\t\t\u003c/html\u003e",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "Result",
+                  "label": "Result",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "AssessmentSection.ClinicalReviews",
+              "label": "Clinical Reviews",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "Weight",
+                  "label": "Weight",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Number",
+                  "units": "kg"
+                },
+                {
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "Height",
+                  "label": "Height",
+                  "type": "Number",
+                  "units": "cm"
+                },
+                {
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "Waist",
+                  "label": "Waist",
+                  "type": "Number",
+                  "units": "cm"
+                },
+                {
+                  "precision": 4,
+                  "scale": 1,
+                  "id": "BMI",
+                  "label": "BMI",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "AssessmentSection.Anthropometry",
+              "label": "Anthropometry",
+              "layout": {
+                "labelPosition": "Above",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "Results",
+                  "label": "Result",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "AssessmentSection.TissueTyping",
+              "label": "Tissue typing",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "CMV",
+                    "EBV",
+                    "HIV",
+                    "Hep B",
+                    "Hep C",
+                    "Herpes",
+                    "MRSA",
+                    "Mantoux",
+                    "Strongyloides",
+                    "Syphilis",
+                    "Toxoplasmosis",
+                    "Urine M/C/S",
+                    "Vancomycin-resistant enterococci",
+                    "Varicella-zoster virus"
+                  ],
+                  "size": 35,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "toolTip": "\u003chtml\u003e\n\t\t\t\t\t\u003cul\u003e\n\t\t\t\t\t\t\u003cli\u003eVaricella-zoster virus - Review 6 monthly, not required if IgG +\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eMRSA - Review initially and then at time of transplant\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eVancomycin-resistant enterococci  - Review initially and then at time of transplant\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eUrine M/C/S - Review annually\u003c/li\u003e\n\t\t\t\t\t\u003c/ul\u003e\n\t\t\t\t\u003c/html\u003e",
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "options": [
+                    "Negative",
+                    "Positive"
+                  ],
+                  "size": 10,
+                  "id": "Result",
+                  "label": "Result",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                }
+              ],
+              "id": "AssessmentSection.MicrobiologicalStudies",
+              "label": "Microbiological studies",
+              "layout": {
+                "labelPosition": "Above",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "AT3",
+                    "Anti-cardiolipin antibodies",
+                    "Factor V Hyperhomocysteinemia",
+                    "Leiden",
+                    "Lupus anticoagulant",
+                    "Protein C",
+                    "Protein S",
+                    "Prothrombin gene"
+                  ],
+                  "size": 30,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "options": [
+                    "Negative",
+                    "Positive"
+                  ],
+                  "size": 10,
+                  "id": "Result",
+                  "label": "Result",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                }
+              ],
+              "id": "AssessmentSection.ThrombophillsScreen",
+              "label": "Thrombophilia Screen",
+              "layout": {
+                "labelPosition": "Above",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 30,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "toolTip": "\u003chtml\u003e\n\t\t\t\t\u003cul\u003e\n\t\t\t\t\t\u003cli\u003eFaecal occult blood test - Review if \u003e50 years old, if PR bleed or family history of bowel cancer\u003c/li\u003e\n\t\t\t\t\t\u003cli\u003eFasting BSL - Review 6 monthly, including OGTT if elevated (not required for DM)\u003c/li\u003e\n\t\t\t\t\t\u003cli\u003eHbA1C - Review annually, or every 3 months if known diabetic\u003c/li\u003e\n\t\t\t\t\t\u003cli\u003eLipids - Review 6 monthly\u003c/li\u003e\n\t\t\t\t\u003c/ul\u003e\n\t\t\t\u003c/html\u003e",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "Result",
+                  "label": "Result",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "fixedRows": true,
+              "id": "AssessmentSection.OtherPathology",
+              "label": "Other Pathology",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "ABO Anti-A1",
+                    "ABO Anti-A2",
+                    "ABO Anti-B1",
+                    "ABO Anti-B2",
+                    "DSA"
+                  ],
+                  "size": 20,
+                  "id": "Test",
+                  "label": "Test",
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "maximum": 20000,
+                  "minimum": 500,
+                  "precision": 5,
+                  "scale": 0,
+                  "id": "Result",
+                  "label": "Result",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "AssessmentSection.Antibodies",
+              "label": "Antibodies",
+              "layout": {
+                "labelPosition": "Above",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "AssessmentSection",
+        "layoutShow": true,
+        "title": "Assessment Section"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 500,
+              "id": "Notes.PatientSpecificIssues",
+              "label": "Patient specific issues",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Notes.SurgicalIssues",
+              "label": "Surgical issues",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Notes",
+        "layoutShow": true,
+        "title": "Notes"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "TransplantPlan.Basiliximab",
+              "label": "Basiliximab",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "TransplantPlan.Immunosuppressio",
+              "label": "Immunosuppression",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "TransplantPlan.Desensitisation",
+              "label": "Desensitisation",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "TransplantPlan.Details",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "TransplantPlan",
+        "layoutShow": true,
+        "title": "Transplant Plan"
+      }
+    }
+  ],
+  "id": "Renal.TransplantAssessment",
+  "layoutColumns": 2
+}

@@ -1,0 +1,93 @@
+@import './variable';
+
+/**
+ * General state rules
+ *
+ * @author Uditha 18/09/2018
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2018
+ */
+.is-abnormal {
+  color: $p-invalid-color;
+  font-weight: bold;
+}
+
+.is-buttons-with-gaps {
+  button {
+    &:not(:last-child) {
+      margin-right: 0.4rem;
+    }
+  }
+}
+
+.is-clear-left {
+  clear: left;
+}
+
+.is-display {
+  display: block;
+}
+
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.is-error {
+  color: red;
+}
+
+.is-field-hover {
+  &:hover {
+    border-color: $p-field-border-hover-color;
+  }
+}
+
+.is-full-width {
+  width: 100%;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-hide {
+  visibility: hidden;
+}
+
+.is-invalid {
+  border: 1px solid $p-invalid-color;
+}
+
+.is-nowrap {
+  white-space: nowrap;
+}
+
+.is-overflow-auto {
+  overflow: auto;
+}
+
+.is-selected {
+  background-color: lightblue;
+}
+
+.is-small-icon {
+  color: $colour-primary-blue;
+  font-size: 120%;
+  padding-right: 0.2em;
+}
+
+.is-success {
+  color: green;
+}
+
+.is-textWrapWithLineBreak {
+  white-space: pre-wrap;
+}
+
+.is-unread {
+  color: red;
+}
+
+.is-warning {
+  color: orange;
+}

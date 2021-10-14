@@ -1,0 +1,35 @@
+{
+  "data": {
+    "ID": "f1f21095-a057-4190-8084-72e63c57d5ad",
+    "ImmunisationType": {
+      "conceptID": 333521006,
+      "text": "Anthrax vaccine"
+    },
+    "Patient": 42,
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "ServiceDate": {
+      "iso": "2020-08-26T16:17+10"
+    },
+    "SetID": "e5f9cfaa-8ae3-493b-bd63-5e63c5194180",
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2020-08-26T16:17+10"
+    },
+    "serviceID": 8263,
+    "serviceType": 100,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

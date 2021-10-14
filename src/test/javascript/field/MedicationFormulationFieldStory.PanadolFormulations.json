@@ -1,0 +1,275 @@
+[
+    {
+        "brand": "Panadol Tablets",
+        "cmiHTML": false,
+        "composition": "Paracetamol; K sorbate; white scored f-c",
+        "dosage": "Admin with water, other fluid every 4-6 hrs as needed. Use lowest effective dose for shortest poss duration. Adults, children > 12 yrs: 500-1000 mg (1-2 tabs); max 4 g (8 tabs)/day. Children 7-12 yrs: 250-500 mg (1/2-1 tab); max 2 g (4 tabs)/day",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "D",
+            "text": "May be taken with or without food."
+        },
+        "formulationCode": 1,
+        "formulationType": "Tablets",
+        "generics": {
+            "gencode": 1951,
+            "generics": "Paracetamol"
+        },
+        "glutenFree": true,
+        "id": 39101,
+        "prescriptionOnly": false,
+        "prescrtiptionText": "Unscheduled: 12's, 20's; S2: 50's, 100's",
+        "product": {
+            "adverseReactions": "Very rare: thrombocytopenia, cutaneous hypersensitivity (incl rash, SCAR), anaphylaxis, bronchospasm, hepatic dysfunction",
+            "consumerMedicineInformation": false,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Coumarins eg warfain; chloramphenicol; drugs affecting gastric emptying eg metoclopramide, propantheline, anticholinergic antidepressants, narcotic analgesics; hepatotoxics; liver microsomal enzyme inducers eg alcohol, anticonvulsants; probenecid; colestyramine (within 1 hr); other paracetamol containing products",
+            "fullPI": {
+                "fullPICode": 2164,
+                "productCode": 391
+            },
+            "precautions": "Hepatic, renal impairment; persistent symptoms; > recommended dose; prolonged use (> a few days in adults, > 48 hrs in children 7-17 yrs); glutathione depletion eg severe malnourishment, anorexia, low BMI, chronic heavy alcoholic use, sepsis; aspirin, other NSAID sensitivity (incr bronchospasm risk); children < 7 yrs (tabs, Mini Caps not recommended), < 10 yrs (suppositories not recommended)",
+            "pregnancyCode": "A",
+            "pregnancyTextExists": false,
+            "product": "Panadol",
+            "productCode": 391,
+            "productSort": "Panadol",
+            "productTagFree": "Panadol",
+            "s11": false,
+            "section": 4,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "B",
+            "uses": "Analgesic, antipyretic. Temporary relief of pain (incl period, sinus), discomfort assoc with headache (incl migraine, tension), backache, toothache, muscular ache, arthritis (incl osteo), cold, flu symptoms; fever",
+            "warnings": ""
+        },
+        "sortOrder": 1
+    },
+    {
+        "brand": "Panadol Caplets",
+        "cmiHTML": false,
+        "composition": "Deleted, June 2013",
+        "drowsy": false,
+        "formulationCode": 2,
+        "formulationType": "Tablets",
+        "glutenFree": false,
+        "id": 39102,
+        "prescriptionOnly": false,
+        "prescrtiptionText": "Unscheduled",
+        "product": {
+            "adverseReactions": "Very rare: thrombocytopenia, cutaneous hypersensitivity (incl rash, SCAR), anaphylaxis, bronchospasm, hepatic dysfunction",
+            "consumerMedicineInformation": false,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Coumarins eg warfain; chloramphenicol; drugs affecting gastric emptying eg metoclopramide, propantheline, anticholinergic antidepressants, narcotic analgesics; hepatotoxics; liver microsomal enzyme inducers eg alcohol, anticonvulsants; probenecid; colestyramine (within 1 hr); other paracetamol containing products",
+            "fullPI": {
+                "fullPICode": 2164,
+                "productCode": 391
+            },
+            "precautions": "Hepatic, renal impairment; persistent symptoms; > recommended dose; prolonged use (> a few days in adults, > 48 hrs in children 7-17 yrs); glutathione depletion eg severe malnourishment, anorexia, low BMI, chronic heavy alcoholic use, sepsis; aspirin, other NSAID sensitivity (incr bronchospasm risk); children < 7 yrs (tabs, Mini Caps not recommended), < 10 yrs (suppositories not recommended)",
+            "pregnancyCode": "A",
+            "pregnancyTextExists": false,
+            "product": "Panadol",
+            "productCode": 391,
+            "productSort": "Panadol",
+            "productTagFree": "Panadol",
+            "s11": false,
+            "section": 4,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "B",
+            "uses": "Analgesic, antipyretic. Temporary relief of pain (incl period, sinus), discomfort assoc with headache (incl migraine, tension), backache, toothache, muscular ache, arthritis (incl osteo), cold, flu symptoms; fever",
+            "warnings": ""
+        },
+        "sortOrder": 5
+    },
+    {
+        "brand": "Panadol Gel Caps Tablets",
+        "cmiHTML": false,
+        "composition": "Deleted, May 2016",
+        "drowsy": false,
+        "formulationCode": 5,
+        "formulationType": "Tablets",
+        "glutenFree": false,
+        "id": 39105,
+        "prescriptionOnly": false,
+        "prescrtiptionText": "Unscheduled",
+        "product": {
+            "adverseReactions": "Very rare: thrombocytopenia, cutaneous hypersensitivity (incl rash, SCAR), anaphylaxis, bronchospasm, hepatic dysfunction",
+            "consumerMedicineInformation": false,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Coumarins eg warfain; chloramphenicol; drugs affecting gastric emptying eg metoclopramide, propantheline, anticholinergic antidepressants, narcotic analgesics; hepatotoxics; liver microsomal enzyme inducers eg alcohol, anticonvulsants; probenecid; colestyramine (within 1 hr); other paracetamol containing products",
+            "fullPI": {
+                "fullPICode": 2164,
+                "productCode": 391
+            },
+            "precautions": "Hepatic, renal impairment; persistent symptoms; > recommended dose; prolonged use (> a few days in adults, > 48 hrs in children 7-17 yrs); glutathione depletion eg severe malnourishment, anorexia, low BMI, chronic heavy alcoholic use, sepsis; aspirin, other NSAID sensitivity (incr bronchospasm risk); children < 7 yrs (tabs, Mini Caps not recommended), < 10 yrs (suppositories not recommended)",
+            "pregnancyCode": "A",
+            "pregnancyTextExists": false,
+            "product": "Panadol",
+            "productCode": 391,
+            "productSort": "Panadol",
+            "productTagFree": "Panadol",
+            "s11": false,
+            "section": 4,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "B",
+            "uses": "Analgesic, antipyretic. Temporary relief of pain (incl period, sinus), discomfort assoc with headache (incl migraine, tension), backache, toothache, muscular ache, arthritis (incl osteo), cold, flu symptoms; fever",
+            "warnings": ""
+        },
+        "sortOrder": 6
+    },
+    {
+        "brand": "Panadol Suppositories",
+        "cmiHTML": false,
+        "composition": "Paracetamol; white",
+        "dosage": "Insert into rectum up to 4 times/24 hrs as needed; min dose interval 4 hrs; may moisten prior to use to ease insertion. Use lowest effective dose for shortest poss duration. Adults, > 12 yrs: 1000 mg (2 suppos); max 4 g (8 suppos)/24 hrs. Children 10-12 yrs: 500 mg (1 suppos); max 2 g (4 suppos)/24 hrs",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "Z",
+            "text": "No PPPA Defined"
+        },
+        "formulationCode": 8,
+        "formulationType": "Suppositories",
+        "generics": {
+            "gencode": 1951,
+            "generics": "Paracetamol"
+        },
+        "glutenFree": true,
+        "id": 39108,
+        "prescriptionOnly": false,
+        "prescrtiptionText": "S2",
+        "product": {
+            "adverseReactions": "Very rare: thrombocytopenia, cutaneous hypersensitivity (incl rash, SCAR), anaphylaxis, bronchospasm, hepatic dysfunction",
+            "consumerMedicineInformation": false,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Coumarins eg warfain; chloramphenicol; drugs affecting gastric emptying eg metoclopramide, propantheline, anticholinergic antidepressants, narcotic analgesics; hepatotoxics; liver microsomal enzyme inducers eg alcohol, anticonvulsants; probenecid; colestyramine (within 1 hr); other paracetamol containing products",
+            "fullPI": {
+                "fullPICode": 2164,
+                "productCode": 391
+            },
+            "precautions": "Hepatic, renal impairment; persistent symptoms; > recommended dose; prolonged use (> a few days in adults, > 48 hrs in children 7-17 yrs); glutathione depletion eg severe malnourishment, anorexia, low BMI, chronic heavy alcoholic use, sepsis; aspirin, other NSAID sensitivity (incr bronchospasm risk); children < 7 yrs (tabs, Mini Caps not recommended), < 10 yrs (suppositories not recommended)",
+            "pregnancyCode": "A",
+            "pregnancyTextExists": false,
+            "product": "Panadol",
+            "productCode": 391,
+            "productSort": "Panadol",
+            "productTagFree": "Panadol",
+            "s11": false,
+            "section": 4,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "B",
+            "uses": "Analgesic, antipyretic. Temporary relief of pain (incl period, sinus), discomfort assoc with headache (incl migraine, tension), backache, toothache, muscular ache, arthritis (incl osteo), cold, flu symptoms; fever",
+            "warnings": ""
+        },
+        "sortOrder": 3
+    },
+    {
+        "brand": "Panadol Gel Tabs",
+        "cmiHTML": false,
+        "composition": "Deleted, February 2012",
+        "drowsy": false,
+        "formulationCode": 9,
+        "formulationType": "Tablets",
+        "glutenFree": false,
+        "id": 39109,
+        "prescriptionOnly": false,
+        "prescrtiptionText": "Unscheduled",
+        "product": {
+            "adverseReactions": "Very rare: thrombocytopenia, cutaneous hypersensitivity (incl rash, SCAR), anaphylaxis, bronchospasm, hepatic dysfunction",
+            "consumerMedicineInformation": false,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Coumarins eg warfain; chloramphenicol; drugs affecting gastric emptying eg metoclopramide, propantheline, anticholinergic antidepressants, narcotic analgesics; hepatotoxics; liver microsomal enzyme inducers eg alcohol, anticonvulsants; probenecid; colestyramine (within 1 hr); other paracetamol containing products",
+            "fullPI": {
+                "fullPICode": 2164,
+                "productCode": 391
+            },
+            "precautions": "Hepatic, renal impairment; persistent symptoms; > recommended dose; prolonged use (> a few days in adults, > 48 hrs in children 7-17 yrs); glutathione depletion eg severe malnourishment, anorexia, low BMI, chronic heavy alcoholic use, sepsis; aspirin, other NSAID sensitivity (incr bronchospasm risk); children < 7 yrs (tabs, Mini Caps not recommended), < 10 yrs (suppositories not recommended)",
+            "pregnancyCode": "A",
+            "pregnancyTextExists": false,
+            "product": "Panadol",
+            "productCode": 391,
+            "productSort": "Panadol",
+            "productTagFree": "Panadol",
+            "s11": false,
+            "section": 4,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "B",
+            "uses": "Analgesic, antipyretic. Temporary relief of pain (incl period, sinus), discomfort assoc with headache (incl migraine, tension), backache, toothache, muscular ache, arthritis (incl osteo), cold, flu symptoms; fever",
+            "warnings": ""
+        },
+        "sortOrder": 4
+    },
+    {
+        "brand": "Panadol Mini Caps Tablets",
+        "cmiHTML": false,
+        "composition": "Paracetamol; white/green, gelatin coated tab",
+        "dosage": "Admin with water, other fluid every 4-6 hrs as needed. Use lowest effective dose for shortest poss duration. Adults, children > 12 yrs: 500-1000 mg (1-2 tabs); max 4 g (8 tabs)/day. Children 7-12 yrs: 500 mg (1 tab); max 2 g (4 tabs)/day",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "D",
+            "text": "May be taken with or without food."
+        },
+        "formulationCode": 10,
+        "formulationType": "Tablets",
+        "generics": {
+            "gencode": 1951,
+            "generics": "Paracetamol"
+        },
+        "glutenFree": true,
+        "id": 39110,
+        "prescriptionOnly": false,
+        "prescrtiptionText": "Unscheduled: 12's, 20's; S2: 48's",
+        "product": {
+            "adverseReactions": "Very rare: thrombocytopenia, cutaneous hypersensitivity (incl rash, SCAR), anaphylaxis, bronchospasm, hepatic dysfunction",
+            "consumerMedicineInformation": false,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Coumarins eg warfain; chloramphenicol; drugs affecting gastric emptying eg metoclopramide, propantheline, anticholinergic antidepressants, narcotic analgesics; hepatotoxics; liver microsomal enzyme inducers eg alcohol, anticonvulsants; probenecid; colestyramine (within 1 hr); other paracetamol containing products",
+            "fullPI": {
+                "fullPICode": 2164,
+                "productCode": 391
+            },
+            "precautions": "Hepatic, renal impairment; persistent symptoms; > recommended dose; prolonged use (> a few days in adults, > 48 hrs in children 7-17 yrs); glutathione depletion eg severe malnourishment, anorexia, low BMI, chronic heavy alcoholic use, sepsis; aspirin, other NSAID sensitivity (incr bronchospasm risk); children < 7 yrs (tabs, Mini Caps not recommended), < 10 yrs (suppositories not recommended)",
+            "pregnancyCode": "A",
+            "pregnancyTextExists": false,
+            "product": "Panadol",
+            "productCode": 391,
+            "productSort": "Panadol",
+            "productTagFree": "Panadol",
+            "s11": false,
+            "section": 4,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "B",
+            "uses": "Analgesic, antipyretic. Temporary relief of pain (incl period, sinus), discomfort assoc with headache (incl migraine, tension), backache, toothache, muscular ache, arthritis (incl osteo), cold, flu symptoms; fever",
+            "warnings": ""
+        },
+        "sortOrder": 2
+    }
+]

@@ -1,0 +1,260 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "ImmunologyAAssessment.ImmunologyAAssessmentService",
+              "label": "Date of last assessment",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Condition",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "ImmunologyAAssessment.PrimaryDiagnoses",
+              "label": "Primary diagnoses",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ImmunologyAAssessment",
+        "layoutShow": true,
+        "title": "Immunology A Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Adalimumab",
+                    "Anakinra",
+                    "Azathioprine",
+                    "Cyclophosphamide",
+                    "Cyclosporin",
+                    "Etanercept",
+                    "Folic acid",
+                    "Hydrocortisone",
+                    "Hydroxychloroquine sulfate",
+                    "Infliximab",
+                    "Intragam P",
+                    "Kiovig",
+                    "Leucovorin Calcium Injection USP",
+                    "Leucovorin Calcium Injection and Tablets (DBL)",
+                    "Methotrexate",
+                    "Methylprednisolone sodium succinate",
+                    "Mycophenolate sodium",
+                    "Octagam 10%",
+                    "Octagam 5%",
+                    "Prednisone",
+                    "Rituximab",
+                    "Salazopyrin"
+                  ],
+                  "size": 50,
+                  "id": "Medication",
+                  "label": "Medication",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Ceased",
+                    "Changed",
+                    "Prescribed",
+                    "Unchanged"
+                  ],
+                  "size": 10,
+                  "id": "ChangeType",
+                  "label": "Change type",
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Adverse reaction",
+                    "Ineffective",
+                    "No longer required",
+                    "Non-compliance",
+                    "Side effects"
+                  ],
+                  "size": 25,
+                  "id": "ChangeReason",
+                  "label": "Change reason",
+                  "type": "Selection"
+                },
+                {
+                  "size": 100,
+                  "id": "Strength",
+                  "label": "Strength",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 25,
+                  "id": "Dose",
+                  "label": "Dose",
+                  "type": "Text"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "12 hourly",
+                    "2 hourly",
+                    "3 times a day",
+                    "3 times a week",
+                    "4 hourly",
+                    "4 times a day",
+                    "6 hourly",
+                    "8 hourly",
+                    "Alternate days",
+                    "As needed",
+                    "Before bed",
+                    "Daily",
+                    "Every 3 weeks",
+                    "Fortnightly",
+                    "In the evening",
+                    "In the morning",
+                    "Midday",
+                    "Monthly",
+                    "Twice a day",
+                    "Twice weekly",
+                    "Weekly"
+                  ],
+                  "size": 25,
+                  "id": "Frequency",
+                  "label": "Frequency",
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "ImmunologyACarePlan.Treatment",
+              "label": "Treatment",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ImmunologyACarePlan",
+        "layoutShow": true,
+        "title": "Treatment"
+      }
+    }
+  ],
+  "id": "Summary.ImmunologyASummary.WebUI",
+  "layoutColumns": 2
+}

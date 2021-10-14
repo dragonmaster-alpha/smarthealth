@@ -1,0 +1,228 @@
+{
+  "resultTypes": [
+    "Urea",
+    "Creatinine",
+    "EGFR",
+    "UrinePCR",
+    "Haemoglobin",
+    "WCC",
+    "Neutrophils",
+    "Platelets",
+    "Potassium",
+    "Glucose",
+    "Calcium",
+    "Albumin",
+    "Cholesterol",
+    "Lipase",
+    "Magnesium",
+    "Phosphate"
+  ],
+  "results": [
+    {
+      "date": {
+        "iso": "2020-02-20"
+      },
+      "results": {
+        "Creatinine": {
+          "name": "Creatinine",
+          "result": {
+            "abnormalFlags": "H",
+            "code": "14682-9",
+            "codeSystem": "LOINC",
+            "name": "Creatinine",
+            "range": "60-110",
+            "units": "umol/L",
+            "value": "170"
+          },
+          "service": {
+            "owningGroupID": 29,
+            "serviceDate": {
+              "iso": "2020-02-20T08:26+11"
+            },
+            "serviceID": 88,
+            "serviceType": 3,
+            "summary": "UEC"
+          },
+          "testDate": {
+            "iso": "2020-02-20"
+          }
+        },
+        "Potassium": {
+          "name": "Potassium",
+          "result": {
+            "code": "2823-3",
+            "codeSystem": "LOINC",
+            "name": "Potassium",
+            "range": "3.5-5.2",
+            "units": "mmol/L",
+            "value": "3.9"
+          },
+          "service": {
+            "owningGroupID": 29,
+            "serviceDate": {
+              "iso": "2020-02-20T08:26+11"
+            },
+            "serviceID": 88,
+            "serviceType": 3,
+            "summary": "UEC"
+          },
+          "testDate": {
+            "iso": "2020-02-20"
+          }
+        },
+        "Urea": {
+          "name": "Urea",
+          "result": {
+            "abnormalFlags": "H",
+            "code": "22664-7",
+            "codeSystem": "LOINC",
+            "name": "Urea",
+            "range": "3.5-8.0",
+            "units": "mmol/L",
+            "value": "24.6"
+          },
+          "service": {
+            "owningGroupID": 29,
+            "serviceDate": {
+              "iso": "2020-02-20T08:26+11"
+            },
+            "serviceID": 88,
+            "serviceType": 3,
+            "summary": "UEC"
+          },
+          "testDate": {
+            "iso": "2020-02-20"
+          }
+        }
+      }
+    },
+    {
+      "date": {
+        "iso": "2020-01-20"
+      },
+      "results": {
+        "Albumin": {
+          "name": "Albumin",
+          "result": {
+            "abnormalFlags": "L",
+            "code": "61152-5",
+            "codeSystem": "LOINC",
+            "name": "Albumin",
+            "range": "33-48",
+            "units": "g/L",
+            "value": "19"
+          },
+          "service": {
+            "owningGroupID": 29,
+            "serviceDate": {
+              "iso": "2020-01-20T08:26+11"
+            },
+            "serviceID": 62,
+            "serviceType": 3,
+            "summary": "LFT"
+          },
+          "testDate": {
+            "iso": "2020-01-20"
+          }
+        },
+        "Calcium": {
+          "name": "Calcium",
+          "result": {
+            "abnormalFlags": "L",
+            "code": "2000-8",
+            "codeSystem": "LOINC",
+            "name": "Calcium",
+            "range": "2.10-2.60",
+            "units": "mmol/L",
+            "value": "1.91"
+          },
+          "service": {
+            "owningGroupID": 29,
+            "serviceDate": {
+              "iso": "2020-01-20T08:26+11"
+            },
+            "serviceID": 59,
+            "serviceType": 3,
+            "summary": "Ca corr for Alb"
+          },
+          "testDate": {
+            "iso": "2020-01-20"
+          }
+        },
+        "Creatinine": {
+          "name": "Creatinine",
+          "result": {
+            "abnormalFlags": "H",
+            "code": "14682-9",
+            "codeSystem": "LOINC",
+            "name": "Creatinine",
+            "range": "60-110",
+            "units": "umol/L",
+            "value": "170"
+          },
+          "service": {
+            "owningGroupID": 29,
+            "serviceDate": {
+              "iso": "2020-01-20T08:26+11"
+            },
+            "serviceID": 63,
+            "serviceType": 3,
+            "summary": "UEC"
+          },
+          "testDate": {
+            "iso": "2020-01-20"
+          }
+        },
+        "Potassium": {
+          "name": "Potassium",
+          "result": {
+            "code": "2823-3",
+            "codeSystem": "LOINC",
+            "name": "Potassium",
+            "range": "3.5-5.2",
+            "units": "mmol/L",
+            "value": "3.9"
+          },
+          "service": {
+            "owningGroupID": 29,
+            "serviceDate": {
+              "iso": "2020-01-20T08:26+11"
+            },
+            "serviceID": 63,
+            "serviceType": 3,
+            "summary": "UEC"
+          },
+          "testDate": {
+            "iso": "2020-01-20"
+          }
+        },
+        "Urea": {
+          "name": "Urea",
+          "result": {
+            "abnormalFlags": "H",
+            "code": "22664-7",
+            "codeSystem": "LOINC",
+            "name": "Urea",
+            "range": "3.5-8.0",
+            "units": "mmol/L",
+            "value": "24.6"
+          },
+          "service": {
+            "owningGroupID": 29,
+            "serviceDate": {
+              "iso": "2020-01-20T08:26+11"
+            },
+            "serviceID": 63,
+            "serviceType": 3,
+            "summary": "UEC"
+          },
+          "testDate": {
+            "iso": "2020-01-20"
+          }
+        }
+      }
+    }
+  ],
+  "someValuesOmmited": false,
+  "type": "RenalTransplant"
+}

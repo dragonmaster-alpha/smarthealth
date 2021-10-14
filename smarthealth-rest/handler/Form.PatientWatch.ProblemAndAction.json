@@ -1,0 +1,451 @@
+{
+  "behaviour": {
+    "serviceDateIsUpdateDate": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Updated date",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Open",
+          "Closed"
+        ],
+        "size": 6,
+        "id": "ProblemStatus",
+        "label": "Status",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ProblemDate",
+        "label": "Problem date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 100,
+              "id": "Problem.Problem",
+              "label": "Problem",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "High",
+                "Medium",
+                "Low"
+              ],
+              "size": 20,
+              "id": "Problem.Priority",
+              "label": "Priority",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Questionnaire",
+                  "label": "Questionnaire",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 40,
+                  "id": "ID",
+                  "label": "Issue ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "options": [
+                    "STAT",
+                    "ASAP",
+                    "Urgent",
+                    "Routine"
+                  ],
+                  "size": 8,
+                  "id": "Priority",
+                  "label": "Priority",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 100,
+                  "id": "Classifications",
+                  "label": "Classifications",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 10,
+                  "description": "Question in the Questionnaire to which this issue relates. Should be a single number. (Previously could be multiple numbers.)",
+                  "id": "Questions",
+                  "label": "Question",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 1000,
+                  "description": "Extract of the questions and answers to be displayed as a tool tip. Generated on the server.",
+                  "id": "QuestionToolTip",
+                  "label": "",
+                  "layout": {
+                    "labelPosition": "Above",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "Problem.Issues",
+              "label": "PaJR Issues",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "multiple": true,
+              "valueSetID": "Patientwatch.Classification",
+              "id": "Problem.Classification",
+              "label": "Classification",
+              "layout": {
+                "alignTop": true,
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Problem.Details",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Problem",
+        "layoutShow": true,
+        "title": "Problem"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "id": "Commenced",
+                  "label": "Start date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "id": "AssignedTo",
+                  "label": "Assigned to",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "options": [
+                    "Closed",
+                    "Open"
+                  ],
+                  "size": 6,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                  ],
+                  "size": 6,
+                  "id": "Priority",
+                  "label": "Priority",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precision": 4,
+                  "scale": 0,
+                  "description": "How much was spent on this action",
+                  "id": "Expenditure",
+                  "label": "Expenditure",
+                  "type": "Number",
+                  "units": "$"
+                },
+                {
+                  "size": 20,
+                  "id": "ChargeCategory",
+                  "label": "Charge category",
+                  "type": "Text"
+                },
+                {
+                  "size": 5000,
+                  "id": "Details",
+                  "label": "Details",
+                  "layout": {
+                    "fillHeight": true,
+                    "labelPosition": "Above",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "Actions.Actions",
+              "label": "Actions",
+              "layout": {
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Actions",
+        "layoutShow": true,
+        "title": "Actions"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Fully resolved",
+                "Significantly improved",
+                "Slightly improved",
+                "Unresolved",
+                "Not applicable"
+              ],
+              "size": 22,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Closed"
+                      ],
+                      "fieldID": "ProblemStatus"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Ratings.CoachOutcomeRating",
+              "label": "Health Coach outcome rating",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Closed"
+                      ],
+                      "fieldID": "ProblemStatus"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Ratings.Reason",
+              "label": "Reason",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Ratings",
+        "layoutShow": true,
+        "title": "Ratings"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "PatientWatch.ProblemAndAction",
+  "layoutColumns": 2
+}

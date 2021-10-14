@@ -1,0 +1,40 @@
+/**
+ * Variables used across all other rules.
+ *
+ * @author Uditha 18/09/2018
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2018
+ */
+// Colors
+$color-primary-button-active: #005b9f;
+
+// start of colours from Digital Garden
+$colour-primary-blue: #032da5;
+$colour-klein-blue: #0c2aa2;
+$colour-link-blue: #4ECAFF;
+$colour-error-red: #E81E00;
+$colour-warning-orange: #FF891D;
+$colour-success-green: #00C245;
+
+// Form
+$form-label-spacing: 5px;
+$grid-horizontal-spacing: 5px;
+$grid-vertical-spacing: 5px;
+
+// Fields
+$p-datatable-highlight-color: #6fcfff;
+// color PrimeReact uses for their p-error
+$p-invalid-color: #a80000;
+// color PrimeReact uses for their field hover border
+$p-field-border-hover-color: #212121;
+
+// PrimeReact colours
+$p-table-field-border-color: #c8c8c8;
+$p-table-field-footer-background-color: #f4f4f4;
+
+$table-field-horizontal-footer-padding: 0.6em;
+$table-field-vertical-footer-padding: 2ex;
+
+// Layout dimensions
+$sidebar-width: 320px;
+$tablet-screen-size: 480px;
+$topbar-height: 42px;

@@ -1,0 +1,72 @@
+[
+  {
+    "children": [
+      {
+        "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+        "name": "Consultation Notes",
+        "serviceType": {
+          "abbreviation": "Consultation",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.ConsultationNote",
+          "name": "Consultation Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 1
+        }
+      },
+      {
+        "name": "Procedure",
+        "serviceType": {
+          "abbreviation": "Procedure",
+          "formDescriptionID": "Service.Procedure",
+          "name": "Procedure",
+          "permissionPerProgram": true,
+          "serviceTypeID": 101
+        }
+      }
+    ],
+    "name": "Standard"
+  },
+  {
+    "children": [
+      {
+        "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+        "name": "Consultation Notes",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "Consultation",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.ConsultationNote",
+          "name": "Consultation Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 1
+        }
+      },
+      {
+        "name": "Profile",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "PW Profile",
+          "category": "Assessment",
+          "formDescriptionID": "PatientWatch.PatientProfile",
+          "name": "Patient Watch Profile",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 199
+        }
+      },
+      {
+        "name": "Treatment Status",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "Treatment Status",
+          "category": "TreatmentStatus",
+          "formDescriptionID": "PatientWatch.TreatmentStatus",
+          "name": "Patient Watch Treatment Status",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 191
+        }
+      }
+    ],
+    "name": "Patient Watch",
+    "program": "PATIENT_WATCH"
+  }
+]

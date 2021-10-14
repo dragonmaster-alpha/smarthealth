@@ -1,0 +1,161 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ehrConsentDate",
+        "label": "EHR Consent",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime",
+        "valuePath": "patient.ehrConsentDate"
+      }
+    },
+    {
+      "field": {
+        "id": "gp",
+        "label": "GP",
+        "layout": {
+          "newLine": true
+        },
+        "type": "MemberOrMedicalGroup",
+        "valuePath": "patientClinical.gp"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "id": "memberID",
+            "label": "Provider",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Member"
+          },
+          {
+            "size": 30,
+            "id": "role",
+            "label": "Role",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "program",
+            "label": "Program",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text",
+            "valuePath": "metadata.program"
+          },
+          {
+            "size": 50,
+            "id": "speciality",
+            "label": "Speciality",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "precisionDay": true,
+            "id": "serviceDate",
+            "label": "Service Date",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "DateTime",
+            "valuePath": "metadata.serviceDate"
+          },
+          {
+            "id": "data",
+            "label": "Service",
+            "state": {
+              "editState": "Hidden",
+              "viewStateHidden": true
+            },
+            "type": "ServiceRecordReference"
+          }
+        ],
+        "id": "providers",
+        "label": "Providers",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "id": "groupID",
+            "label": "Medical Group",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "MedicalGroup"
+          },
+          {
+            "size": 30,
+            "id": "urmrn",
+            "label": "UR/MRN",
+            "type": "Text"
+          },
+          {
+            "size": 30,
+            "id": "visitNumber",
+            "label": "Visit Number",
+            "type": "Text"
+          },
+          {
+            "size": 25,
+            "id": "consentType",
+            "label": "Consent Type",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "precisionDay": true,
+            "id": "consentDate",
+            "label": "Consent Date",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "DateTime"
+          }
+        ],
+        "id": "medicalGroupAssociations",
+        "label": "Associated Medical Groups",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Patient.ProvidersAndConsents.WebUI",
+  "layoutColumns": 2
+}

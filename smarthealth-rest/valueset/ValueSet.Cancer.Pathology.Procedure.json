@@ -1,0 +1,182 @@
+{
+  "coded": true,
+  "codeLength": 9,
+  "extensible": true,
+  "length": 60,
+  "uri": "http://snomed.info/sct",
+  "values": [
+    {
+      "code": "10847001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Bronchoscopy"
+    },
+    {
+      "code": "73761001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Colonoscopy"
+    },
+    {
+      "code": "392003006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Colposcopy"
+    },
+    {
+      "code": "110469002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Cone biopsy"
+    },
+    {
+      "code": "9911007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Core needle biopsy"
+    },
+    {
+      "code": "232517007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Diagnostic nasendoscopy"
+    },
+    {
+      "code": "445901000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Endobronchial ultrasonography"
+    },
+    {
+      "code": "386718000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Endoscopic retrograde cholangiopancreatography"
+    },
+    {
+      "code": "24139008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Endoscopy of bladder (Cystoscopy)"
+    },
+    {
+      "code": "386831001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Endoscopy of stomach (Gastroscopy)"
+    },
+    {
+      "code": "234262008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Excision of axillary lymph node (Axillary dissection)"
+    },
+    {
+      "code": "69031006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Excision of breast tissue"
+    },
+    {
+      "code": "8889005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Excisional biopsy"
+    },
+    {
+      "code": "48635004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Fine needle biopsy"
+    },
+    {
+      "code": "236886002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Hysterectomy"
+    },
+    {
+      "code": "233545006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Hysteroscopy"
+    },
+    {
+      "code": "70871006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Incisional biopsy"
+    },
+    {
+      "code": "73632009",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Laparoscopy"
+    },
+    {
+      "code": "86743009",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Local excision"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Mastectomy and sentinel lymph node biopsy"
+    },
+    {
+      "code": "261479009",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Mediastinoscopy"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Panendoscopy"
+    },
+    {
+      "code": "387643005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Partial hysterectomy"
+    },
+    {
+      "code": "116142003",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Radical hysterectomy"
+    },
+    {
+      "code": "236826000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Radical total vulvectomy"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Radical trachelectomy"
+    },
+    {
+      "code": "287966005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Radical vulvectomy"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Re-excision margins"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Re-excision margins and axillary dissection"
+    },
+    {
+      "code": "396487001",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Sentinel lymph node biopsy"
+    },
+    {
+      "code": "24420007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Sigmoidoscopy"
+    },
+    {
+      "code": "387713003",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Surgical procedure"
+    },
+    {
+      "code": "116140006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Total hysterectomy"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Wide local excision"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Wide local excision and axillary dissection"
+    },
+    {
+      "codeSet": "http://snomed.info/sct",
+      "value": "Wide local excision and sentinel lymph node biopsy"
+    }
+  ],
+  "valueSetID": "Cancer.Pathology.Procedure"
+}

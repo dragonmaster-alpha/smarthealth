@@ -1,0 +1,35 @@
+{
+  "data": {
+    "ID": "597b07bd-d6b4-4fa1-8dc3-66d6a8c64e2e",
+    "ImmunisationType": {
+      "conceptID": 421245007,
+      "originalText": "Diphtheria + Pertussis + Tetanus vaccine"
+    },
+    "Patient": 42,
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "ServiceDate": {
+      "iso": "2020-08-26T16:18+10"
+    },
+    "SetID": "1ac5be0b-20be-47ba-b4f9-357f2afce55e",
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2020-08-26T16:18+10"
+    },
+    "serviceID": 8263,
+    "serviceType": 100,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

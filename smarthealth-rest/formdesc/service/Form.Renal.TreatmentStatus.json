@@ -1,0 +1,427 @@
+{
+  "behaviour": {
+    "mostRecentOnlyEditable": true,
+    "newServiceButton": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Advanced GN (unclassified \u003d end stage)",
+          "Amyloid disease",
+          "Analgesic nephropathy",
+          "Atheroembolic disease (cholesterol emboli)",
+          "Balkan nephropathy",
+          "Bilateral renal artery stenosis",
+          "Bladder neck obstruction (incl. prostatomegaly)",
+          "Cadmium toxicity",
+          "Calcineurin Inhibitor Toxicity",
+          "Calculi",
+          "Congenital renal hypoplasia and dysplasia",
+          "Cortical necrosis",
+          "Cystinosis",
+          "Diabetes - Type 1 (insulin dependent)",
+          "Diabetes - Type 2 (insulin requiring)",
+          "Diabetes - Type 2 (non-insulin requiring)",
+          "Extra and intra capillary GN (extensive crescents - clinically rapidly progressive)",
+          "Familial GN",
+          "Focal and segmental proliferative GN (including focal necrotising)",
+          "Focal sclerosing GN (including hyalinosis)",
+          "GN other",
+          "GN with systemic disease",
+          "Goodpasture\u0027s syndrome with linear IgG and lung haemorrhage",
+          "Gout",
+          "Haemolytic uraemic syndrome",
+          "Henoch-Schonlein purpura",
+          "Infantile/juvenile polycystic kidney disease",
+          "Interstitial nephritis",
+          "Lead nephropathy",
+          "Light chain nephropathy (benign)",
+          "Lithium toxicity",
+          "Loss of single kidney",
+          "Medullary cystic disease",
+          "Megaureter",
+          "Membranous GN",
+          "Mesangial proliferative (IgA+ positive)",
+          "Mesangial proliferative (IgA- negative)",
+          "Mesangial proliferative (no I.F. studies)",
+          "Mesangiocapillary GN with intramembranous deposits (dense deposit disease)",
+          "Mesangiocapillary GN with subendothelial deposits (double contour)",
+          "Microscopic Polyarteritis",
+          "Neuropathic bladder",
+          "Non-obstructed dilated bladder and ureters (megacystitis - megaureter)",
+          "Obstructed megaureter",
+          "Obstructive nephropathy",
+          "Other lower urinary tract abnormalities (with secondary reflux)",
+          "Oxalosis",
+          "Paraproteinaemia (including multiple myeloma)",
+          "Pelvi-ureteric junction obstruction",
+          "Polycystic kidney disease",
+          "Post partum nephropathy",
+          "Posterior urethral valves",
+          "Presumed GN, type undefined histologically (no biopsy)",
+          "Primary focal sclerosing GN or focal glomerular sclerosis",
+          "Proliferative GN with linear IgG - no lung haemorrhage",
+          "Pyelonephritis",
+          "Reflux nephropathy",
+          "Renal cell carcinoma (GRAWITZ)",
+          "Renal tuberculosis",
+          "Renal vascular disease - type unspecified",
+          "Renal vascular disease due to hypertension (nephrosclerosis) (NO primary renal disease)",
+          "Renal vascular disease due to malignant hypertension (NO primary renal disease)",
+          "SLE",
+          "Sarcoidosis",
+          "Scleroderma",
+          "Secondary focal sclerosing GN",
+          "Spina bifida or myelomeningocoele",
+          "Transitional cell carcinoma of urinary tract",
+          "Uncertain diagnosis",
+          "Ureteric obstructive nephropathy",
+          "Wegener\u0027s Granulomatosis"
+        ],
+        "size": 90,
+        "id": "PrimaryRenalDisease",
+        "label": "Primary renal disease",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Carers.Nephrologist",
+              "label": "Nephrologist",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "Carers.CaseManager",
+              "label": "Case manager",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "Carers.VascularAccessNurse",
+              "label": "Vascular access nurse",
+              "type": "Member"
+            }
+          }
+        ],
+        "id": "Carers",
+        "layoutShow": true,
+        "title": "Carers"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 50,
+              "id": "PatientClass.PatientClass",
+              "label": "Treatment type",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Advance care planning only",
+                "APD/IPD Hospital",
+                "APD/IPD Satellite",
+                "APD/IPD Home",
+                "CAPD Hospital/Outpatient",
+                "CAPD Home",
+                "HD Hospital",
+                "HD Satellite",
+                "HD Home - conventional",
+                "HD Home - nocturnal",
+                "Transplant in Australia/NZ",
+                "Transplant overseas",
+                "Graft function temporarily/permanently ceased",
+                "Own kidney function recovered - dialysis ceased",
+                "Pre-dialysis",
+                "Transplant donor",
+                "Supportive care/Conservative",
+                "Lost to follow-up"
+              ],
+              "size": 50,
+              "id": "PatientClass.NewPatientClass",
+              "label": "New treatment type",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Abdominal abscess",
+                "Abdominal pain",
+                "Abdominal surgery",
+                "Acute peritonitis",
+                "Cardiovascular instability",
+                "Catheter block",
+                "Catheter fell out",
+                "Dialysate leak",
+                "Diverticulitis",
+                "Excessive fluid ultrafiltration",
+                "Geography - poor access to dialysis services",
+                "Haematuria",
+                "Haemoperitoneum",
+                "Hernia",
+                "Hydrothorax",
+                "Inadequate fluid ultrafiltration",
+                "Inadequate solute clearance",
+                "Multiple adhesions",
+                "Other surgery",
+                "Patient preference",
+                "Peritoneal infection",
+                "Planned transfer after acute HD start",
+                "Planned transfer after acute PD start",
+                "Pleural effusion",
+                "Poor nutrition",
+                "Pregnancy",
+                "Recovery of renal function",
+                "Recurrent / persistent peritonitis",
+                "Sclerosing peritonitis",
+                "Scrotal oedema",
+                "Transfer outside Australia or New Zealand",
+                "Transplantation",
+                "Transplantation failure",
+                "Tunnel / exit site infection",
+                "Unable to manage self-care",
+                "Vascular access problems"
+              ],
+              "size": 50,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "PatientClass.NewPatientClass",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PatientClass.ReasonForClassChange",
+              "label": "Reason for new treatment",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "PatientClass",
+        "layoutShow": true,
+        "title": "Patient Class"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "name": "MedicalGroupDesc",
+              "id": "PatientLocation.RenalService",
+              "label": "Renal service",
+              "type": "Unsupported"
+            }
+          },
+          {
+            "field": {
+              "name": "MedicalGroupDesc",
+              "id": "PatientLocation.TreatmentCentre",
+              "label": "Treatment centre",
+              "type": "Unsupported"
+            }
+          },
+          {
+            "field": {
+              "size": 25,
+              "id": "PatientLocation.Location",
+              "label": "Location",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Inpatient",
+                "Not at this centre",
+                "Outpatient"
+              ],
+              "size": 25,
+              "id": "PatientLocation.NewLocation",
+              "label": "New Location",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Acute renal failure",
+                "Deceased",
+                "ESRD patient",
+                "Failed transplant",
+                "Holiday",
+                "Pre-dialysis",
+                "Recover function",
+                "Transplant - cadaver",
+                "Transplant - live donor",
+                "Visitor",
+                "Withdrawal from dialysis"
+              ],
+              "size": 40,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "PatientLocation.NewLocation",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PatientLocation.TransferReason",
+              "label": "Transfer reason",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "PatientLocation",
+        "layoutShow": true,
+        "title": "Patient Location"
+      }
+    }
+  ],
+  "id": "Renal.TreatmentStatus",
+  "layoutColumns": 3
+}

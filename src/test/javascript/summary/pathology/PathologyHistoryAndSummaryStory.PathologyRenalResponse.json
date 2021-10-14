@@ -1,0 +1,395 @@
+{
+    "results": [
+        {
+            "date": {
+                "iso": "2020-05-02"
+            },
+            "results": {
+                "Alkaline phosphatase": {
+                    "name": "Alkaline phosphatase",
+                    "result": {
+                        "code": "6768-6",
+                        "codeSystem": "LOINC",
+                        "name": "Alkaline phosphat.",
+                        "range": "30-110",
+                        "units": "U/L",
+                        "value": "76"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-05-02T08:26+10"
+                        },
+                        "serviceID": 11701,
+                        "serviceType": 3,
+                        "summary": "LFT"
+                    },
+                    "testDate": {
+                        "iso": "2020-05-02"
+                    }
+                },
+                "Albumin": {
+                    "name": "Albumin",
+                    "result": {
+                        "abnormalFlags": "L",
+                        "code": "61152-5",
+                        "codeSystem": "LOINC",
+                        "name": "Albumin",
+                        "range": "33-48",
+                        "units": "g/L",
+                        "value": "33"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-05-02T08:26+10"
+                        },
+                        "serviceID": 11701,
+                        "serviceType": 3,
+                        "summary": "LFT"
+                    },
+                    "testDate": {
+                        "iso": "2020-05-02"
+                    }
+                }
+            }
+        },
+        {
+            "date": {
+                "iso": "2020-02-13"
+            },
+            "results": {
+                "Alkaline phosphatase": {
+                    "name": "Alkaline phosphatase",
+                    "result": {
+                        "code": "6768-6",
+                        "codeSystem": "LOINC",
+                        "name": "Alkaline phosphat.",
+                        "range": "30-110",
+                        "units": "U/L",
+                        "value": "88"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-02-13T08:26+11"
+                        },
+                        "serviceID": 11700,
+                        "serviceType": 3,
+                        "summary": "LFT"
+                    },
+                    "testDate": {
+                        "iso": "2020-02-13"
+                    }
+                },
+                "Albumin": {
+                    "name": "Albumin",
+                    "result": {
+                        "abnormalFlags": "L",
+                        "code": "61152-5",
+                        "codeSystem": "LOINC",
+                        "name": "Albumin",
+                        "range": "33-48",
+                        "units": "g/L",
+                        "value": "19"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-02-13T08:26+11"
+                        },
+                        "serviceID": 11700,
+                        "serviceType": 3,
+                        "summary": "LFT"
+                    },
+                    "testDate": {
+                        "iso": "2020-02-13"
+                    }
+                }
+            }
+        },
+        {
+            "date": {
+                "iso": "2020-01-20"
+            },
+            "results": {
+                "Creatinine": {
+                    "name": "Creatinine",
+                    "result": {
+                        "abnormalFlags": "H",
+                        "code": "14682-9",
+                        "codeSystem": "LOINC",
+                        "name": "Creatinine",
+                        "range": "60-110",
+                        "units": "umol/L",
+                        "value": "170"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-01-20T08:26+11"
+                        },
+                        "serviceID": 11623,
+                        "serviceType": 3,
+                        "summary": "UEC"
+                    },
+                    "testDate": {
+                        "iso": "2020-01-20"
+                    }
+                },
+                "Urea": {
+                    "name": "Urea",
+                    "result": {
+                        "abnormalFlags": "H",
+                        "code": "22664-7",
+                        "codeSystem": "LOINC",
+                        "name": "Urea",
+                        "range": "3.5-8.0",
+                        "units": "mmol/L",
+                        "value": "24.6"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-01-20T08:26+11"
+                        },
+                        "serviceID": 11623,
+                        "serviceType": 3,
+                        "summary": "UEC"
+                    },
+                    "testDate": {
+                        "iso": "2020-01-20"
+                    }
+                },
+                "Alkaline phosphatase": {
+                    "name": "Alkaline phosphatase",
+                    "result": {
+                        "code": "6768-6",
+                        "codeSystem": "LOINC",
+                        "name": "Alkaline phosphat.",
+                        "range": "30-110",
+                        "units": "U/L",
+                        "value": "88"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-01-20T08:26+11"
+                        },
+                        "serviceID": 11622,
+                        "serviceType": 3,
+                        "summary": "LFT"
+                    },
+                    "testDate": {
+                        "iso": "2020-01-20"
+                    }
+                },
+                "Sodium": {
+                    "name": "Sodium",
+                    "result": {
+                        "code": "2951-2",
+                        "codeSystem": "LOINC",
+                        "name": "Sodium",
+                        "range": "135-145",
+                        "units": "mmol/L",
+                        "value": "143"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-01-20T08:26+11"
+                        },
+                        "serviceID": 11623,
+                        "serviceType": 3,
+                        "summary": "UEC"
+                    },
+                    "testDate": {
+                        "iso": "2020-01-20"
+                    }
+                },
+                "Calcium": {
+                    "name": "Calcium",
+                    "result": {
+                        "abnormalFlags": "L",
+                        "code": "2000-8",
+                        "codeSystem": "LOINC",
+                        "name": "Calcium",
+                        "range": "2.10-2.60",
+                        "units": "mmol/L",
+                        "value": "1.91"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-01-20T08:26+11"
+                        },
+                        "serviceID": 11620,
+                        "serviceType": 3,
+                        "summary": "Ca corr for Alb"
+                    },
+                    "testDate": {
+                        "iso": "2020-01-20"
+                    }
+                },
+                "Albumin": {
+                    "name": "Albumin",
+                    "result": {
+                        "abnormalFlags": "L",
+                        "code": "61152-5",
+                        "codeSystem": "LOINC",
+                        "name": "Albumin",
+                        "range": "33-48",
+                        "units": "g/L",
+                        "value": "30"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-01-20T08:26+11"
+                        },
+                        "serviceID": 11622,
+                        "serviceType": 3,
+                        "summary": "LFT"
+                    },
+                    "testDate": {
+                        "iso": "2020-01-20"
+                    }
+                },
+                "Calcium (corrected)": {
+                    "name": "Calcium (corrected)",
+                    "result": {
+                        "code": "29265-6",
+                        "codeSystem": "LOINC",
+                        "name": "Calcium (corr. Alb)",
+                        "range": "2.10-2.60",
+                        "units": "mmol/L",
+                        "value": "2.16"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-01-20T08:26+11"
+                        },
+                        "serviceID": 11620,
+                        "serviceType": 3,
+                        "summary": "Ca corr for Alb"
+                    },
+                    "testDate": {
+                        "iso": "2020-01-20"
+                    }
+                },
+                "Potassium": {
+                    "name": "Potassium",
+                    "result": {
+                        "code": "2823-3",
+                        "codeSystem": "LOINC",
+                        "name": "Potassium",
+                        "range": "3.5-5.2",
+                        "units": "mmol/L",
+                        "value": "3.9"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2020-01-20T08:26+11"
+                        },
+                        "serviceID": 11623,
+                        "serviceType": 3,
+                        "summary": "UEC"
+                    },
+                    "testDate": {
+                        "iso": "2020-01-20"
+                    }
+                }
+            }
+        },
+        {
+            "date": {
+                "iso": "2008-02-25"
+            },
+            "results": {
+                "Alkaline phosphatase": {
+                    "name": "Alkaline phosphatase",
+                    "result": {
+                        "code": "6768-6",
+                        "codeSystem": "LOINC",
+                        "name": "Alkaline phosphat.",
+                        "range": "30-110",
+                        "units": "U/L",
+                        "value": "29"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2008-02-25T08:26+11"
+                        },
+                        "serviceID": 11702,
+                        "serviceType": 3,
+                        "summary": "LFT"
+                    },
+                    "testDate": {
+                        "iso": "2008-02-25"
+                    }
+                },
+                "Albumin": {
+                    "name": "Albumin",
+                    "result": {
+                        "abnormalFlags": "L",
+                        "code": "61152-5",
+                        "codeSystem": "LOINC",
+                        "name": "Albumin",
+                        "range": "33-48",
+                        "units": "g/L",
+                        "value": "35"
+                    },
+                    "service": {
+                        "owningGroupID": 29,
+                        "serviceDate": {
+                            "iso": "2008-02-25T08:26+11"
+                        },
+                        "serviceID": 11702,
+                        "serviceType": 3,
+                        "summary": "LFT"
+                    },
+                    "testDate": {
+                        "iso": "2008-02-25"
+                    }
+                }
+            }
+        }
+    ],
+    "resultTypes": [
+        "Sodium",
+        "Potassium",
+        "Urea",
+        "Creatinine",
+        "Albumin",
+        "Calcium",
+        "Calcium (corrected)",
+        "Magnesium",
+        "Phosphate",
+        "Glucose - Fasting",
+        "Glucose - Random",
+        "HbA1c",
+        "Parathyroid hormone (PTH)",
+        "C-reactive protein (CRP)",
+        "Cholesterol",
+        "Triglycerides- 12 hours fasting",
+        "HDL",
+        "LDL",
+        "Haemoglobin",
+        "White cell count (Leukocytes)",
+        "Platelets",
+        "Iron",
+        "Transferrin (iron) saturation",
+        "Ferritin",
+        "Transferrin",
+        "Vitamin D (25-Hydroxycalciferol)",
+        "Prostate specific antigen (PSA)",
+        "Alkaline phosphatase",
+        "Aluminium",
+        "Bicarbonate (HCO₃)"
+    ],
+    "someValuesOmmited": false,
+    "type": "Renal"
+}

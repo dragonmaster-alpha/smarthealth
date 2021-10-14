@@ -1,0 +1,711 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 0,
+        "id": "Duration",
+        "label": "Duration",
+        "type": "Number",
+        "units": "mins"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "None"
+              ],
+              "size": 80,
+              "id": "Assessment.Bleeding",
+              "label": "Bleeding",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "None"
+              ],
+              "size": 80,
+              "id": "Assessment.Pain",
+              "label": "Pain",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "None"
+              ],
+              "size": 80,
+              "id": "Assessment.Lumps",
+              "label": "Lumps",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "None"
+              ],
+              "size": 80,
+              "id": "Assessment.Tenesmus",
+              "label": "Tenesmus",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "None"
+              ],
+              "size": 80,
+              "id": "Assessment.AnalItch",
+              "label": "Anal itch",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "None"
+              ],
+              "size": 80,
+              "id": "Assessment.AnalDischarge",
+              "label": "Anal discharge",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "ASCUS-PLSIL",
+                "Cancer",
+                "HSIL",
+                "Indeterminate result",
+                "LSIL",
+                "Negative",
+                "Not tested",
+                "PHSIL",
+                "Unsatisfactory",
+                "Wart virus effect only"
+              ],
+              "size": 30,
+              "id": "Assessment.Cytology",
+              "label": "Cytology",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "Not tested"
+                        ],
+                        "fieldID": "Assessment.Cytology"
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.DateCytology",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "High Risk HPV DNA",
+                "Indeterminate result",
+                "Low Risk HPV DNA",
+                "Negative",
+                "Not tested",
+                "Technically unsatisfactory"
+              ],
+              "size": 30,
+              "id": "Assessment.HpvDna",
+              "label": "HPV DNA",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "Not tested"
+                        ],
+                        "fieldID": "Assessment.HpvDna"
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.DateHpvDna",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Irregular-rocky enlargement",
+                "Normal",
+                "Other",
+                "Smooth enlargement",
+                "Tender"
+              ],
+              "size": 30,
+              "id": "Assessment.DreProstate",
+              "label": "Digital Rectal Examination",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 60,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Other"
+                      ],
+                      "fieldID": "Assessment.DreProstate"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.DreDetails",
+              "label": "Details",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Assessment.Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Assessment",
+        "layoutShow": true,
+        "title": "Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 17,
+                  "id": "Site",
+                  "label": "Site",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "id": "Acetowhite",
+                  "label": "Acetowhite",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Punctation",
+                  "label": "Punctation",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "ProminentVessels",
+                  "label": "Prominent Vessels",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "LugolsNegative",
+                  "label": "Lugol\u0027s Negative",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Other",
+                  "label": "Other",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Biopsy",
+                  "label": "Biopsy",
+                  "type": "Boolean"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "AIN2-HGAIN",
+                    "AIN3-HGAIN",
+                    "Invasive Cancer",
+                    "LGAIN",
+                    "Negative for AIN",
+                    "SISCCA",
+                    "Wart virus effect"
+                  ],
+                  "size": 20,
+                  "id": "Impression",
+                  "label": "Impression",
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "AIN2-HGAIN",
+                    "AIN3-HGAIN",
+                    "Invasive Cancer",
+                    "LGAIN",
+                    "Negative for AIN",
+                    "SISCCA",
+                    "Wart virus effect"
+                  ],
+                  "size": 20,
+                  "id": "BiopsyResult",
+                  "label": "Result",
+                  "type": "Selection"
+                }
+              ],
+              "fixedRows": true,
+              "rowSelectionInViewMode": true,
+              "id": "HRAIntraAnal.IntraAnalAbnormalities",
+              "label": "Intra-anal abnormalities",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "id": "HRAIntraAnal.NormalHRAIntraAnal",
+              "label": "Entirely normal",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "HRAIntraAnal.intraAnalAbnormalitiesExamComplete",
+              "label": "Exam Complete",
+              "layout": {
+                "labelPosition": "Omit"
+              },
+              "type": "Button"
+            }
+          }
+        ],
+        "id": "HRAIntraAnal",
+        "layoutShow": true,
+        "title": "HRA Intra-anal"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 17,
+                  "id": "Site",
+                  "label": "Site",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "options": [
+                    "Q1",
+                    "Q2",
+                    "Q3",
+                    "Q4"
+                  ],
+                  "size": 10,
+                  "id": "Haemorrhoids",
+                  "label": "Haemorrhoids",
+                  "type": "Selection"
+                },
+                {
+                  "id": "SkinTag",
+                  "label": "Skin tag",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Warts",
+                  "label": "Warts",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Dermatitis",
+                  "label": "Dermatitis",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Fissure",
+                  "label": "Fissure",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Excoriation",
+                  "label": "Excoriation",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Other",
+                  "label": "Other",
+                  "type": "Boolean"
+                },
+                {
+                  "id": "Biopsy",
+                  "label": "Biopsy",
+                  "type": "Boolean"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "AIN2-HGAIN",
+                    "AIN3-HGAIN",
+                    "Invasive Cancer",
+                    "LGAIN",
+                    "Negative for AIN",
+                    "SISCCA",
+                    "Wart virus effect"
+                  ],
+                  "size": 20,
+                  "id": "Impression",
+                  "label": "Impression",
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "AIN2-HGAIN",
+                    "AIN3-HGAIN",
+                    "Invasive Cancer",
+                    "LGAIN",
+                    "Negative for AIN",
+                    "SISCCA",
+                    "Wart virus effect"
+                  ],
+                  "size": 20,
+                  "id": "BiopsyResult",
+                  "label": "Result",
+                  "type": "Selection"
+                }
+              ],
+              "fixedRows": true,
+              "rowSelectionInViewMode": true,
+              "id": "PeriAnal.PeriAnalAbnormalities",
+              "label": "Peri-anal abnormalities",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "id": "PeriAnal.NormalPeriAnal",
+              "label": "Entirely normal",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "PeriAnal.periAnalAbnormalitiesExamComplete",
+              "label": "Exam Complete",
+              "layout": {
+                "labelPosition": "Omit"
+              },
+              "type": "Button"
+            }
+          }
+        ],
+        "id": "PeriAnal",
+        "layoutShow": true,
+        "title": "Peri-anal"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "\u003c half of 1 quadrant",
+                "\u003e 1 quadrant but \u003c 2 quadrants",
+                "\u003e 2 quadrants but \u003c 3 quadrants",
+                "\u003e 3 quadrants",
+                "\u003e half of 1 quadrant but \u003c 1 quadrant",
+                "Circumferential disease",
+                "None",
+                "Single small lesion"
+              ],
+              "size": 55,
+              "id": "HgainQuantification.IntraAnalMucosaHighGradeDisease",
+              "label": "Area of intra-anal mucosa with high grade disease",
+              "layout": {
+                "skip": 1
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "\u003c half of 1 quadrant",
+                "\u003e 1 quadrant but \u003c 2 quadrants",
+                "\u003e 2 quadrants but \u003c 3 quadrants",
+                "\u003e 3 quadrants",
+                "\u003e half of 1 quadrant but \u003c 1 quadrant",
+                "Circumferential disease",
+                "None",
+                "Single small lesion"
+              ],
+              "size": 55,
+              "id": "HgainQuantification.PeriAnalTissueHighGradeDisease",
+              "label": "Area of peri-anal tissue with high grade disease",
+              "layout": {
+                "newLine": true,
+                "skip": 1
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "HgainQuantification",
+        "layoutShow": true,
+        "title": "Quantification of HGAIN"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "medicalGroupListType": "ANOSCOPY_CLINIC_TRIAL",
+                  "size": 100,
+                  "id": "TrialName",
+                  "label": "Trial name",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "MedicalGroupList"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "CommenceDate",
+                  "label": "Date commenced",
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "CeaseDate",
+                  "label": "Date ceased/withdrawn",
+                  "type": "DateTime"
+                }
+              ],
+              "id": "ClinicalTrials.Trials",
+              "label": "Trials",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ClinicalTrials",
+        "layoutShow": true,
+        "title": "Clinical Trials"
+      }
+    }
+  ],
+  "id": "Immunology.Anoscopy.WebUI",
+  "layoutColumns": 3
+}

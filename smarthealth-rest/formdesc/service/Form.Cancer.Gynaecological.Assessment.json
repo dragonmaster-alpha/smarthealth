@@ -1,0 +1,1038 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Management of primary gynaecological tumour",
+          "Management after surgery elsewhere",
+          "Management of recurrence",
+          "Management of complications of cancer or treatment",
+          "Management of non-gynaecological tumour",
+          "Risk reducing surgery",
+          "Follow up",
+          "Second opinion",
+          "Medicolegal opinion"
+        ],
+        "size": 50,
+        "id": "ReasonForReferral",
+        "label": "Reason for referral",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 500,
+              "id": "History.HistoryPresentIllness",
+              "label": "History of present illness",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Frequency",
+                "Incontinence",
+                "Normal",
+                "Urgency"
+              ],
+              "size": 20,
+              "id": "History.Bladder",
+              "label": "Bladder",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Constipation",
+                "Loose",
+                "Normal"
+              ],
+              "size": 20,
+              "id": "History.Bowels",
+              "label": "Bowels",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "History.WeightLoss",
+              "label": "Weight loss",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "History",
+        "layoutShow": true,
+        "title": "History"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Nutrition.EatingPoorly",
+              "label": "Eating poorly",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "maximum": 4,
+              "precision": 1,
+              "scale": 0,
+              "id": "Nutrition.NutritionScore",
+              "label": "Nutrition score",
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "Nutrition",
+        "layoutShow": true,
+        "title": "Nutrition"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "ObstetricHistory.Gravida",
+              "label": "Gravida",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "ObstetricHistory.Para",
+              "label": "Para",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "ObstetricHistory.ObstetricDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "ObstetricHistory",
+        "layoutShow": true,
+        "title": "Obstetric history"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Irregular",
+                "Regular"
+              ],
+              "size": 20,
+              "id": "MenstrualHistory.Cycle",
+              "label": "Cycle",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "MenstrualHistory.MonthlyCycle",
+              "label": "Monthly cycle",
+              "type": "Number",
+              "units": "days"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "MenstrualHistory.Flow",
+              "label": "Flow",
+              "type": "Number",
+              "units": "days"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "MenstrualHistory.Menarche",
+              "label": "Menarche",
+              "type": "Number",
+              "units": "years"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "MenstrualHistory.Menopause",
+              "label": "Menopause",
+              "type": "Number",
+              "units": "years"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "MenstrualHistory.YearsOralContraceptives",
+              "label": "Oral contraceptives",
+              "type": "Number",
+              "units": "years"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "MenstrualHistory.YearsOralContraceptives",
+                      "testEmpty": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "MenstrualHistory.YearsOralContraceptivesDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "MenstrualHistory.HormoneReplacementTherapy",
+              "label": "Hormone replacement therapy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "MenstrualHistory.HormoneReplacementTherapy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "MenstrualHistory.HormoneReplacementTherapyDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "MenstrualHistory.FertilityDrugs",
+              "label": "Fertility drugs",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "MenstrualHistory.FertilityDrugs",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "MenstrualHistory.FertilityDrugsDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "MenstrualHistory",
+        "layoutShow": true,
+        "title": "Menstrual history"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "SexualHistory.HistorySexualInfection",
+              "label": "History of infection",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "SexualHistory.HistorySexualInfection",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "SexualHistory.SexualInfectionDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SexualHistory.SexuallyActive",
+              "label": "Sexually active",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "SexualHistory",
+        "layoutShow": true,
+        "title": "Sexual history"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Glandular lesion",
+                "HSIL",
+                "High grade glandular lesion",
+                "LSIL",
+                "Possible high grade glandular lesion"
+              ],
+              "size": 40,
+              "id": "DiagnosticTests.PAPSmearResult",
+              "label": "Last PAP smear",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "precisionMonth": true,
+              "precisionYear": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "DiagnosticTests.PAPSmearResult",
+                      "testEmpty": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "DiagnosticTests.PAPSmearDate",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Normal"
+              ],
+              "size": 40,
+              "id": "DiagnosticTests.MammogramResult",
+              "label": "Last mammogram",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "precisionMonth": true,
+              "precisionYear": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "DiagnosticTests.MammogramResult",
+                      "testEmpty": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "DiagnosticTests.MammogramDate",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "DiagnosticTests",
+        "layoutShow": true,
+        "title": "Diagnostic tests"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 500,
+              "id": "OtherHistory.PastMedicalHistory",
+              "label": "Past medical history",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "OtherHistory.PastSurgicalHistory",
+              "label": "Past surgical history",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "OtherHistory.HistoryOfCancer",
+              "label": "History of cancer",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "OtherHistory.PreviousChemotherapy",
+              "label": "Previous chemotherapy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "OtherHistory.PreviousRadiotherapy",
+              "label": "Previous radiotherapy",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "OtherHistory",
+        "layoutShow": true,
+        "title": "Other history"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Frail",
+                "Healthy"
+              ],
+              "size": 20,
+              "id": "PhysicalExamination.GeneralAppearance",
+              "label": "General appearance",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 4,
+              "precision": 1,
+              "scale": 0,
+              "id": "PhysicalExamination.PerformanceStatus",
+              "label": "Performance status (ECOG)",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "PhysicalExamination.Height",
+              "label": "Height",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "PhysicalExamination.Weight",
+              "label": "Weight",
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "calculation": {
+                "paramFieldIDs": [
+                  "PhysicalExamination.Height",
+                  "PhysicalExamination.Weight"
+                ],
+                "type": "BMI"
+              },
+              "id": "PhysicalExamination.BMI",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "minimumLength": 3,
+              "size": 7,
+              "id": "PhysicalExamination.BloodPressure",
+              "label": "Blood pressure",
+              "type": "Text",
+              "units": "mmHg"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Lying",
+                "Sitting",
+                "Standing"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "PhysicalExamination.BloodPressure",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "PhysicalExamination.BPPosture",
+              "label": "BP posture",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PhysicalExamination.Respiration",
+              "label": "Respiration",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PhysicalExamination.Heart",
+              "label": "Heart",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PhysicalExamination.Breasts",
+              "label": "Breasts",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PhysicalExamination.Abdomen",
+              "label": "Abdomen",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "PhysicalExamination.PalpablePeripheralNodes",
+              "label": "Palpable peripheral nodes",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "PhysicalExamination",
+        "layoutShow": true,
+        "title": "Physical examination"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 50,
+              "id": "PelvicExamination.ExternalGenitalia",
+              "label": "External genitalia",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PelvicExamination.Vagina",
+              "label": "Vagina",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PelvicExamination.Cervix",
+              "label": "Cervix",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PelvicExamination.Uterus",
+              "label": "Uterus",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PelvicExamination.Adnexae",
+              "label": "Adnexae",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PelvicExamination.Rectal",
+              "label": "Rectal",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "PelvicExamination.Colposcopy",
+              "label": "Colposcopy",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Benign",
+                "Cervical cancer",
+                "Endometrial cancer",
+                "Ovarian cancer",
+                "Pelvic mass",
+                "Peritoneal cancer",
+                "Pre-invasive",
+                "Risk reducing",
+                "Uterine cancer",
+                "Vaginal cancer",
+                "Vulvar cancer"
+              ],
+              "size": 25,
+              "id": "PelvicExamination.ProvisionalDiagnosis",
+              "label": "Provisional diagnosis",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "PelvicExamination",
+        "layoutShow": true,
+        "title": "Pelvic examination"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "options": [
+                    "Biopsy",
+                    "CT",
+                    "Chest Xray",
+                    "MRI",
+                    "PET",
+                    "Tumour markers",
+                    "Ultrasound"
+                  ],
+                  "size": 20,
+                  "id": "InvestigationCompleted",
+                  "label": "Investigation",
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "InvestigationDate",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 20,
+                  "id": "Result",
+                  "label": "Result",
+                  "type": "Text"
+                }
+              ],
+              "id": "InvestigationsCompleted.InvestigationsCompleted",
+              "label": "Investigations Completed",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "InvestigationsCompleted",
+        "layoutShow": true,
+        "title": "Investigations completed"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "options": [
+                    "Biopsy",
+                    "CT",
+                    "Chest Xray",
+                    "MRI",
+                    "PET",
+                    "Tumour markers",
+                    "Ultrasound"
+                  ],
+                  "size": 20,
+                  "id": "InvestigationOrdered",
+                  "label": "Investigation",
+                  "type": "Selection"
+                }
+              ],
+              "id": "InvestigationsOrdered.InvestigationsOrdered",
+              "label": "Investigations Ordered",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "InvestigationsOrdered",
+        "layoutShow": true,
+        "title": "Investigations ordered"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 500,
+              "id": "Treatments.Treatment",
+              "label": "Treatment",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Treatments",
+        "layoutShow": true,
+        "title": "Treatments"
+      }
+    }
+  ],
+  "id": "Cancer.Gynaecological.Assessment",
+  "layoutColumns": 3
+}

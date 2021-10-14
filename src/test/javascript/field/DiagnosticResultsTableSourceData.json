@@ -1,0 +1,101 @@
+[
+    {
+        "depth": 1,
+        "OriginalCode": "C172",
+        "Code": "C172",
+        "Date": {
+            "iso": "2020-01-20"
+        },
+        "Name": "LFT"
+    },
+    {
+        "depth": 2,
+        "ValueType": "NM",
+        "Value": "36",
+        "OriginalCode": "2885-2",
+        "Range": "60-80",
+        "Code": "2885-2",
+        "Abnormal": "L",
+        "Units": "g/L",
+        "Name": "Total protein"
+    },
+    {
+        "depth": 2,
+        "ValueType": "NM",
+        "Value": "33",
+        "OriginalCode": "61152-5",
+        "Range": "33-48",
+        "Code": "61152-5",
+        "Abnormal": "L",
+        "Units": "g/L",
+        "Name": "Albumin"
+    },
+    {
+        "depth": 2,
+        "ValueType": "NM",
+        "Value": "6",
+        "OriginalCode": "14631-6",
+        "Range": "0-20",
+        "Code": "14631-6",
+        "Units": "umol/L",
+        "Name": "Bilirubin total"
+    },
+    {
+        "depth": 2,
+        "ValueType": "NM",
+        "Value": "76",
+        "OriginalCode": "6768-6",
+        "Range": "30-110",
+        "Code": "6768-6",
+        "Units": "U/L",
+        "Name": "Alkaline phosphat."
+    },
+    {
+        "depth": 1,
+        "OriginalCode": "Sweat Test",
+        "Code": "Sweat Test",
+        "Date": {
+            "iso": "2020-01-21"
+        },
+        "Name": "Sweat Test"
+    },
+    {
+        "depth": 2,
+        "Value": "140.0",
+        "OriginalCode": "2954-6",
+        "Code": "2954-6",
+        "Units": "mmol/L",
+        "Name": "Sodium result"
+    },
+    {
+        "depth": 2,
+        "Value": "100.0",
+        "OriginalCode": "2077-6",
+        "Code": "2077-6",
+        "Units": "mmol/L",
+        "Name": "Chloride result"
+    },
+    {
+        "depth": 1,
+        "Code": "HIV",
+        "Date": {
+            "iso": "2020-01-21"
+        },
+        "Name": "HIV"
+    },
+    {
+        "depth": 2,
+        "Value": "123",
+        "Range": "32",
+        "Abnormal": "L",
+        "Code": "8127-3",
+        "Units": "mg",
+        "Name": "CD4 Count"
+    },
+    {
+        "depth": 2,
+        "Value": "456",
+        "Code": "20447-9",
+        "Name": "Viral Load"
+    }
+]

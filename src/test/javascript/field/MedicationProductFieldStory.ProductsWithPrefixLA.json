@@ -1,0 +1,752 @@
+[
+    {
+        "code": "4788",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Abacavir - Lamivudine"
+    },
+    {
+        "code": "4789",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Abacavir - Lamivudine - Zidovudine"
+    },
+    {
+        "code": "7179",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Amino acids - Calcium - Carbohydrate - Casein - Chloride - Fat - Potassium - Lactose monohydrate ..."
+    },
+    {
+        "code": "4263",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Amylase - Bromelains - Cellulase - Tilactase - Papain - Lipase - Protease - Lactobacillus acidoph..."
+    },
+    {
+        "code": "7143",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium animalis ssp lactis - Bifidobacterium lactis - Lactobacillus rhamnosus - Zinc - C..."
+    },
+    {
+        "code": "7146",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium animalis ssp lactis - Lactobacillus gasseri"
+    },
+    {
+        "code": "6758",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium bifidum - Bifidobacterium lactis - Bifidobacterium longum - Lactobacillus acidoph..."
+    },
+    {
+        "code": "6301",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium infantis - Bifidobacterium longum - Lactobacillus rhamnosus - Streptococcus therm..."
+    },
+    {
+        "code": "6302",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium infantis - Bifidobacterium longum - Lactobacillus rhamnosus - Streptococcus therm..."
+    },
+    {
+        "code": "7135",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium lactis - Bifidobacterium longum - Choline - Lactobacillus plantarum"
+    },
+    {
+        "code": "6688",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium lactis - Inulin - Lactobacillus acidophilus - Lactobacillus paracasei"
+    },
+    {
+        "code": "6705",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium lactis - Lactobacillus acidophilus - Bifidobacterium bifidum - Bifidobacterium an..."
+    },
+    {
+        "code": "7136",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bifidobacterium lactis - Lactobacillus rhamnosus - Bifidobacterium animalis ssp lactis - Lactobac..."
+    },
+    {
+        "code": "6824",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Bovine lactoferrin - Colostrum - Arabinogalactan - Bifidobacterium animalis ssp lactis - Lactobac..."
+    },
+    {
+        "code": "4985",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Colostrum - Inulin - Glutamine - Lactoferrin"
+    },
+    {
+        "code": "3106",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Dimethicone - Lactic acid - Allantoin - Zinc oxide - Alpha tocopherol"
+    },
+    {
+        "code": "5087",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Dolutegravir - Abacavir - Lamivudine"
+    },
+    {
+        "code": "3182",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Eucalyptus oil - Lavender oil - Calendula officinalis flower oil"
+    },
+    {
+        "code": "3183",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Eucalyptus oil - Lavender oil - Eucalyptus citriodora leaf oil essence"
+    },
+    {
+        "code": "1358",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Eucalyptus oil - Lavender oil - Wintergreen oil"
+    },
+    {
+        "code": "3186",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Eucalyptus oil - Peppermint oil - Wintergreen oil - Lavender oil"
+    },
+    {
+        "code": "4992",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Glutamine - Pectin - Ulmus rubra bark powder - Lactobacillus acidophilus - Bifidobacterium longum..."
+    },
+    {
+        "code": "6533",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Glycerol - Urea - Wool fat - Lactic acid - Dimethicone - Citric acid"
+    },
+    {
+        "code": "6553",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Isoflavones - Cetearyl glucoside - Paraffin, liquid - Cyclomethicone - Butyrospermum parkii - Lau..."
+    },
+    {
+        "code": "1672",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Labetalol hydrochloride"
+    },
+    {
+        "code": "3294",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lac-Dol"
+    },
+    {
+        "code": "2798",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lacosamide"
+    },
+    {
+        "code": "8192",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lacteeze Children's Strength"
+    },
+    {
+        "code": "8193",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lacteeze Extra Strength"
+    },
+    {
+        "code": "1675",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactic acid - Salicylic acid"
+    },
+    {
+        "code": "2206",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lacto-Free"
+    },
+    {
+        "code": "6353",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lactobac"
+    },
+    {
+        "code": "4899",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lactobac Powder"
+    },
+    {
+        "code": "6354",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lactobac Sachets"
+    },
+    {
+        "code": "3321",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium animalis"
+    },
+    {
+        "code": "3322",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium animalis - Glutamine - Zinc"
+    },
+    {
+        "code": "3323",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium animalis - Oligofructose - Bovine colostrum"
+    },
+    {
+        "code": "3324",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium bifidum"
+    },
+    {
+        "code": "6704",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium bifidum - Bifidobacterium animalis ssp lactis - Bifid..."
+    },
+    {
+        "code": "6693",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium bifidum - Bifidobacterium animalis ssp lactis - Inuli..."
+    },
+    {
+        "code": "6735",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium bifidum - Bifidobacterium animalis ssp lactis - Oligo..."
+    },
+    {
+        "code": "6793",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium bifidum - Bifidobacterium breve"
+    },
+    {
+        "code": "4306",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium bifidum - Bifidobacterium lactis"
+    },
+    {
+        "code": "5321",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium bifidum - Streptococcus thermophilus - Magnesium - Ub..."
+    },
+    {
+        "code": "5481",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium infantis - Lactobacillus delbrueckii ssp bulgaricus -..."
+    },
+    {
+        "code": "3328",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium lactis"
+    },
+    {
+        "code": "4995",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium lactis - Bifidobacterium longum - Lactobacillus bulga..."
+    },
+    {
+        "code": "3329",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium lactis - Bovine colostrum"
+    },
+    {
+        "code": "3330",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Bifidobacterium lactis - Oligofructose"
+    },
+    {
+        "code": "4113",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Lactobacillus plantarum - Lactobacillus casei - Lactobacillus bulgari..."
+    },
+    {
+        "code": "5322",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Lactobacillus rhamnosus - Bifidobacterium bifidum - Bifidobacterium a..."
+    },
+    {
+        "code": "6782",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Lactobacillus rhamnosus - Lactobacillus casei - Lactobacillus plantar..."
+    },
+    {
+        "code": "5323",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus acidophilus - Lactobacillus rhamnosus - Saccharomyces boulardii"
+    },
+    {
+        "code": "7137",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus crispatus - Lactobacillus gasseri - Lactobacillus plantarum - Lactobacillus reuteri..."
+    },
+    {
+        "code": "1684",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus fermentum"
+    },
+    {
+        "code": "6754",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus fermentum - Lactobacillus gasseri - Lactobacillus plantarum - Lactobacillus rhamnos..."
+    },
+    {
+        "code": "7131",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus gasseri - Lactobacillus plantarum - Lactobacillus reuteri - Lactobacillus rhamnosus..."
+    },
+    {
+        "code": "5249",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus paracasei"
+    },
+    {
+        "code": "6319",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus paracasei - Lactobacillus plantarum - Levocarnitine tartrate - Leucine - Starch, maize"
+    },
+    {
+        "code": "2566",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus plantarum"
+    },
+    {
+        "code": "7140",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus plantarum - Bifidobacterium lactis - Bifidobacterium longum - Zinc"
+    },
+    {
+        "code": "6776",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus plantarum - Lactobacillus brevis - Lactobacillus acidophilus - Bifidobacterium bifi..."
+    },
+    {
+        "code": "5325",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus plantarum - Lactobacillus paracasei"
+    },
+    {
+        "code": "7134",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus plantarum - Lactobacillus rhamnosus - Bifidobacterium lactis - Zinc"
+    },
+    {
+        "code": "6759",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus plantarum - Lactobacillus rhamnosus - Vaccinium macrocarpon fruit juice fresh - Pun..."
+    },
+    {
+        "code": "2710",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus reuteri"
+    },
+    {
+        "code": "6128",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus reuteri - Protein - Whey - Casein - Fat - Carbohydrate - Retinol - Pyridoxine - Cya..."
+    },
+    {
+        "code": "6129",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus reuteri - Protein - Whey - Casein - Fat - Carbohydrate - Retinol - Pyridoxine - Cya..."
+    },
+    {
+        "code": "5109",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus"
+    },
+    {
+        "code": "7142",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Bifidobacterium lactis - Lactobacillus plantarum - Streptococcus thermo..."
+    },
+    {
+        "code": "3336",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Bifidobacterium longum"
+    },
+    {
+        "code": "6737",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Inulin"
+    },
+    {
+        "code": "4060",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Lactobacillus acidophilus - Lactobacillus casei - Bifidobacterium lacti..."
+    },
+    {
+        "code": "3337",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Lactobacillus acidophilus - Lactobacillus delbrueckii ssp bulgaricus - ..."
+    },
+    {
+        "code": "6756",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Lactobacillus acidophilus - Lactobacillus gasseri - Bifidobacterium lac..."
+    },
+    {
+        "code": "5326",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Lactobacillus acidophilus - Lactobacillus plantarum - Bifidobacterium a..."
+    },
+    {
+        "code": "7043",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Lactobacillus casei - Lactobacillus acidophilus - Lactobacillus plantar..."
+    },
+    {
+        "code": "6749",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Lactobacillus reuteri"
+    },
+    {
+        "code": "5327",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactobacillus rhamnosus - Saccharomyces boulardii"
+    },
+    {
+        "code": "12381",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lactoferrin Enhanced"
+    },
+    {
+        "code": "12257",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lactoferrin Plus SB"
+    },
+    {
+        "code": "1685",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lactulose"
+    },
+    {
+        "code": "8626",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Laila-35 ED"
+    },
+    {
+        "code": "2763",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamictal"
+    },
+    {
+        "code": "7634",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamidus"
+    },
+    {
+        "code": "2859",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamisil Cream"
+    },
+    {
+        "code": "4004",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamisil DermGel"
+    },
+    {
+        "code": "7741",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamisil Once"
+    },
+    {
+        "code": "892",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamisil Spray"
+    },
+    {
+        "code": "2747",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamisil Tablets"
+    },
+    {
+        "code": "3019",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamitan"
+    },
+    {
+        "code": "1686",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lamivudine"
+    },
+    {
+        "code": "9762",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamivudine + Zidovudine Alphapharm"
+    },
+    {
+        "code": "1687",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lamivudine - Zidovudine"
+    },
+    {
+        "code": "9512",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamivudine Alphapharm"
+    },
+    {
+        "code": "9455",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamivudine RBX"
+    },
+    {
+        "code": "1688",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lamotrigine"
+    },
+    {
+        "code": "2611",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamotrigine AN"
+    },
+    {
+        "code": "446",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamotrigine GH"
+    },
+    {
+        "code": "8122",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamotrigine Sandoz"
+    },
+    {
+        "code": "8262",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lamotrust"
+    },
+    {
+        "code": "7299",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lanate"
+    },
+    {
+        "code": "2446",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lancet tip"
+    },
+    {
+        "code": "413",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lanolin"
+    },
+    {
+        "code": "255",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lanolin BP"
+    },
+    {
+        "code": "234",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lanoxin"
+    },
+    {
+        "code": "2027",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lanpro"
+    },
+    {
+        "code": "1689",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lanreotide acetate"
+    },
+    {
+        "code": "3833",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lansinoh for Breastfeeding Mothers"
+    },
+    {
+        "code": "1690",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lansoprazole"
+    },
+    {
+        "code": "4791",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lansoprazole ODT GH"
+    },
+    {
+        "code": "3961",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lanthanum"
+    },
+    {
+        "code": "12213",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lantim 50/5"
+    },
+    {
+        "code": "7016",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lantus"
+    },
+    {
+        "code": "1036",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lanvis"
+    },
+    {
+        "code": "9193",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lanzek and Lanzek Zydis"
+    },
+    {
+        "code": "8617",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lanzopran"
+    },
+    {
+        "code": "4369",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lapatinib"
+    },
+    {
+        "code": "477",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Largactil"
+    },
+    {
+        "code": "977",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lariam"
+    },
+    {
+        "code": "1692",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Laronidase (rch)"
+    },
+    {
+        "code": "792",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lasix"
+    },
+    {
+        "code": "793",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lasix High Dose"
+    },
+    {
+        "code": "9457",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Latanocom"
+    },
+    {
+        "code": "1693",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Latanoprost"
+    },
+    {
+        "code": "4363",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Latanoprost - Timolol"
+    },
+    {
+        "code": "763",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Latanoprost Actavis"
+    },
+    {
+        "code": "9461",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Latanoprost Sandoz"
+    },
+    {
+        "code": "503",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Latanoprost/Timolol AN 50/5"
+    },
+    {
+        "code": "1540",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Latanoprost/Timolol Sandoz"
+    },
+    {
+        "code": "2284",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Latuda"
+    },
+    {
+        "code": "1695",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Laureth-9"
+    },
+    {
+        "code": "6678",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Laureth-9 - Povidone-iodine"
+    },
+    {
+        "code": "5482",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Lavandula angustifolia flower - Withania somnifera root - Valeriana officinalis root - Hypericum ..."
+    },
+    {
+        "code": "5617",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lax-Active"
+    },
+    {
+        "code": "765",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lax-Sachets"
+    },
+    {
+        "code": "7353",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Lax-Tab"
+    },
+    {
+        "code": "9911",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "LaxaCon"
+    },
+    {
+        "code": "84",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Laxettes with Senna"
+    },
+    {
+        "code": "6095",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Laxettes with Sennosides"
+    },
+    {
+        "code": "12688",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "LaxPro Restore"
+    },
+    {
+        "code": "3391",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Melaleuca oil - Lavender oil"
+    },
+    {
+        "code": "5331",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Melissa officinalis herb dry - Scutellaria lateriflora herb - Histidine - Lavandula angustifolia ..."
+    },
+    {
+        "code": "3505",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Peppermint oil - Lavender oil"
+    },
+    {
+        "code": "4104",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Plantolin - Aloe barbadensis - Melaleuca oil - Lavender oil - Ylang ylang oil - Geranium oil"
+    },
+    {
+        "code": "3550",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Propylene glycol - Urea - Lactic acid"
+    },
+    {
+        "code": "6641",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Retinyl acetate - Colecalciferol - Glutamine - Zinc - Pectin - Larix arabinogalactan - Glycyrrhiz..."
+    },
+    {
+        "code": "3806",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Urea - Lactic acid"
+    },
+    {
+        "code": "3807",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Urea - Lactic acid - Sodium pyrrolidone carboxylate"
+    },
+    {
+        "code": "3844",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Wool fat - Urea - Sodium lactate - Propylene glycol - Dimethicone - Lactic acid - Citric acid"
+    }
+]

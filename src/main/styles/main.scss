@@ -1,0 +1,77 @@
+/**
+ * Import all other rules
+ * main.scss will be imported in the to Smart Health Web Client
+ *
+ * @author Uditha 18/09/2018
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2018
+ */
+
+@charset "utf8";
+
+/**
+ * Base Rules
+ */
+@import 'variable';
+@import 'base';
+/**
+* Vendor Rules
+*/
+@import '~primeicons/primeicons.css';
+@import '~primereact/resources/primereact.css';
+@import '~primeflex/primeflex.css';
+@import '~font-awesome/css/font-awesome.css';
+@import '~smarthealth-javascript/smarthealthicons.css';
+
+/**
+* Containers Rules
+*/
+@import 'component/AboutOverviewDialog';
+@import 'container/FormFieldComponent';
+@import 'container/LoginForm';
+@import 'container/LoginGroupsAndLocationsForm';
+@import 'container/MenuBarComponent';
+@import 'container/NavTreeComponent';
+@import 'container/OKDialog';
+@import 'container/PatientSearchDialog';
+@import 'container/SidebarPanel';
+/**
+* Component Rules
+*/
+@import 'component/AssociatedMedicalGroupAddDialog';
+@import 'component/ClinicalMeasuresAdultWeightChart';
+@import 'component/DateTimeField';
+@import 'component/DiagnosticResultsTable';
+@import 'component/FieldDropdownButton';
+@import 'component/LungFunctionGraph';
+@import 'component/LungFunctionGraphLegend';
+@import 'component/LungFunctionGraphSummaryPanel';
+@import 'component/LungFunctionObservationsSummaryPanel';
+@import 'component/MedicalGroupMemberSearchDialog';
+@import 'component/MedicalGroupSelectionTable';
+@import 'component/MedicalGroupSearchDialog';
+@import 'component/MemberSelectionTable';
+@import 'component/MemberOrMedicalGroupField';
+@import 'component/MedicationProduct';
+@import 'component/MedicationProductField';
+@import 'component/MedicationProductIcon';
+@import 'component/MedicationSummaryPanel';
+@import 'component/MultipleSelectionField';
+@import 'component/MultipleSelectionFieldLabel';
+@import 'component/PatientEHRConsentDialog';
+@import 'component/RestTester';
+@import 'component/RowspanTable';
+@import 'component/SelectionTableFilterInput';
+@import 'component/ServiceRecordReferenceField';
+@import 'component/ServiceRecordReferenceHyperlink';
+@import 'component/TableField';
+@import 'component/TextField';
+
+/**
+ * State Rules
+ */
+@import 'state';
+/**
+* Application Themes
+ */
+@import '~primereact/resources/themes/nova-light/theme.css';
+@import 'theme/smart-health';

@@ -1,0 +1,839 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Admission.AdmissionDate",
+              "label": "Admission date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Admission.DischargeDate",
+              "label": "Discharge date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cysticfibrosis.ReasonForAdmission",
+              "id": "Admission.ReasonForAdmission",
+              "label": "Reason for admission",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          }
+        ],
+        "id": "Admission",
+        "layoutShow": true,
+        "title": "Admission"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 500,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Bronchoalveolar lavage"
+                      ],
+                      "fieldID": "Admission.ReasonForAdmission"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostDischargeCare.PostBronchoalveolarlavagecare",
+              "label": "Post bronchoalveolar lavage care",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precision": 1,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "PA eradication"
+                      ],
+                      "fieldID": "Admission.ReasonForAdmission"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostDischargeCare.TreatmentDuration",
+              "label": "Treatment duration",
+              "type": "Number",
+              "units": "weeks"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "PA eradication"
+                      ],
+                      "fieldID": "Admission.ReasonForAdmission"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostDischargeCare.NextSputumSample",
+              "label": "Next sputum sample",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "PA eradication"
+                      ],
+                      "fieldID": "Admission.ReasonForAdmission"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostDischargeCare.CleaningOfEquipment",
+              "label": "Cleaning of equipment",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Chest exacerbation (not new PA)"
+                      ],
+                      "fieldID": "Admission.ReasonForAdmission"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostDischargeCare.DischargeToHomeIV",
+              "label": "Discharge to Home IV",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Chest exacerbation (not new PA)"
+                      ],
+                      "fieldID": "Admission.ReasonForAdmission"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostDischargeCare.ChestExacerbation",
+              "label": "Chest exacerbation",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "ABPA"
+                      ],
+                      "fieldID": "Admission.ReasonForAdmission"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostDischargeCare.SteroidPlan",
+              "label": "Steroid plan",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "New CF related diabetes"
+                      ],
+                      "fieldID": "Admission.ReasonForAdmission"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostDischargeCare.HomeMonitoring",
+              "label": "Home monitoring",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "ServiceRecord",
+                  "label": "Service Record",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "size": 200,
+                  "id": "MedicationName",
+                  "label": "Medication",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 200,
+                  "id": "Directions",
+                  "label": "Directions",
+                  "layout": {
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 25,
+                  "id": "Indication",
+                  "label": "Indication",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "PostDischargeCare.Medications",
+              "label": "Discharge medications",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "PostDischargeCare.CFNurseEquipmentCleaningAndMaintenance",
+              "label": "Equipment cleaning and maintenance",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "ACBT",
+                "PEP",
+                "Hi-PEP",
+                "Flutter",
+                "Hypertonic Saline Nebs",
+                "Acapella",
+                "HSN",
+                "Exercise",
+                "Coughing"
+              ],
+              "size": 30,
+              "id": "PostDischargeCare.AirwayClearanceRegimen",
+              "label": "Airway clearance regimen",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "PostDischargeCare.PhysiotherapistNotes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "PostDischargeCare.DietitianNotes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "PostDischargeCare.SocialWorkerNotes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "PostDischargeCare.OccupationalTherapistNotes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "PostDischargeCare",
+        "layoutShow": true,
+        "title": "Post Discharge Care"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "FollowUp.CFClinicAppointmentDate",
+              "label": "CF clinic appointment",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 40,
+                  "id": "DisciplineOrProvider",
+                  "label": "Discipline/Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "id": "FollowUp.OtherAppointments",
+              "label": "Other appointments",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Bloods",
+                    "Cough swab",
+                    "HRCT",
+                    "Itraconazole levels",
+                    "Sputum",
+                    "USS",
+                    "Xray"
+                  ],
+                  "size": 40,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "id": "FollowUp.DiagnosticTests",
+              "label": "Diagnostic tests",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 40,
+                  "id": "DisciplineOrProvider",
+                  "label": "Discipline/Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "id": "FollowUp.Referrals",
+              "label": "Referrals",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "FollowUp",
+        "layoutShow": true,
+        "title": "Follow-up"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "GP.GP",
+              "label": "Name",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "MemberOrMedicalGroup"
+            }
+          },
+          {
+            "field": {
+              "size": 20,
+              "id": "GP.GPPhone",
+              "label": "Phone",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "GP.GPEmail",
+              "label": "Email",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 300,
+              "id": "GP.GPAddress",
+              "label": "Address",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "GP",
+        "layoutShow": true,
+        "title": "GP"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Not updated",
+                "Updated"
+              ],
+              "size": 15,
+              "id": "OtherDischargeTasks.ActionPlan",
+              "label": "Action plan",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Completed",
+                "Not required"
+              ],
+              "size": 15,
+              "id": "OtherDischargeTasks.TravelForms",
+              "label": "Travel forms",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Completed",
+                "Not required"
+              ],
+              "size": 15,
+              "id": "OtherDischargeTasks.Prescriptions",
+              "label": "Prescriptions",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "OtherDischargeTasks",
+        "layoutShow": true,
+        "title": "Other Discharge Tasks"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.DischargeCarePlan",
+  "layoutColumns": 3
+}

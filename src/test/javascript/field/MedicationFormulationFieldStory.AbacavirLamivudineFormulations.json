@@ -1,0 +1,251 @@
+[
+    {
+        "brand": "Kivexa Tablets",
+        "cmiHTML": false,
+        "composition": "Abacavir (sulfate) 600 mg, lamivudine 300 mg; orange f-c",
+        "dosage": "Adults, adolescents greater than or equal to 12 yrs and greater than or equal to 40 kg: 1 tab once daily. Hepatic (Child-Pugh A), renal impairment, elderly, discontinuation, dose adjustment: use separate abacavir, lamivudine products; see full PI",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "D",
+            "text": "May be taken with or without food."
+        },
+        "formulationCode": 1,
+        "formulationType": "Tablets",
+        "generics": {
+            "gencode": 4788,
+            "generics": "Abacavir - Lamivudine"
+        },
+        "glutenFree": false,
+        "id": 740001,
+        "prescriptionOnly": true,
+        "prescrtiptionText": "S4",
+        "product": {
+            "adverseReactions": "Hypersensitivity incl fever, rash, GI upset, dyspnoea, cough, respiratory failure, fatigue, malaise, headache, incr LFTs, myalgia, arthralgia (disc immediately; do not restart if hypersensitivity cannot be ruled out); alopecia; immune reconstitution syndrome incl autoimmune disorder (eg Graves' disease, polymyositis, GBS); hyperlactataemia; hepatomegaly with steatosis; lactic acidosis, rhabdomyolysis (rare); pure red cell aplasia, SCAR (very rare); fat loss/ gain, incr MI risk (poss); others, see full PI",
+            "consumerMedicineInformation": true,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Methadone; sorbitol (avoid chronic coadmin if poss; incr viral load monitoring frequency); trimethoprim (in renal impairment); other abacavir, lamivudine containing products (should not use); emtricitabine (not recommended); retinoids eg isotretinoin (poss)",
+            "fullPI": {
+                "fullPICode": 7083,
+                "productCode": 7400
+            },
+            "precautions": "Monitor lipids, BGL; hepatic disease risk factors; ClCr < 50 mL/min, Child-Pugh B, C (not recommended); CHD risk (minimise all modifiable risk factors eg hypertension, hyperlipidaemia, smoking, diabetes); suspected abacavir hypersensitivity (do not initiate; or disc, must not be restarted if hypersensitivity cannot be excluded); 1st few mths of therapy; HBV coinfection (monitor LFTs, HBV replication upon discontinuation); severe immune deficiency at initiation (monitor for inflammation); residual opportunistic infection; ensure adequate protection against HIV transmission; +ve HLA-B*5701 allele status (incr hypersensitivity risk, treatment not recommended; screen prior to initiation or reinitiation if status unknown); prolonged prior NRTI exposure, HIV-1 with multiple mutations (cross resistance potential); bodyweight < 40 kg (should not use); in utero exposure to NRTIs, incl HIV -ve children (investigate for mitochondrial dysfunction); elderly > 65 yrs; females (incr lactic acidosis, hepatomegaly risk); pregnancy; lactation, children < 12 yrs (not recommended)",
+            "pregnancyCode": "B3",
+            "pregnancyTextExists": false,
+            "product": "Kivexa",
+            "productCode": 7400,
+            "productSort": "Kivexa",
+            "productTagFree": "Kivexa",
+            "s11": false,
+            "section": 8,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "I",
+            "uses": "NRTI combination. HIV infection treatment in adults, adolescents greater than or equal to 12 yrs",
+            "warnings": ""
+        },
+        "sortOrder": 1,
+        "cmicode": 9260
+    },
+    {
+        "brand": "Abacavir/Lamivudine GH 600/300 Tablets",
+        "cmiHTML": false,
+        "composition": "Abacavir (HCl monohydrate) 600 mg, lamivudine 300 mg; orange f-c",
+        "dosage": "Adults, adolescents greater than or equal to 12 yrs, greater than or equal to 40 kg: 1 tab once daily. ClCr < 50 mL/min, Child-Pugh A, elderly, disc, dose adjustment: use separate abacavir, lamivudine products; see full PI",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "D",
+            "text": "May be taken with or without food."
+        },
+        "formulationCode": 1,
+        "formulationType": "Tablets",
+        "generics": {
+            "gencode": 4788,
+            "generics": "Abacavir - Lamivudine"
+        },
+        "glutenFree": false,
+        "id": 1244801,
+        "prescriptionOnly": true,
+        "prescrtiptionText": "S4",
+        "product": {
+            "adverseReactions": "Hypersensitivity incl fever, rash, GI upset, dyspnoea, cough, fatigue, malaise, headache, myalgia, arthralgia (disc immediately; do not restart if hypersensitivity cannot be ruled out); alopecia; insomnia; depression; dizziness; abnormal dreams; anxiety; SCAR; hyperlactataemia, lactic acidosis; pure red cell aplasia; hepatotoxicity incl severe hepatomegaly with steatosis; lipodystrophy; immune reconstitution incl autoimmune disorder; renal failure; peripheral neuropathy; others see full PI",
+            "consumerMedicineInformation": false,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Other abacavir, lamivudine containing products (should not use); methadone; sorbitol (avoid chronic coadmin if poss; incr viral load monitoring frequency); trimethoprim (in renal impairment); zalcitabine, emtricitabine (not recommended); retinoids eg isotretinoin (poss)",
+            "fullPI": {
+                "fullPICode": 14520,
+                "productCode": 12448
+            },
+            "precautions": "Ensure adequate protection against HIV transmission; suspected abacavir hypersensitivity (do not initiate; or disc, must not be restarted if hypersensitivity cannot be excluded); +ve HLA-B*5701 allele status (incr hypersensitivity risk, treatment not recommended; screen prior to initiation or reinitiation if status unknown); CHD risk (eg hypertension, hyperlipidaemia, smoking, diabetes); known hepatic disease risk; suspected lactic acidosis (suspend treatment); monitor lipids, BGL; severe immune deficiency at initiation (monitor inflammation); residual opportunistic infection; HBV coinfection (monitor LFTs, HBV replication upon discontinuation); incr MI risk; prolonged prior NRTI exposure, HIV-1 with multiple mutations (cross resistance potential); ClCr < 50 mL/min, Child-Pugh grade B, C (not recommended); elderly; bodyweight < 40 kg (should not use); in utero exposure to NRTIs, incl HIV -ve children (investigate for mitochondrial dysfunction); elderly > 65 yrs; females (incr lactic acidosis, hepatomegaly risk); pregnancy; lactation (not recommended); children < 12 yrs (not recommended)",
+            "pregnancyCode": "B3",
+            "pregnancyTextExists": false,
+            "product": "Abacavir/Lamivudine GH 600/300",
+            "productCode": 12448,
+            "productSort": "Abacavir/Lamivudine GH 600/300",
+            "productTagFree": "Abacavir/Lamivudine GH 600/300",
+            "s11": false,
+            "section": 8,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "I",
+            "uses": "NRTI combination. HIV infection treatment in adults, adolescents greater than or equal to 12 yrs",
+            "warnings": ""
+        },
+        "sortOrder": 1
+    },
+    {
+        "brand": "Abacavir/Lamivudine 600/300 APOTEX Tablets",
+        "cmiHTML": false,
+        "composition": "Abacavir (sulfate) 600 mg, lamivudine 300 mg; orange f-c",
+        "dosage": "Adults, adolescents greater than or equal to 12 yrs and greater than or equal to 40 kg: 1 tab once daily. Renal, mild hepatic (Child-Pugh A) impairment, elderly, discontinuation, dose adjustment: use separate abacavir, lamivudine products; see full PI",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "D",
+            "text": "May be taken with or without food."
+        },
+        "formulationCode": 1,
+        "formulationType": "Tablets",
+        "generics": {
+            "gencode": 4788,
+            "generics": "Abacavir - Lamivudine"
+        },
+        "glutenFree": true,
+        "id": 1245101,
+        "prescriptionOnly": true,
+        "prescrtiptionText": "S4",
+        "product": {
+            "adverseReactions": "Hypersensitivity incl fever, rash, GI upset, dyspnoea, cough, fatigue, malaise, headache, incr LFTs, myalgia, arthralgia (disc immediately; do not restart if hypersensitivity cannot be ruled out); insomnia; depression; anxiety; hyperlactataemia; alopecia; muscle disorder; immune reconstitution syndrome incl autoimmune disorder (eg Graves' disease, polymyositis, GBS); lipodystrophy; hepatomegaly with steatosis; lactic acidosis, rhabdomyolysis (rare); pure red cell aplasia, paraesthesia, SCAR (very rare); incr MI risk, mitochondrial dysfunction (poss); others, see full PI",
+            "consumerMedicineInformation": true,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Methadone; trimethoprim (in renal impairment); other abacavir, lamivudine containing products (should not use); zalcitabine, emtricitabine (not recommended); retinoids eg isotretinoin (poss)",
+            "fullPI": {
+                "fullPICode": 14457,
+                "productCode": 12451
+            },
+            "precautions": "Hepatic disease risk factors; renal (ClCr < 50 mL/min), mod-severe hepatic impairment (Child-Pugh B, C) (not recommended); suspected abacavir hypersensitivity (do not initiate; or disc, must not be restarted if hypersensitivity cannot be excluded); +ve HLA-B*5701 allele status (incr hypersensitivity risk, treatment not recommended; screen prior to initiation or reinitiation if status unknown); 1st few mths of therapy; monitor lipids, BGL; severe immune deficiency at initiation (monitor inflammation); residual opportunistic infection; HBV coinfection (monitor LFTs, HBV replication upon discontinuation); ensure adequate protection against HIV transmission; CHD risk (eg hypertension, hyperlipidaemia, diabetes, smoking); prolonged prior NRTI exposure, HIV-1 with multiple mutations (cross resistance potential); bodyweight < 40 kg (should not use); in utero exposure to NRTIs, incl HIV -ve children (investigate for mitochondrial dysfunction); elderly > 65 yrs; females (incr lactic acidosis, hepatomegaly risk); pregnancy; lactation, children < 12 yrs (not recommended)",
+            "pregnancyCode": "B3",
+            "pregnancyTextExists": false,
+            "product": "Abacavir/Lamivudine 600/300 APOTEX",
+            "productCode": 12451,
+            "productSort": "AbacavirLamivudine 600/300 APOTEX",
+            "productTagFree": "Abacavir/Lamivudine 600/300 APOTEX",
+            "s11": false,
+            "section": 8,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "I",
+            "uses": "NRTI combination. HIV infection treatment in adults, adolescents greater than or equal to 12 yrs",
+            "warnings": ""
+        },
+        "sortOrder": 1,
+        "cmicode": 12531
+    },
+    {
+        "brand": "Abacavir/Lamivudine Mylan Tablets",
+        "cmiHTML": false,
+        "composition": "Abacavir (sulfate) 600 mg, lamivudine 300 mg; white f-c",
+        "dosage": "Adults, adolescents greater than or equal to 12 yrs and greater than or equal to 40 kg: 1 tab once daily. Hepatic (Child-Pugh A), renal impairment (ClCr < 50 mL/min), elderly, disc, dose adjustment: use separate abacavir, lamivudine products; see full PI",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "D",
+            "text": "May be taken with or without food."
+        },
+        "formulationCode": 1,
+        "formulationType": "Tablets",
+        "generics": {
+            "gencode": 4788,
+            "generics": "Abacavir - Lamivudine"
+        },
+        "glutenFree": false,
+        "id": 1248601,
+        "prescriptionOnly": true,
+        "prescrtiptionText": "S4",
+        "product": {
+            "adverseReactions": "Hypersensitivity incl fever, rash, GI upset, dyspnoea, cough, respiratory, renal failure, fatigue, malaise, headache, incr LFTs, myalgia, arthralgia (disc immediately; do not restart if cannot rule out hypersensitivity); alopecia; immune reconstitution syndrome incl autoimmune disorder (eg Graves' disease, polymyositis, GBS); hyperlactataemia; fat loss/ gain; hepatomegaly with steatosis; lactic acidosis, rhabdomyolysis (rare); pure red cell aplasia, SCAR (very rare); incr MI risk (poss); others, see full PI",
+            "consumerMedicineInformation": true,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "Other abacavir, lamivudine containing products (should not use); methadone; sorbitol (avoid chronic coadmin; consider incr viral load monitoring); trimethoprim (in renal impairment); emtricitabine (not recommended); retinoids eg isotretinoin (poss)",
+            "fullPI": {
+                "fullPICode": 14528,
+                "productCode": 12486
+            },
+            "precautions": "Monitor lipids, BGL, HIV complications; hepatic disease risk factors; ClCr < 50 mL/min, Child-Pugh B, C (not recommended); CHD risk (minimise all modifiable risk factors eg hypertension, hyperlipidaemia, smoking, diabetes); suspected abacavir hypersensitivity (do not initiate; or disc, must not restart if cannot excl hypersensitivity); 1st few mths of therapy; HBV coinfection (monitor LFTs, HBV replication upon disc); severe immune deficiency at initiation (monitor for inflammation); residual opportunistic infection; ensure adequate protection against HIV transmission; +ve HLA-B*5701 allele status (incr hypersensitivity risk, treatment not recommended; screen prior to initiation or reinitiation if status unknown); prolonged prior NRTI exposure, HIV-1 with multiple mutations (cross resistance potential); bodyweight < 40 kg (should not use); in utero exposure to NRTIs, incl HIV -ve children (investigate for mitochondrial dysfunction); elderly > 65 yrs; females (incr lactic acidosis, hepatomegaly risk); pregnancy; lactation, children < 12 yrs (not recommended)",
+            "pregnancyCode": "B3",
+            "pregnancyTextExists": false,
+            "product": "Abacavir/Lamivudine 600/300 Mylan",
+            "productCode": 12486,
+            "productSort": "Abacavir/Lamivudine 600/300 Mylan",
+            "productTagFree": "Abacavir/Lamivudine 600/300 Mylan",
+            "s11": false,
+            "section": 8,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "I",
+            "uses": "NRTI combination. HIV infection in adults, adolescents greater than or equal to 12 yrs",
+            "warnings": ""
+        },
+        "sortOrder": 1,
+        "cmicode": 12591
+    },
+    {
+        "brand": "Abacavir/Lamivudine 600/300 Sun Tablets",
+        "cmiHTML": false,
+        "composition": "Abacavir (sulfate) 600 mg, lamivudine 300 mg",
+        "dosage": "",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "Z",
+            "text": "No PPPA Defined"
+        },
+        "formulationCode": 1,
+        "formulationType": "Tablets",
+        "generics": {
+            "gencode": 4788,
+            "generics": "Abacavir - Lamivudine"
+        },
+        "glutenFree": false,
+        "id": 1270601,
+        "prescriptionOnly": true,
+        "prescrtiptionText": "S4",
+        "product": {
+            "adverseReactions": "",
+            "consumerMedicineInformation": false,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "",
+            "precautions": "",
+            "pregnancyCode": "B3",
+            "pregnancyTextExists": false,
+            "product": "Abacavir/Lamivudine 600/300 Sun",
+            "productCode": 12706,
+            "productSort": "Abacavir/Lamivudine 600/300 Sun",
+            "productTagFree": "Abacavir/Lamivudine 600/300 Sun",
+            "s11": false,
+            "section": 8,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "I",
+            "uses": "",
+            "warnings": ""
+        },
+        "sortOrder": 1
+    }
+]

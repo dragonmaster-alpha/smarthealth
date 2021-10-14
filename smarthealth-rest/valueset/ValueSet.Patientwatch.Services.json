@@ -1,0 +1,54 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 33,
+  "uri": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "General Practitioner"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Specialist, incl outpatient appts"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Urgent care service"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Emergency department"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Hospital admission"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Respite care"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Rehabiliative care"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Nurse home care"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Home help"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Community services"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patientwatch.Services",
+      "value": "Other"
+    }
+  ],
+  "valueSetID": "Patientwatch.Services"
+}

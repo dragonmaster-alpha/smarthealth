@@ -1,0 +1,45 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 40,
+            "id": "result",
+            "label": "Result",
+            "type": "Text"
+          },
+          {
+            "size": 40,
+            "id": "value",
+            "label": "20/01/2020",
+            "type": "Text"
+          },
+          {
+            "size": 40,
+            "id": "units",
+            "label": "Units",
+            "type": "Text"
+          },
+          {
+            "size": 40,
+            "id": "range",
+            "label": "Range",
+            "type": "Text"
+          }
+        ],
+        "id": "renalTransplantPathologyResults",
+        "label": "results",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Summary.Pathology.Renal.Transplant.WebUI",
+  "layoutColumns": 1
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "code": "6353",
+    "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+    "value": "Lactobac"
+  },
+  {
+    "code": "7252",
+    "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+    "value": "Lactocur"
+  },
+  {
+    "code": "7253",
+    "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+    "value": "Lamogine"
+  },
+  {
+    "code": "234",
+    "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+    "value": "Lanoxin"
+  },
+  {
+    "code": "7016",
+    "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+    "value": "Lantus"
+  }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDFVC"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDFVCPredicted"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDFEV1"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDFEV1Predicted"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDFEV25To75"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDFEV25To75Predicted"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDMMEF"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDMMEFPredicted"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDPEF"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDPEFPredicted"
+    },
+    {
+        "subheader": "Pre-Bronchodilator",
+        "observationType": "PreBDFER"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDFVC"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDFVCPredicted"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDFEV1"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDFEV1Predicted"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDFEV25To75"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDFEV25To75Predicted"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDMMEF"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDMMEFPredicted"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDPEF"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDPEFPredicted"
+    },
+    {
+        "subheader": "Post-Bronchodilator",
+        "observationType": "PostBDFER"
+    },
+    {
+        "subheader": "Calculated Values",
+        "observationType": "FEV1Change"
+    },
+    {
+        "subheader": "Calculated Values",
+        "observationType": "FVCChange"
+    },
+    {
+        "subheader": "Anthropometry",
+        "observationType": "Height"
+    },
+    {
+        "subheader": "Anthropometry",
+        "observationType": "Weight"
+    }
+]

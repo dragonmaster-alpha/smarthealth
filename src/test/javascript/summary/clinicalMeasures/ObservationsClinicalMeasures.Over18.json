@@ -1,0 +1,218 @@
+[
+    {
+        "id": 619,
+        "observationDate": {
+            "iso": "2015-02-16T13:40+11"
+        },
+        "observationType": "Weight",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2015-02-16T13:40+11"
+            },
+            "serviceID": 11714,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.79, FVC: 1.92"
+        },
+        "valueNumber": 58.6
+    },
+    {
+        "id": 618,
+        "observationDate": {
+            "iso": "2015-02-16T13:40+11"
+        },
+        "observationType": "Height",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2015-02-16T13:40+11"
+            },
+            "serviceID": 11714,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.79, FVC: 1.92"
+        },
+        "valueNumber": 160
+    },
+    {
+        "id": 567,
+        "observationDate": {
+            "iso": "2016-02-16T13:40+11"
+        },
+        "observationType": "Weight",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2016-02-16T13:40+11"
+            },
+            "serviceID": 11710,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.85, FVC: 1.96"
+        },
+        "valueNumber": 70.3
+    },
+    {
+        "id": 566,
+        "observationDate": {
+            "iso": "2016-02-16T13:40+11"
+        },
+        "observationType": "Height",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2016-02-16T13:40+11"
+            },
+            "serviceID": 11710,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.85, FVC: 1.96"
+        },
+        "valueNumber": 174
+    },
+    {
+        "id": 579,
+        "observationDate": {
+            "iso": "2017-02-16T13:40+11"
+        },
+        "observationType": "Height",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2017-02-16T13:40+11"
+            },
+            "serviceID": 11711,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.89, FVC: 1.96"
+        },
+        "valueNumber": 171
+    },
+    {
+        "id": 580,
+        "observationDate": {
+            "iso": "2017-02-16T13:40+11"
+        },
+        "observationType": "Weight",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2017-02-16T13:40+11"
+            },
+            "serviceID": 11711,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.89, FVC: 1.96"
+        },
+        "valueNumber": 69.5
+    },
+    {
+        "id": 543,
+        "observationDate": {
+            "iso": "2018-08-16T13:40+10"
+        },
+        "observationType": "Height",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2018-08-16T13:40+10"
+            },
+            "serviceID": 11708,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.96, FVC: 1.89"
+        },
+        "valueNumber": 177
+    },
+    {
+        "id": 544,
+        "observationDate": {
+            "iso": "2018-08-16T13:40+10"
+        },
+        "observationType": "Weight",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2018-08-16T13:40+10"
+            },
+            "serviceID": 11708,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.96, FVC: 1.89"
+        },
+        "valueNumber": 73.3
+    },
+    {
+        "id": 685,
+        "observationDate": {
+            "iso": "2019-08-16T13:40+10"
+        },
+        "observationType": "Height",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2019-08-16T13:40+10"
+            },
+            "serviceID": 11721,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.91, FVC: 1.86"
+        },
+        "valueNumber": 179
+    },
+    {
+        "id": 686,
+        "observationDate": {
+            "iso": "2019-08-16T13:40+10"
+        },
+        "observationType": "Weight",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2019-08-16T13:40+10"
+            },
+            "serviceID": 11721,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.91, FVC: 1.86"
+        },
+        "valueNumber": 74.3
+    },
+    {
+        "id": 557,
+        "observationDate": {
+            "iso": "2020-06-23T13:40+10"
+        },
+        "observationType": "Weight",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2020-06-23T13:40+10"
+            },
+            "serviceID": 11709,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.96, FVC: 1.89"
+        },
+        "valueNumber": 73.3
+    },
+    {
+        "id": 556,
+        "observationDate": {
+            "iso": "2020-06-23T13:40+10"
+        },
+        "observationType": "Height",
+        "patientID": 10,
+        "serviceRecordReference": {
+            "owningGroupID": 22,
+            "serviceDate": {
+                "iso": "2020-06-23T13:40+10"
+            },
+            "serviceID": 11709,
+            "serviceType": 72,
+            "summary": "Post BD FEV1: 0.96, FVC: 1.89"
+        },
+        "valueNumber": 177
+    }
+]

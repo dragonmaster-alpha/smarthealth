@@ -1,0 +1,14 @@
+/**
+ * Styles for the Test implementation of the Diagnostic Results table in DiagnosticResultsTable.
+ *
+ * @author Thompson 27/05/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+// PrimeReact DataTable styling variables
+$p-DataTable-highlight-color: #007ad9;
+
+body .p-datatable .p-datatable-tbody > tr > td.DiagnosticResultsTable-rowspan-highlight {
+  // Override PrimeReact styles to allow rowspan highlight on Test and Date column
+  background-color: $p-DataTable-highlight-color;
+  color: white;
+}

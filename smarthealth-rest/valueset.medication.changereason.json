@@ -1,0 +1,26 @@
+{
+  "codeLength": 0,
+  "coded": false,
+  "extensible": true,
+  "length": 25,
+  "uri": "http://ns.smarthealth.com.au/valueset/Medication.ChangeReason",
+  "valueSetID": "Medication.ChangeReason",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeReason",
+      "value": "Adverse reaction"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeReason",
+      "value": "Ineffective"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeReason",
+      "value": "Non-compliance"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeReason",
+      "value": "Side effects"
+    }
+  ]
+}

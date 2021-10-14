@@ -1,0 +1,366 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "AT",
+        "label": "AT",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "BMILower",
+        "label": "BMI (Lower)",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "BMIUpper",
+        "label": "BMI (Upper)",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "multiple": true,
+        "options": [
+          "Diab",
+          "HP",
+          "Low K",
+          "NAS"
+        ],
+        "size": 20,
+        "id": "CurrentDiet",
+        "label": "Current Diet",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precision": 6,
+        "scale": 0,
+        "id": "EstimatedEnergyIntake",
+        "label": "Estimated Energy Intake",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 3,
+        "scale": 0,
+        "id": "EstimatedProteinIntake",
+        "label": "Estimated Protein Intake",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "Fluid",
+        "label": "Fluid Restriction",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 0,
+        "id": "FluidRestriction",
+        "label": "Fluid Restriction",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 1,
+        "id": "GProtkg",
+        "label": "g prot/kg",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 3,
+        "id": "Ht2",
+        "label": "Ht2",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "Height",
+        "label": "Height",
+        "type": "Number",
+        "units": "cm"
+      }
+    },
+    {
+      "field": {
+        "precision": 6,
+        "scale": 1,
+        "id": "IBWLower",
+        "label": "IBW (Lower)",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 6,
+        "scale": 1,
+        "id": "IBWUpper",
+        "label": "IBW (Upper)",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "size": 200,
+        "id": "Breakfast",
+        "label": "Breakfast",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 200,
+        "id": "Lunch",
+        "label": "Lunch",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 200,
+        "id": "Dinner",
+        "label": "Dinner",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "MT",
+        "label": "MT",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "multiple": true,
+        "options": [
+          "Acidophilus",
+          "Egg White Powder",
+          "Ensure Plus",
+          "Fish Oil Omega 3",
+          "High Protein Foods",
+          "Nepro",
+          "Resource",
+          "Two Cal"
+        ],
+        "size": 25,
+        "id": "OralSupplementsAndDose",
+        "label": "Oral Supplements/Dose",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "multiple": true,
+        "options": [
+          "Allutab",
+          "Cal-sup",
+          "Caltrate",
+          "Mylanta",
+          "Renagel",
+          "Titrilac"
+        ],
+        "size": 25,
+        "id": "PhosphateBindersAndDose",
+        "label": "Phosphate Binder/Dose",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precision": 8,
+        "scale": 0,
+        "id": "ProtienLower",
+        "label": "g prot(l)",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 8,
+        "scale": 0,
+        "id": "ProtienUpper",
+        "label": "g prot(u)",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "SU",
+        "label": "SU",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "Previous",
+        "label": "Previous Prescription",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "ServiceRecordReference"
+      }
+    }
+  ],
+  "id": "Renal.DietitianCarePlan",
+  "layoutColumns": 3
+}

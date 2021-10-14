@@ -1,0 +1,22 @@
+{
+    "identifiers": {
+        "HealthFund": {
+            "audit": {
+                "auditDateTime": "2019-10-22T14:45:12",
+                "auditUserId": 50,
+                "auditIPAddress": "127.0.0.1",
+                "auditMedicalGroupId": 26
+            },
+            "id": 4,
+            "identifier": "44123",
+            "identifierType": "HealthFund",
+            "patientID": 42,
+            "version": 2
+        },
+        "HealthCareCard": {
+            "identifier": "123456789T",
+            "patientID": 42
+        }
+    },
+    "patientID": 42
+}

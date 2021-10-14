@@ -1,0 +1,309 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ReferredForTransplant",
+        "label": "Referred for transplant",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "FirstEvaluatedForTransplant",
+        "label": "First evaluated for transplant",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Bilateral lung",
+          "Heart/lung",
+          "Kidney",
+          "Liver",
+          "Lung and kidney",
+          "Lung and liver",
+          "Lung, Liver and Kidney"
+        ],
+        "size": 25,
+        "id": "TransplantType",
+        "label": "Transplant type",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Accepted but on deferred list",
+          "Accepted on active waiting list",
+          "Not accepted (for further review)",
+          "Not accepted at all"
+        ],
+        "size": 35,
+        "id": "AcceptanceStatus",
+        "label": "Acceptance status",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Accepted on active waiting list",
+                  "Accepted but on deferred list"
+                ],
+                "fieldID": "AcceptanceStatus"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "DateWaitListed",
+        "label": "Date wait listed",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Greenlane Auckland",
+          "Prince Charles",
+          "Royal Children’s Melbourne",
+          "St Vincent’s Sydney",
+          "The Alfred"
+        ],
+        "size": 30,
+        "id": "TransplantCentre",
+        "label": "Transplant centre",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Assessed",
+          "Transplant not indicated",
+          "On active waiting list",
+          "On deferred waiting list",
+          "Withdrawn from waiting list",
+          "Patient withdrew",
+          "Patient deceased before transplant",
+          "Patient transplanted"
+        ],
+        "size": 35,
+        "id": "TransplantStatus",
+        "label": "Transplant status",
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Patient transplanted"
+                ],
+                "fieldID": "TransplantStatus"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "DateTransplanted",
+        "label": "Date transplanted",
+        "type": "DateTime"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.TransplantAssessment",
+  "layoutColumns": 3
+}

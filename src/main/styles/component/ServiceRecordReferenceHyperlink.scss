@@ -1,0 +1,13 @@
+/**
+ * Styles for ServiceRecordReferenceHyperlink.tsx
+ *
+ * @author Thompson 17/08/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+
+.cp-ServiceRecordReferenceHyperlink {
+  &:hover {
+    cursor: pointer;
+    color: blue;
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 10,
+            "id": "Test",
+            "label": "Test",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "precisionDay": true,
+            "id": "Date",
+            "label": "Date",
+            "type": "DateTime"
+          },
+          {
+            "size": 10,
+            "id": "Score",
+            "label": "Score",
+            "type": "Text"
+          },
+          {
+            "size": 250,
+            "id": "Details",
+            "label": "Details",
+            "layout": {
+              "labelPosition": "BeforeTop",
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          }
+        ],
+        "fixedRows": true,
+        "id": "PatientAssessments",
+        "label": "Patient Assessments",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "toolTip": "\u003chtml\u003e\n\t\t\t\t\t\u003cul\u003e\n\t\t\t\t\t\t\u003cli\u003eFrailty: Frailty assessment\n\t\t\t\t\t\t\t\u003col\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eVery fit\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eWell with no active disease symptoms and active occasionally\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eManaging well, medical problems well controlled, not regularly active\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eVulnerable, not dependent on other and symptoms limit activities\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eMildly frail, more evident slowing, high order activities of daily living\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eModerately frail, needs help with all outside activities, keeping house and bathing\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eSeverely frail, completely dependent for personal care\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eVery severely frail\u003c/li\u003e\n\t\t\t\t\t\t\t\t\u003cli\u003eTerminally ill, life expectancy less than 6 months\u003c/li\u003e\n\t\t\t\t\t\t\t\u003c/ol\u003e\n\t\t\t\t\t\t\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eICECAP: Medical outcomes study social support index\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eKATZ-ADL: Katz index of independence in activities of daily living\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eMMSE-2: Mini-mental state examination\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003ePHQ-9: Patient health questionnaire\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eRUDAS: Rowland universal dementia assessment scale\u003c/li\u003e\n\t\t\t\t\t\t\u003cli\u003eSF-12: Short form health scale\u003c/li\u003e\n\t\t\t\t\t\u003c/ul\u003e\n\t\t\t\t\u003c/html\u003e",
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "PatientWatch.PatientAssessment",
+  "layoutColumns": 2
+}

@@ -1,0 +1,292 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "preparedBy",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "serviceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Diagnosis",
+        "label": "Diagnosis",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "BodyJointName",
+            "label": "Body/Joint",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "NormalBodyJoints",
+            "label": "Normal",
+            "type": "Boolean"
+          },
+          {
+            "maximum": 100,
+            "precision": 3,
+            "scale": 0,
+            "id": "MovementPercentage",
+            "label": "Movement %",
+            "type": "Number",
+            "units": "%"
+          },
+          {
+            "maximum": 180,
+            "precision": 3,
+            "scale": 0,
+            "id": "MovementDegree",
+            "label": "Degree of movement",
+            "type": "Number"
+          },
+          {
+            "maximum": 10,
+            "precision": 2,
+            "scale": 0,
+            "id": "PainLevel",
+            "label": "Pain Level",
+            "type": "Number"
+          },
+          {
+            "size": 50,
+            "id": "CommentsBodyJoints",
+            "label": "Comments",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "BodyJointsMovement",
+        "label": "Body \u0026 Joints Movement",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "Senses",
+            "label": "Senses",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "Normal",
+            "label": "Normal",
+            "type": "Boolean"
+          },
+          {
+            "id": "Decreased",
+            "label": "Decreased",
+            "type": "Boolean"
+          },
+          {
+            "size": 50,
+            "id": "Comments",
+            "label": "Comments",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "NeurologicalIndicators",
+        "label": "Neurological Indicators",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "AssessmentNotes",
+        "label": "Assessment notes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "TreatmentGoals",
+        "label": "Treatment Goals",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "OutcomeMeasures",
+            "label": "Outcome Measures",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "InitialMeasure",
+            "label": "Initial Measure",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "AnticipatedOutcome",
+            "label": "Anticipated Outcome",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "size": 2,
+            "id": "hiddenActivityID",
+            "label": "",
+            "state": {
+              "editState": "Hidden",
+              "viewStateHidden": true
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "TargetOutcome",
+        "label": "Target Outcome",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "FactorsAffectingRecovery",
+        "label": "Factors Affecting Recovery",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "TreatmentPlan",
+        "label": "Treatment Plan",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "TreatmentType",
+        "label": "Treatment Type",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "OtherAssistance",
+        "label": "Other Assistance",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "AidsRequired",
+        "label": "Aids Required",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Service.PhysiotherapistAssessment",
+  "layoutColumns": 3
+}

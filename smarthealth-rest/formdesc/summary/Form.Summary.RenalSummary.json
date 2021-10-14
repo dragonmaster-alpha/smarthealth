@@ -1,0 +1,264 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "TreatmentCentre.RenalService",
+              "label": "Renal service",
+              "type": "MedicalGroup"
+            }
+          },
+          {
+            "field": {
+              "id": "TreatmentCentre.TreatmentCentre",
+              "label": "Treatment centre",
+              "type": "MedicalGroup"
+            }
+          },
+          {
+            "field": {
+              "id": "TreatmentCentre.Nephrologist",
+              "label": "Nephrologist",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "TreatmentCentre.CaseManager",
+              "label": "Case manager",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "TreatmentCentre.VascularAccessNurse",
+              "label": "Vascular nurse",
+              "type": "Member"
+            }
+          }
+        ],
+        "id": "TreatmentCentre",
+        "layoutShow": true,
+        "title": "Treatment Centre"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 90,
+              "id": "TreatmentStatus.PrimaryRenalDisease",
+              "label": "Primary renal disease",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "TreatmentStatus.PatientClass",
+              "label": "Treatment type",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "TreatmentStatus.TreatmentStatusService",
+              "label": "Start date for current class",
+              "type": "ServiceRecordReference"
+            }
+          }
+        ],
+        "id": "TreatmentStatus",
+        "layoutShow": true,
+        "title": "Treatment Status"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "AccessCarePlanService",
+                  "label": "Access Care Plan",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "InsertedCreated",
+                  "label": "Inserted",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 20,
+                  "id": "Dialysis",
+                  "label": "Treatment Type",
+                  "type": "Text"
+                },
+                {
+                  "size": 55,
+                  "id": "AccessType",
+                  "label": "Access Type",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "AccessLocation",
+                  "label": "Access Location",
+                  "type": "Text"
+                },
+                {
+                  "size": 10,
+                  "id": "AccessStatus",
+                  "label": "Access Status",
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "LastUsed",
+                  "label": "Last Used",
+                  "type": "DateTime"
+                },
+                {
+                  "displayType": "ServiceDate",
+                  "id": "AccessCarePlanService",
+                  "label": "Updated",
+                  "type": "ServiceRecordReference"
+                }
+              ],
+              "fixedRows": true,
+              "layoutRows": 8,
+              "rowSelectionInViewMode": true,
+              "id": "AccessCarePlan.Accesses",
+              "label": "Accesses",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "AccessCarePlan",
+        "layoutShow": true,
+        "title": "Access Care Plan"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "Anthropometry.MostRecentDryWeight",
+              "label": "Dry weight",
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "Anthropometry.MostRecentHeight",
+              "label": "Height",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Anthropometry.DateOfMostRecentDryWeight",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "Anthropometry.BMI",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "Anthropometry",
+        "layoutShow": true,
+        "title": "Anthropometry"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "displayType": "Summary",
+              "id": "AlliedHealth.SocialWorkerNotesService",
+              "label": "Social Worker Notes",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "displayType": "Summary",
+              "id": "AlliedHealth.DietitianNotesService",
+              "label": "Dietitian Notes",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "ServiceRecordReference"
+            }
+          }
+        ],
+        "id": "AlliedHealth",
+        "layoutShow": true,
+        "title": "Allied Health"
+      }
+    }
+  ],
+  "id": "Summary.RenalSummary.WebUI",
+  "layoutColumns": 3
+}

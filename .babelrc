@@ -1,0 +1,36 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "chrome": "63",
+                    "edge": "79",
+                    "firefox": "67",
+                    "opera": "50",
+                    "safari": "11.1"
+                }
+            }
+        ],
+        "@babel/preset-react",
+        "@lingui/babel-preset-react",
+        "@emotion/babel-preset-css-prop"
+    ],
+    "plugins": [
+        "emotion",
+        "babel-plugin-macros",
+        "syntax-dynamic-import",
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose": true
+            }
+        ]
+    ]
+}

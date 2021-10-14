@@ -1,0 +1,38 @@
+{
+    "active": true,
+    "address": {
+        "address1": "82 Swanston Street",
+        "address2": "",
+        "city": "LANDSBOROUGH WEST",
+        "country": "",
+        "postcode": "3384",
+        "state": "VIC"
+    },
+    "aliases": [],
+    "audit": {
+        "auditDateTime": "2020-08-25T09:46:55",
+        "auditUserId": 47,
+        "auditIPAddress": "127.0.0.1",
+        "auditMedicalGroupId": 26
+    },
+    "contactDetails": {
+        "email": "",
+        "phoneHome": "(03) 5300 8159",
+        "phoneMobile": "",
+        "phoneWork": ""
+    },
+    "dateOfBirth": {
+        "iso": "1995-01-01"
+    },
+    "name": {
+        "familyName": "Dedman",
+        "givenName": "Charles",
+        "otherGivenNames": "Test PAS",
+        "title": "Mr"
+    },
+    "notifyAlertsToEmail": false,
+    "notifyAlertsToMobilePhone": false,
+    "patientID": 47,
+    "sex": "Male",
+    "version": 1
+}

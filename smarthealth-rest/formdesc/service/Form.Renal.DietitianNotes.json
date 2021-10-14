@@ -1,0 +1,213 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "ActivityLevel",
+        "label": "Activity Level",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Assessment",
+        "label": "Assessment",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "BMI",
+        "label": "BMI",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "CurrentDryWeight",
+        "label": "Current Dry Weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "Height",
+        "label": "Height",
+        "type": "Number",
+        "units": "cm"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "MinGoalWeight",
+        "label": "Min Goal Weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "MaxGoalWeight",
+        "label": "Max Goal Weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Mildly malnourished or suspected of malnutrition",
+          "Severely malnourished",
+          "Well-nourished"
+        ],
+        "size": 60,
+        "id": "SGAScore",
+        "label": "SGA Score",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "WeightHistory",
+        "label": "Weight History",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Plan",
+        "label": "Plan",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.DietitianNotes",
+  "layoutColumns": 3
+}

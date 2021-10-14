@@ -1,0 +1,33 @@
+/**
+ * Styles for MultipleSelectionFieldLabel.tsx
+ *
+ * @author Thompson 7/05/2019
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2019
+ */
+
+.cp-multipleselectionfieldlabel {
+  display: inline-block;
+  min-height: 17.8px;
+  list-style-type: none;
+  margin: 0.2rem 0.3rem;
+  padding-left: 0px;
+  min-width: 100px;
+  border-radius: 3px;
+}
+
+.cp-multipleselectionfieldlabel-token {
+  background-color: #007ad9;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin-right: 4px;
+  padding: 0.25rem 0.5rem;
+
+  button {
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 0px 0px 0px 5px;
+  }
+}

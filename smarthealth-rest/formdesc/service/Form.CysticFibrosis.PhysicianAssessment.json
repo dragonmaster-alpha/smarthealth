@@ -1,0 +1,1112 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionYear": true,
+              "id": "ActiveClinicalProblems.InfusaportYearOfInsertion",
+              "label": "Infusaport year of insertion",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 100,
+                  "id": "Condition",
+                  "label": "Condition",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 20,
+                  "id": "Status",
+                  "label": "Status",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "FirstOccurrence",
+                  "label": "First occurrence",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "MostRecent",
+                  "label": "Most recent",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 250,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "layout": {
+                    "labelPosition": "BeforeTop",
+                    "newLine": true,
+                    "spanLine": true
+                  },
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "precision": 20,
+                  "scale": 0,
+                  "id": "ConceptID",
+                  "label": "Concept ID",
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "ActiveClinicalProblems.Conditions",
+              "label": "Conditions",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ActiveClinicalProblems",
+        "layoutShow": true,
+        "title": "Active Clinical Problems"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "SinusitisPolyps.Sinusitis",
+              "label": "Sinusitis",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "SinusitisPolyps.DateOfLastSurgery",
+              "label": "Date of last surgery",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "SinusitisPolyps",
+        "layoutShow": true,
+        "title": "Sinusitis"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Chest.ChestPhysiotherapy",
+              "label": "Chest physiotherapy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Chest.ChestPhysiotherapy",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Chest.ChestPhysiotherapyDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Chest.Sport",
+              "label": "Sport",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Chest.Sport",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Chest.SportDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Chest.Exercise",
+              "label": "Exercise",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Chest.Exercise",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Chest.ExerciseDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "Chest.ABPAKnownHistory",
+              "label": "ABPA Known History",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Chest.ChestXray",
+              "label": "Chest X-Ray",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Chest",
+        "layoutShow": true,
+        "title": "Chest"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 150,
+              "precision": 4,
+              "scale": 1,
+              "id": "Spirometry.FEV1",
+              "label": "Latest",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Spirometry.FEV1Date",
+              "label": "Date",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Spirometry.LatestFEV1Service",
+              "label": "Latest FEV1 service",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "maximum": 150,
+              "precision": 4,
+              "scale": 1,
+              "id": "Spirometry.BestFEV1",
+              "label": "Best in last 12 months",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Spirometry.BestFEV1Date",
+              "label": "Date",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Spirometry.BestFEV1Service",
+              "label": "Best FEV1 service",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "Spirometry.EstimatedDecline",
+              "label": "Estimated decline",
+              "type": "Number",
+              "units": "%"
+            }
+          }
+        ],
+        "id": "Spirometry",
+        "layoutShow": true,
+        "title": "Spirometry"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Pseudomonas",
+                    "Staph and haemophilus"
+                  ],
+                  "size": 30,
+                  "id": "Organism",
+                  "label": "Organism",
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Amikacin",
+                    "Amox/Clav",
+                    "Amoxycillin",
+                    "Aztreonam",
+                    "Ceftazidime",
+                    "Cephalexin",
+                    "Ciprofloxacin",
+                    "Clindamycin",
+                    "Colymycin",
+                    "Dicloxacillin",
+                    "Erthromycin",
+                    "Gentamycin",
+                    "Meropenem",
+                    "Methacillin",
+                    "Piperacillin",
+                    "Tobramycin"
+                  ],
+                  "size": 20,
+                  "id": "Antibiotic",
+                  "label": "Antibiotic",
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Resistant",
+                    "Sensitive"
+                  ],
+                  "size": 15,
+                  "id": "Sensitivity",
+                  "label": "Sensitivity",
+                  "type": "Selection"
+                }
+              ],
+              "id": "Sputum.AntibioticSensitivities",
+              "label": "Antibiotic sensitivities",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Sputum",
+        "layoutShow": true,
+        "title": "Sputum"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "GastroIntestinal.PancreaticInsufficiency",
+              "label": "Pancreatic insufficiency",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "GastroIntestinal.Enzymes",
+              "label": "Enzymes",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionYear": true,
+              "id": "GastroIntestinal.PEGYearOfInsertion",
+              "label": "PEG year of insertion",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "GastroIntestinal.LiverDisease",
+              "label": "Liver disease",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "GastroIntestinal.LiverDisease",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "GastroIntestinal.LiverDiseaseDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "GastroIntestinal",
+        "layoutShow": true,
+        "title": "Gastro-Intestinal"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.Diabetes",
+              "label": "Diabetes",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.Retinopathy",
+              "label": "Retinopathy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.Nephropathy",
+              "label": "Nephropathy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.PeripheralNeuropathy",
+              "label": "Peripheral neuropathy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.AutonomicNeuropathy",
+              "label": "Autonomic neuropathy",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.Hypertension",
+              "label": "Hypertension",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.PeripheralVascularDisease",
+              "label": "Peripheral vascular disease",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.IschaemicHeartDisease",
+              "label": "Ischaemic heart disease",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.CerebrovascularDisease",
+              "label": "Cerebrovascular disease",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DiabetesAndVascularSystem.LastEyeCheck",
+              "label": "Last eye check",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "DiabetesAndVascularSystem.LastEndocrineReviewDate",
+              "label": "Last endocrine review",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.ReceivingBPLowering",
+              "label": "Receiving BP lowering treatment",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "DiabetesAndVascularSystem.ReceivingTreatmentForDiabetes",
+              "label": "Receiving treatment for diabetes",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "DiabetesAndVascularSystem",
+        "layoutShow": true,
+        "title": "Diabetes and Vascular System"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Bones.LastBoneMineralDensityTest",
+              "label": "Last bone mineral density test",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "acceptNegative": true,
+              "maximum": 9.9,
+              "minimum": -9.9,
+              "precision": 2,
+              "scale": 1,
+              "id": "Bones.HipTScore",
+              "label": "Hip T-Score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "acceptNegative": true,
+              "maximum": 9.9,
+              "minimum": -9.9,
+              "precision": 2,
+              "scale": 1,
+              "id": "Bones.SpineTScore",
+              "label": "Spine T-Score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "acceptNegative": true,
+              "maximum": 9.9,
+              "minimum": -9.9,
+              "precision": 2,
+              "scale": 1,
+              "id": "Bones.WristTScore",
+              "label": "Wrist T-Score",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "id": "Bones.PreviousFractures",
+              "label": "Previous fractures",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Bones.PreviousFractures",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Bones.PreviousFracturesDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Bones.PreviousFractures",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Bones.Treatment",
+              "label": "Treatment",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Bones",
+        "layoutShow": true,
+        "title": "Bones"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "ReproductiveHealth.Contraceptives",
+              "label": "Contraceptives",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Implant",
+                "Mechanical",
+                "OCP",
+                "Surgical"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "ReproductiveHealth.Contraceptives",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReproductiveHealth.ContraceptivesDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Currently pregnant",
+                "Live Birth",
+                "Miscarriage",
+                "Stillbirth",
+                "Termination"
+              ],
+              "size": 20,
+              "id": "ReproductiveHealth.MostRecentPregnancy",
+              "label": "Most recent pregnancy",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "ReproductiveHealth.MostRecentPregnancy",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReproductiveHealth.IVFRequired",
+              "label": "IVF Required",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "ReproductiveHealth.MostRecentPregnancy",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReproductiveHealth.PregnancyStartDate",
+              "label": "Start of pregnancy",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Live Birth",
+                        "Miscarriage",
+                        "Stillbirth",
+                        "Termination"
+                      ],
+                      "fieldID": "ReproductiveHealth.MostRecentPregnancy"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReproductiveHealth.EndOfPregnancy",
+              "label": "End of pregnancy",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "ReproductiveHealth.FertilityTested",
+              "label": "Fertility tested",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "ReproductiveHealth.FertilityTested",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReproductiveHealth.FertilityTestDate",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "ReproductiveHealth.FertilityTested",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReproductiveHealth.FertilityTestIssues",
+              "label": "Issues",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "ReproductiveHealth.FertilityTreatment",
+              "label": "Fertility treatment",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "ReproductiveHealth.FertilityTreatment",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "ReproductiveHealth.FertilityTreatmentStartedDate",
+              "label": "Started",
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "ReproductiveHealth",
+        "layoutShow": true,
+        "title": "Reproductive Health"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.PhysicianAssessment",
+  "layoutColumns": 3
+}

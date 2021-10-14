@@ -1,0 +1,63 @@
+{
+  "data": {
+    "DateOfSurgery": {
+      "iso": "2019-07-17"
+    },
+    "ID": "738e182b-5569-4187-adf4-85b5f6c5f8f4",
+    "Location": {
+      "id": -2,
+      "name": "Darlinghurst"
+    },
+    "Patient": 42,
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "Recurrence": {
+      "BasisOfRecurrenceDate": [
+        "GCIG"
+      ],
+      "DiagnosisDate": {
+        "iso": "2019-07-26"
+      },
+      "MostValidBasisForDiagnosis": "Clinical diagnosis",
+      "RecurrenceNumber": 2,
+      "Sites": [
+        "Groin lymph node"
+      ],
+      "TimeSinceSurgery": 0,
+      "Type": "Recurred"
+    },
+    "ServiceDate": {
+      "iso": "2019-07-26"
+    },
+    "SetID": "bf05e10b-f43c-4331-a2c7-6b92759ab1ec",
+    "Setting": "Face to Face",
+    "Summary": "asdf",
+    "Treatment": {
+      "Intent": "Curative",
+      "Outcome": "Partial response",
+      "Treatment": [
+        "Chemotherapy"
+      ]
+    },
+    "Version": 1
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "program": "CANCER",
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2019-07-26"
+    },
+    "serviceID": 8263,
+    "serviceType": 192,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

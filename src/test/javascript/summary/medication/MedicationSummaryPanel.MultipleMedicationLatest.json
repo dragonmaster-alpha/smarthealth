@@ -1,0 +1,22 @@
+{
+    "id": "/medications/latest",
+    "referencedType": "MedicationSummary",
+    "references": [
+        {
+            "id": 4,
+            "type": "MedicationSummary"
+        },
+        {
+            "id": 5,
+            "type": "MedicationSummary"
+        },
+        {
+            "id": 6,
+            "type": "MedicationSummary"
+        },
+        {
+            "id": 7,
+            "type": "MedicationSummary"
+        }
+    ]
+}

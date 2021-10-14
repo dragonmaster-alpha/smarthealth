@@ -1,0 +1,38 @@
+[
+  {
+    "id": 3917,
+    "observationDate": {
+      "iso": "2008-08-18T13:49+10"
+    },
+    "observationType": "PreBDFEV1Predicted",
+    "patientID": 42,
+    "serviceRecordReference": {
+      "owningGroupID": 1,
+      "serviceDate": {
+        "iso": "2020-05-13T10:42+10"
+      },
+      "serviceID": 10000,
+      "serviceType": 1,
+      "summary": "Mother summary line"
+    },
+    "valueNumber": 83
+  },
+  {
+    "id": 7265,
+    "observationDate": {
+      "iso": "2008-08-18T13:49+10"
+    },
+    "observationType": "PreBDFVCPredicted",
+    "patientID": 42,
+    "serviceRecordReference": {
+      "owningGroupID": 1,
+      "serviceDate": {
+        "iso": "2020-05-13T10:42+10"
+      },
+      "serviceID": 10000,
+      "serviceType": 1,
+      "summary": "Mother summary line"
+    },
+    "valueNumber": 75
+  }
+]

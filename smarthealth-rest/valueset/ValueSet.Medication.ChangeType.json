@@ -1,0 +1,34 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 19,
+  "uri": "http://ns.smarthealth.com.au/valueset/Medication.ChangeType",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeType",
+      "value": "New"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeType",
+      "value": "Unchanged"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeType",
+      "value": "Change medication"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeType",
+      "value": "Correction of error"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeType",
+      "value": "Decrease dose"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeType",
+      "value": "Increase dose"
+    }
+  ],
+  "valueSetID": "Medication.ChangeType"
+}

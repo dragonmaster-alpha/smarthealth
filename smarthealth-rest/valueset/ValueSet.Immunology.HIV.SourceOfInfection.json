@@ -1,0 +1,34 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 28,
+  "uri": "http://ns.smarthealth.com.au/valueset/Immunology.HIV.SourceOfInfection",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.HIV.SourceOfInfection",
+      "value": "Blood product"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.HIV.SourceOfInfection",
+      "value": "Heterosexual sex"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.HIV.SourceOfInfection",
+      "value": "Homosexual sex"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.HIV.SourceOfInfection",
+      "value": "Injection drug use"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.HIV.SourceOfInfection",
+      "value": "Mother-to-child transmission"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.HIV.SourceOfInfection",
+      "value": "Other"
+    }
+  ],
+  "valueSetID": "Immunology.HIV.SourceOfInfection"
+}

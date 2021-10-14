@@ -1,0 +1,30 @@
+{
+  "coded": true,
+  "codeLength": 9,
+  "extensible": true,
+  "length": 30,
+  "uri": "SCT",
+  "values": [
+    {
+      "code": "306056005",
+      "codeSet": "SCT",
+      "value": "Allied Health Referral"
+    },
+    {
+      "code": "306140002",
+      "codeSet": "SCT",
+      "value": "Cancer Referral"
+    },
+    {
+      "code": "103696004",
+      "codeSet": "SCT",
+      "value": "Specialist Referral"
+    },
+    {
+      "code": "306199002",
+      "codeSet": "SCT",
+      "value": "Transplant Referral"
+    }
+  ],
+  "valueSetID": "Referral.Type"
+}

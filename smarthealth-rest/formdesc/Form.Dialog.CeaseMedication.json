@@ -1,0 +1,49 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "size": 100,
+        "id": "Medication",
+        "label": "Medication",
+        "layout": {
+          "fillWidth": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Adverse reaction",
+          "Non compliance",
+          "Not required"
+        ],
+        "size": 100,
+        "id": "CeaseReason",
+        "label": "Reason",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "precisionMonth": true,
+        "id": "CeaseDate",
+        "label": "Cease date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    }
+  ],
+  "id": "Dialog.CeaseMedication.WebUI",
+  "layoutColumns": 1
+}

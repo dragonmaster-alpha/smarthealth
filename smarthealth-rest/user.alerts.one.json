@@ -1,0 +1,9 @@
+[
+  {
+    "alertType": "CORRESPONDENCE",
+    "id": 0,
+    "message": "Correspondence Alert",
+    "read": false,
+    "version": 0
+  }
+]

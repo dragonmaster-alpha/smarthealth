@@ -1,0 +1,7 @@
+{
+  "abbreviation": "Pathology",
+  "category": "PathologyStudy",
+  "formDescriptionID": "Patient.Service.PathologyDesc",
+  "name": "Pathology",
+  "serviceTypeID": 3
+}

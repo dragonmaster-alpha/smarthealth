@@ -1,0 +1,270 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "HIVAssessment.CurrentConsultant",
+              "label": "Current consultant",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "HIVAssessment.HIVAssessmentService",
+              "label": "Date of last assessment",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "precisionMonth": true,
+              "precisionYear": true,
+              "id": "HIVAssessment.DiagnosedDate",
+              "label": "Date of infection",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Aspergillosis, invasive",
+                    "Bartonellosis",
+                    "CMV disease (other than liver, spleen, or nodes)",
+                    "CMV retinitis (with loss of vision)",
+                    "Candidiasis of lungs",
+                    "Candidiasis of oesophagus",
+                    "Candidiasis of trachea",
+                    "Cervical cancer, invasive",
+                    "Chagas disease (American trypanosomiasis) of the CNS",
+                    "Coccidioidomycosis, disseminated or extrapulmonary",
+                    "Cryptococcosis, extrapulmonary",
+                    "Cryptosporidiosis, chronic intestinal (\u003e1 month\u0027s duration)",
+                    "Encephalopathy, HIV-related (including AIDS Dementia Complex)",
+                    "HSV: bronchitis",
+                    "HSV: chronic ulcers (\u003e1 month)",
+                    "HSV: oesophagitis",
+                    "HSV: pneumonitis",
+                    "Herpes zoster, multi-dermatomal (\u003e\u003d10 lesions in a non-contiguous site)",
+                    "Histoplasmosis, disseminated or extrapulmonary",
+                    "Isosporiasis, chronic intestinal (\u003e1 month\u0027s duration)",
+                    "Kaposi\u0027s sarcoma",
+                    "Leishmaniasis, visceral (kala-azar)",
+                    "Lymphoma, Burkitt (or equivalent term)",
+                    "Lymphoma, Hodgkin\u0027s",
+                    "Lymphoma, non-Hodgkin\u0027s, all cell types",
+                    "Lymphoma, primary, of brain",
+                    "MAC or Mycobacterium kansasii (disseminated or extrapulmonary)",
+                    "Microsporidiosis (\u003e 1 month\u0027s duration)",
+                    "Mycobacterium - other than MAC, M. kansasii or M.TB",
+                    "Mycobacterium tuberculosis",
+                    "Nocardiosis",
+                    "Penicillium marneffii, disseminated",
+                    "Pneumocystis carinii (jiroveci), extrapulmonary",
+                    "Pneumocystis jirovecii pneumonia",
+                    "Pneumonia, recurrent bacterial",
+                    "Progressive multifocal leukoencephalopathy",
+                    "Rhodococcus equi disease",
+                    "Salmonella septicaemia, recurrent",
+                    "Toxoplasmosis of brain, onset at age \u003e1 month",
+                    "Wasting syndrome attributed to HIV"
+                  ],
+                  "size": 73,
+                  "id": "IllnessName",
+                  "label": "Illness name",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "DateOfDiagnosis",
+                  "label": "Date of diagnosis",
+                  "type": "DateTime"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "HIVAssessment.AidsDefiningIllnesses",
+              "label": "AIDS defining illnesses",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Acute myocardial infarction",
+                    "Congestive heart failure",
+                    "Coronary artery disease requiring drug treatment",
+                    "Coronary revascularisation",
+                    "Decompensated liver disease",
+                    "Deep vein thrombosis",
+                    "Diabetes mellitus",
+                    "End stage renal disease",
+                    "Non-AIDS defining malignancy (except non-invasive BCC or SCC)",
+                    "Peripheral arterial disease",
+                    "Pulmonary embolism",
+                    "Stroke"
+                  ],
+                  "size": 73,
+                  "id": "EventName",
+                  "label": "Event name",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "DateOfDiagnosis",
+                  "label": "Date of diagnosis",
+                  "type": "DateTime"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "HIVAssessment.SNAE",
+              "label": "Serious Non-AIDS Events (SNAE)",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "medicalGroupListType": "HIV_ASSESSMENT_CLINIC_TRIAL",
+                  "size": 100,
+                  "id": "TrialName",
+                  "label": "Trial name",
+                  "type": "MedicalGroupList"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateCommenced",
+                  "label": "Date commenced",
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "DateCeased",
+                  "label": "Date ceased/withdrawn",
+                  "type": "DateTime"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "HIVAssessment.ClinicalTrials",
+              "label": "Clinical trials",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "HIVAssessment",
+        "layoutShow": true,
+        "title": "HIV Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 5,
+              "scale": 0,
+              "id": "DiagnosticResults.LatestCD4Count",
+              "label": "Latest CD4 count",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "DiagnosticResults.LatestCD4CountPathologyService",
+              "label": "Date",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 0,
+              "id": "DiagnosticResults.LatestViralLoad",
+              "label": "Latest viral load",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "DiagnosticResults.LatestViralLoadPathologyService",
+              "label": "Date",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 0,
+              "id": "DiagnosticResults.NadirCD4Count",
+              "label": "Nadir CD4 count",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "DiagnosticResults.NadirCD4CountPathologyService",
+              "label": "Date",
+              "type": "ServiceRecordReference"
+            }
+          }
+        ],
+        "id": "DiagnosticResults",
+        "layoutShow": true,
+        "title": "Diagnostic results"
+      }
+    }
+  ],
+  "id": "Summary.HIVSummary.WebUI",
+  "layoutColumns": 2
+}

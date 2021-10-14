@@ -1,0 +1,162 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 100,
+  "uri": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Acinetobacter species"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Anaerobic bacteria"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Candida albicans"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Candida, other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Citrobacter species"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Coag - Neg Staph, other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Coag - Neg Staph, Staph epidermidis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Coag - Neg Staph, unknown"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Culture Negative"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Diphtheroids (Corynebacteria)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Enterobacter species"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Enterococcus (Strep. faecalis/faecium)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Escherichia coli"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Fungi / Yeast, other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Gram Negative organisms, other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Gram Negative organisms, unknown"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Gram positive organism, other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Gram positive organism, unknown"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Klebsiella species"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Mycobacterium, other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Mycobacterium, tuberculosis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Neisseria sp"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Other enterobacteria (coliforms)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Proteus species"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Pseudomonas aeruginosa"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Pseudomonas cepacia"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Pseudomonas maltophilia"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Pseudomonas stutzeri"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Pseudomonas, other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Pseudomonas, unknown"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Roseomonas gilardii"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Serratia species"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Staphylococcus aureus, Methicillin resistant"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Staphylococcus aureus, Non-MRSA"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Staphylococcus aureus, unknown sensitive"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Streptococcus viridans group (sangius, bovis, etc)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Streptococcus, Other"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.Organisms",
+      "value": "Streptococcus, unknown"
+    }
+  ],
+  "valueSetID": "Renal.Organisms"
+}

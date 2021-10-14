@@ -1,0 +1,774 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 0,
+        "id": "Duration",
+        "label": "Duration",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Number",
+        "units": "min"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "table": {
+                "columns": [
+                  {
+                    "size": 100,
+                    "id": "Condition",
+                    "label": "Condition",
+                    "layout": {
+                      "span": 2
+                    },
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "Text"
+                  },
+                  {
+                    "size": 20,
+                    "id": "Status",
+                    "label": "Status",
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "Text"
+                  },
+                  {
+                    "precisionDay": true,
+                    "precisionMonth": true,
+                    "precisionYear": true,
+                    "id": "FirstOccurrence",
+                    "label": "First occurrence",
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "DateTime"
+                  },
+                  {
+                    "precisionDay": true,
+                    "precisionMonth": true,
+                    "precisionYear": true,
+                    "id": "MostRecent",
+                    "label": "Most recent",
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "DateTime"
+                  },
+                  {
+                    "size": 250,
+                    "id": "Notes",
+                    "label": "Notes",
+                    "layout": {
+                      "labelPosition": "BeforeTop",
+                      "newLine": true,
+                      "spanLine": true
+                    },
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "Text"
+                  },
+                  {
+                    "precision": 20,
+                    "scale": 0,
+                    "id": "ConceptID",
+                    "label": "Concept ID",
+                    "state": {
+                      "editState": "Hidden",
+                      "viewStateHidden": true
+                    },
+                    "type": "Number"
+                  }
+                ],
+                "fixedRows": true,
+                "id": "History.PrincipalDiagnoses",
+                "label": "Principal diagnoses",
+                "type": "Table"
+              },
+              "id": "History.PrincipalDiagnoses",
+              "label": "Principal diagnoses",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "ConditionsTable"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Immunology.Hepatitis.PrincipalRiskFactor",
+              "id": "History.PrincipalRiskFactor",
+              "label": "Principal risk factor",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Immunology.Hepatitis.OtherRiskFactor",
+              "id": "History.OtherRiskFactor",
+              "label": "Other risk factor",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Entacavir",
+                "Peg/IFN",
+                "Tenofovir",
+                "Truvada"
+              ],
+              "size": 20,
+              "id": "History.TreatmentHistory",
+              "label": "Treatment history",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "1a",
+                "1b",
+                "2a",
+                "2b",
+                "3a",
+                "4"
+              ],
+              "size": 20,
+              "id": "History.Genotype",
+              "label": "Genotype",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "History",
+        "layoutShow": true,
+        "title": "History"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "Examination.Weight",
+              "label": "Weight",
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "Examination.Height",
+              "label": "Height",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "calculation": {
+                "paramFieldIDs": [
+                  "Examination.Height",
+                  "Examination.Weight"
+                ],
+                "type": "BMI"
+              },
+              "id": "Examination.BMI",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 200,
+              "precision": 3,
+              "scale": 0,
+              "id": "Examination.Waist",
+              "label": "Waist",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "minimumLength": 3,
+              "size": 7,
+              "id": "Examination.BloodPressure",
+              "label": "Blood pressure",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text",
+              "units": ""
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Lying",
+                "Sitting",
+                "Standing"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Examination.BloodPressure",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Examination.BPPosture",
+              "label": "BP posture",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 45,
+              "minimum": 30,
+              "precision": 3,
+              "scale": 1,
+              "id": "Examination.Temperature",
+              "label": "Temperature",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "°C"
+            }
+          }
+        ],
+        "id": "Examination",
+        "layoutShow": true,
+        "title": "Examination"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 75,
+              "minimum": 0.0,
+              "precision": 4,
+              "scale": 2,
+              "id": "Fibroscan.MedianStiffness",
+              "label": "Median stiffness",
+              "type": "Number",
+              "units": "kPa"
+            }
+          },
+          {
+            "field": {
+              "maximum": 75,
+              "minimum": 0.0,
+              "precision": 4,
+              "scale": 2,
+              "id": "Fibroscan.InterquartileRange",
+              "label": "Interquartile range",
+              "toolTip": "should be \u003c30% of median stiffness",
+              "type": "Number",
+              "units": "kPa"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "Fibroscan.SuccessRate",
+              "label": "Success rate",
+              "toolTip": "should be \u003e60%",
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Fibroscan.MedianStiffness",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Fibroscan.FibroscanDate",
+              "label": "Date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "id": "Fibroscan.Comment",
+              "label": "Fibroscan Notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Fibroscan",
+        "layoutShow": true,
+        "title": "Fibroscan"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "F0",
+                "F1",
+                "F2",
+                "F3",
+                "F4"
+              ],
+              "size": 20,
+              "id": "Liver.Result",
+              "label": "Biopsy",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Liver.Result",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Liver.BiopsyDate",
+              "label": "Date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Liver.Inflammation",
+              "label": "Inflammation",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Liver.Fibrosis",
+              "label": "Fibrosis",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Liver",
+        "layoutShow": true,
+        "title": "Liver"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "IL128BTesting.SNP12979860CCResult",
+              "label": "SNP12979860CC",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "IL128BTesting.SNP12979860CCResult",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "IL128BTesting.SNP12979860CCDate",
+              "label": "Date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "IL128BTesting.SNP80999TTResult",
+              "label": "SNP80999TT",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "IL128BTesting.SNP80999TTResult",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "IL128BTesting.SNP80999TTDate",
+              "label": "Date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "IL128BTesting",
+        "layoutShow": true,
+        "title": "IL128B Testing"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "medicalGroupListType": "HEPATITIS_ASSESSMENT_CLINIC_TRIAL",
+                  "size": 100,
+                  "id": "TrialName",
+                  "label": "Trial name",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "MedicalGroupList"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "CommenceDate",
+                  "label": "Date commenced",
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "CeaseDate",
+                  "label": "Date ceased/withdrawn",
+                  "type": "DateTime"
+                }
+              ],
+              "layoutRows": 3,
+              "rowSelectionInViewMode": true,
+              "id": "ClinicalTrials.Reviews",
+              "label": "Reviews",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ClinicalTrials",
+        "layoutShow": true,
+        "title": "Clinical Trials"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "Notes.Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Immunology.HepatitisAssessment.WebUI",
+  "layoutColumns": 3
+}

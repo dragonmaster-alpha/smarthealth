@@ -1,0 +1,30 @@
+{
+  "coded": true,
+  "codeLength": 2,
+  "extensible": false,
+  "length": 30,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.FIGO.Grade",
+  "values": [
+    {
+      "code": "GX",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.FIGO.Grade",
+      "value": "GX - Grade cannot be assessed."
+    },
+    {
+      "code": "G1",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.FIGO.Grade",
+      "value": "G1 - Well differentiated"
+    },
+    {
+      "code": "G2",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.FIGO.Grade",
+      "value": "G2 - Moderately differentiated"
+    },
+    {
+      "code": "G3",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.FIGO.Grade",
+      "value": "G3 - Poorly differentiated"
+    }
+  ],
+  "valueSetID": "Cancer.FIGO.Grade"
+}

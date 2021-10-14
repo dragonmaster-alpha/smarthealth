@@ -1,0 +1,47 @@
+// @import 'variable';
+
+/**
+ * Styles for MedicationProductField.tsx
+ *
+ * @author Thompson 04/09/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+.cp-MedicationProductField {
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+
+  position: relative;
+
+  &-field {
+    display: flex;
+  }
+
+  &-icon {
+    display: inline-block;
+    align-self: center;
+    margin-left: 0.8em;
+  }
+
+  &-overlay {
+    width: 100%;
+
+    .cp-MedicationProductField-recentList {
+      min-width: 100%;
+      min-height: 4ex;
+      max-height: 32ex;
+      overflow-y: auto;
+    }
+  }
+}
+
+body .cp-MedicationProductField-textInput {
+  border: none;
+  flex: 1;
+
+  // override PrimeReact InputText styling
+  &:enabled {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

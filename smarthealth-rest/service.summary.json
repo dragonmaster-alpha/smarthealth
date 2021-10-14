@@ -1,0 +1,15 @@
+{
+  "owningGroupID": 1,
+  "patientID": 42,
+  "providerID": {
+    "groupID": 1,
+    "userID": 42
+  },
+  "serviceDate": {
+    "iso": "2019-01-25"
+  },
+  "serviceID": 28,
+  "serviceType": 1,
+  "status": "FINAL",
+  "summaryLine": ""
+}

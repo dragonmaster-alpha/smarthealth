@@ -1,0 +1,16 @@
+/**
+ * Styles for Sidebar.js
+ *
+ * @author Uditha 18/09/2018
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2018
+ */
+.ct-sidebar-panel.p-accordion {
+
+  .p-accordion-header a {
+    padding: 0.5em 0.25em 0.5em 0.25em;
+  }
+
+  .p-accordion-content {
+    padding: 0 0.25em 0 0.25em;
+  }
+}

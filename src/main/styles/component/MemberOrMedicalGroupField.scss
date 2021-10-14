@@ -1,0 +1,34 @@
+/**
+ * Styles for MemberOrMedicalGroupField.tsx
+ *
+ * @author Thompson 13/02/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+
+.cp-memberOrMedicalGroupField {
+  &-overlayHeader {
+    background-color: white;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &-overlayTable {
+    background-color: white;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &-radioGroup {
+    &:nth-child(1) {
+      label {
+        margin-right: 2em;
+      }
+    }
+  }
+}

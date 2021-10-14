@@ -1,0 +1,18 @@
+[
+  {
+    "active": true,
+    "groupID": 1,
+    "id": 63437,
+    "patientID": 42,
+    "urmrn": "MR71538",
+    "version": 0
+  },
+  {
+    "active": true,
+    "groupID": 825,
+    "id": 6343,
+    "patientID": 42,
+    "urmrn": "00123XDS",
+    "version": 0
+  }
+]

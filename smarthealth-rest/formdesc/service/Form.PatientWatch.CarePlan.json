@@ -1,0 +1,182 @@
+{
+  "behaviour": {
+    "serviceDateIsUpdateDate": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Updated date",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "precisionDay": true,
+            "id": "GoalStarted",
+            "label": "Started",
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "DateTime"
+          },
+          {
+            "size": 100,
+            "id": "Goal",
+            "label": "Goal",
+            "layout": {
+              "fillHeight": true,
+              "newLine": true,
+              "spanLine": true
+            },
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "Text"
+          },
+          {
+            "options": [
+              "Open",
+              "Closed"
+            ],
+            "size": 10,
+            "id": "Status",
+            "label": "Status",
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "Selection"
+          },
+          {
+            "size": 100,
+            "id": "Responsible",
+            "label": "Responsible",
+            "layout": {
+              "fillHeight": true,
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          },
+          {
+            "size": 100,
+            "id": "Approach",
+            "label": "Approach",
+            "layout": {
+              "fillHeight": true,
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "Goals",
+        "label": "Goals",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "PatientWatch.CarePlan",
+  "layoutColumns": 2
+}

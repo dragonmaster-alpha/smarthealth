@@ -1,0 +1,1836 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Prepared by",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "Date",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Discharge against medical advice",
+          "Normal discharge"
+        ],
+        "size": 50,
+        "id": "DischargeReason",
+        "label": "Discharge reason",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Accepted",
+          "Expired",
+          "Pending",
+          "Rejected"
+        ],
+        "size": 10,
+        "id": "ReferralStatus",
+        "label": "Status",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "OtherDiagnosis",
+        "label": "Other diagnosis",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "OtherProcedure",
+        "label": "Other procedure",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "PrincipalDiagnosis",
+        "label": "Principal diagnosis",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "PrincipalProcedure",
+        "label": "Principal procedure",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 20000,
+        "id": "AdditionalInformation",
+        "label": "Additional information",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Deceased",
+          "Home",
+          "Hostel",
+          "Nursing Home",
+          "Other Hospital"
+        ],
+        "size": 50,
+        "id": "DischargedTo",
+        "label": "Discharged to",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Friend",
+          "Neighbour",
+          "Own Residence",
+          "Relative",
+          "Self Care Unit"
+        ],
+        "size": 50,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Home"
+                ],
+                "fieldID": "DischargedTo"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "DischargedToHome",
+        "label": "Discharge details",
+        "layout": {
+          "span": 2
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Relative",
+                  "Neighbour",
+                  "Friend"
+                ],
+                "fieldID": "DischargedToHome"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "DischargedToHomeText",
+        "label": "Discharge to home",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Nursing Home",
+                  "Hostel",
+                  "Other Hospital"
+                ],
+                "fieldID": "DischargedTo"
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "DischargedToGroup",
+        "label": "Discharge to group",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroup"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "equals": [
+                  "Deceased"
+                ],
+                "fieldID": "DischargedTo"
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "DeceasedDate",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Ambulance",
+          "Community car",
+          "Private car",
+          "Taxi"
+        ],
+        "size": 50,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "equals": [
+                    "Deceased"
+                  ],
+                  "fieldID": "DischargedTo"
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "DischargeTransport",
+        "label": "Discharge transport",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "HospitalTransferred",
+        "label": "Hospital transferred to",
+        "type": "MedicalGroup"
+      }
+    },
+    {
+      "field": {
+        "id": "HospitalNotified",
+        "label": "Hospital notified",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "TransportArranged",
+        "label": "Transport arranged",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "NextOfKinAware",
+        "label": "Next of kin aware of transfer",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyProcedureReport",
+        "label": "Copy of procedure report",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyProcedureCD",
+        "label": "Copy of procedure CD",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyPathology",
+        "label": "Copies of pathology",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyMedicationCharts",
+        "label": "Copy of medication charts",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyCirculationChart",
+        "label": "Copy of circulation chart",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyProcedurePhotos",
+        "label": "Copy of procedure photos",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "CopiesOfTests",
+        "label": "Copies of tests",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "Temperature",
+        "label": "Temperature",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "Pulse",
+        "label": "Pulse",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "minimumLength": 3,
+        "size": 7,
+        "id": "BloodPressure",
+        "label": "Blood pressure",
+        "type": "Text",
+        "units": "mmHg"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Lying",
+          "Sitting",
+          "Standing"
+        ],
+        "size": 20,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "BloodPressure",
+                  "testEmpty": true
+                }
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "BPPosture",
+        "label": "BP Posture",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "Weight",
+        "label": "Weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "RESP",
+        "label": "RESP",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 2,
+        "id": "S02",
+        "label": "S02",
+        "type": "Number",
+        "units": "%"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "ObservationsOther",
+        "label": "Other",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "PunctureSite",
+        "label": "Puncture site",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "PunctureSite",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "LeftRadial",
+        "label": "Left radial",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "PunctureSite",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "RightRadial",
+        "label": "Right radial",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "PunctureSite",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "LeftGroin",
+        "label": "Left groin",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Bruise",
+          "Haematoma",
+          "Ooze",
+          "Satisfactory"
+        ],
+        "size": 50,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "PunctureSite",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Status",
+        "label": "Status",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Mobility",
+        "label": "Mobility",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "IVHeparinRecommended",
+        "label": "IV heparin to be recommended",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "maximum": 24,
+        "precision": 4,
+        "scale": 2,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "IVHeparinRecommended",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "IVHeparinTime",
+        "label": "Time",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "APTT",
+        "label": "Results of most recent APTT",
+        "type": "Number",
+        "units": "seconds"
+      }
+    },
+    {
+      "field": {
+        "maximum": 24,
+        "precision": 4,
+        "scale": 2,
+        "id": "APTTTime",
+        "label": "Time",
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "IVTherapy",
+        "label": "IV therapy",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "IVTherapy",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "SodiumChloride",
+        "label": "0.9% sodium chloride",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "SodiumChloride",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "SodiumChlorideRate",
+        "label": "Rate",
+        "type": "Number",
+        "units": "mL/hr"
+      }
+    },
+    {
+      "field": {
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "IVTherapy",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "Glucose",
+        "label": "5% glucose",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "Glucose",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "GlucoseRate",
+        "label": "Rate",
+        "type": "Number",
+        "units": "mL/hr"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "IVTherapy",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "IVTherapyOther",
+        "label": "Other",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Comments",
+        "label": "Comments",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PostProceduralCare",
+        "label": "Post procedural care",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 200,
+            "id": "MedicationName",
+            "label": "Medication",
+            "layout": {
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          },
+          {
+            "size": 25,
+            "id": "dose",
+            "label": "Dose",
+            "type": "Text"
+          },
+          {
+            "size": 25,
+            "id": "frequency",
+            "label": "Frequency",
+            "type": "Text"
+          },
+          {
+            "size": 25,
+            "id": "route",
+            "label": "Route",
+            "type": "Text"
+          },
+          {
+            "precisionDay": true,
+            "id": "startDate",
+            "label": "Start date",
+            "type": "DateTime"
+          },
+          {
+            "size": 25,
+            "id": "strength",
+            "label": "Strength",
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "medicationType",
+            "label": "Type",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "Medications",
+        "label": "Medications",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "MedicationDetails",
+        "label": "Medication details",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Carer",
+          "Patient",
+          "Patient \u0026 carer"
+        ],
+        "size": 50,
+        "id": "MedicationEducationTo",
+        "label": "Medication education given to",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Carer",
+          "Patient",
+          "Patient \u0026 carer"
+        ],
+        "size": 50,
+        "id": "MedicationListto",
+        "label": "Medication list given to",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Carer",
+          "Patient",
+          "Patient \u0026 carer"
+        ],
+        "size": 50,
+        "id": "PrescriptionsGivenTo",
+        "label": "Prescriptions given to",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "SufficientSupply",
+        "label": "Sufficient supply of medications",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "PreparedBy",
+        "label": "Prepared by",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "CheckedBy",
+        "label": "Checked by",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 30,
+            "id": "Allergy",
+            "label": "Allergy",
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "Text"
+          },
+          {
+            "size": 50,
+            "id": "Reaction",
+            "label": "Reaction",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "options": [
+              "Mild",
+              "Moderate",
+              "Severe"
+            ],
+            "size": 10,
+            "id": "Severity",
+            "label": "Severity",
+            "type": "Selection"
+          }
+        ],
+        "id": "Allergies",
+        "label": "Allergies",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "span": 2
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "Event",
+        "label": "Event",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 20000,
+        "id": "DiagnosticInvestigations",
+        "label": "Diagnostic investigations",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "ReasonForReferral",
+        "label": "Reason for referral",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "WoundType",
+        "label": "Type of wound",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "WoundDressing",
+        "label": "Dressing instructions",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "WoundLocation",
+        "label": "Location of wound",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Bruised",
+          "Dry",
+          "Fragile",
+          "Intact",
+          "Press area site"
+        ],
+        "size": 50,
+        "id": "SkinCondition",
+        "label": "Skin condition",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "not": {
+                  "fieldID": "SkinCondition",
+                  "testEmpty": true
+                }
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "SkinConditionText",
+        "label": "Details",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "RiskOfFall",
+        "label": "Risk of fall",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "NutritionalRisk",
+        "label": "Nutritional risk",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "IntravenousCannulaRemoved",
+        "label": "Intravenous cannula removed",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Activity",
+        "label": "Activity",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "DietInstructions",
+        "label": "Diet instructions",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PainManagement",
+        "label": "Pain management",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "BowelsAperientsReqd",
+        "label": "Aperients required",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "BowelsIncontinent",
+        "label": "Incontinent",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "BowelsType",
+        "label": "Type",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "LastBowelAction",
+        "label": "Last bowel action",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "BowelsText",
+        "label": "Details",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "BladderIncontinent",
+        "label": "Incontinent",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "UsesPads",
+        "label": "Uses pads",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "IDC",
+        "label": "IDC",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "SPC",
+        "label": "SPC",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "SPC",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "SPCDateInserted",
+        "label": "Date inserted",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "ReadOnly"
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "SPC",
+                "testTrue": true
+              },
+              "then": {
+                "editState": "Enabled"
+              }
+            }
+          ]
+        },
+        "id": "CatheterChangeDate",
+        "label": "Catheter change date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Aphasic",
+        "label": "Aphasic",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Confused",
+        "label": "Confused",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "HearingDeficit",
+        "label": "Hearing deficit",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "SpeechDeficit",
+        "label": "Speech deficit",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Vision",
+        "label": "Vision",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Language",
+        "label": "Language",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Challenging",
+        "label": "Challenging",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Wanders",
+        "label": "Wanders",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Crutches",
+          "Pick up frame",
+          "Prosthesis",
+          "Quad stick",
+          "Rollator frame",
+          "Walking sticks",
+          "Wheel chair"
+        ],
+        "size": 50,
+        "id": "ADLCareMobility",
+        "label": "Mobility",
+        "layout": {
+          "span": 2
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "Plan",
+        "label": "Plan",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "ServiceDescription",
+            "label": "Service",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "ServiceStatus",
+            "label": "Status",
+            "type": "Boolean"
+          },
+          {
+            "size": 100,
+            "id": "ServiceText",
+            "label": "Service providing organisation",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "PlanningServices",
+        "label": "",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "id": "CommunityNursing",
+        "label": "Community nursing",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "Therapy",
+        "label": "Therapy",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "OtherServices",
+        "label": "Other services",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "EquipmentHire",
+        "label": "Equipment hire",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "CommunityDescription",
+            "label": "Service",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "CommunityStatus",
+            "label": "Status",
+            "type": "Boolean"
+          },
+          {
+            "size": 100,
+            "id": "CommunityText",
+            "label": "Service providing organisation",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "PlanningCommunity",
+        "label": "",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "TherapyDescription",
+            "label": "Service",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "TherapyStatus",
+            "label": "Status",
+            "type": "Boolean"
+          },
+          {
+            "size": 100,
+            "id": "TherapyText",
+            "label": "Service providing organisation",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "PlanningTherapy",
+        "label": "",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "OtherDescription",
+            "label": "Service",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "OtherStatus",
+            "label": "Status",
+            "type": "Boolean"
+          },
+          {
+            "size": 100,
+            "id": "OtherText",
+            "label": "Service providing organisation",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "PlanningOther",
+        "label": "",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "EquipmentDescription",
+            "label": "Service",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "EquipmentStatus",
+            "label": "Status",
+            "type": "Boolean"
+          },
+          {
+            "size": 100,
+            "id": "EquipmentText",
+            "label": "Service providing organisation",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "PlanningEquipment",
+        "label": "",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 4000,
+        "id": "ArrangedServices",
+        "label": "Arranged services",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "FollowUpAppointment",
+        "label": "Follow up appointment",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "Detail",
+            "label": "",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "FollowupProvider",
+            "label": "Provider",
+            "type": "Member"
+          },
+          {
+            "precisionMinute": true,
+            "id": "FollowupDate",
+            "label": "Date Time",
+            "type": "DateTime"
+          },
+          {
+            "size": 100,
+            "id": "FollowupLocation",
+            "label": "Location",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "FollowUp",
+        "label": "",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "id": "WillMakeOwnAppointment",
+        "label": "Will make own appointment",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 50,
+            "id": "ProviderType",
+            "label": "",
+            "layout": {
+              "span": 2
+            },
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "id": "OwnFollowupProvider",
+            "label": "Provider",
+            "type": "Member"
+          },
+          {
+            "size": 100,
+            "id": "AppointmentDetail",
+            "label": "Details",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          }
+        ],
+        "id": "OwnAppointment",
+        "label": "",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 10000,
+        "id": "HL7",
+        "label": "HL7",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Service.Discharge",
+  "layoutColumns": 3
+}

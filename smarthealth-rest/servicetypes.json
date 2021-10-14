@@ -1,0 +1,1192 @@
+[
+  {
+    "abbreviation": "Admission",
+    "formDescriptionID": "Service.AdmissionProcedure",
+    "name": "Admission",
+    "permissionPerProgram": true,
+    "serviceTypeID": 0
+  },
+  {
+    "abbreviation": "Consultation",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Service.ConsultationNote",
+    "name": "Consultation Notes",
+    "permissionPerProgram": true,
+    "serviceTypeID": 1
+  },
+  {
+    "abbreviation": "Imaging",
+    "category": "StudyReport",
+    "formDescriptionID": "Service.Imaging",
+    "name": "Imaging",
+    "serviceTypeID": 2
+  },
+  {
+    "abbreviation": "Pathology",
+    "category": "PathologyStudy",
+    "formDescriptionID": "Patient.Service.PathologyDesc",
+    "name": "Pathology",
+    "serviceTypeID": 3
+  },
+  {
+    "abbreviation": "Admission",
+    "formDescriptionID": "Service.Admission",
+    "name": "Admission",
+    "permissionPerProgram": true,
+    "serviceTypeID": 5
+  },
+  {
+    "abbreviation": "Pre-Admission",
+    "formDescriptionID": "Service.PreAdmission",
+    "name": "Pre-Admission",
+    "permissionPerProgram": true,
+    "serviceTypeID": 6
+  },
+  {
+    "abbreviation": "Discharge",
+    "formDescriptionID": "Service.Discharge",
+    "name": "Discharge",
+    "permissionPerProgram": true,
+    "serviceTypeID": 7
+  },
+  {
+    "abbreviation": "Ref Nursing",
+    "category": "Referral",
+    "formDescriptionID": "Referral.Nursing",
+    "name": "Nursing Referral",
+    "permissionPerProgram": true,
+    "serviceTypeID": 8
+  },
+  {
+    "abbreviation": "Ref Hospital",
+    "category": "Referral",
+    "formDescriptionID": "Referral.Hospital",
+    "name": "Hospital Referral",
+    "permissionPerProgram": true,
+    "serviceTypeID": 9
+  },
+  {
+    "abbreviation": "Ref Allied Health",
+    "category": "Referral",
+    "formDescriptionID": "Referral.AlliedHealth",
+    "name": "Allied Health Referral",
+    "permissionPerProgram": true,
+    "serviceTypeID": 12
+  },
+  {
+    "abbreviation": "Ref Specialist",
+    "category": "Referral",
+    "formDescriptionID": "Referral.Specialist",
+    "name": "Specialist Referral",
+    "permissionPerProgram": true,
+    "serviceTypeID": 13
+  },
+  {
+    "abbreviation": "Medication",
+    "formDescriptionID": "Service.Medication",
+    "name": "Medication",
+    "permissionPerProgram": true,
+    "serviceTypeID": 15
+  },
+  {
+    "abbreviation": "Renal APD Care Plan",
+    "formDescriptionID": "Renal.APDCarePlan",
+    "name": "Renal APD Care Plan",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 16
+  },
+  {
+    "abbreviation": "Renal CAPD Care Plan",
+    "formDescriptionID": "Renal.CAPDCarePlan",
+    "name": "Renal CAPD Care Plan",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 17
+  },
+  {
+    "abbreviation": "Renal SW Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Renal.SocialWorker.SocialWorkerAssessmentDesc",
+    "name": "Renal Social Worker Assessment",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 19
+  },
+  {
+    "abbreviation": "Renal OT Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Renal.OccupationTherapistAssessment",
+    "name": "Renal Occupational Therapist Assessment",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 20
+  },
+  {
+    "abbreviation": "Renal Home Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Renal.DialysisAssessment",
+    "name": "Renal Home Dialysis Assessment",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 21
+  },
+  {
+    "abbreviation": "Renal Diet Notes",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Renal.DietitianNotes",
+    "name": "Renal Dietitian Notes",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 23
+  },
+  {
+    "abbreviation": "Renal Diet Care Plan",
+    "category": "StaticCarePlan",
+    "formDescriptionID": "Renal.DietitianCarePlan",
+    "name": "Renal Dietitian Care Plan",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 24
+  },
+  {
+    "abbreviation": "Renal SW Notes",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Renal.SocialWorkerNotes",
+    "name": "Renal Social Worker Notes",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 25
+  },
+  {
+    "abbreviation": "Renal SW Care Plan",
+    "category": "StaticCarePlan",
+    "formDescriptionID": "Renal.SocialWorkerCarePlan",
+    "name": "Renal Social Worker Care Plan",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 26
+  },
+  {
+    "abbreviation": "Renal OT Notes",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Renal.OccuTherapistNotes",
+    "name": "Renal Occupational Therapist Notes",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 27
+  },
+  {
+    "abbreviation": "HD Review",
+    "category": "FollowUpNote",
+    "formDescriptionID": "Renal.HomeHDNotes",
+    "name": "Haemodialysis Review",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 29
+  },
+  {
+    "abbreviation": "Renal PD Notes",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Renal.HomePDNotes",
+    "name": "Renal Peritoneal Dialysis Notes",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 30
+  },
+  {
+    "abbreviation": "Transplant Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Renal.TransplantAssessment",
+    "name": "Transplant Assessment",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 31
+  },
+  {
+    "abbreviation": "Renal Access Care Plan",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Renal.AccessCarePlan",
+    "name": "Renal Access Care Plan",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 32
+  },
+  {
+    "abbreviation": "HD Prescription",
+    "category": "StaticCarePlan",
+    "formDescriptionID": "Renal.HDPrescription",
+    "name": "Haemodialysis Prescription",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 33
+  },
+  {
+    "abbreviation": "CF Letter",
+    "category": "Letter",
+    "formDescriptionID": "CysticFibrosis.CFLetter",
+    "name": "Cystic Fibrosis Letter",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 36
+  },
+  {
+    "abbreviation": "CF Physician",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.RespiratoryPhysicianNotes",
+    "name": "CF Respiratory Physician Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 37
+  },
+  {
+    "abbreviation": "CF Nurse",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.NurseNotes",
+    "name": "CF Nurse Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 38
+  },
+  {
+    "abbreviation": "CF Dietitian",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.DietitianNotes",
+    "name": "CF Dietitian Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 41
+  },
+  {
+    "abbreviation": "CF Soc Worker",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.SocialWorkerNotes",
+    "name": "CF Social Worker Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 42
+  },
+  {
+    "abbreviation": "CF Physiotherapist",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.PhysiotherapistNotes",
+    "name": "CF Physiotherapist Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 43
+  },
+  {
+    "abbreviation": "CF Psychiatrist",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.PsychiatristNotes",
+    "name": "CF Psychiatrist Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 44
+  },
+  {
+    "abbreviation": "CF Psychologist",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.PsychologistNotes",
+    "name": "CF Psychologist Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 45
+  },
+  {
+    "abbreviation": "CF Occ. Therapist",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.OccupationalTherapistNotes",
+    "name": "CF Occupational Therapist Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 46
+  },
+  {
+    "abbreviation": "CF Action Plan",
+    "category": "StaticCarePlan",
+    "formDescriptionID": "CysticFibrosis.ActionPlan",
+    "name": "Cystic Fibrosis Action Plan",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 48
+  },
+  {
+    "abbreviation": "CF Clinic Review",
+    "formDescriptionID": "CysticFibrosis.Clinic.Review",
+    "name": "CF Clinic Review",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 56
+  },
+  {
+    "abbreviation": "Renal Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Renal.ClinicalAssessment",
+    "name": "Renal Clinical Assessment",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 57
+  },
+  {
+    "abbreviation": "Haemodialysis",
+    "category": "ProcedureNote",
+    "formDescriptionID": "Renal.Haemodialysis",
+    "name": "Haemodialysis",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 58,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "CF Physio Assessment",
+    "category": "Assessment",
+    "formDescriptionID": "CysticFibrosis.PhysiotherapistAssessment",
+    "name": "Cystic Fibrosis Physiotherapist Assessment",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 66
+  },
+  {
+    "abbreviation": "CF Diet Assess",
+    "category": "Assessment",
+    "formDescriptionID": "CysticFibrosis.DietitianAssessment",
+    "name": "Cystic Fibrosis Dietitian Assessment",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 68
+  },
+  {
+    "abbreviation": "CF Physician Assess",
+    "category": "Assessment",
+    "formDescriptionID": "CysticFibrosis.PhysicianAssessment",
+    "name": "Cystic Fibrosis Physician Assessment",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 69
+  },
+  {
+    "abbreviation": "Lung Function",
+    "category": "StudyReport",
+    "formDescriptionID": "Service.LungFunction",
+    "name": "Lung Function",
+    "serviceTypeID": 72
+  },
+  {
+    "abbreviation": "CF Paed Mental Health Assess",
+    "category": "Assessment",
+    "formDescriptionID": "CysticFibrosis.PaediatricMentalHealthAssessment",
+    "name": "Cystic Fibrosis Paediatric Mental Health Assessment",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 75
+  },
+  {
+    "abbreviation": "CF Psych Assess",
+    "category": "Assessment",
+    "formDescriptionID": "CysticFibrosis.PsychologistAssessment",
+    "name": "Cystic Fibrosis Psychologist Assessment",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 76
+  },
+  {
+    "abbreviation": "CF SW Assess",
+    "category": "Assessment",
+    "formDescriptionID": "CysticFibrosis.SocialWorkerAssessment",
+    "name": "Cystic Fibrosis Social Worker Assessment",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 78
+  },
+  {
+    "abbreviation": "CF Gastroenterologist",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.GastroenterologistNotes",
+    "name": "CF Gastroenterologist Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 79
+  },
+  {
+    "abbreviation": "DIA Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Diabetes.Assessment",
+    "name": "Diabetes Assessment",
+    "program": "DIABETES",
+    "serviceTypeID": 81
+  },
+  {
+    "abbreviation": "CF Australia",
+    "formDescriptionID": "CysticFibrosis.CFAustralia",
+    "name": "Cystic Fibrosis Australia Report",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 90
+  },
+  {
+    "abbreviation": "DIA 12 Month Plan",
+    "formDescriptionID": "Diabetes.12MonthManagementPlan",
+    "name": "Diabetes 12 Month Management Plan",
+    "program": "DIABETES",
+    "serviceTypeID": 93
+  },
+  {
+    "abbreviation": "Physio Assess",
+    "formDescriptionID": "Service.PhysiotherapistAssessment",
+    "name": "Physiotherapist Assessment",
+    "permissionPerProgram": true,
+    "serviceTypeID": 94
+  },
+  {
+    "abbreviation": "Other Access Problem",
+    "formDescriptionID": "Renal.AccessCarePlan.OtherAccessProblem",
+    "name": "Access Care Plans Other Access Problem",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 99
+  },
+  {
+    "abbreviation": "Immunisation",
+    "formDescriptionID": "Service.Immunisation",
+    "name": "Immunisation",
+    "permissionPerProgram": true,
+    "serviceTypeID": 100
+  },
+  {
+    "abbreviation": "Procedure",
+    "formDescriptionID": "Service.Procedure",
+    "name": "Procedure",
+    "permissionPerProgram": true,
+    "serviceTypeID": 101
+  },
+  {
+    "abbreviation": "Renal Letter",
+    "category": "Letter",
+    "formDescriptionID": "Renal.RenalLetter",
+    "name": "Letter",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 103
+  },
+  {
+    "abbreviation": "VASC Study",
+    "formDescriptionID": "Vascular.Study",
+    "name": "Vascular Study",
+    "program": "VASCULAR",
+    "serviceTypeID": 104
+  },
+  {
+    "abbreviation": "VASC Procedure",
+    "formDescriptionID": "Vascular.Procedure",
+    "name": "Vascular Procedure",
+    "program": "VASCULAR",
+    "serviceTypeID": 105
+  },
+  {
+    "abbreviation": "VASC Assess/Review",
+    "formDescriptionID": "Vascular.AssessmentReview",
+    "name": "Vascular Assessment/Review",
+    "program": "VASCULAR",
+    "serviceTypeID": 114
+  },
+  {
+    "abbreviation": "Ref Cancer",
+    "category": "Referral",
+    "formDescriptionID": "Referral.Cancer",
+    "name": "Cancer Referral",
+    "permissionPerProgram": true,
+    "serviceTypeID": 115
+  },
+  {
+    "abbreviation": "Sarcoma Assessment",
+    "category": "Assessment",
+    "formDescriptionID": "Cancer.SarcomaAssessment",
+    "name": "Sarcoma Assessment",
+    "program": "CANCER",
+    "serviceTypeID": 116
+  },
+  {
+    "abbreviation": "Sarcoma MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Sarcoma.MDTReview",
+    "name": "Sarcoma MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 117,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Renal Treatment Status",
+    "category": "TreatmentStatus",
+    "formDescriptionID": "Renal.TreatmentStatus",
+    "name": "Treatment Status",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 118
+  },
+  {
+    "abbreviation": "Emergency Access",
+    "category": "Assessment",
+    "formDescriptionID": "Service.EmergencyAccess",
+    "name": "Emergency Access",
+    "permissionPerProgram": true,
+    "serviceTypeID": 119
+  },
+  {
+    "abbreviation": "Foot Health Assessment",
+    "category": "Assessment",
+    "formDescriptionID": "Podiatry.FootHealthAssessment",
+    "name": "Foot Health Assessment",
+    "program": "PODIATRY",
+    "serviceTypeID": 120
+  },
+  {
+    "abbreviation": "HIV Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Immunology.HIVAssessment",
+    "name": "HIV Assessment",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 121
+  },
+  {
+    "abbreviation": "PEP Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Immunology.PEPAssessment",
+    "name": "PEP Assessment",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 122
+  },
+  {
+    "abbreviation": "PEP Care Plan",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Immunology.PEPCarePlan",
+    "name": "PEP Care Plan",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 123
+  },
+  {
+    "abbreviation": "CDA",
+    "formDescriptionID": "Service.CDA",
+    "name": "CDA",
+    "permissionPerProgram": true,
+    "serviceTypeID": 124
+  },
+  {
+    "abbreviation": "Shared Health Summary",
+    "formDescriptionID": "Service.CDA",
+    "name": "Shared Health Summary (CDA)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 125
+  },
+  {
+    "abbreviation": "Referral (CDA)",
+    "formDescriptionID": "Service.CDA",
+    "name": "Referral (CDA)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 126
+  },
+  {
+    "abbreviation": "Specialist Letter (CDA)",
+    "formDescriptionID": "Service.CDA",
+    "name": "Specialist Letter (CDA)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 127
+  },
+  {
+    "abbreviation": "Discharge (CDA)",
+    "formDescriptionID": "Service.CDA",
+    "name": "Discharge Summary (CDA)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 128
+  },
+  {
+    "abbreviation": "Event Summary (CDA)",
+    "formDescriptionID": "Service.CDA",
+    "name": "Event Summary (CDA)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 129
+  },
+  {
+    "abbreviation": "Social Worker Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Service.SocialWorkerAssessment",
+    "name": "Social Worker Assessment",
+    "permissionPerProgram": true,
+    "serviceTypeID": 130
+  },
+  {
+    "abbreviation": "Social Worker Notes",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Immunology.SocialWorkerNotes",
+    "name": "Immunology \u0026 ID Social Worker Notes",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 131
+  },
+  {
+    "abbreviation": "Dietitian Notes",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Service.DietitianNotes",
+    "name": "Dietitian Notes",
+    "permissionPerProgram": true,
+    "serviceTypeID": 132
+  },
+  {
+    "abbreviation": "Occupational Therapy Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Service.OccupationalTherapyAssessment",
+    "name": "Occupational Therapy Assessment",
+    "permissionPerProgram": true,
+    "serviceTypeID": 133
+  },
+  {
+    "abbreviation": "Occupational Therapy Notes",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Service.OccupationalTherapyNotes",
+    "name": "Occupational Therapy Notes",
+    "permissionPerProgram": true,
+    "serviceTypeID": 134
+  },
+  {
+    "abbreviation": "Neuropsychology Notes",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Immunology.NeuropsychologyNotes",
+    "name": "Immunology \u0026 ID Neuropsychology Notes",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 135
+  },
+  {
+    "abbreviation": "Transplant Progress Chart",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Renal.TransplantChart",
+    "name": "Transplant Progress Chart",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 136
+  },
+  {
+    "abbreviation": "Review",
+    "formDescriptionID": "Renal.TransplantChart.Review",
+    "name": "Transplant Progress Chart Review",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 137
+  },
+  {
+    "abbreviation": "Event",
+    "formDescriptionID": "Renal.TransplantChart.Event",
+    "name": "Transplant Progress Chart Event",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 138
+  },
+  {
+    "abbreviation": "Biopsy Review",
+    "formDescriptionID": "Renal.TransplantChart.Biopsy",
+    "name": "Transplant Progress Chart Biopsy Review",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 139
+  },
+  {
+    "abbreviation": "Transplant Details",
+    "formDescriptionID": "Renal.TransplantChart.TransplantDetails",
+    "name": "Transplant Progress Chart Transplant Details",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 140
+  },
+  {
+    "abbreviation": "Hepatitis Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Immunology.HepatitisAssessment",
+    "name": "Hepatitis Assessment",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 142
+  },
+  {
+    "abbreviation": "Hepatitis C Care Plan",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Immunology.HepatitisCCarePlan",
+    "name": "Hepatitis C Care Plan",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 143
+  },
+  {
+    "abbreviation": "Repository",
+    "formDescriptionID": "Service.Repository",
+    "name": "Repository",
+    "permissionPerProgram": true,
+    "serviceTypeID": 144
+  },
+  {
+    "abbreviation": "Advanced Liver Disease",
+    "category": "Assessment",
+    "formDescriptionID": "Immunology.AdvancedLiverDiseaseAssessment",
+    "name": "Advanced Liver Disease Assessment",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 145
+  },
+  {
+    "abbreviation": "Infectious Diseases Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Immunology.InfectiousDiseasesAssessment",
+    "name": "Infectious Diseases Assessment",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 146
+  },
+  {
+    "abbreviation": "Immunology A Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Immunology.ImmunologyAAssessment",
+    "name": "Immunology A Assessment",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 147
+  },
+  {
+    "abbreviation": "Gyn Cancer Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Cancer.Gynaecological.Assessment",
+    "name": "Gynaecological Cancer Assessment",
+    "program": "CANCER",
+    "serviceTypeID": 148
+  },
+  {
+    "abbreviation": "Infectious Diseases Care Plan",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Immunology.InfectiousDiseasesCarePlan",
+    "name": "Infectious Diseases Care Plan",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 149
+  },
+  {
+    "abbreviation": "Immunology A Care Plan",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Immunology.ImmunologyACarePlan",
+    "name": "Immunology A Care Plan",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 150
+  },
+  {
+    "abbreviation": "Tx Donor Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Renal.TransplantDonorAssessment",
+    "name": "Transplant Donor Assessment",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 151
+  },
+  {
+    "abbreviation": "Wait List",
+    "category": "TreatmentStatus",
+    "formDescriptionID": "Renal.TransplantWaitingList",
+    "name": "Transplant Waiting List",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 153
+  },
+  {
+    "abbreviation": "Prescription (CDA)",
+    "formDescriptionID": "Service.CDA",
+    "name": "Prescription (CDA)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 154
+  },
+  {
+    "abbreviation": "Dispense (CDA)",
+    "formDescriptionID": "Service.CDA",
+    "name": "Dispense (CDA)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 155
+  },
+  {
+    "abbreviation": "MBS (MyHR)",
+    "formDescriptionID": "Service.CDA",
+    "name": "MBS (MyHR)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 156
+  },
+  {
+    "abbreviation": "PBS (MyHR)",
+    "formDescriptionID": "Service.CDA",
+    "name": "PBS (MyHR)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 157
+  },
+  {
+    "abbreviation": "ACIR (MyHR)",
+    "formDescriptionID": "Service.CDA",
+    "name": "ACIR (MyHR)",
+    "permissionPerProgram": true,
+    "serviceTypeID": 158
+  },
+  {
+    "abbreviation": "Gyn Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Gynaecological.MDTReview",
+    "name": "Gynaecological Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 159,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Remote Monitoring",
+    "formDescriptionID": "Service.RemoteMonitoring",
+    "name": "Remote Monitoring",
+    "permissionPerProgram": true,
+    "serviceTypeID": 160
+  },
+  {
+    "abbreviation": "Patient Notes",
+    "formDescriptionID": "Service.PatientNotes",
+    "name": "Patient Notes",
+    "permissionPerProgram": true,
+    "serviceTypeID": 161
+  },
+  {
+    "abbreviation": "Anoscopy",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Immunology.Anoscopy",
+    "name": "Anoscopy/Peri-anal Exam",
+    "program": "IMMUNOLOGY",
+    "serviceTypeID": 162
+  },
+  {
+    "abbreviation": "Breast Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Breast.MDTReview",
+    "name": "Breast Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 163,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Thoracic Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Thoracic.MDTReview",
+    "name": "Thoracic Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 164,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Colorectal Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Colorectal.MDTReview",
+    "name": "Colorectal Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 165,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Genito-urinary Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Genitourinary.MDTReview",
+    "name": "Genito-urinary Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 166,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Skin Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Skin.MDTReview",
+    "name": "Skin Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 167,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Upper GI Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.UpperGastrointestinal.MDTReview",
+    "name": "Upper Gastrointestinal Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 168,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Head and Neck Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.HeadAndNeck.MDTReview",
+    "name": "Head and Neck Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 169,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "CNS Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.CentralNervousSystem.MDTReview",
+    "name": "Central Nervous System Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 170,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Haematological Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Haematological.MDTReview",
+    "name": "Haematological Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 171,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Extension Line Change",
+    "category": "ProcedureNote",
+    "formDescriptionID": "Renal.ExtensionLineChange",
+    "name": "Extension Line Change",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 172
+  },
+  {
+    "abbreviation": "Letter",
+    "category": "Letter",
+    "formDescriptionID": "Correspondence.Letter",
+    "name": "Letter",
+    "serviceTypeID": 173,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "PD Catheter Infection",
+    "formDescriptionID": "Renal.AccessCarePlan.PDCatheterInfection",
+    "name": "Access Care Plans PD Catheter Infection",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 174
+  },
+  {
+    "abbreviation": "PD Prescription",
+    "category": "StaticCarePlan",
+    "formDescriptionID": "Renal.PDPrescription",
+    "name": "Peritoneal Dialysis Prescription",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 175,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "PD Complication",
+    "category": "Complication",
+    "formDescriptionID": "Renal.DialysisComplication",
+    "name": "Peritoneal Dialysis Complication",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 176
+  },
+  {
+    "abbreviation": "PET and Adequacy",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Renal.PETAndAdequacy",
+    "name": "Peritoneal Equilibration Test and Adequacy",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 177
+  },
+  {
+    "abbreviation": "PD Training",
+    "category": "ConsultationNote",
+    "formDescriptionID": "Renal.PDTraining",
+    "name": "Peritoneal Dialysis Training",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 178
+  },
+  {
+    "abbreviation": "Home PD Review",
+    "category": "FollowUpNote",
+    "formDescriptionID": "Renal.PDReview",
+    "name": "Home Peritoneal Dialysis Review",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 179
+  },
+  {
+    "abbreviation": "Peritonitis",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Renal.Peritonitis",
+    "name": "Peritonitis",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 180
+  },
+  {
+    "abbreviation": "CF MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "CysticFibrosis.MDTReview",
+    "name": "Cystic Fibrosis MDT Review",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 181,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "CF Diagnosis",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.Diagnosis",
+    "name": "CF Diagnosis",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 182
+  },
+  {
+    "abbreviation": "CF Examination",
+    "category": "ConsultationNote",
+    "formDescriptionID": "CysticFibrosis.Examination",
+    "name": "CF Examination",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 183
+  },
+  {
+    "abbreviation": "CF Transplant Assess",
+    "category": "Assessment",
+    "formDescriptionID": "CysticFibrosis.TransplantAssessment",
+    "name": "CF Transplant Assessment",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 184
+  },
+  {
+    "abbreviation": "CF Treatment Status",
+    "category": "TreatmentStatus",
+    "formDescriptionID": "CysticFibrosis.TreatmentStatus",
+    "name": "CF Treatment Status",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 185
+  },
+  {
+    "abbreviation": "CF Admission Plan",
+    "category": "StaticCarePlan",
+    "formDescriptionID": "CysticFibrosis.AdmissionPlan",
+    "name": "CF Admission Plan",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 186
+  },
+  {
+    "abbreviation": "CF Discharge Care Plan",
+    "category": "StaticCarePlan",
+    "formDescriptionID": "CysticFibrosis.DischargeCarePlan",
+    "name": "CF Discharge Care Plan",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 187,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "CF Inpatient Notes",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "CysticFibrosis.InpatientNotes",
+    "name": "CF Inpatient Notes",
+    "program": "CYSTIC_FIBROSIS",
+    "serviceTypeID": 188,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Neuroendocrine Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Neuroendocrine.MDTReview",
+    "name": "Neuroendocrine Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 189,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Gyn Cancer Surgery",
+    "category": "Surgery",
+    "formDescriptionID": "Cancer.Gynaecological.Surgery",
+    "name": "Gynaecological Cancer Surgery",
+    "program": "CANCER",
+    "serviceTypeID": 190,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Treatment Status",
+    "category": "TreatmentStatus",
+    "formDescriptionID": "PatientWatch.TreatmentStatus",
+    "name": "Patient Watch Treatment Status",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 191
+  },
+  {
+    "abbreviation": "Gyn Cancer Recurrence",
+    "category": "FollowUpNote",
+    "formDescriptionID": "Cancer.Gynaecological.Recurrence",
+    "name": "Gynaecological Cancer Recurrence",
+    "program": "CANCER",
+    "serviceTypeID": 192
+  },
+  {
+    "abbreviation": "Problem and Action",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "PatientWatch.ProblemAndAction",
+    "name": "Patient Watch Problem and Action",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 193
+  },
+  {
+    "abbreviation": "Gyn Cancer Follow-up",
+    "category": "FollowUpNote",
+    "formDescriptionID": "Cancer.Gynaecological.FollowUp",
+    "name": "Gynaecological Cancer Follow-Up",
+    "program": "CANCER",
+    "serviceTypeID": 194
+  },
+  {
+    "abbreviation": "Gyn Cancer Complication",
+    "category": "FollowUpNote",
+    "formDescriptionID": "Cancer.Gynaecological.Complication",
+    "name": "Gynaecological Cancer Complication",
+    "program": "CANCER",
+    "serviceTypeID": 195
+  },
+  {
+    "abbreviation": "Endocrine Cancer MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "Cancer.Endocrine.MDTReview",
+    "name": "Endocrine Cancer MDT Review",
+    "program": "CANCER",
+    "serviceTypeID": 196,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Anatomical Pathology",
+    "category": "PathologyStudy",
+    "formDescriptionID": "Diagnostic.AnatomicalPathology",
+    "name": "Anatomical Pathology",
+    "serviceTypeID": 197
+  },
+  {
+    "abbreviation": "PW Assess",
+    "category": "Assessment",
+    "formDescriptionID": "PatientWatch.PatientAssessment",
+    "name": "Patient Watch Assessment",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 198
+  },
+  {
+    "abbreviation": "PW Profile",
+    "category": "Assessment",
+    "formDescriptionID": "PatientWatch.PatientProfile",
+    "name": "Patient Watch Profile",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 199
+  },
+  {
+    "abbreviation": "PW Care Plan",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "PatientWatch.CarePlan",
+    "name": "Patient Watch Care Plan",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 200
+  },
+  {
+    "abbreviation": "PW Risk Assess",
+    "category": "Assessment",
+    "formDescriptionID": "PatientWatch.RiskAssessment",
+    "name": "Patient Watch Outreach Risk Assessment",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 201
+  },
+  {
+    "abbreviation": "CKD Care Plan",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Renal.CKDCarePlan",
+    "name": "Renal CKD Care Plan",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 202
+  },
+  {
+    "abbreviation": "Supportive Care",
+    "category": "CareAndTreatmentPlan",
+    "formDescriptionID": "Renal.SupportiveCare",
+    "name": "Renal Supportive Care",
+    "program": "RENAL_DISEASE",
+    "serviceTypeID": 203
+  },
+  {
+    "abbreviation": "PW Questionnaire",
+    "category": "Assessment",
+    "formDescriptionID": "PatientWatch.Questionnaire",
+    "name": "Patient Watch Questionnaire",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 204,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "PW Periodic Review",
+    "category": "FollowUpNote",
+    "formDescriptionID": "PatientWatch.PeriodicReview",
+    "name": "Patient Watch Periodic Review",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 205,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Referral",
+    "category": "Referral",
+    "formDescriptionID": "Correspondence.ClinicalReferral",
+    "name": "Clinical Referral",
+    "serviceTypeID": 206,
+    "supportDraft": true
+  },
+  {
+    "abbreviation": "Cancer Init Assess",
+    "category": "Assessment",
+    "formDescriptionID": "Cancer.InitialAssessment",
+    "name": "Cancer Initial Assessment",
+    "program": "CANCER",
+    "serviceTypeID": 207
+  },
+  {
+    "abbreviation": "PW MDT Review",
+    "category": "MDTReview",
+    "formDescriptionID": "PatientWatch.MDTReview",
+    "name": "Patient Watch MDT Review",
+    "program": "PATIENT_WATCH",
+    "serviceTypeID": 208,
+    "supportDraft": true
+  }
+]

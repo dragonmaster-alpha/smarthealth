@@ -1,0 +1,38 @@
+[
+  {
+    "cmiHTML": false,
+    "drowsy": false,
+    "formulationCode": 1,
+    "formulationType": "Tablet",
+    "glutenFree": false,
+    "id": 635301,
+    "prescriptionOnly": false,
+    "product": {
+      "consumerMedicineInformation": false,
+      "pregnancyTextExists": false,
+      "product": "Lactobac",
+      "productCode": 6353,
+      "productSort": "LACTOBAC",
+      "s11": false
+    },
+    "sortOrder": 0
+  },
+  {
+    "cmiHTML": false,
+    "drowsy": false,
+    "formulationCode": 2,
+    "formulationType": "Capsule",
+    "glutenFree": false,
+    "id": 635302,
+    "prescriptionOnly": false,
+    "product": {
+      "consumerMedicineInformation": false,
+      "pregnancyTextExists": false,
+      "product": "Lactobac",
+      "productCode": 6353,
+      "productSort": "LACTOBAC",
+      "s11": false
+    },
+    "sortOrder": 0
+  }
+]

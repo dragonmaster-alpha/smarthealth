@@ -1,0 +1,13 @@
+/**
+ * Styles for ClinicalMeasuresAdultWeightChart.tsx
+ *
+ * @author Thompson 24/08/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+.cp-ClinicalMeasuresAdultWeightChart {
+  &-tooltip {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1.5ex 1em;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "/patients/42/medicalgroups",
+  "referencedType": "PatientMedicalGroupAssociation",
+  "references": [
+    {
+      "associatedID": 1,
+      "id": 42,
+      "type": "PatientMedicalGroupAssociation"
+    },
+    {
+      "associatedID": 825,
+      "id": 42,
+      "type": "PatientMedicalGroupAssociation"
+    }
+  ]
+}

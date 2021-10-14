@@ -1,0 +1,209 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ObservationDate",
+        "label": "Observation Date/Time",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "ReferringProvider",
+        "label": "Referring Doctor",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ResultsDate",
+        "label": "Results Date/Time",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "CopyTo",
+        "label": "Copy To",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "LabReference",
+        "label": "Laboratory Reference",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 50,
+        "id": "SurgeryReference",
+        "label": "Surgery Reference",
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "TestRequest",
+        "label": "Request",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "columns": [],
+        "id": "Results",
+        "label": "Results",
+        "layout": {
+          "labelPosition": "Above",
+          "spanLine": true
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "size": 10000,
+        "id": "TestResult",
+        "label": "Pathologist Report",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "AllTestsComplete",
+        "label": "All tests completed",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "HTML"
+        ],
+        "size": 4,
+        "id": "ReportInHL7",
+        "label": "Report In HL7",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Selection"
+      }
+    }
+  ],
+  "id": "Patient.Service.PathologyDesc.WebUI",
+  "layoutColumns": 3
+}

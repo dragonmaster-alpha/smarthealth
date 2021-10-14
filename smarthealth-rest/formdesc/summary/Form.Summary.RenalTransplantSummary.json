@@ -1,0 +1,76 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Active",
+                "Inactive",
+                "Off list",
+                "Ready",
+                "Transplanted",
+                "Unclassified"
+              ],
+              "size": 20,
+              "id": "Transplant.TransplantStatus",
+              "label": "Transplant status",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "toolTip": "\u003chtml\u003e \u003cul\u003e \u003cli\u003eUnclassified - Patients that have not been seen or who have been seen but their classification \u003cbr/\u003e has not yet been determined (for example, they are in work up) \u003c/li\u003e \u003cli\u003eActive - Patients on the national waiting list, with or without a live donor (some donors may be \u003cbr/\u003e incompatible and the recipient is awaiting success in the paired exchange program or a deceased donor) \u003c/li\u003e \u003cli\u003eReady - Patients that will never be made active (they have a live donor). Patients that have \u003cbr/\u003e completed and passed the assessment but cannot be active for some reason and patients that are \u003cbr/\u003e pre-dialysis but are not able to be made active yet (for example, they have not yet commenced dialysis)\u003c/li\u003e \u003cli\u003eInactive - Patients that are ill or hospitalised, including cardiac procedure, chest pain needing \u003cbr/\u003e investigation, collapse, commencement of clopidogrel, depression, infection (pneumonia, \u003cbr/\u003e urinary tract infection, permcath sepsis, peritonitis, etc.), obesity, psychiatric problems, poor \u003cbr/\u003e adherence to treatment, stroke, surgery, vascular disease needing review. \u003c/li\u003e \u003cli\u003eOff list - Patient is not suitable for transplant. \u003c/li\u003e \u003cli\u003eTransplanted - Patient has been transplanted. \u003c/li\u003e \u003cul\u003e \u003c/html\u003e",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "Transplant.TransplantService",
+              "label": "Transplant date",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [
+                "Kidney",
+                "Pancreas"
+              ],
+              "size": 30,
+              "id": "Transplant.TransplantOrgan",
+              "label": "Transplant organs",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 9,
+              "precision": 1,
+              "scale": 0,
+              "id": "Transplant.PreviousTransplants",
+              "label": "Previous transplants",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "Transplant",
+        "layoutShow": true,
+        "title": "Transplant"
+      }
+    }
+  ],
+  "id": "Summary.RenalTransplantSummary.WebUI",
+  "layoutColumns": 2
+}

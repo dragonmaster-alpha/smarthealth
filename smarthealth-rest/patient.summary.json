@@ -1,0 +1,22 @@
+{
+  "address": {
+    "address1": "39 Phillip St",
+    "address2": "",
+    "city": "Sydney",
+    "country": "Australia",
+    "postcode": "2000",
+    "state": "NSW"
+  },
+  "dateOfBirth": {
+    "iso": "1987-06-05"
+  },
+  "mrn": "MRN00001",
+  "name": {
+    "familyName": "Hopkins",
+    "givenName": "Tina",
+    "otherGivenNames": "Wilma Betty",
+    "title": "Ms"
+  },
+  "patientID": 42,
+  "sex": "Female"
+}

@@ -1,0 +1,868 @@
+{
+  "behaviour": {
+    "serviceDateIsUpdateDate": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Updated date",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Referrer.ReferralDate",
+              "label": "Date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Referrer.ReferringClinician",
+              "label": "Referring clinician",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Referrer.Reason",
+              "label": "Reason",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Referrer",
+        "layoutShow": true,
+        "title": "Referrer"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Assessment.IposDate",
+              "label": "I-POS",
+              "toolTip": "Integrated Palliative Care Outcome Scale",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "maximum": 40,
+              "precision": 2,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Assessment.IposDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.IposMeasure",
+              "label": "Measure",
+              "toolTip": "Integrated Palliative Outcome Scale - Renal",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Assessment.KarnofskyDate",
+              "label": "Karnofsky (AKPS)",
+              "layout": {
+                "newLine": true
+              },
+              "toolTip": "Australian Modified Karnofsky Performance Status",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "minimum": 10,
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Assessment.KarnofskyDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Assessment.KarnofskyMeasure",
+              "label": "Measure",
+              "toolTip": "Australian modified Karnofsky Performance Status",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "multiple": true,
+              "options": [
+                "Palliative care",
+                "Supportive Care/Conservative",
+                "Symptom management",
+                "Advance care planning",
+                "Psychosocial support",
+                "APD/IPD Hospital",
+                "APD/IPD Satellite",
+                "APD/IPD Home",
+                "CAPD Hospital/Outpatient",
+                "CAPD Home",
+                "HD Hospital",
+                "HD Satellite",
+                "HD Home - conventional",
+                "HD Home - nocturnal",
+                "Transplant in Australia/NZ",
+                "Transplant overseas",
+                "Graft function temporarily/permanently ceased",
+                "Own kidney function recovered - dialysis ceased",
+                "Pre-dialysis",
+                "Transplant donor"
+              ],
+              "size": 50,
+              "id": "Assessment.TreatmentType",
+              "label": "Treatment type",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Assessment",
+        "layoutShow": true,
+        "title": "Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Referrals.NursingReferralDate",
+              "label": "Nursing referral",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Referrals.NursingReferralDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Referrals.Nurse",
+              "label": "Nurse",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Referrals.SWReferralDate",
+              "label": "Social worker referral",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Referrals.SWReferralDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Referrals.SocialWorker",
+              "label": "Social worker",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Referrals.DietitianReferralDate",
+              "label": "Dietitian referral",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Referrals.DietitianReferralDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Referrals.Dietitian",
+              "label": "Dietitian",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Referrals.OTReferralDate",
+              "label": "Occupational therapist referral",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Referrals.OTReferralDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Referrals.OccupationalTherapist",
+              "label": "Occupational therapist",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Referrals.GeriatricReferralDate",
+              "label": "Geriatric referral",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Referrals.GeriatricReferralDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Referrals.Geriatrician",
+              "label": "Geriatrician",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Referrals.PalliativeCareReferralDate",
+              "label": "Palliative care referral",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Referrals.PalliativeCareReferralDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Referrals.PalliativeCareProvider",
+              "label": "Provider",
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Clinical Nurse Consultant",
+                "Specialist"
+              ],
+              "size": 40,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Referrals.PalliativeCareReferralDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Referrals.PalliativeCareRole",
+              "label": "Role",
+              "layout": {
+                "skip": 1
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Referrals",
+        "layoutShow": true,
+        "title": "Referrals"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Aged/residential care",
+                "Crisis accommodation/hostel",
+                "Private home",
+                "Rough sleeper",
+                "Temporary accommodation"
+              ],
+              "size": 40,
+              "id": "LivingArrangements.ResidentialSituation",
+              "label": "Residential situation",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Employed carer",
+                "No live-in care",
+                "Partner",
+                "Volunteer carer"
+              ],
+              "size": 40,
+              "id": "LivingArrangements.LiveinCare",
+              "label": "Live-in care",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "LivingArrangements.Cleaner",
+              "label": "Cleaner",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "LivingArrangements",
+        "layoutShow": true,
+        "title": "Living Arrangements"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "FamilyMeeting.Date",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "FamilyMeeting.Date",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "FamilyMeeting.Attendees",
+              "label": "Attendees",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "FamilyMeeting.Date",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "FamilyMeeting.Objectives",
+              "label": "Objectives/goals of care",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "FamilyMeeting",
+        "layoutShow": true,
+        "title": "Family Meeting"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "In progress",
+                "No",
+                "Yes"
+              ],
+              "size": 12,
+              "id": "AdvanceCareArrangements.ResuscitationPlan",
+              "label": "Resuscitation Plan",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes",
+                        "In progress"
+                      ],
+                      "fieldID": "AdvanceCareArrangements.ResuscitationPlan"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "AdvanceCareArrangements.ResuscitationPlanDetails",
+              "label": "Details/person responsible",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "In progress",
+                "No",
+                "Yes"
+              ],
+              "size": 12,
+              "id": "AdvanceCareArrangements.LivingWill",
+              "label": "Living will",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes",
+                        "In progress"
+                      ],
+                      "fieldID": "AdvanceCareArrangements.LivingWill"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "AdvanceCareArrangements.LivingWillDetails",
+              "label": "Details/person responsible",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "In progress",
+                "Initial discussion",
+                "No",
+                "Yes"
+              ],
+              "size": 20,
+              "id": "AdvanceCareArrangements.AdvanceCarePlan",
+              "label": "Advance care plan/directive",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes",
+                        "Initial discussion",
+                        "In progress"
+                      ],
+                      "fieldID": "AdvanceCareArrangements.AdvanceCarePlan"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "AdvanceCareArrangements.AdvanceCarePlanDetails",
+              "label": "Details/person responsible",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "In progress",
+                "No",
+                "Yes"
+              ],
+              "size": 12,
+              "id": "AdvanceCareArrangements.AmbulancePalliativeCarePlan",
+              "label": "Ambulance service palliative care plan",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Yes",
+                        "In progress"
+                      ],
+                      "fieldID": "AdvanceCareArrangements.AmbulancePalliativeCarePlan"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "AdvanceCareArrangements.AmbulancePalliativeCareDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "AdvanceCareArrangements.PatientCarerQualityAssessmentTool",
+              "label": "Patient/carer quality assessment tool completed",
+              "layout": {
+                "newLine": true
+              },
+              "type": "DateTime"
+            }
+          }
+        ],
+        "id": "AdvanceCareArrangements",
+        "layoutShow": true,
+        "title": "Advance Care Arrangements"
+      }
+    }
+  ],
+  "id": "Renal.SupportiveCare",
+  "layoutColumns": 2
+}

@@ -1,0 +1,14 @@
+/**
+ * Temporary styles for PrimeReactDropdownStory.tsx
+ *
+ * @author Thompson 1/04/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+.PrimeReactDropdownStory-itemsWrapper {
+
+  .p-dropdown-items-wrapper {
+    position: relative;
+    background-color: red;
+    z-index: 1000;
+  }
+}

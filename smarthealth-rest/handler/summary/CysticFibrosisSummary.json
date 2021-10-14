@@ -1,0 +1,157 @@
+{
+  "Alerts": {
+    "DrugAlerts": [
+      "Some drug"
+    ],
+    "OrganismAlerts": [
+      {
+        "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.Organism",
+        "value": "Burkholderia"
+      }
+    ],
+    "PhysiotherapistNotesService": {
+      "owningGroupID": 26,
+      "program": "CYSTIC_FIBROSIS",
+      "serviceDate": {
+        "iso": "2020-01-08T16:08+11"
+      },
+      "serviceID": 95,
+      "serviceType": 43,
+      "summary": "Populate summary"
+    },
+    "RespiratoryPhysicianNotesService": {
+      "owningGroupID": 26,
+      "program": "CYSTIC_FIBROSIS",
+      "serviceDate": {
+        "iso": "2020-01-08T16:05+11"
+      },
+      "serviceID": 93,
+      "serviceType": 37,
+      "summary": "Summary"
+    },
+    "Sputum": "Colour: Clear, Achieved by Voluntary expectoration, Sent to pathology"
+  },
+  "CFTreatmentStatusService": {
+    "owningGroupID": 26,
+    "program": "CYSTIC_FIBROSIS",
+    "serviceDate": {
+      "iso": "2020-01-08T16:06+11"
+    },
+    "serviceID": 94,
+    "serviceType": 185,
+    "summary": ""
+  },
+  "CO": {
+    "groupID": 26,
+    "userID": 48
+  },
+  "MO": {
+    "groupID": 26,
+    "userID": 7
+  },
+  "TreatmentHistory": {
+    "HomeIVDates": [
+      {
+        "StartDate": {
+          "iso": "2020-01-01"
+        },
+        "StartServiceID": {
+          "owningGroupID": 26,
+          "program": "CYSTIC_FIBROSIS",
+          "serviceDate": {
+            "iso": "2020-01-08T16:06+11"
+          },
+          "serviceID": 94,
+          "serviceType": 185,
+          "summary": ""
+        }
+      }
+    ]
+  },
+  "TreatmentStatus": {
+    "TreatmentStatus": [
+      {
+        "Date": {
+          "iso": "2019-10-08"
+        },
+        "TreatmentOrTest": "Allergies"
+      },
+      {
+        "Date": {
+          "iso": "2019-11-18"
+        },
+        "Details": "Added: HIV infection,Chronic renal impairment",
+        "TreatmentOrTest": "Conditions"
+      },
+      {
+        "TreatmentOrTest": "Dietitian"
+      },
+      {
+        "TreatmentOrTest": "Gastroenterologist"
+      },
+      {
+        "TreatmentOrTest": "Genotype"
+      },
+      {
+        "TreatmentOrTest": "Imaging"
+      },
+      {
+        "TreatmentOrTest": "Immunisation"
+      },
+      {
+        "TreatmentOrTest": "Lung function"
+      },
+      {
+        "TreatmentOrTest": "Medications"
+      },
+      {
+        "TreatmentOrTest": "Occupational therapist"
+      },
+      {
+        "Date": {
+          "iso": "2020-01-08T16:08+11"
+        },
+        "Details": "Populate summary",
+        "Service": {
+          "owningGroupID": 26,
+          "program": "CYSTIC_FIBROSIS",
+          "serviceDate": {
+            "iso": "2020-01-08T16:08+11"
+          },
+          "serviceID": 95,
+          "serviceType": 43,
+          "summary": "Populate summary"
+        },
+        "TreatmentOrTest": "Physiotherapist"
+      },
+      {
+        "TreatmentOrTest": "Psychologist"
+      },
+      {
+        "TreatmentOrTest": "Social worker"
+      },
+      {
+        "Date": {
+          "iso": "2020-01-08T16:08+11"
+        },
+        "Service": {
+          "owningGroupID": 26,
+          "program": "CYSTIC_FIBROSIS",
+          "serviceDate": {
+            "iso": "2020-01-08T16:08+11"
+          },
+          "serviceID": 95,
+          "serviceType": 43,
+          "summary": "Populate summary"
+        },
+        "TreatmentOrTest": "Sputum"
+      },
+      {
+        "TreatmentOrTest": "Sweat test"
+      },
+      {
+        "TreatmentOrTest": "Thyrotropin (TSH)"
+      }
+    ]
+  }
+}

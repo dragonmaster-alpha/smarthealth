@@ -1,0 +1,38 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 40,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.ReasonForAdmission",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.ReasonForAdmission",
+      "value": "Bronchoalveolar lavage"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.ReasonForAdmission",
+      "value": "PA eradication"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.ReasonForAdmission",
+      "value": "Chest exacerbation (not new PA)"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.ReasonForAdmission",
+      "value": "Other non-respiratory admission"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.ReasonForAdmission",
+      "value": "Cepacia eradication"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.ReasonForAdmission",
+      "value": "ABPA"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cysticfibrosis.ReasonForAdmission",
+      "value": "New CF related diabetes"
+    }
+  ],
+  "valueSetID": "Cysticfibrosis.ReasonForAdmission"
+}

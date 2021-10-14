@@ -1,0 +1,175 @@
+[
+    [
+        {
+            "code": "2954-6",
+            "codeSystem": "LOINC",
+            "name": "Sodium result"
+        },
+        {
+            "code": "2077-6",
+            "codeSystem": "LOINC",
+            "name": "Chloride result"
+        }
+    ],
+    [
+        {
+            "code": "8127-3",
+            "codeSystem": "LOINC",
+            "name": "CD4 Count"
+        },
+        {
+            "code": "20447-9",
+            "codeSystem": "LOINC",
+            "name": "Viral Load"
+        }
+    ],
+    [
+        {
+            "code": "3016-3",
+            "codeSystem": "LOINC",
+            "name": "TSH"
+        },
+        {
+            "code": "14920-3",
+            "codeSystem": "LOINC",
+            "name": "Free T4"
+        },
+        {
+            "code": "MoreInformation",
+            "codeSystem": null,
+            "name": "More Information"
+        }
+    ],
+    [
+        {
+            "code": "2951-2",
+            "codeSystem": "LOINC",
+            "name": "Sodium"
+        },
+        {
+            "code": "2823-3",
+            "codeSystem": "LOINC",
+            "name": "Potassium"
+        },
+        {
+            "code": "2075-0",
+            "codeSystem": "LOINC",
+            "name": "Chloride"
+        },
+        {
+            "code": "1963-8",
+            "codeSystem": "LOINC",
+            "name": "Bicarbonate"
+        },
+        {
+            "code": "22664-7",
+            "codeSystem": "LOINC",
+            "name": "Urea"
+        },
+        {
+            "code": "14682-9",
+            "codeSystem": "LOINC",
+            "name": "Creatinine"
+        },
+        {
+            "code": "62238-1",
+            "codeSystem": "LOINC",
+            "name": "eGFR"
+        },
+        {
+            "code": "MoreInformation",
+            "codeSystem": null,
+            "name": "More Information"
+        }
+    ],
+    [
+        {
+            "code": "5902-2",
+            "codeSystem": "LOINC",
+            "name": "Prothrombin Time"
+        },
+        {
+            "code": "6301-6",
+            "codeSystem": "LOINC",
+            "name": "INR"
+        },
+        {
+            "code": "14979-9",
+            "codeSystem": "LOINC",
+            "name": "APTT"
+        }
+    ],
+    [
+        {
+            "code": "14913-8",
+            "codeSystem": "LOINC",
+            "name": "Testosterone"
+        },
+        {
+            "code": "MoreInformation",
+            "codeSystem": null,
+            "name": "More Information"
+        }
+    ],
+    [
+        {
+            "code": "C1194",
+            "codeSystem": null,
+            "name": "AFP (Beckman)"
+        },
+        {
+            "code": "MoreInformation",
+            "codeSystem": null,
+            "name": "More Information"
+        }
+    ],
+    [
+        {
+            "code": "2885-2",
+            "codeSystem": "LOINC",
+            "name": "Total protein"
+        },
+        {
+            "code": "61152-5",
+            "codeSystem": "LOINC",
+            "name": "Albumin"
+        },
+        {
+            "code": "14631-6",
+            "codeSystem": "LOINC",
+            "name": "Bilirubin total"
+        },
+        {
+            "code": "6768-6",
+            "codeSystem": "LOINC",
+            "name": "Alkaline phosphat."
+        },
+        {
+            "code": "1744-2",
+            "codeSystem": "LOINC",
+            "name": "ALT"
+        },
+        {
+            "code": "1920-8",
+            "codeSystem": "LOINC",
+            "name": "AST"
+        },
+        {
+            "code": "2324-2",
+            "codeSystem": "LOINC",
+            "name": "GGT"
+        }
+    ],
+    [
+        {
+            "code": "2000-8",
+            "codeSystem": "LOINC",
+            "name": "Calcium"
+        },
+        {
+            "code": "29265-6",
+            "codeSystem": "LOINC",
+            "name": "Calcium (corr. Alb)"
+        }
+    ]
+]

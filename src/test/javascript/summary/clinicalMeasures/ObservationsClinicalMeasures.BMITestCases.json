@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1714,
+        "observationDate": {
+            "iso": "2018-08-29T10:00+10"
+        },
+        "observationType": "Weight",
+        "patientID": 48,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2018-08-29T10:00+10"
+            },
+            "serviceID": 11875,
+            "serviceType": 1,
+            "summary": "j"
+        },
+        "valueNumber": 72
+    },
+    {
+        "id": 1713,
+        "observationDate": {
+            "iso": "2019-08-28T10:00+10"
+        },
+        "observationType": "Height",
+        "patientID": 48,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2019-08-28T10:00+10"
+            },
+            "serviceID": 11874,
+            "serviceType": 1,
+            "summary": "h"
+        },
+        "valueNumber": 165
+    },
+    {
+        "id": 1712,
+        "observationDate": {
+            "iso": "2020-01-09T10:00+11"
+        },
+        "observationType": "Weight",
+        "patientID": 48,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-01-09T10:00+11"
+            },
+            "serviceID": 11873,
+            "serviceType": 1,
+            "summary": "gh"
+        },
+        "valueNumber": 70
+    },
+    {
+        "id": 1711,
+        "observationDate": {
+            "iso": "2020-05-26T10:00+10"
+        },
+        "observationType": "Height",
+        "patientID": 48,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-05-26T10:00+10"
+            },
+            "serviceID": 11872,
+            "serviceType": 1,
+            "summary": "k"
+        },
+        "valueNumber": 168
+    },
+    {
+        "id": 1709,
+        "observationDate": {
+            "iso": "2020-07-26T10:00+10"
+        },
+        "observationType": "Height",
+        "patientID": 48,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-07-26T10:00+10"
+            },
+            "serviceID": 11870,
+            "serviceType": 1,
+            "summary": "j"
+        },
+        "valueNumber": 170
+    },
+    {
+        "id": 1710,
+        "observationDate": {
+            "iso": "2020-08-26T11:57+10"
+        },
+        "observationType": "Weight",
+        "patientID": 48,
+        "serviceRecordReference": {
+            "confidentiality": "Normal",
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-08-26T11:57+10"
+            },
+            "serviceID": 11871,
+            "serviceType": 1,
+            "summary": "h"
+        },
+        "valueNumber": 70
+    },
+    {
+        "id": 1715,
+        "observationDate": {
+            "iso": "2020-09-26T15:00+10"
+        },
+        "observationType": "Height",
+        "patientID": 48,
+        "serviceRecordReference": {
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-09-26T15:00+10"
+            },
+            "serviceID": 11876,
+            "serviceType": 1,
+            "summary": "s"
+        },
+        "valueNumber": 175
+    },
+    {
+        "id": 1716,
+        "observationDate": {
+            "iso": "2020-09-26T15:00+10"
+        },
+        "observationType": "Weight",
+        "patientID": 48,
+        "serviceRecordReference": {
+            "owningGroupID": 26,
+            "serviceDate": {
+                "iso": "2020-09-26T15:00+10"
+            },
+            "serviceID": 11876,
+            "serviceType": 1,
+            "summary": "s"
+        },
+        "valueNumber": 75
+    }
+]

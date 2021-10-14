@@ -1,0 +1,361 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ProgramStartDate",
+        "label": "Program start date",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "displayType": "ServiceDate",
+        "id": "MostRecentTreatmentStatus",
+        "label": "Most recent Treatment Status",
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Funded",
+          "Unfunded"
+        ],
+        "size": 10,
+        "id": "FundingStatus",
+        "label": "Funding status",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "displayType": "ServiceDate",
+        "id": "FundingStatusService",
+        "label": "Date",
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Candidate",
+          "Control",
+          "Declined",
+          "Graduated",
+          "Induction booked",
+          "Introduction letter sent",
+          "Lost to follow-up",
+          "Not offered",
+          "Offered",
+          "Parked NESB",
+          "Review",
+          "Stop letter sent",
+          "Stopped by patient",
+          "Stopped by watch team",
+          "VIP"
+        ],
+        "size": 30,
+        "id": "ParticipationStatus",
+        "label": "Participation status",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "displayType": "ServiceDate",
+        "id": "ParticipationStatusService",
+        "label": "Date",
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "id": "PermanentResidentialCare",
+        "label": "Permanent residential care",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "displayType": "ServiceDate",
+        "id": "PermanentResidentialCareService",
+        "label": "Date",
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Consented",
+          "Considering",
+          "Refused"
+        ],
+        "size": 40,
+        "id": "ResearchConsent",
+        "label": "Research consent",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "displayType": "ServiceDate",
+        "id": "ResearchConsentService",
+        "label": "Date",
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "displayType": "ServiceDate",
+        "id": "MostRecentPeriodicReview",
+        "label": "Most recent Periodic Review",
+        "layout": {
+          "newLine": true,
+          "skip": 1
+        },
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "field": {
+        "medicalGroupListType": "PATIENT_WATCH_CARE_MODEL",
+        "size": 100,
+        "id": "CareModel",
+        "label": "Care model",
+        "type": "MedicalGroupList"
+      }
+    },
+    {
+      "field": {
+        "medicalGroupListType": "PATIENT_WATCH_CARE_TEAM",
+        "size": 20,
+        "id": "CareTeam",
+        "label": "Care team",
+        "type": "MedicalGroupList"
+      }
+    },
+    {
+      "field": {
+        "id": "TelecareGuide",
+        "label": "Tele-Care Guide",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "Coach",
+        "label": "Health Coach",
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "CallsAllowed",
+        "label": "Calls allowed",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "NextCall",
+        "label": "Next call",
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "displayType": "ServiceDate",
+            "id": "Service",
+            "label": "ProblemDate",
+            "type": "ServiceRecordReference"
+          },
+          {
+            "precisionDay": true,
+            "id": "MostRecentIssue",
+            "label": "Most recent issue",
+            "type": "DateTime"
+          },
+          {
+            "size": 100,
+            "id": "Problem",
+            "label": "Problem",
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "Text"
+          },
+          {
+            "options": [
+              "High",
+              "Medium",
+              "Low"
+            ],
+            "size": 20,
+            "id": "Priority",
+            "label": "Priority",
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "Selection"
+          },
+          {
+            "precision": 5,
+            "scale": 0,
+            "id": "OpenActions",
+            "label": "Open actions",
+            "type": "Number"
+          },
+          {
+            "precision": 5,
+            "scale": 0,
+            "id": "PriorityActions",
+            "label": "Priority actions",
+            "type": "Number"
+          },
+          {
+            "precisionDay": true,
+            "id": "NextFutureAction",
+            "label": "Next future action",
+            "state": {
+              "editState": "Hidden",
+              "viewStateHidden": true
+            },
+            "type": "DateTime"
+          }
+        ],
+        "rowSelectionInViewMode": true,
+        "id": "Problems",
+        "label": "Open problems",
+        "layout": {
+          "fillHeight": true,
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "sortable": true,
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "displayType": "ServiceDate",
+            "id": "Service",
+            "label": "Date/time",
+            "type": "ServiceRecordReference"
+          },
+          {
+            "size": 6,
+            "id": "Status",
+            "label": "Status",
+            "type": "Text"
+          },
+          {
+            "id": "TelecareGuide",
+            "label": "Tele-Care Guide",
+            "type": "Member"
+          },
+          {
+            "options": [
+              "Answered by respondent",
+              "Call received",
+              "No answer",
+              "Respondent not available",
+              "Message left",
+              "Call deferred",
+              "Failed identity check"
+            ],
+            "size": 25,
+            "id": "Outcome",
+            "label": "Outcome",
+            "layout": {
+              "newLine": true
+            },
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "Selection"
+          },
+          {
+            "options": [
+              "Patient",
+              "Caregiver"
+            ],
+            "size": 10,
+            "id": "Respondent",
+            "label": "Respondent",
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "Selection"
+          },
+          {
+            "precision": 5,
+            "scale": 0,
+            "id": "OpenIssues",
+            "label": "Open issues",
+            "type": "Number"
+          },
+          {
+            "precision": 5,
+            "scale": 0,
+            "id": "TotalIssues",
+            "label": "Total issues",
+            "type": "Number"
+          },
+          {
+            "options": [
+              "STAT",
+              "ASAP",
+              "Urgent",
+              "Routine"
+            ],
+            "size": 8,
+            "id": "HighestPriority",
+            "label": "Highest priority",
+            "type": "Selection"
+          }
+        ],
+        "rowSelectionInViewMode": true,
+        "id": "Questionnaires",
+        "label": "Questionnaires",
+        "layout": {
+          "fillHeight": true,
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "sortable": true,
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Summary.PatientWatch.WebUI",
+  "layoutColumns": 2
+}

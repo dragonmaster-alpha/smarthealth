@@ -1,0 +1,2767 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Operation date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "minimum": 1,
+              "precision": 1,
+              "scale": 0,
+              "id": "First.OperationNumber",
+              "label": "Operation number",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "options": [
+                    "Consultant in charge",
+                    "Primary operator",
+                    "First assistant",
+                    "Anaesthetist"
+                  ],
+                  "size": 30,
+                  "id": "Role",
+                  "label": "Role",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Consultant",
+                    "Provisional fellow",
+                    "Registrar",
+                    "ITP 1-4",
+                    "RMO/SRMO",
+                    "Unaccredited trainee"
+                  ],
+                  "size": 30,
+                  "id": "Level",
+                  "label": "Level",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                }
+              ],
+              "layoutRows": 5,
+              "id": "First.MedicalStaff",
+              "label": "Medical staff",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Patient.ASAScore",
+              "id": "First.ASAScore",
+              "label": "ASA score",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "First.Weight",
+              "label": "Weight",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "First.Height",
+              "label": "Height",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "calculation": {
+                "paramFieldIDs": [
+                  "First.Height",
+                  "First.Weight"
+                ],
+                "type": "BMI"
+              },
+              "id": "First.BMI",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Preoperative",
+                "On induction",
+                "Intra-operative",
+                "Post-operative - within 6 hours",
+                "Post-operative - after 6 hours",
+                "Nil given"
+              ],
+              "size": 40,
+              "id": "First.VTEProphylaxis",
+              "label": "VTE prophylaxis",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "First.OperatingTime",
+              "label": "Operating time",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "min"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 0,
+              "id": "First.EstimatedBloodLoss",
+              "label": "Estimated blood loss",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL"
+            }
+          }
+        ],
+        "id": "First",
+        "layoutShow": true,
+        "title": ""
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "displayType": "ServiceDate",
+                  "id": "Complication",
+                  "label": "Diagnosis date",
+                  "type": "ServiceRecordReference"
+                },
+                {
+                  "precision": 5,
+                  "scale": 0,
+                  "id": "Days",
+                  "label": "Days post operation",
+                  "type": "Number"
+                },
+                {
+                  "size": 20,
+                  "id": "Severity",
+                  "label": "Severity",
+                  "type": "Text"
+                },
+                {
+                  "size": 30,
+                  "id": "Type",
+                  "label": "Type",
+                  "type": "Text"
+                }
+              ],
+              "id": "Complications.Complications",
+              "label": "Complications",
+              "layout": {
+                "labelPosition": "Omit",
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Complications",
+        "layoutShow": true,
+        "title": "Complications"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Curative",
+                "Palliative"
+              ],
+              "size": 20,
+              "id": "Surgery.Intent",
+              "label": "Intent of surgery",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Primary Surgery",
+                "Primary surgery after radiotherapy",
+                "Primary surgery after chemotherapy",
+                "Primary surgery after chemoradiotherapy",
+                "Primary surgery after hormonal medication",
+                "Interval surgery",
+                "Second look",
+                "Secondary surgery for recurrence"
+              ],
+              "size": 50,
+              "id": "Surgery.TypeOfSurgery",
+              "label": "Type of surgery",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Benign tumour",
+                "Borderline cancer",
+                "Complication",
+                "Fertility",
+                "Malignant cancer",
+                "Pre-invasive tumour",
+                "Risk reduction"
+              ],
+              "size": 20,
+              "id": "Surgery.Reason",
+              "label": "Reason for surgery",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "BRCA1",
+                "BRCA2",
+                "Lynch Syndrome"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Risk reduction"
+                      ],
+                      "fieldID": "Surgery.Reason"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Surgery.Risk",
+              "label": "Risk",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Laparoscopic Hassan",
+                "Laparoscopic Veress",
+                "Laparoscopic direct",
+                "Laparotomy midline",
+                "Laparotomy transverse",
+                "Robotic"
+              ],
+              "size": 30,
+              "id": "Surgery.Approach",
+              "label": "Approach",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Surgery",
+        "layoutShow": true,
+        "title": "Surgery"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "SurgicalDetails.TotalAbdominalHysterectomy",
+              "label": "Total abdominal hysterectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.TotalLaparoscopicHysterectomy",
+              "label": "Total laparoscopic hysterectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.RadicalHysterectomy",
+              "label": "Radical hysterectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.VaginalHysterectomy",
+              "label": "Vaginal hysterectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.SubtotalHysterectomy",
+              "label": "Subtotal hysterectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.SalpingoOophorectomy",
+              "label": "Salpingo-oophorectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.SalpingoOophorectomyLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Salpingectomy",
+              "label": "Salpingectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.SalpingectomyLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.OvarianCystectomy",
+              "label": "Ovarian cystectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.OvarianCystectomyLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.OvarianBiopsy",
+              "label": "Ovarian biopsy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.OvarianBiopsyDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Oophoropexy",
+              "label": "Oophoropexy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.OophoropexyLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.InfracolicOmentectomy",
+              "label": "Infracolic omentectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.TotalOmentectomy",
+              "label": "Total omentectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Laparotomy",
+              "label": "Laparotomy and division of peritoneal adhesions",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "\u003e120",
+                "45-120",
+                "\u003c45"
+              ],
+              "size": 10,
+              "id": "SurgicalDetails.LaparotomyDuration",
+              "label": "Duration",
+              "type": "Selection",
+              "units": "min"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.LaparoscopicAdhesiolysis",
+              "label": "Laparoscopic adhesiolysis",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "\u003e45",
+                "\u003c45"
+              ],
+              "size": 10,
+              "id": "SurgicalDetails.LaparoscopicAdhesiolysisDuration",
+              "label": "Duration",
+              "type": "Selection",
+              "units": "min"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.AnteriorBowelResection",
+              "label": "Anterior bowel resection",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "High - \u003e11cm from anal verge and distal margin of resection",
+                "Low - 7-11cm from anal verge and distal margin of resection",
+                "Ultra Low - \u003c7cm between anal verge and distal margin of resection"
+              ],
+              "size": 70,
+              "id": "SurgicalDetails.AnteriorBowelResectionLocation",
+              "label": "Location",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.SmallBowelResection",
+              "label": "Small bowel resection",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.SegmentalColectomy",
+              "label": "Segmental colectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.SegmentalColectomyLocation",
+              "label": "Location",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Ileocaecectomy",
+              "label": "Ileocaecectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.RightHemicolectomy",
+              "label": "Right hemicolectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ExtendedRightHemicolectomy",
+              "label": "Extended right hemicolectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.TransverseColectomy",
+              "label": "Transverse colectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.LeftHemicolectomy",
+              "label": "Left hemicolectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Sigmoidectomy",
+              "label": "Sigmoidectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.SubtotalColectomy",
+              "label": "Subtotal colectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.TotalColectomy",
+              "label": "Total colectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Appendicectomy",
+              "label": "Appendicectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ColostomyEnd",
+              "label": "Colostomy - end",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ColostomyLoop",
+              "label": "Colostomy - loop",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.IleectomyAndIleostomy",
+              "label": "Ileectomy and ileostomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.IleostomyLoop",
+              "label": "Ileostomy - loop",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.MucousFistula",
+              "label": "Mucous fistula",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.MucousFistulaDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Splenectomy",
+              "label": "Splenectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Gastrectomy",
+              "label": "Gastrectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.GastrectomyDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.DiaphragmStripping",
+              "label": "Diaphragm stripping",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.DiaphragmStrippingLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.DiaphragmResection",
+              "label": "Diaphragm resection (full thickness) and repair",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.DiaphragmResectionDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.LiverResection",
+              "label": "Liver resection",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.LiverResectionDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Cystoscopy",
+              "label": "Cystoscopy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.UretericCatheterisation",
+              "label": "Ureteric catheterisation",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.UretericCatheterisationLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.UretericStent",
+              "label": "Insertion of ureteric stent",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.UretericStentLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Cystoscopy",
+                "Fluoroscopy",
+                "Fluoroscopy (II)"
+              ],
+              "size": 20,
+              "id": "SurgicalDetails.UretericStentGuidance",
+              "label": "Guidance",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.PartialCystectomy",
+              "label": "Partial cystectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.CystotomyBladderTumour",
+              "label": "Cystotomy for excision of bladder tumour",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.UreteroUreterostomy",
+              "label": "Uretero-ureterostomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.IntravesicalUretericReimplantation",
+              "label": "Intravesical ureteric reimplantation",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.IntravesicalUretericReimplantationLaterality",
+              "label": "Laterality",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.BoariFlap",
+              "label": "Boari flap",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.PsoasHitch",
+              "label": "Psoas hitch",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.InsertionOfSuprapubicCatheter",
+              "label": "Insertion of suprapubic catheter",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.VulvalLocalExcision",
+              "label": "Local excision",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.Location",
+              "id": "SurgicalDetails.VulvalLocalExcisionLocation",
+              "label": "Location",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.VulvalWideLocalExcision",
+              "label": "Wide local excision",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.Location",
+              "id": "SurgicalDetails.VulvalWideLocalExcisionLocation",
+              "label": "Location",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.VulvalReconstructionLocal",
+              "label": "Reconstruction of vulva with local flap",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.VulvalReconstructionLocalDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.VulvalReconstructionDistant",
+              "label": "Reconstruction of vulva with distant flap",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.VulvalReconstructionDistantDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.VulvalReconstructionGraft",
+              "label": "Reconstruction of vulva with skin graft",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.VulvalReconstructionGraftDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ExaminationUnderAnaesthesiaForStaging",
+              "label": "Examination under anaesthesia for staging of cervical cancer",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.TrachelectomySimple",
+              "label": "Trachelectomy, simple",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.TrachelectomyRadical",
+              "label": "Trachelectomy, radical",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.CerclageOfCervix",
+              "label": "Cerclage of cervix",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ConeBiopsyColdKnife",
+              "label": "Cone biopsy - cold knife",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.LargeLoopExcision",
+              "label": "Large loop excision of the transformation zone",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.LaserAblationCervix",
+              "label": "Laser ablation cervix",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.EndocervicalCurettage",
+              "label": "Endocervical curettage",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Colposcopy",
+              "label": "Colposcopy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ColposcopyAndBiopsy",
+              "label": "Colposcopy and biopsy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Brachytherapy",
+              "label": "Brachytherapy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.PelvicLymphadenectomy",
+              "label": "Pelvic lymphadenectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.PelvicLymphadenectomyLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.PelvicLymphNodeDebulking",
+              "label": "Pelvic lymph node debulking",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.PelvicLymphNodeDebulkingDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ParaAorticSampling",
+              "label": "Para-aortic lymph node sampling",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.ParaAorticSamplingLocation",
+              "label": "Location",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ParaAorticDebulking",
+              "label": "Para-aortic lymph node debulking",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.ParaAorticDebulkingLocation",
+              "label": "Location",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ParaAorticBlockDissection",
+              "label": "Block dissection of para-aortic lymph nodes",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.ParaAorticBlockDissectionLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ParaAorticExcision",
+              "label": "Excision or biopsy of para-aortic lymph node",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.ParaAorticExcisionLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.InguinofemoralLymphadenectomy",
+              "label": "Inguinofemoral lymphadenectomy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.InguinofemoralLymphadenectomyLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.GroinLymphNodeDebulking",
+              "label": "Groin lymph node debulking",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "SurgicalDetails.GroinLymphNodeDebulkingLocation",
+              "label": "Location",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.SentinelLymphNodeBiopsy",
+              "label": "Sentinel lymph node biopsy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Bodystructure.LateralityKnown",
+              "id": "SurgicalDetails.SentinelLymphNodeBiopsyLaterality",
+              "label": "Laterality",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.ExaminationUnderAnaesthesia",
+              "label": "Examination under anaesthesia",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Hysteroscopy",
+              "label": "Hysteroscopy",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.DilatationAndCurettage",
+              "label": "Dilatation and curettage",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.InsertionofMirenaIUD",
+              "label": "Insertion of Mirena IUD",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.VaginalSurgery",
+              "label": "Vaginal surgery",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "SurgicalDetails.VaginalSurgeryDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.OtherDebulking",
+              "label": "Other debulking",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "SurgicalDetails.OtherDebulkingDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "SurgicalDetails.Other",
+              "label": "Other procedures",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "SurgicalDetails.OtherDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "SurgicalDetails",
+        "layoutShow": true,
+        "title": "Surgical Details"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "PDS",
+                "Loop PDS",
+                "Nylon",
+                "Vicryl",
+                "None"
+              ],
+              "size": 20,
+              "id": "WoundClosure.Sheath",
+              "label": "Sheath",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Vicryl",
+                "Monocryl",
+                "Nylon tension",
+                "None"
+              ],
+              "size": 20,
+              "id": "WoundClosure.FatFascia",
+              "label": "Fat / fascia",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "SC Monocryl",
+                "Staples",
+                "Glue",
+                "None"
+              ],
+              "size": 20,
+              "id": "WoundClosure.Skin",
+              "label": "Skin",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "WoundClosure.Drain",
+              "label": "Drain",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "WoundClosure.Drain",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "WoundClosure.DrainType",
+              "label": "Drain type",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "WoundClosure.Drain",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "WoundClosure.DrainPosition",
+              "label": "Drain position",
+              "layout": {
+                "newLine": true,
+                "skip": 1,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "PRBC",
+                    "FFP",
+                    "Cryoprecipitate",
+                    "Platelets",
+                    "Recombinant Factor VIIa",
+                    "Tranexamic acid"
+                  ],
+                  "size": 25,
+                  "id": "Agent",
+                  "label": "Agent",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precision": 2,
+                  "scale": 0,
+                  "id": "Number",
+                  "label": "Number of units",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Number"
+                }
+              ],
+              "id": "WoundClosure.HaemostaticAgents",
+              "label": "Haemostatic agents given intraoperatively",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "WoundClosure",
+        "layoutShow": true,
+        "title": "Wound Closure"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 5000,
+              "id": "SurgicalNotes.Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "SurgicalNotes",
+        "layoutShow": true,
+        "title": ""
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "valueSetID": "Cancer.GynaecologicalSurgery.Site",
+                  "id": "Site",
+                  "label": "Site",
+                  "type": "ValueSet"
+                },
+                {
+                  "options": [
+                    "Nil",
+                    "Macroscopic \u003c0.5cm",
+                    "0.5-1cm",
+                    "1-2cm",
+                    "2-5cm",
+                    "\u003e5cm or confluent"
+                  ],
+                  "size": 20,
+                  "id": "Size",
+                  "label": "Size",
+                  "type": "Selection"
+                },
+                {
+                  "precision": 1,
+                  "scale": 0,
+                  "id": "NumberOfSites",
+                  "label": "No. sites",
+                  "type": "Number"
+                },
+                {
+                  "options": [
+                    "Sent",
+                    "Not sent"
+                  ],
+                  "size": 8,
+                  "id": "FrozenSection",
+                  "label": "Frozen section",
+                  "type": "Selection"
+                },
+                {
+                  "size": 100,
+                  "id": "Specimen",
+                  "label": "Specimen",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 100,
+                  "id": "Result",
+                  "label": "Result",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 100,
+                  "id": "Comments",
+                  "label": "Comments",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "Findings.Findings",
+              "label": "Findings",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          },
+          {
+            "subheading": "Peritoneal cancer index"
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.LeftUpperPCI",
+              "label": "Left upper",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.EpigastriumPCI",
+              "label": "Epigastrium",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.RightUpperPCI",
+              "label": "Right upper",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.LeftFlankPCI",
+              "label": "Left flank",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.CentralPCI",
+              "label": "Central",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.RightFlankPCI",
+              "label": "Right flank",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.LeftLowerPCI",
+              "label": "Left lower",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.PelvisPCI",
+              "label": "Pelvis",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.RightLowerPCI",
+              "label": "Right lower",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.UpperJejunumPCI",
+              "label": "Upper jejunum",
+              "layout": {
+                "newLine": true,
+                "skip": 1
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.LowerJejunumPCI",
+              "label": "Lower jejunum",
+              "layout": {
+                "newLine": true,
+                "skip": 1
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.UpperIleumPCI",
+              "label": "Upper ileum",
+              "layout": {
+                "newLine": true,
+                "skip": 1
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.PeritonealCancerIndex",
+              "id": "Findings.LowerIleumPCI",
+              "label": "Lower ileum",
+              "layout": {
+                "newLine": true,
+                "skip": 1
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "id": "Findings.PeritonealCancerIndex",
+              "label": "Peritoneal cancer index",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Findings.Comments",
+              "label": "Comments",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Findings",
+        "layoutShow": true,
+        "title": "Findings"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "valueSetID": "Cancer.GynaecologicalSurgery.Site",
+                  "id": "Site",
+                  "label": "Site",
+                  "type": "ValueSet"
+                },
+                {
+                  "options": [
+                    "Nil",
+                    "Macroscopic \u003c0.5cm",
+                    "0.5-1cm",
+                    "1-2cm",
+                    "2-5cm",
+                    "\u003e5cm or confluent"
+                  ],
+                  "size": 20,
+                  "id": "Size",
+                  "label": "Size",
+                  "type": "Selection"
+                },
+                {
+                  "precision": 1,
+                  "scale": 0,
+                  "id": "NumberOfSites",
+                  "label": "No. sites",
+                  "type": "Number"
+                }
+              ],
+              "id": "ResidualDisease.ResidualDisease",
+              "label": "Residual disease",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 3
+              },
+              "sortable": true,
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ResidualDisease",
+        "layoutShow": true,
+        "title": "Residual Disease"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Yes - 0cm",
+                "Yes 0-0.5cm",
+                "Yes - 0.5-1cm",
+                "No"
+              ],
+              "size": 15,
+              "id": "Debulking.OptimallyDebulked",
+              "label": "Optimally debulked",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 1,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "No"
+                      ],
+                      "fieldID": "Debulking.OptimallyDebulked"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Debulking.SizeOfLargestDeposit",
+              "label": "Size of largest deposit",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "No"
+                      ],
+                      "fieldID": "Debulking.OptimallyDebulked"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Debulking.DistributionOfResidualDisease",
+              "label": "Distribution of residual disease",
+              "layout": {
+                "newLine": true,
+                "skip": 1,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Debulking.Comments",
+              "label": "Comments",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Debulking",
+        "layoutShow": true,
+        "title": "Debulking"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Yes",
+                "No",
+                "Commenced but removed from ERP"
+              ],
+              "size": 40,
+              "id": "PostOpInstructions.EnhancedRecoveryProtocol",
+              "label": "Enhanced recovery protocol",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Commenced but removed from ERP"
+                      ],
+                      "fieldID": "PostOpInstructions.EnhancedRecoveryProtocol"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostOpInstructions.ERPReason",
+              "label": "Reason",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Nil by mouth",
+                "Ice to suck",
+                "Clear fluids",
+                "Free fluids",
+                "Light diet",
+                "Soft diet",
+                "Full diet"
+              ],
+              "size": 20,
+              "id": "PostOpInstructions.Diet",
+              "label": "Diet",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "PostOpInstructions.DietDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "PostOpInstructions.NasogastricTube",
+              "label": "Nasogastric tube in place",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "PostOpInstructions.NasogastricTube",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostOpInstructions.NasogastricTubeDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Clamped",
+                "Free drainage",
+                "Suction",
+                "No drain"
+              ],
+              "size": 20,
+              "id": "PostOpInstructions.Drain",
+              "label": "Drain",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "PostOpInstructions.IVAntibioticsToContinue",
+              "label": "IV antibiotics to continue",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "PostOpInstructions.IVAntibioticsToContinue",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostOpInstructions.IVAntibioticsToContinueDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "None",
+                "Standard dose",
+                "High dose"
+              ],
+              "size": 20,
+              "id": "PostOpInstructions.ExtendedVTEProphylaxis",
+              "label": "Extended VTE prophylaxis",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "PostOpInstructions.Anticoagulation",
+              "label": "Anticoagulation",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "PostOpInstructions.Anticoagulation",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostOpInstructions.AnticoagulationType",
+              "label": "Type",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "PostOpInstructions.Anticoagulation",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "PostOpInstructions.AnticoagulationTimingOfFirstDose",
+              "label": "Timing of first dose",
+              "layout": {
+                "skip": 1,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "PostOpInstructions.PneumaticCalfCompressors",
+              "label": "Pneumatic calf compressors",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "PostOpInstructions.TedStockings",
+              "label": "Ted stockings",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "PostOpInstructions.FollowUp",
+              "label": "Follow up",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "PostOpInstructions",
+        "layoutShow": true,
+        "title": "Post-operative Instructions"
+      }
+    }
+  ],
+  "id": "Cancer.Gynaecological.Surgery",
+  "layoutColumns": 3
+}

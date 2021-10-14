@@ -1,0 +1,90 @@
+{
+  "coded": true,
+  "codeLength": 9,
+  "extensible": true,
+  "length": 25,
+  "uri": "http://snomed.info/sct",
+  "values": [
+    {
+      "code": "54471007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Buccal"
+    },
+    {
+      "code": "404820008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Epidural"
+    },
+    {
+      "code": "418743005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Fistula"
+    },
+    {
+      "code": "58100008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Intra-arterial"
+    },
+    {
+      "code": "372464004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Intradermal"
+    },
+    {
+      "code": "78421000",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Intramuscular"
+    },
+    {
+      "code": "47625008",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Intravenous"
+    },
+    {
+      "code": "46713006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Nasal"
+    },
+    {
+      "code": "54485002",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Ophthalmic"
+    },
+    {
+      "code": "26643006",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Oral"
+    },
+    {
+      "code": "10547007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Otic"
+    },
+    {
+      "code": "37161004",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Rectal"
+    },
+    {
+      "code": "34206005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Subcutaneous"
+    },
+    {
+      "code": "37839007",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Sublingual"
+    },
+    {
+      "code": "6064005",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Topical"
+    },
+    {
+      "code": "16857009",
+      "codeSet": "http://snomed.info/sct",
+      "value": "Vaginal"
+    }
+  ],
+  "valueSetID": "Medication.RouteOfAdministration"
+}

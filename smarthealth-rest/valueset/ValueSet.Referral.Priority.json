@@ -1,0 +1,25 @@
+{
+  "coded": true,
+  "codeLength": 1,
+  "extensible": false,
+  "length": 7,
+  "uri": "HL70280",
+  "values": [
+    {
+      "code": "S",
+      "codeSet": "HL70280",
+      "value": "Stat"
+    },
+    {
+      "code": "A",
+      "codeSet": "HL70280",
+      "value": "ASAP"
+    },
+    {
+      "code": "R",
+      "codeSet": "HL70280",
+      "value": "Routine"
+    }
+  ],
+  "valueSetID": "Referral.Priority"
+}

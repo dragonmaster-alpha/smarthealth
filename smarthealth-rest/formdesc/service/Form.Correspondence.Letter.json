@@ -1,0 +1,690 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "From",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "id": "Program",
+        "label": "Program",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "programFixed",
+        "label": "Program fixed",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "options": [
+              "CC",
+              "To"
+            ],
+            "size": 3,
+            "id": "Type",
+            "label": "Type",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Selection"
+          },
+          {
+            "id": "Recipient",
+            "label": "Recipient",
+            "state": {
+              "editState": "Mandatory"
+            },
+            "type": "MemberOrMedicalGroup"
+          },
+          {
+            "size": 20,
+            "id": "deliveryMethod",
+            "label": "Method",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Text"
+          },
+          {
+            "name": "ObjectSelection - CommunicationStatus",
+            "id": "Status",
+            "label": "Receipt status",
+            "state": {
+              "editState": "ReadOnly"
+            },
+            "type": "Unsupported"
+          }
+        ],
+        "id": "Recipients",
+        "label": "Recipients",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Dear {to.title} {to.familyName}",
+          "Dear Sir/Madam",
+          "To whom it may concern"
+        ],
+        "size": 32,
+        "id": "Salutation",
+        "label": "Salutation",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "OpeningText",
+        "label": "Opening text",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Report",
+        "label": "Report",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 1000,
+        "id": "ClosingText",
+        "label": "Closing text",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "Attachment",
+        "label": "Attachment",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "ServiceRecordReference"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Include.ToAddress",
+              "label": "To address",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Include.CCRecipients",
+              "label": "CC recipients",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Include.GP",
+              "label": "GP",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Include.CurrentConditions",
+              "label": "Current conditions",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Include.CurrentMedications",
+              "label": "Current medications",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Include.ClinicalMeasures",
+              "label": "Most recent clinical measures",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Include.LungFunction",
+              "label": "Most recent lung function",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Include.CancerMDTReview",
+              "label": "MDT Review summary",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Include.CysticFibrosisMDTReview",
+              "label": "MDT Review clinicians",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Include",
+        "layoutShow": true,
+        "title": "Include"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Renal Disease"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.RenalSummary",
+              "label": "Renal summary",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Renal Disease"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.PeritonealDialysisSummary",
+              "label": "Peritoneal dialysis summary",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Renal Disease"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.HaemodialysisSummary",
+              "label": "Haemodialysis summary",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Renal Disease"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.RenalTransplantSummary",
+              "label": "Renal transplant summary",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Immunology \u0026 ID"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.HIVSummary",
+              "label": "HIV summary",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Immunology \u0026 ID"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.HepatitisSummary",
+              "label": "Hepatitis summary",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Immunology \u0026 ID"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.PEPSummary",
+              "label": "PEP summary",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Immunology \u0026 ID"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.InfectiousDiseasesSummary",
+              "label": "Infectious diseases summary",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Immunology \u0026 ID"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.ImmunologyASummary",
+              "label": "Immunology A summary",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Cystic Fibrosis"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.CysticFibrosisSummary",
+              "label": "Cystic Fibrosis summary",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Patient Watch"
+                      ],
+                      "fieldID": "Program"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Summaries.PatientWatchSummary",
+              "label": "Patient Watch summary",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Summaries",
+        "layoutShow": true,
+        "title": "Summaries"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "description": "Title of this PDF for use in messages, alerts, etc.",
+        "id": "PDFTitle",
+        "label": "PDF title",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "DocumentDesc",
+        "id": "PDF",
+        "label": "PDF",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "TemplateName",
+        "label": "Template name",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "TemplateID",
+        "label": "Template ID",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Correspondence.Letter",
+  "layoutColumns": 3
+}

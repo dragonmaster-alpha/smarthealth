@@ -1,0 +1,1001 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "TransplantDate",
+        "label": "Transplant date",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 0,
+        "id": "DaysSinceTransplant",
+        "label": "Days since transplant",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute Rejection",
+          "Cancer",
+          "Death",
+          "Graft failure",
+          "Parenthood",
+          "Return to dialysis",
+          "Withdrawal"
+        ],
+        "size": 20,
+        "id": "Event",
+        "label": "Event",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Clinical suspicion",
+                "Delayed graft function",
+                "Not performed",
+                "Protocol"
+              ],
+              "size": 30,
+              "id": "AcuteRejection.BiopsyPerformed",
+              "label": "Biopsy",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Definite",
+                "Possible",
+                "Probable"
+              ],
+              "size": 30,
+              "id": "AcuteRejection.RejectionConsidered",
+              "label": "Rejection considered",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Intravenous immumoglobulin",
+                "Introduction or increased dose of Cyclosporin A",
+                "Introduction or increased dose of Mycophenolate Mofetil",
+                "Introduction or increased dose of Sirolinus",
+                "Introduction or increased dose of Tacrolimus",
+                "Introduction or increased dose of steroids",
+                "Introduction or increased dose of steroids and Polyclonal/Monoclonal therapy",
+                "Plasmapheresis"
+              ],
+              "size": 80,
+              "id": "AcuteRejection.PrimaryTreatment",
+              "label": "Primary treatment",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Inadequate control of rejection with failure of graft within one month",
+                "Resolution of rejection but with no improvement of graft function with serum creatinine greater than 250 umol/L",
+                "Resolution of rejection but with no improvement of graft function with serum creatinine less than 250 umol/L",
+                "Resolution of rejection with improvement of graft function but not to pre-rejection levels",
+                "Resolution of rejection with return of graft function to pre-rejection levels or better"
+              ],
+              "size": 120,
+              "id": "AcuteRejection.ResponseToTreatment",
+              "label": "Response to treatment",
+              "layout": {
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "AcuteRejection.AcuteRejectionComments",
+              "label": "Comments",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "AcuteRejection",
+        "layoutShow": true,
+        "title": "Acute Rejection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Mild",
+                "Moderate",
+                "Severe"
+              ],
+              "size": 8,
+              "id": "TypeOfRejection.Cellular",
+              "label": "Cellular",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Mild",
+                "Moderate",
+                "Severe"
+              ],
+              "size": 8,
+              "id": "TypeOfRejection.Glomerular",
+              "label": "Glomerular",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Mild",
+                "Moderate",
+                "Severe"
+              ],
+              "size": 8,
+              "id": "TypeOfRejection.Vascular",
+              "label": "Vascular",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "TypeOfRejection.Humoral",
+              "label": "Humoral",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "TypeOfRejection",
+        "layoutShow": true,
+        "title": "Type of rejection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 3,
+              "precision": 1,
+              "scale": 0,
+              "id": "AcuteBanffIndices.g",
+              "label": "g",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3,
+              "precision": 1,
+              "scale": 0,
+              "id": "AcuteBanffIndices.i",
+              "label": "i",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3,
+              "precision": 1,
+              "scale": 0,
+              "id": "AcuteBanffIndices.t",
+              "label": "t",
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3,
+              "precision": 1,
+              "scale": 0,
+              "id": "AcuteBanffIndices.v",
+              "label": "v",
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "AcuteBanffIndices",
+        "layoutShow": true,
+        "title": "Acute Banff Indices"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Parenthood.EstimatedDateOfConception",
+              "label": "Estimated date of conception",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Parenthood.DateOfOutcome",
+              "label": "Date of outcome",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Live delivery",
+                "Spontaneous abortion \u003c20 weeks",
+                "Stillbirth \u003e20 weeks",
+                "Surgical termination"
+              ],
+              "size": 30,
+              "id": "Parenthood.PregnancyOutcome",
+              "label": "Pregnancy outcome",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Parenthood.GestationalDiabetes",
+              "label": "Gestational diabetes",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Parenthood.Preeclampsia",
+              "label": "Pre-eclampsia",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Abnormal",
+                "Normal foetal morphology"
+              ],
+              "size": 25,
+              "id": "Parenthood.FoetalOutcome",
+              "label": "Foetal outcome",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 250,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Abnormal"
+                      ],
+                      "fieldID": "Parenthood.FoetalOutcome"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Parenthood.FoetalOutcomeAbnormalDeails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "No",
+                "Yes"
+              ],
+              "size": 20,
+              "id": "Parenthood.NeonatalSurvival28Days",
+              "label": "Neonatal survival \u003e28 days",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 0,
+              "id": "Parenthood.BirthWeight",
+              "label": "Birth weight",
+              "type": "Number",
+              "units": "gm"
+            }
+          }
+        ],
+        "id": "Parenthood",
+        "layoutShow": true,
+        "title": "Parenthood"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "maximum": 1,
+              "precision": 3,
+              "scale": 2,
+              "id": "GraftOutcome.CreatininePriorToConception",
+              "label": "Creatinine prior to conception",
+              "type": "Number",
+              "units": "mmol/L"
+            }
+          },
+          {
+            "field": {
+              "maximum": 1,
+              "precision": 3,
+              "scale": 2,
+              "id": "GraftOutcome.Creatinine3MonthsPostDelivery",
+              "label": "Creatinine 3 months post-delivery",
+              "type": "Number",
+              "units": "mmol/L"
+            }
+          }
+        ],
+        "id": "GraftOutcome",
+        "layoutShow": true,
+        "title": "Graft outcome"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Adenocarcinoma",
+                "Hodgkin’s Disease",
+                "Kaposi sarcoma",
+                "Leukaemia",
+                "Lymphoma (non Hodgkins)",
+                "Lymphoproliferative disease",
+                "Melanoma",
+                "Microglioma of brain",
+                "Multiple myeloma",
+                "Squamous cell carcinoma",
+                "Transition cell CA"
+              ],
+              "size": 30,
+              "id": "Cancer.Type",
+              "label": "Type",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Leukaemia"
+                      ],
+                      "fieldID": "Cancer.Type"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Cancer.LeukaemiaDetails",
+              "label": "Type",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "CIN I (Cervical)",
+                "CIN II (Cervical)",
+                "CIN III (Cervical, equivalent to SCC in situ)",
+                "Distant metastases",
+                "In situ",
+                "Invasive",
+                "Invasive (Cervical)",
+                "Micro-invasive (Cervical)",
+                "Regional lymph nodes"
+              ],
+              "size": 45,
+              "id": "Cancer.HistologicalStaging",
+              "label": "Histological Staging",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Chemotherapy",
+                "Immune stimulant",
+                "Local excision",
+                "None",
+                "Radiotherapy",
+                "Reduction of I/S drugs",
+                "Wide excision and graft",
+                "Wide excision and node dissection"
+              ],
+              "size": 35,
+              "id": "Cancer.TypeOfTreatment",
+              "label": "Type of Treatment",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Cancer",
+        "layoutShow": true,
+        "title": "Cancer"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Acute rejection at any time",
+                "Chronic allograft nephropathy (slow progressive loss of renal function - not due to recurrent original disease or acute rejection)",
+                "Cortical necrosis post transplant (not due to rejection)",
+                "Embolus – cholesterol",
+                "Embolus – thrombo",
+                "Focal sclerosing GN (including hyalinosis)",
+                "Goodpasture’s Syndrome",
+                "Haemolytic uraemic syndrome",
+                "Hyperacute rejection (within 48 hours of transplantation)",
+                "Intra and extra capillary GN with extensive crescents (clinically rapidly progressive)",
+                "Membranous GN",
+                "Mesangial proliferative GN (IgA positive)",
+                "Mesangiocapillary GN with intramembranous deposits (dense deposit disease)",
+                "Mesangiocapillary GN with subendothelial deposits",
+                "Non-viable kidney (due to pre-transplant cortical necrosis)",
+                "Renal artery stenosis",
+                "Renal artery thrombosis",
+                "Renal vein thrombosis",
+                "Renal vessel haemorrhage (primary)",
+                "Renal vessel haemorrhage (secondary)",
+                "Ureteric and bladder problems"
+              ],
+              "size": 130,
+              "id": "GraftFailure.GraftFailure",
+              "label": "Cause",
+              "layout": {
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "GraftFailure",
+        "layoutShow": true,
+        "title": "Graft failure"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Accidental death",
+                "Cardiac",
+                "Infection",
+                "Other Disease",
+                "Suicide",
+                "Vascular"
+              ],
+              "size": 18,
+              "id": "Death.CauseOfDeath",
+              "label": "Cause of death",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Death",
+        "layoutShow": true,
+        "title": "Death"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Cardiac arrest – cause uncertain",
+                "Haemorrhagic pericarditis",
+                "Hyperkalaemia",
+                "Hypertensive cardiac failure",
+                "Myocardial ischaemia (presumed)",
+                "Myocardial ischaemia and infarction",
+                "Pulmonary oedema"
+              ],
+              "size": 35,
+              "id": "Cardiac.CardiacCauseOfDeath",
+              "label": "Cardiac cause of death",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Cardiac",
+        "layoutShow": true,
+        "title": "Cardiac"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Aortic aneurysm – rupture",
+                "Bowel infarction",
+                "Cerebrovascular accident",
+                "Gastrointestinal haemorrhage",
+                "Haemorrhage from dialysis access site",
+                "Haemorrhage from transplant artery",
+                "Pulmonary embolus"
+              ],
+              "size": 40,
+              "id": "Vascular.VascularCauseofDeath",
+              "label": "Vascular cause of death",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Vascular",
+        "layoutShow": true,
+        "title": "Vascular"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "CNS",
+                "Liver (including viral hepatitis)",
+                "Lung",
+                "Peritoneum",
+                "Septicaemia",
+                "Shunt",
+                "Urinary tract",
+                "Wound"
+              ],
+              "size": 35,
+              "id": "Infection.Site",
+              "label": "Site",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Bacterial",
+                "Fungal",
+                "Protozoan",
+                "Viral"
+              ],
+              "size": 10,
+              "id": "Infection.Organism",
+              "label": "Organism",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Infection",
+        "layoutShow": true,
+        "title": "Infection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 500,
+              "id": "AccidentalDeath.AccidentalDeathDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "AccidentalDeath",
+        "layoutShow": true,
+        "title": "Accidental death"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Bone marrow depression",
+                "Cachexia",
+                "Chronic respiratory failure",
+                "Dialysis dementia (aluminium)",
+                "Hepatic failure",
+                "Immunodeficiency due to viral infection",
+                "Malignant disease",
+                "Pancreatitis",
+                "Perforation of abdominal viscus (peptic ulcer, diverticulum, appendix)",
+                "Sclerosing peritonitis",
+                "Uraemia caused by graft failure"
+              ],
+              "size": 75,
+              "id": "OtherDisease.Disease",
+              "label": "Disease",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 250,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Immunodeficiency due to viral infection"
+                      ],
+                      "fieldID": "OtherDisease.Disease"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "OtherDisease.SpecifyOrganism",
+              "label": "Organism",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "OtherDisease",
+        "layoutShow": true,
+        "title": "Other Disease"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Withdrawal for cardiovascular comorbid conditions",
+                "Withdrawal for cerebrovascular comorbid conditions",
+                "Withdrawal for peripheral vascular comorbid conditions",
+                "Withdrawal for psycho-social reasons",
+                "Withdrawal related to dialysis access difficulties (VF, Tenckhoff, etc.)",
+                "Withdrawal related to malignancy"
+              ],
+              "size": 75,
+              "id": "Withdrawal.Reason",
+              "label": "Reason",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Withdrawal",
+        "layoutShow": true,
+        "title": "Withdrawal"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Permanent",
+                "Temporary"
+              ],
+              "size": 9,
+              "id": "Dialysis.Dialysis",
+              "label": "Dialysis",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "Dialysis",
+        "layoutShow": true,
+        "title": "Dialysis"
+      }
+    }
+  ],
+  "id": "Renal.TransplantChart.Event",
+  "layoutColumns": 3
+}

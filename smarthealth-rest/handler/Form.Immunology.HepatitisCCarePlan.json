@@ -1,0 +1,427 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Updated date",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 5,
+              "scale": 0,
+              "id": "CarePlanDetails.TreatmentPeriod",
+              "label": "Treatment period",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "weeks"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "description": "When the service was created",
+              "id": "CarePlanDetails.Commenced",
+              "label": "Commenced",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "CarePlanDetails.Description",
+              "label": "Description",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "CarePlanDetails",
+        "layoutShow": true,
+        "title": "Care plan details"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Dietitian",
+                    "Drug and alcohol counselling",
+                    "H2M",
+                    "Palliative care",
+                    "Social worker"
+                  ],
+                  "size": 28,
+                  "id": "ReferredTo",
+                  "label": "Referred to",
+                  "sortable": true,
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "ReferralDate",
+                  "label": "Referral date",
+                  "sortable": true,
+                  "type": "DateTime"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "id": "ReferralsSection.Referrals",
+              "label": "Referrals",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "GP",
+                "Interstate",
+                "Outpatient Immunology and ID",
+                "Overseas",
+                "Sexual health clinic"
+              ],
+              "size": 30,
+              "id": "ReferralsSection.OngoingCare",
+              "label": "Ongoing care",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "ReferralsSection",
+        "layoutShow": true,
+        "title": "Referrals"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Alpha interferon",
+                    "Consensus interferon",
+                    "Peginterferon",
+                    "Ribavirin",
+                    "Telaprevir"
+                  ],
+                  "size": 20,
+                  "id": "Medication",
+                  "label": "Medication",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Ceased",
+                    "Changed",
+                    "Prescribed",
+                    "Unchanged"
+                  ],
+                  "size": 10,
+                  "id": "ChangeType",
+                  "label": "Change type",
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Adverse reaction",
+                    "Ineffective",
+                    "No longer required",
+                    "Non-compliance",
+                    "Side effects"
+                  ],
+                  "size": 25,
+                  "id": "ChangeReason",
+                  "label": "Change reason",
+                  "type": "Selection"
+                },
+                {
+                  "size": 100,
+                  "id": "Strength",
+                  "label": "Strength",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Hidden",
+                    "viewStateHidden": true
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 25,
+                  "id": "Dose",
+                  "label": "Dose",
+                  "type": "Text"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "12 hourly",
+                    "2 hourly",
+                    "3 times a day",
+                    "3 times a week",
+                    "4 hourly",
+                    "4 times a day",
+                    "6 hourly",
+                    "8 hourly",
+                    "Alternate days",
+                    "As needed",
+                    "Before bed",
+                    "Daily",
+                    "Every 3 weeks",
+                    "Fortnightly",
+                    "In the evening",
+                    "In the morning",
+                    "Midday",
+                    "Monthly",
+                    "Twice a day",
+                    "Twice weekly",
+                    "Weekly"
+                  ],
+                  "size": 25,
+                  "id": "Frequency",
+                  "label": "Frequency",
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "Treatment.Treatment",
+              "label": "Treatment",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Treatment",
+        "layoutShow": true,
+        "title": "Treatment"
+      }
+    }
+  ],
+  "id": "Immunology.HepatitisCCarePlan.WebUI",
+  "layoutColumns": 3
+}

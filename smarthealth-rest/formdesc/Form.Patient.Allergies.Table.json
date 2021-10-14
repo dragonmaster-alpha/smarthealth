@@ -1,0 +1,78 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "columns": [
+          {
+            "valueSetID": "Patient.Allergy",
+            "id": "name",
+            "label": "Allergy",
+            "type": "ValueSet"
+          },
+          {
+            "size": 250,
+            "id": "details",
+            "label": "Details",
+            "layout": {
+              "labelPosition": "BeforeTop",
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          },
+          {
+            "precisionDay": true,
+            "id": "date",
+            "label": "Date",
+            "type": "DateTime"
+          }
+        ],
+        "id": "allergies",
+        "label": "Allergies",
+        "layout": {
+          "labelPosition": "Omit"
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "None known",
+          "None supplied",
+          "Not asked"
+        ],
+        "size": 15,
+        "fieldIf": {
+          "elseState": {
+            "clearValue": true,
+            "editState": "Hidden",
+            "viewStateHidden": true
+          },
+          "ifs": [
+            {
+              "condition": {
+                "fieldID": "allergies",
+                "testEmpty": true
+              },
+              "then": {
+                "editState": "Mandatory"
+              }
+            }
+          ]
+        },
+        "id": "allergiesExclusionReason",
+        "label": "Exclusion reason",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    }
+  ],
+  "id": "Patient.Allergies.Table.WebUI",
+  "layoutColumns": 1
+}

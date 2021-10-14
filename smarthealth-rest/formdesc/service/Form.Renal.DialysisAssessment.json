@@ -1,0 +1,330 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "Date",
+        "label": "",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "PreferredArea",
+        "label": "Preferred Area",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "TelephoneConnection",
+        "label": "Telephone Connection",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Space",
+        "label": "Space",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "StorageSpace",
+        "label": "Storage Space",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Light",
+        "label": "Light",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "HandWashingFacilities",
+        "label": "Hand Washing Facilities",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "FloorCoverings",
+        "label": "Floor Coverings:",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Drainage",
+        "label": "Drainage",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "WaterSupply",
+        "label": "Water Supply",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "SampleTaken",
+        "label": "Sample Taken",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 300,
+        "id": "AlterationsRequired",
+        "label": "Alterations Required",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Showering",
+        "label": "Showering",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Cleanliness",
+        "label": "Cleanliness",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "DiversionalActivities",
+        "label": "Diversional Activities",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "id": "Sphygmo",
+        "label": "Sphygmo",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "Scales",
+        "label": "Scales",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "Table",
+        "label": "Table",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "Recliner",
+        "label": "Recliner",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "RubbishBin",
+        "label": "Rubbish Bin",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "IVPoleHook",
+        "label": "IV Pole/Hook",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "MicrowaveHeating",
+        "label": "Microwave/Heating",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "TowelDispenser",
+        "label": "Towel Dispenser",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "id": "Thermometer",
+        "label": "Thermometer",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "Sharps",
+        "label": "Sharps",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "ContaminatedWaste",
+        "label": "Contaminated Waste",
+        "layout": {
+          "span": 2
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "Renal.DialysisAssessment",
+  "layoutColumns": 3
+}

@@ -1,0 +1,1121 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionMinute": true,
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              "size": 1,
+              "id": "GeneralHealth.TannerStage",
+              "label": "Tanner stage",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "GeneralHealth.Scars",
+              "label": "Scars",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "RUQ",
+                "LUQ",
+                "RIF",
+                "LIF",
+                "Central",
+                "Midline",
+                "Transverse",
+                "Oblique"
+              ],
+              "size": 10,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "GeneralHealth.Scars",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "GeneralHealth.ScarsSite",
+              "label": "Site",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "GeneralHealth.LowerHealthyWeight",
+              "label": "Healthy weight",
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "GeneralHealth.UpperHealthyWeight",
+              "label": "",
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "GeneralHealth.GeneralCondition",
+              "label": "General condition",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "GeneralHealth.ActivityNeedForRest",
+              "label": "Activity/need for rest",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "GeneralHealth.Appetite",
+              "label": "Appetite",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "GeneralHealth",
+        "layoutShow": true,
+        "title": "General Health"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "ClinicalMeasures.Weight",
+              "label": "Weight",
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "ClinicalMeasures.Height",
+              "label": "Height",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "calculation": {
+                "paramFieldIDs": [
+                  "ClinicalMeasures.Height",
+                  "ClinicalMeasures.Weight"
+                ],
+                "type": "BMI"
+              },
+              "id": "ClinicalMeasures.BMI",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "minimumLength": 3,
+              "size": 7,
+              "id": "ClinicalMeasures.BloodPressure",
+              "label": "Blood pressure",
+              "type": "Text",
+              "units": "mmHg"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Lying",
+                "Sitting",
+                "Standing"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "ClinicalMeasures.BloodPressure",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "ClinicalMeasures.BPPosture",
+              "label": "BP posture",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "ClinicalMeasures.SpecificO2Saturation",
+              "label": "Specific oxygen saturation",
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "minimum": 1,
+              "precision": 3,
+              "scale": 1,
+              "id": "ClinicalMeasures.Temperature",
+              "label": "Temperature",
+              "type": "Number",
+              "units": "degrees"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "ClinicalMeasures.PulseRate",
+              "label": "Pulse rate",
+              "type": "Number",
+              "units": "bpm"
+            }
+          }
+        ],
+        "id": "ClinicalMeasures",
+        "layoutShow": true,
+        "title": "Clinical Measures"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionDay": true,
+                  "precisionMonth": true,
+                  "precisionYear": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "valueSetID": "Cysticfibrosis.Organism",
+                  "id": "Organism",
+                  "label": "Organism",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "options": [
+                    "New",
+                    "Intermittent",
+                    "Chronic"
+                  ],
+                  "size": 15,
+                  "id": "InfectionStatus",
+                  "label": "Infection status",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "Notes",
+                  "label": "Notes",
+                  "type": "Text"
+                }
+              ],
+              "id": "Infections.CurrentAirwayOrganisms",
+              "label": "Current airway organisms",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "4A",
+                "5",
+                "6"
+              ],
+              "size": 5,
+              "id": "Infections.InfectionCategory",
+              "label": "Infection category",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Infections.PseudomonasEradication",
+              "label": "Pseudomonas eradication",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Infections",
+        "layoutShow": true,
+        "title": "Infections"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Normal",
+                "Hyperinflated",
+                "Harrison\u0027s sulci",
+                "Pectus excavatum"
+              ],
+              "size": 25,
+              "id": "Chest.Shape",
+              "label": "Shape",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Chest.Microport",
+              "label": "Microport",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "None",
+                "Mild",
+                "Moderate",
+                "Severe"
+              ],
+              "size": 10,
+              "id": "Chest.Clubbing",
+              "label": "Clubbing",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Chest.Cyanosis",
+              "label": "Cyanosis",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Clear",
+                "Crackles"
+              ],
+              "size": 10,
+              "id": "Chest.AuscultationLeft",
+              "label": "Left",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Clear",
+                "Crackles"
+              ],
+              "size": 10,
+              "id": "Chest.AuscultationRight",
+              "label": "Right",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Clear",
+                "Wheezes"
+              ],
+              "size": 10,
+              "id": "Chest.AuscultationUpper",
+              "label": "Upper",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Clear",
+                "Wheezes"
+              ],
+              "size": 10,
+              "id": "Chest.AuscultationMiddle",
+              "label": "Middle",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Clear",
+                "Wheezes"
+              ],
+              "size": 10,
+              "id": "Chest.AuscultationLower",
+              "label": "Lower",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Chest.Cough",
+              "label": "Cough",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Chest.Sputum",
+              "label": "Sputum",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Chest.ShortnessOfBreath",
+              "label": "Shortness of breath",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Chest.Wheeze",
+              "label": "Wheeze",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Chest.ChestPain",
+              "label": "Chest pain",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Chest",
+        "layoutShow": true,
+        "title": "Chest "
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Normal",
+                "RVH",
+                "Loud P2",
+                "Murmur",
+                "Gallop rhythm"
+              ],
+              "size": 20,
+              "id": "CardiovascularSystem.Praecordium",
+              "label": "Praecordium",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Normal",
+                "Elevated"
+              ],
+              "size": 10,
+              "id": "CardiovascularSystem.JVP",
+              "label": "JVP",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "CardiovascularSystem.PeripheralOedema",
+              "label": "Peripheral oedema",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "CardiovascularSystem",
+        "layoutShow": true,
+        "title": "Cardiovascular System"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Liver.Hepatomegaly",
+              "label": "Hepatomegaly",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Liver.Hepatomegaly",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Liver.EnlargementSize",
+              "label": "Enlargement size",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "id": "Liver.Jaundice",
+              "label": "Jaundice",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Liver.SpiderNaevus",
+              "label": "Spider naevus",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Liver.AbdominalVeins",
+              "label": "Abdominal veins",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Liver.Oedema",
+              "label": "Oedema",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Liver",
+        "layoutShow": true,
+        "title": "Liver"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Spleen.Splenomegaly",
+              "label": "Splenomegaly",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Spleen.Splenomegaly",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Spleen.EnlargementSize",
+              "label": "Enlargement size",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Spleen.Splenomegaly",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Spleen.Palpable",
+              "label": "Palpable",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "Spleen",
+        "layoutShow": true,
+        "title": "Spleen"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Normal",
+                "Abnormal"
+              ],
+              "size": 10,
+              "id": "Abdomen.AbdomenGIT",
+              "label": "Abdomen/GIT",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Abnormal"
+                      ],
+                      "fieldID": "Abdomen.AbdomenGIT"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Abdomen.Distended",
+              "label": "Distended",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Abnormal"
+                      ],
+                      "fieldID": "Abdomen.AbdomenGIT"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Abdomen.Peritonism",
+              "label": "Peritonism",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "LIF",
+                "RIF"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Abnormal"
+                      ],
+                      "fieldID": "Abdomen.AbdomenGIT"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Abdomen.FaecalImpaction",
+              "label": "Faecal impaction",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "RUQ",
+                "LUQ",
+                "RIF",
+                "LIF",
+                "Central",
+                "Midline",
+                "Transverse",
+                "Oblique"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Abnormal"
+                      ],
+                      "fieldID": "Abdomen.AbdomenGIT"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Abdomen.Tenderness",
+              "label": "Tenderness",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 2,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Abnormal"
+                      ],
+                      "fieldID": "Abdomen.AbdomenGIT"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Abdomen.Mass",
+              "label": "Mass",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Abdomen.AbdominalPain",
+              "label": "Abdominal pain",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Abdomen.Stools",
+              "label": "Stools",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Abdomen",
+        "layoutShow": true,
+        "title": "Abdomen"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Normal",
+                "Otitis",
+                "Serious otitis"
+              ],
+              "size": 20,
+              "id": "EarNoseAndThroat.LeftEar",
+              "label": "Left ear",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Normal",
+                "Otitis",
+                "Serious otitis"
+              ],
+              "size": 20,
+              "id": "EarNoseAndThroat.RightEar",
+              "label": "Right ear",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Allergic rhinitis",
+                "Normal",
+                "Polyps-left",
+                "Polyps-right"
+              ],
+              "size": 20,
+              "id": "EarNoseAndThroat.Nose",
+              "label": "Nose",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "EarNoseAndThroat.NasalSymptoms",
+              "label": "Nasal symptoms",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Enlarged",
+                "Inflamed",
+                "Normal"
+              ],
+              "size": 20,
+              "id": "EarNoseAndThroat.Tonsils",
+              "label": "Tonsils",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "EarNoseAndThroat",
+        "layoutShow": true,
+        "title": "Ear Nose and Throat"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.Examination",
+  "layoutColumns": 3
+}

@@ -1,0 +1,16 @@
+/**
+ * Styles for FieldDropdownButton.tsx
+ *
+ * @author Thompson 11/09/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+
+.cp-FieldDropdownButton {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

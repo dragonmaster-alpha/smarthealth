@@ -1,0 +1,866 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ehrConsentDate",
+        "label": "EHR Consent",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Mr",
+          "Ms",
+          "Mrs",
+          "Miss",
+          "Mx",
+          "Dr",
+          "Brother",
+          "Dame",
+          "Father",
+          "Lady",
+          "Master",
+          "Sir",
+          "Sister",
+          "Prof"
+        ],
+        "size": 15,
+        "id": "title",
+        "label": "Title",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection",
+        "valuePath": "name.title"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "givenName",
+        "label": "Given name",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text",
+        "valuePath": "name.givenName"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "otherGivenNames",
+        "label": "Other given names",
+        "type": "Text",
+        "valuePath": "name.otherGivenNames"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "familyName",
+        "label": "Family name",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text",
+        "valuePath": "name.familyName"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "preferredName",
+        "label": "Preferred name",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "multiple": true,
+        "options": [],
+        "size": 25,
+        "id": "aliases",
+        "label": "Also known as",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Sex",
+        "id": "sex",
+        "label": "Sex",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "dateOfBirth",
+        "label": "Date of birth",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "address1",
+        "label": "Address 1",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text",
+        "valuePath": "address.address1"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "address2",
+        "label": "Address 2",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Text",
+        "valuePath": "address.address2"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "city",
+        "label": "City",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text",
+        "valuePath": "address.city"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "ACT",
+          "NSW",
+          "NT",
+          "QLD",
+          "SA",
+          "TAS",
+          "VIC",
+          "WA"
+        ],
+        "size": 60,
+        "id": "state",
+        "label": "State",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection",
+        "valuePath": "address.state"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "id": "postcode",
+        "label": "Postcode",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text",
+        "valuePath": "address.postcode"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Afghanistan",
+          "Albania",
+          "Algeria",
+          "American Samoa",
+          "Andorra",
+          "Angola",
+          "Anguilla",
+          "Antarctica",
+          "Antigua",
+          "Argentina",
+          "Armenia",
+          "Aruba",
+          "Australia",
+          "Austria",
+          "Azerbaijan",
+          "Bahamas",
+          "Bahrain",
+          "Bangladesh",
+          "Barbados",
+          "Belarus",
+          "Belgium",
+          "Belize",
+          "Benin",
+          "Bermuda",
+          "Bhutan",
+          "Bolivia",
+          "Bosnia and Herzegovina",
+          "Botswana",
+          "Brazil",
+          "British Virgin Islands",
+          "Brunei",
+          "Bulgaria",
+          "Burkina Faso",
+          "Burma",
+          "Burundi",
+          "Cambodia",
+          "Cameroon",
+          "Canada",
+          "Cape Verde",
+          "Central African Republic",
+          "Chad",
+          "Chile",
+          "China",
+          "Colombia",
+          "Comoros",
+          "Congo",
+          "Congo ",
+          "Cook Islands",
+          "Costa Rica",
+          "Cote d\u0027Ivoire ",
+          "Croatia",
+          "Cuba",
+          "Cyprus",
+          "Czech Republic",
+          "Denmark",
+          "Djibouti",
+          "Dominica",
+          "Dominican Republic",
+          "Ecuador",
+          "Egypt",
+          "El Salvador",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Estonia",
+          "Ethiopia",
+          "Falkland Islands",
+          "Federated States of Micronesia",
+          "Fiji",
+          "Finland",
+          "France",
+          "French Guiana",
+          "French Polynesia",
+          "Gabon",
+          "Gaza Strip and West Bank",
+          "Georgia",
+          "Germany",
+          "Ghana",
+          "Gibraltar",
+          "Greece",
+          "Greenland",
+          "Grenada",
+          "Guadeloupe",
+          "Guam",
+          "Guatemala",
+          "Guinea",
+          "Guinea-Bissau",
+          "Guyana",
+          "Haiti",
+          "Honduras",
+          "Hong Kong",
+          "Hungary",
+          "Iceland",
+          "India",
+          "Indonesia",
+          "Iran",
+          "Iraq",
+          "Ireland",
+          "Israel",
+          "Italy",
+          "Ivory Coast ",
+          "Jamaica",
+          "Japan",
+          "Jordan",
+          "Kazakhstan",
+          "Kenya",
+          "Kiribati",
+          "Kuwait",
+          "Kyrgyzstan",
+          "Laos",
+          "Latvia",
+          "Lebanon",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Liechtenstein",
+          "Lithuania",
+          "Luxembourg",
+          "Macau",
+          "Macedonia",
+          "Madagascar",
+          "Malawi",
+          "Malaysia",
+          "Maldives",
+          "Mali",
+          "Malta",
+          "Marshall Islands",
+          "Martinique",
+          "Mauritania",
+          "Mauritius",
+          "Mayotte",
+          "Mexico",
+          "Moldova",
+          "Monaco",
+          "Mongolia",
+          "Montserrat",
+          "Morocco",
+          "Mozambique",
+          "Namibia",
+          "Nauru",
+          "Nepal",
+          "Netherlands",
+          "Netherlands Antilles",
+          "New Caledonia",
+          "New Zealand",
+          "Nicaragua",
+          "Niger",
+          "Nigeria",
+          "North Korea",
+          "Northern Mariana Islands",
+          "Norway",
+          "Oman",
+          "Pakistan",
+          "Palau",
+          "Panama",
+          "Papua New Guinea",
+          "Paraguay",
+          "Peru",
+          "Philippines",
+          "Pitcairn Islands",
+          "Poland",
+          "Portugal",
+          "Puerto Rico",
+          "Qatar",
+          "Reunion",
+          "Romania",
+          "Russia",
+          "Rwanda",
+          "Saint Kitts and Nevis",
+          "Saint Lucia",
+          "Saint Pierre and Miquelon",
+          "Saint Vincent and the Grenadines",
+          "Samoa",
+          "San Marino",
+          "Sao Tome and Principe",
+          "Saudi Arabia",
+          "Senegal",
+          "Serbia and Montenegro ",
+          "Seychelles",
+          "Sierra Leone",
+          "Singapore",
+          "Slovakia",
+          "Slovenia",
+          "Solomon Islands",
+          "Somalia",
+          "South Africa",
+          "South Korea",
+          "Spain",
+          "Sri Lanka",
+          "Sudan",
+          "Suriname",
+          "Swaziland",
+          "Sweden",
+          "Switzerland",
+          "Syria",
+          "Taiwan",
+          "Tajikistan",
+          "Tanzania",
+          "Thailand",
+          "The Gambia",
+          "The Holy See",
+          "Togo",
+          "Tonga",
+          "Trinidad and Tobago",
+          "Tunisia",
+          "Turkey",
+          "Turkmenistan",
+          "Turks and Caicos Islands",
+          "Tuvalu",
+          "Uganda",
+          "Ukraine",
+          "United Arab Emirates",
+          "United Kingdom",
+          "United States",
+          "United States Virgin Islands",
+          "Uruguay",
+          "Uzbekistan",
+          "Vanuatu",
+          "Venezuela",
+          "Vietnam",
+          "West Bank and Gaza Strip",
+          "Western Sahara",
+          "Yemen",
+          "Yugoslavia ",
+          "Zaire ",
+          "Zambia",
+          "Zimbabwe"
+        ],
+        "size": 150,
+        "id": "country",
+        "label": "Country",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Selection",
+        "valuePath": "address.country"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "id": "phoneWork",
+        "label": "Phone (W)",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Text",
+        "valuePath": "contactDetails.phoneWork"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "id": "phoneHome",
+        "label": "Phone (H)",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Text",
+        "valuePath": "contactDetails.phoneHome"
+      }
+    },
+    {
+      "field": {
+        "size": 20,
+        "id": "phoneMobile",
+        "label": "Phone (M)",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Text",
+        "valuePath": "contactDetails.phoneMobile"
+      }
+    },
+    {
+      "field": {
+        "id": "notifyAlertsToMobilePhone",
+        "label": "SMS Notification",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "size": 100,
+        "id": "email",
+        "label": "Email",
+        "type": "Text",
+        "valuePath": "contactDetails.email"
+      }
+    },
+    {
+      "field": {
+        "id": "notifyAlertsToEmail",
+        "label": "Email Notification",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Afghanistan",
+          "Albania",
+          "Algeria",
+          "American Samoa",
+          "Andorra",
+          "Angola",
+          "Anguilla",
+          "Antarctica",
+          "Antigua",
+          "Argentina",
+          "Armenia",
+          "Aruba",
+          "Australia",
+          "Austria",
+          "Azerbaijan",
+          "Bahamas",
+          "Bahrain",
+          "Bangladesh",
+          "Barbados",
+          "Belarus",
+          "Belgium",
+          "Belize",
+          "Benin",
+          "Bermuda",
+          "Bhutan",
+          "Bolivia",
+          "Bosnia and Herzegovina",
+          "Botswana",
+          "Brazil",
+          "British Virgin Islands",
+          "Brunei",
+          "Bulgaria",
+          "Burkina Faso",
+          "Burma",
+          "Burundi",
+          "Cambodia",
+          "Cameroon",
+          "Canada",
+          "Cape Verde",
+          "Central African Republic",
+          "Chad",
+          "Chile",
+          "China",
+          "Colombia",
+          "Comoros",
+          "Congo",
+          "Congo ",
+          "Cook Islands",
+          "Costa Rica",
+          "Cote d\u0027Ivoire ",
+          "Croatia",
+          "Cuba",
+          "Cyprus",
+          "Czech Republic",
+          "Denmark",
+          "Djibouti",
+          "Dominica",
+          "Dominican Republic",
+          "Ecuador",
+          "Egypt",
+          "El Salvador",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Estonia",
+          "Ethiopia",
+          "Falkland Islands",
+          "Federated States of Micronesia",
+          "Fiji",
+          "Finland",
+          "France",
+          "French Guiana",
+          "French Polynesia",
+          "Gabon",
+          "Gaza Strip and West Bank",
+          "Georgia",
+          "Germany",
+          "Ghana",
+          "Gibraltar",
+          "Greece",
+          "Greenland",
+          "Grenada",
+          "Guadeloupe",
+          "Guam",
+          "Guatemala",
+          "Guinea",
+          "Guinea-Bissau",
+          "Guyana",
+          "Haiti",
+          "Honduras",
+          "Hong Kong",
+          "Hungary",
+          "Iceland",
+          "India",
+          "Indonesia",
+          "Iran",
+          "Iraq",
+          "Ireland",
+          "Israel",
+          "Italy",
+          "Ivory Coast ",
+          "Jamaica",
+          "Japan",
+          "Jordan",
+          "Kazakhstan",
+          "Kenya",
+          "Kiribati",
+          "Kuwait",
+          "Kyrgyzstan",
+          "Laos",
+          "Latvia",
+          "Lebanon",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Liechtenstein",
+          "Lithuania",
+          "Luxembourg",
+          "Macau",
+          "Macedonia",
+          "Madagascar",
+          "Malawi",
+          "Malaysia",
+          "Maldives",
+          "Mali",
+          "Malta",
+          "Marshall Islands",
+          "Martinique",
+          "Mauritania",
+          "Mauritius",
+          "Mayotte",
+          "Mexico",
+          "Moldova",
+          "Monaco",
+          "Mongolia",
+          "Montserrat",
+          "Morocco",
+          "Mozambique",
+          "Namibia",
+          "Nauru",
+          "Nepal",
+          "Netherlands",
+          "Netherlands Antilles",
+          "New Caledonia",
+          "New Zealand",
+          "Nicaragua",
+          "Niger",
+          "Nigeria",
+          "North Korea",
+          "Northern Mariana Islands",
+          "Norway",
+          "Oman",
+          "Pakistan",
+          "Palau",
+          "Panama",
+          "Papua New Guinea",
+          "Paraguay",
+          "Peru",
+          "Philippines",
+          "Pitcairn Islands",
+          "Poland",
+          "Portugal",
+          "Puerto Rico",
+          "Qatar",
+          "Reunion",
+          "Romania",
+          "Russia",
+          "Rwanda",
+          "Saint Kitts and Nevis",
+          "Saint Lucia",
+          "Saint Pierre and Miquelon",
+          "Saint Vincent and the Grenadines",
+          "Samoa",
+          "San Marino",
+          "Sao Tome and Principe",
+          "Saudi Arabia",
+          "Senegal",
+          "Serbia and Montenegro ",
+          "Seychelles",
+          "Sierra Leone",
+          "Singapore",
+          "Slovakia",
+          "Slovenia",
+          "Solomon Islands",
+          "Somalia",
+          "South Africa",
+          "South Korea",
+          "Spain",
+          "Sri Lanka",
+          "Sudan",
+          "Suriname",
+          "Swaziland",
+          "Sweden",
+          "Switzerland",
+          "Syria",
+          "Taiwan",
+          "Tajikistan",
+          "Tanzania",
+          "Thailand",
+          "The Gambia",
+          "The Holy See",
+          "Togo",
+          "Tonga",
+          "Trinidad and Tobago",
+          "Tunisia",
+          "Turkey",
+          "Turkmenistan",
+          "Turks and Caicos Islands",
+          "Tuvalu",
+          "Uganda",
+          "Ukraine",
+          "United Arab Emirates",
+          "United Kingdom",
+          "United States",
+          "United States Virgin Islands",
+          "Uruguay",
+          "Uzbekistan",
+          "Vanuatu",
+          "Venezuela",
+          "Vietnam",
+          "West Bank and Gaza Strip",
+          "Western Sahara",
+          "Yemen",
+          "Yugoslavia ",
+          "Zaire ",
+          "Zambia",
+          "Zimbabwe"
+        ],
+        "size": 150,
+        "id": "countryOfBirth",
+        "label": "Country of birth",
+        "layout": {
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "enumType": "ATSI",
+        "id": "atsi",
+        "label": "Aboriginal/TSI",
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Arabic",
+          "Chinese",
+          "English",
+          "French",
+          "German",
+          "Hindi/Urdu",
+          "Japanese",
+          "Portuguese",
+          "Russian",
+          "Spanish"
+        ],
+        "size": 40,
+        "id": "language",
+        "label": "Language",
+        "layout": {
+          "newLine": true
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "interpreterRequired",
+        "label": "Interpreter req",
+        "type": "Boolean"
+      }
+    },
+    {
+      "field": {
+        "enumType": "MaritalStatus",
+        "id": "maritalStatus",
+        "label": "Marital status",
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "size": 30,
+        "id": "religion",
+        "label": "Religion",
+        "type": "Text"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Deceased.deceasedDate",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Deceased.deceasedDate",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Deceased.causeOfDeath",
+              "label": "Cause of death",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Deceased",
+        "layoutShow": true,
+        "title": "Deceased"
+      }
+    }
+  ],
+  "id": "Patient.Demographics.WebUI",
+  "layoutColumns": 2
+}

@@ -1,0 +1,54 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 31,
+  "uri": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Acupuncture"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Body piercing"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Born to Hep C +ve mother"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Dialysis"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Endoscopy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Other skin penetration"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Parent from endemic birth place"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Person from endemic birth place"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Residence in long-term care"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Sexual contact"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Immunology.Hepatitis.OtherRiskFactor",
+      "value": "Surgical procedure"
+    }
+  ],
+  "valueSetID": "Immunology.Hepatitis.OtherRiskFactor"
+}

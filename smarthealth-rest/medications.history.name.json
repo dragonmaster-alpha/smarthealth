@@ -1,0 +1,18 @@
+{
+  "id": "/medications/history?name\u003dCytadren",
+  "referencedType": "MedicationSummary",
+  "references": [
+    {
+      "id": 85,
+      "type": "MedicationSummary"
+    },
+    {
+      "id": 592,
+      "type": "MedicationSummary"
+    },
+    {
+      "id": 63,
+      "type": "MedicationSummary"
+    }
+  ]
+}

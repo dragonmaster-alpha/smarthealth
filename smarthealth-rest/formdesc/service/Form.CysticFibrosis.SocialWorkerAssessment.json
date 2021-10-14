@@ -1,0 +1,609 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 40,
+                  "id": "Name",
+                  "label": "Name",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "options": [
+                    "Formal",
+                    "Informal"
+                  ],
+                  "size": 10,
+                  "id": "FormalInformal",
+                  "label": "Formal/Informal",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Carer Allowance",
+                    "Carer Payment",
+                    "Disability Support Pension",
+                    "Parenting Payment",
+                    "Partner Allowance"
+                  ],
+                  "size": 30,
+                  "id": "CentrelinkBenefit",
+                  "label": "Centrelink carer benefit",
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Full",
+                    "Partial"
+                  ],
+                  "size": 10,
+                  "id": "FullPartial",
+                  "label": "Full/partial",
+                  "type": "Selection"
+                }
+              ],
+              "id": "Carers.Carers",
+              "label": "Carers",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Carers",
+        "layoutShow": true,
+        "title": "Carers"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Education.CurrentlyStudying",
+              "label": "Currently studying",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Full Time",
+                "Part Time"
+              ],
+              "size": 10,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Education.CurrentlyStudying",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Education.StudyBasis",
+              "label": "Study basis",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Junior Secondary (year 10)",
+                "Left School prior to year 10",
+                "Literacy",
+                "Primary",
+                "Senior Secondary (year 12)",
+                "Tertiary Certificate or Diploma (TAFE)",
+                "University Degree"
+              ],
+              "size": 40,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Education.CurrentlyStudying",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Education.EducationAttending",
+              "label": "Education attending",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Education.CurrentlyStudying",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Education.NameOfInstitution",
+              "label": "Name of school/institution",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Private",
+                "Public"
+              ],
+              "size": 10,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Education.CurrentlyStudying",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Education.InstitutionType",
+              "label": "Type",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Education.CurrentlyStudying",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Education.EstimatedCompletionDate",
+              "label": "Estimated completion date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Junior Secondary (year 10)",
+                "Left School prior to year 10",
+                "Literacy",
+                "Primary",
+                "Senior Secondary (year 12)",
+                "Tertiary Certificate or Diploma (TAFE)",
+                "University Degree"
+              ],
+              "size": 40,
+              "id": "Education.EducationCompleted",
+              "label": "Highest previous qualification",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Education.Details",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Education",
+        "layoutShow": true,
+        "title": "Education"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Casual",
+                "Not in Labour force (homemaker, etc)",
+                "Retired",
+                "Studying",
+                "Unemployed",
+                "Voluntary Work",
+                "Working Full Time",
+                "Working Part Time"
+              ],
+              "size": 50,
+              "id": "IncomeAndEmployment.EmploymentStatus",
+              "label": "Employment status",
+              "layout": {
+                "span": 2
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Austudy",
+                    "Disability Support Pension",
+                    "Mobility",
+                    "Newstart Allowance",
+                    "Sickness Allowance",
+                    "Youth Allowance"
+                  ],
+                  "size": 30,
+                  "id": "Benefit",
+                  "label": "Benefit",
+                  "type": "Selection"
+                },
+                {
+                  "options": [
+                    "Full",
+                    "Partial"
+                  ],
+                  "size": 10,
+                  "id": "FullPartial",
+                  "label": "Full/partial",
+                  "type": "Selection"
+                }
+              ],
+              "id": "IncomeAndEmployment.CentrelinkBenefits",
+              "label": "Centrelink benefits",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "IncomeAndEmployment",
+        "layoutShow": true,
+        "title": "Income and Employment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Buying/Own Home",
+                "Private Rental",
+                "State Government Rental",
+                "Lives with Parents",
+                "Lives with Friends"
+              ],
+              "size": 25,
+              "id": "Housing.TypeOfHousing",
+              "label": "Type of housing",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Housing.AgenciesInvolved",
+              "label": "Agencies involved",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Housing",
+        "layoutShow": true,
+        "title": "Housing"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Legal.Will",
+              "label": "Will",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Legal.EnduringPowerOfAttorney",
+              "label": "Enduring power of attorney",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Legal.EnduringPowerOfGuardianship",
+              "label": "Enduring power of guardianship",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Legal.GaurdianshipOfTheMinister",
+              "label": "Guardianship of the minister",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Legal.CourtOrders",
+              "label": "Court orders",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 1000,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "Legal.CourtOrders",
+                      "testTrue": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Legal.CourtOrderDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Legal",
+        "layoutShow": true,
+        "title": "Legal"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.SocialWorkerAssessment",
+  "layoutColumns": 3
+}

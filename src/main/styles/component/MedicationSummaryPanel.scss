@@ -1,0 +1,32 @@
+/**
+ * Styles for MedicationSummaryPanel.tsx
+ *
+ * @author Thompson 30/09/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+.cp-MedicationSummaryPanel {
+  &-summaryActions {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    // To ensure the actionButtons is always centered we are using a 3 column grid layout for 2 items.
+    // Where "emptyPadding" is an empty cell placeholder acting for the right padding.
+    grid-template-areas: "summaryFilters actionButtons emptyPadding";
+
+    padding: 0.8em;
+  }
+
+  &-summaryFilters {
+    grid-area: summaryFilters;
+    display: flex;
+    align-items: center;
+  }
+
+  &-actionButtons {
+    grid-area: actionButtons;
+    margin: auto;
+
+    button:not(:last-child) {
+      margin-right: 0.2em;
+    }
+  }
+}

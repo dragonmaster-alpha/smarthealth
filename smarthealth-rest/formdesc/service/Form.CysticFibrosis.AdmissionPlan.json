@@ -1,0 +1,511 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "id": "Hospital",
+        "label": "Hospital",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroup"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Admission.AdmissionDate",
+              "label": "Admission date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "Admission.MO",
+              "label": "Doctor (MO)",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "id": "Admission.TreatmentStatusService",
+              "label": "Treatment Status service",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Admission.InfectionControlIssues",
+              "label": "Infection control issues",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Admission.RespiratoryMicrobiology",
+              "label": "Respiratory microbiology",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cysticfibrosis.ReasonForAdmission",
+              "id": "Admission.ReasonForAdmission",
+              "label": "Reason for admission",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          }
+        ],
+        "id": "Admission",
+        "layoutShow": true,
+        "title": "Admission"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Provider",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                },
+                {
+                  "size": 40,
+                  "id": "Discipline",
+                  "label": "Role",
+                  "state": {
+                    "editState": "ReadOnly"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "Objective",
+                  "label": "Objective",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "MultidisciplinaryObjectivesOfAdmission.ClinicalObjectives",
+              "label": "Clinical objectives",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "MultidisciplinaryObjectivesOfAdmission",
+        "layoutShow": true,
+        "title": "Multidisciplinary Objectives of Admission"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "TreatmentPlan.PICCRequired",
+              "label": "PICC required",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "TreatmentPlan.PortacathInSitu",
+              "label": "Portacath in situ",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 40,
+                  "id": "Product",
+                  "label": "Product",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "Details",
+                  "label": "Details",
+                  "type": "Text"
+                }
+              ],
+              "id": "TreatmentPlan.IVAntimicrobialTherapy",
+              "label": "IV antimicrobial therapy",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 40,
+                  "id": "Product",
+                  "label": "Product",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "editable": true,
+                  "options": [
+                    "Nebulised",
+                    "Oral"
+                  ],
+                  "size": 20,
+                  "id": "Route",
+                  "label": "Route",
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "StopOrStartWhileInpatient",
+                  "label": "Stop/Start while inpatient",
+                  "type": "Text"
+                }
+              ],
+              "id": "TreatmentPlan.OralAndNebulisedAntimicrobialTherapy",
+              "label": "Oral and nebulised antimicrobial therapy",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "id": "TreatmentPlan.ContinueUsualAirwayClearanceRegimen",
+              "label": "Continue usual airway clearance regimen",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "TreatmentPlan.AirwayClearanceDetails",
+              "label": "Airway clearance details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "TreatmentPlan.NutritionalPlan",
+              "label": "Nutritional plan",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "TreatmentPlan.PsychosocialPlan",
+              "label": "Psychosocial plan",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "TreatmentPlan.ConsultationsAndReferrals",
+              "label": "Consultations and referrals",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "TreatmentPlan.AdditionalComments",
+              "label": "Additional comments",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "TreatmentPlan",
+        "layoutShow": true,
+        "title": "Treatment Plan"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Imaging",
+                    "Pathology"
+                  ],
+                  "size": 40,
+                  "id": "Type",
+                  "label": "Type",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "size": 40,
+                  "id": "Test",
+                  "label": "Test",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Text"
+                },
+                {
+                  "size": 40,
+                  "id": "Details",
+                  "label": "Details",
+                  "type": "Text"
+                }
+              ],
+              "id": "InvestigationsDuringAdmission.Investigations",
+              "label": "Investigations",
+              "layout": {
+                "labelPosition": "Above",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "InvestigationsDuringAdmission",
+        "layoutShow": true,
+        "title": "Investigations During Admission"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.AdmissionPlan",
+  "layoutColumns": 3
+}

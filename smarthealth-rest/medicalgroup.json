@@ -1,0 +1,21 @@
+{
+  "address": {
+    "address1": "27 Pyrmont Street",
+    "address2": "",
+    "city": "Pyrmont",
+    "country": "Australia",
+    "postcode": "2009",
+    "state": "NSW"
+  },
+  "enabled": true,
+  "fax": "02 9999 9998",
+  "groupID": 1,
+  "locations": [],
+  "name": "Unit Test Medical Group",
+  "participating": true,
+  "phone": "02 9999 9999",
+  "practiceSettingCode": "8511-2",
+  "programs": [],
+  "timeZone": "Australia/Sydney",
+  "version": 0
+}

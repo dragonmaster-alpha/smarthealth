@@ -1,0 +1,437 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Extreme",
+                "High",
+                "Low",
+                "Moderate"
+              ],
+              "size": 20,
+              "id": "RiskAssessmentSection.RiskAssessment",
+              "label": "Risk",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 50,
+              "id": "RiskAssessmentSection.Staff",
+              "label": "Staff required for visit",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "RiskAssessmentSection",
+        "layoutShow": true,
+        "title": "Risk Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Caravan/Mobile Home",
+                "Duplex/Town House",
+                "Flat/Apartment",
+                "Freestanding house"
+              ],
+              "size": 20,
+              "id": "TypeOfHome.TypeOfHome",
+              "label": "Type of home",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "TypeOfHome.HomeVisible",
+              "label": "Visible from street",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "TypeOfHome.NumberVisible",
+              "label": "Number visible",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "TypeOfHome.MobilePhoneCoverage",
+              "label": "Mobile phone coverage",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "TypeOfHome.Occupants",
+              "label": "Home occupants/relationships",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "TypeOfHome",
+        "layoutShow": true,
+        "title": "Type of Home"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Parking.NearbyParking",
+              "label": "Parking nearby",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Parking.AccessToHome",
+              "label": "Easy access to home",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Parking.ParkingDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Parking",
+        "layoutShow": true,
+        "title": "Parking"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Back",
+                "Front",
+                "Side"
+              ],
+              "size": 20,
+              "id": "Access.DoorLocation",
+              "label": "Entry location",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Access.SteepPath",
+              "label": "Steep/slippery access",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Access.Stairs",
+              "label": "Stairs",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Access.Lighting",
+              "label": "Adequate lighting",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Access.SpecialEntry",
+              "label": "Special entry requirements",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Access",
+        "layoutShow": true,
+        "title": "Access"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 100,
+              "id": "Pets.HavePets",
+              "label": "Pets",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Not a risk",
+                "Removed",
+                "Restrained"
+              ],
+              "size": 10,
+              "id": "Pets.PetManagementDuringVisit",
+              "label": "Pet management during visit",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "Pets.PhoneAhead",
+              "label": "Phone ahead",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "Pets.PetDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Pets",
+        "layoutShow": true,
+        "title": "Pets"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "Weapons.Firearms",
+              "label": "Firearms in house",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "Weapons.OtherWeapons",
+              "label": "Other weapons in house",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 250,
+              "id": "Weapons.WeaponsDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Weapons",
+        "layoutShow": true,
+        "title": "Weapons"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "SmokeFree.Smokers",
+              "label": "Any resident smokers",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "id": "SmokeFree.NoSmokingRule",
+              "label": "Aware that smoking is not permitted",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 250,
+              "id": "SmokeFree.SmokingDetails",
+              "label": "Details",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "SmokeFree",
+        "layoutShow": true,
+        "title": "Smoke Free Environment"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "PatientWatch.RiskAssessment",
+  "layoutColumns": 3
+}

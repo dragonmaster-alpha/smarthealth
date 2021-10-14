@@ -1,0 +1,16 @@
+/**
+ * Styles for MedicationProductField.tsx
+ *
+ * @author Thompson 04/09/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+.cp-MedicationProduct {
+  display: inline-flex;
+  align-items: center;
+
+  padding-left: 0.2em;
+
+  &-name {
+    padding-left: 0.4em;
+  }
+}

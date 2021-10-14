@@ -1,0 +1,101 @@
+@import '../variable';
+
+/**
+ * Styles for TableField.tsx
+ *
+ * WARNING!!!
+ * For Future PrimeReact Updates.
+ * If PrimeReact update/remove css class that we use to select the html element.
+ * CSS class selection can potentially not apply the override styles.
+ *
+ * @author Thompson 14/05/2019
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2019
+ */
+// NOTE: width auto is causing header and body misalignment when table is scrollable
+// Override exiting PrimeReact DataTable width.
+// Default table, width: 100%;
+.cp-tablefield.cp-tablefield-autolayout {
+  display: inline-block;
+
+  table {
+    width: auto;
+  }
+}
+
+// Override existing PrimeReact DataTable row selection highlight colour
+.cp-tablefield.p-datatable {
+  .p-datatable-wrapper, .p-datatable-scrollable-wrapper {
+    .p-datatable-tbody {
+      tr[class='p-datatable-row p-highlight' ] {
+        background-color: $p-datatable-highlight-color;
+      }
+    }
+  }
+}
+
+// Override exiting PrimeReact Calendar .p-calendar .p-datepicker.
+// Default Calendar, min-width: 100%; caused the calendar picker to shrink, not allowing enough space for dates.
+.cp-tablefield {
+  .p-datatable-row {
+    .p-calendar {
+      .p-datepicker {
+        min-width: 24em;
+      }
+    }
+  }
+}
+
+// Override exiting PrimeReact Calendar .p-calendar .p-calendar-button.
+// Default p-calendar-button, position: absolute;
+// Caused the Calendar picker button to overflow over to the next column due to position absolute not holding
+// the space needed for button.
+.cp-tablefield {
+  .p-datatable-row {
+    .p-calendar {
+      .p-calendar-button {
+        position: relative;
+      }
+    }
+  }
+}
+
+// Override exiting PrimeReact p-datatable-resizeable styles
+// Default overflow-x and overflow set to hidden
+// Causing DateTimeField Calendar picker to be hidden under HTML table element when resizableColumns is set to true
+// in PrimeReact DataTable.
+.cp-tablefield.p-datatable-resizable {
+  & > .p-datatable-wrapper {
+    overflow-x: visible;
+  }
+
+  .p-datatable-tbody {
+    > tr {
+      > td {
+        overflow: visible;
+      }
+    }
+  }
+}
+
+.cp-tablefield {
+  // default background color is transparent. Therefore, when there is no rows in the table for example. User can see
+  // what's behind this selection table component.
+  background-color: white;
+  border: 1px solid $p-table-field-border-color;
+
+  display: inline-block;
+
+  &-fillHeight {
+    height: 100%;
+  }
+
+  &-footer {
+    background-color: $p-table-field-footer-background-color;
+    font-weight: bold;
+
+    padding: $table-field-vertical-footer-padding $table-field-horizontal-footer-padding;
+
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,112 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "editable": true,
+        "options": [
+          "Consent by next of kin",
+          "Consent by patient",
+          "Patient cognitively impaired",
+          "Patient unconscious"
+        ],
+        "size": 40,
+        "id": "AccessReason",
+        "label": "Access Reason",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 100,
+            "id": "serviceType.abbreviation",
+            "label": "Service Type",
+            "layout": {
+              "span": 2
+            },
+            "type": "Text"
+          },
+          {
+            "precisionMinute": true,
+            "id": "Service.serviceDate",
+            "label": "Service Date",
+            "type": "DateTime"
+          },
+          {
+            "abbreviate": true,
+            "size": 200,
+            "id": "Service.summary",
+            "label": "Summary",
+            "layout": {
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          },
+          {
+            "displayType": "ButtonOnly",
+            "id": "Service",
+            "label": "",
+            "type": "ServiceRecordReference"
+          }
+        ],
+        "layoutRows": 3,
+        "id": "Services",
+        "label": "Service records accessed",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "sortable": true,
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Service.EmergencyAccess.WebUI",
+  "layoutColumns": 2
+}

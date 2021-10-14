@@ -1,0 +1,81 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 40,
+            "id": "givenName",
+            "label": "Given name",
+            "sortable": true,
+            "type": "Text",
+            "valuePath": "user.name.givenName"
+          },
+          {
+            "size": 40,
+            "id": "familyName",
+            "label": "Family name",
+            "sortable": true,
+            "type": "Text",
+            "valuePath": "user.name.familyName"
+          },
+          {
+            "size": 40,
+            "id": "role",
+            "label": "Role",
+            "type": "Text",
+            "valuePath": "member.role"
+          },
+          {
+            "size": 150,
+            "id": "medicalGroup",
+            "label": "Medical group",
+            "layout": {
+              "newLine": true,
+              "spanLine": true
+            },
+            "sortable": true,
+            "type": "Text",
+            "valuePath": "medicalGroup.name"
+          },
+          {
+            "size": 100,
+            "id": "city",
+            "label": "City",
+            "layout": {
+              "span": 2
+            },
+            "sortable": true,
+            "type": "Text",
+            "valuePath": "medicalGroup.address.city"
+          },
+          {
+            "size": 100,
+            "id": "state",
+            "label": "State",
+            "layout": {
+              "span": 2
+            },
+            "sortable": true,
+            "type": "Text",
+            "valuePath": "medicalGroup.address.state"
+          }
+        ],
+        "id": "members",
+        "label": "Members",
+        "layout": {
+          "fillHeight": true,
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Dropdown.Member",
+  "layoutColumns": 1
+}

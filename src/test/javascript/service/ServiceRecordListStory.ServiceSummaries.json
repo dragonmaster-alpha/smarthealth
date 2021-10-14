@@ -1,0 +1,7062 @@
+[
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-20T20:55"
+        },
+        "serviceID": 11688,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "CF"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-20T13:03+10"
+        },
+        "serviceID": 11689,
+        "serviceType": 185,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Restricted",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-17T11:57+10"
+        },
+        "serviceID": 11687,
+        "serviceType": 72,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-17T11:55+10"
+        },
+        "serviceID": 11686,
+        "serviceType": 2,
+        "status": "FINAL",
+        "summaryLine": "Request"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-17T11:45+10"
+        },
+        "serviceID": 11685,
+        "serviceType": 2,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-15T17:26+10"
+        },
+        "serviceID": 11684,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "d"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-15T17:16+10"
+        },
+        "serviceID": 11683,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "Test entire normal auto calculation"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-09T14:39+10"
+        },
+        "serviceID": 11680,
+        "serviceType": 123,
+        "status": "DRAFT",
+        "summaryLine": "Rubbish"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-09T14:30+10"
+        },
+        "serviceID": 11679,
+        "serviceType": 123,
+        "status": "FINAL",
+        "summaryLine": "Populated from WebUI, edited, edited, closed , ..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-09"
+        },
+        "serviceID": 11681,
+        "serviceType": 123,
+        "status": "FINAL",
+        "summaryLine": "Populated from WebUI without Follow up then edi..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-09"
+        },
+        "serviceID": 11678,
+        "serviceType": 123,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI then edited in WebUI"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-08T17:44+10"
+        },
+        "serviceID": 11677,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": "Lorem ipsum dolor sit amet, consectetur adipisc..."
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-08T15:34+10"
+        },
+        "serviceID": 11674,
+        "serviceType": 135,
+        "status": "FINAL",
+        "summaryLine": "Cras egestas fermentum viverra. Nam ut mauris r..."
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-08T14:40+10"
+        },
+        "serviceID": 11671,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-08"
+        },
+        "serviceID": 11676,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": "Populate from WebUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-08"
+        },
+        "serviceID": 11675,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI and edited in WEbUI"
+    },
+    {
+        "confidentiality": "Restricted",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-08"
+        },
+        "serviceID": 11673,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Restricted",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-08"
+        },
+        "serviceID": 11672,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-08"
+        },
+        "serviceID": 11669,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Consultation. Populated from WebUI and edited in JavaUI"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-07T17:15+10"
+        },
+        "serviceID": 11668,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Consultation. Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-07T15:53+10"
+        },
+        "serviceID": 11666,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Consultation. Populated from WebUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 6,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-04-07T13:09+10"
+        },
+        "serviceID": 11661,
+        "serviceType": 135,
+        "status": "FINAL",
+        "summaryLine": "Cras egestas fermentum viverra. Nam ut mauris r..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-07T12:47+10"
+        },
+        "serviceID": 11660,
+        "serviceType": 135,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI and edited in WebUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-07"
+        },
+        "serviceID": 11667,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Consultation. Lorem ipsum dolor sit amet, consectetur adipisc..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-07"
+        },
+        "serviceID": 11665,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Consultation. Populated from WebUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 6,
+            "userID": 18
+        },
+        "serviceDate": {
+            "iso": "2020-04-07"
+        },
+        "serviceID": 11664,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": "Lorem ipsum dolor sit amet, consectetur adipisc..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-07"
+        },
+        "serviceID": 11663,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI then edited in WebUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-07"
+        },
+        "serviceID": 11662,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-06T16:58+10"
+        },
+        "serviceID": 11659,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-06T16:49+10"
+        },
+        "serviceID": 11658,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-06T11:53+10"
+        },
+        "serviceID": 11652,
+        "serviceType": 135,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-06T09:37+10"
+        },
+        "serviceID": 11651,
+        "serviceType": 147,
+        "status": "FINAL",
+        "summaryLine": "Populated from WebUI edit, edit, edit, edit, cl..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-06"
+        },
+        "serviceID": 11653,
+        "serviceType": 123,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-04-03T09:35+11"
+        },
+        "serviceID": 11650,
+        "serviceType": 131,
+        "status": "FINAL",
+        "summaryLine": "Created in WebUI to check if it can be edtied a..."
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-03T09:32+11"
+        },
+        "serviceID": 11649,
+        "serviceType": 131,
+        "status": "FINAL",
+        "summaryLine": "Populated from WebUI, edit 1, edit 2"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-04-03T09:19+11"
+        },
+        "serviceID": 11648,
+        "serviceType": 131,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI and edited in WebUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-02"
+        },
+        "serviceID": 11647,
+        "serviceType": 150,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-02"
+        },
+        "serviceID": 11646,
+        "serviceType": 145,
+        "status": "FINAL",
+        "summaryLine": "Populated in WebUI and do the full save it, edi..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-02"
+        },
+        "serviceID": 11645,
+        "serviceType": 145,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI then edited from JavaUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-04-01T22:25+11"
+        },
+        "serviceID": 11644,
+        "serviceType": 122,
+        "status": "FINAL",
+        "summaryLine": "Populated from WebUI edit, edit, edit, close, e..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-04-01T16:34+11"
+        },
+        "serviceID": 11643,
+        "serviceType": 122,
+        "status": "FINAL",
+        "summaryLine": "Populated from JavaUI edited in WebUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-26T17:15+11"
+        },
+        "serviceID": 11642,
+        "serviceType": 135,
+        "status": "FINAL",
+        "summaryLine": "Create by JavaUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-26"
+        },
+        "serviceID": 11641,
+        "serviceType": 150,
+        "status": "FINAL",
+        "summaryLine": "Populate from WebUI then after edited from JavaUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-26"
+        },
+        "serviceID": 11640,
+        "serviceType": 150,
+        "status": "FINAL",
+        "summaryLine": "Fully populated frojm JavaUI then edited in WEbUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-25T15:35+11"
+        },
+        "serviceID": 11639,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "Created from JavaUI to test if editable and sav..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-25T14:43+11"
+        },
+        "serviceID": 11638,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "Fully populate from WebUI and then edited from ..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-24"
+        },
+        "serviceID": 11632,
+        "serviceType": 147,
+        "status": "FINAL",
+        "summaryLine": "Fully populated from JavaUI"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-20T15:01+11"
+        },
+        "serviceID": 11630,
+        "serviceType": 143,
+        "status": "FINAL",
+        "summaryLine": "Summary"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-20"
+        },
+        "serviceID": 11627,
+        "serviceType": 143,
+        "status": "FINAL",
+        "summaryLine": "created by JavaUI"
+    },
+    {
+        "confidentiality": "VeryRestricted",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-20"
+        },
+        "serviceID": 11626,
+        "serviceType": 143,
+        "status": "FINAL",
+        "summaryLine": "WebUI check values carry over to JavaUI and sav..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-13"
+        },
+        "serviceID": 11625,
+        "serviceType": 145,
+        "status": "FINAL",
+        "summaryLine": "Fully populate from JavaUI to compare carry ove..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-12T14:07+11"
+        },
+        "serviceID": 11619,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "Fully populate from JavaUI to check carry over ..."
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-12T14:06+11"
+        },
+        "serviceID": 11618,
+        "serviceType": 145,
+        "status": "FINAL",
+        "summaryLine": "WebUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-11T16:02+11"
+        },
+        "serviceID": 11617,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "From JavaUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-11"
+        },
+        "serviceID": 11616,
+        "serviceType": 145,
+        "status": "FINAL",
+        "summaryLine": "b"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10T13:16+11"
+        },
+        "serviceID": 11614,
+        "serviceType": 131,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-03-10T08:56+11"
+        },
+        "serviceID": 11612,
+        "serviceType": 131,
+        "status": "FINAL",
+        "summaryLine": "Immunology Social Worker Notes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10T08:54+11"
+        },
+        "serviceID": 11610,
+        "serviceType": 122,
+        "status": "FINAL",
+        "summaryLine": "PEP Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10T08:51+11"
+        },
+        "serviceID": 11609,
+        "serviceType": 135,
+        "status": "FINAL",
+        "summaryLine": "Neuropsychology Notes"
+    },
+    {
+        "confidentiality": "Restricted",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11613,
+        "serviceType": 1001,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11611,
+        "serviceType": 123,
+        "status": "FINAL",
+        "summaryLine": "PEP Care Plan"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11608,
+        "serviceType": 149,
+        "status": "FINAL",
+        "summaryLine": "Infectious Diseases Care Plan"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11607,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": "Infectious Diseases Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11606,
+        "serviceType": 150,
+        "status": "FINAL",
+        "summaryLine": "Immunology A Care Plan"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11605,
+        "serviceType": 147,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11604,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Consultation."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11603,
+        "serviceType": 143,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-10"
+        },
+        "serviceID": 11602,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-09T16:54+11"
+        },
+        "serviceID": 11601,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-09"
+        },
+        "serviceID": 11600,
+        "serviceType": 145,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-03-06T11:40+11"
+        },
+        "serviceID": 11599,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "g"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-03-03T12:13+11"
+        },
+        "serviceID": 11598,
+        "serviceType": 119,
+        "status": "FINAL",
+        "summaryLine": "Consent by next of kin"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-28T16:31+11"
+        },
+        "serviceID": 11597,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Testing if you can save with new implementation"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-26T17:47+11"
+        },
+        "serviceID": 11596,
+        "serviceType": 101,
+        "status": "FINAL",
+        "summaryLine": "Pulmonary artery catheter care"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-26T15:19+11"
+        },
+        "serviceID": 11595,
+        "serviceType": 100,
+        "status": "FINAL",
+        "summaryLine": "Allergen extract vaccine"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "VASCULAR",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:43+11"
+        },
+        "serviceID": 11594,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Testing if can save"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:43+11"
+        },
+        "serviceID": 11593,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Renal"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PODIATRY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:43+11"
+        },
+        "serviceID": 11592,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Podiatry"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:42+11"
+        },
+        "serviceID": 11591,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Patient Watch"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:41+11"
+        },
+        "serviceID": 11589,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Immunology & IDs"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "DIABETES",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:40+11"
+        },
+        "serviceID": 11587,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Diabetes Consultation Note"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "DIABETES",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:40+11"
+        },
+        "serviceID": 11586,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Diabetes Consultation Note"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:39+11"
+        },
+        "serviceID": 11585,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "This is a CysticFibrosis Consultation Note"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T16:37+11"
+        },
+        "serviceID": 11584,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "This is a Cancer Consultation Note"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T11:07+11"
+        },
+        "serviceID": 11579,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "f"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-02-25T09:57+11"
+        },
+        "serviceID": 11578,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "check selection fields"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-02-25"
+        },
+        "serviceID": 11583,
+        "serviceType": 58,
+        "status": "FINAL",
+        "summaryLine": "Did not attend"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-02-25"
+        },
+        "serviceID": 11582,
+        "serviceType": 58,
+        "status": "DRAFT",
+        "summaryLine": "Did not attend"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T16:23+11"
+        },
+        "serviceID": 11577,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "y"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T15:00+11"
+        },
+        "serviceID": 11576,
+        "serviceType": 100,
+        "status": "FINAL",
+        "summaryLine": "Attenuated Bacillus Calmette Guerin product"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T14:59+11"
+        },
+        "serviceID": 11575,
+        "serviceType": 101,
+        "status": "FINAL",
+        "summaryLine": "Pulmonary artery catheter care"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T14:41+11"
+        },
+        "serviceID": 11574,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T14:38+11"
+        },
+        "serviceID": 11573,
+        "serviceType": 101,
+        "status": "FINAL",
+        "summaryLine": "General care of patient"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T14:30+11"
+        },
+        "serviceID": 11572,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "sum1"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T14:27+11"
+        },
+        "serviceID": 11571,
+        "serviceType": 100,
+        "status": "FINAL",
+        "summaryLine": "Hepatitis A + Typhoid vaccine"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T14:20+11"
+        },
+        "serviceID": 11570,
+        "serviceType": 101,
+        "status": "FINAL",
+        "summaryLine": "ACP - Acupuncture"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T11:59+11"
+        },
+        "serviceID": 11569,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "test"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T11:57+11"
+        },
+        "serviceID": 11568,
+        "serviceType": 101,
+        "status": "FINAL",
+        "summaryLine": "Abdominoperineal suspension of urethra"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T11:27+11"
+        },
+        "serviceID": 11567,
+        "serviceType": 100,
+        "status": "FINAL",
+        "summaryLine": "Autogenous vaccine - autogenous bacterin"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T11:27+11"
+        },
+        "serviceID": 11566,
+        "serviceType": 101,
+        "status": "FINAL",
+        "summaryLine": "ACP - Acupuncture"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T10:54+11"
+        },
+        "serviceID": 11564,
+        "serviceType": 101,
+        "status": "FINAL",
+        "summaryLine": "Pulmonary artery catheter care"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-24T10:52+11"
+        },
+        "serviceID": 11565,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "with related services"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-02-20T15:20+11"
+        },
+        "serviceID": 11563,
+        "serviceType": 119,
+        "status": "FINAL",
+        "summaryLine": "Consent by next of kin"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-23T13:27+11"
+        },
+        "serviceID": 11559,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": "Start: 01/09/2019; Funded; VIP"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-23T13:18+11"
+        },
+        "serviceID": 11558,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": "Start: 01/09/2019; Funded; VIP"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-23T13:12+11"
+        },
+        "serviceID": 11557,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": "Start: 01/09/2019; Funded; VIP"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-23T10:26+11"
+        },
+        "serviceID": 11556,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": "Start: 01/09/2019; Funded; VIP"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-23T10:05+11"
+        },
+        "serviceID": 11555,
+        "serviceType": 204,
+        "status": "FINAL",
+        "summaryLine": "No answer; Next call: 29/01/2020"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-23"
+        },
+        "serviceID": 11562,
+        "serviceType": 32,
+        "status": "FINAL",
+        "summaryLine": "Swan neck PD catheter left double cuffed 43 cm, Left Subclavian"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-01-23"
+        },
+        "serviceID": 11561,
+        "serviceType": 58,
+        "status": "DRAFT",
+        "summaryLine": "Removed: null, Left Upper Arm, Duration - 60 mins"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-23"
+        },
+        "serviceID": 11560,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "ds"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-23"
+        },
+        "serviceID": 11547,
+        "serviceType": 193,
+        "status": "FINAL",
+        "summaryLine": "Open; Medium; soreness"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T13:47+11"
+        },
+        "serviceID": 11554,
+        "serviceType": 204,
+        "status": "DRAFT",
+        "summaryLine": "Answered by respondent; Next call: 22/01/2020"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T13:38+11"
+        },
+        "serviceID": 11553,
+        "serviceType": 204,
+        "status": "DRAFT",
+        "summaryLine": "Answered by respondent; Next call: 22/01/2020"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T13:30+11"
+        },
+        "serviceID": 11551,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": "Start: 01/09/2019; Funded; VIP"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T12:20+11"
+        },
+        "serviceID": 11549,
+        "serviceType": 204,
+        "status": "FINAL",
+        "summaryLine": "No answer; Next call: 21/01/2020"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T12:17+11"
+        },
+        "serviceID": 11548,
+        "serviceType": 204,
+        "status": "FINAL",
+        "summaryLine": "No answer; Next call: 21/01/2020"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T12:04+11"
+        },
+        "serviceID": 11546,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": "Start: 01/09/2019; Funded; VIP"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T12:02+11"
+        },
+        "serviceID": 11545,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": "Start: 01/09/2019; Funded; Candidate"
+    },
+    {
+        "confidentiality": "Restricted",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T10:06+11"
+        },
+        "serviceID": 11541,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "12345678901234567890123456789012345678901234567..."
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T09:52+11"
+        },
+        "serviceID": 11537,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T09:17+11"
+        },
+        "serviceID": 11533,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T09:13+11"
+        },
+        "serviceID": 11532,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T09:13+11"
+        },
+        "serviceID": 11531,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21T09:10+11"
+        },
+        "serviceID": 11530,
+        "serviceType": 11,
+        "status": "FINAL",
+        "summaryLine": "Referring Provider: Mr Larry Singer @ St Vincent's Hospital, Darlinghurst, Referral Target: SydPath Pathology, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21"
+        },
+        "serviceID": 11552,
+        "serviceType": 205,
+        "status": "FINAL",
+        "summaryLine": "Decision: s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21"
+        },
+        "serviceID": 11550,
+        "serviceType": 205,
+        "status": "FINAL",
+        "summaryLine": "Decision: Good"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21"
+        },
+        "serviceID": 11544,
+        "serviceType": 198,
+        "status": "FINAL",
+        "summaryLine": "PW Assess"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21"
+        },
+        "serviceID": 11543,
+        "serviceType": 149,
+        "status": "FINAL",
+        "summaryLine": "sumary care plan"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21"
+        },
+        "serviceID": 11542,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": "Summary diseases assess"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21"
+        },
+        "serviceID": 11536,
+        "serviceType": 150,
+        "status": "FINAL",
+        "summaryLine": "asdfasdfsdafdasfasd"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21"
+        },
+        "serviceID": 11535,
+        "serviceType": 150,
+        "status": "FINAL",
+        "summaryLine": "summary"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-21"
+        },
+        "serviceID": 11534,
+        "serviceType": 147,
+        "status": "FINAL",
+        "summaryLine": "summary dsfsdf"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 64
+        },
+        "serviceDate": {
+            "iso": "2020-01-20T12:05+11"
+        },
+        "serviceID": 11636,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "Testosterone total"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 64
+        },
+        "serviceDate": {
+            "iso": "2020-01-20T12:05+11"
+        },
+        "serviceID": 11624,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "Coag Screen"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 64
+        },
+        "serviceDate": {
+            "iso": "2020-01-20T09:20+11"
+        },
+        "serviceID": 11637,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "AFP"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 64
+        },
+        "serviceDate": {
+            "iso": "2020-01-20T08:26+11"
+        },
+        "serviceID": 11623,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "UEC"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 64
+        },
+        "serviceDate": {
+            "iso": "2020-01-20T08:26+11"
+        },
+        "serviceID": 11622,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "Ca corr for Alb"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 64
+        },
+        "serviceDate": {
+            "iso": "2020-01-20T08:26+11"
+        },
+        "serviceID": 11620,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "LFT"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 64
+        },
+        "serviceDate": {
+            "iso": "2020-01-20T08:15+11"
+        },
+        "serviceID": 11621,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "TFT"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-20"
+        },
+        "serviceID": 11529,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": "Hep assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-20"
+        },
+        "serviceID": 11528,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Consultation."
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-20"
+        },
+        "serviceID": 11527,
+        "serviceType": 175,
+        "status": "FINAL",
+        "summaryLine": "APD - f"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-14"
+        },
+        "serviceID": 11526,
+        "serviceType": 69,
+        "status": "FINAL",
+        "summaryLine": "Cystic fibrosis, Ischaemic heart disease, Retin..."
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-13T15:17+11"
+        },
+        "serviceID": 11524,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "ss"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-13"
+        },
+        "serviceID": 11523,
+        "serviceType": 48,
+        "status": "FINAL",
+        "summaryLine": "d"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-10T15:36+11"
+        },
+        "serviceID": 11522,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 42
+        },
+        "serviceDate": {
+            "iso": "2020-01-10T10:02+11"
+        },
+        "serviceID": 11525,
+        "serviceType": 72,
+        "status": "FINAL",
+        "summaryLine": "Post BD FEV1: 0.96, FVC: 1.62"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-10T08:42+11"
+        },
+        "serviceID": 11517,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-09T16:04+11"
+        },
+        "serviceID": 11510,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "01234567890123456789012345678901234567890123456..."
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-09T14:50+11"
+        },
+        "serviceID": 11507,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "d"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-09T09:02+11"
+        },
+        "serviceID": 11503,
+        "serviceType": 118,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-09T09:00+11"
+        },
+        "serviceID": 11502,
+        "serviceType": 118,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-09"
+        },
+        "serviceID": 11516,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-09"
+        },
+        "serviceID": 11515,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-09"
+        },
+        "serviceID": 11514,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-09"
+        },
+        "serviceID": 11513,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-09"
+        },
+        "serviceID": 11512,
+        "serviceType": 175,
+        "status": "DRAFT",
+        "summaryLine": "APD - a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-01-09"
+        },
+        "serviceID": 11511,
+        "serviceType": 58,
+        "status": "FINAL",
+        "summaryLine": "AV fistula, Left Forearm, Duration - 60 mins"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-09"
+        },
+        "serviceID": 11505,
+        "serviceType": 177,
+        "status": "FINAL",
+        "summaryLine": "d"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-09"
+        },
+        "serviceID": 11504,
+        "serviceType": 175,
+        "status": "FINAL",
+        "summaryLine": "APD - s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T16:13+11"
+        },
+        "serviceID": 11496,
+        "serviceType": 118,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T16:12+11"
+        },
+        "serviceID": 11495,
+        "serviceType": 118,
+        "status": "FINAL",
+        "summaryLine": "Start"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T13:52+11"
+        },
+        "serviceID": 11486,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "bmi"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T13:51+11"
+        },
+        "serviceID": 11485,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "bmi"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T13:51+11"
+        },
+        "serviceID": 11484,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "r"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T13:45+11"
+        },
+        "serviceID": 11480,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "Update drug alert"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T13:44+11"
+        },
+        "serviceID": 11479,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "updated BMI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T13:25+11"
+        },
+        "serviceID": 11476,
+        "serviceType": 72,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T12:02+11"
+        },
+        "serviceID": 11474,
+        "serviceType": 185,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-08T09:47+11"
+        },
+        "serviceID": 11470,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "remove alerts"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11501,
+        "serviceType": 178,
+        "status": "FINAL",
+        "summaryLine": "Trainee: Carer. Purpose:"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11500,
+        "serviceType": 178,
+        "status": "FINAL",
+        "summaryLine": "Trainee: Carer. Purpose:"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11498,
+        "serviceType": 136,
+        "status": "FINAL",
+        "summaryLine": "Transplant date: 08/01/2020"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11494,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "blood flow"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11478,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": "Sweat Test"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11477,
+        "serviceType": 182,
+        "status": "FINAL",
+        "summaryLine": "Updated Genotype"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11475,
+        "serviceType": 186,
+        "status": "FINAL",
+        "summaryLine": "Bronchoalveolar lavage"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11468,
+        "serviceType": 58,
+        "status": "FINAL",
+        "summaryLine": "Removed: Cuffed vascular catheter, Left Upper Arm, Duration - 10 mins"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11467,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "updated hours per session"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11466,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "updated sessions"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-08"
+        },
+        "serviceID": 11465,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "summary"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 47
+        },
+        "serviceDate": {
+            "iso": "2020-01-07T17:08+11"
+        },
+        "serviceID": 11463,
+        "serviceType": 72,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 37,
+            "userID": 73
+        },
+        "serviceDate": {
+            "iso": "2019-11-13T15:52+11"
+        },
+        "serviceID": 2516,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "test"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-11-12T16:25+11"
+        },
+        "serviceID": 2515,
+        "serviceType": 185,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-11-12T16:20+11"
+        },
+        "serviceID": 2514,
+        "serviceType": 118,
+        "status": "FINAL",
+        "summaryLine": "summary treatent"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-11-12T16:18+11"
+        },
+        "serviceID": 2513,
+        "serviceType": 185,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-10-16T14:57+11"
+        },
+        "serviceID": 2510,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "first"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-20T10:52+10"
+        },
+        "serviceID": 257,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "FormCalculation"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-18T12:30+10"
+        },
+        "serviceID": 256,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T12:46+10"
+        },
+        "serviceID": 254,
+        "serviceType": 204,
+        "status": "DRAFT",
+        "summaryLine": "Answered by respondent; Next call: 26/09/2019"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T12:00+10"
+        },
+        "serviceID": 249,
+        "serviceType": 100,
+        "status": "FINAL",
+        "summaryLine": "Anthrax vaccine injection solution 0.5mL ampoule"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T11:56+10"
+        },
+        "serviceID": 248,
+        "serviceType": 94,
+        "status": "FINAL",
+        "summaryLine": "Prepared by Mr Peter Flower @ St Vincent's Hospital, Darlinghurst."
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T11:52+10"
+        },
+        "serviceID": 247,
+        "serviceType": 72,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T11:51+10"
+        },
+        "serviceID": 246,
+        "serviceType": 72,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T11:39+10"
+        },
+        "serviceID": 245,
+        "serviceType": 7,
+        "status": "FINAL",
+        "summaryLine": "Discharged, 1"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T11:34+10"
+        },
+        "serviceID": 244,
+        "serviceType": 2,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T11:31+10"
+        },
+        "serviceID": 243,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "WebUI Consultation Notes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T11:30+10"
+        },
+        "serviceID": 242,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Service.ConsultationNote"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T11:26+10"
+        },
+        "serviceID": 241,
+        "serviceType": 21,
+        "status": "FINAL",
+        "summaryLine": "WebUI Home Dialysis Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T10:55+10"
+        },
+        "serviceID": 237,
+        "serviceType": 203,
+        "status": "FINAL",
+        "summaryLine": "WebUI - Renal supportive Care, [Supportive Care/Conservative]"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T09:41+10"
+        },
+        "serviceID": 227,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": "Start: 01/09/2019; Funded; Candidate"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T09:32+10"
+        },
+        "serviceID": 226,
+        "serviceType": 190,
+        "status": "DRAFT",
+        "summaryLine": "Reason: Benign tumour, Approach: Laparoscopic Veress"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17T09:08+10"
+        },
+        "serviceID": 225,
+        "serviceType": 188,
+        "status": "DRAFT",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 253,
+        "serviceType": 134,
+        "status": "FINAL",
+        "summaryLine": "Service.OccupationalTherapyNotes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 252,
+        "serviceType": 133,
+        "status": "FINAL",
+        "summaryLine": "Service.OccupationalTherapyAssessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 251,
+        "serviceType": 132,
+        "status": "FINAL",
+        "summaryLine": "Service.DietitianNotes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 250,
+        "serviceType": 130,
+        "status": "FINAL",
+        "summaryLine": "Service.SocialWorkerAssessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 240,
+        "serviceType": 21,
+        "status": "FINAL",
+        "summaryLine": "Home Dialysis Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 239,
+        "serviceType": 20,
+        "status": "FINAL",
+        "summaryLine": "Renal Occupation Therapist Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 238,
+        "serviceType": 205,
+        "status": "DRAFT",
+        "summaryLine": "Decision: PW Periodic Review"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 236,
+        "serviceType": 203,
+        "status": "FINAL",
+        "summaryLine": "Renal Supportive Care, [Advance care planning]"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 235,
+        "serviceType": 202,
+        "status": "FINAL",
+        "summaryLine": "CKD Care Plan"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 234,
+        "serviceType": 201,
+        "status": "FINAL",
+        "summaryLine": "Risk: Moderate; Patient Wtach Outreach Risk Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 233,
+        "serviceType": 200,
+        "status": "FINAL",
+        "summaryLine": "Patient Watch Care Plan"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 232,
+        "serviceType": 199,
+        "status": "FINAL",
+        "summaryLine": "Patient Watch Profile"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 231,
+        "serviceType": 198,
+        "status": "FINAL",
+        "summaryLine": "Patient Watch ASsessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 230,
+        "serviceType": 194,
+        "status": "FINAL",
+        "summaryLine": "Reason for follow-up: Routine or scheduled"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 229,
+        "serviceType": 193,
+        "status": "FINAL",
+        "summaryLine": "Open; High; P"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 228,
+        "serviceType": 192,
+        "status": "FINAL",
+        "summaryLine": "Date of diagnosis: 17/09/2019, Time since surgery:"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-17"
+        },
+        "serviceID": 224,
+        "serviceType": 188,
+        "status": "DRAFT",
+        "summaryLine": "Bronchoalveolar lavage"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:57+10"
+        },
+        "serviceID": 222,
+        "serviceType": 187,
+        "status": "DRAFT",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:53+10"
+        },
+        "serviceID": 221,
+        "serviceType": 187,
+        "status": "DRAFT",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:46+10"
+        },
+        "serviceID": 219,
+        "serviceType": 186,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:43+10"
+        },
+        "serviceID": 218,
+        "serviceType": 186,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:32+10"
+        },
+        "serviceID": 216,
+        "serviceType": 185,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:30+10"
+        },
+        "serviceID": 215,
+        "serviceType": 185,
+        "status": "FINAL",
+        "summaryLine": "New patient at this centre"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:29+10"
+        },
+        "serviceID": 214,
+        "serviceType": 184,
+        "status": "FINAL",
+        "summaryLine": "Transplant type: Heart/lung, Acceptance status: Accepted but on deferred list"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:21+10"
+        },
+        "serviceID": 212,
+        "serviceType": 183,
+        "status": "FINAL",
+        "summaryLine": "WEBUI - CF Examination"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:17+10"
+        },
+        "serviceID": 211,
+        "serviceType": 183,
+        "status": "FINAL",
+        "summaryLine": "CF Examination"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:15+10"
+        },
+        "serviceID": 210,
+        "serviceType": 182,
+        "status": "FINAL",
+        "summaryLine": "WebUI - CF Diagnosis"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T16:10+10"
+        },
+        "serviceID": 208,
+        "serviceType": 180,
+        "status": "FINAL",
+        "summaryLine": "WebUI Peritontis"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T15:51+10"
+        },
+        "serviceID": 205,
+        "serviceType": 178,
+        "status": "FINAL",
+        "summaryLine": "Trainee: Carer. Purpose: Case conference"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T15:44+10"
+        },
+        "serviceID": 203,
+        "serviceType": 176,
+        "status": "FINAL",
+        "summaryLine": "WebUI - Peritoneal Dialysis Complication"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T15:36+10"
+        },
+        "serviceID": 201,
+        "serviceType": 172,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T15:26+10"
+        },
+        "serviceID": 199,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "Summary"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T15:22+10"
+        },
+        "serviceID": 198,
+        "serviceType": 162,
+        "status": "FINAL",
+        "summaryLine": "Immunology.Anoscopy"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T15:18+10"
+        },
+        "serviceID": 197,
+        "serviceType": 153,
+        "status": "FINAL",
+        "summaryLine": "Transplant status: Inactive. Transplant hospital: St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T14:55+10"
+        },
+        "serviceID": 190,
+        "serviceType": 148,
+        "status": "FINAL",
+        "summaryLine": "WebUI - Gynaecological Cancer Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T14:45+10"
+        },
+        "serviceID": 188,
+        "serviceType": 147,
+        "status": "FINAL",
+        "summaryLine": "WebUI Immunology A Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T14:37+10"
+        },
+        "serviceID": 186,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": "WebUI - Infectious Disease Assesment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T14:32+10"
+        },
+        "serviceID": 184,
+        "serviceType": 145,
+        "status": "FINAL",
+        "summaryLine": "WebUI - Advanced liver disease assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T14:15+10"
+        },
+        "serviceID": 180,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": "WebUI - Immunology HepatitisAssessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T13:03+10"
+        },
+        "serviceID": 176,
+        "serviceType": 135,
+        "status": "FINAL",
+        "summaryLine": "WebUI Immunology Neuropsychology"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T12:59+10"
+        },
+        "serviceID": 175,
+        "serviceType": 135,
+        "status": "FINAL",
+        "summaryLine": "Neuropsychology Notes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T12:46+10"
+        },
+        "serviceID": 174,
+        "serviceType": 131,
+        "status": "FINAL",
+        "summaryLine": "WebUI Immunology Social Worker Notes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T12:44+10"
+        },
+        "serviceID": 173,
+        "serviceType": 131,
+        "status": "FINAL",
+        "summaryLine": "Social Worker Notes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T12:40+10"
+        },
+        "serviceID": 172,
+        "serviceType": 123,
+        "status": "FINAL",
+        "summaryLine": "WebUI PEP Care Plan"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T12:29+10"
+        },
+        "serviceID": 170,
+        "serviceType": 122,
+        "status": "FINAL",
+        "summaryLine": "WebUI PEP Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T12:27+10"
+        },
+        "serviceID": 169,
+        "serviceType": 122,
+        "status": "FINAL",
+        "summaryLine": "Immunology PEPAssessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:55+10"
+        },
+        "serviceID": 168,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Acute care. WebUI Immunology HIV Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PODIATRY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:48+10"
+        },
+        "serviceID": 166,
+        "serviceType": 120,
+        "status": "FINAL",
+        "summaryLine": "WebUI Foot Health Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:40+10"
+        },
+        "serviceID": 164,
+        "serviceType": 118,
+        "status": "FINAL",
+        "summaryLine": "WebUI - Renal Treatment Statusa"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:39+10"
+        },
+        "serviceID": 163,
+        "serviceType": 118,
+        "status": "FINAL",
+        "summaryLine": "Renal TreatmentStatus"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:36+10"
+        },
+        "serviceID": 162,
+        "serviceType": 116,
+        "status": "FINAL",
+        "summaryLine": "WebUI - Sarcoma Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:29+10"
+        },
+        "serviceID": 160,
+        "serviceType": 103,
+        "status": "FINAL",
+        "summaryLine": "Web UI Renal Letter"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:27+10"
+        },
+        "serviceID": 158,
+        "serviceType": 101,
+        "status": "FINAL",
+        "summaryLine": "General care of patient"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:25+10"
+        },
+        "serviceID": 157,
+        "serviceType": 100,
+        "status": "FINAL",
+        "summaryLine": "Adsorbed diphtheria+tetanus vaccine injection suspension 0.5mL prefilled syringe"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T11:19+10"
+        },
+        "serviceID": 156,
+        "serviceType": 32,
+        "status": "FINAL",
+        "summaryLine": "Removed: null, Left Upper Arm"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T09:31+10"
+        },
+        "serviceID": 153,
+        "serviceType": 79,
+        "status": "FINAL",
+        "summaryLine": "CF Gastroenterologist Note"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T09:28+10"
+        },
+        "serviceID": 152,
+        "serviceType": 79,
+        "status": "FINAL",
+        "summaryLine": "Cystic Fibrosis Gastroenterologist"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T09:24+10"
+        },
+        "serviceID": 151,
+        "serviceType": 78,
+        "status": "FINAL",
+        "summaryLine": "WebUI Cystic Fibrosis Social Worker Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T09:13+10"
+        },
+        "serviceID": 149,
+        "serviceType": 76,
+        "status": "FINAL",
+        "summaryLine": "WebUI Cystic Fibrosis Psychologist Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T09:07+10"
+        },
+        "serviceID": 147,
+        "serviceType": 75,
+        "status": "FINAL",
+        "summaryLine": "WebUI CF Paediatric Mental Health Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16T09:02+10"
+        },
+        "serviceID": 145,
+        "serviceType": 69,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 223,
+        "serviceType": 188,
+        "status": "FINAL",
+        "summaryLine": "Bronchoalveolar lavage"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 220,
+        "serviceType": 187,
+        "status": "FINAL",
+        "summaryLine": "CF Discharge Care plan"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 217,
+        "serviceType": 186,
+        "status": "FINAL",
+        "summaryLine": "Bronchoalveolar lavage"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 213,
+        "serviceType": 184,
+        "status": "FINAL",
+        "summaryLine": "Transplant type: Heart/lung, Acceptance status: Accepted but on deferred list"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 209,
+        "serviceType": 182,
+        "status": "FINAL",
+        "summaryLine": "CysticFibrosis Diagnosis"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 207,
+        "serviceType": 180,
+        "status": "FINAL",
+        "summaryLine": "Peritonitis"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 206,
+        "serviceType": 179,
+        "status": "FINAL",
+        "summaryLine": "Home Peritoneal Dialysis Review"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 204,
+        "serviceType": 178,
+        "status": "FINAL",
+        "summaryLine": "Trainee: Carer. Purpose: Acute care"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 202,
+        "serviceType": 176,
+        "status": "FINAL",
+        "summaryLine": "Peritoneal Dialysis Complication"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 200,
+        "serviceType": 172,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 196,
+        "serviceType": 153,
+        "status": "FINAL",
+        "summaryLine": "Transplant status: Unclassified. Transplant hospital: St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 195,
+        "serviceType": 151,
+        "status": "FINAL",
+        "summaryLine": ", Kidney to donate"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 193,
+        "serviceType": 150,
+        "status": "FINAL",
+        "summaryLine": "Immunology A Care Plan"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 191,
+        "serviceType": 149,
+        "status": "FINAL",
+        "summaryLine": "Infectious Diseases Care Plan"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 189,
+        "serviceType": 148,
+        "status": "FINAL",
+        "summaryLine": "Gynaecological Cancer Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 187,
+        "serviceType": 147,
+        "status": "FINAL",
+        "summaryLine": "Immunology A Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 185,
+        "serviceType": 146,
+        "status": "FINAL",
+        "summaryLine": "Infectious Disease Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 183,
+        "serviceType": 145,
+        "status": "FINAL",
+        "summaryLine": "Advanced Liver Disease"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 181,
+        "serviceType": 143,
+        "status": "FINAL",
+        "summaryLine": "hepatitis C Care Plan"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 179,
+        "serviceType": 142,
+        "status": "FINAL",
+        "summaryLine": "Hepatitis Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 177,
+        "serviceType": 136,
+        "status": "FINAL",
+        "summaryLine": "Transplant date: 01/09/2019"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 171,
+        "serviceType": 123,
+        "status": "FINAL",
+        "summaryLine": "Immunology PEP Care Plans"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "IMMUNOLOGY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 167,
+        "serviceType": 121,
+        "status": "FINAL",
+        "summaryLine": "Discharge follow-up. HIV Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PODIATRY",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 165,
+        "serviceType": 120,
+        "status": "FINAL",
+        "summaryLine": "Podiatry Foot Health Assesment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 161,
+        "serviceType": 116,
+        "status": "FINAL",
+        "summaryLine": "Sarcoma Assessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 159,
+        "serviceType": 103,
+        "status": "FINAL",
+        "summaryLine": "Renal Letter1"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 155,
+        "serviceType": 32,
+        "status": "FINAL",
+        "summaryLine": "Removed: AV fistula, Left Forearm"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "DIABETES",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 154,
+        "serviceType": 81,
+        "status": "FINAL",
+        "summaryLine": "Type Of Diabetes: Diabetes mellitus. Diabetes Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 150,
+        "serviceType": 78,
+        "status": "FINAL",
+        "summaryLine": "CF Social Worker Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 148,
+        "serviceType": 76,
+        "status": "FINAL",
+        "summaryLine": "CF Phsychologist Assessment"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 146,
+        "serviceType": 75,
+        "status": "FINAL",
+        "summaryLine": "CF Paed Mental Health Assess"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-16"
+        },
+        "serviceID": 144,
+        "serviceType": 69,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T16:45+10"
+        },
+        "serviceID": 143,
+        "serviceType": 66,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T16:31+10"
+        },
+        "serviceID": 139,
+        "serviceType": 58,
+        "status": "DRAFT",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T16:22+10"
+        },
+        "serviceID": 137,
+        "serviceType": 57,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T16:05+10"
+        },
+        "serviceID": 134,
+        "serviceType": 46,
+        "status": "FINAL",
+        "summaryLine": "WebUI CysticFibrosis.OccupationalTherapistNotes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T16:03+10"
+        },
+        "serviceID": 133,
+        "serviceType": 46,
+        "status": "FINAL",
+        "summaryLine": "CysticFibrosis.OccupationalTherapistNotes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T16:02+10"
+        },
+        "serviceID": 132,
+        "serviceType": 45,
+        "status": "FINAL",
+        "summaryLine": "CysticFibrosis.PsychologistNotes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:59+10"
+        },
+        "serviceID": 130,
+        "serviceType": 45,
+        "status": "FINAL",
+        "summaryLine": "CysticFibrosis.PsychologistNotes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:57+10"
+        },
+        "serviceID": 129,
+        "serviceType": 44,
+        "status": "FINAL",
+        "summaryLine": "CF Phychiatrist Notes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:52+10"
+        },
+        "serviceID": 128,
+        "serviceType": 44,
+        "status": "FINAL",
+        "summaryLine": "WEBUI CF Psychiatrist Notes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:46+10"
+        },
+        "serviceID": 127,
+        "serviceType": 44,
+        "status": "FINAL",
+        "summaryLine": "CF PhychiatristNote"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:40+10"
+        },
+        "serviceID": 126,
+        "serviceType": 43,
+        "status": "FINAL",
+        "summaryLine": "a"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:39+10"
+        },
+        "serviceID": 125,
+        "serviceType": 43,
+        "status": "FINAL",
+        "summaryLine": "CF Physiotherapist"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:36+10"
+        },
+        "serviceID": 124,
+        "serviceType": 42,
+        "status": "FINAL",
+        "summaryLine": "WebUI CF Social Worker Notes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:30+10"
+        },
+        "serviceID": 123,
+        "serviceType": 42,
+        "status": "FINAL",
+        "summaryLine": "CysticFibrosis SocialWorkerNotes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:19+10"
+        },
+        "serviceID": 122,
+        "serviceType": 41,
+        "status": "FINAL",
+        "summaryLine": "WEBUI Dietitian Note CysticFibrosis1"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:10+10"
+        },
+        "serviceID": 121,
+        "serviceType": 41,
+        "status": "FINAL",
+        "summaryLine": "CysticFibrosis.Dietitian Notes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:02+10"
+        },
+        "serviceID": 120,
+        "serviceType": 38,
+        "status": "FINAL",
+        "summaryLine": "CysticFibrosis Nurse Notes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T15:00+10"
+        },
+        "serviceID": 119,
+        "serviceType": 38,
+        "status": "FINAL",
+        "summaryLine": "CysticFibrosis Nurse Notes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T14:59+10"
+        },
+        "serviceID": 118,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "WEBUI Respiratory Physicain note"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T14:53+10"
+        },
+        "serviceID": 117,
+        "serviceType": 37,
+        "status": "FINAL",
+        "summaryLine": "Respiratory Physician Note1"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T14:21+10"
+        },
+        "serviceID": 115,
+        "serviceType": 32,
+        "status": "FINAL",
+        "summaryLine": "Removed: null, Left Upper Arm"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T13:50+10"
+        },
+        "serviceID": 112,
+        "serviceType": 29,
+        "status": "FINAL",
+        "summaryLine": "WEBUI Haemodialysis Review"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T13:38+10"
+        },
+        "serviceID": 110,
+        "serviceType": 27,
+        "status": "FINAL",
+        "summaryLine": "Renal Occupational Therapist Notes WEBUI"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T13:35+10"
+        },
+        "serviceID": 109,
+        "serviceType": 27,
+        "status": "FINAL",
+        "summaryLine": "Renal Occupational Therapist Notes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T13:33+10"
+        },
+        "serviceID": 108,
+        "serviceType": 25,
+        "status": "FINAL",
+        "summaryLine": "Some summary for Renal Social worker notes"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T13:27+10"
+        },
+        "serviceID": 107,
+        "serviceType": 25,
+        "status": "FINAL",
+        "summaryLine": "Renal Social Worker Notes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T13:06+10"
+        },
+        "serviceID": 102,
+        "serviceType": 20,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T12:01+10"
+        },
+        "serviceID": 97,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T09:12+10"
+        },
+        "serviceID": 92,
+        "serviceType": 31,
+        "status": "FINAL",
+        "summaryLine": "Referring hospital St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13T08:36+10"
+        },
+        "serviceID": 91,
+        "serviceType": 31,
+        "status": "FINAL",
+        "summaryLine": "Referring hospital St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 142,
+        "serviceType": 66,
+        "status": "FINAL",
+        "summaryLine": "PhysioTherapistAssessment"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 141,
+        "serviceType": 58,
+        "status": "FINAL",
+        "summaryLine": "Removed: null, Left Upper Arm, Duration - 60 mins"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 140,
+        "serviceType": 58,
+        "status": "FINAL",
+        "summaryLine": "Goretex graft, Left Upper Arm, Duration - 60 mins"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 138,
+        "serviceType": 58,
+        "status": "FINAL",
+        "summaryLine": "Removed: null, Left Upper Arm, Duration - 71 mins"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 136,
+        "serviceType": 57,
+        "status": "FINAL",
+        "summaryLine": "1"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 135,
+        "serviceType": 48,
+        "status": "FINAL",
+        "summaryLine": "CF Action Plana"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 131,
+        "serviceType": 76,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CYSTIC_FIBROSIS",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 116,
+        "serviceType": 36,
+        "status": "FINAL",
+        "summaryLine": "CF Letter 2"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 114,
+        "serviceType": 32,
+        "status": "FINAL",
+        "summaryLine": "Removed: Cuffed vascular catheter, Left Upper Arm"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 111,
+        "serviceType": 29,
+        "status": "FINAL",
+        "summaryLine": "Haemodialysis Review"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 106,
+        "serviceType": 24,
+        "status": "FINAL",
+        "summaryLine": "renal diet care plan"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 105,
+        "serviceType": 23,
+        "status": "FINAL",
+        "summaryLine": "Summary"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 104,
+        "serviceType": 23,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 103,
+        "serviceType": 20,
+        "status": "FINAL",
+        "summaryLine": "sssdsadasdasdas"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 101,
+        "serviceType": 20,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 100,
+        "serviceType": 20,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 99,
+        "serviceType": 20,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 96,
+        "serviceType": 19,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 95,
+        "serviceType": 26,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 94,
+        "serviceType": 26,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 14
+        },
+        "serviceDate": {
+            "iso": "2019-09-13"
+        },
+        "serviceID": 93,
+        "serviceType": 26,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T15:50+10"
+        },
+        "serviceID": 90,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T15:42+10"
+        },
+        "serviceID": 89,
+        "serviceType": 153,
+        "status": "FINAL",
+        "summaryLine": "Transplant status: Active. Transplant hospital: St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T15:27+10"
+        },
+        "serviceID": 88,
+        "serviceType": 194,
+        "status": "FINAL",
+        "summaryLine": "Reason for follow-up: Routine or scheduled"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T15:26+10"
+        },
+        "serviceID": 87,
+        "serviceType": 192,
+        "status": "FINAL",
+        "summaryLine": "Date of diagnosis: 12/09/2019, Time since surgery:"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T15:25+10"
+        },
+        "serviceID": 86,
+        "serviceType": 190,
+        "status": "DRAFT",
+        "summaryLine": "Reason: Benign tumour, Approach: Laparoscopic Hassan"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T15:18+10"
+        },
+        "serviceID": 85,
+        "serviceType": 31,
+        "status": "FINAL",
+        "summaryLine": "Referring hospital St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T13:15+10"
+        },
+        "serviceID": 84,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T13:10+10"
+        },
+        "serviceID": 83,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "ss"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-12T13:08+10"
+        },
+        "serviceID": 82,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T16:18+10"
+        },
+        "serviceID": 81,
+        "serviceType": 31,
+        "status": "FINAL",
+        "summaryLine": "Referring hospital St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T16:15+10"
+        },
+        "serviceID": 80,
+        "serviceType": 31,
+        "status": "FINAL",
+        "summaryLine": "Referring hospital St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T14:37+10"
+        },
+        "serviceID": 79,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T14:33+10"
+        },
+        "serviceID": 78,
+        "serviceType": 205,
+        "status": "DRAFT",
+        "summaryLine": "Decision: d"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T14:29+10"
+        },
+        "serviceID": 77,
+        "serviceType": 202,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T14:28+10"
+        },
+        "serviceID": 76,
+        "serviceType": 201,
+        "status": "FINAL",
+        "summaryLine": "Risk: Extreme; s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T14:28+10"
+        },
+        "serviceID": 75,
+        "serviceType": 200,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T14:27+10"
+        },
+        "serviceID": 74,
+        "serviceType": 199,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T14:26+10"
+        },
+        "serviceID": 73,
+        "serviceType": 198,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T14:20+10"
+        },
+        "serviceID": 72,
+        "serviceType": 193,
+        "status": "FINAL",
+        "summaryLine": "Open; High; p"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T13:30+10"
+        },
+        "serviceID": 71,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "back to normal"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-11T13:28+10"
+        },
+        "serviceID": 70,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T16:09+10"
+        },
+        "serviceID": 69,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T16:09+10"
+        },
+        "serviceID": 68,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T15:57+10"
+        },
+        "serviceID": 67,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T13:24+10"
+        },
+        "serviceID": 66,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:46+10"
+        },
+        "serviceID": 64,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "sss"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:46+10"
+        },
+        "serviceID": 63,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "ss"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:45+10"
+        },
+        "serviceID": 62,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:42+10"
+        },
+        "serviceID": 61,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "ss"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:42+10"
+        },
+        "serviceID": 60,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:36+10"
+        },
+        "serviceID": 59,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "ss"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:36+10"
+        },
+        "serviceID": 58,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:33+10"
+        },
+        "serviceID": 57,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:32+10"
+        },
+        "serviceID": 56,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:30+10"
+        },
+        "serviceID": 55,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:30+10"
+        },
+        "serviceID": 54,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:12+10"
+        },
+        "serviceID": 53,
+        "serviceType": 153,
+        "status": "FINAL",
+        "summaryLine": "Transplant status: Active. Transplant hospital: St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:05+10"
+        },
+        "serviceID": 52,
+        "serviceType": 201,
+        "status": "FINAL",
+        "summaryLine": "Risk: Extreme; s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T11:00+10"
+        },
+        "serviceID": 51,
+        "serviceType": 200,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T10:36+10"
+        },
+        "serviceID": 50,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T10:00+10"
+        },
+        "serviceID": 49,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T09:57+10"
+        },
+        "serviceID": 48,
+        "serviceType": 205,
+        "status": "DRAFT",
+        "summaryLine": "Decision: d"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T09:56+10"
+        },
+        "serviceID": 47,
+        "serviceType": 205,
+        "status": "DRAFT",
+        "summaryLine": "Decision: d"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T09:46+10"
+        },
+        "serviceID": 46,
+        "serviceType": 201,
+        "status": "FINAL",
+        "summaryLine": "Risk: Extreme; s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T09:41+10"
+        },
+        "serviceID": 45,
+        "serviceType": 200,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T09:39+10"
+        },
+        "serviceID": 44,
+        "serviceType": 199,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-10T09:38+10"
+        },
+        "serviceID": 43,
+        "serviceType": 199,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-09T16:33+10"
+        },
+        "serviceID": 42,
+        "serviceType": 153,
+        "status": "FINAL",
+        "summaryLine": "Transplant status: Inactive. Transplant hospital: St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-09T12:04+10"
+        },
+        "serviceID": 41,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-09T11:42+10"
+        },
+        "serviceID": 40,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "sss"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-09T11:41+10"
+        },
+        "serviceID": 39,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-09T11:40+10"
+        },
+        "serviceID": 38,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-09T11:28+10"
+        },
+        "serviceID": 37,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-04T12:30+10"
+        },
+        "serviceID": 255,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-09-01T10:34+10"
+        },
+        "serviceID": 65,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Test propagation"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "serviceDate": {
+            "iso": "2019-09-01"
+        },
+        "serviceID": 113,
+        "serviceType": 179,
+        "status": "FINAL",
+        "summaryLine": "HomePDNotes"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-09T11:13+10"
+        },
+        "serviceID": 34,
+        "serviceType": 190,
+        "status": "DRAFT",
+        "summaryLine": "Reason: , Approach:"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-09T11:10+10"
+        },
+        "serviceID": 32,
+        "serviceType": 190,
+        "status": "DRAFT",
+        "summaryLine": "Reason: , Approach:"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-09"
+        },
+        "serviceID": 35,
+        "serviceType": 153,
+        "status": "FINAL",
+        "summaryLine": "Transplant status: Active. Transplant hospital: St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-09"
+        },
+        "serviceID": 33,
+        "serviceType": 195,
+        "status": "FINAL",
+        "summaryLine": "Days post-op: 0"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02T14:13+10"
+        },
+        "serviceID": 23,
+        "serviceType": 191,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 31,
+        "serviceType": 205,
+        "status": "FINAL",
+        "summaryLine": "Decision: PeriodicREview"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 30,
+        "serviceType": 203,
+        "status": "FINAL",
+        "summaryLine": "SupportiveCare, Symptom management"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 29,
+        "serviceType": 202,
+        "status": "FINAL",
+        "summaryLine": "Renal SupportiveCare"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 28,
+        "serviceType": 201,
+        "status": "FINAL",
+        "summaryLine": "Risk: Low; Patient Watch Outreach Risk Assessment 2222 asdas"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 27,
+        "serviceType": 200,
+        "status": "FINAL",
+        "summaryLine": "test"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 26,
+        "serviceType": 199,
+        "status": "FINAL",
+        "summaryLine": "test"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 25,
+        "serviceType": 198,
+        "status": "FINAL",
+        "summaryLine": "test"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 24,
+        "serviceType": 193,
+        "status": "FINAL",
+        "summaryLine": "Open; Immediate; problem"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 22,
+        "serviceType": 153,
+        "status": "FINAL",
+        "summaryLine": "Transplant status: Unclassified. Transplant hospital: St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 21,
+        "serviceType": 33,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-02"
+        },
+        "serviceID": 20,
+        "serviceType": 31,
+        "status": "FINAL",
+        "summaryLine": "Referring hospital St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-08-01"
+        },
+        "serviceID": 36,
+        "serviceType": 170,
+        "status": "DRAFT",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-26T16:50+10"
+        },
+        "serviceID": 18,
+        "serviceType": 190,
+        "status": "FINAL",
+        "summaryLine": "Reason: Benign tumour, Approach: Laparoscopic direct"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "PATIENT_WATCH",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-26"
+        },
+        "serviceID": 19,
+        "serviceType": 200,
+        "status": "FINAL",
+        "summaryLine": "patient watch care plan"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-26"
+        },
+        "serviceID": 17,
+        "serviceType": 192,
+        "status": "FINAL",
+        "summaryLine": "Date of diagnosis: 26/07/2019, Time since surgery: 0"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-26"
+        },
+        "serviceID": 16,
+        "serviceType": 194,
+        "status": "FINAL",
+        "summaryLine": "Reason for follow-up: Symptomatic"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-25T15:26+10"
+        },
+        "serviceID": 15,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "6363464"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-25T15:25+10"
+        },
+        "serviceID": 14,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "sdfas"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-25"
+        },
+        "serviceID": 13,
+        "serviceType": 194,
+        "status": "FINAL",
+        "summaryLine": "Reason for follow-up: Routine or scheduled"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-24T15:19+10"
+        },
+        "serviceID": 11,
+        "serviceType": 72,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-24T15:17+10"
+        },
+        "serviceID": 10,
+        "serviceType": 2,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-24"
+        },
+        "serviceID": 9,
+        "serviceType": 148,
+        "status": "FINAL",
+        "summaryLine": "Gyn Cancer assess 2"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-24"
+        },
+        "serviceID": 8,
+        "serviceType": 31,
+        "status": "FINAL",
+        "summaryLine": "Referring hospital St Vincent's Hospital, Darlinghurst"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "RENAL_DISEASE",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-24"
+        },
+        "serviceID": 7,
+        "serviceType": 32,
+        "status": "FINAL",
+        "summaryLine": "Goretex graft, Left Upper Arm"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-23T10:04+10"
+        },
+        "serviceID": 5,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Five"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-23T10:03+10"
+        },
+        "serviceID": 4,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Four"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-23T10:02+10"
+        },
+        "serviceID": 3,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Threeee"
+    },
+    {
+        "owningGroupID": 26,
+        "patientID": 3,
+        "program": "CANCER",
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-23"
+        },
+        "serviceID": 6,
+        "serviceType": 148,
+        "status": "FINAL",
+        "summaryLine": "s"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-22T10:48+10"
+        },
+        "serviceID": 1,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "Helloiooooo"
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-11T12:22+10"
+        },
+        "serviceID": 12,
+        "serviceType": 3,
+        "status": "FINAL",
+        "summaryLine": ""
+    },
+    {
+        "confidentiality": "Normal",
+        "owningGroupID": 26,
+        "patientID": 3,
+        "providerID": {
+            "groupID": 26,
+            "userID": 50
+        },
+        "serviceDate": {
+            "iso": "2019-07-01T20:50+10"
+        },
+        "serviceID": 2,
+        "serviceType": 1,
+        "status": "FINAL",
+        "summaryLine": "This is number 33 test"
+    }
+]

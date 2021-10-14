@@ -1,0 +1,285 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "demographics.name",
+              "label": "Name",
+              "type": "FormSpecific"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "multiple": true,
+              "options": [],
+              "size": 25,
+              "id": "demographics.aliases",
+              "label": "Also known as",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "enumType": "Sex",
+              "id": "demographics.sex",
+              "label": "Sex",
+              "layout": {
+                "newLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Enum"
+            }
+          },
+          {
+            "field": {
+              "id": "demographics.dateOfBirth",
+              "label": "Date of birth",
+              "type": "FormSpecific"
+            }
+          },
+          {
+            "field": {
+              "id": "demographics.address",
+              "label": "Address",
+              "type": "FormSpecific"
+            }
+          },
+          {
+            "field": {
+              "id": "demographics.contactDetails",
+              "label": "Phone",
+              "layout": {
+                "newLine": true
+              },
+              "type": "FormSpecific"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "demographics.contactDetails.email",
+              "label": "Email",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "enumType": "ATSI",
+              "id": "demographics.atsi",
+              "label": "Aboriginal/TSI",
+              "type": "Enum"
+            }
+          },
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Arabic",
+                "Chinese",
+                "English",
+                "French",
+                "German",
+                "Hindi/Urdu",
+                "Japanese",
+                "Portuguese",
+                "Russian",
+                "Spanish"
+              ],
+              "size": 40,
+              "id": "demographics.language",
+              "label": "Language",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "id": "demographics.interpreterRequired",
+              "label": "Interpreter req",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "demographics",
+        "layoutShow": true,
+        "title": "Demographics"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 30,
+              "id": "identifiers.MRN",
+              "label": "UR/MRN",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 20,
+              "id": "identifiers.identifiers.Medicare.identifier",
+              "label": "Medicare",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionMonth": true,
+              "id": "identifiers.identifiers.Medicare.expiryDate",
+              "label": "Expiry",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 20,
+              "id": "identifiers.identifiers.Pension.identifier",
+              "label": "Pension no",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 30,
+              "id": "identifiers.identifiers.DVA.identifier",
+              "label": "DVA No",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Gold",
+                "White"
+              ],
+              "size": 20,
+              "id": "identifiers.identifiers.DVA.qualifier",
+              "label": "DVA colour",
+              "type": "Selection"
+            }
+          }
+        ],
+        "id": "identifiers",
+        "layoutShow": true,
+        "title": "Insurers and Identifiers"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "valueSetID": "Patient.MedicalAlert",
+                  "id": "name",
+                  "label": "Medical Alert",
+                  "sortable": true,
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "date",
+                  "label": "Date",
+                  "sortable": true,
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "details",
+                  "label": "Details",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "MedicalAlerts.patientClinical.medicalAlerts",
+              "label": "Medical alerts",
+              "layout": {
+                "labelPosition": "Omit",
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "MedicalAlerts",
+        "layoutShow": true,
+        "title": "Medical Alerts"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "valueSetID": "Patient.Allergy",
+                  "id": "name",
+                  "label": "Allergy",
+                  "sortable": true,
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "date",
+                  "label": "Date",
+                  "sortable": true,
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "details",
+                  "label": "Details",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "Allergies.patientClinical.allergies",
+              "label": "Allergies",
+              "layout": {
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Allergies",
+        "layoutShow": true,
+        "title": "Allergies"
+      }
+    }
+  ],
+  "id": "Patient.Overview.WebUI",
+  "layoutColumns": 2
+}

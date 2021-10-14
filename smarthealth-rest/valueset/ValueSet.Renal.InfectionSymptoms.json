@@ -1,0 +1,38 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": false,
+  "length": 11,
+  "uri": "http://ns.smarthealth.com.au/valueset/Renal.InfectionSymptoms",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.InfectionSymptoms",
+      "value": "Discharge"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.InfectionSymptoms",
+      "value": "Pain"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.InfectionSymptoms",
+      "value": "Proud Flesh"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.InfectionSymptoms",
+      "value": "Rash"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.InfectionSymptoms",
+      "value": "Redness"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.InfectionSymptoms",
+      "value": "Swelling"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Renal.InfectionSymptoms",
+      "value": "Trauma"
+    }
+  ],
+  "valueSetID": "Renal.InfectionSymptoms"
+}

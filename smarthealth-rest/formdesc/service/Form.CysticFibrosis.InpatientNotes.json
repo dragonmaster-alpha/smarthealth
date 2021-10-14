@@ -1,0 +1,484 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "ServiceDate",
+        "label": "Update date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Admission.AdmissionDate",
+              "label": "Admission date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "Admission.DischargeDate",
+              "label": "Discharge date",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cysticfibrosis.ReasonForAdmission",
+              "id": "Admission.ReasonForAdmission",
+              "label": "Reason for admission",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "id": "Provider",
+                  "label": "Clinician",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Member"
+                }
+              ],
+              "id": "Admission.TreatingClinicians",
+              "label": "Treating clinicians",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Admission",
+        "layoutShow": true,
+        "title": "Admission Information"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 40,
+              "id": "PhysiotherapyRegimen.Type",
+              "label": "Type",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 40,
+              "id": "PhysiotherapyRegimen.Frequency",
+              "label": "Frequency",
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 40,
+              "id": "PhysiotherapyRegimen.SessionDuration",
+              "label": "Session duration",
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "PhysiotherapyRegimen",
+        "layoutShow": true,
+        "title": "Physiotherapy Regimen"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "ClinicalMeasures.BestWeight",
+              "label": "Weight",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "ClinicalMeasures.BestWeightDate",
+              "label": "Date",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "ClinicalMeasures.BestWeightService",
+              "label": "",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "maximum": 9.99,
+              "precision": 3,
+              "scale": 2,
+              "id": "ClinicalMeasures.BestFVC",
+              "label": "FVC",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "L"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "ClinicalMeasures.BestFVCDate",
+              "label": "Date",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "ClinicalMeasures.BestFVCService",
+              "label": "",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "maximum": 150,
+              "precision": 3,
+              "scale": 0,
+              "id": "ClinicalMeasures.BestPredictedFVC",
+              "label": "FVC % Predicted",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "ClinicalMeasures.BestPredictedFVCDate",
+              "label": "Date",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "id": "ClinicalMeasures.BestPredictedFVCService",
+              "label": "",
+              "type": "ServiceRecordReference"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precisionMinute": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "maximum": 9.99,
+                  "precision": 3,
+                  "scale": 2,
+                  "id": "PreBDFVC",
+                  "label": "Pre-BD FVC",
+                  "type": "Number",
+                  "units": "L"
+                },
+                {
+                  "maximum": 150,
+                  "precision": 3,
+                  "scale": 0,
+                  "id": "PreBDFVCPredicted",
+                  "label": "Pre-BD FVC % Predicted",
+                  "type": "Number",
+                  "units": "%"
+                },
+                {
+                  "precision": 5,
+                  "scale": 2,
+                  "id": "Weight",
+                  "label": "Weight",
+                  "type": "Number",
+                  "units": "kg"
+                }
+              ],
+              "id": "ClinicalMeasures.ClinicalMeasures",
+              "label": "Clinical Measures",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "ClinicalMeasures",
+        "layoutShow": true,
+        "title": "Clinical Measures"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Dietetics",
+                    "Occupational therapy",
+                    "Physiotherapy",
+                    "Psychology",
+                    "Social work"
+                  ],
+                  "size": 40,
+                  "id": "Intervention",
+                  "label": "Intervention",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "Date",
+                  "label": "Date",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 40,
+                  "id": "Comments",
+                  "label": "Comments",
+                  "type": "Text"
+                }
+              ],
+              "id": "Interventions.Interventions",
+              "label": "Interventions",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "Interventions",
+        "layoutShow": true,
+        "title": "Interventions"
+      }
+    },
+    {
+      "field": {
+        "size": 5000,
+        "id": "Notes",
+        "label": "Notes",
+        "layout": {
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    }
+  ],
+  "id": "CysticFibrosis.InpatientNotes",
+  "layoutColumns": 3
+}

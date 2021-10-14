@@ -1,0 +1,35 @@
+{
+  "data": {
+    "ID": "2e969721-7b21-4502-8896-702e8a953a36",
+    "Patient": 42,
+    "ProcedureType": {
+      "conceptID": 173327004,
+      "originalText": "Teeth - wire splint"
+    },
+    "Provider": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "ServiceDate": {
+      "iso": "2020-08-26T13:41+10"
+    },
+    "SetID": "eafd1f99-78b8-40a4-97aa-f6ae3a7b8c4c",
+    "Version": 6
+  },
+  "metadata": {
+    "owningGroupID": 1,
+    "patientID": 42,
+    "providerID": {
+      "groupID": 1,
+      "userID": 42
+    },
+    "serviceDate": {
+      "iso": "2020-08-26T13:41+10"
+    },
+    "serviceID": 8263,
+    "serviceType": 101,
+    "status": "FINAL",
+    "summaryLine": ""
+  },
+  "version": 0
+}

@@ -1,0 +1,1248 @@
+[
+  {
+    "children": [
+      {
+        "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+        "name": "Consultation Notes",
+        "serviceType": {
+          "abbreviation": "Consultation",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.ConsultationNote",
+          "name": "Consultation Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 1
+        }
+      },
+      {
+        "description": "Details of medications prescribed for or taken by the patient.",
+        "name": "Medication",
+        "serviceType": {
+          "abbreviation": "Medication",
+          "formDescriptionID": "Service.Medication",
+          "name": "Medication",
+          "permissionPerProgram": true,
+          "serviceTypeID": 15
+        }
+      },
+      {
+        "name": "Patient Watch Problem and Action",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "Problem and Action",
+          "category": "CareAndTreatmentPlan",
+          "formDescriptionID": "PatientWatch.ProblemAndAction",
+          "name": "Patient Watch Problem and Action",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 193
+        }
+      },
+      {
+        "name": "Patient Watch Questionnaire",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "PW Questionnaire",
+          "category": "Assessment",
+          "formDescriptionID": "PatientWatch.Questionnaire",
+          "name": "Patient Watch Questionnaire",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 204,
+          "supportDraft": true
+        }
+      }
+    ],
+    "name": "Recent"
+  },
+  {
+    "children": [
+      {
+        "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+        "name": "Consultation Notes",
+        "serviceType": {
+          "abbreviation": "Consultation",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.ConsultationNote",
+          "name": "Consultation Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 1
+        }
+      },
+      {
+        "description": "Details of medications prescribed for or taken by the patient.",
+        "name": "Medication",
+        "serviceType": {
+          "abbreviation": "Medication",
+          "formDescriptionID": "Service.Medication",
+          "name": "Medication",
+          "permissionPerProgram": true,
+          "serviceTypeID": 15
+        }
+      },
+      {
+        "name": "Clinical Referral",
+        "serviceType": {
+          "abbreviation": "Referral",
+          "category": "Referral",
+          "formDescriptionID": "Correspondence.ClinicalReferral",
+          "name": "Clinical Referral",
+          "serviceTypeID": 206,
+          "supportDraft": true
+        }
+      },
+      {
+        "name": "Letter",
+        "serviceType": {
+          "abbreviation": "Letter",
+          "category": "Letter",
+          "formDescriptionID": "Correspondence.Letter",
+          "name": "Letter",
+          "serviceTypeID": 173,
+          "supportDraft": true
+        }
+      },
+      {
+        "name": "Admission",
+        "serviceType": {
+          "abbreviation": "Admission",
+          "formDescriptionID": "Service.AdmissionProcedure",
+          "name": "Admission",
+          "permissionPerProgram": true,
+          "serviceTypeID": 0
+        }
+      },
+      {
+        "name": "Discharge",
+        "serviceType": {
+          "abbreviation": "Discharge",
+          "formDescriptionID": "Service.Discharge",
+          "name": "Discharge",
+          "permissionPerProgram": true,
+          "serviceTypeID": 7
+        }
+      },
+      {
+        "name": "Procedure",
+        "serviceType": {
+          "abbreviation": "Procedure",
+          "formDescriptionID": "Service.Procedure",
+          "name": "Procedure",
+          "permissionPerProgram": true,
+          "serviceTypeID": 101
+        }
+      },
+      {
+        "description": "Details of immunisations and vaccines given to the patient.",
+        "name": "Immunisation",
+        "serviceType": {
+          "abbreviation": "Immunisation",
+          "formDescriptionID": "Service.Immunisation",
+          "name": "Immunisation",
+          "permissionPerProgram": true,
+          "serviceTypeID": 100
+        }
+      },
+      {
+        "name": "Physiotherapist Assessment",
+        "serviceType": {
+          "abbreviation": "Physio Assess",
+          "formDescriptionID": "Service.PhysiotherapistAssessment",
+          "name": "Physiotherapist Assessment",
+          "permissionPerProgram": true,
+          "serviceTypeID": 94
+        }
+      }
+    ],
+    "name": "Standard"
+  },
+  {
+    "children": [
+      {
+        "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+        "name": "Consultation Notes",
+        "program": "CANCER",
+        "serviceType": {
+          "abbreviation": "Consultation",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.ConsultationNote",
+          "name": "Consultation Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 1
+        }
+      },
+      {
+        "name": "Gynaecological Cancer Assessment",
+        "program": "CANCER",
+        "serviceType": {
+          "abbreviation": "Gyn Cancer Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Cancer.Gynaecological.Assessment",
+          "name": "Gynaecological Cancer Assessment",
+          "program": "CANCER",
+          "serviceTypeID": 148
+        }
+      },
+      {
+        "name": "Gynaecological Cancer Follow-Up",
+        "program": "CANCER",
+        "serviceType": {
+          "abbreviation": "Gyn Cancer Follow-up",
+          "category": "FollowUpNote",
+          "formDescriptionID": "Cancer.Gynaecological.FollowUp",
+          "name": "Gynaecological Cancer Follow-Up",
+          "program": "CANCER",
+          "serviceTypeID": 194
+        }
+      },
+      {
+        "name": "Gynaecological Cancer Recurrence",
+        "program": "CANCER",
+        "serviceType": {
+          "abbreviation": "Gyn Cancer Recurrence",
+          "category": "FollowUpNote",
+          "formDescriptionID": "Cancer.Gynaecological.Recurrence",
+          "name": "Gynaecological Cancer Recurrence",
+          "program": "CANCER",
+          "serviceTypeID": 192
+        }
+      },
+      {
+        "name": "Gynaecological Cancer Surgery",
+        "program": "CANCER",
+        "serviceType": {
+          "abbreviation": "Gyn Cancer Surgery",
+          "category": "Surgery",
+          "formDescriptionID": "Cancer.Gynaecological.Surgery",
+          "name": "Gynaecological Cancer Surgery",
+          "program": "CANCER",
+          "serviceTypeID": 190,
+          "supportDraft": true
+        }
+      },
+      {
+        "name": "Initial Assessment",
+        "program": "CANCER",
+        "serviceType": {
+          "abbreviation": "Cancer Init Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Cancer.InitialAssessment",
+          "name": "Cancer Initial Assessment",
+          "program": "CANCER",
+          "serviceTypeID": 207
+        }
+      },
+      {
+        "name": "Sarcoma Assessment",
+        "program": "CANCER",
+        "serviceType": {
+          "abbreviation": "Sarcoma Assessment",
+          "category": "Assessment",
+          "formDescriptionID": "Cancer.SarcomaAssessment",
+          "name": "Sarcoma Assessment",
+          "program": "CANCER",
+          "serviceTypeID": 116
+        }
+      }
+    ],
+    "name": "Cancer",
+    "program": "CANCER"
+  },
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "name": "Paediatric Mental Health Assessment",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Paed Mental Health Assess",
+              "category": "Assessment",
+              "formDescriptionID": "CysticFibrosis.PaediatricMentalHealthAssessment",
+              "name": "Cystic Fibrosis Paediatric Mental Health Assessment",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 75
+            }
+          },
+          {
+            "name": "Physician Assessment",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Physician Assess",
+              "category": "Assessment",
+              "formDescriptionID": "CysticFibrosis.PhysicianAssessment",
+              "name": "Cystic Fibrosis Physician Assessment",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 69
+            }
+          },
+          {
+            "name": "Physiotherapist Assessment",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Physio Assessment",
+              "category": "Assessment",
+              "formDescriptionID": "CysticFibrosis.PhysiotherapistAssessment",
+              "name": "Cystic Fibrosis Physiotherapist Assessment",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 66
+            }
+          },
+          {
+            "name": "Psychologist Assessment",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Psych Assess",
+              "category": "Assessment",
+              "formDescriptionID": "CysticFibrosis.PsychologistAssessment",
+              "name": "Cystic Fibrosis Psychologist Assessment",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 76
+            }
+          },
+          {
+            "name": "Social Worker Assessment",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF SW Assess",
+              "category": "Assessment",
+              "formDescriptionID": "CysticFibrosis.SocialWorkerAssessment",
+              "name": "Cystic Fibrosis Social Worker Assessment",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 78
+            }
+          },
+          {
+            "name": "Transplant Assessment",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Transplant Assess",
+              "category": "Assessment",
+              "formDescriptionID": "CysticFibrosis.TransplantAssessment",
+              "name": "CF Transplant Assessment",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 184
+            }
+          }
+        ],
+        "name": "Assessments",
+        "program": "CYSTIC_FIBROSIS"
+      },
+      {
+        "children": [
+          {
+            "name": "Action Plan",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Action Plan",
+              "category": "StaticCarePlan",
+              "formDescriptionID": "CysticFibrosis.ActionPlan",
+              "name": "Cystic Fibrosis Action Plan",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 48
+            }
+          },
+          {
+            "name": "Admission Plan",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Admission Plan",
+              "category": "StaticCarePlan",
+              "formDescriptionID": "CysticFibrosis.AdmissionPlan",
+              "name": "CF Admission Plan",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 186
+            }
+          },
+          {
+            "name": "Discharge Care Plan",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Discharge Care Plan",
+              "category": "StaticCarePlan",
+              "formDescriptionID": "CysticFibrosis.DischargeCarePlan",
+              "name": "CF Discharge Care Plan",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 187,
+              "supportDraft": true
+            }
+          },
+          {
+            "name": "Treatment Status",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Treatment Status",
+              "category": "TreatmentStatus",
+              "formDescriptionID": "CysticFibrosis.TreatmentStatus",
+              "name": "CF Treatment Status",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 185
+            }
+          }
+        ],
+        "name": "Care Plans",
+        "program": "CYSTIC_FIBROSIS"
+      },
+      {
+        "children": [
+          {
+            "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+            "name": "Consultation Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "Consultation",
+              "category": "ConsultationNote",
+              "formDescriptionID": "Service.ConsultationNote",
+              "name": "Consultation Notes",
+              "permissionPerProgram": true,
+              "serviceTypeID": 1
+            }
+          },
+          {
+            "name": "Diagnosis",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Diagnosis",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.Diagnosis",
+              "name": "CF Diagnosis",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 182
+            }
+          },
+          {
+            "name": "Dietitian Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Dietitian",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.DietitianNotes",
+              "name": "CF Dietitian Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 41
+            }
+          },
+          {
+            "name": "Examination",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Examination",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.Examination",
+              "name": "CF Examination",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 183
+            }
+          },
+          {
+            "name": "Gastroenterologist Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Gastroenterologist",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.GastroenterologistNotes",
+              "name": "CF Gastroenterologist Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 79
+            }
+          },
+          {
+            "name": "Inpatient Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Inpatient Notes",
+              "category": "CareAndTreatmentPlan",
+              "formDescriptionID": "CysticFibrosis.InpatientNotes",
+              "name": "CF Inpatient Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 188,
+              "supportDraft": true
+            }
+          },
+          {
+            "name": "Nurse Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Nurse",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.NurseNotes",
+              "name": "CF Nurse Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 38
+            }
+          },
+          {
+            "name": "Occupational Therapist Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Occ. Therapist",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.OccupationalTherapistNotes",
+              "name": "CF Occupational Therapist Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 46
+            }
+          },
+          {
+            "name": "Physiotherapist Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Physiotherapist",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.PhysiotherapistNotes",
+              "name": "CF Physiotherapist Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 43
+            }
+          },
+          {
+            "name": "Psychiatrist Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Psychiatrist",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.PsychiatristNotes",
+              "name": "CF Psychiatrist Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 44
+            }
+          },
+          {
+            "name": "Psychologist Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Psychologist",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.PsychologistNotes",
+              "name": "CF Psychologist Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 45
+            }
+          },
+          {
+            "name": "Respiratory Physician Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Physician",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.RespiratoryPhysicianNotes",
+              "name": "CF Respiratory Physician Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 37
+            }
+          },
+          {
+            "name": "Social Worker Notes",
+            "program": "CYSTIC_FIBROSIS",
+            "serviceType": {
+              "abbreviation": "CF Soc Worker",
+              "category": "ConsultationNote",
+              "formDescriptionID": "CysticFibrosis.SocialWorkerNotes",
+              "name": "CF Social Worker Notes",
+              "program": "CYSTIC_FIBROSIS",
+              "serviceTypeID": 42
+            }
+          }
+        ],
+        "name": "Notes",
+        "program": "CYSTIC_FIBROSIS"
+      }
+    ],
+    "name": "Cystic Fibrosis",
+    "program": "CYSTIC_FIBROSIS"
+  },
+  {
+    "children": [
+      {
+        "name": "Advanced Liver Disease Assessment",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Advanced Liver Disease",
+          "category": "Assessment",
+          "formDescriptionID": "Immunology.AdvancedLiverDiseaseAssessment",
+          "name": "Advanced Liver Disease Assessment",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 145
+        }
+      },
+      {
+        "name": "Anoscopy/Peri-anal Exam",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Anoscopy",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Immunology.Anoscopy",
+          "name": "Anoscopy/Peri-anal Exam",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 162
+        }
+      },
+      {
+        "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+        "name": "Consultation Notes",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Consultation",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.ConsultationNote",
+          "name": "Consultation Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 1
+        }
+      },
+      {
+        "name": "Dietitian Notes",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Dietitian Notes",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.DietitianNotes",
+          "name": "Dietitian Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 132
+        }
+      },
+      {
+        "name": "Hepatitis Assessment",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Hepatitis Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Immunology.HepatitisAssessment",
+          "name": "Hepatitis Assessment",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 142
+        }
+      },
+      {
+        "name": "Hepatitis C Care Plan",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Hepatitis C Care Plan",
+          "category": "CareAndTreatmentPlan",
+          "formDescriptionID": "Immunology.HepatitisCCarePlan",
+          "name": "Hepatitis C Care Plan",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 143
+        }
+      },
+      {
+        "name": "HIV Assessment",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "HIV Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Immunology.HIVAssessment",
+          "name": "HIV Assessment",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 121
+        }
+      },
+      {
+        "name": "Immunology A Assessment",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Immunology A Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Immunology.ImmunologyAAssessment",
+          "name": "Immunology A Assessment",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 147
+        }
+      },
+      {
+        "name": "Immunology A Care Plan",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Immunology A Care Plan",
+          "category": "CareAndTreatmentPlan",
+          "formDescriptionID": "Immunology.ImmunologyACarePlan",
+          "name": "Immunology A Care Plan",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 150
+        }
+      },
+      {
+        "name": "Infectious Diseases Assessment",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Infectious Diseases Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Immunology.InfectiousDiseasesAssessment",
+          "name": "Infectious Diseases Assessment",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 146
+        }
+      },
+      {
+        "name": "Infectious Diseases Care Plan",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Infectious Diseases Care Plan",
+          "category": "CareAndTreatmentPlan",
+          "formDescriptionID": "Immunology.InfectiousDiseasesCarePlan",
+          "name": "Infectious Diseases Care Plan",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 149
+        }
+      },
+      {
+        "name": "Neuropsychology Notes",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Neuropsychology Notes",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Immunology.NeuropsychologyNotes",
+          "name": "Immunology \u0026 ID Neuropsychology Notes",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 135
+        }
+      },
+      {
+        "name": "Occupational Therapy Assessment",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Occupational Therapy Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Service.OccupationalTherapyAssessment",
+          "name": "Occupational Therapy Assessment",
+          "permissionPerProgram": true,
+          "serviceTypeID": 133
+        }
+      },
+      {
+        "name": "Occupational Therapy Notes",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Occupational Therapy Notes",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.OccupationalTherapyNotes",
+          "name": "Occupational Therapy Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 134
+        }
+      },
+      {
+        "name": "PEP Assessment",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "PEP Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Immunology.PEPAssessment",
+          "name": "PEP Assessment",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 122
+        }
+      },
+      {
+        "name": "PEP Care Plan",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "PEP Care Plan",
+          "category": "CareAndTreatmentPlan",
+          "formDescriptionID": "Immunology.PEPCarePlan",
+          "name": "PEP Care Plan",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 123
+        }
+      },
+      {
+        "name": "Social Worker Assessment",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Social Worker Assess",
+          "category": "Assessment",
+          "formDescriptionID": "Service.SocialWorkerAssessment",
+          "name": "Social Worker Assessment",
+          "permissionPerProgram": true,
+          "serviceTypeID": 130
+        }
+      },
+      {
+        "name": "Social Worker Notes",
+        "program": "IMMUNOLOGY",
+        "serviceType": {
+          "abbreviation": "Social Worker Notes",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Immunology.SocialWorkerNotes",
+          "name": "Immunology \u0026 ID Social Worker Notes",
+          "program": "IMMUNOLOGY",
+          "serviceTypeID": 131
+        }
+      }
+    ],
+    "name": "Immunology \u0026 ID",
+    "program": "IMMUNOLOGY"
+  },
+  {
+    "children": [
+      {
+        "name": "Assessment",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "PW Assess",
+          "category": "Assessment",
+          "formDescriptionID": "PatientWatch.PatientAssessment",
+          "name": "Patient Watch Assessment",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 198
+        }
+      },
+      {
+        "name": "Care Plan",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "PW Care Plan",
+          "category": "CareAndTreatmentPlan",
+          "formDescriptionID": "PatientWatch.CarePlan",
+          "name": "Patient Watch Care Plan",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 200
+        }
+      },
+      {
+        "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+        "name": "Consultation Notes",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "Consultation",
+          "category": "ConsultationNote",
+          "formDescriptionID": "Service.ConsultationNote",
+          "name": "Consultation Notes",
+          "permissionPerProgram": true,
+          "serviceTypeID": 1
+        }
+      },
+      {
+        "name": "Outreach Risk Assessment",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "PW Risk Assess",
+          "category": "Assessment",
+          "formDescriptionID": "PatientWatch.RiskAssessment",
+          "name": "Patient Watch Outreach Risk Assessment",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 201
+        }
+      },
+      {
+        "description": "Patient Watch teams review patients periodically, typically every three months.\n\t    The patient\u0027s Coach manages the review process and records information from the review in this service record. The patient\u0027s Coach will action the Decision that is recorded in the review by updating one or patient records.",
+        "name": "Periodic Review",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "PW Periodic Review",
+          "category": "FollowUpNote",
+          "formDescriptionID": "PatientWatch.PeriodicReview",
+          "name": "Patient Watch Periodic Review",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 205,
+          "supportDraft": true
+        }
+      },
+      {
+        "name": "Problem and Action",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "Problem and Action",
+          "category": "CareAndTreatmentPlan",
+          "formDescriptionID": "PatientWatch.ProblemAndAction",
+          "name": "Patient Watch Problem and Action",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 193
+        }
+      },
+      {
+        "name": "Profile",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "PW Profile",
+          "category": "Assessment",
+          "formDescriptionID": "PatientWatch.PatientProfile",
+          "name": "Patient Watch Profile",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 199
+        }
+      },
+      {
+        "name": "Questionnaire",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "PW Questionnaire",
+          "category": "Assessment",
+          "formDescriptionID": "PatientWatch.Questionnaire",
+          "name": "Patient Watch Questionnaire",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 204,
+          "supportDraft": true
+        }
+      },
+      {
+        "name": "Treatment Status",
+        "program": "PATIENT_WATCH",
+        "serviceType": {
+          "abbreviation": "Treatment Status",
+          "category": "TreatmentStatus",
+          "formDescriptionID": "PatientWatch.TreatmentStatus",
+          "name": "Patient Watch Treatment Status",
+          "program": "PATIENT_WATCH",
+          "serviceTypeID": 191
+        }
+      }
+    ],
+    "name": "Patient Watch",
+    "program": "PATIENT_WATCH"
+  },
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "name": "Clinical Assessment",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal Assess",
+              "category": "Assessment",
+              "formDescriptionID": "Renal.ClinicalAssessment",
+              "name": "Renal Clinical Assessment",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 57
+            }
+          },
+          {
+            "name": "Haemodialysis Review",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "HD Review",
+              "category": "FollowUpNote",
+              "formDescriptionID": "Renal.HomeHDNotes",
+              "name": "Haemodialysis Review",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 29
+            }
+          },
+          {
+            "name": "Home Dialysis Assessment",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal Home Assess",
+              "category": "Assessment",
+              "formDescriptionID": "Renal.DialysisAssessment",
+              "name": "Renal Home Dialysis Assessment",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 21
+            }
+          },
+          {
+            "name": "Home Peritoneal Dialysis Review",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Home PD Review",
+              "category": "FollowUpNote",
+              "formDescriptionID": "Renal.PDReview",
+              "name": "Home Peritoneal Dialysis Review",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 179
+            }
+          },
+          {
+            "name": "Occupational Therapist Assessment",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal OT Assess",
+              "category": "Assessment",
+              "formDescriptionID": "Renal.OccupationTherapistAssessment",
+              "name": "Renal Occupational Therapist Assessment",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 20
+            }
+          },
+          {
+            "name": "Social Worker Assessment",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal SW Assess",
+              "category": "Assessment",
+              "formDescriptionID": "Renal.SocialWorker.SocialWorkerAssessmentDesc",
+              "name": "Renal Social Worker Assessment",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 19
+            }
+          }
+        ],
+        "name": "Assessments",
+        "program": "RENAL_DISEASE"
+      },
+      {
+        "children": [
+          {
+            "name": "Access Care Plan",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal Access Care Plan",
+              "category": "CareAndTreatmentPlan",
+              "formDescriptionID": "Renal.AccessCarePlan",
+              "name": "Renal Access Care Plan",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 32
+            }
+          },
+          {
+            "name": "CKD Care Plan",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "CKD Care Plan",
+              "category": "CareAndTreatmentPlan",
+              "formDescriptionID": "Renal.CKDCarePlan",
+              "name": "Renal CKD Care Plan",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 202
+            }
+          },
+          {
+            "name": "Dietitian Care Plan",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal Diet Care Plan",
+              "category": "StaticCarePlan",
+              "formDescriptionID": "Renal.DietitianCarePlan",
+              "name": "Renal Dietitian Care Plan",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 24
+            }
+          },
+          {
+            "name": "Haemodialysis Prescription",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "HD Prescription",
+              "category": "StaticCarePlan",
+              "formDescriptionID": "Renal.HDPrescription",
+              "name": "Haemodialysis Prescription",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 33
+            }
+          },
+          {
+            "action": "RenalPDPrescription",
+            "name": "Peritoneal Dialysis Prescription"
+          },
+          {
+            "name": "Peritonitis",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Peritonitis",
+              "category": "CareAndTreatmentPlan",
+              "formDescriptionID": "Renal.Peritonitis",
+              "name": "Peritonitis",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 180
+            }
+          },
+          {
+            "name": "Social Worker Care Plan",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal SW Care Plan",
+              "category": "StaticCarePlan",
+              "formDescriptionID": "Renal.SocialWorkerCarePlan",
+              "name": "Renal Social Worker Care Plan",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 26
+            }
+          },
+          {
+            "name": "Supportive Care",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Supportive Care",
+              "category": "CareAndTreatmentPlan",
+              "formDescriptionID": "Renal.SupportiveCare",
+              "name": "Renal Supportive Care",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 203
+            }
+          }
+        ],
+        "name": "Care Plans",
+        "program": "RENAL_DISEASE"
+      },
+      {
+        "children": [
+          {
+            "description": "Generic episode of care record that can be used by any provider to record a patient interaction.\n        Program specific Consultation Notes should be used when the episode of care is related to a specific program.",
+            "name": "Consultation Notes",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Consultation",
+              "category": "ConsultationNote",
+              "formDescriptionID": "Service.ConsultationNote",
+              "name": "Consultation Notes",
+              "permissionPerProgram": true,
+              "serviceTypeID": 1
+            }
+          },
+          {
+            "name": "Dietitian Notes",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal Diet Notes",
+              "category": "ConsultationNote",
+              "formDescriptionID": "Renal.DietitianNotes",
+              "name": "Renal Dietitian Notes",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 23
+            }
+          },
+          {
+            "name": "Extension Line Change",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Extension Line Change",
+              "category": "ProcedureNote",
+              "formDescriptionID": "Renal.ExtensionLineChange",
+              "name": "Extension Line Change",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 172
+            }
+          },
+          {
+            "name": "Haemodialysis",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Haemodialysis",
+              "category": "ProcedureNote",
+              "formDescriptionID": "Renal.Haemodialysis",
+              "name": "Haemodialysis",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 58,
+              "supportDraft": true
+            }
+          },
+          {
+            "name": "Occupational Therapist Notes",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal OT Notes",
+              "category": "ConsultationNote",
+              "formDescriptionID": "Renal.OccuTherapistNotes",
+              "name": "Renal Occupational Therapist Notes",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 27
+            }
+          },
+          {
+            "name": "Peritoneal Dialysis Complication",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "PD Complication",
+              "category": "Complication",
+              "formDescriptionID": "Renal.DialysisComplication",
+              "name": "Peritoneal Dialysis Complication",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 176
+            }
+          },
+          {
+            "name": "Peritoneal Dialysis Notes",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal PD Notes",
+              "category": "ConsultationNote",
+              "formDescriptionID": "Renal.HomePDNotes",
+              "name": "Renal Peritoneal Dialysis Notes",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 30
+            }
+          },
+          {
+            "name": "Peritoneal Dialysis Training",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "PD Training",
+              "category": "ConsultationNote",
+              "formDescriptionID": "Renal.PDTraining",
+              "name": "Peritoneal Dialysis Training",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 178
+            }
+          },
+          {
+            "action": "RenalPETAndAdequacy",
+            "name": "Peritoneal Equilibration Test and Adequacy"
+          },
+          {
+            "name": "Social Worker Notes",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal SW Notes",
+              "category": "ConsultationNote",
+              "formDescriptionID": "Renal.SocialWorkerNotes",
+              "name": "Renal Social Worker Notes",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 25
+            }
+          },
+          {
+            "name": "Treatment Status",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Renal Treatment Status",
+              "category": "TreatmentStatus",
+              "formDescriptionID": "Renal.TreatmentStatus",
+              "name": "Treatment Status",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 118
+            }
+          }
+        ],
+        "name": "Notes",
+        "program": "RENAL_DISEASE"
+      },
+      {
+        "children": [
+          {
+            "name": "Transplant Assessment",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Transplant Assess",
+              "category": "Assessment",
+              "formDescriptionID": "Renal.TransplantAssessment",
+              "name": "Transplant Assessment",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 31
+            }
+          },
+          {
+            "name": "Transplant Donor Assessment",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Tx Donor Assess",
+              "category": "Assessment",
+              "formDescriptionID": "Renal.TransplantDonorAssessment",
+              "name": "Transplant Donor Assessment",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 151
+            }
+          },
+          {
+            "action": "RenalTransplantProgressChart",
+            "name": "Transplant Progress Chart"
+          },
+          {
+            "name": "Transplant Waiting List",
+            "program": "RENAL_DISEASE",
+            "serviceType": {
+              "abbreviation": "Wait List",
+              "category": "TreatmentStatus",
+              "formDescriptionID": "Renal.TransplantWaitingList",
+              "name": "Transplant Waiting List",
+              "program": "RENAL_DISEASE",
+              "serviceTypeID": 153
+            }
+          }
+        ],
+        "name": "Transplant",
+        "program": "RENAL_DISEASE"
+      }
+    ],
+    "name": "Renal Disease",
+    "program": "RENAL_DISEASE"
+  }
+]

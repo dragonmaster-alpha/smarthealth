@@ -1,0 +1,58 @@
+/**
+ * Styles for MedicalGroupMemberSearchDialog.tsx
+ *
+ * @author Thompson 02/01/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+
+.cp-medicalGroupMemberSearchDialog {
+  display: flex;
+  width: 60em;
+  justify-content: space-between;
+
+  &-search {
+    display: flex;
+
+    input {
+      flex-grow: 1;
+      margin-right: 0.5em;
+    }
+  }
+
+  &-section {
+    border: 1px solid #ccc;
+    width: 49.5%;
+    height: 40ex;
+    margin-bottom: 1em;
+    padding: 0.5em;
+
+    .listButton {
+      display: block;
+      margin: 1ex auto;
+    }
+  }
+
+  &-listBox {
+    width: 100%;
+
+    &.cp-medicalGroupMemberSearchDialog-user {
+      ul {
+        height: 18.5ex;
+      }
+    }
+
+    &.cp-medicalGroupMemberSearchDialog-medicalGroup {
+      ul {
+        height: 22.5ex;
+      }
+    }
+  }
+
+  &-medicalGroupLabel {
+    white-space: nowrap;
+  }
+
+  .p-listbox-list-wrapper {
+    overflow-x: scroll;
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"creatinine": 99,
+    "creatinineUnits" : "mg/dL",
+    "bilirubin" : 88,
+    "bilirubinUnits" : "mg/dL",
+    "inr" : 1.4,
+    "dialysisTwoOrMore" : false
+}

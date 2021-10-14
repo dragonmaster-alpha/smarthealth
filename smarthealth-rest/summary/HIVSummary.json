@@ -1,0 +1,28 @@
+{
+  "HIVAssessment": {
+    "ClinicalTrials": [
+      {
+        "DateCommenced": {
+          "iso": "2011-04-02"
+        },
+        "TrialName": "sdfas"
+      }
+    ],
+    "CurrentConsultant": {
+      "groupID": 3,
+      "userID": 6
+    },
+    "DateLastAssessment": {
+      "iso": "2011-04-29"
+    },
+    "HIVAssessmentService": {
+      "program": "IMMUNOLOGY",
+      "serviceDate": {
+        "iso": "2011-04-29"
+      },
+      "serviceID": 43,
+      "serviceType": 121,
+      "summary": "sdasdfasdf"
+    }
+  }
+}

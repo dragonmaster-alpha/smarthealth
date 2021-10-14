@@ -1,0 +1,428 @@
+{
+  "behaviour": {
+    "attachments": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "enumType": "Confidentiality",
+        "id": "Confidentiality",
+        "label": "Confidentiality",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Enum"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Clinic",
+          "Email",
+          "Face to face",
+          "Group",
+          "Home visit",
+          "Inpatient",
+          "Letter",
+          "Phone",
+          "Review",
+          "SMS",
+          "Telehealth"
+        ],
+        "size": 15,
+        "id": "Setting",
+        "label": "Setting",
+        "layout": {
+          "newLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "Acute care",
+          "Case conference",
+          "Case review",
+          "Change of health status",
+          "Client issue resolution",
+          "Clinical supervision",
+          "Consultation",
+          "Discharge follow-up",
+          "Early intervention",
+          "Emergency care",
+          "Extended care",
+          "First visit",
+          "Health promotion",
+          "Non-acute care",
+          "Quality improvement",
+          "Rehabilitation",
+          "Research",
+          "Unscheduled visit"
+        ],
+        "size": 24,
+        "id": "Purpose",
+        "label": "Purpose",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "id": "Location",
+        "label": "Location",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "MedicalGroupLocation"
+      }
+    },
+    {
+      "field": {
+        "size": 500,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "table": {
+          "columns": [
+            {
+              "size": 100,
+              "id": "Condition",
+              "label": "Condition",
+              "layout": {
+                "span": 2
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            },
+            {
+              "size": 20,
+              "id": "Status",
+              "label": "Status",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            },
+            {
+              "precisionDay": true,
+              "precisionMonth": true,
+              "precisionYear": true,
+              "id": "FirstOccurrence",
+              "label": "First occurrence",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "DateTime"
+            },
+            {
+              "precisionDay": true,
+              "precisionMonth": true,
+              "precisionYear": true,
+              "id": "MostRecent",
+              "label": "Most recent",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "DateTime"
+            },
+            {
+              "size": 250,
+              "id": "Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Text"
+            },
+            {
+              "precision": 20,
+              "scale": 0,
+              "id": "ConceptID",
+              "label": "Concept ID",
+              "state": {
+                "editState": "Hidden",
+                "viewStateHidden": true
+              },
+              "type": "Number"
+            }
+          ],
+          "fixedRows": true,
+          "id": "PrimaryDiagnoses",
+          "label": "Primary diagnoses",
+          "type": "Table"
+        },
+        "id": "PrimaryDiagnoses",
+        "label": "Primary diagnoses",
+        "layout": {
+          "fillWidth": true,
+          "labelPosition": "Above",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "ConditionsTable"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 100,
+              "id": "Microbiology.Culture",
+              "label": "Culture",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Microbiology.DirectDetection",
+              "label": "Direct detection",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Microbiology.Serology",
+              "label": "Serology",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Microbiology.SensitiveTo",
+              "label": "Sensitive to",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Microbiology.ResistantTo",
+              "label": "Resistant to",
+              "layout": {
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "maximum": 1000,
+              "precision": 4,
+              "scale": 0,
+              "id": "Microbiology.MeanInhibitoryConcentration",
+              "label": "Mean inhibitory concentration",
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "Microbiology",
+        "layoutShow": true,
+        "title": "Microbiology"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "CT scan",
+                "MRI",
+                "PET scan",
+                "Ultrasound",
+                "X-ray"
+              ],
+              "size": 10,
+              "id": "Radiology.TypeOfImaging",
+              "label": "Type of imaging",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Radiology.TypeOfImaging",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Radiology.Date",
+              "label": "Date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "Radiology.Notes",
+              "label": "Notes",
+              "layout": {
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Radiology",
+        "layoutShow": true,
+        "title": "Radiology"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 1000,
+              "id": "Notes.Notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "Notes",
+        "layoutShow": true,
+        "title": "Notes"
+      }
+    }
+  ],
+  "id": "Immunology.ImmunologyAAssessment.WebUI",
+  "layoutColumns": 3
+}

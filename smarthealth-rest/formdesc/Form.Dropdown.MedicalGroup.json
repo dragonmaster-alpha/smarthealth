@@ -1,0 +1,57 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "columns": [
+          {
+            "size": 150,
+            "id": "name",
+            "label": "Medical Group",
+            "layout": {
+              "newLine": true,
+              "spanLine": true
+            },
+            "sortable": true,
+            "type": "Text"
+          },
+          {
+            "size": 100,
+            "id": "city",
+            "label": "City",
+            "layout": {
+              "span": 2
+            },
+            "sortable": true,
+            "type": "Text",
+            "valuePath": "address.city"
+          },
+          {
+            "size": 100,
+            "id": "state",
+            "label": "State",
+            "layout": {
+              "span": 2
+            },
+            "sortable": true,
+            "type": "Text",
+            "valuePath": "address.state"
+          }
+        ],
+        "id": "groups",
+        "label": "Medical Groups",
+        "layout": {
+          "fillHeight": true,
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Dropdown.MedicalGroup",
+  "layoutColumns": 1
+}

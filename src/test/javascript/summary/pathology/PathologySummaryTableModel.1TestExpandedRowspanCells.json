@@ -1,0 +1,218 @@
+[
+    [
+        {
+            "value": "Sweat Test",
+            "rowSpan": 2,
+            "expanded": true
+        },
+        {
+            "value": "Sodium result"
+        },
+        {
+            "value": {
+                "code": "2954-6",
+                "codeSystem": "LOINC",
+                "name": "Sodium result",
+                "units": "mmol/L",
+                "value": "140.0",
+                "service": {
+                    "owningGroupID": 26,
+                    "serviceDate": {
+                        "iso": "2020-01-08"
+                    },
+                    "serviceID": 11478,
+                    "serviceType": 3,
+                    "summary": "Sweat Test"
+                },
+                "testDate": {
+                    "iso": "2020-01-08"
+                }
+            }
+        },
+        {
+            "value": "mmol/L"
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "Sweat Test"
+        },
+        {
+            "value": "Chloride result"
+        },
+        {
+            "value": {
+                "code": "2077-6",
+                "codeSystem": "LOINC",
+                "name": "Chloride result",
+                "units": "mmol/L",
+                "value": "100.0",
+                "service": {
+                    "owningGroupID": 26,
+                    "serviceDate": {
+                        "iso": "2020-01-08"
+                    },
+                    "serviceID": 11478,
+                    "serviceType": 3,
+                    "summary": "Sweat Test"
+                },
+                "testDate": {
+                    "iso": "2020-01-08"
+                }
+            }
+        },
+        {
+            "value": "mmol/L"
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "HIV",
+            "rowSpan": 1
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "TFT",
+            "rowSpan": 1
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "UEC",
+            "rowSpan": 1
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "Coag Screen",
+            "rowSpan": 1
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "Testosterone total",
+            "rowSpan": 1
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "AFP",
+            "rowSpan": 1
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "LFT",
+            "rowSpan": 1
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        }
+    ],
+    [
+        {
+            "value": "Ca corr for Alb",
+            "rowSpan": 1
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        },
+        {
+            "value": null
+        }
+    ]
+]

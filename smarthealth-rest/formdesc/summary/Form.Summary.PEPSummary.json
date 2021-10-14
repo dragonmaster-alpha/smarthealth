@@ -1,0 +1,76 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "description": "Clinician responsible for the service record",
+              "id": "PEPAssessment.CurrentConsultant",
+              "label": "Current consultant",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Member"
+            }
+          },
+          {
+            "field": {
+              "displayType": "ServiceDate",
+              "id": "PEPAssessment.PEPAssessmentService",
+              "label": "Date of last assessment",
+              "type": "ServiceRecordReference"
+            }
+          }
+        ],
+        "id": "PEPAssessment",
+        "layoutShow": true,
+        "title": "PEP Assessment"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "size": 15,
+                  "id": "Medication",
+                  "label": "Medication",
+                  "type": "Text"
+                },
+                {
+                  "precisionMinute": true,
+                  "id": "DateOfFirstDose",
+                  "label": "Date of first dose",
+                  "type": "DateTime"
+                },
+                {
+                  "precisionMinute": true,
+                  "id": "FinishDate",
+                  "label": "Finish date",
+                  "type": "DateTime"
+                }
+              ],
+              "rowSelectionInViewMode": true,
+              "id": "PEPCarePlans.PEPCarePlans",
+              "label": "PEPCarePlans",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "Omit",
+                "span": 2
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "PEPCarePlans",
+        "layoutShow": true,
+        "title": "PEP Care Plans"
+      }
+    }
+  ],
+  "id": "Summary.PEPSummary.WebUI",
+  "layoutColumns": 2
+}

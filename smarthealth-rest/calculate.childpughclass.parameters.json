@@ -1,0 +1,9 @@
+{
+	"albumin": 27,
+    "albuminUnits" : "g/L",
+    "bilirubin" : 52,
+    "bilirubinUnits" : "µmol/L",
+    "inr" : 1.7,
+    "ascites" : "Absent",
+    "encephalopathy" : "None"
+}

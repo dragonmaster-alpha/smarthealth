@@ -1,0 +1,1404 @@
+{
+  "behaviour": {
+    "sendReferral": true
+  },
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "enumType": "TumourStream",
+              "id": "diagnosis.tumourStream",
+              "label": "Tumour stream",
+              "type": "Enum"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "diagnosis.diagnosis",
+              "label": "Diagnosis",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "precisionDay": true,
+              "id": "diagnosis.date",
+              "label": "Diagnosis date",
+              "type": "DateTime"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "0 - Asymptomatic",
+                "1 - Symptomatic but completely ambulatory",
+                "2 - Symptomatic, \u003c50% in bed during the day",
+                "3 - Symptomatic, \u003e50% in bed, but not bedbound",
+                "4 - Bedbound",
+                "5 - Deceased"
+              ],
+              "size": 50,
+              "id": "diagnosis.ecogScore",
+              "label": "ECOG Score",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "toolTip": "\u003chtml\u003e\n                \u003cul\u003e\n                \u003cli\u003e0 - Asymptomatic - Fully active, able to carry on all pre-disease performance without restriction\u003c/li\u003e\n                \u003cli\u003e1 - Symptomatic but completely ambulatory - Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature\u003c/li\u003e\n                \u003cli\u003e2 - Symptomatic, \u0026lt;50% in bed during the day- Ambulatory and capable of all selfcare but unable to carry out any work activities. Up and about more than 50% of waking hours\u003c/li\u003e\n                \u003cli\u003e3 - Symptomatic, \u0026gt;50% in bed, but not bedbound- Capable of only limited selfcare, confined to bed or chair more than 50% of waking hours\u003c/li\u003e\n                \u003cli\u003e4 - Bedbound - Completely disabled. Cannot carry on any selfcare. Totally confined to bed or chair\u003c/li\u003e\n                \u003cli\u003e5 - Deceased\u003c/li\u003e\n                \u003c/ul\u003e\n            \u003c/html\u003e",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "falseDisplayText": "Negative",
+              "trueDisplayText": "Positive",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Thoracic Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.egfr",
+              "label": "EGFR",
+              "toolTip": "Epidermal growth factor receptor",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Thoracic Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.egfrDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "falseDisplayText": "Negative",
+              "trueDisplayText": "Positive",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Thoracic Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.alk",
+              "label": "ALK",
+              "toolTip": "Anaplastic lymphoma kinase",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Thoracic Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.alkDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "falseDisplayText": "Negative",
+              "trueDisplayText": "Positive",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Thoracic Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.ros1",
+              "label": "ROS1",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Thoracic Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.ros1Details",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Thoracic Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.pdl1",
+              "label": "PDL1",
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Thoracic Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.pdl1Details",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "falseDisplayText": "Negative",
+              "trueDisplayText": "Positive",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Colorectal Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.kras",
+              "label": "KRAS",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Colorectal Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.krasDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "falseDisplayText": "Negative",
+              "trueDisplayText": "Positive",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Colorectal Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.nras",
+              "label": "NRAS",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Colorectal Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.nrasDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "falseDisplayText": "Negative",
+              "trueDisplayText": "Positive",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Colorectal Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.braf",
+              "label": "BRAF",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Colorectal Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.brafDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "falseDisplayText": "Low",
+              "trueDisplayText": "High",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Colorectal Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.msi",
+              "label": "MSI",
+              "toolTip": "Microsatellite Instability",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Colorectal Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.msiDetails",
+              "label": "Details",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.ReceptorStatus",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Breast Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.OestrogenReceptorStatus",
+              "label": "Oestrogen receptor status",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Breast Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.OestrogenReceptorStatusPercent",
+              "label": "",
+              "layout": {
+                "labelPosition": "Omit"
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "valueSetID": "Cancer.ReceptorStatus",
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Breast Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.ProgesteroneReceptorStatus",
+              "label": "Progesterone receptor status",
+              "type": "ValueSet"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Breast Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.ProgesteroneReceptorStatusPercent",
+              "label": "",
+              "layout": {
+                "labelPosition": "Omit"
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "0 Negative",
+                "1+ Negative",
+                "2+ Equivocal",
+                "3+ Positive"
+              ],
+              "size": 15,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Breast Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.HER2",
+              "label": "HER2",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "Hidden",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Breast Cancer"
+                      ],
+                      "fieldID": "diagnosis.tumourStream"
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "diagnosis.Ki67",
+              "label": "Ki67",
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "diagnosis.staging",
+              "label": "Staging",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "diagnosis.historyPresentIllness",
+              "label": "History of present illness",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "diagnosis",
+        "layoutShow": true,
+        "title": "Diagnosis"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "id": "oncologicalHistory.priorRadiotherapy",
+              "label": "Prior radiotherapy",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "table": {
+                "columns": [
+                  {
+                    "size": 100,
+                    "id": "Condition",
+                    "label": "Condition",
+                    "layout": {
+                      "span": 2
+                    },
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "Text"
+                  },
+                  {
+                    "size": 20,
+                    "id": "Status",
+                    "label": "Status",
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "Text"
+                  },
+                  {
+                    "precisionDay": true,
+                    "precisionMonth": true,
+                    "precisionYear": true,
+                    "id": "FirstOccurrence",
+                    "label": "First occurrence",
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "DateTime"
+                  },
+                  {
+                    "precisionDay": true,
+                    "precisionMonth": true,
+                    "precisionYear": true,
+                    "id": "MostRecent",
+                    "label": "Most recent",
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "DateTime"
+                  },
+                  {
+                    "size": 250,
+                    "id": "Notes",
+                    "label": "Notes",
+                    "layout": {
+                      "labelPosition": "BeforeTop",
+                      "newLine": true,
+                      "spanLine": true
+                    },
+                    "state": {
+                      "editState": "ReadOnly"
+                    },
+                    "type": "Text"
+                  },
+                  {
+                    "precision": 20,
+                    "scale": 0,
+                    "id": "ConceptID",
+                    "label": "Concept ID",
+                    "state": {
+                      "editState": "Hidden",
+                      "viewStateHidden": true
+                    },
+                    "type": "Number"
+                  }
+                ],
+                "fixedRows": true,
+                "id": "oncologicalHistory.cancers",
+                "label": "History of cancers",
+                "type": "Table"
+              },
+              "id": "oncologicalHistory.cancers",
+              "label": "History of cancers",
+              "layout": {
+                "fillWidth": true,
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "ConditionsTable"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "oncologicalHistory.familyHistory",
+              "label": "Family history",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "oncologicalHistory.notes",
+              "label": "Notes",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "oncologicalHistory",
+        "layoutShow": true,
+        "title": "Oncological History"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "id": "physicalExamination.height",
+              "label": "Height",
+              "type": "Number",
+              "units": "cm"
+            }
+          },
+          {
+            "field": {
+              "precision": 5,
+              "scale": 2,
+              "id": "physicalExamination.weight",
+              "label": "Weight",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "kg"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 1,
+              "calculation": {
+                "paramFieldIDs": [
+                  "physicalExamination.height",
+                  "physicalExamination.weight"
+                ],
+                "type": "BMI"
+              },
+              "id": "physicalExamination.bmi",
+              "label": "BMI",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "minimumLength": 3,
+              "size": 7,
+              "id": "physicalExamination.bloodPressure",
+              "label": "Blood pressure",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text",
+              "units": "mmHg"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Lying",
+                "Sitting",
+                "Standing"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "physicalExamination.bloodPressure",
+                      "testNotEmpty": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "physicalExamination.bpPosture",
+              "label": "BP posture",
+              "layout": {
+                "labelPosition": "Omit"
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 45,
+              "minimum": 30,
+              "precision": 3,
+              "scale": 1,
+              "id": "physicalExamination.temperature",
+              "label": "Temperature",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "°C"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "physicalExamination.heartRate",
+              "label": "Heart rate",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "beats per minute"
+            }
+          },
+          {
+            "field": {
+              "precision": 3,
+              "scale": 0,
+              "id": "physicalExamination.respirationRate",
+              "label": "Respiration rate",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "breaths per minute"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "physicalExamination.sp02",
+              "label": "SpO2",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "id": "physicalExamination.fiO2",
+              "label": "FiO2",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Hudson mask",
+                "Nasal prong",
+                "Non-rebreather mask",
+                "Room air"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly",
+                  "viewStateHidden": true
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "fieldID": "physicalExamination.fiO2",
+                      "testNotEmpty": true
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "physicalExamination.fiO2Method",
+              "label": "Method",
+              "layout": {
+                "labelPosition": "Omit"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "physicalExamination.heart",
+              "label": "Heart",
+              "layout": {
+                "newLine": true,
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "physicalExamination.breasts",
+              "label": "Breasts",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 100,
+              "id": "physicalExamination.abdomen",
+              "label": "Abdomen",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "physicalExamination.palpablePeripheralNodes",
+              "label": "Palpable peripheral nodes",
+              "type": "Boolean"
+            }
+          }
+        ],
+        "id": "physicalExamination",
+        "layoutShow": true,
+        "title": "Physical Examination"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "editable": true,
+                  "options": [
+                    "Biopsy",
+                    "CT",
+                    "Chest Xray",
+                    "MRI",
+                    "PET",
+                    "Tumour markers",
+                    "Ultrasound"
+                  ],
+                  "size": 20,
+                  "id": "investigationCompleted",
+                  "label": "Investigation",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Selection"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "dateOrdered",
+                  "label": "Date ordered",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "completed",
+                  "label": "Completed",
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "result",
+                  "label": "Result",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "investigations.investigations",
+              "label": "Investigations",
+              "layout": {
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          }
+        ],
+        "id": "investigations",
+        "layoutShow": true,
+        "title": "Investigations"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "columns": [
+                {
+                  "valueSetID": "Cancer.Treatment",
+                  "id": "treatment",
+                  "label": "Treatment",
+                  "layout": {
+                    "span": 2
+                  },
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "ValueSet"
+                },
+                {
+                  "precisionDay": true,
+                  "id": "date",
+                  "label": "Date",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "DateTime"
+                },
+                {
+                  "size": 100,
+                  "id": "details",
+                  "label": "Details",
+                  "layout": {
+                    "span": 2
+                  },
+                  "type": "Text"
+                }
+              ],
+              "id": "treatments.treatments",
+              "label": "Treatments",
+              "layout": {
+                "labelPosition": "Omit",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "treatments.progress",
+              "label": "Progress/Impression",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "size": 500,
+              "id": "treatments.plan",
+              "label": "Plan",
+              "layout": {
+                "labelPosition": "BeforeTop",
+                "newLine": true,
+                "spanLine": true
+              },
+              "type": "Text"
+            }
+          }
+        ],
+        "id": "treatments",
+        "layoutShow": true,
+        "title": "Procedures and Systemic Therapy"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 100,
+              "id": "nutrition.weightLoss",
+              "label": "Weight loss",
+              "layout": {
+                "span": 2
+              },
+              "type": "Text"
+            }
+          },
+          {
+            "field": {
+              "id": "nutrition.eatingPoorly",
+              "label": "Eating poorly",
+              "type": "Boolean"
+            }
+          },
+          {
+            "field": {
+              "maximum": 4,
+              "precision": 1,
+              "scale": 0,
+              "id": "nutrition.nutritionScore",
+              "label": "Nutrition score",
+              "type": "Number"
+            }
+          }
+        ],
+        "id": "nutrition",
+        "layoutShow": true,
+        "title": "Nutrition"
+      }
+    }
+  ],
+  "id": "Cancer.InitialAssessment",
+  "layoutColumns": 2
+}

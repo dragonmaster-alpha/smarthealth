@@ -1,0 +1,24 @@
+{
+  "adverseReaction": false,
+  "ceased": false,
+  "details": "Tablets 200mg, 1, Daily, Subliminal, Deep vein thrombosis",
+  "dose": "1",
+  "firstDate": {
+    "iso": "2010-04-12"
+  },
+  "frequency": "Daily",
+  "id": 92,
+  "indication": "Deep vein thrombosis",
+  "latest": true,
+  "prodFormStrength": "Fragmin Tablets 200mg",
+  "product": {
+    "code": "307",
+    "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+    "value": "Fragmin"
+  },
+  "serviceID": 102,
+  "startDate": {
+    "iso": "2010-04-12"
+  },
+  "summary": "Deep vein thrombosis"
+}

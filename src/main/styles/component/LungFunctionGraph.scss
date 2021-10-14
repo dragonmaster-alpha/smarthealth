@@ -1,0 +1,19 @@
+/**
+ * Styles for LungFunctionGraph.tsx
+ *
+ * @author Thompson 09/06/2020
+ * @copyright Copyright (c) Smart Health Solutions Pty Ltd, 2020
+ */
+
+.cp-LungFunctionGraph {
+  &-tooltip {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1.5ex 1em;
+
+    &-measurement {
+      display: block;
+      padding-top: 1ex;
+    }
+  }
+}

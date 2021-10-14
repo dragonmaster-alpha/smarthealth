@@ -1,0 +1,38 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "valueSetID": "Patient.Allergy",
+        "id": "name",
+        "label": "Allergy",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "ValueSet"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "details",
+        "label": "Details",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "id": "date",
+        "label": "Date",
+        "type": "DateTime"
+      }
+    }
+  ],
+  "id": "Patient.Allergies.Form.WebUI",
+  "layoutColumns": 1
+}

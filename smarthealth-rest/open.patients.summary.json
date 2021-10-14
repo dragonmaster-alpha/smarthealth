@@ -1,0 +1,35 @@
+{
+  "address": {
+    "address1": "39 Phillip St",
+    "address2": "",
+    "city": "Sydney",
+    "country": "Australia",
+    "postcode": "2000",
+    "state": "NSW"
+  },
+  "dob": {
+    "day": 5,
+    "daysInMonth": 30,
+    "firstDayOfMonth": 1,
+    "month": 6,
+    "year": 1987,
+    "yearsAgo": 30
+  },
+  "mrn": "MRN00001",
+  "name": {
+    "familyName": "Hopkins",
+    "givenName": "Tina",
+    "otherGivenNames": "Wilma Betty",
+    "title": "Ms"
+  },
+  "patientID": {
+    "new": false,
+    "patientID": 42
+  },
+  "sex": "Female",
+  "sortString": "Hopkins Tina Wilma Betty",
+  "tokenID": {
+    "tokenNumber": 200,
+    "tokenType": "Cardless"
+  }
+}

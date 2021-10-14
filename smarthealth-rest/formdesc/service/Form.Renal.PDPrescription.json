@@ -1,0 +1,556 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "description": "Clinician responsible for the service record",
+        "id": "Provider",
+        "label": "Provider",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Member"
+      }
+    },
+    {
+      "field": {
+        "precisionDay": true,
+        "description": "When the service was created",
+        "id": "ServiceDate",
+        "label": "Date",
+        "layout": {
+          "skip": 1
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "DateTime"
+      }
+    },
+    {
+      "field": {
+        "size": 250,
+        "id": "Summary",
+        "label": "Summary",
+        "layout": {
+          "labelPosition": "BeforeTop",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "name": "PatientDesc",
+        "description": "Subject patient for the service record",
+        "id": "Patient",
+        "label": "Patient",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Unsupported"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "ID",
+        "label": "Unique ID for version",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "size": 40,
+        "id": "SetID",
+        "label": "Unique ID for service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "precision": 5,
+        "scale": 0,
+        "id": "Version",
+        "label": "Version of the service",
+        "state": {
+          "editState": "Hidden",
+          "viewStateHidden": true
+        },
+        "type": "Number"
+      }
+    },
+    {
+      "field": {
+        "options": [
+          "APD",
+          "CAPD"
+        ],
+        "size": 4,
+        "id": "PDRegimen",
+        "label": "PD regimen",
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "field": {
+        "precision": 4,
+        "scale": 1,
+        "id": "IdealBodyWeight",
+        "label": "Ideal body weight",
+        "type": "Number",
+        "units": "kg"
+      }
+    },
+    {
+      "field": {
+        "multiple": true,
+        "options": [
+          "Balance (low GDP Lactate)",
+          "Glucose (standard)",
+          "Icodextrin 7.5%",
+          "Physioneal (low GDP Bicarbonate)"
+        ],
+        "size": 32,
+        "id": "FluidType",
+        "label": "Fluid type",
+        "layout": {
+          "labelPosition": "BeforeTop"
+        },
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Selection"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Baxter Freeline Solo",
+                "Fresenius Stay*Safe"
+              ],
+              "size": 20,
+              "id": "CAPD.System",
+              "label": "System",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "columns": [
+                {
+                  "precision": 5,
+                  "scale": 0,
+                  "id": "Number",
+                  "label": "Number",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Number"
+                },
+                {
+                  "precision": 4,
+                  "scale": 0,
+                  "id": "Volume",
+                  "label": "Volume (mL)",
+                  "state": {
+                    "editState": "Mandatory"
+                  },
+                  "type": "Number",
+                  "units": "mL"
+                }
+              ],
+              "id": "CAPD.Exchanges",
+              "label": "Daily exchanges",
+              "layout": {
+                "labelPosition": "BeforeTop"
+              },
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Table"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 2,
+              "id": "CAPD.WeeklyVolume",
+              "label": "Weekly volume",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "L"
+            }
+          }
+        ],
+        "id": "CAPD",
+        "layoutShow": true,
+        "title": "CAPD"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "options": [
+                "Baxter Homechoice Pro",
+                "Fresenius Sleep*Safe"
+              ],
+              "size": 30,
+              "id": "APD.Machine",
+              "label": "Machine",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "CCPD/Standard",
+                "Hi-Dose CCPD",
+                "Hi-Dose Tidal",
+                "Tidal"
+              ],
+              "size": 20,
+              "id": "APD.TherapyMode",
+              "label": "Therapy mode",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 80000,
+              "minimum": 200,
+              "precision": 5,
+              "scale": 0,
+              "id": "APD.VolumePrescribed",
+              "label": "Volume prescribed",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL / day"
+            }
+          },
+          {
+            "field": {
+              "maximum": 9,
+              "precision": 5,
+              "scale": 0,
+              "id": "APD.NumberOfDayFills",
+              "label": "Number",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "per day"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3000,
+              "precision": 4,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "0"
+                        ],
+                        "fieldID": "APD.NumberOfDayFills"
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "APD.VolumePerDayFill",
+              "label": "Volume",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL / fill"
+            }
+          },
+          {
+            "field": {
+              "format": "Time",
+              "size": 5,
+              "id": "APD.NightTherapyTime",
+              "label": "Duration",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Formatted"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3000,
+              "minimum": 100,
+              "precision": 4,
+              "scale": 0,
+              "id": "APD.NightFillVolume",
+              "label": "Volume",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL / night"
+            }
+          },
+          {
+            "field": {
+              "maximum": 95,
+              "minimum": 40,
+              "precision": 5,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Tidal",
+                        "Hi-Dose Tidal"
+                      ],
+                      "fieldID": "APD.TherapyMode"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "APD.NightTidalVolume",
+              "label": "Tidal volume",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "%"
+            }
+          },
+          {
+            "field": {
+              "maximum": 10000,
+              "minimum": 10,
+              "precision": 5,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "equals": [
+                        "Tidal",
+                        "Hi-Dose Tidal"
+                      ],
+                      "fieldID": "APD.TherapyMode"
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "APD.NightUF",
+              "label": "Ultrafiltation",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Different",
+                "Same"
+              ],
+              "size": 9,
+              "id": "APD.LastFillDextrose",
+              "label": "Last fill dextrose",
+              "type": "Selection"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3000,
+              "minimum": 100,
+              "precision": 4,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "APD.LastFillDextrose",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "APD.LastFillVolume",
+              "label": "Last fill volume",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3000,
+              "precision": 4,
+              "scale": 0,
+              "id": "APD.InitialDrainAlarm",
+              "label": "Initial drain alarm",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL"
+            }
+          },
+          {
+            "field": {
+              "maximum": 9,
+              "minimum": 1,
+              "precision": 1,
+              "scale": 0,
+              "id": "APD.NumberOfCycles",
+              "label": "Cycles",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3,
+              "precision": 5,
+              "scale": 0,
+              "id": "APD.NumberOfManualDayExchanges",
+              "label": "Number",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "per day"
+            }
+          },
+          {
+            "field": {
+              "maximum": 3000,
+              "minimum": 100,
+              "precision": 4,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "0"
+                        ],
+                        "fieldID": "APD.NumberOfManualDayExchanges"
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "APD.VolumePerManualDayExchange",
+              "label": "Volume",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Number",
+              "units": "mL / exchange"
+            }
+          },
+          {
+            "field": {
+              "precision": 4,
+              "scale": 2,
+              "id": "APD.WeeklyVolume",
+              "label": "Weekly volume",
+              "state": {
+                "editState": "ReadOnly"
+              },
+              "type": "Number",
+              "units": "L"
+            }
+          }
+        ],
+        "id": "APD",
+        "layoutShow": true,
+        "title": "APD"
+      }
+    }
+  ],
+  "id": "Renal.PDPrescription",
+  "layoutColumns": 3
+}

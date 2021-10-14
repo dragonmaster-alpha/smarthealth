@@ -1,0 +1,455 @@
+{
+  "coded": true,
+  "codeLength": 100,
+  "extensible": true,
+  "length": 100,
+  "uri": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+  "values": [
+    {
+      "code": "ADALAT",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Adalat"
+    },
+    {
+      "code": "ADHESIVE_BANDAGES",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Adhesive Bandages"
+    },
+    {
+      "code": "ADRENALINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Adrenaline"
+    },
+    {
+      "code": "ALLOPURINOL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Allopurinol"
+    },
+    {
+      "code": "AMOXIL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Amoxil"
+    },
+    {
+      "code": "ANAESTHETIC",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Anaesthetic"
+    },
+    {
+      "code": "ANTI_INFLAMMATORIES",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Anti-Inflammatories"
+    },
+    {
+      "code": "ANTIHISTAMINES",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Antihistamines"
+    },
+    {
+      "code": "ASPIRIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Aspirin"
+    },
+    {
+      "code": "AUGMENTIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Augmentin"
+    },
+    {
+      "code": "AURORIX",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Aurorix"
+    },
+    {
+      "code": "BACTRIM",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Bactrim"
+    },
+    {
+      "code": "BANDAIDS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Bandaids"
+    },
+    {
+      "code": "BEE_STINGS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Bee Stings"
+    },
+    {
+      "code": "BETADINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Betadine"
+    },
+    {
+      "code": "BETALOC",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Betaloc"
+    },
+    {
+      "code": "BRICANYL_ELIXIR",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Bricanyl Elixir"
+    },
+    {
+      "code": "CAPOTEN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Capoten"
+    },
+    {
+      "code": "CAPTOPRIL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Captopril"
+    },
+    {
+      "code": "CARDIZEM",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Cardizem"
+    },
+    {
+      "code": "CODEINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Codeine"
+    },
+    {
+      "code": "CONTRAST_DYE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Contrast Dye"
+    },
+    {
+      "code": "CORTICO_STEROIDS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Cortico-steroids"
+    },
+    {
+      "code": "COVERSYL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Coversyl"
+    },
+    {
+      "code": "DAIRY_PRODUCTS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Dairy Products"
+    },
+    {
+      "code": "DEPO_MEDROL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Depo-Medrol"
+    },
+    {
+      "code": "DICLOXACILLIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Dicloxacillin"
+    },
+    {
+      "code": "DIGESIC",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Digesic"
+    },
+    {
+      "code": "DUPHALAC",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Duphalac"
+    },
+    {
+      "code": "EGG",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Egg"
+    },
+    {
+      "code": "ELASTOPLAST",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Elastoplast"
+    },
+    {
+      "code": "ERYTHROMYCIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Erythromycin"
+    },
+    {
+      "code": "FENTANYL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Fentanyl"
+    },
+    {
+      "code": "FISH",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Fish"
+    },
+    {
+      "code": "FLAGYL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Flagyl"
+    },
+    {
+      "code": "FURADANTIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Furadantin"
+    },
+    {
+      "code": "HEPARIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Heparin"
+    },
+    {
+      "code": "IMDUR",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Imdur"
+    },
+    {
+      "code": "IODINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Iodine"
+    },
+    {
+      "code": "ISOPTIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Isoptin"
+    },
+    {
+      "code": "KEFLEX",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Keflex"
+    },
+    {
+      "code": "LANOXIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Lanoxin"
+    },
+    {
+      "code": "LATEX",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Latex"
+    },
+    {
+      "code": "LOMOTIL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Lomotil"
+    },
+    {
+      "code": "LOSEC",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Losec"
+    },
+    {
+      "code": "MAXALON",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Maxalon"
+    },
+    {
+      "code": "MICROPORE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Micropore (Occlusive Dressing)"
+    },
+    {
+      "code": "MINIPRESS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Minipress"
+    },
+    {
+      "code": "MINOMYCIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Minomycin"
+    },
+    {
+      "code": "MOGADON",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Mogadon"
+    },
+    {
+      "code": "MORPHINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Morphine"
+    },
+    {
+      "code": "MYOSTATIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Myostatin"
+    },
+    {
+      "code": "NOROXIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Noroxin"
+    },
+    {
+      "code": "NSAIDS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "NSAIDS"
+    },
+    {
+      "code": "NYSTATIN_NILSTAT",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Nystatin (Nilstat)"
+    },
+    {
+      "code": "OMNOPON",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Omnopon"
+    },
+    {
+      "code": "OCCLUSIVE_DRESSING",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Occlusive Dressing"
+    },
+    {
+      "code": "OYSTERS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Oysters"
+    },
+    {
+      "code": "PANADEINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Panadeine"
+    },
+    {
+      "code": "PANADEINE_FORTE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Panadeine Forte"
+    },
+    {
+      "code": "PARACETAMOL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Paracetamol"
+    },
+    {
+      "code": "PEANUTS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Peanuts"
+    },
+    {
+      "code": "PENICILLIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Penicillin"
+    },
+    {
+      "code": "PETHIDINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Pethidine"
+    },
+    {
+      "code": "PHENOTHIAZINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Phenothiazine"
+    },
+    {
+      "code": "PHENTOBARBITONE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Phentobarbitone"
+    },
+    {
+      "code": "PREDNISONE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Prednisone"
+    },
+    {
+      "code": "PROMETHAZINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Promethazine"
+    },
+    {
+      "code": "PROPOFOL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Propofol"
+    },
+    {
+      "code": "QUININE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Quinine"
+    },
+    {
+      "code": "RULIDE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Rulide"
+    },
+    {
+      "code": "SERENACE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Serenace"
+    },
+    {
+      "code": "SHELL_FISH",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Shell Fish"
+    },
+    {
+      "code": "SMOKE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Smoke"
+    },
+    {
+      "code": "SOYA_PRODUCTS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Soya Products"
+    },
+    {
+      "code": "STEMETIL",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Stemetil"
+    },
+    {
+      "code": "SULPHUR_DRUGS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Sulphur Drugs"
+    },
+    {
+      "code": "SUXAMETHONIUM",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Suxamethonium"
+    },
+    {
+      "code": "TETANUS_TOXOID",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Tetanus Toxoid (Tet Tox)"
+    },
+    {
+      "code": "THIOPENTONE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Thiopentone"
+    },
+    {
+      "code": "THEOPHYLLINE",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Theophylline"
+    },
+    {
+      "code": "TOMATOES",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Tomatoes"
+    },
+    {
+      "code": "VENTOLIN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Ventolin"
+    },
+    {
+      "code": "VIOXX",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Vioxx"
+    },
+    {
+      "code": "VOLTAREN",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Voltaren"
+    },
+    {
+      "code": "WASP_STINGS",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Wasp Stings"
+    },
+    {
+      "code": "ZANTAC",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Zantac"
+    },
+    {
+      "code": "ZOCOR",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Zocor"
+    },
+    {
+      "code": "WHEAT",
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Patient.Allergy",
+      "value": "Wheat"
+    }
+  ],
+  "valueSetID": "Patient.Allergy"
+}

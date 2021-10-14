@@ -1,0 +1,38 @@
+[
+    {
+        "code": "Sweat Test",
+        "name": "Sweat Test"
+    },
+    {
+        "code": "HIV",
+        "name": "HIV"
+    },
+    {
+        "code": "C250",
+        "name": "TFT"
+    },
+    {
+        "code": "C280",
+        "name": "UEC"
+    },
+    {
+        "code": "H021",
+        "name": "Coag Screen"
+    },
+    {
+        "code": "C248",
+        "name": "Testosterone total"
+    },
+    {
+        "code": "C038",
+        "name": "AFP"
+    },
+    {
+        "code": "C172",
+        "name": "LFT"
+    },
+    {
+        "code": "C071",
+        "name": "Ca corr for Alb"
+    }
+]

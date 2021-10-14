@@ -1,0 +1,58 @@
+{
+  "fieldsAndSections": [
+    {
+      "field": {
+        "minimumLength": 2,
+        "size": 40,
+        "id": "Search",
+        "label": "Search",
+        "state": {
+          "editState": "Mandatory"
+        },
+        "type": "Text"
+      }
+    },
+    {
+      "field": {
+        "columns": [
+          {
+            "layoutMultiline": false,
+            "size": 150,
+            "id": "name",
+            "label": "Name",
+            "layout": {
+              "newLine": true,
+              "spanLine": true
+            },
+            "type": "Text"
+          },
+          {
+            "size": 30,
+            "id": "city",
+            "label": "City",
+            "type": "Text"
+          },
+          {
+            "size": 10,
+            "id": "state",
+            "label": "State",
+            "type": "Text"
+          }
+        ],
+        "id": "Results",
+        "label": "Results",
+        "layout": {
+          "labelPosition": "Omit",
+          "newLine": true,
+          "spanLine": true
+        },
+        "state": {
+          "editState": "ReadOnly"
+        },
+        "type": "Table"
+      }
+    }
+  ],
+  "id": "Dialog.MedicalGroup.Search.WebUI",
+  "layoutColumns": 1
+}

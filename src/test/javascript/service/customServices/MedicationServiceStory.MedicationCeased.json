@@ -1,0 +1,64 @@
+{
+    "Indication": "Malignant tumour of head and/or neck [S]",
+    "CMIHTML": false,
+    "Product": {
+        "code": "9844",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Panadol Rapid"
+    },
+    "DoseGuide": "Admin with water. Adults, children greater than or equal to 12 yrs: 1000 mg (2 caplets) every 4-6 hrs as needed; max 4 g (8 caplets)/24 hrs",
+    "Source": "Discharge Summary",
+    "ChangeReason": {
+        "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeReason",
+        "value": "Adverse reaction"
+    },
+    "StartDate": {
+        "iso": "2020-09-03"
+    },
+    "FullPICode": 9673,
+    "ServiceDate": {
+        "iso": "2020-09-03"
+    },
+    "ProductAndFormulation": "Panadol Rapid Caplets",
+    "AbbrevPICode": 9844,
+    "Version": 2,
+    "ChangeType": {
+        "codeSet": "http://ns.smarthealth.com.au/valueset/Medication.ChangeType",
+        "value": "Correction of error"
+    },
+    "Formulation": {
+        "code": "1",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Formulation",
+        "value": "Panadol Rapid Caplets"
+    },
+    "FinishDateSource": "Calculated",
+    "ID": "34819147-a9ad-4105-a43d-e702b242e249",
+    "SetID": "d992aa16-cc05-4acb-8ecc-af9dff38f795",
+    "Pack": "500 mg [40]",
+    "Dose": "2",
+    "Route": {
+        "code": "26643006",
+        "codeSet": "http://snomed.info/sct",
+        "value": "Oral"
+    },
+    "Notes": {
+        "Notes": "Notes"
+    },
+    "PBS": "Non-PBS",
+    "Patient": 17,
+    "Quantity": 40,
+    "Instructions": "Take when symptom occurs",
+    "FinishDate": {
+        "iso": "2020-09-02"
+    },
+    "Cease": {
+        "Ceased": true,
+        "CeaseReason": "Adverse reaction"
+    },
+    "Provider": {
+        "groupID": 26,
+        "userID": 14
+    },
+    "Frequency": "Daily",
+    "Strength": "500 mg"
+}

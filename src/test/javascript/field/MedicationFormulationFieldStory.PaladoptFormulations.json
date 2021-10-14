@@ -1,0 +1,53 @@
+[
+    {
+        "brand": "Paladopt Eye drops",
+        "cmiHTML": false,
+        "composition": "Olopatadine (HCl); NaCl, benzalkonium Cl; isotonic, buffered, sterile, clear, colourless-pale yellow soln",
+        "dosage": "1-2 drops into affected eye(s) twice daily for up to 14 wks. Soft contact lenses: remove before admin, may reinsert greater than or equal to 15 min after instillation",
+        "drowsy": false,
+        "foodData": {
+            "foodCode": "Z",
+            "text": "No PPPA Defined"
+        },
+        "formulationCode": 1,
+        "formulationType": "Eye drops",
+        "generics": {
+            "gencode": 4342,
+            "generics": "Olopatadine"
+        },
+        "glutenFree": true,
+        "id": 277601,
+        "prescriptionOnly": true,
+        "prescrtiptionText": "S4",
+        "product": {
+            "adverseReactions": "Headache; asthenia; transient blurred vision; burning, stinging; cold syndrome; dry eye; foreign body sensation; hyperaemia; keratitis; lid oedema; nausea; pharyngitis; pruritus; rhinitis; sinusitis; dysgeusia; hypersensitivity; incr lacrimation; contact dermatitis (rare); others, see full PI",
+            "consumerMedicineInformation": true,
+            "contraindications": "",
+            "deletedDetails": "",
+            "distrubutionNote": "",
+            "drugInteractions": "",
+            "fullPI": {
+                "fullPICode": 11159,
+                "productCode": 2776
+            },
+            "precautions": "Not for inj, oral ingestion; soft contact lenses; pregnancy, lactation, children < 3 yrs",
+            "pregnancyCode": "B1",
+            "pregnancyTextExists": false,
+            "product": "Paladopt",
+            "productCode": 2776,
+            "productSort": "Paladopt",
+            "productTagFree": "Paladopt",
+            "s11": false,
+            "section": 14,
+            "sportData": {
+                "sportCode": "P",
+                "text": "Permitted in sport"
+            },
+            "subsection": "E",
+            "uses": "Selective H<SUB>1</SUB>-antagonist. Treatment of seasonal allergic conjunctivitis signs, symptoms for up to 14 wks",
+            "warnings": ""
+        },
+        "sortOrder": 1,
+        "cmicode": 11829
+    }
+]

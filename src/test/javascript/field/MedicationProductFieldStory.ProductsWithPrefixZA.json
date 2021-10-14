@@ -1,0 +1,92 @@
+[
+    {
+        "code": "6090",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zabep 20"
+    },
+    {
+        "code": "9276",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zactin"
+    },
+    {
+        "code": "3288",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zactin Tabs"
+    },
+    {
+        "code": "7108",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zaditen"
+    },
+    {
+        "code": "349",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zaldiar"
+    },
+    {
+        "code": "9948",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zaltrap"
+    },
+    {
+        "code": "12504",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zamic"
+    },
+    {
+        "code": "8034",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zan-Extra"
+    },
+    {
+        "code": "2377",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Generics",
+        "value": "Zanamivir"
+    },
+    {
+        "code": "5923",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zanidip"
+    },
+    {
+        "code": "59",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zantac"
+    },
+    {
+        "code": "5430",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zantac 150 mg OTC"
+    },
+    {
+        "code": "6986",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zantac Double Strength"
+    },
+    {
+        "code": "538",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zarontin"
+    },
+    {
+        "code": "9903",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zarzio"
+    },
+    {
+        "code": "9507",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zatamil"
+    },
+    {
+        "code": "1068",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zavedos"
+    },
+    {
+        "code": "8652",
+        "codeSet": "http://ns.smarthealth.com.au/valueset/MIMS_Product",
+        "value": "Zavesca"
+    }
+]

@@ -1,0 +1,94 @@
+{
+  "coded": false,
+  "codeLength": 0,
+  "extensible": true,
+  "length": 60,
+  "uri": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+  "values": [
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Adjuvant chemoRT"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Adjuvant chemotherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Adjuvant radiotherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Brachytherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Clinical trial"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Endocrine/hormonal therapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Further investigations/staging"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Genetics"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Immunotherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Neoadjuvant chemotherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Neoadjuvant radiotherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Not for radiotherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Not for surgery"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Observation/surveillance"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Palliative care"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Palliative chemotherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Palliative radiotherapy"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Radioactive iodine"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Supportive care"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Surgery"
+    },
+    {
+      "codeSet": "http://ns.smarthealth.com.au/valueset/Cancer.Treatment",
+      "value": "Targeted therapy"
+    }
+  ],
+  "valueSetID": "Cancer.Treatment"
+}

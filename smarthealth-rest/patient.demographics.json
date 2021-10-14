@@ -1,0 +1,43 @@
+{
+  "active": true,
+  "address": {
+    "address1": "39 Phillip St",
+    "address2": "",
+    "city": "Sydney",
+    "country": "Australia",
+    "postcode": "2000",
+    "state": "NSW"
+  },
+  "aliases": [
+    "Tin",
+    "TW"
+  ],
+  "atsi": "AboriginalAndTSI",
+  "contactDetails": {
+    "email": "tina@hopkins.name",
+    "phoneHome": "9876 5432",
+    "phoneMobile": "0444 333 222",
+    "phoneWork": "9999 8888"
+  },
+  "countryOfBirth": "Australia",
+  "dateOfBirth": {
+    "iso": "1987-06-05"
+  },
+  "ehrConsentDate": {
+    "iso": "2001-01-01"
+  },
+  "language": "English",
+  "maritalStatus": "De_facto",
+  "name": {
+    "familyName": "Hopkins",
+    "givenName": "Tina",
+    "otherGivenNames": "Wilma Betty",
+    "title": "Ms"
+  },
+  "notifyAlertsToEmail": false,
+  "notifyAlertsToMobilePhone": false,
+  "patientID": 42,
+  "religion": "Christian",
+  "sex": "Female",
+  "version": 0
+}

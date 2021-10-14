@@ -1,0 +1,290 @@
+{
+  "fieldsAndSections": [
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "format": "MedicareNumber",
+              "size": 12,
+              "id": "Medicare.identifier",
+              "label": "Medicare no",
+              "type": "Formatted",
+              "valuePath": "identifiers.Medicare.identifier"
+            }
+          },
+          {
+            "field": {
+              "maximum": 100,
+              "precision": 3,
+              "scale": 0,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Medicare.identifier",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Medicare.qualifier",
+              "label": "Position",
+              "type": "Number",
+              "valuePath": "identifiers.Medicare.qualifier"
+            }
+          },
+          {
+            "field": {
+              "precisionMonth": true,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "Medicare.identifier",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "Medicare.expiryDate",
+              "label": "Expiry",
+              "type": "DateTime",
+              "valuePath": "identifiers.Medicare.expiryDate"
+            }
+          }
+        ],
+        "id": "Medicare",
+        "layoutShow": true,
+        "title": "Medicare"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "editable": true,
+              "options": [
+                "Not insured",
+                "ACA Health Benefits Fund Limited",
+                "Australian Unity Health Limited",
+                "BUPA Australia Pty Limited",
+                "CBHS Health Fund Limited",
+                "Cessnock District Health Benefits Fund Limited",
+                "CUA Health Limited",
+                "Defence Health Limited",
+                "Doctors\u0027 Health Fund Pty Limited",
+                "GMHBA Limited",
+                "Grand United Corporate Health Limited",
+                "HBF Health Limited",
+                "Health Care Insurance Limited",
+                "Health Insurance Fund of Australia Limited",
+                "Health Partners Limited",
+                "Healthguard Health Benefits Fund Limited",
+                "health.com.au Pty Limited",
+                "Hospitals Contribution Fund of Australia Limited",
+                "Lysaght Peoplecare Limited",
+                "Medibank Private Limited",
+                "Mildura District Hospital Fund Limited",
+                "National Health Benefits Australia Pty Limited",
+                "Navy Health Limited",
+                "NIB Health Funds Limited",
+                "Phoenix Health Fund Limited",
+                "Police Health Limited",
+                "Queensland Country Health Fund Limited",
+                "Queensland Teachers\u0027 Union Health Fund Limited",
+                "Railway \u0026 Transport Health Fund Limited",
+                "Reserve Bank Health Society Limited",
+                "St Luke\u0027s Medical \u0026 Hospital Benefits Assoc Ltd",
+                "Teachers Federation Health Limited",
+                "Transport Health Pty Limited",
+                "Westfund Limited"
+              ],
+              "size": 50,
+              "id": "Insurance.healthFund",
+              "label": "Health fund",
+              "type": "Selection",
+              "valuePath": "identifiers.HealthFund.qualifier"
+            }
+          },
+          {
+            "field": {
+              "size": 30,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "equals": [
+                          "Not insured"
+                        ],
+                        "fieldID": "Insurance.healthFund",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Mandatory"
+                    }
+                  }
+                ]
+              },
+              "id": "Insurance.identifier",
+              "label": "Member no",
+              "state": {
+                "editState": "Mandatory"
+              },
+              "type": "Text",
+              "valuePath": "identifiers.HealthFund.identifier"
+            }
+          }
+        ],
+        "id": "Insurance",
+        "layoutShow": true,
+        "title": "Private Health Insurance"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "size": 20,
+              "id": "HealthcareAgencies.Pension",
+              "label": "Pension no",
+              "type": "Text",
+              "valuePath": "identifiers.Pension.identifier"
+            }
+          },
+          {
+            "field": {
+              "format": "HealthCareCardNumber",
+              "size": 12,
+              "id": "HealthcareAgencies.HealthCareCard",
+              "label": "Health Care Card",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Formatted",
+              "valuePath": "identifiers.HealthCareCard.identifier"
+            }
+          },
+          {
+            "field": {
+              "size": 30,
+              "id": "HealthcareAgencies.DVA",
+              "label": "DVA No",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text",
+              "valuePath": "identifiers.DVA.identifier"
+            }
+          },
+          {
+            "field": {
+              "options": [
+                "Gold",
+                "White"
+              ],
+              "size": 20,
+              "fieldIf": {
+                "elseState": {
+                  "clearValue": true,
+                  "editState": "ReadOnly"
+                },
+                "ifs": [
+                  {
+                    "condition": {
+                      "not": {
+                        "fieldID": "HealthcareAgencies.DVA",
+                        "testEmpty": true
+                      }
+                    },
+                    "then": {
+                      "editState": "Enabled"
+                    }
+                  }
+                ]
+              },
+              "id": "HealthcareAgencies.DVAcolour",
+              "label": "DVA colour",
+              "type": "Selection",
+              "valuePath": "identifiers.DVA.qualifier"
+            }
+          },
+          {
+            "field": {
+              "size": 20,
+              "id": "HealthcareAgencies.SafetyNet",
+              "label": "Safety Net no",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text",
+              "valuePath": "identifiers.SafetyNet.identifier"
+            }
+          }
+        ],
+        "id": "HealthcareAgencies",
+        "layoutShow": true,
+        "title": "Healthcare Agencies"
+      }
+    },
+    {
+      "section": {
+        "fieldsAndSections": [
+          {
+            "field": {
+              "format": "CFAustraliaIdentifier",
+              "size": 8,
+              "id": "Registries.CFAustralia",
+              "label": "CF Australia ID",
+              "type": "Formatted",
+              "valuePath": "identifiers.CFAustralia.identifier"
+            }
+          },
+          {
+            "field": {
+              "size": 20,
+              "id": "Registries.ANZData",
+              "label": "ANZData ID",
+              "layout": {
+                "newLine": true
+              },
+              "type": "Text",
+              "valuePath": "identifiers.ANZData.identifier"
+            }
+          }
+        ],
+        "id": "Registries",
+        "layoutShow": true,
+        "title": "Registries"
+      }
+    }
+  ],
+  "id": "Patient.InsurersAndIdentifiers.WebUI",
+  "layoutColumns": 3
+}
